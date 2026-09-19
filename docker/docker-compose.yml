@@ -3,15 +3,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: sqa-mosa-grt:latest
-    container_name: sqa-mosa-grt
+    image: sqa-mosa-jdart:latest
+    container_name: sqa-mosa-jdart
     volumes:
       # โฟลเดอร์ทำงาน (checkout, script, ผลลัพธ์) — sync กับเครื่องจริงตลอดเวลา
       - ./work:/workspace
       # โฟลเดอร์ผลลัพธ์ CSV ที่ต้องส่งให้คนที่ 4
       - ./results:/workspace/results
-      # โฟลเดอร์สำหรับวาง jar เพิ่มเติม (grt.jar ของคนที่ 2)
-      - ./tools:/opt/tools/grt
+      # โฟลเดอร์สำรอง — ไม่จำเป็นสำหรับ JDart (build อยู่ใน image แล้ว) เผื่อไว้สำหรับไฟล์เสริมอื่น
+      - ./tools:/opt/tools/extra
     tty: true
     stdin_open: true
     working_dir: /workspace

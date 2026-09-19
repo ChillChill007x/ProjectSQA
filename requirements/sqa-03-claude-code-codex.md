@@ -1,7 +1,7 @@
 # REQUIREMENT 3/4 — Claude Code + Codex — AI-Assisted Test Generation Runner
 **โปรเจกต์: AI-Assisted Testing vs. Automatic Test Case Generation Algorithms (SQA รอบที่ 2)**
 **ผู้รับผิดชอบ: นายภีมเดช กลั่นกิ่ง (673380420-2) — คนที่ 3**
-**ระดับความยาก: ⭐⭐ (ง่าย-ปานกลาง ด้าน setup) แต่ ⭐⭐⭐⭐ (ยาก ด้านปริมาณงาน)** — ไม่ต้องสู้กับ dependency เก่าเหมือน EvoSuite/GRT แต่ต้องรัน 2 เครื่องมือ (Claude Code, Codex) แยกกัน และต้อง manual-check ผลลัพธ์จาก agentic tool มากกว่า เพราะ AI อาจสร้าง test ที่ compile ไม่ผ่านหรือ hallucinate
+**ระดับความยาก: ⭐⭐ (ง่าย-ปานกลาง ด้าน setup) แต่ ⭐⭐⭐⭐ (ยาก ด้านปริมาณงาน)** — ไม่ต้องสู้กับ dependency เก่าเหมือน EvoSuite/JDart แต่ต้องรัน 2 เครื่องมือ (Claude Code, Codex) แยกกัน และต้อง manual-check ผลลัพธ์จาก agentic tool มากกว่า เพราะ AI อาจสร้าง test ที่ compile ไม่ผ่านหรือ hallucinate
 
 ---
 
@@ -65,4 +65,4 @@
 - สรุปเปรียบเทียบพฤติกรรม 2 เครื่องมือ 300-500 คำ
 
 ## ใครรอผลงานจากคนนี้บ้าง
-- **คนที่ 4** (รวมผล+รายงาน+deploy) — ต้องรอ `results_claude_code.csv`, `results_codex.csv` และสรุปเปรียบเทียบพฤติกรรม เพื่อเอาไปรวมวิเคราะห์เปรียบเทียบกับ MOSA/GRT
+- **คนที่ 4** (รวมผล+รายงาน+deploy) — ต้องรอ `results_claude_code.csv`, `results_codex.csv` และสรุปเปรียบเทียบพฤติกรรม เพื่อเอาไปรวมวิเคราะห์เปรียบเทียบกับ MOSA/JDart

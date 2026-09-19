@@ -7,11 +7,11 @@
 
 ## ต้องใช้ไฟล์/เครื่องมืออะไรบ้าง (เตรียมก่อนเริ่ม)
 1. **Docker Desktop + ไฟล์ `Dockerfile` / `docker-compose.yml`** — ทีมใช้ Docker แทนการลง Defects4J/EvoSuite/Java 8 ตรง ๆ บนเครื่อง เพื่อให้ environment เหมือนกันทุกคนแบบ 100% (ดูวิธีใช้ใน `README-docker-desktop.md`) — **ไม่ต้อง**ติดตั้ง Defects4J/EvoSuite/Java 8 เองอีกต่อไป เพราะรวมอยู่ใน image แล้ว
-2. **ขอบเขต: ทั้ง 17 projects ใน Defects4J ทุก Active Bug** (ไม่ใช่ subset — ทีมตกลงใช้ full dataset ตามสเปกข้อ 2.2(1)) รายชื่อ 17 projects: Chart, Cli, Closure, Codec, Collections, Compress, Csv, Gson, JacksonCore, JacksonDatabind, JacksonXml, Jsoup, JxPath, Lang, Math, Mockito, Time — คนที่ 2 (GRT) และคนที่ 3 (AI tools) ต้องรันชุดเดียวกันทั้งหมดนี้เพื่อให้เทียบผลกันได้ครบ
+2. **ขอบเขต: ทั้ง 17 projects ใน Defects4J ทุก Active Bug** (ไม่ใช่ subset — ทีมตกลงใช้ full dataset ตามสเปกข้อ 2.2(1)) รายชื่อ 17 projects: Chart, Cli, Closure, Codec, Collections, Compress, Csv, Gson, JacksonCore, JacksonDatabind, JacksonXml, Jsoup, JxPath, Lang, Math, Mockito, Time — คนที่ 2 (JDart) และคนที่ 3 (AI tools) ต้องรันชุดเดียวกันทั้งหมดนี้เพื่อให้เทียบผลกันได้ครบ
 3. **ไฟล์ Active Bugs metadata** — เช็คที่ `dataset/defects4j/<Project>_metadata.csv` ก่อนรันแต่ละ project (ตอนนี้มีแค่ `Lang_metadata.csv` พร้อมใช้ — 61 active bugs, ID `1, 3–17, 19–24, 26–47, 49–65`, ตัด deprecated `2,18,25,48` ออกแล้ว) ถ้า project อื่นยังไม่มีไฟล์นี้ ให้รัน `defects4j bids -p <Project>` เองก่อนเริ่ม (ดูวิธีเต็มในหัวข้อ Dataset ของ README.md หลัก) — **ห้ามเดา bug id เอง หรือรันบั๊กที่ deprecated ไปแล้ว**
 4. ไฟล์ requirement นี้ — ใช้เป็น spec หลักวางใน Claude/Claude Code
 
-> **Docker setup:** `docker compose build` แล้ว `docker compose run --rm sqa-runner bash` จะได้ shell ที่มี Java 8, Defects4J, EvoSuite (`/opt/tools/evosuite.jar`) พร้อมใช้ทันที ไฟล์ที่สร้างใน `/work` จะ sync กับโฟลเดอร์ `work/` บนเครื่องจริงอัตโนมัติ (รายละเอียดเต็มดู `README-docker-desktop.md`)
+> **Docker setup:** `docker compose build` แล้ว `docker compose run --rm sqa-runner bash` จะได้ shell ที่มี Java 11 (+8/17), Defects4J, EvoSuite (auto-download ผ่าน `init.sh`) พร้อมใช้ทันที ไฟล์ที่สร้างใน `/workspace` จะ sync กับโฟลเดอร์ `work/` บนเครื่องจริงอัตโนมัติ (รายละเอียดเต็มดู `README-docker-desktop.md`)
 
 ## ไม่ต้องรอใคร — เริ่มงานได้ทันที
 งานนี้เป็นงานที่เริ่มขนานกับ Requirement 2 และ 3 ได้เลย ไม่ต้องรอผลจากใครก่อน — ขอบเขตคือทั้ง 17 projects อยู่แล้ว ไม่ต้องรอมติเพิ่ม

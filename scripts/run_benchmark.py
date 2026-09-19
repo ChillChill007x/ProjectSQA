@@ -2,7 +2,7 @@
 """
 run_benchmark.py
 =========================================================
-Universal Benchmark Runner — MOSA (EvoSuite) และ GRT บน Defects4J
+Universal Benchmark Runner — MOSA (EvoSuite) และ JDart บน Defects4J
 รองรับ 3 โหมด:
   --project X --bug N     รันเดี่ยวเฉพาะบั๊กเดียว
   --sample-17             รันตัวแทนโปรเจกต์ละ 1 บั๊ก (17 บั๊ก)
@@ -11,7 +11,7 @@ Universal Benchmark Runner — MOSA (EvoSuite) และ GRT บน Defects4J
 
 ตัวอย่างการใช้:
   python3 run_benchmark.py --project Lang --bug 1 --tool evosuite
-  python3 run_benchmark.py --sample-17 --tool grt
+  python3 run_benchmark.py --sample-17 --tool jdart
   python3 run_benchmark.py --all-bugs --tool evosuite --resume
 =========================================================
 """
@@ -34,8 +34,10 @@ PROGRESS_FILE = BASE_DIR / "progress.json"
 
 # EvoSuite jar ที่ Defects4J init.sh ดาวน์โหลดไว้ให้อัตโนมัติ
 EVOSUITE_JAR_GLOB = "/opt/defects4j/framework/lib/test_generation/generation/evosuite*.jar"
-# GRT jar ที่ทีมต้องหามาวางเอง (mount เข้า container ที่ path นี้)
-GRT_JAR_PATH = Path("/opt/tools/grt/grt.jar")
+# JDart stack (build ไว้แล้วใน Docker image — ดู docker/Dockerfile)
+JPF_CORE_HOME = Path("/opt/jdart-stack/jpf-core")
+JDART_HOME = Path("/opt/jdart-stack/jdart")
+JPF_BINARY = JPF_CORE_HOME / "bin" / "jpf"
 
 ALL_PROJECTS = [
     "Chart", "Cli", "Closure", "Codec", "Collections", "Compress", "Csv",
@@ -45,7 +47,7 @@ ALL_PROJECTS = [
 
 TOOL_TO_REPO_FOLDER = {
     "evosuite": "MOSA_EvoSuite",
-    "grt": "GRT",
+    "jdart": "JDart",
 }
 
 for d in (CHECKOUT_DIR, RESULT_DIR, LOG_DIR):
@@ -157,13 +159,60 @@ def run_evosuite(work_dir, target_class, search_budget=60, run_no=1):
     }
 
 
-def run_grt(work_dir, target_class, config_param=60, run_no=1):
+def extract_symbolic_methods(work_dir, target_class, classpath, max_methods=5):
     """
-    รัน GRT ผ่านเครื่องมือที่ทีมเลือก (jar ที่ mount มาที่ GRT_JAR_PATH)
-    ปรับคำสั่งจริงตาม CLI ของเครื่องมือที่ใช้จริง — โครงนี้เป็น template ตั้งต้น
+    ใช้ javap อ่าน public method ของ target_class แล้วสร้างรายการ
+    concolic.method entries แบบ auto (ทำให้ทุก parameter ที่เป็น primitive type
+    เป็น symbolic) — วิธีนี้เป็น heuristic เบื้องต้นเท่านั้น
+    ไม่ครอบคลุม method ที่รับ String/Object/Array (JDart รองรับได้แต่ config ซับซ้อนกว่านี้
+    ต้องปรับ concolic.method.<name>.config เพิ่มเอง — ดู JDart wiki)
     """
-    if not GRT_JAR_PATH.exists():
-        print(f"[ERROR] ไม่พบ GRT jar ที่ {GRT_JAR_PATH} — วาง grt.jar ในโฟลเดอร์ tools/ ก่อน")
+    result = subprocess.run(
+        ["javap", "-public", "-classpath", classpath, target_class],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        return []
+
+    import re
+    primitive_map = {
+        "int": "i", "long": "j", "double": "d", "float": "f",
+        "boolean": "z", "short": "s", "byte": "b", "char": "c",
+    }
+    methods = []
+    for line in result.stdout.splitlines():
+        m = re.search(r"(\w+)\(([^)]*)\)", line)
+        if not m or "public" not in line:
+            continue
+        method_name, params_raw = m.group(1), m.group(2)
+        if not params_raw.strip():
+            continue  # ข้าม method ไม่มี parameter (ไม่มีอะไรให้ทำ symbolic)
+        param_types = [p.strip().split()[0] for p in params_raw.split(",") if p.strip()]
+        if not all(t in primitive_map for t in param_types):
+            continue  # ข้าม method ที่มี param เป็น String/Object/Array (ต้อง config มือ)
+        sig = ",".join(f"{primitive_map[t]}" for t in param_types)
+        methods.append((method_name, sig, param_types))
+        if len(methods) >= max_methods:
+            break
+    return methods
+
+
+def run_jdart(work_dir, target_class, search_depth=60, run_no=1):
+    """
+    รัน JDart (Dynamic Symbolic / Concolic Execution) ผ่าน jpf-core binary
+    ต้อง build JDart stack ไว้แล้วใน Docker image (ดู docker/Dockerfile)
+
+    ข้อจำกัดสำคัญ (อ่านก่อนใช้จริง):
+      - JDart ทำ symbolic execution ง่ายเฉพาะ parameter ที่เป็น primitive type
+        (int/long/double/...) — method ที่รับ String/Object ซับซ้อนต้อง config เพิ่มเอง
+      - Output ของ JDart คือ constraint/path summary + concrete input values
+        ไม่ใช่ไฟล์ JUnit สำเร็จรูปเหมือน EvoSuite — ทีมต้องเขียนตัวแปลง
+        (parse ผลจาก out_dir แล้ว generate ไฟล์ .java ที่มี @Test เรียก method
+        ด้วยค่า concrete ที่ได้) ก่อนจะเอาไปวัด coverage/fault-detection ด้วย
+        defects4j ได้จริง — ฟังก์ชันนี้ยังไม่ได้ทำส่วนนั้นให้ (มี TODO ด้านล่าง)
+    """
+    if not JPF_BINARY.exists():
+        print(f"[ERROR] ไม่พบ jpf binary ที่ {JPF_BINARY} — เช็คว่า Docker build JDart stack สำเร็จหรือยัง")
         return None
 
     cp_result = subprocess.run(
@@ -172,26 +221,46 @@ def run_grt(work_dir, target_class, config_param=60, run_no=1):
     )
     classpath = cp_result.stdout.strip()
 
-    out_dir = RESULT_DIR / "grt_raw" / target_class / f"run{run_no}_cfg{config_param}"
+    methods = extract_symbolic_methods(work_dir, target_class, classpath)
+    if not methods:
+        print(f"[WARN] ไม่พบ method ที่เหมาะกับ auto-symbolic ใน {target_class} (อาจต้อง config มือ)")
+        return None
+
+    out_dir = RESULT_DIR / "jdart_raw" / target_class / f"run{run_no}_depth{search_depth}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    start = time.time()
-    # TODO: แก้ flag ให้ตรงกับ CLI จริงของเครื่องมือ GRT ที่ทีมเลือกใช้
-    cmd = [
-        "java", "-cp", f"{GRT_JAR_PATH}:{classpath}",
-        "grt.Main",  # ชื่อ main class ตัวอย่าง — แก้ตามเครื่องมือจริง
-        "--target", target_class,
-        "--time-limit", str(config_param),
-        "--output", str(out_dir),
+    # สร้าง .jpf config file แบบ auto จาก method ที่เจอ
+    jpf_config_lines = [
+        "@using = jpf-jdart",
+        "shell=gov.nasa.jpf.jdart.JDart",
+        "symbolic.dp=z3",
+        f"target={target_class}",
+        f"classpath={classpath}",
+        f"search.depth_limit={search_depth}",
     ]
+    for method_name, sig, param_types in methods:
+        params_named = ",".join(f"{chr(97+i)}:{t}" for i, t in enumerate(param_types))
+        jpf_config_lines.append(f"concolic.method.{method_name}={target_class}.{method_name}({params_named})")
+    jpf_file = out_dir / f"{target_class.replace('.', '_')}.jpf"
+    jpf_file.write_text("\n".join(jpf_config_lines), encoding="utf-8")
+
+    start = time.time()
+    cmd = [str(JPF_BINARY), str(jpf_file)]
     result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(work_dir))
     elapsed = time.time() - start
 
+    (out_dir / "jpf_stdout.log").write_text(result.stdout, encoding="utf-8")
+    (out_dir / "jpf_stderr.log").write_text(result.stderr, encoding="utf-8")
+
+    # TODO: เขียน parser แปลง out_dir/jpf_stdout.log (concrete values ที่ JDart หาได้)
+    # เป็นไฟล์ JUnit .java จริง ก่อนจะรัน defects4j coverage ได้ — ยังไม่ทำให้ในสคริปต์นี้
+
     return {
-        "tool": "grt",
+        "tool": "jdart",
         "target_class": target_class,
-        "config_param": config_param,
+        "search_depth": search_depth,
         "run_no": run_no,
+        "methods_explored": len(methods),
         "execution_time_sec": round(elapsed, 2),
         "test_dir": str(out_dir),
         "success": result.returncode == 0,
@@ -235,8 +304,8 @@ def run_one_bug(project, bug_id, tool, progress, runs_per_config=3, configs=(60,
             for run_no in range(1, runs_per_config + 1):
                 if tool == "evosuite":
                     res = run_evosuite(work_dir, target_class, search_budget=cfg, run_no=run_no)
-                elif tool == "grt":
-                    res = run_grt(work_dir, target_class, config_param=cfg, run_no=run_no)
+                elif tool == "jdart":
+                    res = run_jdart(work_dir, target_class, search_depth=cfg, run_no=run_no)
                 else:
                     raise ValueError(f"unknown tool: {tool}")
                 if res:
@@ -264,12 +333,12 @@ def write_results_csv(tool, rows):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="SQA Benchmark Runner: MOSA(EvoSuite) / GRT")
+    parser = argparse.ArgumentParser(description="SQA Benchmark Runner: MOSA(EvoSuite) / JDart")
     parser.add_argument("--project", help="ชื่อ project เดี่ยว เช่น Lang")
     parser.add_argument("--bug", help="bug id เดี่ยว เช่น 1")
     parser.add_argument("--sample-17", action="store_true", help="รันตัวแทนโปรเจกต์ละ 1 บั๊ก (17 บั๊ก)")
     parser.add_argument("--all-bugs", action="store_true", help="รันทุก active bug ทั้งหมด")
-    parser.add_argument("--tool", required=True, choices=["evosuite", "grt"])
+    parser.add_argument("--tool", required=True, choices=["evosuite", "jdart"])
     parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
 

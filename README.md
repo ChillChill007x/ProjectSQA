@@ -2,7 +2,11 @@
 
 **รายวิชา:** CP353201 Software Quality Assurance (ปีการศึกษา 1/2569)
 **อาจารย์ประจำวิชา:** ผศ.ดร.ชิตสุธา สุ่มเล็ก | **หลักสูตร:** วิทยาการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น
-**หัวข้อโครงการ:** การประเมินประสิทธิภาพเชิงเปรียบเทียบระหว่างขั้นตอนวิธีสร้างกรณีทดสอบอัตโนมัติ (MOSA & GRT) และเครื่องมือ AI-Assisting/Generative AI (Claude Code & Codex) บนชุดข้อมูลมาตรฐาน Defects4J
+**หัวข้อโครงการ:** การประเมินประสิทธิภาพเชิงเปรียบเทียบระหว่างขั้นตอนวิธีสร้างกรณีทดสอบอัตโนมัติ (MOSA & JDart) และเครื่องมือ AI-Assisting/Generative AI (Claude Code & Codex) บนชุดข้อมูลมาตรฐาน Defects4J
+
+---
+
+> **หมายเหตุการเปลี่ยนแปลง:** เดิมทีมลงทะเบียนเลือก **GRT (Guided Random Testing)** เป็น Algorithm 2 แต่พบว่า GRT เป็นเครื่องมือวิจัยที่ไม่เคยเผยแพร่ jar/source code สาธารณะเลย (ตรวจสอบแล้วไม่มี artifact ให้ใช้งานจริง) ทีมจึงเปลี่ยนมาใช้ **JDart (Dynamic Symbolic/Concolic Execution)** แทน ซึ่งเป็นแนวทางที่แตกต่างจาก MOSA อย่างชัดเจนและไม่ซ้ำกับกลุ่มอื่นในชั้นเรียน
 
 ---
 
@@ -11,9 +15,9 @@
 | ลำดับ | รหัสนักศึกษา | ชื่อ - สกุล | บทบาทในโครงการ | หน้าที่หลัก & สิ่งที่ต้องส่งมอบ (Deliverables) |
 |---|---|---|---|---|
 | 1 | 673380395-5 | นายคมชาญ น้อยเนียม | **Member 1: MOSA / Search-Based Testing Lead** | • รับผิดชอบ **MOSA ผ่าน EvoSuite**<br>• ตั้งค่าและรัน EvoSuite/MOSA กับ Target Modified Classes ตาม benchmark protocol<br>• ตรวจสอบ generated JUnit tests และเก็บผล Line/Branch Coverage, Fault Detection และ Generation Time<br>• **Output:** `MOSA_EvoSuite/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
-| 2 | 673380589-2 | นายปฏิภาณ มะนิลทิพย์ | **Member 2: GRT / Feedback-Directed Random Testing Lead** | • รับผิดชอบ **GRT (Guided/Feedback-Directed Random Testing)**<br>• ตั้งค่าและรัน GRT กับ Target Modified Classes ตาม benchmark protocol เดียวกับ MOSA<br>• ตรวจสอบ generated JUnit tests และเก็บผล Coverage, Fault Detection, Generation Time<br>• **Output:** `GRT/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
+| 2 | 673380589-2 | นายปฏิภาณ มะนิลทิพย์ | **Member 2: JDart / Dynamic Symbolic (Concolic) Execution Lead** | • รับผิดชอบ **JDart (Concolic Execution บน JPF)**<br>• Build JDart stack (jpf-core, jConstraints, jdart) และตั้งค่ารันกับ Target Modified Classes<br>• เขียนตัวแปลงผลลัพธ์ JDart (path constraints + concrete values) เป็นไฟล์ JUnit เอง แล้วเก็บผล Coverage, Fault Detection, Generation Time<br>• **Output:** `JDart/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
 | 3 | 673380420-2 | นายภีมเดช กลั่นกิ่ง | **Member 3: AI Prompt Engineer (Claude Code & Codex)** | • ออกแบบและดูแล Prompt/Task Instruction สำหรับ **Claude Code และ Codex** ภายใต้ข้อมูลและข้อจำกัดเดียวกัน<br>• สร้าง JUnit tests สำหรับ Target Modified Classes และจัดการ feedback loop เมื่อ compile/test ไม่ผ่าน<br>• เก็บผล generation time, จำนวน test ที่ compile ผ่าน/ไม่ผ่าน และผล benchmark ของ AI ทั้งสองตัว<br>• **Output:** `Claude-sonnet_4_6/TestCode/`, `Codex/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
-| 4 | 673380427-8 | นายศุภกิตติ์ ฟันเฟือย | **Member 4: Infrastructure / Data / Repository Manager & Integration Lead** | • จัดเตรียมและดูแล **Docker Environment** (Defects4J + EvoSuite + GRT) ให้สมาชิกใช้สภาพแวดล้อมร่วมกัน<br>• จัดเตรียมและดูแล **Defects4J Dataset** รวมถึงการสกัด Metadata, Target Classes และ Active Bugs ของแต่ละ project<br>• ดูแล **GitHub Repository**, โครงสร้างไฟล์, benchmark protocol และการรวมผลจากสมาชิกทั้ง 3 สาย<br>• เขียนรายงานฉบับสมบูรณ์, จัดทำ Presentation/Demo และ Deploy repository<br>• **Output:** `dataset/`, `docker/`, `scripts/run_benchmark.py`, รายงานฉบับสมบูรณ์, Presentation |
+| 4 | 673380427-8 | นายศุภกิตติ์ ฟันเฟือย | **Member 4: Infrastructure / Data / Repository Manager & Integration Lead** | • จัดเตรียมและดูแล **Docker Environment** (Defects4J + EvoSuite + JDart stack) ให้สมาชิกใช้สภาพแวดล้อมร่วมกัน<br>• จัดเตรียมและดูแล **Defects4J Dataset** รวมถึงการสกัด Metadata, Target Classes และ Active Bugs ของแต่ละ project<br>• ดูแล **GitHub Repository**, โครงสร้างไฟล์, benchmark protocol และการรวมผลจากสมาชิกทั้ง 3 สาย<br>• เขียนรายงานฉบับสมบูรณ์, จัดทำ Presentation/Demo และ Deploy repository<br>• **Output:** `dataset/`, `docker/`, `scripts/run_benchmark.py`, รายงานฉบับสมบูรณ์, Presentation |
 
 ---
 
@@ -78,7 +82,7 @@ defects4j bids -p <Project> | wc -l  # นับจำนวน active bugs
 
 ## 📜 กฎเหล็กสำหรับชุดทดสอบ (Universal Test Suite Standards)
 
-เพื่อให้ไฟล์เทสจากทุกสายงาน (MOSA, GRT, Claude Code, Codex) คอมไพล์และประเมินผลบน Defects4J ได้โดยไม่ผิดพลาด สมาชิกทุกคนต้องปฏิบัติตาม 4 ข้อนี้:
+เพื่อให้ไฟล์เทสจากทุกสายงาน (MOSA, JDart, Claude Code, Codex) คอมไพล์และประเมินผลบน Defects4J ได้โดยไม่ผิดพลาด สมาชิกทุกคนต้องปฏิบัติตาม 4 ข้อนี้:
 
 1. **Framework Hygiene:** ใช้ `import org.junit.Test;` และ `import static org.junit.Assert.*;` เท่านั้น — ห้ามใช้ JUnit 5 หรือ Mocking Framework ภายนอก
 2. **Package Declaration:** บรรทัดแรกของไฟล์เทสต้องประกาศ `package` ให้ตรงกับ target class เช่น `package org.apache.commons.lang3.math;`
@@ -95,7 +99,7 @@ ProjectSQA/
 ├── GIT-SETUP.md                       # ขั้นตอน push/clone สำหรับทีม
 ├── requirements/                      # Spec แยกตามคนรับผิดชอบ (4 ไฟล์)
 │   ├── sqa-01-mosa-evosuite.md
-│   ├── sqa-02-grt.md
+│   ├── sqa-02-jdart.md
 │   ├── sqa-03-claude-code-codex.md
 │   └── sqa-04-consolidation-report-deploy.md
 ├── dataset/                           # Metadata / benchmark dataset ที่สกัดจาก Defects4J
@@ -106,21 +110,21 @@ ProjectSQA/
 │   ├── docker-compose.yml
 │   └── README-docker-desktop.md
 ├── scripts/
-│   └── run_benchmark.py               # Universal Benchmark Runner (--tool evosuite/grt, --sample-17, --all-bugs, --resume)
-├── results/                           # ผลลัพธ์การทดลอง (results_evosuite.csv, results_grt.csv, ...)
-├── tools/                             # วาง grt.jar ที่นี่ (ไม่ push ขึ้น git)
+│   └── run_benchmark.py               # Universal Benchmark Runner (--tool evosuite/jdart, --sample-17, --all-bugs, --resume)
+├── results/                           # ผลลัพธ์การทดลอง (results_evosuite.csv, results_jdart.csv, ...)
+├── tools/                             # โฟลเดอร์สำรอง (ไม่จำเป็นสำหรับ JDart — build อยู่ใน image แล้ว)
 ├── MOSA_EvoSuite/                     # Algorithm 1: MOSA (ผ่าน EvoSuite)
 │   ├── Code/
 │   ├── Configuration/                 # Search Budget config
 │   ├── Result_Round1/
 │   ├── Result_Round2/
 │   └── Test/                          # ไฟล์ JUnit ที่ generate
-├── GRT/                                # Algorithm 2: GRT
-│   ├── Code/
-│   ├── Configuration/
+├── JDart/                               # Algorithm 2: JDart (Dynamic Symbolic Execution)
+│   ├── Code/                            # รวมตัวแปลง JDart output → JUnit ที่เขียนเพิ่ม
+│   ├── Configuration/                   # site.properties, search_depth
 │   ├── Result_Round1/
 │   ├── Result_Round2/
-│   └── Test/
+│   └── Test/                            # ไฟล์ JUnit ที่แปลงจาก JDart output แล้ว
 ├── Claude-sonnet_4_6/                  # AI Tool 1: Claude Code
 │   ├── Prompt/
 │   ├── Result/
@@ -157,7 +161,7 @@ python3 scripts/run_benchmark.py --sample-17 --tool evosuite
 # รันโหมด Exhaustive (ทุก active bug ใน Defects4J) พร้อม resume อัตโนมัติ
 python3 scripts/run_benchmark.py --all-bugs --tool evosuite --resume
 ```
-เปลี่ยน `--tool evosuite` เป็น `--tool grt` สำหรับสาย GRT (คนที่ 2)
+เปลี่ยน `--tool evosuite` เป็น `--tool jdart` สำหรับสาย JDart (คนที่ 2)
 
 ---
 
@@ -168,7 +172,7 @@ python3 scripts/run_benchmark.py --all-bugs --tool evosuite --resume
 | เครื่องมือ / เทคนิค | Line Coverage (%) | Branch Coverage (%) | Fault Detection Rate | เวลาเฉลี่ยต่อคลาส | จุดเด่น | ข้อจำกัด |
 |---|---|---|---|---|---|---|
 | **MOSA (EvoSuite)** | - | - | - | - | Many-objective search, ครอบคลุมหลาย target พร้อมกัน | Search อาจไม่ converge ในเวลาจำกัด, test smell |
-| **GRT** | - | - | - | - | Feedback-directed random testing, เร็วในการเริ่มต้น | Coverage ไม่ deterministic, อาจพลาด edge case เชิงตรรกะ |
+| **JDart** | - | - | - | - | Concolic execution หาค่า input เจาะจงตาม path constraint, deterministic กว่า random testing | Setup ซับซ้อน, ไม่ output JUnit อัตโนมัติ, รองรับดีแค่ primitive param |
 | **Claude Code** | - | - | - | - | เข้าใจ context ของโค้ดได้ดี ปรับ test ตาม feedback loop ได้ | ขึ้นกับความชัดเจนของ prompt/dependency ที่ให้มา |
 | **Codex** | - | - | - | - | สร้าง test ได้เร็ว รองรับ agentic workflow | Assertion อาจ flaky ในตรรกะซับซ้อน |
 

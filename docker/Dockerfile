@@ -1,14 +1,11 @@
 # =========================================================
-# Dockerfile: SQA Project — MOSA (EvoSuite) + GRT + Defects4J
-# ใช้สำหรับ: คนที่ 1 (MOSA/EvoSuite) และ คนที่ 2 (GRT)
+# Dockerfile: SQA Project — MOSA (EvoSuite) + JDart + Defects4J
+# ใช้สำหรับ: คนที่ 1 (MOSA/EvoSuite) และ คนที่ 2 (JDart)
 #
-# หมายเหตุ (แก้ไขจากเวอร์ชันก่อนหน้า):
-#   - Defects4J รุ่นปัจจุบันใช้ Java 11 เป็นค่า default (ไม่ใช่ 7/8)
-#     แต่ยังติดตั้ง Java 8/17 ไว้ด้วยเผื่อ bug บางตัวต้องการ
-#   - EvoSuite ไม่ต้องดาวน์โหลด jar เอง — init.sh ของ Defects4J
-#     จัดเตรียมให้อัตโนมัติที่ framework/lib/test_generation/generation/
-#   - Perl deps ติดตั้งผ่าน cpanm --installdeps . (อ่านจาก cpanfile ของ
-#     Defects4J เอง แม่นยำกว่าการ list module เองทีละตัว)
+# JDart = Dynamic Symbolic (Concolic) Execution engine
+#   เป็นส่วนขยายของ NASA Java PathFinder (JPF)
+#   ต้อง build จาก source เอง 3 ส่วน: jpf-core, jConstraints(+z3 plugin), jdart
+#   ไม่มี jar สำเร็จรูปให้โหลดตรง ๆ เหมือน EvoSuite — ต้อง gradle build ที่นี่
 # =========================================================
 
 FROM ubuntu:22.04
@@ -16,7 +13,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Bangkok
 
-# ---- 1. Basic tools + Java 8/11/17 ----
+# ---- 1. Basic tools + Java 8/11/17 + Z3 solver (จำเป็นสำหรับ JDart) ----
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -33,6 +30,8 @@ RUN apt-get update && apt-get install -y \
     maven \
     ant \
     tzdata \
+    z3 \
+    libz3-dev \
     openjdk-8-jdk \
     openjdk-11-jdk \
     openjdk-17-jdk \
@@ -60,10 +59,47 @@ RUN defects4j info -p Chart
 RUN ls -la /opt/defects4j/framework/lib/test_generation/generation/ \
     || echo "WARNING: ตรวจสอบ path ของ test-generation tools (EvoSuite jar ควรอยู่ในนี้)"
 
-# ---- 5. โฟลเดอร์สำหรับ GRT (คนที่ 2 ต้องหา tool มาวางเอง — ไม่มี official release แบบ Kex) ----
-RUN mkdir -p /opt/tools/grt
-# วิธีใช้: หา jar ของเครื่องมือที่ implement GRT (เช่น Randoop รุ่น GRT mode)
-# แล้ววางที่โฟลเดอร์ ./tools/ บนเครื่องจริง (mount เข้า /opt/tools/grt ผ่าน docker-compose)
+# =========================================================
+# ---- 5. JDart stack: jpf-core -> jConstraints(+z3) -> jdart ----
+# อ้างอิงขั้นตอนจาก README ทางการของแต่ละ repo (build ด้วย Gradle)
+# =========================================================
+WORKDIR /opt/jdart-stack
+
+# 5.1 jpf-core (พื้นฐานของ Java PathFinder — ทุก JPF extension ต้องมีตัวนี้)
+RUN git clone https://github.com/javapathfinder/jpf-core.git
+WORKDIR /opt/jdart-stack/jpf-core
+RUN chmod +x gradlew && ./gradlew clean build -x test
+
+# 5.2 jConstraints (constraint-solver abstraction layer ที่ JDart ใช้)
+WORKDIR /opt/jdart-stack
+RUN git clone https://github.com/tudo-aqua/jConstraints.git
+WORKDIR /opt/jdart-stack/jConstraints
+RUN chmod +x gradlew && ./gradlew clean build -x test
+
+# 5.3 jConstraints-z3 (ปลั๊กอินให้ jConstraints คุยกับ Z3 solver)
+WORKDIR /opt/jdart-stack
+RUN git clone https://github.com/tudo-aqua/jconstraints-z3.git
+WORKDIR /opt/jdart-stack/jconstraints-z3
+RUN chmod +x gradlew && ./gradlew clean build -x test || \
+    echo "WARNING: jconstraints-z3 build อาจต้องปรับ Z3 native path เอง — ดู README ของ repo นี้"
+
+# 5.4 JDart เอง (fork ที่ยัง maintain อยู่: tudo-aqua/jdart)
+WORKDIR /opt/jdart-stack
+RUN git clone https://github.com/tudo-aqua/jdart.git
+WORKDIR /opt/jdart-stack/jdart
+RUN chmod +x gradlew && ./gradlew clean build -x test || \
+    echo "WARNING: jdart build มีปัญหา — เช็ค log ข้างบนแล้วแก้ตาม README ของ psycopaths/jdart"
+
+# 5.5 ตั้งค่า site.properties ให้ JPF รู้จัก jpf-core + jdart extension
+RUN mkdir -p /root/.jpf && \
+    { \
+      echo "jpf-core = /opt/jdart-stack/jpf-core"; \
+      echo "jpf-jdart = /opt/jdart-stack/jdart"; \
+      echo "extensions=\${jpf-core},\${jpf-jdart}"; \
+    } > /root/.jpf/site.properties
+
+ENV JDART_HOME=/opt/jdart-stack/jdart
+ENV JPF_CORE_HOME=/opt/jdart-stack/jpf-core
 
 # ---- 6. Python deps สำหรับ benchmark runner ----
 RUN pip3 install --no-cache-dir requests pandas

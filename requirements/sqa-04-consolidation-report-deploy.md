@@ -7,7 +7,7 @@
 
 ## ต้องใช้ไฟล์/เครื่องมืออะไรบ้าง (เตรียมก่อนเริ่ม)
 1. **`results_mosa.csv`** + สรุปข้อจำกัด — **ต้องรอจากคนที่ 1**
-2. **`results_grt.csv`** + สรุปข้อจำกัด — **ต้องรอจากคนที่ 2**
+2. **`results_jdart.csv`** + สรุปข้อจำกัด (โดยเฉพาะ % method ที่ auto-symbolic ไม่ได้) — **ต้องรอจากคนที่ 2**
 3. **`results_claude_code.csv`, `results_codex.csv`** + สรุปเปรียบเทียบพฤติกรรม — **ต้องรอจากคนที่ 3**
 4. **รายงานรอบที่ 1** (โครงสารบัญเดิม) — ใช้ต่อยอดเป็นรายงานฉบับสมบูรณ์
 5. เครื่องมือทำกราฟ/ตาราง (เช่น Python pandas+matplotlib, Excel) — สำหรับสรุปผลเปรียบเทียบ
@@ -25,7 +25,7 @@
 
 ## สิ่งที่ต้องทำ
 1. **รวมข้อมูล (data consolidation)**
-   - รวม `results_mosa.csv`, `results_grt.csv`, `results_claude_code.csv`, `results_codex.csv` เป็นตารางเดียว (เพิ่มคอลัมน์ `tool_type = algorithm/ai_tool`)
+   - รวม `results_mosa.csv`, `results_jdart.csv`, `results_claude_code.csv`, `results_codex.csv` เป็นตารางเดียว (เพิ่มคอลัมน์ `tool_type = algorithm/ai_tool`)
    - ตรวจสอบความครบถ้วน (ทุก bug ในทั้ง 17 projects มีผลจากทั้ง 4 เครื่องมือหรือไม่ — ถ้าใครขาดต้องแจ้งกลับให้รันเพิ่ม) เทียบจำนวนแถวใน `results/*.csv` กับจำนวน Active Bugs จริงต่อ project ใน `dataset/defects4j/<Project>_metadata.csv`
    - **สกัด Active Bugs metadata ของอีก 16 projects ที่เหลือ** (ตอนนี้มีแค่ Lang) ด้วย `defects4j bids -p <Project>` แล้วเก็บเป็น `<Project>_metadata.csv` ในรูปแบบเดียวกับ `Lang_metadata.csv` ให้ทีมใช้ร่วมกันก่อนคนที่ 1-3 จะรันเต็ม `--all-bugs`
 2. **วิเคราะห์เปรียบเทียบ** (ตอบข้อ 2.2(3) ของ spec โดยตรง)
@@ -41,12 +41,12 @@
    - แนบ source code/test code/configuration/prompt ทั้งหมด (อ้างอิง path ใน repo ให้ผู้อ่านทำซ้ำได้ตามข้อ 2.2(4))
 4. **จัดทำ Presentation**
    - สไลด์ตามโครงรายงาน: Intro → Algorithms → AI Tools → ผลการทดลอง → เปรียบเทียบ → สรุป
-   - เตรียม Demo สด: รัน MOSA/GRT/Claude Code/Codex กับ 1 bug ตัวอย่างให้ดูสั้น ๆ
+   - เตรียม Demo สด: รัน MOSA/JDart/Claude Code/Codex กับ 1 bug ตัวอย่างให้ดูสั้น ๆ
 5. **จัดโครงสร้าง GitHub ให้ครบตาม spec ข้อ 1.10** (รวมของทั้ง 4 คน)
    ```
    ProjectName/
      MOSA_EvoSuite/...
-     GRT/...
+     JDart/...
      Claude-sonnet_4_6/...
      Codex/...
      Report/          (รายงานฉบับสมบูรณ์ .docx/.pdf)
