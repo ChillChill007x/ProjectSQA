@@ -22,6 +22,8 @@
 ---
 
 > **📖 สำหรับสมาชิกทุกคนในทีม:** ดูขั้นตอนการทำงานแบบละเอียดรายบุคคล คำสั่งที่ต้องใช้ และตำแหน่งส่งมอบไฟล์ได้ที่โฟลเดอร์ [`requirements/`](./requirements/) (ไฟล์แยกตามคน) และ [`GIT-SETUP.md`](./GIT-SETUP.md)
+>
+> **⚠️ อ่านก่อนเริ่มงานจริง:** ดูข้อควรระวัง + วิธีแก้ปัญหาที่พบบ่อย แยกตามคนที่ [`CAUTIONS.md`](./CAUTIONS.md)
 
 ---
 
@@ -96,6 +98,7 @@ defects4j bids -p <Project> | wc -l  # นับจำนวน active bugs
 ```
 ProjectSQA/
 ├── README.md                          # เอกสารหลักแนะนำโปรเจกต์และข้อกำหนด (ไฟล์นี้)
+├── CAUTIONS.md                        # ข้อควรระวัง + วิธีแก้ปัญหา แยกตามคน
 ├── GIT-SETUP.md                       # ขั้นตอน push/clone สำหรับทีม
 ├── requirements/                      # Spec แยกตามคนรับผิดชอบ (4 ไฟล์)
 │   ├── sqa-01-mosa-evosuite.md
@@ -105,6 +108,8 @@ ProjectSQA/
 ├── dataset/                           # Metadata / benchmark dataset ที่สกัดจาก Defects4J
 │   └── defects4j/
 │       └── Lang_metadata.csv          # Metadata ของ Lang active bugs (61 bugs) — ดูหัวข้อ Dataset
+├── prompts/                            # Prompt template สำหรับ AI test generation (คนที่ 3)
+│   └── ai-test-generation-prompt.md    # System/Role prompt + Task prompt แยกส่วน พร้อม placeholder table
 ├── docker/                            # สภาพแวดล้อมมาตรฐานสำหรับรัน Defects4J
 │   ├── Dockerfile                     # Multi-JDK (8/11/17; Java 11 default) + EvoSuite (auto) + Python
 │   ├── docker-compose.yml

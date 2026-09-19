@@ -8,18 +8,18 @@
 ## ต้องใช้ไฟล์/เครื่องมืออะไรบ้าง (เตรียมก่อนเริ่ม)
 1. **Defects4J** — checkout bug/class ให้ครบทั้ง 17 projects (ไม่ใช่ subset — เหมือนคนที่ 1/2 เป๊ะ) — **แนะนำใช้ Docker ชุดเดียวกับคนที่ 1/2** (`Dockerfile`/`docker-compose.yml`) เฉพาะตอนรัน `defects4j checkout` และ `defects4j coverage` (ขั้นวัดผล) เพื่อให้ Java/Defects4J version ตรงกับอีก 2 คนเป๊ะ ผลจะได้เทียบกันได้ยุติธรรม — ส่วนตัว Claude Code CLI / Codex CLI เองแนะนำให้รัน**นอก container** ตามปกติ (เพราะต้อง login/auth กับ API ข้างนอก ใน container จัดการ credential ยุ่งยากกว่า) ดูวิธี build/run ใน `README-docker-desktop.md`
 2. **Claude Code CLI** และ **Codex CLI** — ติดตั้งและ login ให้พร้อมรันแบบ agentic
-3. **Prompt ที่ออกแบบไว้ในรอบ 1** (รวมตารางที่ 3: ตัวแปรที่ต้องแทนที่ต่อหนึ่ง bug และ class) — **ขอไฟล์นี้จากคนที่ทำรายงานรอบ 1** ถ้ายังไม่มีให้รวบรวมจากรายงานฉบับเดิม
+3. **Prompt template ที่ออกแบบไว้แล้ว** — `prompts/ai-test-generation-prompt.md` (system/role prompt ใช้ครั้งเดียว + task prompt กรอก placeholder ต่อ bug) พร้อมใช้ทันที ไม่ต้องรอใคร
 4. **ขอบเขตทั้ง 17 projects เดียวกับคนที่ 1 และ 2** — รันทุก project/ทุก bug เพื่อรัน class เดียวกันทั้งหมด
 5. **ไฟล์ Active Bugs metadata** — ใช้ `dataset/defects4j/<Project>_metadata.csv` ชุดเดียวกับคนที่ 1/2 (ตอนนี้มีแค่ `Lang_metadata.csv` — 61 active bugs, ตัด deprecated `2,18,25,48` ออกแล้ว) **ห้ามรัน bug ที่ deprecated** — เพราะจะได้ target class/triggering test ที่ไม่ valid ทำให้ prompt สั่งงานผิด
 6. ไฟล์ requirement นี้
 
 ## เริ่มงานได้ขนานกับคนที่ 1 และ 2 ได้เลย
-ขอบเขตคือทั้ง 17 projects อยู่แล้ว แค่ต้องมี prompt จากรอบ 1 ที่พร้อมใช้
+ขอบเขตคือทั้ง 17 projects อยู่แล้ว แค่ต้องใช้ prompt template ที่ `prompts/ai-test-generation-prompt.md`
 
 ---
 
 ## เป้าหมาย
-ใช้ prompt ที่ออกแบบไว้ในรอบ 1 สั่ง Claude Code และ Codex ให้สร้าง JUnit test suite สำหรับ class under test ชุดเดียวกับ Requirement 1 และ 2 แล้ววัดผลด้วย metric เดียวกัน
+ใช้ prompt template ที่ `prompts/ai-test-generation-prompt.md` สั่ง Claude Code และ Codex ให้สร้าง JUnit test suite สำหรับ class under test ชุดเดียวกับ Requirement 1 และ 2 แล้ววัดผลด้วย metric เดียวกัน
 
 ## สิ่งที่ต้องทำ
 1. **Setup**
@@ -29,9 +29,10 @@
    - เปิด `dataset/defects4j/<Project>_metadata.csv` ดู bug id + target class + triggering test ที่ถูกต้อง (Lang พร้อมแล้ว 61 ตัว)
    - project ที่ยังไม่มี metadata ให้รอคนที่ 4 สกัดให้ก่อน หรือแจ้งทีมถ้าจำเป็นต้องรันเร่งด่วน
    - **เริ่มจาก Lang ก่อน** ให้ตรงกับที่คนที่ 1/2 เริ่มไว้
-3. **นำ prompt จากรอบ 1 มาใช้จริง**
-   - ปรับ placeholder ในพรอมพ์ให้ตรงกับแต่ละ bug จริง (ใช้ target_class/triggering_test จาก metadata CSV โดยตรง ไม่ต้องเปิด Defects4J เว็บเช็คเอง)
-   - สั่ง Claude Code สร้าง JUnit test suite ให้ class under test, ให้ agent รัน build/test เองจนผ่าน
+3. **ใช้ prompt template ที่ออกแบบไว้แล้ว** — ดู `prompts/ai-test-generation-prompt.md` (แทนที่ prompt จากรอบ 1 เดิม)
+   - System/Role prompt (RULE 1-7) ใส่ครั้งเดียวใน config ของ agent (`CLAUDE.md` หรือไฟล์ instruction ของ Codex)
+   - Task prompt กรอก placeholder ต่อ bug จาก `dataset/defects4j/<Project>_metadata.csv` และ `defects4j export` ตามตารางในไฟล์ prompt
+   - สั่ง Claude Code สร้าง JUnit test suite ให้ class under test, ให้ agent รัน build/test เองจนผ่าน (RULE 6 บังคับ self-verify ไว้ในตัว prompt แล้ว)
    - ทำแบบเดียวกันกับ Codex บน bug/class ชุดเดียวกัน
 4. **วัดผล**
    - รัน `defects4j coverage` กับ test suite ที่ AI สร้าง เพื่อวัด test coverage / branch coverage
