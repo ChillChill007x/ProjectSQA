@@ -1,0 +1,17 @@
+services:
+  sqa-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sqa-mosa-grt:latest
+    container_name: sqa-mosa-grt
+    volumes:
+      # โฟลเดอร์ทำงาน (checkout, script, ผลลัพธ์) — sync กับเครื่องจริงตลอดเวลา
+      - ./work:/workspace
+      # โฟลเดอร์ผลลัพธ์ CSV ที่ต้องส่งให้คนที่ 4
+      - ./results:/workspace/results
+      # โฟลเดอร์สำหรับวาง jar เพิ่มเติม (grt.jar ของคนที่ 2)
+      - ./tools:/opt/tools/grt
+    tty: true
+    stdin_open: true
+    working_dir: /workspace
