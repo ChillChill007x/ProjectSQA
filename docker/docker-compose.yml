@@ -1,17 +1,40 @@
 services:
   sqa-runner:
+    user: "${SQA_UID:-1000}:${SQA_GID:-1000}"
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: sqa-mosa-jdart:latest
-    container_name: sqa-mosa-jdart
-    volumes:
-      # โฟลเดอร์ทำงาน (checkout, script, ผลลัพธ์) — sync กับเครื่องจริงตลอดเวลา
-      - ./work:/workspace
-      # โฟลเดอร์ผลลัพธ์ CSV ที่ต้องส่งให้คนที่ 4
-      - ./results:/workspace/results
-      # โฟลเดอร์สำรอง — ไม่จำเป็นสำหรับ JDart (build อยู่ใน image แล้ว) เผื่อไว้สำหรับไฟล์เสริมอื่น
-      - ./tools:/opt/tools/extra
-    tty: true
-    stdin_open: true
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: core
+    image: project-sqa:core-v2
+    init: true
     working_dir: /workspace
+    volumes:
+      - ../:/workspace
+    environment:
+      TZ: America/Los_Angeles
+      SQA_WORK: /workspace/work
+      SQA_TOOLS: /opt/sqa/lib
+    stdin_open: true
+    tty: true
+
+  sqa-ai:
+    profiles: [ai]
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: ai
+    image: project-sqa:ai-v2
+    init: true
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+      - ai-home:/home/sqa
+    environment:
+      TZ: America/Los_Angeles
+      SQA_WORK: /workspace/work
+      SQA_TOOLS: /opt/sqa/lib
+    stdin_open: true
+    tty: true
+
+volumes:
+  ai-home:

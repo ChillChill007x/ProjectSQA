@@ -1,0 +1,13 @@
+{
+  "protocol_version": "2.0",
+  "generation_revision": "f",
+  "budgets_seconds": {"Round1": 60, "Round2": 180},
+  "seeds": [101, 202, 303],
+  "process_timeout_seconds": 900,
+  "test_timeout_seconds": 120,
+  "ai_timeout_seconds": 900,
+  "ai_max_retries": 2,
+  "models": {"claude_code": "claude-sonnet-4-6", "codex": "gpt-5-codex"},
+  "projects": ["Chart", "Cli", "Closure", "Codec", "Collections", "Compress", "Csv", "Gson", "JacksonCore", "JacksonDatabind", "JacksonXml", "Jsoup", "JxPath", "Lang", "Math", "Mockito", "Time"],
+  "grt": {"max_tests": 100, "max_sequence_length": 40, "pool_limit": 1000, "detective_depth": 3, "invocation_timeout_ms": 1000, "coverage_interval_seconds": 50, "p_const": 0.01, "sigma": 30, "alpha": 0.9, "p": 0.99}
+}

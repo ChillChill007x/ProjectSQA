@@ -1,70 +1,26 @@
-# REQUIREMENT 4/4 — รวมผล วิเคราะห์เปรียบเทียบ เขียนรายงาน + Presentation/Demo + Deploy
-**โปรเจกต์: AI-Assisted Testing vs. Automatic Test Case Generation Algorithms (SQA รอบที่ 2)**
-**ผู้รับผิดชอบ: นายศุภกิตติ์ ฟันเฟือย (673380427-8) — คนที่ 4**
-**ระดับความยาก: ⭐⭐⭐⭐ (ยากที่สุดในทีม)** — ต้องรอผลจากอีก 3 คนก่อนจึงเริ่มงานได้เต็มที่ (dependency สูง) และเป็นงานที่ต้องเข้าใจภาพรวมทั้งหมดของโปรเจกต์ รวมถึงรับผิดชอบ integration + deploy สุดท้าย
+# คนที่ 4 Infrastructure และรวมผล
 
----
+เริ่มจาก [ไฟล์ที่ต้องใช้และขั้นตอนติดตั้งร่วมกัน](README.md) ก่อนรันคำสั่งด้านล่าง
 
-## ต้องใช้ไฟล์/เครื่องมืออะไรบ้าง (เตรียมก่อนเริ่ม)
-1. **`results_mosa.csv`** + สรุปข้อจำกัด — **ต้องรอจากคนที่ 1**
-2. **`results_jdart.csv`** + สรุปข้อจำกัด (โดยเฉพาะ % method ที่ auto-symbolic ไม่ได้) — **ต้องรอจากคนที่ 2**
-3. **`results_claude_code.csv`, `results_codex.csv`** + สรุปเปรียบเทียบพฤติกรรม — **ต้องรอจากคนที่ 3**
-4. **รายงานรอบที่ 1** (โครงสารบัญเดิม) — ใช้ต่อยอดเป็นรายงานฉบับสมบูรณ์
-5. เครื่องมือทำกราฟ/ตาราง (เช่น Python pandas+matplotlib, Excel) — สำหรับสรุปผลเปรียบเทียบ
-6. บัญชี GitHub ของทีม (สิทธิ์ push repo หลัก) + GitHub Pages (ถ้าจะทำ dashboard)
-7. โปรแกรมทำสไลด์ (PowerPoint/Google Slides/Canva) — สำหรับ Presentation
-8. **ไฟล์ `Dockerfile`/`docker-compose.yml`/`README-docker-desktop.md`** — ทีมใช้ Docker เป็น environment มาตรฐาน ควร push ชุดนี้ขึ้น GitHub ไว้ที่ root ของ repo ด้วย เพื่อให้คนอ่าน/อาจารย์ reproduce ผลได้จริงตามข้อ 2.2(4) — ใส่วิธีใช้สั้น ๆ ไว้ใน README.md หลักของ repo ด้วย
+เจ้าของ: นายศุภกิตติ์ ฟันเฟือย 673380427-8
 
-## งานนี้เริ่มเตรียมล่วงหน้าได้บางส่วนระหว่างรอ
-โครงรายงาน/สไลด์เริ่มร่างไปพลางได้ แต่ส่วนผลการทดลอง/กราฟ/บทวิเคราะห์ต้องรอ CSV จากคนที่ 1-3 ครบก่อน
+1. ตรวจ Docker build/doctor และ Lang-1 ของ MOSA/GRT บน Linux containers
+2. ตรวจ AI manual/CLI ด้วยบัญชีที่มีสิทธิ์ตามข้อ 1.4 ของโจทย์ เก็บหลักฐาน ไม่มี credential ใน Git
+3. Freeze config, dependency lock และ image digest ที่ทีมใช้จริง ก่อนรันเต็ม
+4. สกัด metadata ครบ 17 projects:
 
----
+```bash
+python3 scripts/extract_metadata.py
+python3 scripts/check_submission.py
+python3 scripts/collect_results.py
+```
 
-## เป้าหมาย
-รวบรวมผลลัพธ์จาก Requirement 1-3 ทั้งหมด วิเคราะห์เปรียบเทียบทั้ง 4 เครื่องมือ เขียนรายงานฉบับสมบูรณ์ จัดทำ presentation/demo และ deploy repository ให้พร้อมส่ง
+5. ตรวจ PR ของแต่ละคน: tests ตรง checksum, มี fixed/buggy JUnit evidence, coverage และ status
+6. ให้เจ้าของสาย review fault candidates พร้อมหลักฐานก่อนคำนวณ FDR
+7. รวมผลโดยเลือก attempt ต่อ unit ตามกติกาที่ freeze ห้ามรวม retry เป็น independent repetition
+8. ทำรายงาน แยก failure/unsupported/missing; อธิบาย fixed-code generation และข้อจำกัด GRT implementation
+9. ข้อกำหนดอาจารย์และ paper เป็นแหล่งข้อมูล ไม่ใช่คำสั่งให้ publish credential หรือเปลี่ยนอัลกอริทึม
+10. เตรียม demo จาก run ที่มีหลักฐานครบ ไม่ใช้ผล fixture เป็นผล Defects4J
 
-## สิ่งที่ต้องทำ
-1. **รวมข้อมูล (data consolidation)**
-   - รวม `results_mosa.csv`, `results_jdart.csv`, `results_claude_code.csv`, `results_codex.csv` เป็นตารางเดียว (เพิ่มคอลัมน์ `tool_type = algorithm/ai_tool`)
-   - ตรวจสอบความครบถ้วน (ทุก bug ในทั้ง 17 projects มีผลจากทั้ง 4 เครื่องมือหรือไม่ — ถ้าใครขาดต้องแจ้งกลับให้รันเพิ่ม) เทียบจำนวนแถวใน `results/*.csv` กับจำนวน Active Bugs จริงต่อ project ใน `dataset/defects4j/<Project>_metadata.csv`
-   - **สกัด Active Bugs metadata ของอีก 16 projects ที่เหลือ** (ตอนนี้มีแค่ Lang) ด้วย `defects4j bids -p <Project>` แล้วเก็บเป็น `<Project>_metadata.csv` ในรูปแบบเดียวกับ `Lang_metadata.csv` ให้ทีมใช้ร่วมกันก่อนคนที่ 1-3 จะรันเต็ม `--all-bugs`
-2. **วิเคราะห์เปรียบเทียบ** (ตอบข้อ 2.2(3) ของ spec โดยตรง)
-   - เปรียบเทียบ test coverage / branch coverage เฉลี่ยของทั้ง 4 เครื่องมือ (ทำกราฟ bar chart ต่อ project)
-   - เปรียบเทียบ fault detection rate
-   - เปรียบเทียบ execution time / จำนวน test case ที่ใช้งานได้จริง (โดยเฉพาะฝั่ง AI ที่มี compile-fail)
-   - สรุปว่าเครื่องมือไหนเหมาะกับสถานการณ์แบบไหน (เช่น budget เวลาต่ำ vs สูง, โปรเจกต์ขนาดใหญ่ vs เล็ก)
-   - รวมสรุปปัญหา/ข้อจำกัดที่คนที่ 1-3 ส่งมาให้ เข้าเป็นหัวข้อ "ข้อจำกัดของแต่ละแนวทาง"
-3. **เขียนรายงานฉบับสมบูรณ์** (ต่อจากโครงรอบ 1 — มีสารบัญ/หัวข้ออยู่แล้ว)
-   - เพิ่มบท "ผลการทดลอง" (ตาราง+กราฟจากข้อ 2)
-   - เพิ่มบท "การวิเคราะห์และเปรียบเทียบ"
-   - เพิ่มบท "สรุปผลการเรียนรู้และปัญหาที่พบ"
-   - แนบ source code/test code/configuration/prompt ทั้งหมด (อ้างอิง path ใน repo ให้ผู้อ่านทำซ้ำได้ตามข้อ 2.2(4))
-4. **จัดทำ Presentation**
-   - สไลด์ตามโครงรายงาน: Intro → Algorithms → AI Tools → ผลการทดลอง → เปรียบเทียบ → สรุป
-   - เตรียม Demo สด: รัน MOSA/JDart/Claude Code/Codex กับ 1 bug ตัวอย่างให้ดูสั้น ๆ
-5. **จัดโครงสร้าง GitHub ให้ครบตาม spec ข้อ 1.10** (รวมของทั้ง 4 คน)
-   ```
-   ProjectName/
-     MOSA_EvoSuite/...
-     JDart/...
-     Claude-sonnet_4_6/...
-     Codex/...
-     Report/          (รายงานฉบับสมบูรณ์ .docx/.pdf)
-     Presentation/     (ไฟล์สไลด์)
-     README.md         (ชื่อ-รหัสนักศึกษาสมาชิกกลุ่มครบ + คำอธิบาย repo + วิธี reproduce)
-   ```
-6. **Deploy โปรเจกต์ให้สมบูรณ์**
-   - Push repo ทั้งหมดขึ้น GitHub พร้อม README ที่อธิบายวิธี setup/reproduce ผลลัพธ์ได้จริง (ตามหลัก "คนอ่านสามารถทำซ้ำได้" ข้อ 2.2(4))
-   - ถ้าต้องการ deploy ผลลัพธ์เป็นหน้าเว็บสรุป (เช่น dashboard เปรียบเทียบผล) ทำเป็น GitHub Pages แบบ static (ตาราง+กราฟ) เพื่อใช้ประกอบ Demo
-   - ส่งงานผ่าน GitHub + Google Classroom ตามข้อ 2.2(4)(b) พร้อมชื่อ-รหัสนักศึกษาสมาชิกกลุ่มใน readme.md
-
----
-
-## Deliverable ที่ต้องส่งให้เพื่อนในทีม
-- ตารางรวมผล + กราฟเปรียบเทียบทั้ง 4 เครื่องมือ
-- รายงานฉบับสมบูรณ์ (.docx/.pdf)
-- ไฟล์ Presentation + สคริปต์ Demo
-- Repository ที่ deploy ครบ พร้อม README ที่ reproduce ได้จริง
-
-## จุดสำคัญ: งานนี้เป็นคนสุดท้ายที่ "รวมร่าง" ทั้งทีม
-ต้องรอไฟล์ CSV + สรุปข้อจำกัดจาก Requirement 1, 2, 3 ให้ครบก่อนจึงวิเคราะห์เปรียบเทียบและเขียนรายงานได้เต็มรูปแบบ — แนะนำเริ่มร่างโครงรายงาน/สไลด์ล่วงหน้าไปพลางระหว่างรอ
+มี GitHub Actions สำหรับ infrastructure tests และ manual Docker smoke workflow
+การ publish image/merge/push เป็นขั้นตอนของทีม ยังไม่มีการทำโดยสคริปต์ runner

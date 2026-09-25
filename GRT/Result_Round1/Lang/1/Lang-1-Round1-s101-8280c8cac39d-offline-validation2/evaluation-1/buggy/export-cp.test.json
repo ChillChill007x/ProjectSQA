@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.28,
+  "stdout": "/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/buggy/target/classes:/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/buggy/target/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/opt/defects4j/framework/projects/Lang/lib/easymock.jar:/opt/defects4j/framework/projects/Lang/lib/commons-io.jar:/opt/defects4j/framework/projects/Lang/lib/cglib.jar:/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

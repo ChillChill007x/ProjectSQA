@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 50,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 101,
+  "target": "org.apache.commons.lang3.math.NumberUtils",
+  "output": "/workspace/GRT/Test/Lang/1/Lang-1-Round1-s101-8280c8cac39d",
+  "class_root": "/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/generation-fixed/target/classes",
+  "budget_seconds": 60
+}

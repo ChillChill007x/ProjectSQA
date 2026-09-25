@@ -1,69 +1,46 @@
-# REQUIREMENT 3/4 — Claude Code + Codex — AI-Assisted Test Generation Runner
-**โปรเจกต์: AI-Assisted Testing vs. Automatic Test Case Generation Algorithms (SQA รอบที่ 2)**
-**ผู้รับผิดชอบ: นายภีมเดช กลั่นกิ่ง (673380420-2) — คนที่ 3**
-**ระดับความยาก: ⭐⭐ (ง่าย-ปานกลาง ด้าน setup) แต่ ⭐⭐⭐⭐ (ยาก ด้านปริมาณงาน)** — ไม่ต้องสู้กับ dependency เก่าเหมือน EvoSuite/JDart แต่ต้องรัน 2 เครื่องมือ (Claude Code, Codex) แยกกัน และต้อง manual-check ผลลัพธ์จาก agentic tool มากกว่า เพราะ AI อาจสร้าง test ที่ compile ไม่ผ่านหรือ hallucinate
+# คนที่ 3 Claude Code และ Codex
 
----
+เริ่มจาก [ไฟล์ที่ต้องใช้และขั้นตอนติดตั้งร่วมกัน](README.md) ก่อนรันคำสั่งด้านล่าง
 
-## ต้องใช้ไฟล์/เครื่องมืออะไรบ้าง (เตรียมก่อนเริ่ม)
-1. **Defects4J** — checkout bug/class ให้ครบทั้ง 17 projects (ไม่ใช่ subset — เหมือนคนที่ 1/2 เป๊ะ) — **แนะนำใช้ Docker ชุดเดียวกับคนที่ 1/2** (`Dockerfile`/`docker-compose.yml`) เฉพาะตอนรัน `defects4j checkout` และ `defects4j coverage` (ขั้นวัดผล) เพื่อให้ Java/Defects4J version ตรงกับอีก 2 คนเป๊ะ ผลจะได้เทียบกันได้ยุติธรรม — ส่วนตัว Claude Code CLI / Codex CLI เองแนะนำให้รัน**นอก container** ตามปกติ (เพราะต้อง login/auth กับ API ข้างนอก ใน container จัดการ credential ยุ่งยากกว่า) ดูวิธี build/run ใน `README-docker-desktop.md`
-2. **Claude Code CLI** และ **Codex CLI** — ติดตั้งและ login ให้พร้อมรันแบบ agentic
-3. **Prompt template ที่ออกแบบไว้แล้ว** — `prompts/ai-test-generation-prompt.md` (system/role prompt ใช้ครั้งเดียว + task prompt กรอก placeholder ต่อ bug) พร้อมใช้ทันที ไม่ต้องรอใคร
-4. **ขอบเขตทั้ง 17 projects เดียวกับคนที่ 1 และ 2** — รันทุก project/ทุก bug เพื่อรัน class เดียวกันทั้งหมด
-5. **ไฟล์ Active Bugs metadata** — ใช้ `dataset/defects4j/<Project>_metadata.csv` ชุดเดียวกับคนที่ 1/2 (ตอนนี้มีแค่ `Lang_metadata.csv` — 61 active bugs, ตัด deprecated `2,18,25,48` ออกแล้ว) **ห้ามรัน bug ที่ deprecated** — เพราะจะได้ target class/triggering test ที่ไม่ valid ทำให้ prompt สั่งงานผิด
-6. ไฟล์ requirement นี้
+เจ้าของ: นายภีมเดช กลั่นกิ่ง 673380420-2
+ผลแต่ละเครื่องมือแยก Prompt / Result / TestCode ตามภาพที่ทีมกำหนด
+Claude-sonnet_4_6 คือชื่อโฟลเดอร์ที่ทีมเลือก ชื่อ model จริงต้องบันทึกใน provenance ด้วย
+default config ขอ claude-sonnet-4-6 และ gpt-5-codex; ตรวจสิทธิ์ใช้ของบัญชีก่อนรันและ freeze model ร่วมกัน
 
-## เริ่มงานได้ขนานกับคนที่ 1 และ 2 ได้เลย
-ขอบเขตคือทั้ง 17 projects อยู่แล้ว แค่ต้องใช้ prompt template ที่ `prompts/ai-test-generation-prompt.md`
+## แบบ manual ซึ่งใช้ได้กับสิทธิ์เครื่องมือที่มีอยู่
 
----
+```bash
+python3 scripts/run_ai_benchmark.py --tool claude_code --project Lang --bug 1 --seed 101
+python3 scripts/run_ai_benchmark.py --tool codex --project Lang --bug 1 --seed 101
+```
 
-## เป้าหมาย
-ใช้ prompt template ที่ `prompts/ai-test-generation-prompt.md` สั่ง Claude Code และ Codex ให้สร้าง JUnit test suite สำหรับ class under test ชุดเดียวกับ Requirement 1 และ 2 แล้ววัดผลด้วย metric เดียวกัน
+1. อ่าน TASK.md ที่ runner แสดง แล้วใช้กับ Claude Code/Codex โดยให้เฉพาะ fixed source และ dependencies
+2. จับเวลาจริง เก็บบทสนทนา/คำตอบใน Prompt ของ run เดียวกัน ห้ามใส่ token/password/session cookie
+3. วาง .java ใต้ TestCode/<Project>/<Bug>/<run-id>/ ตาม package รวม helper test files ที่ต้องใช้
+4. กรอก `model_reported` และ `generation_time_sec` ใน provenance.json; usage เป็น null ได้ถ้าไม่มีข้อมูล
+5. รันคำสั่งประเมินที่ runner แสดง เช่น:
 
-## สิ่งที่ต้องทำ
-1. **Setup**
-   - ใช้ Defects4J checkout ของ class เดียวกับ Requirement 1/2 (`defects4j checkout ...`)
-   - เตรียม Claude Code CLI และ Codex CLI ให้พร้อมรันในโหมด agentic ภายใน working directory ของแต่ละ bug
-2. **ยืนยัน Active Bug list ตรงกับคนที่ 1/2 ก่อนเริ่ม**
-   - เปิด `dataset/defects4j/<Project>_metadata.csv` ดู bug id + target class + triggering test ที่ถูกต้อง (Lang พร้อมแล้ว 61 ตัว)
-   - project ที่ยังไม่มี metadata ให้รอคนที่ 4 สกัดให้ก่อน หรือแจ้งทีมถ้าจำเป็นต้องรันเร่งด่วน
-   - **เริ่มจาก Lang ก่อน** ให้ตรงกับที่คนที่ 1/2 เริ่มไว้
-3. **ใช้ prompt template ที่ออกแบบไว้แล้ว** — ดู `prompts/ai-test-generation-prompt.md` (แทนที่ prompt จากรอบ 1 เดิม)
-   - System/Role prompt (RULE 1-7) ใส่ครั้งเดียวใน config ของ agent (`CLAUDE.md` หรือไฟล์ instruction ของ Codex)
-   - Task prompt กรอก placeholder ต่อ bug จาก `dataset/defects4j/<Project>_metadata.csv` และ `defects4j export` ตามตารางในไฟล์ prompt
-   - สั่ง Claude Code สร้าง JUnit test suite ให้ class under test, ให้ agent รัน build/test เองจนผ่าน (RULE 6 บังคับ self-verify ไว้ในตัว prompt แล้ว)
-   - ทำแบบเดียวกันกับ Codex บน bug/class ชุดเดียวกัน
-4. **วัดผล**
-   - รัน `defects4j coverage` กับ test suite ที่ AI สร้าง เพื่อวัด test coverage / branch coverage
-   - เช็ค fault detection rate (fail บน buggy / pass บน fixed)
-   - นับจำนวน test case ที่ compile ผ่านจริง vs ที่ AI สร้างมาทั้งหมด (metric เพิ่มเฉพาะฝั่ง AI เพราะมักมี test ที่ compile ไม่ผ่าน)
-5. **ทำซ้ำอย่างน้อย 3 รอบต่อ class ต่อเครื่องมือ** (เพราะ LLM output ไม่ deterministic) แล้วเฉลี่ยผล
-6. **บันทึกผลลัพธ์** แยก 2 ไฟล์ (schema เดียวกับ Requirement 1/2 + คอลัมน์เสริม):
-   - `results_claude_code.csv`
-   - `results_codex.csv`
-   คอลัมน์: `project, bug_id, tool(claude_code/codex), run_no, test_coverage, branch_coverage, fault_detected(0/1), num_test_cases_generated, num_test_cases_compiled, execution_time_sec`
-7. **จัดโครงสร้าง GitHub**:
-   ```
-   ProjectName/Claude-sonnet_4_6/
-     Prompt/     (prompt ที่ใช้จริงต่อ bug)
-     Result/     (results_claude_code.csv + raw log)
-     TestCode/   (test suite ที่ generate)
-   ProjectName/Codex/
-     Prompt/
-     Result/
-     TestCode/
-   ```
-7. เขียนสรุปเปรียบเทียบพฤติกรรมของ Claude Code vs Codex ที่สังเกตเห็นจริง (300-500 คำ)
+```bash
+python3 scripts/run_benchmark.py --evaluate-run Claude-sonnet_4_6/Result/Lang/1/<run-id>/result.json
+```
 
----
+ถ้าผิด compile/runtime ให้ดู logs และแก้ suite ของ run ที่ยังไม่ผ่าน เก็บประวัติ prompt/response เพิ่มทุกครั้ง
+เมื่อ EVALUATED แล้วห้ามแก้ suite เดิม ถ้าจะปรับต้องสร้าง run ใหม่
 
-## Deliverable ที่ต้องส่งให้เพื่อนในทีม
-- `results_claude_code.csv`, `results_codex.csv` ครบทุก bug/run ของทั้ง 17 projects
+## แบบ CLI อัตโนมัติ
 
-> **หมายเหตุเรื่องปริมาณงาน:** ทั้ง 17 projects มีบั๊กรวมกัน 800+ ตัว × 2 เครื่องมือ × 3 รอบ = งานที่หนักมากสำหรับ agentic AI (ต้องรอ API/rate limit ด้วย) แนะนำเริ่มจาก `--sample-17` (โปรเจกต์ละ 1 bug) ให้ pipeline สมบูรณ์ก่อน แล้วค่อยขยายเป็นเต็มทีละ project พร้อมเก็บ log ว่าถึงไหนแล้ว (จะได้ resume ได้ถ้าโดนตัดกลางทาง)
-- โฟลเดอร์ `Prompt/` และ `TestCode/` ของทั้งสองเครื่องมือ
-- สรุปเปรียบเทียบพฤติกรรม 2 เครื่องมือ 300-500 คำ
+ใช้ image sqa-ai, login บัญชีตัวเองตาม docker/README-docker-desktop.md แล้ว:
 
-## ใครรอผลงานจากคนนี้บ้าง
-- **คนที่ 4** (รวมผล+รายงาน+deploy) — ต้องรอ `results_claude_code.csv`, `results_codex.csv` และสรุปเปรียบเทียบพฤติกรรม เพื่อเอาไปรวมวิเคราะห์เปรียบเทียบกับ MOSA/JDart
+```bash
+python3 scripts/run_ai_benchmark.py --tool claude_code --project Lang --bug 1 --seed 101 --ai-mode cli --allow-ai-calls
+python3 scripts/run_ai_benchmark.py --tool codex --project Lang --bug 1 --seed 101 --ai-mode cli --allow-ai-calls
+```
+
+ระบบใช้ CLI จริง ไม่ส่งข้อความไป API แล้วอ้างว่าเป็น agent
+agent อ่าน source และเขียนไฟล์; evaluator กลางตรวจ fixed tests และคืน feedback สูงสุด 2 repair attempts
+เก็บ version, explicit model argument, คำตอบดิบ และ usage ที่บริการรายงาน
+ไม่แต่ง resolved model/usage หากบริการไม่รายงาน
+AI ไม่ได้ใช้ algorithm budget แบบเดียวกับ MOSA/GRT ต้องรายงานเวลาจริงและจำนวนครั้งแก้แยก
+
+ก่อน push ใช้ check_submission.py ทั้งสอง tools และส่ง Prompt, Result, TestCode ของทั้งสองโฟลเดอร์
+ห้ามเอาผลของ Claude ไปช่วย Codex หรือกลับกันในหน่วยทดลองเปรียบเทียบ

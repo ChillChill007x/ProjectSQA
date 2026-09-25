@@ -1,0 +1,14 @@
+{
+  "project": "Lang",
+  "bug": "1",
+  "target": "org.apache.commons.lang3.math.NumberUtils",
+  "tool": "evosuite",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 60,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "6094d74750cf28974b7c1786a57d7b74daa8adb47338911fdad4875e247b8930",
+  "ai_mode": null,
+  "model": null
+}

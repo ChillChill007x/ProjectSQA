@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 17.118,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang3.math.NumberUtilsTest::TestLang747\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,4 @@
+{
+  "purpose": "validation",
+  "reason": "Docker/Defects4J environment smoke test; MOSA and GRT may run concurrently. Exclude from experimental statistics."
+}

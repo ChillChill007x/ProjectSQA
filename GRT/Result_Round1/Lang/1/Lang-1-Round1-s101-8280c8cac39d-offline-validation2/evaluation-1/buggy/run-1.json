@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=destfile=/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/coverage-1.exec,append=false,excludes=*",
+    "-Djacoco-agent.destfile=/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/coverage-1.exec",
+    "-Djacoco-agent.append=false",
+    "-cp",
+    "/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/classes:/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/instrumented:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/instrumented:/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/buggy/target/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/opt/defects4j/framework/projects/Lang/lib/easymock.jar:/opt/defects4j/framework/projects/Lang/lib/commons-io.jar:/opt/defects4j/framework/projects/Lang/lib/cglib.jar:/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+    "SqaJUnitRunner",
+    "/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/evaluation-1/buggy/junit-1.json",
+    "org.apache.commons.lang3.math.SqaGeneratedTest"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.775,
+  "stdout": "",
+  "stderr": ""
+}

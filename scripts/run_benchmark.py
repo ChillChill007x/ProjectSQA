@@ -1,364 +1,233 @@
 #!/usr/bin/env python3
-"""
-run_benchmark.py
-=========================================================
-Universal Benchmark Runner — MOSA (EvoSuite) และ JDart บน Defects4J
-รองรับ 3 โหมด:
-  --project X --bug N     รันเดี่ยวเฉพาะบั๊กเดียว
-  --sample-17             รันตัวแทนโปรเจกต์ละ 1 บั๊ก (17 บั๊ก)
-  --all-bugs              รันทุก active bug ใน Defects4J ทั้งหมด
-เพิ่ม --resume เพื่อรันต่อจากจุดที่ค้างไว้ (อ่านจาก progress.json)
-
-ตัวอย่างการใช้:
-  python3 run_benchmark.py --project Lang --bug 1 --tool evosuite
-  python3 run_benchmark.py --sample-17 --tool jdart
-  python3 run_benchmark.py --all-bugs --tool evosuite --resume
-=========================================================
-"""
-
+"""One protocol and artifact layout for MOSA, GRT, Claude Code and Codex."""
+from __future__ import annotations
 import argparse
-import csv
+import hashlib
 import json
-import subprocess
-import sys
-import time
-from datetime import datetime
+import os
 from pathlib import Path
+import re
+import shutil
+import sys
+from datetime import datetime, timezone
+from common import ROOT, WORK, TOOLS, FOLDERS, StageError, build_support, config, dump, java, relative, run, sha, support_cp
+from evaluator import checkout, classpath, compare, evaluate_revision, export, validate_reference
 
-# ---------- Config: ปรับ path ให้ตรงกับเครื่องของคุณถ้าไม่ได้รันใน Docker ----------
-BASE_DIR = Path.home() / "sqa-benchmark"
-CHECKOUT_DIR = BASE_DIR / "checkouts"
-RESULT_DIR = BASE_DIR / "results"
-LOG_DIR = BASE_DIR / "logs"
-PROGRESS_FILE = BASE_DIR / "progress.json"
+def utc():
+    return datetime.now(timezone.utc).isoformat()
 
-# EvoSuite jar ที่ Defects4J init.sh ดาวน์โหลดไว้ให้อัตโนมัติ
-EVOSUITE_JAR_GLOB = "/opt/defects4j/framework/lib/test_generation/generation/evosuite*.jar"
-# JDart stack (build ไว้แล้วใน Docker image — ดู docker/Dockerfile)
-JPF_CORE_HOME = Path("/opt/jdart-stack/jpf-core")
-JDART_HOME = Path("/opt/jdart-stack/jdart")
-JPF_BINARY = JPF_CORE_HOME / "bin" / "jpf"
+def implementation_hash():
+    files = sorted((ROOT / "scripts").glob("*.py")) + sorted((ROOT / "scripts/java").glob("*.java")) + sorted((ROOT / "GRT/Code/src").rglob("*.java"))
+    files += [ROOT / "config/benchmark.json", ROOT / "config/dependencies.lock.json", ROOT / "prompts/ai-test-generation-prompt.md"]
+    return hashlib.sha256("".join(sha(f) for f in files if f.exists()).encode()).hexdigest()
 
-ALL_PROJECTS = [
-    "Chart", "Cli", "Closure", "Codec", "Collections", "Compress", "Csv",
-    "Gson", "JacksonCore", "JacksonDatabind", "JacksonXml", "Jsoup",
-    "JxPath", "Lang", "Math", "Mockito", "Time",
-]
+def active_bugs(project):
+    r = run(["defects4j", "bids", "-p", project], log=WORK / "metadata" / f"{project}-bids.json")
+    bids = [line.strip() for line in r["stdout"].splitlines() if line.strip()]
+    if not bids or any(not b.isdigit() for b in bids):
+        raise StageError("METADATA_ERROR", f"Invalid active bug list: {project}")
+    return sorted(bids, key=int)
 
-TOOL_TO_REPO_FOLDER = {
-    "evosuite": "MOSA_EvoSuite",
-    "jdart": "JDart",
-}
+def targets_for(project, bug):
+    # Metadata checkouts are isolated from each tool's experiment checkouts.
+    base = WORK / "metadata" / project / str(bug)
+    dest = base / "fixed"
+    attempt = 1
+    while dest.exists() and not (dest / ".sqa-ready.json").exists():
+        attempt += 1
+        dest = base / f"fixed-attempt{attempt}"
+    work = checkout(project, bug, "f", dest, base)
+    targets = export(work, "classes.modified", base).splitlines()
+    if not targets or any(not re.fullmatch(r"[\w.$]+", t) for t in targets):
+        raise StageError("METADATA_ERROR", "Invalid classes.modified")
+    return targets
 
-for d in (CHECKOUT_DIR, RESULT_DIR, LOG_DIR):
-    d.mkdir(parents=True, exist_ok=True)
+def unit_id(unit):
+    fingerprint = hashlib.sha256(json.dumps(unit, sort_keys=True).encode()).hexdigest()[:12]
+    return f"{unit['project']}-{unit['bug']}-{unit['round']}-s{unit['seed']}-{fingerprint}"
 
-
-# ---------- Progress tracking (สำหรับ --resume) ----------
-def load_progress():
-    if PROGRESS_FILE.exists():
-        with open(PROGRESS_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"completed": [], "failed": []}
-
-
-def save_progress(progress):
-    with open(PROGRESS_FILE, "w", encoding="utf-8") as f:
-        json.dump(progress, f, indent=2, ensure_ascii=False)
-
-
-def already_done(progress, task_id):
-    return task_id in progress["completed"] or task_id in progress["failed"]
-
-
-# ---------- Defects4J helpers ----------
-def get_bug_ids(project):
-    """ดึงรายชื่อ active bug id ทั้งหมดของ project"""
-    result = subprocess.run(
-        ["defects4j", "bids", "-p", project],
-        capture_output=True, text=True,
-    )
-    if result.returncode != 0:
-        print(f"[WARN] defects4j bids ล้มเหลวสำหรับ {project}: {result.stderr}")
-        return []
-    return [line.strip() for line in result.stdout.splitlines() if line.strip()]
-
-
-def checkout_bug(project, bug_id, version="b"):
-    """defects4j checkout -p <project> -v <bug_id><version> -w <dir>"""
-    work_dir = CHECKOUT_DIR / f"{project}_{bug_id}{version}"
-    if work_dir.exists():
-        return work_dir
-    result = subprocess.run(
-        ["defects4j", "checkout", "-p", project, "-v", f"{bug_id}{version}", "-w", str(work_dir)],
-        capture_output=True, text=True,
-    )
-    if result.returncode != 0:
-        print(f"[ERROR] checkout ล้มเหลว {project}-{bug_id}{version}: {result.stderr}")
-        return None
-    return work_dir
-
-
-def get_modified_classes(work_dir):
-    """defects4j export -p classes.modified -w <dir>"""
-    result = subprocess.run(
-        ["defects4j", "export", "-p", "classes.modified", "-w", str(work_dir)],
-        capture_output=True, text=True,
-    )
-    if result.returncode != 0:
-        return []
-    return [c.strip() for c in result.stdout.splitlines() if c.strip()]
-
-
-# ---------- Test generation per tool ----------
-def run_evosuite(work_dir, target_class, search_budget=60, run_no=1):
-    """
-    รัน MOSA algorithm ผ่าน EvoSuite:
-      java -jar evosuite.jar -algorithm MOSA -criterion BRANCH
-           -Dsearch_budget=<budget> -class <target_class> -projectCP <cp>
-    (ปรับ classpath ให้ตรงกับ Defects4J export.cp.compile ของแต่ละบั๊ก)
-    """
-    import glob
-    jars = glob.glob(EVOSUITE_JAR_GLOB)
-    if not jars:
-        print("[ERROR] ไม่พบ EvoSuite jar — เช็คว่า defects4j init.sh รันสำเร็จหรือยัง")
-        return None
-    evosuite_jar = jars[0]
-
-    cp_result = subprocess.run(
-        ["defects4j", "export", "-p", "cp.compile", "-w", str(work_dir)],
-        capture_output=True, text=True,
-    )
-    classpath = cp_result.stdout.strip()
-
-    out_dir = RESULT_DIR / "evosuite_raw" / target_class / f"run{run_no}_budget{search_budget}"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    start = time.time()
-    cmd = [
-        "java", "-jar", evosuite_jar,
-        "-algorithm", "MOSA",
-        "-criterion", "BRANCH",
-        f"-Dsearch_budget={search_budget}",
-        "-class", target_class,
-        "-projectCP", classpath,
-        "-Dtest_dir", str(out_dir),
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(work_dir))
-    elapsed = time.time() - start
-
+def paths_for(tool, project, bug, round_name, identifier):
+    folder = ROOT / FOLDERS[tool]
+    ai = tool in ("claude_code", "codex")
     return {
-        "tool": "evosuite",
-        "target_class": target_class,
-        "search_budget": search_budget,
-        "run_no": run_no,
-        "execution_time_sec": round(elapsed, 2),
-        "test_dir": str(out_dir),
-        "success": result.returncode == 0,
-        "stderr_tail": result.stderr[-500:] if result.returncode != 0 else "",
+        "result": folder / ("Result" if ai else "Result_" + round_name) / project / str(bug) / identifier,
+        "tests": folder / ("TestCode" if ai else "Test") / project / str(bug) / identifier,
+        "config": folder / ("Prompt" if ai else "Configuration") / project / str(bug) / identifier,
     }
 
-
-def extract_symbolic_methods(work_dir, target_class, classpath, max_methods=5):
-    """
-    ใช้ javap อ่าน public method ของ target_class แล้วสร้างรายการ
-    concolic.method entries แบบ auto (ทำให้ทุก parameter ที่เป็น primitive type
-    เป็น symbolic) — วิธีนี้เป็น heuristic เบื้องต้นเท่านั้น
-    ไม่ครอบคลุม method ที่รับ String/Object/Array (JDart รองรับได้แต่ config ซับซ้อนกว่านี้
-    ต้องปรับ concolic.method.<name>.config เพิ่มเอง — ดู JDart wiki)
-    """
-    result = subprocess.run(
-        ["javap", "-public", "-classpath", classpath, target_class],
-        capture_output=True, text=True,
-    )
-    if result.returncode != 0:
-        return []
-
-    import re
-    primitive_map = {
-        "int": "i", "long": "j", "double": "d", "float": "f",
-        "boolean": "z", "short": "s", "byte": "b", "char": "c",
-    }
-    methods = []
-    for line in result.stdout.splitlines():
-        m = re.search(r"(\w+)\(([^)]*)\)", line)
-        if not m or "public" not in line:
-            continue
-        method_name, params_raw = m.group(1), m.group(2)
-        if not params_raw.strip():
-            continue  # ข้าม method ไม่มี parameter (ไม่มีอะไรให้ทำ symbolic)
-        param_types = [p.strip().split()[0] for p in params_raw.split(",") if p.strip()]
-        if not all(t in primitive_map for t in param_types):
-            continue  # ข้าม method ที่มี param เป็น String/Object/Array (ต้อง config มือ)
-        sig = ",".join(f"{primitive_map[t]}" for t in param_types)
-        methods.append((method_name, sig, param_types))
-        if len(methods) >= max_methods:
-            break
-    return methods
-
-
-def run_jdart(work_dir, target_class, search_depth=60, run_no=1):
-    """
-    รัน JDart (Dynamic Symbolic / Concolic Execution) ผ่าน jpf-core binary
-    ต้อง build JDart stack ไว้แล้วใน Docker image (ดู docker/Dockerfile)
-
-    ข้อจำกัดสำคัญ (อ่านก่อนใช้จริง):
-      - JDart ทำ symbolic execution ง่ายเฉพาะ parameter ที่เป็น primitive type
-        (int/long/double/...) — method ที่รับ String/Object ซับซ้อนต้อง config เพิ่มเอง
-      - Output ของ JDart คือ constraint/path summary + concrete input values
-        ไม่ใช่ไฟล์ JUnit สำเร็จรูปเหมือน EvoSuite — ทีมต้องเขียนตัวแปลง
-        (parse ผลจาก out_dir แล้ว generate ไฟล์ .java ที่มี @Test เรียก method
-        ด้วยค่า concrete ที่ได้) ก่อนจะเอาไปวัด coverage/fault-detection ด้วย
-        defects4j ได้จริง — ฟังก์ชันนี้ยังไม่ได้ทำส่วนนั้นให้ (มี TODO ด้านล่าง)
-    """
-    if not JPF_BINARY.exists():
-        print(f"[ERROR] ไม่พบ jpf binary ที่ {JPF_BINARY} — เช็คว่า Docker build JDart stack สำเร็จหรือยัง")
-        return None
-
-    cp_result = subprocess.run(
-        ["defects4j", "export", "-p", "cp.compile", "-w", str(work_dir)],
-        capture_output=True, text=True,
-    )
-    classpath = cp_result.stdout.strip()
-
-    methods = extract_symbolic_methods(work_dir, target_class, classpath)
-    if not methods:
-        print(f"[WARN] ไม่พบ method ที่เหมาะกับ auto-symbolic ใน {target_class} (อาจต้อง config มือ)")
-        return None
-
-    out_dir = RESULT_DIR / "jdart_raw" / target_class / f"run{run_no}_depth{search_depth}"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    # สร้าง .jpf config file แบบ auto จาก method ที่เจอ
-    jpf_config_lines = [
-        "@using = jpf-jdart",
-        "shell=gov.nasa.jpf.jdart.JDart",
-        "symbolic.dp=z3",
-        f"target={target_class}",
-        f"classpath={classpath}",
-        f"search.depth_limit={search_depth}",
-    ]
-    for method_name, sig, param_types in methods:
-        params_named = ",".join(f"{chr(97+i)}:{t}" for i, t in enumerate(param_types))
-        jpf_config_lines.append(f"concolic.method.{method_name}={target_class}.{method_name}({params_named})")
-    jpf_file = out_dir / f"{target_class.replace('.', '_')}.jpf"
-    jpf_file.write_text("\n".join(jpf_config_lines), encoding="utf-8")
-
-    start = time.time()
-    cmd = [str(JPF_BINARY), str(jpf_file)]
-    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(work_dir))
-    elapsed = time.time() - start
-
-    (out_dir / "jpf_stdout.log").write_text(result.stdout, encoding="utf-8")
-    (out_dir / "jpf_stderr.log").write_text(result.stderr, encoding="utf-8")
-
-    # TODO: เขียน parser แปลง out_dir/jpf_stdout.log (concrete values ที่ JDart หาได้)
-    # เป็นไฟล์ JUnit .java จริง ก่อนจะรัน defects4j coverage ได้ — ยังไม่ทำให้ในสคริปต์นี้
-
-    return {
-        "tool": "jdart",
-        "target_class": target_class,
-        "search_depth": search_depth,
-        "run_no": run_no,
-        "methods_explored": len(methods),
-        "execution_time_sec": round(elapsed, 2),
-        "test_dir": str(out_dir),
-        "success": result.returncode == 0,
-        "stderr_tail": result.stderr[-500:] if result.returncode != 0 else "",
-    }
-
-
-def measure_coverage_and_fault_detection(work_dir, test_dir):
-    """defects4j coverage -w <dir> -y suite -w <test_dir> — วัด line/branch coverage"""
-    result = subprocess.run(
-        ["defects4j", "coverage", "-w", str(work_dir), "-y", "suite"],
-        capture_output=True, text=True, cwd=str(test_dir),
-    )
-    # แปลง output จริงของ defects4j coverage เป็นตัวเลข (รูปแบบขึ้นกับเวอร์ชัน)
-    return {"coverage_raw_output": result.stdout}
-
-
-# ---------- Main orchestration ----------
-def run_one_bug(project, bug_id, tool, progress, runs_per_config=3, configs=(60, 180)):
-    task_id = f"{project}-{bug_id}-{tool}"
-    if already_done(progress, task_id):
-        print(f"[SKIP] {task_id} ทำไปแล้ว")
-        return
-
-    work_dir = checkout_bug(project, bug_id)
-    if work_dir is None:
-        progress["failed"].append(task_id)
-        save_progress(progress)
-        return
-
-    target_classes = get_modified_classes(work_dir)
-    if not target_classes:
-        print(f"[WARN] ไม่พบ modified class สำหรับ {task_id}")
-        progress["failed"].append(task_id)
-        save_progress(progress)
-        return
-
-    rows = []
-    for target_class in target_classes:
-        for cfg in configs:
-            for run_no in range(1, runs_per_config + 1):
-                if tool == "evosuite":
-                    res = run_evosuite(work_dir, target_class, search_budget=cfg, run_no=run_no)
-                elif tool == "jdart":
-                    res = run_jdart(work_dir, target_class, search_depth=cfg, run_no=run_no)
-                else:
-                    raise ValueError(f"unknown tool: {tool}")
-                if res:
-                    res.update({"project": project, "bug_id": bug_id})
-                    rows.append(res)
-
-    write_results_csv(tool, rows)
-    progress["completed"].append(task_id)
-    save_progress(progress)
-    print(f"[DONE] {task_id} — {len(rows)} runs บันทึกแล้ว")
-
-
-def write_results_csv(tool, rows):
-    if not rows:
-        return
-    csv_path = RESULT_DIR / f"results_{tool}.csv"
-    file_exists = csv_path.exists()
-    fieldnames = sorted({k for row in rows for k in row.keys()})
-    with open(csv_path, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        if not file_exists:
-            writer.writeheader()
-        for row in rows:
-            writer.writerow(row)
-
-
-def main():
-    parser = argparse.ArgumentParser(description="SQA Benchmark Runner: MOSA(EvoSuite) / JDart")
-    parser.add_argument("--project", help="ชื่อ project เดี่ยว เช่น Lang")
-    parser.add_argument("--bug", help="bug id เดี่ยว เช่น 1")
-    parser.add_argument("--sample-17", action="store_true", help="รันตัวแทนโปรเจกต์ละ 1 บั๊ก (17 บั๊ก)")
-    parser.add_argument("--all-bugs", action="store_true", help="รันทุก active bug ทั้งหมด")
-    parser.add_argument("--tool", required=True, choices=["evosuite", "jdart"])
-    parser.add_argument("--resume", action="store_true")
-    args = parser.parse_args()
-
-    progress = load_progress() if args.resume else {"completed": [], "failed": []}
-
-    if args.project and args.bug:
-        run_one_bug(args.project, args.bug, args.tool, progress)
-    elif args.sample_17:
-        for project in ALL_PROJECTS:
-            bug_ids = get_bug_ids(project)
-            if bug_ids:
-                run_one_bug(project, bug_ids[0], args.tool, progress)
-    elif args.all_bugs:
-        for project in ALL_PROJECTS:
-            for bug_id in get_bug_ids(project):
-                run_one_bug(project, bug_id, args.tool, progress)
+def generate_algorithm(unit, work, tests, logs):
+    cp, bin_dir = classpath(work, logs, test=False)
+    environment = None
+    if unit["tool"] == "evosuite":
+        if not os.environ.get("JAVA8_HOME"):
+            raise StageError("ENVIRONMENT_ERROR", "JAVA8_HOME must point to the pinned Java 8; child JVMs must use Java 8 too")
+        environment = {"JAVA_HOME": os.environ["JAVA8_HOME"], "PATH": str(Path(os.environ["JAVA8_HOME"]) / "bin") + os.pathsep + os.environ.get("PATH", "")}
+        cmd = [java("JAVA8_HOME"), "-jar", TOOLS / "evosuite-1.2.0.jar", "-generateMOSuite",
+               "-Dalgorithm=MOSA", "-criterion", "BRANCH", "-class", unit["target"], "-projectCP", cp,
+               "-seed", str(unit["seed"]), f"-Dsearch_budget={unit['budget_seconds']}",
+               f"-Dtest_dir={tests}", f"-Dreport_dir={logs / 'evosuite-report'}",
+               "-Dassertion_strategy=ALL", "-Djunit_check=true"]
     else:
-        parser.print_help()
-        sys.exit(1)
+        build_support()
+        grt_config = dict(config()["grt"], seed=unit["seed"], target=unit["target"],
+                          output=str(tests), class_root=str(bin_dir), budget_seconds=unit["budget_seconds"])
+        cfg_path = logs / "grt-config.json"
+        dump(cfg_path, grt_config)
+        cmd = [java(), f"-javaagent:{TOOLS / 'jacocoagent.jar'}=output=none,includes={unit['target']}*",
+               "-cp", os.pathsep.join([str(bin_dir), support_cp(), cp]), "sqa.grt.GuidedRandom", cfg_path]
+    return run(cmd, cwd=work, log=logs / "generation-process.json", timeout=unit["budget_seconds"] + 120, env=environment)["elapsed_sec"]
 
+def artifact_hashes(tests):
+    return {relative(p): sha(p) for p in sorted(tests.rglob("*.java"))}
+
+def evaluate_record(record, result_dir):
+    unit = record["unit"]
+    tests = ROOT / record["paths"]["tests"]
+    if unit["tool"] in ("claude_code", "codex"):
+        provenance_path = ROOT / record["paths"]["config"] / "provenance.json"
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        model_evidence = provenance.get("model_reported") or (provenance.get("mode") == "cli" and provenance.get("model_identity_basis") == "explicit_cli_argument")
+        if not model_evidence or not isinstance(provenance.get("generation_time_sec"), (int, float)) or provenance["generation_time_sec"] < 0:
+            raise StageError("PROVENANCE_MISSING", "Fill actual model_reported and generation_time_sec in provenance.json before evaluation")
+        record["ai_provenance"] = provenance
+        record["generation_time_sec"] = provenance["generation_time_sec"]
+    hashes = artifact_hashes(tests)
+    if not hashes:
+        raise StageError("NO_TESTS", f"Add generated .java files to {tests}")
+    record["test_sha256"] = hashes
+    # New evaluation folder preserves earlier failed evidence and class files cannot leak between attempts.
+    eval_n = 1
+    while (result_dir / f"evaluation-{eval_n}").exists():
+        eval_n += 1
+    evaluation = result_dir / f"evaluation-{eval_n}"
+    scratch = WORK / "checkouts" / record["run_id"] / f"evaluation-{eval_n}"
+    fixed = checkout(unit["project"], unit["bug"], "f", scratch / "fixed", evaluation / "fixed")
+    buggy = checkout(unit["project"], unit["bug"], "b", scratch / "buggy", evaluation / "buggy")
+    record["reference_validation"] = validate_reference(fixed, buggy, evaluation / "baseline")
+    f_result = evaluate_revision(fixed, tests, evaluation / "fixed", unit["target"])
+    b_result = evaluate_revision(buggy, tests, evaluation / "buggy", unit["target"])
+    record.update(compare(f_result, b_result))
+    record["evaluation_path"] = relative(evaluation)
+    record["finished_at"] = utc()
+    dump(result_dir / "result.json", record)
+    return record
+
+def run_unit(unit, resume=False, ai_mode="manual", acknowledge=False):
+    base_id = unit_id(unit)
+    paths = paths_for(unit["tool"], unit["project"], unit["bug"], unit["round"], base_id)
+    if resume and paths["result"].parent.exists():
+        for prior in sorted(paths["result"].parent.glob(base_id + "*/result.json")):
+            saved = json.loads(prior.read_text(encoding="utf-8"))
+            tests = ROOT / saved["paths"]["tests"]
+            if saved.get("status") == "EVALUATED" and saved["unit"] == unit and saved.get("test_sha256") == artifact_hashes(tests):
+                print(f"SKIP evaluated {saved['run_id']}")
+                return True
+            if saved.get("status") == "AWAITING_AI" and ai_mode == "manual":
+                print(f"AWAITING_AI {prior}; evaluate with --evaluate-run <result.json>")
+                return True
+    attempt = 1
+    identifier = base_id
+    while paths["result"].exists():
+        attempt += 1
+        identifier = f"{base_id}-attempt{attempt}"
+        paths = paths_for(unit["tool"], unit["project"], unit["bug"], unit["round"], identifier)
+    # Exclusive creation also prevents concurrent runs from silently sharing the same result directory.
+    paths["result"].mkdir(parents=True, exist_ok=False)
+    for key in ("tests", "config"):
+        paths[key].mkdir(parents=True, exist_ok=False)
+    record = {"schema_version": 2, "run_id": identifier, "unit": unit, "status": "RUNNING",
+              "started_at": utc(), "paths": {k: relative(v) for k, v in paths.items()}}
+    dump(paths["result"] / "result.json", record)
+    dump(paths["config"] / "run-config.json", unit)
+    work = WORK / "checkouts" / identifier / "generation-fixed"
+    try:
+        checkout(unit["project"], unit["bug"], "f", work, paths["result"] / "generation")
+        if unit["tool"] in ("claude_code", "codex"):
+            from ai_generate import prepare, generate_cli
+            context = prepare(unit, work, paths)
+            if ai_mode == "manual":
+                record["status"] = "AWAITING_AI"
+                record["generation_context"] = relative(context)
+                dump(paths["result"] / "result.json", record)
+                print(f"Prepared AI task: {context}\nSave Java files in {paths['tests']}\nEvaluate: python3 scripts/run_benchmark.py --evaluate-run {relative(paths['result'] / 'result.json')}")
+                return True
+            if not acknowledge:
+                raise StageError("AUTH_REQUIRED", "Automatic AI calls require --allow-ai-calls and an authenticated CLI")
+            record["generation_time_sec"] = generate_cli(unit, work, paths, context)
+        else:
+            record["generation_time_sec"] = generate_algorithm(unit, work, paths["tests"], paths["result"] / "generation")
+        if unit["tool"] == "grt" and (paths["tests"] / "generation.json").exists():
+            shutil.copy2(paths["tests"] / "generation.json", paths["result"] / "generation/grt.json")
+        evaluate_record(record, paths["result"])
+        print(f"EVALUATED {identifier}; fault_candidate={record['fault_candidate']}")
+        return True
+    except (StageError, OSError, ValueError) as exc:
+        record.update(status=getattr(exc, "status", "TOOL_ERROR"), error=str(exc), finished_at=utc())
+        dump(paths["result"] / "result.json", record)
+        print(f"{record['status']} {identifier}: {exc}", file=sys.stderr)
+        return False
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--tool", choices=FOLDERS)
+    ap.add_argument("--project", choices=config()["projects"])
+    ap.add_argument("--bug", type=int)
+    ap.add_argument("--sample-17", action="store_true")
+    ap.add_argument("--all-bugs", action="store_true")
+    ap.add_argument("--round", choices=["Round1", "Round2"], default="Round1")
+    ap.add_argument("--seed", type=int, help="One seed; default all three protocol seeds")
+    ap.add_argument("--resume", action="store_true")
+    ap.add_argument("--purpose", choices=["experiment", "validation"], default="experiment")
+    ap.add_argument("--ai-mode", choices=["manual", "cli"], default="manual")
+    ap.add_argument("--allow-ai-calls", action="store_true")
+    ap.add_argument("--evaluate-run", type=Path, help="result.json of a prepared AI task")
+    args = ap.parse_args(argv)
+    if args.evaluate_run:
+        path = args.evaluate_run.resolve()
+        if ROOT not in path.parents:
+            ap.error("result.json must be inside this repository")
+        record = json.loads(path.read_text(encoding="utf-8"))
+        if record.get("status") == "EVALUATED":
+            ap.error("This run is already evaluated; create a new run to change its tests")
+        try:
+            evaluate_record(record, path.parent)
+        except StageError as exc:
+            record.update(status=exc.status, error=str(exc), finished_at=utc())
+            dump(path, record)
+            print(str(exc), file=sys.stderr)
+            return 1
+        return 0
+    if not args.tool:
+        ap.error("--tool is required")
+    if sum([bool(args.project and args.bug), args.sample_17, args.all_bugs]) != 1 or bool(args.project) != bool(args.bug):
+        ap.error("Choose --project X --bug N, --sample-17, or --all-bugs")
+    if args.bug is not None and args.bug < 1:
+        ap.error("bug must be positive")
+    cfg = config()
+    ok = True
+    for project in ([args.project] if args.project else cfg["projects"]):
+        try:
+            bids = active_bugs(project)
+            if args.bug:
+                if str(args.bug) not in bids:
+                    raise StageError("METADATA_ERROR", "Bug is not active")
+                bids = [str(args.bug)]
+            elif args.sample_17:
+                bids = bids[:1]
+            for bug in bids:
+                for target in targets_for(project, bug):
+                    for seed in ([args.seed] if args.seed is not None else cfg["seeds"]):
+                        unit = {"project": project, "bug": bug, "target": target, "tool": args.tool,
+                                "round": args.round, "seed": seed, "budget_seconds": cfg["budgets_seconds"][args.round],
+                                "generation_revision": "f", "protocol_version": cfg["protocol_version"],
+                                "implementation_sha256": implementation_hash(), "ai_mode": args.ai_mode if args.tool in cfg["models"] else None,
+                                "purpose": args.purpose,
+                                "model": cfg["models"].get(args.tool)}
+                        ok = run_unit(unit, args.resume, args.ai_mode, args.allow_ai_calls) and ok
+        except StageError as exc:
+            print(f"{project}: {exc}", file=sys.stderr)
+            ok = False
+    return 0 if ok else 1
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

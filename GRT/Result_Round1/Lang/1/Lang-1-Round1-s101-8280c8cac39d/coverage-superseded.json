@@ -1,0 +1,4 @@
+{
+  "reason": "Online probes lost with EvoSuite classloader; shared evaluator replaced with offline coverage for all tools.",
+  "replacement": "GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/result.json"
+}

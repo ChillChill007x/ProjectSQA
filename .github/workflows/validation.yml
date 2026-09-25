@@ -1,0 +1,54 @@
+name: Validate benchmark infrastructure
+on:
+  push:
+    paths: ['scripts/**', 'GRT/Code/**', 'tests/**', 'config/**', 'docker/**', '.github/workflows/validation.yml']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      defects4j_smoke:
+        description: Build Docker and run Lang-1 on MOSA and GRT (slow download)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  local-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '11.0.28+6'
+      - run: python scripts/install_tools.py --dest work/vendor
+      - run: python -m unittest discover -s tests -v
+      - run: python tests/smoke_java.py
+        env:
+          SQA_TOOLS: ${{ github.workspace }}/work/vendor
+      - run: python scripts/check_submission.py
+  defects4j-smoke:
+    if: github.event_name == 'workflow_dispatch' && inputs.defects4j_smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose -f docker/docker-compose.yml build sqa-runner
+      - run: |
+          echo "SQA_UID=$(id -u)" >> "$GITHUB_ENV"
+          echo "SQA_GID=$(id -g)" >> "$GITHUB_ENV"
+      - run: docker compose -f docker/docker-compose.yml run --rm sqa-runner python3 scripts/doctor.py --smoke evosuite
+      - run: docker compose -f docker/docker-compose.yml run --rm sqa-runner python3 scripts/doctor.py --smoke grt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: defects4j-smoke-evidence
+          path: |
+            MOSA_EvoSuite/Result_Round1
+            MOSA_EvoSuite/Test
+            MOSA_EvoSuite/Configuration
+            GRT/Result_Round1
+            GRT/Test
+            GRT/Configuration

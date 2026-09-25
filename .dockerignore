@@ -1,0 +1,8 @@
+.git
+work
+**/Result/**
+**/Result_Round*/**
+**/Test/**
+**/TestCode/**
+**/__pycache__
+.env*

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/target/classes/org/apache/commons/lang3/math/NumberUtils.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.266,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

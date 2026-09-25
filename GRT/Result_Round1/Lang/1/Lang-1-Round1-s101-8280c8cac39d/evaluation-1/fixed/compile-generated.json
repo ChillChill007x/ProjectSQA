@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/fixed/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/fixed/target/classes:/workspace/work/checkouts/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/fixed/target/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/opt/defects4j/framework/projects/Lang/lib/easymock.jar:/opt/defects4j/framework/projects/Lang/lib/commons-io.jar:/opt/defects4j/framework/projects/Lang/lib/cglib.jar:/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+    "-d",
+    "/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/fixed/classes",
+    "@/workspace/GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d/evaluation-1/fixed/sources.args"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.941,
+  "stdout": "",
+  "stderr": ""
+}

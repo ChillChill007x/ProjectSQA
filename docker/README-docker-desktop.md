@@ -1,67 +1,63 @@
-# วิธีใช้ Docker Desktop สำหรับ SQA รอบ 2 (คนที่ 1 และคนที่ 2)
+# Docker environment สำหรับทีม
 
-## 1. ติดตั้ง Docker Desktop
-ดาวน์โหลดและติดตั้งจาก https://www.docker.com/products/docker-desktop/ เปิดโปรแกรมทิ้งไว้ให้ขึ้นสถานะ "Running" ก่อนทำขั้นต่อไป
+## ครั้งแรก
 
-## 2. จัดโฟลเดอร์
-```
-sqa-docker/
-  Dockerfile
-  docker-compose.yml
-  scripts/
-    run_benchmark.py
-  work/       (ว่างไว้ก่อน — checkout bug + ผลลัพธ์)
-  results/    (ว่างไว้ก่อน — เก็บ results_evosuite.csv / results_jdart.csv)
-  tools/      (ว่างไว้ก่อน — สำรองไว้ ไม่จำเป็นสำหรับ JDart)
-```
+ติดตั้ง Git และ Docker Desktop (Linux containers/WSL2 บน Windows) แล้วเปิด Docker ให้ Running
+clone repo จาก README และรัน `powershell -ExecutionPolicy Bypass -File scripts/start.ps1`
+ต้องมีอินเทอร์เน็ตสำหรับ build ครั้งแรก Defects4J download และ checkout บางโปรเจกต์ใช้เวลานาน/พื้นที่มาก
+สคริปต์ติดตั้ง dependency ใน image ไม่ต้องติดตั้ง Java/Python บนเครื่องสมาชิกเพิ่ม
 
-## 3. Build image (ครั้งแรกครั้งเดียว — **ใช้เวลานาน 45-90 นาที**)
+## เข้าใช้งานครั้งต่อไป
+
+จาก repo root:
+
 ```bash
-docker compose build
+docker compose -f docker/docker-compose.yml run --rm sqa-runner bash
 ```
-นานกว่าปกติเพราะนอกจาก Defects4J + EvoSuite แล้ว ต้อง `gradle build` เพิ่มอีก 4 repo สำหรับ JDart stack (jpf-core, jConstraints, jconstraints-z3, jdart) — **คนที่ 2 ควรเริ่ม build ให้เร็วที่สุด** เผื่อเวลาแก้ปัญหาถ้า build ล้มเหลว
 
-## 4. เข้าไปใช้งานใน container
+repo ทั้งหมด mount เป็น /workspace; scratch อยู่ /workspace/work และ results อยู่ในโฟลเดอร์ของแต่ละสาย
+ออกด้วย exit ได้ ผลไม่หายแม้ใช้ --rm
+Linux อาจต้องปรับ ownership ของ repo ให้ user uid 1000 เขียนได้ ถ้า doctor write check ไม่ผ่าน
+image ปัจจุบันเน้น linux/amd64; เครื่อง ARM ต้องตรวจ image/tool compatibility ก่อนอ้างว่า environment เดียวกัน
+
+## ตรวจ environment และทดลอง
+
 ```bash
-docker compose run --rm sqa-runner bash
+python3 scripts/doctor.py
+python3 scripts/doctor.py --smoke evosuite
+python3 scripts/doctor.py --smoke grt
 ```
-จะได้ shell ที่มี Java 11 (+ 8/17 compat), Defects4J, EvoSuite (auto-download แล้ว) ครบ
 
-**คนที่ 2 ต้องเช็คก่อนว่า JDart build สำเร็จจริง:**
+doctor ตรวจ binary, checksum, Defects4J commit, write permission และ Java helper compilation
+--smoke รัน Lang-1 จริง มีค่าใช้เวลา/พื้นที่ แต่ไม่เรียก AI
+build fail หรือ checksum fail ให้หยุดแก้ต้นเหตุ ห้ามดาวน์โหลด jar คนละเวอร์ชันแล้วรายงานว่าใช้ config เดิม
+
+## AI แบบ manual
+
+ใช้ core image เตรียม TASK.md แล้วทำงานใน Claude Code/Codex ที่สมาชิกมีสิทธิ์อยู่แล้ว
+ย้ายเฉพาะ generated Java เข้าตำแหน่ง TestCode ที่ runner ระบุ กรอก provenance แล้วประเมินผ่าน --evaluate-run
+ไม่ต้องติดตั้ง CLI ใน container และไม่ส่ง account/session/token ให้เพื่อน
+
+## AI แบบ CLI อัตโนมัติ
+
 ```bash
-ls $JPF_CORE_HOME/bin/jpf
-```
-ถ้าไม่มีไฟล์นี้ แปลว่า build ขั้น JDart stack ล้มเหลว ต้องย้อนดู log ตอน `docker compose build` (มี `WARNING` echo ไว้ให้เห็นว่า step ไหนพัง) แล้วแก้ตาม README ของแต่ละ repo (`tudo-aqua/jdart`, `tudo-aqua/jConstraints`, `tudo-aqua/jconstraints-z3`)
-
-## 5. รัน benchmark จริง
-```bash
-# ทดสอบเดี่ยว 1 bug ก่อน (แนะนำให้ทำก่อนรันเต็ม)
-python3 scripts/run_benchmark.py --project Lang --bug 1 --tool evosuite
-python3 scripts/run_benchmark.py --project Lang --bug 1 --tool jdart
-
-# รันตัวแทน 17 projects (โปรเจกต์ละ 1 bug) — ใช้เช็ค pipeline ก่อนรันเต็ม
-python3 scripts/run_benchmark.py --sample-17 --tool evosuite
-python3 scripts/run_benchmark.py --sample-17 --tool jdart
-
-# รันทุก bug จริง พร้อม resume ได้ถ้าโดนขัดจังหวะ
-python3 scripts/run_benchmark.py --all-bugs --tool evosuite --resume
-python3 scripts/run_benchmark.py --all-bugs --tool jdart --resume
+docker compose -f docker/docker-compose.yml build sqa-ai
+docker compose -f docker/docker-compose.yml run --rm sqa-ai bash
+# ภายใน container เข้าสู่ระบบของตัวเองตาม CLI ที่ใช้
+codex login --device-auth
+claude auth login
+python3 scripts/run_ai_benchmark.py --tool codex --project Lang --bug 1 --seed 101 --ai-mode cli --allow-ai-calls
 ```
 
-ผลลัพธ์จะออกมาที่ `results/results_evosuite.csv` หรือ `results/results_jdart.csv` — sync กับเครื่องจริงทันที
+ชื่อโมเดลใน config/benchmark.json ต้องอยู่ในสิทธิ์บัญชีของผู้รัน ไม่เปลี่ยนชื่อ folder เพื่อแอบแทนโมเดล
+CLI เวอร์ชันล็อกใน Dockerfile เก็บ credential ใน named volume ai-home ซึ่งไม่อยู่ใน Git
+หากองค์กรจำกัด device login ให้ทำ login ตามคำแนะนำของบริการใน container เดิม
+--allow-ai-calls เป็นการเปิดโหมดเรียกบริการจริง สมาชิกควรตรวจ quota/สิทธิ์ตามโจทย์ก่อนรัน batch
+automatic run ไม่ข้ามการตรวจสิทธิ์ของ CLI; หากการเขียนไฟล์ถูก permission ปฏิเสธให้แก้ setup ไม่ bypass
 
-## 6. ออกจาก container
-พิมพ์ `exit` — container ถูกลบอัตโนมัติ (`--rm`) แต่ไฟล์ใน `work/`, `results/`, `tools/` ยังอยู่ครบ
+## แจก image ให้ทั้งทีม
 
-## สำหรับคนที่ 2 (JDart) เท่านั้น
-- **ไม่ต้องหา jar เอง** — Docker build จาก source ให้อัตโนมัติ (ต่างจาก GRT เดิมที่ไม่มี jar ให้เลย)
-- `run_jdart()` ใน `scripts/run_benchmark.py` ทำได้แค่ถึงขั้นรัน concolic execution แล้วเก็บ log ดิบ — **ยังไม่แปลงผลเป็น JUnit ให้อัตโนมัติ** ต้องเขียนตัวแปลงเพิ่มเอง (ดูรายละเอียดใน `requirements/sqa-02-jdart.md` หัวข้อ "ต้องทำเอง")
-- JDart รองรับ auto-symbolic ดีเฉพาะ method ที่รับ parameter เป็น primitive type — method ที่รับ String/Object ต้อง config เพิ่มเอง
-
-## Troubleshooting เร็ว ๆ
-- **"Cannot connect to the Docker daemon"** → เปิด Docker Desktop รอจนสถานะ Running
-- **Build ช้า/ค้างที่ `./init.sh`** → ปกติของ Defects4J ครั้งแรก รอได้ 15-30 นาที
-- **Build ค้างที่ `./gradlew clean build` ของ jpf-core/jConstraints/jdart** → ปกติของการ build ครั้งแรก (โหลด Gradle dependencies เยอะ) รอได้อีก 15-30 นาทีต่อ repo
-- **`jconstraints-z3` build ล้มเหลว** → มักเกิดจาก native Z3 library path ไม่ตรง เช็คว่า `z3` ติดตั้งจาก apt สำเร็จ (`z3 --version` ใน container) แล้วดู README ของ `tudo-aqua/jconstraints-z3` เรื่อง native path
-- **`defects4j info -p Chart` ตอน build ล้มเหลว** → เช็ค network ว่าเข้าถึง GitHub ได้ปกติ
-- **ทุกคนต้อง build จาก Dockerfile เดียวกัน** — คนที่ 1 กับ 2 ต้อง environment ตรงกันเป๊ะ เพราะรันทั้ง 17 projects ชุดเดียวกัน
+ผู้ดูแลควร build+smoke แล้ว publish image ใน registry ของทีม จากนั้นบันทึก immutable digest ในเอกสารส่งมอบ
+ขั้นนี้ยังไม่ได้ทำในการเตรียม repo และไม่มีการ push image อัตโนมัติ
+Dockerfile ล็อก tool releases/commit/checksums แต่ apt repositories ยังเปลี่ยนได้
+การใช้ image digest เดียวกันจึงเหมาะที่สุดสำหรับ freeze environment ก่อนเก็บผลจริง

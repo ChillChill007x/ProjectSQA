@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.296,
+  "stdout": "[INFO] 170 classes instrumented to /workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

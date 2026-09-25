@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/target/classes/org/apache/commons/lang3/math/NumberUtils.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "elapsed_sec": 0.165,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation/evaluation-1/fixed/coverage-1.exec.\n",
+  "stderr": "Exception in thread \"main\" java.io.FileNotFoundException: /workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation/evaluation-1/fixed/coverage-1.exec (No such file or directory)\n\tat java.base/java.io.FileInputStream.open0(Native Method)\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:219)\n\tat java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)\n\tat org.jacoco.cli.internal.core.tools.ExecFileLoader.load(ExecFileLoader.java:72)\n\tat org.jacoco.cli.internal.commands.Report.loadExecutionData(Report.java:99)\n\tat org.jacoco.cli.internal.commands.Report.execute(Report.java:83)\n\tat org.jacoco.cli.internal.Main.execute(Main.java:90)\n\tat org.jacoco.cli.internal.Main.main(Main.java:105)\n"
+}

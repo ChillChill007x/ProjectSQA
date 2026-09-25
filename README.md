@@ -1,190 +1,107 @@
-# Project – AI-Assisted Testing vs. Automatic Test Case Generation Algorithms: A Benchmark and Test Coverage Evaluation
+# SQA Project 2026
 
-**รายวิชา:** CP353201 Software Quality Assurance (ปีการศึกษา 1/2569)
-**อาจารย์ประจำวิชา:** ผศ.ดร.ชิตสุธา สุ่มเล็ก | **หลักสูตร:** วิทยาการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น
-**หัวข้อโครงการ:** การประเมินประสิทธิภาพเชิงเปรียบเทียบระหว่างขั้นตอนวิธีสร้างกรณีทดสอบอัตโนมัติ (MOSA & JDart) และเครื่องมือ AI-Assisting/Generative AI (Claude Code & Codex) บนชุดข้อมูลมาตรฐาน Defects4J
+การเปรียบเทียบ **MOSA ผ่าน EvoSuite**, **GRT**, **Claude Code** และ **Codex** บน Defects4J
+รายวิชา CP353201 Software Quality Assurance ปีการศึกษา 1/2569 มหาวิทยาลัยขอนแก่น
 
----
+## สถานะที่ตรวจได้
 
-> **หมายเหตุการเปลี่ยนแปลง:** เดิมทีมลงทะเบียนเลือก **GRT (Guided Random Testing)** เป็น Algorithm 2 แต่พบว่า GRT เป็นเครื่องมือวิจัยที่ไม่เคยเผยแพร่ jar/source code สาธารณะเลย (ตรวจสอบแล้วไม่มี artifact ให้ใช้งานจริง) ทีมจึงเปลี่ยนมาใช้ **JDart (Dynamic Symbolic/Concolic Execution)** แทน ซึ่งเป็นแนวทางที่แตกต่างจาก MOSA อย่างชัดเจนและไม่ซ้ำกับกลุ่มอื่นในชั้นเรียน
+- แบ่งโฟลเดอร์ส่งงานและตัวประเมินผลกลางแล้ว ผลอยู่บนเครื่องจริงแม้ลบ container
+- GRT เป็น implementation ของทีมจาก Ma et al. ASE 2015 ซึ่งมีทั้งหกกลไกในวงรอบสร้างเทสต์
+  ไม่ใช่ binary ของผู้เขียน และไม่อ้างว่าผลเทียบเท่าต้นฉบับ ดู [ขอบเขต GRT](GRT/README.md)
+- MOSA และ GRT ผ่าน Lang-1 end-to-end แล้ว รวม generation, compile, JUnit บน fixed/buggy และ JaCoCo coverage
+- **ยังไม่รับรองทั้ง 17 projects** ให้แต่ละเครื่องตรวจ Lang-1 ก่อน แล้วจึงรัน sample-17
+- ตรวจ Docker Linux engine ได้แล้ว และย้าย storage ไป E: เพื่อแก้ C: เต็ม ดูสถานะ build/Defects4J ล่าสุดใน VALIDATION.md
+- ยังไม่มีการเรียกบริการ AI หรือผล AI จริงจากการเตรียมระบบนี้
 
----
+อ่าน [VALIDATION.md](VALIDATION.md) สำหรับหลักฐานและข้อจำกัด และ [BENCHMARK_PROTOCOL.md](BENCHMARK_PROTOCOL.md)
+ก่อนเก็บผลจริง ห้ามนำผล fixture ไปปนกับผลการทดลอง
 
-## 👥 รายชื่อสมาชิกและบทบาทหน้าที่ (Team Roles & Responsibilities)
+## เริ่มใช้งาน
 
-| ลำดับ | รหัสนักศึกษา | ชื่อ - สกุล | บทบาทในโครงการ | หน้าที่หลัก & สิ่งที่ต้องส่งมอบ (Deliverables) |
-|---|---|---|---|---|
-| 1 | 673380395-5 | นายคมชาญ น้อยเนียม | **Member 1: MOSA / Search-Based Testing Lead** | • รับผิดชอบ **MOSA ผ่าน EvoSuite**<br>• ตั้งค่าและรัน EvoSuite/MOSA กับ Target Modified Classes ตาม benchmark protocol<br>• ตรวจสอบ generated JUnit tests และเก็บผล Line/Branch Coverage, Fault Detection และ Generation Time<br>• **Output:** `MOSA_EvoSuite/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
-| 2 | 673380589-2 | นายปฏิภาณ มะนิลทิพย์ | **Member 2: JDart / Dynamic Symbolic (Concolic) Execution Lead** | • รับผิดชอบ **JDart (Concolic Execution บน JPF)**<br>• Build JDart stack (jpf-core, jConstraints, jdart) และตั้งค่ารันกับ Target Modified Classes<br>• เขียนตัวแปลงผลลัพธ์ JDart (path constraints + concrete values) เป็นไฟล์ JUnit เอง แล้วเก็บผล Coverage, Fault Detection, Generation Time<br>• **Output:** `JDart/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
-| 3 | 673380420-2 | นายภีมเดช กลั่นกิ่ง | **Member 3: AI Prompt Engineer (Claude Code & Codex)** | • ออกแบบและดูแล Prompt/Task Instruction สำหรับ **Claude Code และ Codex** ภายใต้ข้อมูลและข้อจำกัดเดียวกัน<br>• สร้าง JUnit tests สำหรับ Target Modified Classes และจัดการ feedback loop เมื่อ compile/test ไม่ผ่าน<br>• เก็บผล generation time, จำนวน test ที่ compile ผ่าน/ไม่ผ่าน และผล benchmark ของ AI ทั้งสองตัว<br>• **Output:** `Claude-sonnet_4_6/TestCode/`, `Codex/TestCode/` และผลการทดลองที่เกี่ยวข้อง |
-| 4 | 673380427-8 | นายศุภกิตติ์ ฟันเฟือย | **Member 4: Infrastructure / Data / Repository Manager & Integration Lead** | • จัดเตรียมและดูแล **Docker Environment** (Defects4J + EvoSuite + JDart stack) ให้สมาชิกใช้สภาพแวดล้อมร่วมกัน<br>• จัดเตรียมและดูแล **Defects4J Dataset** รวมถึงการสกัด Metadata, Target Classes และ Active Bugs ของแต่ละ project<br>• ดูแล **GitHub Repository**, โครงสร้างไฟล์, benchmark protocol และการรวมผลจากสมาชิกทั้ง 3 สาย<br>• เขียนรายงานฉบับสมบูรณ์, จัดทำ Presentation/Demo และ Deploy repository<br>• **Output:** `dataset/`, `docker/`, `scripts/run_benchmark.py`, รายงานฉบับสมบูรณ์, Presentation |
+สิ่งที่สมาชิกต้องมี: Git, Docker Desktop ที่เปิด Linux containers และพื้นที่สำหรับ Defects4J/checkouts
+สำหรับ AI ต้องมีบัญชีและสิทธิ์ใช้งานที่ตรงกับเงื่อนไขรายวิชา การเข้าสู่ระบบเป็นรายบุคคลและไม่เก็บใน Git
 
----
-
-> **📖 สำหรับสมาชิกทุกคนในทีม:** ดูขั้นตอนการทำงานแบบละเอียดรายบุคคล คำสั่งที่ต้องใช้ และตำแหน่งส่งมอบไฟล์ได้ที่โฟลเดอร์ [`requirements/`](./requirements/) (ไฟล์แยกตามคน) และ [`GIT-SETUP.md`](./GIT-SETUP.md)
->
-> **⚠️ อ่านก่อนเริ่มงานจริง:** ดูข้อควรระวัง + วิธีแก้ปัญหาที่พบบ่อย แยกตามคนที่ [`CAUTIONS.md`](./CAUTIONS.md)
-
----
-
-## 🎯 ขอบเขตการทดลองและการวัดผล (Scope & Benchmark Methodology)
-
-### 1. ขอบเขตระดับโปรเจกต์ (Project-Level Scope)
-
-- **ชุดข้อมูลทดสอบ:** Java projects ใน Defects4J Dataset ทั้ง **17 Projects** ได้แก่ `Chart`, `Cli`, `Closure`, `Codec`, `Collections`, `Compress`, `Csv`, `Gson`, `JacksonCore`, `JacksonDatabind`, `JacksonXml`, `Jsoup`, `JxPath`, `Lang`, `Math`, `Mockito`, `Time`
-- **Validation ปัจจุบัน:** ก่อนรัน benchmark เต็ม ให้ตรวจ pipeline แบบ End-to-End กับ `Lang 1b` ก่อน (ดูสถานะ dataset ที่สกัดแล้วในหัวข้อ **Dataset** ด้านล่าง)
-- **คลาสเป้าหมาย (Target Classes Under Test):** โฟกัสการสร้างชุดทดสอบที่ **Target Modified Classes (`classes.modified`)** ซึ่งเป็นคลาสที่มีข้อบกพร่องจริงตามที่ระบุใน Defects4J Ground Truth
-- **โหมดการประเมินผล:**
-  1. **Sample Benchmark Mode (`--sample-17`):** คัดเลือกบั๊กตัวแทนโปรเจกต์ละ 1 บั๊ก (17 Projects × 4 Techniques = 68 Experiment Units) — ใช้ทดสอบ pipeline ก่อน
-  2. **Exhaustive Benchmark Mode (`--all-bugs`):** รันวนลูปทดสอบทุก **Active Bug** ใน Defects4J พร้อมระบบ State Persistence (`progress.json`) กดหยุด/รันต่อ (`--resume`) ได้ตลอดเวลา
-
-### 2. ดัชนีชี้วัดประสิทธิภาพ (Evaluation Metrics)
-
-1. **Line Coverage** — เปอร์เซ็นต์ความครอบคลุมบรรทัดคำสั่งบน Target Class
-2. **Branch Coverage** — เปอร์เซ็นต์ความครอบคลุมกิ่งเงื่อนไขบน Target Class
-3. **Fault Detection Rate (FDR)** — ชุดทดสอบ Fail บนเวอร์ชัน Buggy (`b`) ตรงกับข้อบกพร่องจริง และ Pass บนเวอร์ชัน Fixed (`f`)
-4. **Efficiency** — เวลาที่ใช้สร้างชุดทดสอบ, จำนวน test case ที่สร้างขึ้น, (สำหรับ AI) จำนวน test ที่ compile ผ่าน/ไม่ผ่าน
-
----
-
-## 📦 ชุดข้อมูล (Dataset) — สถานะ Active Bugs ต่อ Project
-
-Defects4J แต่ละ project มี bug id บางตัวที่ถูก **deprecate** (ถอดออกจาก active set ในเวอร์ชันหลังของ framework) — ต้อง**ตัดออกก่อนรัน benchmark** ไม่เช่นนั้น `defects4j checkout` จะ error หรือ metadata จะไม่ครบ
-
-Metadata ที่สกัดแล้วเก็บไว้ที่ `dataset/defects4j/<Project>_metadata.csv` แต่ละแถวคือ 1 active bug: `bug_id, project, revision_buggy, revision_fixed, jira_id, target_class, triggering_test, error_message`
-
-| # | Project | สถานะการสกัด | จำนวน Active Bugs | Active Bug ID | Deprecated (ตัดออกแล้ว) |
-|---|---|---|---|---|---|
-| 1 | **Lang** | ✅ สกัดแล้ว (`Lang_metadata.csv`) | **61** | `1, 3–17, 19–24, 26–47, 49–65` | `2, 18, 25, 48` |
-| 2 | Chart | ⏳ ยังไม่สกัด | — | — | — |
-| 3 | Cli | ⏳ ยังไม่สกัด | — | — | — |
-| 4 | Closure | ⏳ ยังไม่สกัด | — | — | — |
-| 5 | Codec | ⏳ ยังไม่สกัด | — | — | — |
-| 6 | Collections | ⏳ ยังไม่สกัด | — | — | — |
-| 7 | Compress | ⏳ ยังไม่สกัด | — | — | — |
-| 8 | Csv | ⏳ ยังไม่สกัด | — | — | — |
-| 9 | Gson | ⏳ ยังไม่สกัด | — | — | — |
-| 10 | JacksonCore | ⏳ ยังไม่สกัด | — | — | — |
-| 11 | JacksonDatabind | ⏳ ยังไม่สกัด | — | — | — |
-| 12 | JacksonXml | ⏳ ยังไม่สกัด | — | — | — |
-| 13 | Jsoup | ⏳ ยังไม่สกัด | — | — | — |
-| 14 | JxPath | ⏳ ยังไม่สกัด | — | — | — |
-| 15 | Math | ⏳ ยังไม่สกัด | — | — | — |
-| 16 | Mockito | ⏳ ยังไม่สกัด | — | — | — |
-| 17 | Time | ⏳ ยังไม่สกัด | — | — | — |
-
-**วิธีเช็ค active bugs ของ project ที่เหลือด้วยตัวเอง** (รันในเครื่องที่มี Defects4J แล้ว เช่นใน Docker container):
-```bash
-defects4j bids -p <Project>          # แสดง active bug id ทั้งหมดของ project นั้น (ตัด deprecated ออกให้อัตโนมัติแล้ว)
-defects4j bids -p <Project> | wc -l  # นับจำนวน active bugs
-```
-คนที่ 4 (ศุภกิตติ์) เป็นผู้รับผิดชอบสกัด metadata ของอีก 16 projects ที่เหลือให้ครบก่อนรัน `--all-bugs` เต็มรูปแบบ
-
----
-
-## 📜 กฎเหล็กสำหรับชุดทดสอบ (Universal Test Suite Standards)
-
-เพื่อให้ไฟล์เทสจากทุกสายงาน (MOSA, JDart, Claude Code, Codex) คอมไพล์และประเมินผลบน Defects4J ได้โดยไม่ผิดพลาด สมาชิกทุกคนต้องปฏิบัติตาม 4 ข้อนี้:
-
-1. **Framework Hygiene:** ใช้ `import org.junit.Test;` และ `import static org.junit.Assert.*;` เท่านั้น — ห้ามใช้ JUnit 5 หรือ Mocking Framework ภายนอก
-2. **Package Declaration:** บรรทัดแรกของไฟล์เทสต้องประกาศ `package` ให้ตรงกับ target class เช่น `package org.apache.commons.lang3.math;`
-3. **Execution Guard:** ทุก `@Test` ต้องกำหนด timeout เสมอ เช่น `@Test(timeout = 4000)` เพื่อกัน infinite loop
-4. **Deterministic Behavior:** ห้ามใช้ `System.currentTimeMillis()` หรือค่าสุ่มที่ไม่ fix seed
-
----
-
-## 📂 โครงสร้าง Repository (Directory Structure)
-
-```
-ProjectSQA/
-├── README.md                          # เอกสารหลักแนะนำโปรเจกต์และข้อกำหนด (ไฟล์นี้)
-├── CAUTIONS.md                        # ข้อควรระวัง + วิธีแก้ปัญหา แยกตามคน
-├── GIT-SETUP.md                       # ขั้นตอน push/clone สำหรับทีม
-├── requirements/                      # Spec แยกตามคนรับผิดชอบ (4 ไฟล์)
-│   ├── sqa-01-mosa-evosuite.md
-│   ├── sqa-02-jdart.md
-│   ├── sqa-03-claude-code-codex.md
-│   └── sqa-04-consolidation-report-deploy.md
-├── dataset/                           # Metadata / benchmark dataset ที่สกัดจาก Defects4J
-│   └── defects4j/
-│       └── Lang_metadata.csv          # Metadata ของ Lang active bugs (61 bugs) — ดูหัวข้อ Dataset
-├── prompts/                            # Prompt template สำหรับ AI test generation (คนที่ 3)
-│   └── ai-test-generation-prompt.md    # System/Role prompt + Task prompt แยกส่วน พร้อม placeholder table
-├── docker/                            # สภาพแวดล้อมมาตรฐานสำหรับรัน Defects4J
-│   ├── Dockerfile                     # Multi-JDK (8/11/17; Java 11 default) + EvoSuite (auto) + Python
-│   ├── docker-compose.yml
-│   └── README-docker-desktop.md
-├── scripts/
-│   └── run_benchmark.py               # Universal Benchmark Runner (--tool evosuite/jdart, --sample-17, --all-bugs, --resume)
-├── results/                           # ผลลัพธ์การทดลอง (results_evosuite.csv, results_jdart.csv, ...)
-├── tools/                             # โฟลเดอร์สำรอง (ไม่จำเป็นสำหรับ JDart — build อยู่ใน image แล้ว)
-├── MOSA_EvoSuite/                     # Algorithm 1: MOSA (ผ่าน EvoSuite)
-│   ├── Code/
-│   ├── Configuration/                 # Search Budget config
-│   ├── Result_Round1/
-│   ├── Result_Round2/
-│   └── Test/                          # ไฟล์ JUnit ที่ generate
-├── JDart/                               # Algorithm 2: JDart (Dynamic Symbolic Execution)
-│   ├── Code/                            # รวมตัวแปลง JDart output → JUnit ที่เขียนเพิ่ม
-│   ├── Configuration/                   # site.properties, search_depth
-│   ├── Result_Round1/
-│   ├── Result_Round2/
-│   └── Test/                            # ไฟล์ JUnit ที่แปลงจาก JDart output แล้ว
-├── Claude-sonnet_4_6/                  # AI Tool 1: Claude Code
-│   ├── Prompt/
-│   ├── Result/
-│   └── TestCode/
-└── Codex/                              # AI Tool 2: Codex
-    ├── Prompt/
-    ├── Result/
-    └── TestCode/
+```powershell
+git clone https://github.com/ChillChill007x/ProjectSQA.git
+cd ProjectSQA
+powershell -ExecutionPolicy Bypass -File scripts/start.ps1
 ```
 
----
-
-## 🛠️ ขั้นตอนการรันเพื่อทำซ้ำผลลัพธ์ (Steps to Reproduce)
-
-### 1. เปิดใช้งาน Docker Environment (Multi-JDK & Dependencies Ready)
+Linux/macOS: `bash scripts/start.sh` สคริปต์ build, ตรวจ environment และเปิด shell ให้
+ภายใน container:
 
 ```bash
-git clone https://github.com/<your-username>/ProjectSQA.git
-cd ProjectSQA/docker
+# เริ่มจาก seed เดียวและบั๊กเดียวของสายตัวเอง
+python3 scripts/run_benchmark.py --tool evosuite --project Lang --bug 1 --seed 101
+python3 scripts/run_benchmark.py --tool grt --project Lang --bug 1 --seed 101
 
-docker compose build
-docker compose run --rm sqa-runner bash
+# เตรียม prompt และพื้นที่ส่งโค้ดให้ AI โดยยังไม่เรียกบริการ
+python3 scripts/run_ai_benchmark.py --tool claude_code --project Lang --bug 1 --seed 101
+python3 scripts/run_ai_benchmark.py --tool codex --project Lang --bug 1 --seed 101
 ```
 
-### 2. การสั่งรัน Benchmark ผ่าน Universal Runner
+คำสั่ง AI แสดงตำแหน่ง TASK.md, provenance.json และ TestCode ให้ทำงานด้วยเครื่องมือที่ลงทะเบียน
+แล้วใช้คำสั่ง `--evaluate-run` ที่แสดงเพื่อประเมินไฟล์จริง ดู [คู่มือ AI](requirements/sqa-03-claude-code-codex.md)
+
+## โครงสร้างส่งงาน
+
+```text
+MOSA_EvoSuite/                 GRT/
+  Code/                         Code/
+  Configuration/                Configuration/
+  Result_Round1/                Result_Round1/
+  Result_Round2/                Result_Round2/
+  Test/                         Test/
+
+Claude-sonnet_4_6/             Codex/
+  Prompt/                       Prompt/
+  Result/                       Result/
+  TestCode/                     TestCode/
+```
+
+ทุกผลและเทสต์แยกเป็น `<Project>/<Bug>/<run-id>/` โดย run-id แยก target class, รอบ, seed,
+config, implementation และ attempt ไม่เขียนทับรอบก่อน
+AI ใช้ Result เดียวแต่ระบุ Round1/Round2 ใน run-id และ JSON
+
+| ผู้รับผิดชอบ | งานและโฟลเดอร์ | คู่มือ |
+|---|---|---|
+| 673380395-5 นายคมชาญ น้อยเนียม | MOSA_EvoSuite | [คนที่ 1](requirements/sqa-01-mosa-evosuite.md) |
+| 673380589-2 นายปฏิภาณ มะนิลทิพย์ | GRT | [คนที่ 2](requirements/sqa-02-grt.md) |
+| 673380420-2 นายภีมเดช กลั่นกิ่ง | Claude-sonnet_4_6 และ Codex | [คนที่ 3](requirements/sqa-03-claude-code-codex.md) |
+| 673380427-8 นายศุภกิตติ์ ฟันเฟือย | environment, metadata, รวมผล/รายงาน | [คนที่ 4](requirements/sqa-04-consolidation-report-deploy.md) |
+
+## การรันรอบถัดไปและส่งงาน
+
+Round1 = 60 วินาที, Round2 = 180 วินาที สำหรับ algorithms; seeds = 101/202/303
+เป็นค่าที่ทีมกำหนด ไม่ใช่จำนวนรอบที่โจทย์บังคับ AI ใช้ wall-clock/retry limit แยกและรายงานแยก
 
 ```bash
-# ทดสอบเดี่ยวเฉพาะบั๊กเป้าหมาย (เช่น Lang Bug 1) ก่อนเสมอ
-python3 scripts/run_benchmark.py --project Lang --bug 1 --tool evosuite
-
-# รันประเมินผลกลุ่มตัวแทน 17 Projects
-python3 scripts/run_benchmark.py --sample-17 --tool evosuite
-
-# รันโหมด Exhaustive (ทุก active bug ใน Defects4J) พร้อม resume อัตโนมัติ
-python3 scripts/run_benchmark.py --all-bugs --tool evosuite --resume
+python3 scripts/run_benchmark.py --tool grt --project Lang --bug 1 --round Round2 --seed 101
+# หลังผ่าน end-to-end ค่อยรันทุก target ของตัวแทน 17 projects
+python3 scripts/run_benchmark.py --tool grt --sample-17 --resume
+# เมื่อทีม freeze protocol และพร้อมทรัพยากรแล้วจึงใช้ --all-bugs
+python3 scripts/check_submission.py --tool grt
+python3 scripts/collect_results.py
 ```
-เปลี่ยน `--tool evosuite` เป็น `--tool jdart` สำหรับสาย JDart (คนที่ 2)
 
----
+`--resume` ข้ามเฉพาะหน่วยทดลองที่ประเมินสำเร็จและไฟล์เทสต์ยังตรง checksum
+รายการล้มเหลวจะมี attempt ใหม่ โดยเก็บหลักฐานเก่าไว้
 
-## 📊 ตารางสรุปผลการเปรียบเทียบประสิทธิภาพ (Benchmark Results)
+- [GIT-SETUP.md](GIT-SETUP.md): branch, commit, push และสิ่งที่ต้องส่ง
+- [STEP-BY-STEP.md](STEP-BY-STEP.md): checklist ก่อนเริ่มรันเต็ม
+- [CAUTIONS.md](CAUTIONS.md): ข้อผิดพลาดที่ต้องแยกจาก fault detection
+- [Docker](docker/README-docker-desktop.md): setup, AI login และการเก็บผล
+- [Protocol](BENCHMARK_PROTOCOL.md): ข้อมูลที่ generator เห็น, coverage, oracle, fault review
 
-*ตารางสรุปผลการทดลองเปรียบเทียบบนชุดข้อมูลตัวแทน 17 โปรเจกต์ใน Defects4J — เติมค่าเมื่อรันจริงแล้ว:*
+## ตรวจโค้ดโดยไม่เรียก AI
 
-| เครื่องมือ / เทคนิค | Line Coverage (%) | Branch Coverage (%) | Fault Detection Rate | เวลาเฉลี่ยต่อคลาส | จุดเด่น | ข้อจำกัด |
-|---|---|---|---|---|---|---|
-| **MOSA (EvoSuite)** | - | - | - | - | Many-objective search, ครอบคลุมหลาย target พร้อมกัน | Search อาจไม่ converge ในเวลาจำกัด, test smell |
-| **JDart** | - | - | - | - | Concolic execution หาค่า input เจาะจงตาม path constraint, deterministic กว่า random testing | Setup ซับซ้อน, ไม่ output JUnit อัตโนมัติ, รองรับดีแค่ primitive param |
-| **Claude Code** | - | - | - | - | เข้าใจ context ของโค้ดได้ดี ปรับ test ตาม feedback loop ได้ | ขึ้นกับความชัดเจนของ prompt/dependency ที่ให้มา |
-| **Codex** | - | - | - | - | สร้าง test ได้เร็ว รองรับ agentic workflow | Assertion อาจ flaky ในตรรกะซับซ้อน |
+ใน Docker ที่ build แล้ว:
 
----
+```bash
+python3 -m unittest discover -s tests -v
+python3 tests/smoke_java.py
+python3 scripts/doctor.py --smoke grt
+```
 
-## 📅 กำหนดการนำส่งงาน (Deliverables Schedule)
-
-1. **รายงานรอบที่ 1 (5%):** ส่งแล้วภายในวันที่ 22 สิงหาคม 2569 ทาง Google Classroom
-2. **รายงานฉบับสมบูรณ์ & GitHub (10%):** ส่งภายในวันสุดท้ายของการเรียนการสอน
-3. **Live Presentation & Demonstration:** นำเสนอผลการทดลองและสาธิตการทำงานจริงในวันสุดท้ายของการเรียนการสอน
+GitHub Actions มี unit/Java fixture tests อัตโนมัติ และ workflow_dispatch สำหรับ Docker Lang-1
+ไม่ได้เรียก AI อัตโนมัติและไม่ต้องเพิ่ม secrets เพื่อรันทดสอบเหล่านี้

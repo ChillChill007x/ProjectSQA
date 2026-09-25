@@ -1,0 +1,9 @@
+{
+  "tool": "codex",
+  "model_requested": "gpt-5-codex",
+  "model_reported": "REPLACE_WITH_ACTUAL_MODEL_SHOWN_BY_TOOL",
+  "mode": "manual",
+  "generation_time_sec": null,
+  "usage": null,
+  "notes": "Example only. Copy values into the runner-created provenance.json; do not submit this as experimental evidence."
+}

@@ -1,26 +1,27 @@
-# ===== Checkout/scratch งาน (ใหญ่มาก ไม่ต้อง track) =====
-work/
+# Local checkouts, downloaded binaries, compiled classes and authentication.
+/work/
 *.checkout/
-
-# ===== Python =====
 __pycache__/
 *.pyc
 .venv/
-
-# ===== Docker =====
-docker/*.log
-
-# ===== jar เครื่องมือ (ไฟล์ใหญ่ ให้แต่ละคนโหลดเอง ไม่ push ขึ้น git) =====
+*.class
+*.exec
+**/classes/
+**/instrumented/
 tools/*.jar
 !tools/.gitkeep
-
-# ===== OS junk =====
+.env
+.env.*
+!.env.example
+.codex/
+.claude/
+.claude.json
+auth.json
+credentials.json
 .DS_Store
 Thumbs.db
-
-# ===== IDE =====
 .vscode/
 .idea/
-
-# ===== Env / secrets =====
-.env
+# Experiment Java, JSON, XML, prompts, configuration and logs ARE tracked.
+# Summary is regenerated rather than merged by hand.
+/results/summary.csv

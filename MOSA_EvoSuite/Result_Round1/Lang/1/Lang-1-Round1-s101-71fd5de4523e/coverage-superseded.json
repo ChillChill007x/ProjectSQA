@@ -1,0 +1,4 @@
+{
+  "reason": "Online probes lost with EvoSuite classloader; shared evaluator replaced with offline coverage for all tools.",
+  "replacement": "MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/result.json"
+}

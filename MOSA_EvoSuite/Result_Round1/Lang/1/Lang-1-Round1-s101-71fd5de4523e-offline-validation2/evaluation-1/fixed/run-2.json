@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=destfile=/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/coverage-2.exec,append=false,excludes=*",
+    "-Djacoco-agent.destfile=/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/coverage-2.exec",
+    "-Djacoco-agent.append=false",
+    "-cp",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/classes:/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/instrumented:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/instrumented:/workspace/work/checkouts/Lang-1-Round1-s101-71fd5de4523e/evaluation-1/fixed/target/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/opt/defects4j/framework/projects/Lang/lib/easymock.jar:/opt/defects4j/framework/projects/Lang/lib/commons-io.jar:/opt/defects4j/framework/projects/Lang/lib/cglib.jar:/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+    "SqaJUnitRunner",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/1/Lang-1-Round1-s101-71fd5de4523e-offline-validation2/evaluation-1/fixed/junit-2.json",
+    "org.apache.commons.lang3.math.NumberUtils_ESTest"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.58,
+  "stdout": "",
+  "stderr": "SLF4J: Failed to load class \"org.slf4j.impl.StaticLoggerBinder\".\nSLF4J: Defaulting to no-operation (NOP) logger implementation\nSLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\nWARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by org.evosuite.runtime.GuiSupport (file:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar) to field java.awt.GraphicsEnvironment.headless\nWARNING: Please consider reporting this to the maintainers of org.evosuite.runtime.GuiSupport\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n"
+}
