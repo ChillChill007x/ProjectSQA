@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-1-Round1-s101-c987d9e344a7",
+  "unit": {
+    "project": "Lang",
+    "bug": "1",
+    "target": "org.apache.commons.lang3.math.NumberUtils",
+    "tool": "codex",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": "manual",
+    "purpose": "validation",
+    "model": "gpt-5-codex"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-26T10:19:42.233346+00:00",
+  "paths": {
+    "result": "Codex/Result/Lang/1/Lang-1-Round1-s101-c987d9e344a7",
+    "tests": "Codex/TestCode/Lang/1/Lang-1-Round1-s101-c987d9e344a7",
+    "config": "Codex/Prompt/Lang/1/Lang-1-Round1-s101-c987d9e344a7"
+  },
+  "generation_context": "Codex/Prompt/Lang/1/Lang-1-Round1-s101-c987d9e344a7/TASK.md",
+  "ai_provenance": {
+    "tool": "codex",
+    "model_requested": "gpt-5-codex",
+    "model_reported": "gpt-5-codex",
+    "mode": "manual",
+    "generation_time_sec": 125,
+    "usage": null,
+    "prompt_sha256": "c5266a4481418628f7f05f174daf63130911c624dadb40d9aff575d0e2fd4c0a",
+    "notes": "Fill actual model and time for manual runs; never store credentials."
+  },
+  "generation_time_sec": 125,
+  "test_sha256": {
+    "Codex/TestCode/Lang/1/Lang-1-Round1-s101-c987d9e344a7/org/apache/commons/lang3/math/NumberUtilsGeneratedTest.java": "c791e0668a6e132c3e3554028fc80b534082ef9862812d466f27d1c2bf5a4951"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747",
+    "available_triggers": [
+      "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-09-26T18:05:41.382092+00:00",
+  "num_tests": 10,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 27,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::digitAndNumberRecognitionAcceptsValidFormsAndRejectsInvalidForms",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberChoosesIntegralTypesAndRecognizesRadices",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::threeArgumentMinAndMaxHandleOrderNaNAndInfinity",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberPreservesDecimalPrecisionAndSupportsQualifiers",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::arrayMinAndMaxFindExtremaForIntegralValues",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberRejectsBlankAndMalformedInputs",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::primitiveConversionsParseValuesAndUseDefaultsForInvalidInput",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::individualFactoriesHandleNullAndRadixNotation",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::floatingArrayMinAndMaxPropagateNaNAndPreserveFirstSignedZero",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::arrayMinAndMaxRejectNullAndEmptyArrays"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 284,
+      "line_total": 380,
+      "line_coverage_percent": 74.73684210526316,
+      "branch_covered": 208,
+      "branch_total": 350,
+      "branch_coverage_percent": 59.42857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 26,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::digitAndNumberRecognitionAcceptsValidFormsAndRejectsInvalidForms",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberChoosesIntegralTypesAndRecognizesRadices",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::threeArgumentMinAndMaxHandleOrderNaNAndInfinity",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberPreservesDecimalPrecisionAndSupportsQualifiers",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::arrayMinAndMaxFindExtremaForIntegralValues",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberRejectsBlankAndMalformedInputs",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::primitiveConversionsParseValuesAndUseDefaultsForInvalidInput",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::individualFactoriesHandleNullAndRadixNotation",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::floatingArrayMinAndMaxPropagateNaNAndPreserveFirstSignedZero",
+        "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::arrayMinAndMaxRejectNullAndEmptyArrays"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsGeneratedTest::createNumberChoosesIntegralTypesAndRecognizesRadices",
+          "exception": "java.lang.NumberFormatException",
+          "message": "For input string: \"FFFFFFFF\"",
+          "trace": "java.lang.NumberFormatException: For input string: \"FFFFFFFF\"\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\n\tat java.base/java.lang.Integer.valueOf(Integer.java:957)\n\tat java.base/java.lang.Integer.decode(Integer.java:1436)\n\tat org.apache.commons.lang3.math.NumberUtils.createInteger(NumberUtils.java:684)\n\tat org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:474)\n\tat org.apache.commons.lang3.math.NumberUtilsGeneratedTest.createNumberChoosesIntegralTypesAndRecognizesRadices(NumberUtilsGeneratedTest.java:36)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 274,
+      "line_total": 375,
+      "line_coverage_percent": 73.06666666666666,
+      "branch_covered": 199,
+      "branch_total": 338,
+      "branch_coverage_percent": 58.875739644970416
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "Codex/Result/Lang/1/Lang-1-Round1-s101-c987d9e344a7/evaluation-3"
+}

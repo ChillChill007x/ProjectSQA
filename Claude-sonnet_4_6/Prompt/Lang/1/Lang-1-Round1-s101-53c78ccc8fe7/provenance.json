@@ -1,0 +1,10 @@
+{
+  "tool": "claude_code",
+  "model_requested": "claude-sonnet-4-6",
+  "model_reported": "claude-sonnet-4-6",
+  "mode": "manual",
+  "generation_time_sec": 131,
+  "usage": null,
+  "prompt_sha256": "c5266a4481418628f7f05f174daf63130911c624dadb40d9aff575d0e2fd4c0a",
+  "notes": "Fill actual model and time for manual runs; never store credentials."
+}
