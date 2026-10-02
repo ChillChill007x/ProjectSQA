@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-1-Round1-s303-00f4bd6bd160",
+  "unit": {
+    "project": "Gson",
+    "bug": "1",
+    "target": "com.google.gson.TypeInfoFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 303,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-26T11:22:35.099428+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Gson/1/Gson-1-Round1-s303-00f4bd6bd160",
+    "tests": "MOSA_EvoSuite/Test/Gson/1/Gson-1-Round1-s303-00f4bd6bd160",
+    "config": "MOSA_EvoSuite/Configuration/Gson/1/Gson-1-Round1-s303-00f4bd6bd160"
+  },
+  "generation_time_sec": 111.216,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Gson/1/Gson-1-Round1-s303-00f4bd6bd160/com/google/gson/TypeInfoFactory_ESTest.java": "6e53b89d5c49d2a8fde8a6ee46bb08f179e325f0be78bde75d6f429d52fa6edd",
+    "MOSA_EvoSuite/Test/Gson/1/Gson-1-Round1-s303-00f4bd6bd160/com/google/gson/TypeInfoFactory_ESTest_scaffolding.java": "e49badc4da49132573bfdc6f7c907ef4738262efc4843c04f7203c450bc878e2"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.functional.TypeVariableTest::testSingle",
+    "available_triggers": [
+      "com.google.gson.functional.TypeVariableTest::testSingle"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1870,
+      "tests": [
+        "com.google.gson.TypeInfoFactory_ESTest::test0",
+        "com.google.gson.TypeInfoFactory_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 77,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 44,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1846,
+      "tests": [
+        "com.google.gson.TypeInfoFactory_ESTest::test0",
+        "com.google.gson.TypeInfoFactory_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 46,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 22,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Gson/1/Gson-1-Round1-s303-00f4bd6bd160/evaluation-1",
+  "finished_at": "2026-09-26T11:30:44.328090+00:00"
+}

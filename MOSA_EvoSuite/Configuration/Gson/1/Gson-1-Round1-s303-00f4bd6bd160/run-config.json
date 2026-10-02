@@ -1,0 +1,15 @@
+{
+  "project": "Gson",
+  "bug": "1",
+  "target": "com.google.gson.TypeInfoFactory",
+  "tool": "evosuite",
+  "round": "Round1",
+  "seed": 303,
+  "budget_seconds": 60,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null
+}

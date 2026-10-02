@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-1-Round1-s202-c4c60e99b3da/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.92,
+  "stdout": "target/classes",
+  "stderr": "Running ant (export.dir.bin.classes)....................................... OK\n\n"
+}

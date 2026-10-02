@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.cli.CommandLine",
+    "-projectCP",
+    "/workspace/work/checkouts/Cli-1-Round1-s202-1d3e3e9c531e/generation-fixed/target/classes:/workspace/work/checkouts/Cli-1-Round1-s202-1d3e3e9c531e/generation-fixed/target/lib/commons-lang/jars/commons-lang-2.1.jar:/workspace/work/checkouts/Cli-1-Round1-s202-1d3e3e9c531e/generation-fixed/target/lib/junit/jars/junit-3.8.1.jar",
+    "-seed",
+    "202",
+    "-Dsearch_budget=60",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Cli/1/Cli-1-Round1-s202-1d3e3e9c531e",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Cli/1/Cli-1-Round1-s202-1d3e3e9c531e/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 255,
+  "timed_out": false,
+  "elapsed_sec": 0.267,
+  "stdout": "",
+  "stderr": "[MASTER] 02:12:19.321 [main] ERROR EvoSuite - Fatal crash on main EvoSuite process. Class  using seed 202. Configuration id : null\njava.lang.IllegalArgumentException: Classpath element does not exist on disk at: /workspace/work/checkouts/Cli-1-Round1-s202-1d3e3e9c531e/generation-fixed/target/lib/junit/jars/junit-3.8.1.jar\n\tat org.evosuite.classpath.ClassPathHandler.checkIfValidClasspathEntry(ClassPathHandler.java:207)\n\tat org.evosuite.classpath.ClassPathHandler.getClassPath(ClassPathHandler.java:115)\n\tat org.evosuite.classpath.ClassPathHandler.changeTargetClassPath(ClassPathHandler.java:102)\n\tat org.evosuite.CommandLineParameters.handleClassPath(CommandLineParameters.java:232)\n\tat org.evosuite.EvoSuite.parseCommandLine(EvoSuite.java:236)\n\tat org.evosuite.EvoSuite.main(EvoSuite.java:103)\n"
+}

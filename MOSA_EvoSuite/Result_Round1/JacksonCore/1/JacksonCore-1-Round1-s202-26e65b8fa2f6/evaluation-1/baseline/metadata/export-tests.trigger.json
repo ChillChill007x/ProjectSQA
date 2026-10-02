@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-1-Round1-s202-26e65b8fa2f6/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.92,
+  "stdout": "com.fasterxml.jackson.core.json.TestParserNonStandard::testAllowNaN",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

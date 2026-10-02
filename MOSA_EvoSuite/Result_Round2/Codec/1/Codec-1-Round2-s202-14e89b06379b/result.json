@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-1-Round2-s202-14e89b06379b",
+  "unit": {
+    "project": "Codec",
+    "bug": "1",
+    "target": "org.apache.commons.codec.language.SoundexUtils",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 202,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-27T15:36:54.435123+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Codec/1/Codec-1-Round2-s202-14e89b06379b",
+    "tests": "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round2-s202-14e89b06379b",
+    "config": "MOSA_EvoSuite/Configuration/Codec/1/Codec-1-Round2-s202-14e89b06379b"
+  },
+  "generation_time_sec": 18.421,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round2-s202-14e89b06379b/org/apache/commons/codec/language/SoundexUtils_ESTest.java": "43b10653920d9be101a9f72ec6aed17797e10298a426af2fc7ec053ec6551e7f",
+    "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round2-s202-14e89b06379b/org/apache/commons/codec/language/SoundexUtils_ESTest_scaffolding.java": "fcb362a41f4a532419125826b95da67e60fee79736937a4e9aa296b07426aecf"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence",
+    "available_triggers": [
+      "org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.DoubleMetaphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.MetaphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.RefinedSoundexTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.SoundexTest::testLocaleIndependence"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 952,
+      "tests": [
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test6",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test7",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test4",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test5",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test2",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test3",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test0",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 21,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 18,
+      "branch_total": 18,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 886,
+      "tests": [
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test6",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test7",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test4",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test5",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test2",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test3",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test0",
+        "org.apache.commons.codec.language.SoundexUtils_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 21,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 18,
+      "branch_total": 18,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round2/Codec/1/Codec-1-Round2-s202-14e89b06379b/evaluation-1",
+  "finished_at": "2026-09-27T15:38:44.646134+00:00"
+}

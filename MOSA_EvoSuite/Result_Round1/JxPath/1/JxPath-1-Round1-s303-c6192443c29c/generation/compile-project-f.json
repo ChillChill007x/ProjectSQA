@@ -1,0 +1,13 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/workspace/work/checkouts/JxPath-1-Round1-s303-c6192443c29c/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 26.203,
+  "stdout": "",
+  "stderr": "Running ant (compile)...................................................... OK\nRunning ant (compile.tests)................................................ OK\n"
+}

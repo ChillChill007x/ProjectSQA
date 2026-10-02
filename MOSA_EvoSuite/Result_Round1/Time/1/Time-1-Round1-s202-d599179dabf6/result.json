@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-1-Round1-s202-d599179dabf6",
+  "unit": {
+    "project": "Time",
+    "bug": "1",
+    "target": "org.joda.time.field.UnsupportedDurationField",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 202,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-26T19:10:27.963652+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/1/Time-1-Round1-s202-d599179dabf6",
+    "tests": "MOSA_EvoSuite/Test/Time/1/Time-1-Round1-s202-d599179dabf6",
+    "config": "MOSA_EvoSuite/Configuration/Time/1/Time-1-Round1-s202-d599179dabf6"
+  },
+  "generation_time_sec": 148.919,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/1/Time-1-Round1-s202-d599179dabf6/org/joda/time/field/UnsupportedDurationField_ESTest.java": "6dc68ad6ce4cac7670921135a01822423c882023d14028d9b4af1e608d5cf74c",
+    "MOSA_EvoSuite/Test/Time/1/Time-1-Round1-s202-d599179dabf6/org/joda/time/field/UnsupportedDurationField_ESTest_scaffolding.java": "3d9ec8aaea09ddabee250d0c463d2688c1678833eb8d4d321fc947bd2e600a80"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray",
+    "available_triggers": [
+      "org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 21,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 6849,
+      "tests": [
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test07",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test18",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test06",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test17",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test09",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test08",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test19",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test10",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test20",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test01",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test12",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test00",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test11",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test03",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test14",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test02",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test13",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test05",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test16",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test04",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test15"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 39,
+      "line_total": 41,
+      "line_coverage_percent": 95.1219512195122,
+      "branch_covered": 9,
+      "branch_total": 12,
+      "branch_coverage_percent": 75.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 6758,
+      "tests": [
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test07",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test18",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test06",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test17",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test09",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test08",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test19",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test10",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test20",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test01",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test12",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test00",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test11",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test03",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test14",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test02",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test13",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test05",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test16",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test04",
+        "org.joda.time.field.UnsupportedDurationField_ESTest::test15"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 40,
+      "line_total": 43,
+      "line_coverage_percent": 93.02325581395348,
+      "branch_covered": 10,
+      "branch_total": 14,
+      "branch_coverage_percent": 71.42857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Time/1/Time-1-Round1-s202-d599179dabf6/evaluation-1",
+  "finished_at": "2026-09-26T19:30:48.041643+00:00"
+}

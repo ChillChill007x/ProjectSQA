@@ -1,0 +1,13 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-1-Round2-s202-d73a6c89e008/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.182,
+  "stdout": "",
+  "stderr": "Running ant (compile)...................................................... OK\nRunning ant (compile.tests)................................................ OK\n"
+}

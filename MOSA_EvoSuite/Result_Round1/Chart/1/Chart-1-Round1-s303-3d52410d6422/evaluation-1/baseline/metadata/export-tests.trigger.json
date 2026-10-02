@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-1-Round1-s303-3d52410d6422/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.669,
+  "stdout": "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

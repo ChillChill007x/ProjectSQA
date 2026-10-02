@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JxPath-1-Round2-s101-e273fd812238/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode\norg.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testGetNode",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

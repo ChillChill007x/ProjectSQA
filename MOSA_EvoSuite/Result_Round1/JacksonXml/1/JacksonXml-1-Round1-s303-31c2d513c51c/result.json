@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonXml-1-Round1-s303-31c2d513c51c",
+  "unit": {
+    "project": "JacksonXml",
+    "bug": "1",
+    "target": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 303,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-26T14:37:48.463013+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c",
+    "tests": "MOSA_EvoSuite/Test/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c",
+    "config": "MOSA_EvoSuite/Configuration/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c"
+  },
+  "generation_time_sec": 124.873,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser_ESTest.java": "a1c376e22e5fb1d88d32a9b27988c5a1b035acd404bcc98ec7f776409d6fb931",
+    "MOSA_EvoSuite/Test/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c/com/fasterxml/jackson/dataformat/xml/deser/FromXmlParser_ESTest_scaffolding.java": "f90bda0c52b821b7a1dc8ef8e6533b1bc79c6a34034df4bb4835fe16e395e59f"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180",
+    "available_triggers": [
+      "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180",
+      "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty2",
+      "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 21457,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test0",
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 8,
+      "line_total": 281,
+      "line_coverage_percent": 2.8469750889679717,
+      "branch_covered": 0,
+      "branch_total": 143,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 20955,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test0",
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 8,
+      "line_total": 278,
+      "line_coverage_percent": 2.8776978417266186,
+      "branch_covered": 0,
+      "branch_total": 141,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s303-31c2d513c51c/evaluation-1",
+  "finished_at": "2026-09-26T14:49:27.443507+00:00"
+}

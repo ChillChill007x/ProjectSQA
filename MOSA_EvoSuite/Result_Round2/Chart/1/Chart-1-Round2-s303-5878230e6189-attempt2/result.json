@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-1-Round2-s303-5878230e6189-attempt2",
+  "unit": {
+    "project": "Chart",
+    "bug": "1",
+    "target": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-09-28T07:58:24.580748+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Chart/1/Chart-1-Round2-s303-5878230e6189-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Chart/1/Chart-1-Round2-s303-5878230e6189-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Chart/1/Chart-1-Round2-s303-5878230e6189-attempt2"
+  },
+  "generation_time_sec": 281.522,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/1/Chart-1-Round2-s303-5878230e6189-attempt2/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer_ESTest.java": "a89aea1bfa5e91d7d24520ac6e7de0509ec4de8955a827cef941dc59d4237354",
+    "MOSA_EvoSuite/Test/Chart/1/Chart-1-Round2-s303-5878230e6189-attempt2/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer_ESTest_scaffolding.java": "1a940fc2721eee9c71a8f17d60620bb56768d4226cf6a99155199dc7566c0a3b"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660",
+    "available_triggers": [
+      "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-09-28T08:14:41.844057+00:00"
+}

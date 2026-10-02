@@ -1,0 +1,13 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/workspace/work/checkouts/Chart-1-Round2-s303-5878230e6189-attempt2/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 67.862,
+  "stdout": "",
+  "stderr": "Running ant (compile)...................................................... OK\nRunning ant (compile.tests)................................................ OK\n"
+}

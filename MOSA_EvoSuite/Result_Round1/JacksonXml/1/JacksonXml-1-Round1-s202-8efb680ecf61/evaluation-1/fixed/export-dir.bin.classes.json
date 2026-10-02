@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-1-Round1-s202-8efb680ecf61/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.871,
+  "stdout": "target/classes",
+  "stderr": "Running ant (export.dir.bin.classes)....................................... OK\n\n"
+}

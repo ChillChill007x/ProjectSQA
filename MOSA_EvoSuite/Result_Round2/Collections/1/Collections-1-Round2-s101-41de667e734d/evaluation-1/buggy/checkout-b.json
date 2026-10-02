@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Collections",
+    "-v",
+    "1b",
+    "-w",
+    "/workspace/work/checkouts/Collections-1-Round2-s101-41de667e734d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 45.203,
+  "stdout": "",
+  "stderr": "Checking out f8aa3e03 to /workspace/work/checkouts/Collections-1-Round2-s10 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Collections-1-Round2-s101- OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff f8aa3e03:b1cd3584..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Collections-1b.................................. OK\n"
+}

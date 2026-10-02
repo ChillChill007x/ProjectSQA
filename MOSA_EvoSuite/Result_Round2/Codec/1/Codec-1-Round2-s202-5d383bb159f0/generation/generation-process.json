@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.codec.language.Caverphone",
+    "-projectCP",
+    "/workspace/work/checkouts/Codec-1-Round2-s202-5d383bb159f0/generation-fixed/target/classes",
+    "-seed",
+    "202",
+    "-Dsearch_budget=180",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Codec/1/Codec-1-Round2-s202-5d383bb159f0",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round2/Codec/1/Codec-1-Round2-s202-5d383bb159f0/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 15.913,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.codec.language.Caverphone\n* Starting Client-0\n* Connecting to master process on port 21113\n* Analyzing classpath: \n  - /workspace/work/checkouts/Codec-1-Round2-s202-5d383bb159f0/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.codec.language.Caverphone\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 9\n* Using seed 202\n* Starting evolution\n\r[Progress:>                             0%] [Cov:===================================100%]\n* Search finished after 0s and 0 generations, 593 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 9\n* Number of covered goals: 9\n* Generated 5 tests with total length 11\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'Caverphone_ESTest' to /workspace/MOSA_EvoSuite/Test/Codec/1/Codec-1-Round2-s202-5d383bb159f0\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

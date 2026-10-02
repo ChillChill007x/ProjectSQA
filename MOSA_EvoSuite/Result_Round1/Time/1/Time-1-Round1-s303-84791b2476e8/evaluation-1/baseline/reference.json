@@ -1,0 +1,8 @@
+{
+  "trigger": "org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray",
+  "available_triggers": [
+    "org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

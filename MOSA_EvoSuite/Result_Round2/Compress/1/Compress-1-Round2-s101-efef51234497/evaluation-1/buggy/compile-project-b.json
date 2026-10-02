@@ -1,0 +1,13 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/workspace/work/checkouts/Compress-1-Round2-s101-efef51234497/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 10.347,
+  "stdout": "",
+  "stderr": "Running ant (compile)...................................................... OK\nRunning ant (compile.tests)................................................ OK\n"
+}

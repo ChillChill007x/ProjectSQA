@@ -1,0 +1,13 @@
+{
+  "command": [
+    "defects4j",
+    "compile",
+    "-w",
+    "/workspace/work/checkouts/Collections-1-Round2-s202-161372d87f81/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 40.839,
+  "stdout": "",
+  "stderr": "Running ant (compile)...................................................... OK\nRunning ant (compile.tests)................................................ OK\n"
+}

@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":852,"tests":["com.google.gson.TypeInfoFactory_ESTest::test0","com.google.gson.TypeInfoFactory_ESTest::test1"],"failures":[],"passed":true}

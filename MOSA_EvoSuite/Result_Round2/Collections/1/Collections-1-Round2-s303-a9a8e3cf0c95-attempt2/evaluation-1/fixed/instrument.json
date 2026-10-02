@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2/evaluation-1/fixed/build/classes",
+    "--dest",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 9.996,
+  "stdout": "[INFO] 458 classes instrumented to /workspace/MOSA_EvoSuite/Result_Round2/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

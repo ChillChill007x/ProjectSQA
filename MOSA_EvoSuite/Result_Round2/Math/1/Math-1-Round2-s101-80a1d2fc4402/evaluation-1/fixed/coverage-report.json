@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s101-80a1d2fc4402/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Math-1-Round2-s101-80a1d2fc4402/evaluation-1/fixed/target/classes/org/apache/commons/math3/fraction/BigFraction.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s101-80a1d2fc4402/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.215,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s101-80a1d2fc4402/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}
