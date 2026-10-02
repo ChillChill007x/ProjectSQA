@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-1-Round1-s101-026827eb55e7",
+  "unit": {
+    "project": "Math",
+    "bug": "1",
+    "target": "org.apache.commons.math3.fraction.BigFraction",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-09-29T17:30:00.869090+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/1/Math-1-Round1-s101-026827eb55e7",
+    "tests": "GRT/Test/Math/1/Math-1-Round1-s101-026827eb55e7",
+    "config": "GRT/Configuration/Math/1/Math-1-Round1-s101-026827eb55e7"
+  },
+  "generation_time_sec": 10.345,
+  "test_sha256": {
+    "GRT/Test/Math/1/Math-1-Round1-s101-026827eb55e7/org/apache/commons/math3/fraction/SqaGeneratedTest.java": "e7ee09f89993d0c4f4b9e9989de160e3d9c3e96d2cc2a0d0f831e77fd7859be3"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor",
+    "available_triggers": [
+      "org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor",
+      "org.apache.commons.math3.fraction.FractionTest::testDigitLimitConstructor"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-09-29T17:54:45.635277+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 50,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 303,
+  "target": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+  "output": "/workspace/GRT/Test/Compress/1/Compress-1-Round2-s303-f2d30313a16a",
+  "class_root": "/workspace/work/checkouts/Compress-1-Round2-s303-f2d30313a16a/generation-fixed/target/classes",
+  "budget_seconds": 180
+}

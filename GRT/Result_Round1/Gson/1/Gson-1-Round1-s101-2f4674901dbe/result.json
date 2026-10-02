@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-1-Round1-s101-2f4674901dbe",
+  "unit": {
+    "project": "Gson",
+    "bug": "1",
+    "target": "com.google.gson.TypeInfoFactory",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TOOL_ERROR",
+  "started_at": "2026-09-28T12:44:26.990586+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-2f4674901dbe",
+    "tests": "GRT/Test/Gson/1/Gson-1-Round1-s101-2f4674901dbe",
+    "config": "GRT/Configuration/Gson/1/Gson-1-Round1-s101-2f4674901dbe"
+  },
+  "error": "Command failed; see /workspace/GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-2f4674901dbe/generation/generation-process.json\nException in thread \"main\" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:414)\n",
+  "finished_at": "2026-09-28T12:49:47.633619+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Time-1-Round1-s303-1f95e0f24716/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 82.021,
+  "stdout": "/workspace/work/checkouts/Time-1-Round1-s303-1f95e0f24716/generation-fixed/target/classes:/opt/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

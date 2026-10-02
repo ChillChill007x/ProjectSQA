@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.279,
+  "stdout": "/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/classes:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/src/java:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/commons-beanutils-1.4.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/commons-collections-2.0.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/commons-logging-1.0.4.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/jdom-1.0.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/junit-3.8.1.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/junit-3.8.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/mockrunner-0.4.1.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/servletapi-2.2.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/xerces-1.2.3.jar:/workspace/work/checkouts/JxPath-1-Round2-s202-53fc33b0d347/generation-fixed/target/lib/xml-apis-2.0.2.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

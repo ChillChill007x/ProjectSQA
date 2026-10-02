@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-1-Round1-s101-9901f54fd587",
+  "unit": {
+    "project": "Chart",
+    "bug": "1",
+    "target": "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-09-26T09:10:46.126708+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Chart/1/Chart-1-Round1-s101-9901f54fd587",
+    "tests": "GRT/Test/Chart/1/Chart-1-Round1-s101-9901f54fd587",
+    "config": "GRT/Configuration/Chart/1/Chart-1-Round1-s101-9901f54fd587"
+  },
+  "generation_time_sec": 11.744,
+  "test_sha256": {
+    "GRT/Test/Chart/1/Chart-1-Round1-s101-9901f54fd587/org/jfree/chart/renderer/category/SqaGeneratedTest.java": "cf5afe839fc9261dc97e2c9f78e714322acc1d7ed246c460ed54fe579eeb62e1"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660",
+    "available_triggers": [
+      "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-09-26T09:24:41.371475+00:00"
+}

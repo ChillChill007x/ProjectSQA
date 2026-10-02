@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Mockito-1-Round2-s101-ef8ddbe0eb8b/evaluation-1/fixed/build/classes/java/main",
+    "--dest",
+    "/workspace/GRT/Result_Round2/Mockito/1/Mockito-1-Round2-s101-ef8ddbe0eb8b/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 12.34,
+  "stdout": "[INFO] 393 classes instrumented to /workspace/GRT/Result_Round2/Mockito/1/Mockito-1-Round2-s101-ef8ddbe0eb8b/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

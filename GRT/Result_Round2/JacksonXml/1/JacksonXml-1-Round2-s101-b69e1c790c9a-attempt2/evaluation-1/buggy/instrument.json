@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/JacksonXml-1-Round2-s101-b69e1c790c9a-attempt2/evaluation-1/buggy/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s101-b69e1c790c9a-attempt2/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.32,
+  "stdout": "[INFO] 48 classes instrumented to /workspace/GRT/Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s101-b69e1c790c9a-attempt2/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

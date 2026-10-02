@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonCore",
+    "-v",
+    "1f",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-1-Round2-s202-b9b375a02194/generation-fixed"
+  ],
+  "returncode": -9,
+  "timed_out": true,
+  "elapsed_sec": 900.005,
+  "stdout": "",
+  "stderr": "Checking out b40ac81d to /workspace/work/checkouts/JacksonCore-1-Round2-s20 "
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-1-Round2-s101-592cbad45f4a/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.parser.ParserTest::createsStructureFromBodySnippet"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.672,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

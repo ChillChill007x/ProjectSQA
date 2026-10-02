@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s101-e069c3133d36/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/JacksonCore-1-Round2-s101-e069c3133d36/evaluation-1/fixed/target/classes/com/fasterxml/jackson/core/util/TextBuffer.class",
+    "--xml",
+    "/workspace/GRT/Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s101-e069c3133d36/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.574,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s101-e069c3133d36/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

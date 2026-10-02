@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-1-Round1-s303-88139784c387",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "1",
+    "target": "org.jsoup.nodes.Document",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 303,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "RUNNING",
+  "started_at": "2026-09-29T08:22:23.830811+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/1/Jsoup-1-Round1-s303-88139784c387",
+    "tests": "GRT/Test/Jsoup/1/Jsoup-1-Round1-s303-88139784c387",
+    "config": "GRT/Configuration/Jsoup/1/Jsoup-1-Round1-s303-88139784c387"
+  }
+}
