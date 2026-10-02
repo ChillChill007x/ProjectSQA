@@ -327,7 +327,12 @@ public final class GuidedRandom {
     weights.put(m,factor*initialWeights.getOrDefault(m,1.0));count("bloodhound_selections");return m;
   }
   static String typeName(Class<?> t){return t.getCanonicalName();}
-  static String argument(Class<?> t,int index){return "(("+typeName(boxed(t))+")v"+index+")";}
+  static String argument(Class<?> t,int index){
+    String value="(("+typeName(boxed(t))+")v"+index+")";
+    // Preserve the reflected parameter type when Java resolves overloaded calls.
+    // Reference parameters stay boxed; primitive parameters explicitly unbox.
+    return t.isPrimitive()?"("+value+"."+t.getName()+"Value())":value;
+  }
   static String literalCode(Object v){
     if(v==null)return "null";if(v instanceof String)return SqaJson.quote((String)v);
     if(v.getClass().isArray()){

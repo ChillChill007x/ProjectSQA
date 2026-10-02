@@ -9,6 +9,9 @@ import sqa.fixtures.Helper;
 
 /** Behavioral checks of pool reuse, feedback and source statistics, beyond component counters. */
 public class GRTMechanismsTest {
+  @Test public void generatedArgumentsPreserveOverloadDispatch() throws Exception {
+    ArgumentEmissionCheck.verify(GuidedRandom::argument);
+  }
   GuidedRandom engine() throws Exception {
     Map<String,Object> c=new HashMap<>();c.put("target","sqa.fixtures.BranchBox");c.put("seed",101);
     c.put("class_root",System.getProperty("sqa.fixture.classes"));
