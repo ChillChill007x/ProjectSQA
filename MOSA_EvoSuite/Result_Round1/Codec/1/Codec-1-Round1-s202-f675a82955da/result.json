@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-1-Round1-s202-f675a82955da",
+  "unit": {
+    "project": "Codec",
+    "bug": "1",
+    "target": "org.apache.commons.codec.language.Caverphone",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 202,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-26T09:48:09.772023+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/1/Codec-1-Round1-s202-f675a82955da",
+    "tests": "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round1-s202-f675a82955da",
+    "config": "MOSA_EvoSuite/Configuration/Codec/1/Codec-1-Round1-s202-f675a82955da"
+  },
+  "generation_time_sec": 20.988,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round1-s202-f675a82955da/org/apache/commons/codec/language/Caverphone_ESTest.java": "ddf522126fd9acb38bf6f70472729114626aa55aad56468ee2ae1048f07c7952",
+    "MOSA_EvoSuite/Test/Codec/1/Codec-1-Round1-s202-f675a82955da/org/apache/commons/codec/language/Caverphone_ESTest_scaffolding.java": "0bd4ff6ed8f9084325dd4bf8ef9254203afa642d54e1bb98f0628687f46811f9"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence",
+    "available_triggers": [
+      "org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.DoubleMetaphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.MetaphoneTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.RefinedSoundexTest::testLocaleIndependence",
+      "org.apache.commons.codec.language.SoundexTest::testLocaleIndependence"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 5,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1190,
+      "tests": [
+        "org.apache.commons.codec.language.Caverphone_ESTest::test1",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test0",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test4",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test3",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 69,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1232,
+      "tests": [
+        "org.apache.commons.codec.language.Caverphone_ESTest::test1",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test0",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test4",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test3",
+        "org.apache.commons.codec.language.Caverphone_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 69,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/1/Codec-1-Round1-s202-f675a82955da/evaluation-1",
+  "finished_at": "2026-09-26T09:50:31.052542+00:00"
+}

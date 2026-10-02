@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-1-Round2-s202-6fb7224b2f5d/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.929,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

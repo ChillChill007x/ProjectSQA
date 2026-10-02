@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Gson/1/Gson-1-Round2-s303-5ee23dd66730/evaluation-1/buggy/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Gson-1-Round2-s303-5ee23dd66730/evaluation-1/buggy/target/classes/com/google/gson/TypeInfoFactory.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Gson/1/Gson-1-Round2-s303-5ee23dd66730/evaluation-1/buggy/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.215,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round2/Gson/1/Gson-1-Round2-s303-5ee23dd66730/evaluation-1/buggy/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

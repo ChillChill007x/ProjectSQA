@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "1f",
+    "-w",
+    "/workspace/work/checkouts/Cli-1-Round2-s303-ec6d4b014b7d-attempt2/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 10.555,
+  "stdout": "",
+  "stderr": "Checking out b0e1b80b to /workspace/work/checkouts/Cli-1-Round2-s303-ec6d4b OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff b0e1b80b:8f46f467..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-1f.......................................... OK\n"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-1-Round2-s303-fb752c0351e0",
+  "unit": {
+    "project": "Time",
+    "bug": "1",
+    "target": "org.joda.time.Partial",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TIMEOUT",
+  "started_at": "2026-09-28T15:28:43.860247+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Time/1/Time-1-Round2-s303-fb752c0351e0",
+    "tests": "MOSA_EvoSuite/Test/Time/1/Time-1-Round2-s303-fb752c0351e0",
+    "config": "MOSA_EvoSuite/Configuration/Time/1/Time-1-Round2-s303-fb752c0351e0"
+  },
+  "error": "Command failed; see /workspace/MOSA_EvoSuite/Result_Round2/Time/1/Time-1-Round2-s303-fb752c0351e0/generation/generation-process.json\n",
+  "finished_at": "2026-09-28T15:38:56.848632+00:00"
+}

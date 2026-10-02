@@ -1,0 +1,11 @@
+{
+  "trigger": "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+  "available_triggers": [
+    "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+    "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue3",
+    "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue2",
+    "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue3"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

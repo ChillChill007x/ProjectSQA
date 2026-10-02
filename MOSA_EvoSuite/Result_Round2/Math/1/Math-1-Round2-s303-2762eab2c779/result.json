@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-1-Round2-s303-2762eab2c779",
+  "unit": {
+    "project": "Math",
+    "bug": "1",
+    "target": "org.apache.commons.math3.fraction.Fraction",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TIMEOUT",
+  "started_at": "2026-09-28T12:31:16.041472+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s303-2762eab2c779",
+    "tests": "MOSA_EvoSuite/Test/Math/1/Math-1-Round2-s303-2762eab2c779",
+    "config": "MOSA_EvoSuite/Configuration/Math/1/Math-1-Round2-s303-2762eab2c779"
+  },
+  "error": "Command failed; see /workspace/MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s303-2762eab2c779/generation/generation-process.json\n",
+  "finished_at": "2026-09-28T12:41:04.899092+00:00"
+}

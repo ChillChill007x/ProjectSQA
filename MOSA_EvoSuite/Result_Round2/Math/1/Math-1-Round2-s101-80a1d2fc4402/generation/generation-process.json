@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.math3.fraction.BigFraction",
+    "-projectCP",
+    "/workspace/work/checkouts/Math-1-Round2-s101-80a1d2fc4402/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=180",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Math/1/Math-1-Round2-s101-80a1d2fc4402",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round2/Math/1/Math-1-Round2-s101-80a1d2fc4402/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 252.503,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.math3.fraction.BigFraction\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Math-1-Round2-s101-80a1d2fc4402/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.math3.fraction.BigFraction\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 137\n* Using seed 101\n* Starting evolution\n\r[Progress:==>                           8%] [Cov:==========================>        77%]\r[Progress:=====>                        17%] [Cov:============================>      81%]\r[Progress:======>                       23%] [Cov:===============================>   89%]\r[Progress:========>                     29%] [Cov:================================>  92%]\r[Progress:==========>                   35%] [Cov:================================>  94%]\r[Progress:==========>                   35%] [Cov:=================================> 96%]\r[Progress:===========>                  38%] [Cov:=================================> 97%]\r[Progress:===========>                  38%] [Cov:=================================> 97%]\r[Progress:===========>                  38%] [Cov:=================================> 97%]\r[Progress:===========>                  38%] [Cov:=================================> 97%]\r[Progress:===========>                  38%] [Cov:=================================> 97%]\r[Progress:============>                 41%] [Cov:=================================> 97%]\r[Progress:============>                 42%] [Cov:=================================> 97%]\r[Progress:============>                 42%] [Cov:=================================> 97%]\r[Progress:============>                 42%] [Cov:==================================>98%]\r[Progress:==============>               47%] [Cov:==================================>98%]\r[Progress:===============>              53%] [Cov:==================================>98%]\r[Progress:================>             55%] [Cov:==================================>98%]\r[Progress:================>             55%] [Cov:==================================>98%]\r[Progress:=================>            57%] [Cov:==================================>98%]\r[Progress:=================>            57%] [Cov:==================================>99%]\r[Progress:==================>           60%] [Cov:===================================100%]\n* Search finished after 110s and 21 generations, 11598 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 99%\n* Total number of goals: 137\n* Number of covered goals: 136\n* Generated 69 tests with total length 141\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'BigFraction_ESTest' to /workspace/MOSA_EvoSuite/Test/Math/1/Math-1-Round2-s101-80a1d2fc4402\n* Done!\n\n* Computation finished\n",
+  "stderr": "[MASTER] 04:38:37.781 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests\n"
+}

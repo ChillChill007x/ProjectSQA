@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-1-Round1-s101-ad42b7c432c4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.92,
+  "stdout": "org.jsoup.parser.ParserTest::createsStructureFromBodySnippet",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

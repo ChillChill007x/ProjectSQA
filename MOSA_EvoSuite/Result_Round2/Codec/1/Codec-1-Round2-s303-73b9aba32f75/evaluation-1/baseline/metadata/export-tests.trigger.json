@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Codec-1-Round2-s303-73b9aba32f75/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence\norg.apache.commons.codec.language.DoubleMetaphoneTest::testLocaleIndependence\norg.apache.commons.codec.language.MetaphoneTest::testLocaleIndependence\norg.apache.commons.codec.language.RefinedSoundexTest::testLocaleIndependence\norg.apache.commons.codec.language.SoundexTest::testLocaleIndependence",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

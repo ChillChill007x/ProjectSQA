@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-1-Round2-s303-a9a8e3cf0c95-attempt2",
+  "unit": {
+    "project": "Collections",
+    "bug": "1",
+    "target": "org.apache.commons.collections.map.Flat3Map",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-09-28T09:03:30.796027+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2"
+  },
+  "generation_time_sec": 269.627,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2/org/apache/commons/collections/map/Flat3Map_ESTest.java": "7d5c1b5133e95009a90944eac026623b1ecef91d3b2f0c5765c36a2660695cf7",
+    "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round2-s303-a9a8e3cf0c95-attempt2/org/apache/commons/collections/map/Flat3Map_ESTest_scaffolding.java": "dabcc024a36b49df758ab88bf0444adcce7e83cea63916bd36ab30d71fbdbbc9"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+    "available_triggers": [
+      "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+      "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue3",
+      "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue2",
+      "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue3"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-09-28T09:13:09.618829+00:00"
+}

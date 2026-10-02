@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-1-Round1-s303-0f8565eabcfd/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "org.mockito.internal.invocation.InvocationMatcherTest::should_capture_arguments_when_args_count_does_NOT_match\norg.mockito.internal.util.reflection.FieldInitializerTest::can_instantiate_class_with_parameterized_constructor\norg.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_report_failure_if_constructor_throws_exception\norg.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_fail_if_an_argument_instance_type_do_not_match_wanted_type\norg.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_with_vararg_constructor\norg.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_if_resolver_provide_matching_types\norg.mockitousage.basicapi.ResetTest::shouldRemoveAllStubbing\norg.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithNullVarArgArray\norg.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithAnyObject\norg.mockitousage.basicapi.UsingVarargsTest::shouldStubBooleanVarargs\norg.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg\norg.mockitousage.basicapi.UsingVarargsTest::shouldVerifyBooleanVarargs\norg.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenMixedVarargsUsed\norg.mockitousage.basicapi.UsingVarargsTest::shouldStubStringVarargs\norg.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenDoubleStringAndMixedVarargsUsed\norg.mockitousage.basicapi.UsingVarargsTest::shouldVerifyStringVarargs\norg.mockitousage.basicapi.UsingVarargsTest::shouldVerifyObjectVarargs\norg.mockitousage.bugs.VarargsErrorWhenCallingRealMethodTest::shouldNotThrowAnyException\norg.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyWithAnyVarargs\norg.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyNumberOfInvocationsUsingAnyVarargAndEqualArgument\norg.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest::shouldStubUsingAnyVarargs\norg.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest::shouldVerifyUsingMatchers\norg.mockitousage.stubbing.BasicStubbingTest::test_stub_only_not_verifiable\norg.mockitousage.stubbing.BasicStubbingTest::should_evaluate_latest_stubbing_first\norg.mockitousage.stubbing.DeprecatedStubbingTest::shouldEvaluateLatestStubbingFirst\norg.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest::shouldUseEqualsToVerifyMethodVarargs",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

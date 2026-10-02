@@ -1,0 +1,15 @@
+{
+  "project": "JacksonXml",
+  "bug": "1",
+  "target": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser",
+  "tool": "evosuite",
+  "round": "Round2",
+  "seed": 303,
+  "budget_seconds": 180,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null
+}

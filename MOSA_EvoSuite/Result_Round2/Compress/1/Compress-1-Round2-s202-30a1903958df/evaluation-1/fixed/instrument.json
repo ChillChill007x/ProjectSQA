@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Compress-1-Round2-s202-30a1903958df/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/MOSA_EvoSuite/Result_Round2/Compress/1/Compress-1-Round2-s202-30a1903958df/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.371,
+  "stdout": "[INFO] 66 classes instrumented to /workspace/MOSA_EvoSuite/Result_Round2/Compress/1/Compress-1-Round2-s202-30a1903958df/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

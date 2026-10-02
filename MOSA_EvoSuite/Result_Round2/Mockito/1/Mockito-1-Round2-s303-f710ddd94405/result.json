@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-1-Round2-s303-f710ddd94405",
+  "unit": {
+    "project": "Mockito",
+    "bug": "1",
+    "target": "org.mockito.internal.invocation.InvocationMatcher",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-09-28T13:31:34.742498+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Mockito/1/Mockito-1-Round2-s303-f710ddd94405",
+    "tests": "MOSA_EvoSuite/Test/Mockito/1/Mockito-1-Round2-s303-f710ddd94405",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/1/Mockito-1-Round2-s303-f710ddd94405"
+  },
+  "generation_time_sec": 270.734,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/1/Mockito-1-Round2-s303-f710ddd94405/org/mockito/internal/invocation/InvocationMatcher_ESTest.java": "1993454264361094f3e5ceb5bc5f12db59127941adb6485bc2b2f0204d8698a8",
+    "MOSA_EvoSuite/Test/Mockito/1/Mockito-1-Round2-s303-f710ddd94405/org/mockito/internal/invocation/InvocationMatcher_ESTest_scaffolding.java": "392b6ec6b8861b111f2ee6af13f0b7352968d285906bcb5c71fd7c01b570c0aa"
+  },
+  "reference_validation": {
+    "trigger": "org.mockito.internal.invocation.InvocationMatcherTest::should_capture_arguments_when_args_count_does_NOT_match",
+    "available_triggers": [
+      "org.mockito.internal.invocation.InvocationMatcherTest::should_capture_arguments_when_args_count_does_NOT_match",
+      "org.mockito.internal.util.reflection.FieldInitializerTest::can_instantiate_class_with_parameterized_constructor",
+      "org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_report_failure_if_constructor_throws_exception",
+      "org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_fail_if_an_argument_instance_type_do_not_match_wanted_type",
+      "org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_with_vararg_constructor",
+      "org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_if_resolver_provide_matching_types",
+      "org.mockitousage.basicapi.ResetTest::shouldRemoveAllStubbing",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithNullVarArgArray",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithAnyObject",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldStubBooleanVarargs",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyBooleanVarargs",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenMixedVarargsUsed",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldStubStringVarargs",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenDoubleStringAndMixedVarargsUsed",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyStringVarargs",
+      "org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyObjectVarargs",
+      "org.mockitousage.bugs.VarargsErrorWhenCallingRealMethodTest::shouldNotThrowAnyException",
+      "org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyWithAnyVarargs",
+      "org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyNumberOfInvocationsUsingAnyVarargAndEqualArgument",
+      "org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest::shouldStubUsingAnyVarargs",
+      "org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest::shouldVerifyUsingMatchers",
+      "org.mockitousage.stubbing.BasicStubbingTest::test_stub_only_not_verifiable",
+      "org.mockitousage.stubbing.BasicStubbingTest::should_evaluate_latest_stubbing_first",
+      "org.mockitousage.stubbing.DeprecatedStubbingTest::shouldEvaluateLatestStubbingFirst",
+      "org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest::shouldUseEqualsToVerifyMethodVarargs"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 10446,
+      "tests": [
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test1",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test0",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test3",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test2",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test5",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test4",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test7",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 69,
+      "line_coverage_percent": 27.536231884057973,
+      "branch_covered": 6,
+      "branch_total": 60,
+      "branch_coverage_percent": 10.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 10651,
+      "tests": [
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test1",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test0",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test3",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test2",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test5",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test4",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test7",
+        "org.mockito.internal.invocation.InvocationMatcher_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 61,
+      "line_coverage_percent": 31.147540983606557,
+      "branch_covered": 6,
+      "branch_total": 52,
+      "branch_coverage_percent": 11.538461538461538
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round2/Mockito/1/Mockito-1-Round2-s303-f710ddd94405/evaluation-1",
+  "finished_at": "2026-09-28T13:56:45.763247+00:00"
+}

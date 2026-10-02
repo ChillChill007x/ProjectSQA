@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-1-Round1-s202-c4c60e99b3da",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "1",
+    "target": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 202,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TIMEOUT",
+  "started_at": "2026-09-26T13:36:38.045243+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s202-c4c60e99b3da",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/1/JacksonDatabind-1-Round1-s202-c4c60e99b3da",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/1/JacksonDatabind-1-Round1-s202-c4c60e99b3da"
+  },
+  "error": "Command failed; see /workspace/MOSA_EvoSuite/Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s202-c4c60e99b3da/generation/generation-process.json\n",
+  "finished_at": "2026-09-26T13:54:20.152182+00:00"
+}

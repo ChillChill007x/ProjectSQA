@@ -1,0 +1,1 @@
+{"run_count":4,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":929,"tests":["org.apache.commons.codec.language.Caverphone_ESTest::test1","org.apache.commons.codec.language.Caverphone_ESTest::test0","org.apache.commons.codec.language.Caverphone_ESTest::test3","org.apache.commons.codec.language.Caverphone_ESTest::test2"],"failures":[],"passed":true}

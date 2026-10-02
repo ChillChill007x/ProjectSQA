@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-1-Round2-s303-9a77d9e7323f",
+  "unit": {
+    "project": "Closure",
+    "bug": "1",
+    "target": "com.google.javascript.jscomp.RemoveUnusedVars",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TIMEOUT",
+  "started_at": "2026-09-27T15:04:33.435806+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/Closure/1/Closure-1-Round2-s303-9a77d9e7323f",
+    "tests": "MOSA_EvoSuite/Test/Closure/1/Closure-1-Round2-s303-9a77d9e7323f",
+    "config": "MOSA_EvoSuite/Configuration/Closure/1/Closure-1-Round2-s303-9a77d9e7323f"
+  },
+  "error": "Command failed; see /workspace/MOSA_EvoSuite/Result_Round2/Closure/1/Closure-1-Round2-s303-9a77d9e7323f/generation/generation-process.json\n",
+  "finished_at": "2026-09-27T15:14:11.857576+00:00"
+}

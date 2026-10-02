@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":20519,"tests":["com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test0","com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser_ESTest::test1"],"failures":[],"passed":true}

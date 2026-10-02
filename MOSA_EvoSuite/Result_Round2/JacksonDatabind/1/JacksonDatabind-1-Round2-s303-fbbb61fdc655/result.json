@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-1-Round2-s303-fbbb61fdc655",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "1",
+    "target": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter",
+    "tool": "evosuite",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-09-27T18:59:19.383363+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round2/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-fbbb61fdc655",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-fbbb61fdc655",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-fbbb61fdc655"
+  },
+  "generation_time_sec": 285.159,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-fbbb61fdc655/com/fasterxml/jackson/databind/ser/BeanPropertyWriter_ESTest.java": "ab20ab634a2405a29076075312a091d805deaa92f9b7582969a8703f6c01c6ae",
+    "MOSA_EvoSuite/Test/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-fbbb61fdc655/com/fasterxml/jackson/databind/ser/BeanPropertyWriter_ESTest_scaffolding.java": "1e03b92c32bd05fc032a8c9b919e2d4520b9175052a0afa22b2f7e5be78c828f"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.struct.TestPOJOAsArray::testNullColumn",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.struct.TestPOJOAsArray::testNullColumn"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-09-27T19:32:13.589636+00:00"
+}
