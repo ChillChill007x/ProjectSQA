@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=destfile=/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/coverage-1.exec,append=false,excludes=*",
+    "-Djacoco-agent.destfile=/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/coverage-1.exec",
+    "-Djacoco-agent.append=false",
+    "-cp",
+    "/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/classes:/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/instrumented:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/instrumented:/workspace/work/checkouts/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/target/test-classes:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+    "SqaJUnitRunner",
+    "/workspace/GRT/Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/evaluation-1/fixed/junit-1.json",
+    "org.apache.commons.math3.fraction.SqaGeneratedTest"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.073,
+  "stdout": "",
+  "stderr": ""
+}

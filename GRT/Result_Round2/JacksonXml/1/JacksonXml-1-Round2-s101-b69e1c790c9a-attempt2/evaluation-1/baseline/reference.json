@@ -1,0 +1,10 @@
+{
+  "trigger": "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180",
+  "available_triggers": [
+    "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180",
+    "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty2",
+    "com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

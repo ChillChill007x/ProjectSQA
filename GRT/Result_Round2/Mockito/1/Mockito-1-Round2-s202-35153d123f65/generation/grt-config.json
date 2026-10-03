@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 50,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 202,
+  "target": "org.mockito.internal.invocation.InvocationMatcher",
+  "output": "/workspace/GRT/Test/Mockito/1/Mockito-1-Round2-s202-35153d123f65",
+  "class_root": "/workspace/work/checkouts/Mockito-1-Round2-s202-35153d123f65/generation-fixed/build/classes/java/main",
+  "budget_seconds": 180
+}

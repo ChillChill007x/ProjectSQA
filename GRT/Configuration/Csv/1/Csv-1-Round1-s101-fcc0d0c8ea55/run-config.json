@@ -1,0 +1,15 @@
+{
+  "project": "Csv",
+  "bug": "1",
+  "target": "org.apache.commons.csv.ExtendedBufferedReader",
+  "tool": "grt",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 60,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null
+}

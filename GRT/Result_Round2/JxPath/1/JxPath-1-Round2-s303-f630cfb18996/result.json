@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-1-Round2-s303-f630cfb18996",
+  "unit": {
+    "project": "JxPath",
+    "bug": "1",
+    "target": "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer",
+    "tool": "grt",
+    "round": "Round2",
+    "seed": 303,
+    "budget_seconds": 180,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "FLAKY",
+  "started_at": "2026-09-29T15:02:22.690918+00:00",
+  "paths": {
+    "result": "GRT/Result_Round2/JxPath/1/JxPath-1-Round2-s303-f630cfb18996",
+    "tests": "GRT/Test/JxPath/1/JxPath-1-Round2-s303-f630cfb18996",
+    "config": "GRT/Configuration/JxPath/1/JxPath-1-Round2-s303-f630cfb18996"
+  },
+  "generation_time_sec": 9.994,
+  "test_sha256": {
+    "GRT/Test/JxPath/1/JxPath-1-Round2-s303-f630cfb18996/org/apache/commons/jxpath/ri/model/jdom/SqaGeneratedTest.java": "2e158e525a73a61db91d55a6f9889401269860b3dd813aaa46c81259e96951fa"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode",
+      "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testGetNode"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-09-29T15:08:37.460912+00:00"
+}

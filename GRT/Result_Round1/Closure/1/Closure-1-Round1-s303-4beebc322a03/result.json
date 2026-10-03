@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-1-Round1-s303-4beebc322a03",
+  "unit": {
+    "project": "Closure",
+    "bug": "1",
+    "target": "com.google.javascript.jscomp.RemoveUnusedVars",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 303,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "TOOL_ERROR",
+  "started_at": "2026-09-26T16:35:31.695708+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Closure/1/Closure-1-Round1-s303-4beebc322a03",
+    "tests": "GRT/Test/Closure/1/Closure-1-Round1-s303-4beebc322a03",
+    "config": "GRT/Configuration/Closure/1/Closure-1-Round1-s303-4beebc322a03"
+  },
+  "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/1/Closure-1-Round1-s303-4beebc322a03/generation/generation-process.json\nException in thread \"main\" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:414)\n",
+  "finished_at": "2026-09-26T16:41:26.514611+00:00"
+}

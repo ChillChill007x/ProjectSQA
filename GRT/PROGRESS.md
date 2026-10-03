@@ -1,0 +1,1166 @@
+# บันทึกความคืบหน้า GRT ตั้งแต่โปรเจกต์แรก
+
+อัปเดต: 2026-10-02 23:08:14 +07:00
+
+อ่านจาก result.json และ JUnit logs จริง เก็บทุก attempt ใน [run-ledger.json](run-ledger.json) โดยไม่แก้ผลดั้งเดิม
+
+Hash ชุดปัจจุบัน อ้างอิงผล experiment ล่าสุด: `c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6`
+
+## สรุปตามลำดับที่ทำ
+
+ตัวเลขเป็นจำนวน attempts ภายใต้ hash ชุดปัจจุบัน แยกรอบ ไม่ใช่จำนวนบั๊กและไม่ใช่ผลเลือกใช้ทางสถิติ เครื่องหมาย — หมายถึงยังไม่มีผลในชุดนี้
+
+| ลำดับ | Project | Round1 | Round2 |
+|---|---|---|---|
+| 1 | Lang | EVALUATED: 3 | EVALUATED: 3 |
+| 2 | Chart | EVALUATED: 3 | EVALUATED: 3 |
+| 3 | Cli | EVALUATED: 3 | EVALUATED: 3 |
+| 4 | Closure | TOOL_ERROR: 3 | TOOL_ERROR: 3 |
+| 5 | Codec | EVALUATED: 6; TOOL_ERROR: 3 | EVALUATED: 6; TOOL_ERROR: 3 |
+| 6 | Collections | EVALUATED: 3 | EVALUATED: 3 |
+| 7 | Compress | EVALUATED: 3 | EVALUATED: 3 |
+| 8 | Csv | TOOL_ERROR: 3 | TOOL_ERROR: 3 |
+| 9 | Gson | TOOL_ERROR: 3 | TOOL_ERROR: 3 |
+| 10 | JacksonCore | EVALUATED: 6 | EVALUATED: 6; TIMEOUT: 1 |
+| 11 | JacksonDatabind | EVALUATED: 2; INVALID_ORACLE: 2 | EVALUATED: 2; INVALID_ORACLE: 1 |
+| 12 | JacksonXml | EVALUATED: 3 | EVALUATED: 3; INVALID_ORACLE: 2 |
+| 13 | Jsoup | EVALUATED: 3; RUNNING: 1 | EVALUATED: 3 |
+| 14 | JxPath | EVALUATED: 6; FLAKY: 1 | EVALUATED: 6; FLAKY: 2 |
+| 15 | Math | COMPILE_FAIL: 3; INVALID_ORACLE: 3 | COMPILE_FAIL: 6; INVALID_ORACLE: 3; RUNNING: 1 |
+| 16 | Mockito | EVALUATED: 3 | EVALUATED: 3 |
+| 17 | Time | EVALUATED: 6 | EVALUATED: 6 |
+
+## ภาพรวมหลักฐานทั้งหมด รวม validation และก่อนแก้ engine
+
+- COMPILE_FAIL: 12 attempts
+- EVALUATED: 109 attempts
+- FLAKY: 3 attempts
+- INVALID_ORACLE: 11 attempts
+- RUNNING: 3 attempts
+- TIMEOUT: 1 attempts
+- TOOL_ERROR: 24 attempts
+- รวมทั้งหมด: 163 attempts
+- Validation: 4 attempts (ห้ามปนผลทดลอง)
+- Fault candidates ในชุดปัจจุบัน: 10 attempts (ยังไม่ใช่จำนวนบั๊กยืนยัน)
+
+## รายการตรวจย้อนหลังทุก attempt
+
+ชื่อ run เชื่อมไปยังหลักฐานจริง; ตัดสินสถิติโดยแยก hash/purpose/target/round/seed และกติกาเลือก attempt ก่อนวิเคราะห์ ห้ามเฉลี่ยทุกแถวโดยตรง
+
+### Lang
+
+- [Lang-1-Round1-s101-8280c8cac39d](Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d/result.json): **EVALUATED**; validation; superseded; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s101-8280c8cac39d-offline-validation2](Result_Round1/Lang/1/Lang-1-Round1-s101-8280c8cac39d-offline-validation2/result.json): **EVALUATED**; validation; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s101-6fa89ac07051](Result_Round1/Lang/1/Lang-1-Round1-s101-6fa89ac07051/result.json): **RUNNING**; validation; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=
+- [Lang-1-Round1-s101-6fa89ac07051-attempt2](Result_Round1/Lang/1/Lang-1-Round1-s101-6fa89ac07051-attempt2/result.json): **EVALUATED**; validation; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s101-41a4664256b8](Result_Round1/Lang/1/Lang-1-Round1-s101-41a4664256b8/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s101-62ab18910eb7](Result_Round1/Lang/1/Lang-1-Round1-s101-62ab18910eb7/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s202-e2970867f5c4](Result_Round1/Lang/1/Lang-1-Round1-s202-e2970867f5c4/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s202-c1cd30e3b5e7](Result_Round1/Lang/1/Lang-1-Round1-s202-c1cd30e3b5e7/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s303-b7aabd56588d](Result_Round1/Lang/1/Lang-1-Round1-s303-b7aabd56588d/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round1-s303-cc07cbcd4b73](Result_Round1/Lang/1/Lang-1-Round1-s303-cc07cbcd4b73/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s101-680fae286a94](Result_Round2/Lang/1/Lang-1-Round2-s101-680fae286a94/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s101-03ab25fe228c](Result_Round2/Lang/1/Lang-1-Round2-s101-03ab25fe228c/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s202-d1be888917a1](Result_Round2/Lang/1/Lang-1-Round2-s202-d1be888917a1/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s202-97c4e460ac05](Result_Round2/Lang/1/Lang-1-Round2-s202-97c4e460ac05/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s303-e811ef0eb3c8](Result_Round2/Lang/1/Lang-1-Round2-s303-e811ef0eb3c8/result.json): **EVALUATED**; ก่อนแก้ engine/คนละ hash; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+- [Lang-1-Round2-s303-1601464edef4](Result_Round2/Lang/1/Lang-1-Round2-s303-1601464edef4/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.lang3.math.NumberUtils; fault_candidate=False
+
+### Chart
+
+- [Chart-1-Round1-s101-9901f54fd587](Result_Round1/Chart/1/Chart-1-Round1-s101-9901f54fd587/result.json): **COMPILE_FAIL**; ก่อนแก้ engine/คนละ hash; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Chart-1-Round1-s101-a893a1241183](Result_Round1/Chart/1/Chart-1-Round1-s101-a893a1241183/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+- [Chart-1-Round1-s202-aede68191207](Result_Round1/Chart/1/Chart-1-Round1-s202-aede68191207/result.json): **COMPILE_FAIL**; ก่อนแก้ engine/คนละ hash; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Chart-1-Round1-s202-d1c0314e51d1](Result_Round1/Chart/1/Chart-1-Round1-s202-d1c0314e51d1/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+- [Chart-1-Round1-s303-3e8de54a3e20](Result_Round1/Chart/1/Chart-1-Round1-s303-3e8de54a3e20/result.json): **COMPILE_FAIL**; ก่อนแก้ engine/คนละ hash; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Chart-1-Round1-s303-e9c5dce873ad](Result_Round1/Chart/1/Chart-1-Round1-s303-e9c5dce873ad/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+- [Chart-1-Round2-s101-c43dfdc15248](Result_Round2/Chart/1/Chart-1-Round2-s101-c43dfdc15248/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+- [Chart-1-Round2-s202-8d65d4e932c8](Result_Round2/Chart/1/Chart-1-Round2-s202-8d65d4e932c8/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+- [Chart-1-Round2-s303-7fba48b57534](Result_Round2/Chart/1/Chart-1-Round2-s303-7fba48b57534/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jfree.chart.renderer.category.AbstractCategoryItemRenderer; fault_candidate=False
+
+### Cli
+
+- [Cli-1-Round1-s101-60733e1bb830](Result_Round1/Cli/1/Cli-1-Round1-s101-60733e1bb830/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+- [Cli-1-Round1-s202-0d476734cbab](Result_Round1/Cli/1/Cli-1-Round1-s202-0d476734cbab/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+- [Cli-1-Round1-s303-a84992e60aff](Result_Round1/Cli/1/Cli-1-Round1-s303-a84992e60aff/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+- [Cli-1-Round2-s101-4f771f1aaa26](Result_Round2/Cli/1/Cli-1-Round2-s101-4f771f1aaa26/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+- [Cli-1-Round2-s202-639a89e683fc](Result_Round2/Cli/1/Cli-1-Round2-s202-639a89e683fc/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+- [Cli-1-Round2-s303-009a47710bf4](Result_Round2/Cli/1/Cli-1-Round2-s303-009a47710bf4/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.cli.CommandLine; fault_candidate=False
+
+### Closure
+
+- [Closure-1-Round1-s101-855223d886fc](Result_Round1/Closure/1/Closure-1-Round1-s101-855223d886fc/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Closure/1/Closure-1-Round1-s101-855223d886fc/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Closure-1-Round1-s202-3b343f76366a](Result_Round1/Closure/1/Closure-1-Round1-s202-3b343f76366a/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Closure/1/Closure-1-Round1-s202-3b343f76366a/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Closure-1-Round1-s303-4beebc322a03](Result_Round1/Closure/1/Closure-1-Round1-s303-4beebc322a03/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Closure/1/Closure-1-Round1-s303-4beebc322a03/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Closure-1-Round2-s101-19d86dcbbf72](Result_Round2/Closure/1/Closure-1-Round2-s101-19d86dcbbf72/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Closure/1/Closure-1-Round2-s101-19d86dcbbf72/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Closure-1-Round2-s202-7d7f633081df](Result_Round2/Closure/1/Closure-1-Round2-s202-7d7f633081df/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Closure/1/Closure-1-Round2-s202-7d7f633081df/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Closure-1-Round2-s303-d42091dcf505](Result_Round2/Closure/1/Closure-1-Round2-s303-d42091dcf505/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.javascript.jscomp.RemoveUnusedVars; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Closure/1/Closure-1-Round2-s303-d42091dcf505/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.javascript.jscomp.RemoveUnusedVars 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+
+### Codec
+
+- [Codec-1-Round1-s101-97979c041436](Result_Round1/Codec/1/Codec-1-Round1-s101-97979c041436/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round1-s101-3846623855fa](Result_Round1/Codec/1/Codec-1-Round1-s101-3846623855fa/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round1-s101-b568637a232b](Result_Round1/Codec/1/Codec-1-Round1-s101-b568637a232b/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Codec/1/Codec-1-Round1-s101-b568637a232b/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Codec-1-Round1-s202-df1db270326e](Result_Round1/Codec/1/Codec-1-Round1-s202-df1db270326e/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round1-s202-c516c188ed74](Result_Round1/Codec/1/Codec-1-Round1-s202-c516c188ed74/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round1-s202-f13319e811a9](Result_Round1/Codec/1/Codec-1-Round1-s202-f13319e811a9/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Codec/1/Codec-1-Round1-s202-f13319e811a9/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Codec-1-Round1-s303-4c985fffa3cd](Result_Round1/Codec/1/Codec-1-Round1-s303-4c985fffa3cd/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round1-s303-bf268daf6689](Result_Round1/Codec/1/Codec-1-Round1-s303-bf268daf6689/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round1-s303-05e45ae336f3](Result_Round1/Codec/1/Codec-1-Round1-s303-05e45ae336f3/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Codec/1/Codec-1-Round1-s303-05e45ae336f3/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Codec-1-Round2-s101-7fa2d912aa26](Result_Round2/Codec/1/Codec-1-Round2-s101-7fa2d912aa26/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round2-s101-bb0f24decc54](Result_Round2/Codec/1/Codec-1-Round2-s101-bb0f24decc54/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round2-s101-e8b787a8c0fd](Result_Round2/Codec/1/Codec-1-Round2-s101-e8b787a8c0fd/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Codec/1/Codec-1-Round2-s101-e8b787a8c0fd/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Codec-1-Round2-s202-8d29f599e620](Result_Round2/Codec/1/Codec-1-Round2-s202-8d29f599e620/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round2-s202-bb7e1ebffd04](Result_Round2/Codec/1/Codec-1-Round2-s202-bb7e1ebffd04/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round2-s202-31a9f1e28e14](Result_Round2/Codec/1/Codec-1-Round2-s202-31a9f1e28e14/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Codec/1/Codec-1-Round2-s202-31a9f1e28e14/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Codec-1-Round2-s303-23d9de1dadc9](Result_Round2/Codec/1/Codec-1-Round2-s303-23d9de1dadc9/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Caverphone; fault_candidate=False
+- [Codec-1-Round2-s303-de8353ef312b](Result_Round2/Codec/1/Codec-1-Round2-s303-de8353ef312b/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.Metaphone; fault_candidate=False
+- [Codec-1-Round2-s303-5abdd6242b18](Result_Round2/Codec/1/Codec-1-Round2-s303-5abdd6242b18/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.codec.language.SoundexUtils; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Codec/1/Codec-1-Round2-s303-5abdd6242b18/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.codec.language.SoundexUtils 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+
+### Collections
+
+- [Collections-1-Round1-s101-6fb2a075f39b](Result_Round1/Collections/1/Collections-1-Round1-s101-6fb2a075f39b/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+- [Collections-1-Round1-s202-78f39886919a](Result_Round1/Collections/1/Collections-1-Round1-s202-78f39886919a/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+- [Collections-1-Round1-s303-5d505a603d7d](Result_Round1/Collections/1/Collections-1-Round1-s303-5d505a603d7d/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+- [Collections-1-Round2-s101-184898a3b9ec](Result_Round2/Collections/1/Collections-1-Round2-s101-184898a3b9ec/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+- [Collections-1-Round2-s202-a3b0e538b61f](Result_Round2/Collections/1/Collections-1-Round2-s202-a3b0e538b61f/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+- [Collections-1-Round2-s303-4d40cc31771d](Result_Round2/Collections/1/Collections-1-Round2-s303-4d40cc31771d/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.collections.map.Flat3Map; fault_candidate=False
+
+### Compress
+
+- [Compress-1-Round1-s101-166c66e81e6c](Result_Round1/Compress/1/Compress-1-Round1-s101-166c66e81e6c/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+- [Compress-1-Round1-s202-9da0a94624ad](Result_Round1/Compress/1/Compress-1-Round1-s202-9da0a94624ad/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+- [Compress-1-Round1-s303-cb6deabfd6c4](Result_Round1/Compress/1/Compress-1-Round1-s303-cb6deabfd6c4/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+- [Compress-1-Round2-s101-7ff9bf34d1b9](Result_Round2/Compress/1/Compress-1-Round2-s101-7ff9bf34d1b9/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+- [Compress-1-Round2-s202-3545a1e2f5e6](Result_Round2/Compress/1/Compress-1-Round2-s202-3545a1e2f5e6/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+- [Compress-1-Round2-s303-f2d30313a16a](Result_Round2/Compress/1/Compress-1-Round2-s303-f2d30313a16a/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream; fault_candidate=False
+
+### Csv
+
+- [Csv-1-Round1-s101-fcc0d0c8ea55](Result_Round1/Csv/1/Csv-1-Round1-s101-fcc0d0c8ea55/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Csv/1/Csv-1-Round1-s101-fcc0d0c8ea55/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Csv-1-Round1-s202-862821962ac8](Result_Round1/Csv/1/Csv-1-Round1-s202-862821962ac8/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Csv/1/Csv-1-Round1-s202-862821962ac8/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Csv-1-Round1-s303-415c86308be8](Result_Round1/Csv/1/Csv-1-Round1-s303-415c86308be8/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Csv/1/Csv-1-Round1-s303-415c86308be8/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Csv-1-Round2-s101-e5af6f78f978](Result_Round2/Csv/1/Csv-1-Round2-s101-e5af6f78f978/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Csv/1/Csv-1-Round2-s101-e5af6f78f978/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Csv-1-Round2-s202-f2bde09355db](Result_Round2/Csv/1/Csv-1-Round2-s202-f2bde09355db/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Csv/1/Csv-1-Round2-s202-f2bde09355db/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Csv-1-Round2-s303-04032a0e130a](Result_Round2/Csv/1/Csv-1-Round2-s303-04032a0e130a/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=org.apache.commons.csv.ExtendedBufferedReader; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Csv/1/Csv-1-Round2-s303-04032a0e130a/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class org.apache.commons.csv.ExtendedBufferedReader 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+
+### Gson
+
+- [Gson-1-Round1-s101-2f4674901dbe](Result_Round1/Gson/1/Gson-1-Round1-s101-2f4674901dbe/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-2f4674901dbe/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Gson-1-Round1-s202-27c32b89883f](Result_Round1/Gson/1/Gson-1-Round1-s202-27c32b89883f/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Gson/1/Gson-1-Round1-s202-27c32b89883f/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Gson-1-Round1-s303-568dd68de48c](Result_Round1/Gson/1/Gson-1-Round1-s303-568dd68de48c/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round1/Gson/1/Gson-1-Round1-s303-568dd68de48c/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Gson-1-Round2-s101-d12069db3780](Result_Round2/Gson/1/Gson-1-Round2-s101-d12069db3780/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Gson/1/Gson-1-Round2-s101-d12069db3780/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Gson-1-Round2-s202-5babd160c8fa](Result_Round2/Gson/1/Gson-1-Round2-s202-5babd160c8fa/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Gson/1/Gson-1-Round2-s202-5babd160c8fa/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+- [Gson-1-Round2-s303-66d90a084c1c](Result_Round2/Gson/1/Gson-1-Round2-s303-66d90a084c1c/result.json): **TOOL_ERROR**; ชุดปัจจุบัน; target=com.google.gson.TypeInfoFactory; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/Gson/1/Gson-1-Round2-s303-66d90a084c1c/generation/generation-process.json Exception in thread "main" java.lang.IllegalArgumentException: Target must be publicly accessible: class com.google.gson.TypeInfoFactory 	at sqa.grt.GuidedRandom.<init>(GuidedRandom.java:72) 	at sqa.grt.GuidedRandom.main(GuidedRandom.java:414) 
+
+### JacksonCore
+
+- [JacksonCore-1-Round1-s101-c8882b0363b1](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-c8882b0363b1/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test20 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+- [JacksonCore-1-Round1-s101-751e4be4251e](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-751e4be4251e/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test89 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test1 / java.lang.NullPointerException / 
+- [JacksonCore-1-Round1-s202-25024e0cd937](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s202-25024e0cd937/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=False
+- [JacksonCore-1-Round1-s202-e5efdd7c0ba0](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s202-e5efdd7c0ba0/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test24 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test46 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test75 / java.lang.NullPointerException / 
+- [JacksonCore-1-Round1-s303-11a7502ce352](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s303-11a7502ce352/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test27 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test99 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+- [JacksonCore-1-Round1-s303-11de01ab9eed](Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s303-11de01ab9eed/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test26 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test96 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+- [JacksonCore-1-Round2-s101-a7af25776749](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s101-a7af25776749/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test20 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+- [JacksonCore-1-Round2-s101-e069c3133d36](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s101-e069c3133d36/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test89 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test1 / java.lang.NullPointerException / 
+- [JacksonCore-1-Round2-s202-c32a25b0f0ea](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s202-c32a25b0f0ea/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=False
+- [JacksonCore-1-Round2-s202-b9b375a02194](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s202-b9b375a02194/result.json): **TIMEOUT**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=
+  - Error: Command failed; see /workspace/GRT/Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s202-b9b375a02194/generation/checkout-f.json Checking out b40ac81d to /workspace/work/checkouts/JacksonCore-1-Round2-s20 
+- [JacksonCore-1-Round2-s202-b9b375a02194-attempt2](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s202-b9b375a02194-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test24 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test46 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test75 / java.lang.NullPointerException / 
+- [JacksonCore-1-Round2-s303-126e0bb0ed66](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s303-126e0bb0ed66/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.io.NumberInput; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test27 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+  - JUnit buggy: com.fasterxml.jackson.core.io.SqaGeneratedTest::test99 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+- [JacksonCore-1-Round2-s303-6800d23e0a69](Result_Round2/JacksonCore/1/JacksonCore-1-Round2-s303-6800d23e0a69/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.core.util.TextBuffer; fault_candidate=True
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test26 / java.lang.NullPointerException / 
+  - JUnit buggy: com.fasterxml.jackson.core.util.SqaGeneratedTest::test96 / java.lang.NumberFormatException / Bad offset or len arguments for char[] input.
+
+### JacksonDatabind
+
+- [JacksonDatabind-1-Round1-s101-96d7e5137ab6](Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s101-96d7e5137ab6/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=False
+- [JacksonDatabind-1-Round1-s202-35ff215c208c](Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s202-35ff215c208c/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=False
+- [JacksonDatabind-1-Round1-s303-ad62ed86cf18](Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test13 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+  - JUnit fixed: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test13 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JacksonDatabind-1-Round1-s303-ad62ed86cf18-attempt2](Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18-attempt2/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test13 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+  - JUnit fixed: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test13 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JacksonDatabind-1-Round2-s101-cab5e23a59d6](Result_Round2/JacksonDatabind/1/JacksonDatabind-1-Round2-s101-cab5e23a59d6/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=False
+- [JacksonDatabind-1-Round2-s202-ce2efb2e9d0b](Result_Round2/JacksonDatabind/1/JacksonDatabind-1-Round2-s202-ce2efb2e9d0b/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=False
+- [JacksonDatabind-1-Round2-s303-83165341c041](Result_Round2/JacksonDatabind/1/JacksonDatabind-1-Round2-s303-83165341c041/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=com.fasterxml.jackson.databind.ser.BeanPropertyWriter; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test14 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+  - JUnit fixed: com.fasterxml.jackson.databind.ser.SqaGeneratedTest::test14 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+
+### JacksonXml
+
+- [JacksonXml-1-Round1-s101-4aa85b90ae5b](Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s101-4aa85b90ae5b/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+- [JacksonXml-1-Round1-s202-823ae1e79f96](Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s202-823ae1e79f96/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+- [JacksonXml-1-Round1-s303-16975d3c8afb](Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s303-16975d3c8afb/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+- [JacksonXml-1-Round2-s101-b69e1c790c9a](Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s101-b69e1c790c9a/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: com.fasterxml.jackson.dataformat.xml.deser.SqaGeneratedTest::test73 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+  - JUnit fixed: com.fasterxml.jackson.dataformat.xml.deser.SqaGeneratedTest::test73 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JacksonXml-1-Round2-s101-b69e1c790c9a-attempt2](Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s101-b69e1c790c9a-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+- [JacksonXml-1-Round2-s202-214d4251c018](Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s202-214d4251c018/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+- [JacksonXml-1-Round2-s303-38f34936e03a](Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s303-38f34936e03a/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: com.fasterxml.jackson.dataformat.xml.deser.SqaGeneratedTest::test87 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+  - JUnit fixed: com.fasterxml.jackson.dataformat.xml.deser.SqaGeneratedTest::test87 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JacksonXml-1-Round2-s303-38f34936e03a-attempt2](Result_Round2/JacksonXml/1/JacksonXml-1-Round2-s303-38f34936e03a-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser; fault_candidate=False
+
+### Jsoup
+
+- [Jsoup-1-Round1-s101-e9c894ca6474](Result_Round1/Jsoup/1/Jsoup-1-Round1-s101-e9c894ca6474/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+- [Jsoup-1-Round1-s202-44407cd82fff](Result_Round1/Jsoup/1/Jsoup-1-Round1-s202-44407cd82fff/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+- [Jsoup-1-Round1-s303-88139784c387](Result_Round1/Jsoup/1/Jsoup-1-Round1-s303-88139784c387/result.json): **RUNNING**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=
+- [Jsoup-1-Round1-s303-88139784c387-attempt2](Result_Round1/Jsoup/1/Jsoup-1-Round1-s303-88139784c387-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+- [Jsoup-1-Round2-s101-592cbad45f4a](Result_Round2/Jsoup/1/Jsoup-1-Round2-s101-592cbad45f4a/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+- [Jsoup-1-Round2-s202-9b842746888c](Result_Round2/Jsoup/1/Jsoup-1-Round2-s202-9b842746888c/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+- [Jsoup-1-Round2-s303-0bad4d6770b3](Result_Round2/Jsoup/1/Jsoup-1-Round2-s303-0bad4d6770b3/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.jsoup.nodes.Document; fault_candidate=False
+
+### JxPath
+
+- [JxPath-1-Round1-s101-79f3345a79c9](Result_Round1/JxPath/1/JxPath-1-Round1-s101-79f3345a79c9/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round1-s101-1366cedff417](Result_Round1/JxPath/1/JxPath-1-Round1-s101-1366cedff417/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+- [JxPath-1-Round1-s202-c8a626a6a1f5](Result_Round1/JxPath/1/JxPath-1-Round1-s202-c8a626a6a1f5/result.json): **FLAKY**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=
+  - Error: Repeated executions have different outcomes
+  - JUnit fixed: org.apache.commons.jxpath.ri.model.dom.SqaGeneratedTest::test10 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JxPath-1-Round1-s202-f6945d429dfe](Result_Round1/JxPath/1/JxPath-1-Round1-s202-f6945d429dfe/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+- [JxPath-1-Round1-s202-c8a626a6a1f5-attempt2](Result_Round1/JxPath/1/JxPath-1-Round1-s202-c8a626a6a1f5-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round1-s303-2457d6425d05](Result_Round1/JxPath/1/JxPath-1-Round1-s303-2457d6425d05/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round1-s303-7a9c99027244](Result_Round1/JxPath/1/JxPath-1-Round1-s303-7a9c99027244/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s101-57a2a99e813e](Result_Round2/JxPath/1/JxPath-1-Round2-s101-57a2a99e813e/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s101-26740228b472](Result_Round2/JxPath/1/JxPath-1-Round2-s101-26740228b472/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s202-53fc33b0d347](Result_Round2/JxPath/1/JxPath-1-Round2-s202-53fc33b0d347/result.json): **FLAKY**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=
+  - Error: Repeated executions have different outcomes
+  - JUnit buggy: org.apache.commons.jxpath.ri.model.dom.SqaGeneratedTest::test10 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JxPath-1-Round2-s202-a3aac36f4f14](Result_Round2/JxPath/1/JxPath-1-Round2-s202-a3aac36f4f14/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s202-53fc33b0d347-attempt2](Result_Round2/JxPath/1/JxPath-1-Round2-s202-53fc33b0d347-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s303-1a562361c914](Result_Round2/JxPath/1/JxPath-1-Round2-s303-1a562361c914/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.dom.DOMNodePointer; fault_candidate=False
+- [JxPath-1-Round2-s303-f630cfb18996](Result_Round2/JxPath/1/JxPath-1-Round2-s303-f630cfb18996/result.json): **FLAKY**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=
+  - Error: Repeated executions have different outcomes
+  - JUnit fixed: org.apache.commons.jxpath.ri.model.jdom.SqaGeneratedTest::test10 / org.junit.runners.model.TestTimedOutException / test timed out after 4000 milliseconds
+- [JxPath-1-Round2-s303-f630cfb18996-attempt2](Result_Round2/JxPath/1/JxPath-1-Round2-s303-f630cfb18996-attempt2/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer; fault_candidate=False
+
+### Math
+
+- [Math-1-Round1-s101-026827eb55e7](Result_Round1/Math/1/Math-1-Round1-s101-026827eb55e7/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round1-s101-274acf0655d9](Result_Round1/Math/1/Math-1-Round1-s101-274acf0655d9/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test10 / java.lang.AssertionError / expected:<-14> but was:<-4323 / 290>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<4 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test15 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected:<2> but was:<19 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected:<0> but was:<-1 / 20>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<0> but was:<1 / 38>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test26 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test27 / java.lang.AssertionError / expected:<-43> but was:<-16697 / 388>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected:<1073741821> but was:<2147483643 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<5 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test32 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected:<-21> but was:<-1300940728 / 61850309>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<0> but was:<-1 / 71>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test36 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-1 / 6>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<39 / 50>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-17 / 36>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected:<-1> but was:<-13 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<0> but was:<1 / 34>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<0> but was:<9 / 91>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<-37> but was: org.apache.commons.math3.fraction.Fraction<-37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<-1> but was:<-15 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<-2> but was:<-18 / 7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<1> but was:<22 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test55 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<8> but was: org.apache.commons.math3.fraction.Fraction<8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<1> but was:<23 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<0> but was:<1 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test62 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test63 / java.lang.AssertionError / expected:<0> but was:<5 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected:<0> but was:<-1 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<-9> but was: org.apache.commons.math3.fraction.Fraction<-9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected:<-38> but was:<-6112 / 159>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test74 / java.lang.AssertionError / expected: java.lang.Integer<17> but was: org.apache.commons.math3.fraction.Fraction<17>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<-25> but was:<-10047 / 400>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<-24 / 47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<0> but was:<-1 / 14>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected:<0> but was:<-2 / 37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected:<6> but was:<3304 / 499>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<13> but was: org.apache.commons.math3.fraction.Fraction<13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<-1> but was:<-19 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<-3> but was: org.apache.commons.math3.fraction.Fraction<-3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<0> but was:<1 / 6>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected:<0> but was:<-1 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected:<0> but was:<-1 / 38>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<0> but was:<-2 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected:<0> but was:<-19 / 37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<-5> but was: org.apache.commons.math3.fraction.Fraction<-5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-40> but was: org.apache.commons.math3.fraction.Fraction<-40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test9 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test10 / java.lang.AssertionError / expected:<-14> but was:<-4323 / 290>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<4 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test15 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected:<2> but was:<19 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected:<0> but was:<-1 / 20>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<0> but was:<1 / 38>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test26 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test27 / java.lang.AssertionError / expected:<-43> but was:<-16697 / 388>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected:<1073741821> but was:<2147483643 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<5 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test32 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected:<-21> but was:<-1300940728 / 61850309>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<0> but was:<-1 / 71>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test36 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-1 / 6>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<39 / 50>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-17 / 36>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected:<-1> but was:<-13 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<0> but was:<1 / 34>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<0> but was:<9 / 91>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<-37> but was: org.apache.commons.math3.fraction.Fraction<-37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<-1> but was:<-15 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<-2> but was:<-18 / 7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<1> but was:<22 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test55 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<8> but was: org.apache.commons.math3.fraction.Fraction<8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<1> but was:<23 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<0> but was:<1 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test62 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test63 / java.lang.AssertionError / expected:<0> but was:<5 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected:<0> but was:<-1 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<-9> but was: org.apache.commons.math3.fraction.Fraction<-9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected:<-38> but was:<-6112 / 159>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test74 / java.lang.AssertionError / expected: java.lang.Integer<17> but was: org.apache.commons.math3.fraction.Fraction<17>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<-25> but was:<-10047 / 400>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<-24 / 47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<0> but was:<-1 / 14>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected:<0> but was:<-2 / 37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected:<6> but was:<3304 / 499>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<13> but was: org.apache.commons.math3.fraction.Fraction<13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<-1> but was:<-19 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<-3> but was: org.apache.commons.math3.fraction.Fraction<-3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<0> but was:<1 / 6>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected:<0> but was:<-1 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected:<0> but was:<-1 / 38>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<0> but was:<-2 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected:<0> but was:<-19 / 37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<-5> but was: org.apache.commons.math3.fraction.Fraction<-5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-40> but was: org.apache.commons.math3.fraction.Fraction<-40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test9 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+- [Math-1-Round1-s202-aeabadbb21f9](Result_Round1/Math/1/Math-1-Round1-s202-aeabadbb21f9/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round1-s202-0f9d73a7ea1a](Result_Round1/Math/1/Math-1-Round1-s202-0f9d73a7ea1a/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<9> but was:<31999 / 3277>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<-2> but was:<-43 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected:<1> but was:<53 / 45>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test24 / java.lang.AssertionError / expected:<0> but was:<-4 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected:<0> but was:<11 / 50>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<25> but was: org.apache.commons.math3.fraction.Fraction<25>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test35 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-38 / 47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected:<0> but was:<19 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<7 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected: java.lang.Integer<12> but was: org.apache.commons.math3.fraction.Fraction<12>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<-23> but was:<-47 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-20> but was:<-1427 / 69>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<0> but was:<1 / 40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<4 / 17>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected:<2> but was:<23 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected: java.lang.Integer<-53> but was: org.apache.commons.math3.fraction.Fraction<-53>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<2 / 11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<-1> but was:<-19 / 11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<7 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected:<0> but was:<1 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<2> but was:<12 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<-6 / 7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<5> but was:<16 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<40> but was: org.apache.commons.math3.fraction.Fraction<40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected:<-1> but was:<-955 / 954>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test89 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected:<0> but was:<19 / 33>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<15> but was:<3731 / 240>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected:<0> but was:<-7 / 23>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<1> but was:<16 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<10> but was:<32 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<9> but was:<31999 / 3277>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<-2> but was:<-43 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected:<1> but was:<53 / 45>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test24 / java.lang.AssertionError / expected:<0> but was:<-4 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected:<0> but was:<11 / 50>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<25> but was: org.apache.commons.math3.fraction.Fraction<25>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test35 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-38 / 47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected:<0> but was:<19 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<7 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected: java.lang.Integer<12> but was: org.apache.commons.math3.fraction.Fraction<12>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<-23> but was:<-47 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-20> but was:<-1427 / 69>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<0> but was:<1 / 40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<4 / 17>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected:<2> but was:<23 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected: java.lang.Integer<-53> but was: org.apache.commons.math3.fraction.Fraction<-53>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<2 / 11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<-1> but was:<-19 / 11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<7 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected:<0> but was:<1 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<2> but was:<12 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<-6 / 7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<5> but was:<16 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<40> but was: org.apache.commons.math3.fraction.Fraction<40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected:<-1> but was:<-955 / 954>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test89 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected:<0> but was:<19 / 33>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<15> but was:<3731 / 240>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected:<0> but was:<-7 / 23>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<1> but was:<16 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<10> but was:<32 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+- [Math-1-Round1-s303-63dd807ace4e](Result_Round1/Math/1/Math-1-Round1-s303-63dd807ace4e/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round1-s303-1494ded7cbe8](Result_Round1/Math/1/Math-1-Round1-s303-1494ded7cbe8/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<-28> but was:<-882 / 31>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test12 / java.lang.AssertionError / expected:<26> but was:<8779 / 336>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test13 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<-2> but was:<-23 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<45> but was:<17521 / 388>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test18 / java.lang.AssertionError / expected:<0> but was:<13 / 14>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected: java.lang.Integer<43> but was: org.apache.commons.math3.fraction.Fraction<43>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / org.apache.commons.math3.fraction.FractionConversionException / illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<2> but was:<8 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected: java.lang.Integer<72> but was: org.apache.commons.math3.fraction.Fraction<72>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test31 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<-6> but was:<-13 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test38 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<47> but was:<1158904637 / 24291529>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<35> but was:<13309 / 379>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<2> but was:<37 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test47 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<0> but was:<-1 / 42>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<-37 / 39>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected:<0> but was:<-1 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<0> but was:<-2 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<-2> but was:<-1297 / 450>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-1> but was:<-7 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected: java.lang.Integer<-10> but was: org.apache.commons.math3.fraction.Fraction<-10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<-5 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<11> but was:<8443 / 753>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<36> but was: org.apache.commons.math3.fraction.Fraction<36>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected:<0> but was:<-6 / 43>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<53> but was: org.apache.commons.math3.fraction.Fraction<53>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test69 / java.lang.AssertionError / expected:<0> but was:<1 / 12>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<10> but was: org.apache.commons.math3.fraction.Fraction<10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<-47> but was: org.apache.commons.math3.fraction.Fraction<-47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test72 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<0> but was:<5 / 41>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-11> but was: org.apache.commons.math3.fraction.Fraction<-11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<1 / 31>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected: java.lang.Integer<-15> but was: org.apache.commons.math3.fraction.Fraction<-15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test85 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test88 / java.lang.AssertionError / expected:<0> but was:<1 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<-4> but was:<-9 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test92 / java.lang.AssertionError / expected: java.lang.Integer<7> but was: org.apache.commons.math3.fraction.Fraction<7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / org.apache.commons.math3.fraction.FractionConversionException / illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test99 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test3 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test8 / java.lang.AssertionError / expected:<-1> but was:<-11 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<-28> but was:<-882 / 31>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test12 / java.lang.AssertionError / expected:<26> but was:<8779 / 336>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test13 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<-2> but was:<-23 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<45> but was:<17521 / 388>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test18 / java.lang.AssertionError / expected:<0> but was:<13 / 14>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected: java.lang.Integer<43> but was: org.apache.commons.math3.fraction.Fraction<43>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<2> but was:<8 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected: java.lang.Integer<72> but was: org.apache.commons.math3.fraction.Fraction<72>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test31 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<-6> but was:<-13 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test38 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<47> but was:<1158904637 / 24291529>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<35> but was:<13309 / 379>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<2> but was:<37 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test47 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<0> but was:<-1 / 42>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<-37 / 39>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected:<0> but was:<-1 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<0> but was:<-2 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<-2> but was:<-1297 / 450>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-1> but was:<-7 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected: java.lang.Integer<-10> but was: org.apache.commons.math3.fraction.Fraction<-10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<-5 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<11> but was:<8443 / 753>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<36> but was: org.apache.commons.math3.fraction.Fraction<36>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected:<0> but was:<-6 / 43>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<53> but was: org.apache.commons.math3.fraction.Fraction<53>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test69 / java.lang.AssertionError / expected:<0> but was:<1 / 12>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<10> but was: org.apache.commons.math3.fraction.Fraction<10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<-47> but was: org.apache.commons.math3.fraction.Fraction<-47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test72 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<0> but was:<5 / 41>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-11> but was: org.apache.commons.math3.fraction.Fraction<-11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<1 / 31>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected: java.lang.Integer<-15> but was: org.apache.commons.math3.fraction.Fraction<-15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test85 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test88 / java.lang.AssertionError / expected:<0> but was:<1 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<-4> but was:<-9 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test92 / java.lang.AssertionError / expected: java.lang.Integer<7> but was: org.apache.commons.math3.fraction.Fraction<7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test99 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test3 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test8 / java.lang.AssertionError / expected:<-1> but was:<-11 / 8>
+- [Math-1-Round2-s101-a631d255ad96](Result_Round2/Math/1/Math-1-Round2-s101-a631d255ad96/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s101-d45edf191375](Result_Round2/Math/1/Math-1-Round2-s101-d45edf191375/result.json): **RUNNING**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+- [Math-1-Round2-s101-a631d255ad96-attempt2](Result_Round2/Math/1/Math-1-Round2-s101-a631d255ad96-attempt2/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s101-d45edf191375-attempt2](Result_Round2/Math/1/Math-1-Round2-s101-d45edf191375-attempt2/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test10 / java.lang.AssertionError / expected:<-14> but was:<-4323 / 290>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<4 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test15 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected:<2> but was:<19 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected:<0> but was:<-1 / 20>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<0> but was:<1 / 38>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test26 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test27 / java.lang.AssertionError / expected:<-43> but was:<-16697 / 388>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected:<1073741821> but was:<2147483643 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<5 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test32 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected:<-21> but was:<-1300940728 / 61850309>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<0> but was:<-1 / 71>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test36 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-1 / 6>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<39 / 50>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-17 / 36>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected:<-1> but was:<-13 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<0> but was:<1 / 34>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<0> but was:<9 / 91>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<-37> but was: org.apache.commons.math3.fraction.Fraction<-37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<-1> but was:<-15 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<-2> but was:<-18 / 7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<1> but was:<22 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test55 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<8> but was: org.apache.commons.math3.fraction.Fraction<8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<1> but was:<23 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<0> but was:<1 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test62 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test63 / java.lang.AssertionError / expected:<0> but was:<5 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected:<0> but was:<-1 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<-9> but was: org.apache.commons.math3.fraction.Fraction<-9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected:<-38> but was:<-6112 / 159>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test74 / java.lang.AssertionError / expected: java.lang.Integer<17> but was: org.apache.commons.math3.fraction.Fraction<17>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<-25> but was:<-10047 / 400>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<-24 / 47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<0> but was:<-1 / 14>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected:<0> but was:<-2 / 37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected:<6> but was:<3304 / 499>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<13> but was: org.apache.commons.math3.fraction.Fraction<13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<-1> but was:<-19 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<-3> but was: org.apache.commons.math3.fraction.Fraction<-3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<0> but was:<1 / 6>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected:<0> but was:<-1 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected:<0> but was:<-1 / 38>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<0> but was:<-2 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected:<0> but was:<-19 / 37>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<-5> but was: org.apache.commons.math3.fraction.Fraction<-5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-40> but was: org.apache.commons.math3.fraction.Fraction<-40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test9 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test10 / java.lang.AssertionError / expected:<-14> but was:<-4323 / 290>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<4 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test15 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected:<2> but was:<19 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected:<0> but was:<-1 / 20>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<0> but was:<1 / 38>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test26 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test27 / java.lang.AssertionError / expected:<-43> but was:<-16697 / 388>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected:<1073741821> but was:<2147483643 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<5 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test32 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected:<-21> but was:<-1300940728 / 61850309>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<0> but was:<-1 / 71>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test36 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-1 / 6>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<39 / 50>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-17 / 36>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected:<-1> but was:<-13 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<0> but was:<1 / 34>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<0> but was:<9 / 91>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<-37> but was: org.apache.commons.math3.fraction.Fraction<-37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<-1> but was:<-15 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<-2> but was:<-18 / 7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<1> but was:<22 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test55 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<8> but was: org.apache.commons.math3.fraction.Fraction<8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<1> but was:<23 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<0> but was:<1 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test62 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test63 / java.lang.AssertionError / expected:<0> but was:<5 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected:<0> but was:<-1 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<-9> but was: org.apache.commons.math3.fraction.Fraction<-9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected:<-38> but was:<-6112 / 159>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test74 / java.lang.AssertionError / expected: java.lang.Integer<17> but was: org.apache.commons.math3.fraction.Fraction<17>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<-25> but was:<-10047 / 400>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<-24 / 47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<0> but was:<-1 / 14>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected:<0> but was:<-2 / 37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected:<6> but was:<3304 / 499>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<13> but was: org.apache.commons.math3.fraction.Fraction<13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<-1> but was:<-19 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<-3> but was: org.apache.commons.math3.fraction.Fraction<-3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<0> but was:<1 / 6>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected:<0> but was:<-1 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected:<0> but was:<-1 / 38>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<0> but was:<-2 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected:<0> but was:<-19 / 37>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<-5> but was: org.apache.commons.math3.fraction.Fraction<-5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-40> but was: org.apache.commons.math3.fraction.Fraction<-40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test9 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+- [Math-1-Round2-s202-e68580f72470](Result_Round2/Math/1/Math-1-Round2-s202-e68580f72470/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s202-e68580f72470-attempt2](Result_Round2/Math/1/Math-1-Round2-s202-e68580f72470-attempt2/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s202-5c534b78b7b7](Result_Round2/Math/1/Math-1-Round2-s202-5c534b78b7b7/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<9> but was:<31999 / 3277>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<-2> but was:<-43 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected:<1> but was:<53 / 45>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test24 / java.lang.AssertionError / expected:<0> but was:<-4 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected:<0> but was:<11 / 50>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<25> but was: org.apache.commons.math3.fraction.Fraction<25>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test35 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-38 / 47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected:<0> but was:<19 / 21>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<7 / 15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected: java.lang.Integer<12> but was: org.apache.commons.math3.fraction.Fraction<12>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<-23> but was:<-47 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-20> but was:<-1427 / 69>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<0> but was:<1 / 40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<4 / 17>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected:<2> but was:<23 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected: java.lang.Integer<-53> but was: org.apache.commons.math3.fraction.Fraction<-53>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<2 / 11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<-1> but was:<-19 / 11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<7 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected:<0> but was:<1 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<2> but was:<12 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<-6 / 7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<5> but was:<16 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<40> but was: org.apache.commons.math3.fraction.Fraction<40>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected:<-1> but was:<-955 / 954>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test89 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected:<0> but was:<19 / 33>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<15> but was:<3731 / 240>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected:<0> but was:<-7 / 23>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<1> but was:<16 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<10> but was:<32 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<9> but was:<31999 / 3277>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<0> but was:<-1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<-2> but was:<-43 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected:<1> but was:<53 / 45>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test24 / java.lang.AssertionError / expected:<0> but was:<-4 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected:<0> but was:<11 / 50>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<25> but was: org.apache.commons.math3.fraction.Fraction<25>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test35 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test37 / java.lang.AssertionError / expected:<0> but was:<-38 / 47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected:<0> but was:<19 / 21>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<7 / 15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected: java.lang.Integer<12> but was: org.apache.commons.math3.fraction.Fraction<12>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test54 / java.lang.AssertionError / expected:<-23> but was:<-47 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-20> but was:<-1427 / 69>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected:<0> but was:<1 / 40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<4 / 17>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected:<2> but was:<23 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test65 / java.lang.AssertionError / expected: java.lang.Integer<-53> but was: org.apache.commons.math3.fraction.Fraction<-53>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test66 / java.lang.AssertionError / expected:<0> but was:<2 / 11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<-1> but was: org.apache.commons.math3.fraction.Fraction<-1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<-1> but was:<-19 / 11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<-2> but was: org.apache.commons.math3.fraction.Fraction<-2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected:<0> but was:<7 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected:<0> but was:<1 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected:<2> but was:<12 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected:<0> but was:<-6 / 7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected:<5> but was:<16 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<40> but was: org.apache.commons.math3.fraction.Fraction<40>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected:<-1> but was:<-955 / 954>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test89 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test91 / java.lang.AssertionError / expected:<0> but was:<19 / 33>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected:<0> but was:<-1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test95 / java.lang.AssertionError / expected:<15> but was:<3731 / 240>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected:<0> but was:<-7 / 23>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected:<1> but was:<16 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test0 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test1 / java.lang.AssertionError / expected:<10> but was:<32 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test2 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test6 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+- [Math-1-Round2-s303-d40506407f51](Result_Round2/Math/1/Math-1-Round2-s303-d40506407f51/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s303-d40506407f51-attempt2](Result_Round2/Math/1/Math-1-Round2-s303-d40506407f51-attempt2/result.json): **COMPILE_FAIL**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.BigFraction; fault_candidate=
+  - Error: Generated test compile failed; see compile-generated.json
+- [Math-1-Round2-s303-d37e05a85fa8](Result_Round2/Math/1/Math-1-Round2-s303-d37e05a85fa8/result.json): **INVALID_ORACLE**; ชุดปัจจุบัน; target=org.apache.commons.math3.fraction.Fraction; fault_candidate=
+  - Error: Suite must pass on fixed revision before fault evaluation
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<-28> but was:<-882 / 31>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test12 / java.lang.AssertionError / expected:<26> but was:<8779 / 336>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test13 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<-2> but was:<-23 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<45> but was:<17521 / 388>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test18 / java.lang.AssertionError / expected:<0> but was:<13 / 14>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected: java.lang.Integer<43> but was: org.apache.commons.math3.fraction.Fraction<43>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / org.apache.commons.math3.fraction.FractionConversionException / illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<2> but was:<8 / 3>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected: java.lang.Integer<72> but was: org.apache.commons.math3.fraction.Fraction<72>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test31 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<-6> but was:<-13 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test38 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<47> but was:<1158904637 / 24291529>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<35> but was:<13309 / 379>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<2> but was:<37 / 16>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test47 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<0> but was:<-1 / 42>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<-37 / 39>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected:<0> but was:<-1 / 13>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<0> but was:<-2 / 5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<-2> but was:<-1297 / 450>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-1> but was:<-7 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected: java.lang.Integer<-10> but was: org.apache.commons.math3.fraction.Fraction<-10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<-5 / 8>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<11> but was:<8443 / 753>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<36> but was: org.apache.commons.math3.fraction.Fraction<36>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected:<0> but was:<-6 / 43>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<53> but was: org.apache.commons.math3.fraction.Fraction<53>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test69 / java.lang.AssertionError / expected:<0> but was:<1 / 12>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<10> but was: org.apache.commons.math3.fraction.Fraction<10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<-47> but was: org.apache.commons.math3.fraction.Fraction<-47>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test72 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<0> but was:<5 / 41>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-11> but was: org.apache.commons.math3.fraction.Fraction<-11>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<1 / 31>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected: java.lang.Integer<-15> but was: org.apache.commons.math3.fraction.Fraction<-15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test85 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test88 / java.lang.AssertionError / expected:<0> but was:<1 / 10>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<-4> but was:<-9 / 2>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test92 / java.lang.AssertionError / expected: java.lang.Integer<7> but was: org.apache.commons.math3.fraction.Fraction<7>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / org.apache.commons.math3.fraction.FractionConversionException / illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test99 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test3 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit buggy: org.apache.commons.math3.fraction.SqaGeneratedTest::test8 / java.lang.AssertionError / expected:<-1> but was:<-11 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test11 / java.lang.AssertionError / expected:<-28> but was:<-882 / 31>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test12 / java.lang.AssertionError / expected:<26> but was:<8779 / 336>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test13 / java.lang.AssertionError / expected:<0> but was:<1 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test14 / java.lang.AssertionError / expected:<-2> but was:<-23 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test16 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test17 / java.lang.AssertionError / expected:<45> but was:<17521 / 388>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test18 / java.lang.AssertionError / expected:<0> but was:<13 / 14>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test19 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test20 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test21 / java.lang.AssertionError / expected: java.lang.Integer<43> but was: org.apache.commons.math3.fraction.Fraction<43>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test22 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test23 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test25 / java.lang.AssertionError / expected:<2> but was:<8 / 3>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test28 / java.lang.AssertionError / expected: java.lang.Integer<72> but was: org.apache.commons.math3.fraction.Fraction<72>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test29 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test30 / java.lang.AssertionError / expected:<0> but was:<1 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test31 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test33 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test34 / java.lang.AssertionError / expected:<-6> but was:<-13 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test38 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test39 / java.lang.AssertionError / expected:<0> but was:<1 / 9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test40 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test41 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test42 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test43 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test44 / java.lang.AssertionError / expected:<47> but was:<1158904637 / 24291529>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test45 / java.lang.AssertionError / expected:<35> but was:<13309 / 379>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test46 / java.lang.AssertionError / expected:<2> but was:<37 / 16>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test47 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test48 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test49 / java.lang.AssertionError / expected:<0> but was:<-1 / 42>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test50 / java.lang.AssertionError / expected:<0> but was:<-37 / 39>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test51 / java.lang.AssertionError / expected:<0> but was:<-1 / 13>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test52 / java.lang.AssertionError / expected:<0> but was:<-2 / 5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test53 / java.lang.AssertionError / expected:<-2> but was:<-1297 / 450>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test56 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test57 / java.lang.AssertionError / expected:<-1> but was:<-7 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test58 / java.lang.AssertionError / expected: java.lang.Integer<-10> but was: org.apache.commons.math3.fraction.Fraction<-10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test59 / java.lang.AssertionError / expected:<0> but was:<-5 / 8>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test60 / java.lang.AssertionError / expected:<11> but was:<8443 / 753>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test61 / java.lang.AssertionError / expected: java.lang.Integer<36> but was: org.apache.commons.math3.fraction.Fraction<36>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test64 / java.lang.AssertionError / expected:<0> but was:<-6 / 43>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test67 / java.lang.AssertionError / expected: java.lang.Integer<53> but was: org.apache.commons.math3.fraction.Fraction<53>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test68 / java.lang.AssertionError / expected:<0> but was:<-1 / 24>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test69 / java.lang.AssertionError / expected:<0> but was:<1 / 12>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test70 / java.lang.AssertionError / expected: java.lang.Integer<10> but was: org.apache.commons.math3.fraction.Fraction<10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test71 / java.lang.AssertionError / expected: java.lang.Integer<-47> but was: org.apache.commons.math3.fraction.Fraction<-47>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test72 / java.lang.AssertionError / expected:<6> but was:<27 / 4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test73 / java.lang.AssertionError / expected:<0> but was:<5 / 41>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test75 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test76 / java.lang.AssertionError / expected: java.lang.Integer<9> but was: org.apache.commons.math3.fraction.Fraction<9>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test77 / java.lang.AssertionError / expected: java.lang.Integer<-11> but was: org.apache.commons.math3.fraction.Fraction<-11>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test78 / java.lang.AssertionError / expected: java.lang.Integer<-26> but was: org.apache.commons.math3.fraction.Fraction<-26>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test79 / java.lang.AssertionError / expected: java.lang.Integer<5> but was: org.apache.commons.math3.fraction.Fraction<5>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test80 / java.lang.AssertionError / expected:<0> but was:<1 / 31>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test81 / java.lang.AssertionError / expected: java.lang.Integer<-15> but was: org.apache.commons.math3.fraction.Fraction<-15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test82 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test83 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test84 / java.lang.AssertionError / expected: java.lang.Integer<2> but was: org.apache.commons.math3.fraction.Fraction<2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test85 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test86 / java.lang.AssertionError / expected: java.lang.Integer<-29> but was: org.apache.commons.math3.fraction.Fraction<-29>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test87 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test88 / java.lang.AssertionError / expected:<0> but was:<1 / 10>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test90 / java.lang.AssertionError / expected:<-4> but was:<-9 / 2>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test92 / java.lang.AssertionError / expected: java.lang.Integer<7> but was: org.apache.commons.math3.fraction.Fraction<7>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test94 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test96 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test97 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test98 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test99 / java.lang.AssertionError / expected: java.lang.Integer<15> but was: org.apache.commons.math3.fraction.Fraction<15>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test3 / java.lang.AssertionError / expected: java.lang.Integer<0> but was: org.apache.commons.math3.fraction.Fraction<0>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test4 / java.lang.AssertionError / expected: java.lang.Integer<1> but was: org.apache.commons.math3.fraction.Fraction<1>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test7 / java.lang.AssertionError / expected: java.lang.Integer<-4> but was: org.apache.commons.math3.fraction.Fraction<-4>
+  - JUnit fixed: org.apache.commons.math3.fraction.SqaGeneratedTest::test8 / java.lang.AssertionError / expected:<-1> but was:<-11 / 8>
+
+### Mockito
+
+- [Mockito-1-Round1-s101-4cea0add12a9](Result_Round1/Mockito/1/Mockito-1-Round1-s101-4cea0add12a9/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+- [Mockito-1-Round1-s202-665bcc90a708](Result_Round1/Mockito/1/Mockito-1-Round1-s202-665bcc90a708/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+- [Mockito-1-Round1-s303-4992b3ade0b5](Result_Round1/Mockito/1/Mockito-1-Round1-s303-4992b3ade0b5/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+- [Mockito-1-Round2-s101-ef8ddbe0eb8b](Result_Round2/Mockito/1/Mockito-1-Round2-s101-ef8ddbe0eb8b/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+- [Mockito-1-Round2-s202-35153d123f65](Result_Round2/Mockito/1/Mockito-1-Round2-s202-35153d123f65/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+- [Mockito-1-Round2-s303-ca7786a1703c](Result_Round2/Mockito/1/Mockito-1-Round2-s303-ca7786a1703c/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.mockito.internal.invocation.InvocationMatcher; fault_candidate=False
+
+### Time
+
+- [Time-1-Round1-s101-ddd0c2ab98cb](Result_Round1/Time/1/Time-1-Round1-s101-ddd0c2ab98cb/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round1-s101-547e5258d76e](Result_Round1/Time/1/Time-1-Round1-s101-547e5258d76e/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+- [Time-1-Round1-s202-c1a4420d0a28](Result_Round1/Time/1/Time-1-Round1-s202-c1a4420d0a28/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round1-s202-afe98f6d17a6](Result_Round1/Time/1/Time-1-Round1-s202-afe98f6d17a6/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+- [Time-1-Round1-s303-1f95e0f24716](Result_Round1/Time/1/Time-1-Round1-s303-1f95e0f24716/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round1-s303-72fa1bee98de](Result_Round1/Time/1/Time-1-Round1-s303-72fa1bee98de/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+- [Time-1-Round2-s101-ead4068b7170](Result_Round2/Time/1/Time-1-Round2-s101-ead4068b7170/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round2-s101-93eb19ffc164](Result_Round2/Time/1/Time-1-Round2-s101-93eb19ffc164/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+- [Time-1-Round2-s202-3c71102a8ef3](Result_Round2/Time/1/Time-1-Round2-s202-3c71102a8ef3/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round2-s202-618d980d1582](Result_Round2/Time/1/Time-1-Round2-s202-618d980d1582/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+- [Time-1-Round2-s303-91cc44183642](Result_Round2/Time/1/Time-1-Round2-s303-91cc44183642/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.field.UnsupportedDurationField; fault_candidate=False
+- [Time-1-Round2-s303-3228f0dd0b96](Result_Round2/Time/1/Time-1-Round2-s303-3228f0dd0b96/result.json): **EVALUATED**; ชุดปัจจุบัน; target=org.joda.time.Partial; fault_candidate=False
+
+## ข้อควรใช้ในการส่งงาน
+
+- RUNNING เป็นค่าที่บันทึกไว้ ไม่ยืนยันว่ามี process ทำงานอยู่; Lang รายการที่หยุดด้วย Ctrl+C ต้องแยกเป็น interrupted attempt ในรายงาน
+- EVALUATED หมายถึงประเมินได้ ไม่เท่ากับพบบั๊ก; INVALID_ORACLE หมายถึง suite ไม่ผ่านเกณฑ์บน fixed
+- เก็บ failures และ retries แม้ attempt ใหม่สำเร็จ ห้ามเปลี่ยนสถานะเก่าเป็นสำเร็จ
+- บันทึกนี้ไม่แทน check_submission และยังไม่รับรองว่ามีครบทุก target จาก metadata หรือ checksum ถูกต้อง
+- เปอร์เซ็นต์ในบทสนทนาใช้รอบ project ที่ตรวจแล้ว/34 รวมรอบที่บันทึกข้อจำกัด ไม่ใช่เปอร์เซ็นต์งานส่งทั้งหมด

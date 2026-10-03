@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-1-Round1-s303-ad62ed86cf18",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "1",
+    "target": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 303,
+    "budget_seconds": 60,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "c46cfc6ed5310e529b24389f9eb79c5f5a050e2b97b02716e6007128d3dd17a6",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-09-28T19:24:16.261764+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18",
+    "tests": "GRT/Test/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18",
+    "config": "GRT/Configuration/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18"
+  },
+  "generation_time_sec": 51.136,
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/1/JacksonDatabind-1-Round1-s303-ad62ed86cf18/com/fasterxml/jackson/databind/ser/SqaGeneratedTest.java": "12c0f96b6ab683ce4e740e4158435fba9bc4752cf83cfcb5b82ee816a0096d35"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.struct.TestPOJOAsArray::testNullColumn",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.struct.TestPOJOAsArray::testNullColumn"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-09-28T19:56:48.228019+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=output=none,includes=org.mockito.internal.invocation.InvocationMatcher*",
+    "-cp",
+    "/workspace/work/checkouts/Mockito-1-Round2-s101-ef8ddbe0eb8b/generation-fixed/build/classes/java/main:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Mockito-1-Round2-s101-ef8ddbe0eb8b/generation-fixed/build/classes/java/main:/opt/defects4j/framework/projects/Mockito/lib/asm-all-5.0.4.jar:/opt/defects4j/framework/projects/Mockito/lib/assertj-core-2.1.0.jar:/opt/defects4j/framework/projects/Mockito/lib/cglib-and-asm-1.0.jar:/opt/defects4j/framework/projects/Mockito/lib/cobertura-2.0.3.jar:/opt/defects4j/framework/projects/Mockito/lib/fest-assert-1.3.jar:/opt/defects4j/framework/projects/Mockito/lib/fest-util-1.1.4.jar:/opt/defects4j/framework/projects/Mockito/lib/hamcrest-all-1.3.jar:/opt/defects4j/framework/projects/Mockito/lib/hamcrest-core-1.1.jar:/opt/defects4j/framework/projects/Mockito/lib/objenesis-2.1.jar:/opt/defects4j/framework/projects/Mockito/lib/objenesis-2.2.jar:/opt/defects4j/framework/projects/Mockito/lib/powermock-reflect-1.2.5.jar:/workspace/work/checkouts/Mockito-1-Round2-s101-ef8ddbe0eb8b/generation-fixed/compileLib/byte-buddy-0.6.8.jar",
+    "sqa.grt.GuidedRandom",
+    "/workspace/GRT/Result_Round2/Mockito/1/Mockito-1-Round2-s101-ef8ddbe0eb8b/generation/grt-config.json"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.333,
+  "stdout": "",
+  "stderr": ""
+}

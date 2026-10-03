@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Cli-1-Round1-s101-60733e1bb830/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.cli.bug.BugCLI13Test::testCLI13"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.622,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

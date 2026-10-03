@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-1-Round1-s303-3e8de54a3e20/evaluation-1/fixed",
+    "-t",
+    "org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 37.754,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

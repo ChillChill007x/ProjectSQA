@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Math-1-Round1-s303-1494ded7cbe8/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 35.022,
+  "stdout": "/workspace/work/checkouts/Math-1-Round1-s303-1494ded7cbe8/generation-fixed/target/classes",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

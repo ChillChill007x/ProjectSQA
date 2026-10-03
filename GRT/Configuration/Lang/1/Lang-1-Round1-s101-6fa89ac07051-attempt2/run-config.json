@@ -1,0 +1,15 @@
+{
+  "project": "Lang",
+  "bug": "1",
+  "target": "org.apache.commons.lang3.math.NumberUtils",
+  "tool": "grt",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 60,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "594c82aa76199bf2127714cc44a8cca235f17801c7fe473dddbf339ac558b8a1",
+  "ai_mode": null,
+  "purpose": "validation",
+  "model": null
+}

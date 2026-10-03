@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Time/1/Time-1-Round1-s303-1f95e0f24716/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Time-1-Round1-s303-1f95e0f24716/evaluation-1/fixed/target/classes/org/joda/time/field/UnsupportedDurationField.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Time/1/Time-1-Round1-s303-1f95e0f24716/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.215,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Time/1/Time-1-Round1-s303-1f95e0f24716/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}
