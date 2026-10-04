@@ -29,7 +29,7 @@ def expected_inventory(profile):
     return inventory
 
 
-def prepare(profile, tool, folder, implementation):
+def prepare(profile, tool, folder, implementation, project=None):
     expected = expected_inventory(profile)
     actual = {project: active_bugs(project) for project in expected}
     if actual != expected:
@@ -40,7 +40,10 @@ def prepare(profile, tool, folder, implementation):
         raise StageError("INVENTORY_MISMATCH", f"Installed active bug IDs differ from the 854-bug profile: {differences}")
     manifest = {"profile": profile, "tool": tool, "implementation_sha256": implementation,
                 "dependencies": json.loads((ROOT / "config/dependencies.lock.json").read_text(encoding="utf-8")),
-                "bugs": [{"project": p, "bug": b} for p, bids in actual.items() for b in bids]}
+                "bugs": [{"project": p, "bug": b} for p, bids in actual.items() for b in bids
+                         if project is None or p == project]}
+    if project is not None:
+        manifest["selected_project"] = project
     path = folder / "manifest.json"
     if path.exists() and json.loads(path.read_text(encoding="utf-8")) != manifest:
         raise StageError("MANIFEST_MISMATCH", "Existing manifest differs; do not mix campaigns")
@@ -109,7 +112,8 @@ def refresh(manifest, entries):
 
 def save_summary(manifest, entries, folder):
     counts = dict(Counter(e["status"] for e in entries))
-    data = {"updated_at": utc(), "expected_bugs": manifest["profile"]["expected_bugs"],
+    data = {"updated_at": utc(), "expected_bugs": len(manifest["bugs"]),
+            "inventory_total_bugs": manifest["profile"]["expected_bugs"],
             "bug_counts": counts, "bugs": entries,
             "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."}
     dump(folder / "progress.json", data)
@@ -171,6 +175,7 @@ def execute(manifest, entries, folder, retry_failed=False):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--tool", required=True, choices=["evosuite", "grt"])
+    ap.add_argument("--project", choices=config()["projects"], help="Run only this project; store separate project progress")
     actions = ap.add_mutually_exclusive_group()
     actions.add_argument("--prepare", action="store_true", help="Validate all IDs; do not generate tests")
     actions.add_argument("--status", action="store_true", help="Refresh checksums and bug-level summary; no generation")
@@ -178,10 +183,14 @@ def main(argv=None):
     actions.add_argument("--resume", action="store_true", help="Default: unfinished work, leaving terminal failures for retry pass")
     actions.add_argument("--smoke", action="store_true", help="Validate Lang-1 with this profile; excluded from campaign results")
     args = ap.parse_args(argv)
+    if args.project and args.smoke:
+        ap.error("--smoke validates Lang-1; omit --project")
     profile = json.loads((ROOT / "config/round1-full854.json").read_text(encoding="utf-8"))
     implementation = implementation_hash()
     fingerprint = hashlib.sha256(json.dumps([profile, implementation], sort_keys=True).encode()).hexdigest()[:12]
     folder = ROOT / FOLDERS[args.tool] / "Campaigns" / profile["profile"] / fingerprint
+    if args.project:
+        folder = folder / "projects" / args.project
     folder.mkdir(parents=True, exist_ok=True)
     lock = folder / ".running.lock"
     try:
@@ -202,7 +211,7 @@ def main(argv=None):
         if args.status:
             manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
         else:
-            manifest = prepare(profile, args.tool, folder, implementation)
+            manifest = prepare(profile, args.tool, folder, implementation, args.project)
         progress = folder / "progress.json"
         entries = (json.loads(progress.read_text(encoding="utf-8"))["bugs"] if progress.exists()
                    else [dict(b, status="NOT_RUN") for b in manifest["bugs"]])

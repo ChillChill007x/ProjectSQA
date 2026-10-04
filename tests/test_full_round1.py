@@ -29,6 +29,31 @@ class FullRound1Tests(unittest.TestCase):
         self.assertNotIn("2", ids["Lang"])
         self.assertIn("176", ids["Closure"])
 
+    def test_project_scope_keeps_full_inventory_and_unit_identity(self):
+        profile = self.profile()
+        ids = campaign.expected_inventory(profile)
+        with tempfile.TemporaryDirectory() as t, patch.object(campaign, "active_bugs", side_effect=ids.get):
+            full = campaign.prepare(profile, "grt", Path(t) / "full", "fixture")
+            selected = campaign.prepare(profile, "grt", Path(t) / "selected", "fixture", "JacksonDatabind")
+            self.assertEqual(110, len(selected["bugs"]))
+            self.assertEqual({"JacksonDatabind"}, {b["project"] for b in selected["bugs"]})
+            self.assertEqual(854, selected["profile"]["expected_bugs"])
+            entry = selected["bugs"][0]
+            self.assertEqual(campaign.make_unit(full, entry, "A"), campaign.make_unit(selected, entry, "A"))
+            entries = [dict(b, status="NOT_RUN") for b in selected["bugs"]]
+            campaign.save_summary(selected, entries, Path(t) / "selected")
+            progress = json.loads((Path(t) / "selected/progress.json").read_text())
+            self.assertEqual(110, progress["expected_bugs"])
+
+    def test_execute_project_manifest_does_not_run_other_projects(self):
+        entries = [dict(project="JacksonXml", bug="1", status="NOT_RUN")]
+        with patch.object(campaign, "targets_for", return_value=["A"]), \
+             patch.object(campaign, "inspect_unit", return_value={"status": "NOT_RUN"}), \
+             patch.object(campaign, "save_summary"), patch.object(campaign, "run_unit") as run:
+            campaign.execute(self.manifest(), entries, Path("unused"))
+            run.assert_called_once()
+            self.assertEqual("JacksonXml", run.call_args.args[0]["project"])
+
     def test_same_count_wrong_ids_stops_before_generation(self):
         p = self.profile()
         ids = campaign.expected_inventory(p)
