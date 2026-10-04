@@ -9,6 +9,27 @@ import sqa.fixtures.Helper;
 
 /** Behavioral checks of pool reuse, feedback and source statistics, beyond component counters. */
 public class GRTMechanismsTest {
+  @Test public void packagePrivateTargetProducesCompilableJava() throws Exception {
+    Map<String,Object> c=new HashMap<>();c.put("target","sqa.fixtures.PackageTarget");c.put("seed",101);
+    c.put("class_root",System.getProperty("sqa.fixture.classes"));
+    Path temp=Files.createTempDirectory("grt-package-test");
+    c.put("output",temp.toString());
+    GuidedRandom g=new GuidedRandom(c);
+    try {
+      assertFalse(g.methods.stream().anyMatch(m->m.getName().equals("hidden")));
+      Method twice=g.target.getDeclaredMethod("twice",int.class);
+      assertTrue(g.methods.contains(twice));
+      GuidedRandom.Seq seq=new GuidedRandom.Seq();
+      seq.steps.add(new GuidedRandom.Step(21));
+      seq.steps.add(new GuidedRandom.Step(g.methods.stream().filter(m->m.equals(twice)).findFirst().get(),new int[]{0}));seq.result=1;
+      GuidedRandom.Outcome o=g.execute(seq);assertNull(o.exception);assertEquals(42,o.value);
+      String source="package sqa.fixtures; public class PackageGenerated { public static Object check() throws Throwable {"
+        +GuidedRandom.code(seq)+"return v1; }}";
+      Path file=temp.resolve("PackageGenerated.java");Files.writeString(file,source);
+      assertEquals(0,javax.tools.ToolProvider.getSystemJavaCompiler().run(null,null,null,"-classpath",
+        System.getProperty("java.class.path"),"-d",temp.toString(),file.toString()));
+    } finally { g.executor.shutdownNow(); }
+  }
   @Test public void generatedArgumentsPreserveOverloadDispatch() throws Exception {
     ArgumentEmissionCheck.verify(GuidedRandom::argument);
   }

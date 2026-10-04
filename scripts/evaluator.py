@@ -35,10 +35,22 @@ def classpath(work, logs, test=True):
     bin_dir = (work / export(work, "dir.bin.classes", logs)).resolve()
     # Evaluate only generated tests: developer test binaries are deliberately excluded.
     parts = [str(bin_dir)]
+    missing = []
     for entry in cp.split(os.pathsep):
         if entry:
             path = Path(entry)
-            parts.append(str(path if path.is_absolute() else (work / path).resolve()))
+            path = path if path.is_absolute() else (work / path).resolve()
+            if path.exists():
+                parts.append(str(path))
+            else:
+                missing.append(str(path))
+    # Defects4J can export stale optional dependency paths (e.g. Cli's JUnit 3).
+    # EvoSuite rejects even one nonexistent entry before attempting generation.
+    # Keep an audit trail; genuinely required missing classes still fail normally.
+    dump(logs / ("classpath-test.json" if test else "classpath-compile.json"),
+         {"entries": list(dict.fromkeys(parts)), "missing_entries": missing})
+    if not bin_dir.is_dir():
+        raise StageError("CLASSPATH_ERROR", f"Compiled classes directory missing: {bin_dir}")
     return os.pathsep.join(dict.fromkeys(parts)), bin_dir
 
 def discover_test_classes(sources):

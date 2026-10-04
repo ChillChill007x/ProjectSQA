@@ -1,0 +1,28 @@
+{
+  "profile": "round1-full854-30s-s101-v1",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 30,
+  "expected_bugs": 854,
+  "grt_overrides": {"coverage_interval_seconds": 10},
+  "active_bug_ranges": {
+    "Chart": "1-26",
+    "Cli": "1-5,7-40",
+    "Closure": "1-62,64-92,94-176",
+    "Codec": "1-18",
+    "Collections": "1-28",
+    "Compress": "1-47",
+    "Csv": "1-16",
+    "Gson": "1-18",
+    "JacksonCore": "1-26",
+    "JacksonDatabind": "1-64,66-88,90-112",
+    "JacksonXml": "1-6",
+    "Jsoup": "1-93",
+    "JxPath": "1-22",
+    "Lang": "1,3-17,19-24,26-47,49-65",
+    "Math": "1-106",
+    "Mockito": "1-38",
+    "Time": "1-20,22-27"
+  },
+  "inventory_source": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/README.md"
+}

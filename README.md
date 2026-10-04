@@ -5,11 +5,17 @@
 
 ## สถานะที่ตรวจได้
 
+**ขอบเขตใหม่เฉพาะคนที่ 1/2 (4 ตุลาคม 2026): ครบ 854 active bugs, Round1 เท่านั้น,
+seed 101, budget 30 วินาทีต่อ target class** ใช้ `scripts/run_full_round1.py`
+และคู่มือ [คนที่ 1 MOSA](requirements/sqa-01-mosa-full854-round1.md) /
+[คนที่ 2 GRT](requirements/sqa-02-grt-full854-round1.md) แทน sample-17/สองรอบเดิม
+โค้ดรอบนี้ผ่าน Python และ Java fixture tests; ยังต้องตรวจ Defects4J smoke ใน Docker ของสมาชิก
+
 - แบ่งโฟลเดอร์ส่งงานและตัวประเมินผลกลางแล้ว ผลอยู่บนเครื่องจริงแม้ลบ container
 - GRT เป็น implementation ของทีมจาก Ma et al. ASE 2015 ซึ่งมีทั้งหกกลไกในวงรอบสร้างเทสต์
   ไม่ใช่ binary ของผู้เขียน และไม่อ้างว่าผลเทียบเท่าต้นฉบับ ดู [ขอบเขต GRT](GRT/README.md)
 - MOSA และ GRT ผ่าน Lang-1 end-to-end แล้ว รวม generation, compile, JUnit บน fixed/buggy และ JaCoCo coverage
-- **ยังไม่รับรองทั้ง 17 projects** ให้แต่ละเครื่องตรวจ Lang-1 ก่อน แล้วจึงรัน sample-17
+- **ยังไม่รับรองทุกบัค** ให้แต่ละเครื่องตรวจ prepare/Lang-1 smoke ก่อนเริ่มชุดเต็ม
 - ตรวจ Docker Linux engine ได้แล้ว และย้าย storage ไป E: เพื่อแก้ C: เต็ม ดูสถานะ build/Defects4J ล่าสุดใน VALIDATION.md
 - ยังไม่มีการเรียกบริการ AI หรือผล AI จริงจากการเตรียมระบบนี้
 
@@ -72,16 +78,16 @@ AI ใช้ Result เดียวแต่ระบุ Round1/Round2 ใน ru
 
 ## การรันรอบถัดไปและส่งงาน
 
-Round1 = 60 วินาที, Round2 = 180 วินาที สำหรับ algorithms; seeds = 101/202/303
-เป็นค่าที่ทีมกำหนด ไม่ใช่จำนวนรอบที่โจทย์บังคับ AI ใช้ wall-clock/retry limit แยกและรายงานแยก
+สำหรับ algorithms ใช้ profile ใหม่: Round1 = 30 วินาที, seed = 101, ครบ 854 บัค
+ค่า 60/180 วินาทีและสาม seeds ใน config/benchmark.json เป็น legacy สำหรับ runner เดิม
+AI ใช้ wall-clock/retry limit แยกและรายงานแยก
 
 ```bash
-python3 scripts/run_benchmark.py --tool grt --project Lang --bug 1 --round Round2 --seed 101
-# หลังผ่าน end-to-end ค่อยรันทุก target ของตัวแทน 17 projects
-python3 scripts/run_benchmark.py --tool grt --sample-17 --resume
-# เมื่อทีม freeze protocol และพร้อมทรัพยากรแล้วจึงใช้ --all-bugs
-python3 scripts/check_submission.py --tool grt
-python3 scripts/collect_results.py
+python3 scripts/run_full_round1.py --tool grt --prepare
+python3 scripts/run_full_round1.py --tool grt --smoke
+python3 scripts/run_full_round1.py --tool grt --resume
+python3 scripts/run_full_round1.py --tool grt --status
+# คนที่ 1 เปลี่ยน --tool เป็น evosuite; ดูคู่มือใหม่ก่อน retry failures
 ```
 
 `--resume` ข้ามเฉพาะหน่วยทดลองที่ประเมินสำเร็จและไฟล์เทสต์ยังตรง checksum

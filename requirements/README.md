@@ -26,7 +26,8 @@ config, Docker และ Java support ร่วมกัน คู่มือ�
    Linux/macOS ใช้ `bash scripts/start.sh` ดูตัวเลือกในคู่มือ Docker
 4. เมื่อ build และ doctor ผ่าน จะเข้า shell ของ container ให้รันคำสั่ง Python
    ใน requirements ของตัวเองจาก shell นี้ ไม่ต้องลง Java/Python/EvoSuite บนเครื่องเพิ่ม
-5. เริ่ม Lang-1 ก่อน ตรวจผล compile, JUnit และ coverage จากนั้นจึงเริ่ม sample-17
+5. คนที่ 1/2 ใช้คู่มือใหม่ [MOSA 854](sqa-01-mosa-full854-round1.md) / [GRT 854](sqa-02-grt-full854-round1.md)
+   ตรวจ prepare และ Lang-1 smoke ก่อนเริ่มครบ 854 บัค เฉพาะ Round1, seed 101, 30 วินาทีต่อ target
    ตาม [ขั้นตอนกลาง](../STEP-BY-STEP.md) และ [protocol](../BENCHMARK_PROTOCOL.md)
 6. ตรวจผลด้วย `python3 scripts/check_submission.py` แล้ว commit/push โฟลเดอร์ของตัวเอง
    ตามคู่มือ Git เก็บ logs, configuration, generated tests และ AI prompts ให้ครบ
@@ -37,5 +38,5 @@ config, Docker และ Java support ร่วมกัน คู่มือ�
 ไม่ต้องแก้ไฟล์เหล่านี้แยกคน ถ้าจะเปลี่ยนค่าทดลองให้ตกลงร่วมกันก่อน
 
 สถานะ: Docker build และ MOSA/GRT บน Defects4J Lang-1 ผ่านแล้ว รวม coverage หลังแก้ตัวประเมิน
-สมาชิกยังต้องตรวจบนเครื่องตัวเองก่อนเริ่ม sample-17 ส่วน AI จริงยังไม่ได้ตรวจ
+สมาชิกยังต้องตรวจบนเครื่องตัวเองก่อนเริ่มชุดเต็ม ส่วน AI จริงยังไม่ได้ตรวจ
 ดู [หลักฐาน validation](../VALIDATION.md) ก่อนเริ่มเก็บผลเต็มชุด

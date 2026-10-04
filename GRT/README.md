@@ -28,7 +28,8 @@ Python draft เดิมที่ใช้ placeholder และแก้เท
   อาจจัด pure method เป็น impure ได้ ไม่รับรอง whole-program purity
 - Detective ค้น public constructors/static factories ใน compiled SUT และชนิด JDK helper ที่ระบุใน engine
   จำกัด recursion 3 ชั้น ไม่ค้น subtype ของทุก dependency jar แบบไร้ขอบเขต
-- public API เท่านั้น; unsupported type/interface ที่หา object ไม่ได้ถูกนับใน unresolved_inputs
+- public API และสมาชิกที่เข้าถึงได้จาก package ของ generated tests; ไม่เปิด private members
+  และยังไม่รองรับ non-static inner constructors; unsupported inputs ถูกนับใน unresolved_inputs
 - จำกัด pool 1000 และ sequence 40 steps; เมื่อเต็มมี eviction เป็น engineering bound ที่ไม่ใช่ paper parameter
 - object fuzz probability 0.2, array lengths 0–3 และ max_tests 100 เป็นค่าของทีม
 - ค่าของ paper: p_const=.01, sigma=30, p=.99, alpha=.9, coverage interval=50 วินาที
@@ -57,7 +58,8 @@ python3 scripts/run_benchmark.py --tool grt --project Lang --bug 1 --round Round
 `python3 tests/smoke_java.py` สร้าง Java fixture, สร้างเทสต์ด้วย GRT, compile, รัน JUnit และวัด JaCoCo จริง
 มี negative compile case เพื่อยืนยันว่าไฟล์ผิดถูกปฏิเสธ
 นี่พิสูจน์การเชื่อมต่อกลไกเบื้องต้น ไม่ได้พิสูจน์ semantic equivalence กับ implementation ต้นฉบับ
-ก่อนส่งงานจริงให้ validate Lang-1 และ sample-17 พร้อมตรวจข้อจำกัดข้างต้นในรายงาน
+งานใหม่ครบ 854 บัคใช้ [คู่มือคนที่ 2](../requirements/sqa-02-grt-full854-round1.md)
+ตรวจ Lang-1 ก่อนรันจริง; profile ใหม่ใช้ coverage interval 10 วินาทีภายในงบ 30 วินาที
 
 แหล่ง artifact: [Randoop project ideas](https://randoop.github.io/randoop/projectideas.html)
 กล่าวถึงข้อจำกัดการเข้าถึงเครื่องมือ GRT; [repository งานทำซ้ำ](https://github.com/randoop/grt-testing)

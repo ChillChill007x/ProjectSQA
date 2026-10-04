@@ -20,8 +20,9 @@ GRT implementation ของทีมอ้างอิง DOI 10.1109/ASE.2015.
 EvoSuite 1.2.0 generator ใช้ Java 8 แยก ตัวประเมินทุกสายใช้ Java 11 + JUnit 4.13.2 + JaCoCo 0.8.13
 Java bytecode ที่ EvoSuite/Java 8 ไม่รองรับต้องรายงานเป็นข้อจำกัด ไม่แก้ source ให้ผ่าน
 
-ขอบเขตเริ่มต้นคือทุก modified class ของบั๊กตัวแทนหนึ่งตัวต่อ 17 projects จาก `defects4j bids`
-ขยายเป็นทุก active bug เมื่อ pipeline ผ่านและทีมตกลงทรัพยากร; sample-17 ไม่เท่ากับทุก active bug
+ขอบเขตปัจจุบันของคนที่ 1/2 คือทุก modified class ของ **854 active bugs จาก 17 projects**
+ใช้ config/round1-full854.json และ scripts/run_full_round1.py ตรวจ IDs จาก defects4j bids รายตัว
+sample-17 เป็นขอบเขตนำร่องเดิม ไม่ใช่ความครบของงานใหม่; ไม่เปลี่ยนขอบเขต AI ในการปรับครั้งนี้
 metadata ดึงด้วย CLI, เก็บทุก target/trigger ไม่ตัดเหลือรายการแรก
 
 ## ข้อมูลที่ใช้สร้างเทสต์และ oracle
@@ -41,7 +42,10 @@ AI CLI อ่าน source/เขียนเทสต์; Python evaluator ร�
 ## หน่วยทดลองและ budget
 
 หน่วยคือ tool × project × bug × target class × round × seed
-Round1/2 มี algorithm budget 60/180 วินาที, seeds 101/202/303 เป็นค่าที่ทีมเลือกและแก้ได้ใน config
+Profile ใหม่ของ algorithms: Round1 เท่านั้น, budget 30 วินาทีต่อ target, seed 101
+GRT coverage feedback interval = 10 วินาทีเพื่อให้ใช้ feedback ระหว่างงบ 30 วินาทีได้
+ค่า legacy 60/180 วินาทีและสาม seeds ยังเก็บไว้สำหรับผลเก่า ห้ามนำมารวม profile ใหม่
+มี seed เดียวจึงไม่รายงาน mean/SD ข้าม seeds ผลสำเร็จต้องตรง campaign/implementation/checksum
 GRT หยุดได้เมื่อครบ max_tests หรือ budget เพื่อจำกัดขนาด suite ต้องรายงานเงื่อนไขหยุดและค่าจริง
 EvoSuite time budget เป็น search budget; subprocess timeout มีเผื่อ startup/minimization
 GRT budget ครอบคลุม analysis/generation ใน engine; total generation_time_sec ยังรวม JVM startup

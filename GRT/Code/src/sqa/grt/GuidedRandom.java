@@ -69,17 +69,37 @@ public final class GuidedRandom {
     alpha=decimal(cfg,"alpha",.9);decay=decimal(cfg,"p",.99);
     coverageInterval=(long)(decimal(cfg,"coverage_interval_seconds",50)*1e9);
     startedAt=System.nanoTime();deadline=startedAt+(long)(decimal(cfg,"budget_seconds",60)*1e9);
-    if (!visible(target)) throw new IllegalArgumentException("Target must be publicly accessible: "+target);
-    for (Constructor<?> c:target.getConstructors()) if (!Modifier.isAbstract(target.getModifiers())) methods.add(c);
-    for (Method m:target.getMethods()) if (m.getDeclaringClass()!=Object.class && !m.isBridge() && !m.isSynthetic()) methods.add(m);
+    if (!sourceVisible(target)) throw new IllegalArgumentException("Target is inaccessible from generated test package: "+target);
+    for (Constructor<?> c:target.getDeclaredConstructors()) if (!Modifier.isAbstract(target.getModifiers())) methods.add(c);
+    Set<Method> candidates=new LinkedHashSet<>(Arrays.asList(target.getMethods()));
+    Collections.addAll(candidates,target.getDeclaredMethods());
+    for (Method m:candidates) if (m.getDeclaringClass()!=Object.class && !m.isBridge() && !m.isSynthetic()) methods.add(m);
     methods.removeIf(m->!usable(m)); methods.sort(Comparator.comparing(GuidedRandom::key));
-    if(methods.isEmpty()) throw new IllegalArgumentException("No supported public methods or constructors");
+    if(methods.isEmpty()) throw new IllegalArgumentException("No supported methods or constructors accessible from test package");
   }
   static int num(Map<String,Object> c,String k,int d){return ((Number)c.getOrDefault(k,d)).intValue();}
   static double decimal(Map<String,Object> c,String k,double d){return ((Number)c.getOrDefault(k,d)).doubleValue();}
   void count(String k){counters.merge(k,1,Integer::sum);}
   static boolean visible(Class<?> t){return t.isPrimitive() || t.isArray() && visible(t.getComponentType()) || t.getCanonicalName()!=null && Modifier.isPublic(t.getModifiers()) && (t.getEnclosingClass()==null || visible(t.getEnclosingClass()));}
-  static boolean usable(Executable e){return visible(e.getDeclaringClass()) && Arrays.stream(e.getParameterTypes()).allMatch(GuidedRandom::visible) && !(e instanceof Method && !visible(((Method)e).getReturnType()));}
+  boolean sourceVisible(Class<?> t){
+    if(t.isPrimitive())return true;
+    if(t.isArray())return sourceVisible(t.getComponentType());
+    return t.getCanonicalName()!=null && !Modifier.isPrivate(t.getModifiers())
+      && (Modifier.isPublic(t.getModifiers()) || t.getPackageName().equals(target.getPackageName()))
+      && (t.getEnclosingClass()==null || sourceVisible(t.getEnclosingClass()));
+  }
+  boolean usable(Executable e){
+    int modifiers=e.getModifiers();
+    if(Modifier.isPrivate(modifiers) || e.isSynthetic()
+        || !(Modifier.isPublic(modifiers) || e.getDeclaringClass().getPackageName().equals(target.getPackageName()))
+        || !sourceVisible(e.getDeclaringClass()) || !Arrays.stream(e.getParameterTypes()).allMatch(this::sourceVisible)
+        || e instanceof Method && !sourceVisible(((Method)e).getReturnType()))return false;
+    // Non-static inner constructors require outer.new Inner(), which code() does not emit.
+    if(e instanceof Constructor<?> && e.getDeclaringClass().isMemberClass()
+        && !Modifier.isStatic(e.getDeclaringClass().getModifiers()))return false;
+    // Reflection runs in sqa.grt, while emitted Java runs in the target package.
+    return Modifier.isPublic(modifiers) && visible(e.getDeclaringClass()) || e.trySetAccessible();
+  }
   static String key(Executable e){return e.getDeclaringClass().getName()+"#"+(e instanceof Method?e.getName()+org.objectweb.asm.Type.getMethodDescriptor((Method)e):"<init>"+org.objectweb.asm.Type.getConstructorDescriptor((Constructor<?>)e));}
 
   // Constant mining: occurrence counts are retained. Straight-line folding/propagation is
@@ -235,10 +255,11 @@ public final class GuidedRandom {
         List<Executable> found=new ArrayList<>();Set<Class<?>> sources=new LinkedHashSet<>(Arrays.asList(t,context,target));
         List<String> names=new ArrayList<>(constants.keySet());
         names.addAll(Arrays.asList("java.util.ArrayList","java.util.HashMap","java.util.HashSet","java.util.TreeMap","java.util.TreeSet","java.io.ByteArrayInputStream","java.io.ByteArrayOutputStream","java.io.StringReader","java.io.StringWriter"));
-        for(String name:names)try{Class<?> c=Class.forName(name,false,target.getClassLoader());if(visible(c))sources.add(c);}catch(LinkageError|ClassNotFoundException ignored){}
+        for(String name:names)try{Class<?> c=Class.forName(name,false,target.getClassLoader());if(sourceVisible(c))sources.add(c);}catch(LinkageError|ClassNotFoundException ignored){}
         for(Class<?> source:sources){
-          if(t.isAssignableFrom(source) && !source.isInterface() && !Modifier.isAbstract(source.getModifiers()))Collections.addAll(found,source.getConstructors());
+          if(t.isAssignableFrom(source) && !source.isInterface() && !Modifier.isAbstract(source.getModifiers()))Collections.addAll(found,source.getDeclaredConstructors());
           for(Method m:source.getMethods())if(Modifier.isStatic(m.getModifiers()) && t.isAssignableFrom(m.getReturnType()))found.add(m);
+          for(Method m:source.getDeclaredMethods())if(Modifier.isStatic(m.getModifiers()) && t.isAssignableFrom(m.getReturnType()) && !found.contains(m))found.add(m);
         }
         found.removeIf(f->!usable(f));found.sort(Comparator.comparing(GuidedRandom::key));return found;
       }));

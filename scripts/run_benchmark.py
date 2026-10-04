@@ -24,7 +24,7 @@ def implementation_hash():
 def active_bugs(project):
     r = run(["defects4j", "bids", "-p", project], log=WORK / "metadata" / f"{project}-bids.json")
     bids = [line.strip() for line in r["stdout"].splitlines() if line.strip()]
-    if not bids or any(not b.isdigit() for b in bids):
+    if not bids or any(not b.isdigit() or int(b) < 1 for b in bids) or len(set(bids)) != len(bids):
         raise StageError("METADATA_ERROR", f"Invalid active bug list: {project}")
     return sorted(bids, key=int)
 
@@ -71,6 +71,7 @@ def generate_algorithm(unit, work, tests, logs):
         build_support()
         grt_config = dict(config()["grt"], seed=unit["seed"], target=unit["target"],
                           output=str(tests), class_root=str(bin_dir), budget_seconds=unit["budget_seconds"])
+        grt_config.update(unit.get("grt_overrides", {}))
         cfg_path = logs / "grt-config.json"
         dump(cfg_path, grt_config)
         cmd = [java(), f"-javaagent:{TOOLS / 'jacocoagent.jar'}=output=none,includes={unit['target']}*",
@@ -105,6 +106,9 @@ def evaluate_record(record, result_dir):
     buggy = checkout(unit["project"], unit["bug"], "b", scratch / "buggy", evaluation / "buggy")
     record["reference_validation"] = validate_reference(fixed, buggy, evaluation / "baseline")
     f_result = evaluate_revision(fixed, tests, evaluation / "fixed", unit["target"])
+    if not f_result["junit"]["passed"]:
+        record["fixed"] = f_result
+        raise StageError("INVALID_ORACLE", "Suite must pass on fixed revision before fault evaluation")
     b_result = evaluate_revision(buggy, tests, evaluation / "buggy", unit["target"])
     record.update(compare(f_result, b_result))
     record["evaluation_path"] = relative(evaluation)
@@ -117,9 +121,15 @@ def run_unit(unit, resume=False, ai_mode="manual", acknowledge=False):
     paths = paths_for(unit["tool"], unit["project"], unit["bug"], unit["round"], base_id)
     if resume and paths["result"].parent.exists():
         for prior in sorted(paths["result"].parent.glob(base_id + "*/result.json")):
-            saved = json.loads(prior.read_text(encoding="utf-8"))
-            tests = ROOT / saved["paths"]["tests"]
-            if saved.get("status") == "EVALUATED" and saved["unit"] == unit and saved.get("test_sha256") == artifact_hashes(tests):
+            try:
+                saved = json.loads(prior.read_text(encoding="utf-8"))
+                tests = ROOT / saved["paths"]["tests"]
+            except (OSError, ValueError, KeyError):
+                continue
+            if (saved.get("status") == "EVALUATED" and saved["unit"] == unit
+                    and saved.get("test_sha256") and saved["test_sha256"] == artifact_hashes(tests)
+                    and not (prior.parent / "validation-only.json").exists()
+                    and not (prior.parent / "coverage-superseded.json").exists()):
                 print(f"SKIP evaluated {saved['run_id']}")
                 return True
             if saved.get("status") == "AWAITING_AI" and ai_mode == "manual":
@@ -215,7 +225,15 @@ def main(argv=None):
             elif args.sample_17:
                 bids = bids[:1]
             for bug in bids:
-                for target in targets_for(project, bug):
+                try:
+                    targets = targets_for(project, bug)
+                except (StageError, OSError, ValueError) as exc:
+                    dump(WORK / "metadata" / project / str(bug) / "error.json",
+                         {"status": getattr(exc, "status", "METADATA_ERROR"), "error": str(exc), "finished_at": utc()})
+                    print(f"{project}-{bug}: {exc}", file=sys.stderr)
+                    ok = False
+                    continue
+                for target in targets:
                     for seed in ([args.seed] if args.seed is not None else cfg["seeds"]):
                         unit = {"project": project, "bug": bug, "target": target, "tool": args.tool,
                                 "round": args.round, "seed": seed, "budget_seconds": cfg["budgets_seconds"][args.round],
