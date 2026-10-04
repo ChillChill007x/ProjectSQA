@@ -1,0 +1,69 @@
+{
+  "updated_at": "2026-10-03T18:14:53.012290+00:00",
+  "planned": 1708,
+  "status_counts": {
+    "NOT_RUN": 1708
+  },
+  "providers": {
+    "deepseek": {
+      "NOT_RUN": 854
+    },
+    "openai": {
+      "NOT_RUN": 854
+    }
+  },
+  "projects": {
+    "Chart": {
+      "NOT_RUN": 52
+    },
+    "Cli": {
+      "NOT_RUN": 78
+    },
+    "Closure": {
+      "NOT_RUN": 348
+    },
+    "Codec": {
+      "NOT_RUN": 36
+    },
+    "Collections": {
+      "NOT_RUN": 56
+    },
+    "Compress": {
+      "NOT_RUN": 94
+    },
+    "Csv": {
+      "NOT_RUN": 32
+    },
+    "Gson": {
+      "NOT_RUN": 36
+    },
+    "JacksonCore": {
+      "NOT_RUN": 52
+    },
+    "JacksonDatabind": {
+      "NOT_RUN": 220
+    },
+    "JacksonXml": {
+      "NOT_RUN": 12
+    },
+    "Jsoup": {
+      "NOT_RUN": 186
+    },
+    "JxPath": {
+      "NOT_RUN": 44
+    },
+    "Lang": {
+      "NOT_RUN": 122
+    },
+    "Math": {
+      "NOT_RUN": 212
+    },
+    "Mockito": {
+      "NOT_RUN": 76
+    },
+    "Time": {
+      "NOT_RUN": 52
+    }
+  },
+  "api_paused": true
+}
