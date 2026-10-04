@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 98.77,
+  "branch_cov": 97.53,
+  "test_file": "CombiningEvaluatorGptTest.java;QueryParserGptTest.java",
+  "target_classes": "org.jsoup.select.CombiningEvaluator;org.jsoup.select.QueryParser",
+  "buggy_failures": [
+    "org.jsoup.select.QueryParserGptTest::testCommasWithinAttributeSelectorValue",
+    "org.jsoup.select.QueryParserGptTest::testMalformedAttributeOperatorThrows",
+    "org.jsoup.select.QueryParserGptTest::testSurroundingWhitespaceAndMultipleSpaces",
+    "org.jsoup.select.QueryParserGptTest::testParseIdSelector",
+    "org.jsoup.select.QueryParserGptTest::testHandlesCommasInSelectorDocumentEvaluation",
+    "org.jsoup.select.QueryParserGptTest::testHandlesCommasInSelectorRegexPattern"
+  ],
+  "fixed_failures": [
+    "org.jsoup.select.QueryParserGptTest::testMalformedAttributeOperatorThrows",
+    "org.jsoup.select.QueryParserGptTest::testSurroundingWhitespaceAndMultipleSpaces",
+    "org.jsoup.select.QueryParserGptTest::testMixCombinatorGroup",
+    "org.jsoup.select.QueryParserGptTest::testParseIdSelector"
+  ],
+  "suite_sha256": "bdde06212161f78cc891c049fa783d68e4c5edd906cb24f80ac4f8dd7b9beee4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_21b/CombiningEvaluatorGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_21b/QueryParserGptTest.java"
+  ],
+  "run_id": "Jsoup-21-Reevaluation-s0-922f7d7da326"
+}

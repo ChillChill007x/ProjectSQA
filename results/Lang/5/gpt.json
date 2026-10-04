@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "LocaleUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.LocaleUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.LocaleUtilsGptTest::testLang865"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "7442659139284883ae73e1408895d075ca0949d14753456d8b1c71f55070ad03",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_5b/LocaleUtilsGptTest.java"
+  ],
+  "run_id": "Lang-5-Reevaluation-s0-18cbca7b98a2"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "UnmodifiableBoundedCollectionGptTest.java",
+  "target_classes": "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection",
+  "buggy_failures": [
+    "org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionGptTest::testDefectDecorateFactoryReturnsSameInstanceForBoundedCollection",
+    "org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionGptTest::testDefectDecorateFactoryReturnsSameInstanceForCollectionOverload"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionGptTest::testDefectDecorateFactoryReturnsSameInstanceForCollectionOverload"
+  ],
+  "suite_sha256": "6a426db5d28df6276363ff10c3f2daa2394ef1d5ec52ab92d0eb6dd97712c4bc",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_24b/UnmodifiableBoundedCollectionGptTest.java"
+  ],
+  "run_id": "Collections-24-Reevaluation-s0-6e965ad9f555"
+}

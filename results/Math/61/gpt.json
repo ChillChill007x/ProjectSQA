@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "PoissonDistributionImplGptTest.java",
+  "target_classes": "org.apache.commons.math.distribution.PoissonDistributionImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testCumulativeProbabilityInterval",
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testMeanZeroTargetingDefect",
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testMean",
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testInverseCumulativeProbability"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testCumulativeProbabilityInterval",
+    "org.apache.commons.math.distribution.PoissonDistributionImplGptTest::testInverseCumulativeProbability"
+  ],
+  "suite_sha256": "40552d72a9d11030f5061d1feaf8bdda6d60fcecbb285cf13dfebea1765f731f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_61b/PoissonDistributionImplGptTest.java"
+  ],
+  "run_id": "Math-61-Reevaluation-s0-c8826a3d7c8d"
+}

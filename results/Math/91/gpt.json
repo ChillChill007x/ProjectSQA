@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 98.58,
+  "branch_cov": 96.49,
+  "test_file": "FractionGptTest.java",
+  "target_classes": "org.apache.commons.math.fraction.Fraction",
+  "buggy_failures": [
+    "org.apache.commons.math.fraction.FractionGptTest::testCompareToPrecisionDefect"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "ea7e8287720aeda8f169e1d383797c51066dab6e2b7d0e94c8ccaa9569551839",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_91b/FractionGptTest.java"
+  ],
+  "run_id": "Math-91-Reevaluation-s0-4fefc0f854be"
+}

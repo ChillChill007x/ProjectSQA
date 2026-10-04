@@ -1,0 +1,237 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-1-Reevaluation-s0-b6cd12c8a406",
+  "unit": {
+    "project": "Lang",
+    "bug": "1",
+    "target": "org.apache.commons.lang3.math.NumberUtils",
+    "targets": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "metadata_targets": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "excluded_non_java_targets": [],
+    "tool": "openai",
+    "round": "Reevaluation",
+    "seed": 0,
+    "budget_seconds": 0,
+    "generation_revision": "unknown",
+    "campaign_version": "existing-suites-2",
+    "protocol_version": "existing-suites-2",
+    "purpose": "imported-suite-evaluation",
+    "ai_mode": "imported",
+    "model": null,
+    "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+    "declared_models": [
+      "gpt-5.6-terra"
+    ],
+    "implementation_sha256": "eb83d891016f55350042e3fd406cbbb6a4f395ca77682eb53f252d736852c535",
+    "source_suite_path": "gpt-5.6-terra/TestCode/Lang_1b",
+    "test_input_sha256": {
+      "gpt-5.6-terra/TestCode/Lang_1b/NumberUtilsGptTest.java": "32b0edfccf5286149a058cb778435fa53293baa47a635ec7fcc129ad46175d77"
+    },
+    "prompt_input_sha256": {
+      "gpt-5.6-terra/Prompt/Lang_1b/actual_prompt_NumberUtils.md": "4b2f91729d0fe6408361e582a237d97d61a6d1bc97c1cf6793c7998536e95133"
+    },
+    "legacy_metric_sha256": {
+      "gpt-5.6-terra/Result/Lang_1b/generation_metrics_NumberUtils.json": "943b1da3b992f9fd805a8a876b80e2fb664a30a60164efbe8edc6021e823b07b"
+    },
+    "explicit_ground_truth_in_saved_prompt": false
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-03T18:17:04.286827+00:00",
+  "paths": {
+    "result": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406",
+    "tests": "gpt-5.6-terra/TestCode/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406",
+    "config": "gpt-5.6-terra/Prompt/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406"
+  },
+  "ai_provenance": {
+    "mode": "imported",
+    "tool": "openai",
+    "model_requested": null,
+    "model_reported": null,
+    "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+    "declared_models": [
+      "gpt-5.6-terra"
+    ],
+    "generation_time_sec": null,
+    "total_tokens": null,
+    "api_calls": 0,
+    "note": "Original API generation logs unavailable; no generation values have been reconstructed.",
+    "explicit_ground_truth_in_saved_prompt": false
+  },
+  "generation_time_sec": null,
+  "test_sha256": {
+    "gpt-5.6-terra/TestCode/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/NumberUtilsGptTest.java": "32b0edfccf5286149a058cb778435fa53293baa47a635ec7fcc129ad46175d77"
+  },
+  "generation_model_verified": false,
+  "evaluated_targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "excluded_non_java_targets": [],
+  "fixed": {
+    "junit": {
+      "run_count": 35,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 181,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxByteArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidExponentPositionDecPosAfter",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberAllZerosHandling",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidQualifierLWithDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToFloat",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToShort",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointPrecisionDecisions",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToDouble",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToInt",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberBlank",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberEmpty",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxDoubleArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxShortArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMaxEmptyArrayValidation",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxIntArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberHex",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsDigits",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinNullArrayValidation",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidQualifierLWithExponent",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberWithTypeQualifiers",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateBigDecimalBlank",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxLongArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testThreeParamMax",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testThreeParamMin",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberBasicPrimitives",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testLang747ExposeOverflowInHex",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberScientific",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testConstantsAndConstructor",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testSpecificCreateMethods",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxFloatArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToByte",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToLong",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberUnknownQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateBigDecimalDoubleMinus"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.lang3.math.NumberUtilsGptTest.testIsNumber(NumberUtilsGptTest.java:548)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 351,
+      "line_total": 380,
+      "line_coverage_percent": 92.36842105263158,
+      "branch_covered": 262,
+      "branch_total": 350,
+      "branch_coverage_percent": 74.85714285714286
+    },
+    "coverage_by_target": {
+      "org.apache.commons.lang3.math.NumberUtils": {
+        "line_covered": 351,
+        "line_total": 380,
+        "line_coverage_percent": 92.36842105263158,
+        "branch_covered": 262,
+        "branch_total": 350,
+        "branch_coverage_percent": 74.85714285714286
+      }
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "revision_errors": {},
+  "buggy": {
+    "junit": {
+      "run_count": 35,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 186,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxByteArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidExponentPositionDecPosAfter",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberAllZerosHandling",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidQualifierLWithDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToFloat",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToShort",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointPrecisionDecisions",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToDouble",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToInt",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberBlank",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberEmpty",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxDoubleArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxShortArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMaxEmptyArrayValidation",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxIntArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberHex",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsDigits",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinNullArrayValidation",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberInvalidQualifierLWithExponent",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberWithTypeQualifiers",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateBigDecimalBlank",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxLongArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testThreeParamMax",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testThreeParamMin",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberBasicPrimitives",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testLang747ExposeOverflowInHex",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberScientific",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testConstantsAndConstructor",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testSpecificCreateMethods",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testMinMaxFloatArray",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToByte",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testToLong",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberUnknownQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateBigDecimalDoubleMinus"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.lang3.math.NumberUtilsGptTest.testIsNumber(NumberUtilsGptTest.java:548)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsGptTest::testLang747ExposeOverflowInHex",
+          "exception": "java.lang.NumberFormatException",
+          "message": "For input string: \"80000000\"",
+          "trace": "java.lang.NumberFormatException: For input string: \"80000000\"\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\n\tat java.base/java.lang.Integer.valueOf(Integer.java:957)\n\tat java.base/java.lang.Integer.decode(Integer.java:1436)\n\tat org.apache.commons.lang3.math.NumberUtils.createInteger(NumberUtils.java:684)\n\tat org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:474)\n\tat org.apache.commons.lang3.math.NumberUtilsGptTest.testLang747ExposeOverflowInHex(NumberUtilsGptTest.java:67)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 347,
+      "line_total": 375,
+      "line_coverage_percent": 92.53333333333333,
+      "branch_covered": 254,
+      "branch_total": 338,
+      "branch_coverage_percent": 75.14792899408285
+    },
+    "coverage_by_target": {
+      "org.apache.commons.lang3.math.NumberUtils": {
+        "line_covered": 347,
+        "line_total": 375,
+        "line_coverage_percent": 92.53333333333333,
+        "branch_covered": 254,
+        "branch_total": 338,
+        "branch_coverage_percent": 75.14792899408285
+      }
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747",
+    "available_triggers": [
+      "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-03T18:18:04.639172+00:00",
+  "evaluation_time_sec": 53.007
+}

@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 95.16,
+  "branch_cov": 95.05,
+  "test_file": "CodeConsumerGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CodeConsumer",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CodeConsumerGptTest::testMinusNegativeZeroSpaceAdded"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "bd882efd966422f20ccfe912a9633179730cf4f3f87837d613320d61a229fc78",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_38b/CodeConsumerGptTest.java"
+  ],
+  "run_id": "Closure-38-Reevaluation-s0-e08e97dcd31a"
+}

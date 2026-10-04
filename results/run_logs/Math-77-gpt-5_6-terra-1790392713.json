@@ -1,0 +1,31 @@
+{
+  "project": "Math",
+  "bug_id": 77,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-77-gpt-1790392713",
+  "suite_sha256": "2e58043605a486e959eee41cdde21d7c816a4d16a01a7214e4a65936629533cb",
+  "test_files": "ArrayRealVectorGptTest.java;OpenMapRealVectorGptTest.java",
+  "target_classes": "org.apache.commons.math.linear.ArrayRealVector;org.apache.commons.math.linear.OpenMapRealVector",
+  "timestamp": "2026-10-03 10:18:59",
+  "evaluation_duration_sec": 25.572,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 97.0,
+  "branch_coverage_percent": 92.31,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testDefectTargetLInfNormAccumulationBug",
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testDefectTargetLInfNormNegativeValues",
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testGetEntryNegativeIndexThrows",
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testGetEntryOverIndexThrows",
+    "org.apache.commons.math.linear.OpenMapRealVectorGptTest::testDefectGetLInfDistanceWithNegativeMissingInThis",
+    "org.apache.commons.math.linear.OpenMapRealVectorGptTest::testDefectGetLInfNormWithNegativeValues",
+    "org.apache.commons.math.linear.OpenMapRealVectorGptTest::testDefectGetLInfNormPositiveSumVersusMax"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testGetEntryNegativeIndexThrows",
+    "org.apache.commons.math.linear.ArrayRealVectorGptTest::testGetEntryOverIndexThrows",
+    "org.apache.commons.math.linear.OpenMapRealVectorGptTest::testDefectGetLInfDistanceWithNegativeMissingInThis"
+  ]
+}

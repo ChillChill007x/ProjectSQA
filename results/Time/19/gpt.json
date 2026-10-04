@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 90.29,
+  "branch_cov": 81.92,
+  "test_file": "DateTimeZoneGptTest.java",
+  "target_classes": "org.joda.time.DateTimeZone",
+  "buggy_failures": [
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_Unrecognized",
+    "org.joda.time.DateTimeZoneGptTest::testDefect_DateTimeCreation_london_overlap",
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_Conversions",
+    "org.joda.time.DateTimeZoneGptTest::testDefect_getOffsetFromLocal_overlapLondon"
+  ],
+  "fixed_failures": [
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_Unrecognized",
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_Conversions"
+  ],
+  "suite_sha256": "605e1e1aa3e388dd2f13c0a058a0a0ed1d3aff18def21994e34e1d3781e19df7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Time_19b/DateTimeZoneGptTest.java"
+  ],
+  "run_id": "Time-19-Reevaluation-s0-8c53184f1d2a"
+}

@@ -1,0 +1,29 @@
+{
+  "project": "JacksonDatabind",
+  "bug_id": 80,
+  "technique": "gpt-5.6-terra",
+  "run_id": "JacksonDatabind-80-gpt-1790376802",
+  "suite_sha256": "71b394194c4a4638730d55153116b4ad50f1a40056a0e09befc31ed4a73293c8",
+  "test_files": "StdSubtypeResolverGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver",
+  "timestamp": "2026-10-03 05:53:48",
+  "evaluation_duration_sec": 26.153,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 62.9,
+  "branch_coverage_percent": 64.1,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testPropertyAnnotationsAndRegisteredSubtypesCombined",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testBaseTypeId1616DefectResolutionByTypeIdMember",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testNullBaseTypeFallbackToPropertyRawType",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testNameOverrideWhenSubtypeResolvedWithNameAfterBeingAddedWithoutName"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testPropertyAnnotationsAndRegisteredSubtypesCombined",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testBaseTypeId1616DefectResolutionByTypeIdMember",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testNullBaseTypeFallbackToPropertyRawType",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolverGptTest::testNameOverrideWhenSubtypeResolvedWithNameAfterBeingAddedWithoutName"
+  ]
+}

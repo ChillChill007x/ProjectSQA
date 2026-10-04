@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:26:48",
+  "project": "Math",
+  "bug_id": 105,
+  "version": "b",
+  "target_class": "org.apache.commons.math.stat.regression.SimpleRegression",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 41.37,
+    "input_tokens": 5667,
+    "output_tokens": 3980,
+    "reasoning_tokens": null,
+    "total_tokens": 9647,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 95313,
+    "limit": 1000000,
+    "remaining": 904687
+  }
+}

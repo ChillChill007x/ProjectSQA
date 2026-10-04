@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 09:39:58",
+  "project": "Compress",
+  "bug_id": 25,
+  "version": "b",
+  "target_class": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 49.78,
+    "input_tokens": 10658,
+    "output_tokens": 6119,
+    "reasoning_tokens": 2517,
+    "total_tokens": 19294,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 266610,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 133390
+  }
+}

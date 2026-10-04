@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 84.13,
+  "branch_cov": 75.65,
+  "test_file": "ZipArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraAndCentralDirectoryMerging",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraFieldsReplacesAll",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testWinzipBackSlashWorkaroundInZipFile",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistingExtraFieldThrowsException",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testEqualsAndHashCodeExhaustiveBranches",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructors",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testWinzipBackSlashWorkaroundInZipArchiveInputStream",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testAddAsFirstExtraFieldAndReordering"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraAndCentralDirectoryMerging",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraFieldsReplacesAll",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistingExtraFieldThrowsException",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testEqualsAndHashCodeExhaustiveBranches",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructors",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testAddAsFirstExtraFieldAndReordering"
+  ],
+  "suite_sha256": "7be27f694e40619e9828d6a672307fb9f823cc3d22c6f001c6fcc19118a2e325",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_13b/ZipArchiveEntryGptTest.java"
+  ],
+  "run_id": "Compress-13-Reevaluation-s0-7a669c621853"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 95.08,
+  "branch_cov": 85.02,
+  "test_file": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testKeepsPreTextAtDepth",
+    "org.jsoup.nodes.ElementGptTest::testStandaloneElementNavigationNullGuards",
+    "org.jsoup.nodes.ElementGptTest::testDomQuerySelectors",
+    "org.jsoup.nodes.ElementGptTest::testKeepsPreTextAtDepthDirectHierarchy",
+    "org.jsoup.nodes.ElementGptTest::testPreserveWhitespaceMultiLevelAncestry",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorPaths"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testStandaloneElementNavigationNullGuards",
+    "org.jsoup.nodes.ElementGptTest::testDomQuerySelectors",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorPaths"
+  ],
+  "suite_sha256": "ac439f737692e74eb2f3cc4fb3cd2422387d144067dd05d06f48e40132aa6dea",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_70b/ElementGptTest.java"
+  ],
+  "run_id": "Jsoup-70-Reevaluation-s0-2360aaa2606d"
+}

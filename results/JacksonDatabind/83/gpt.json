@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.83,
+  "branch_cov": 97.3,
+  "test_file": "FromStringDeserializerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testUnknownKindThrowsInternalInStd",
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testDefectWeirdStringHandlingURL",
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testInetSocketAddressParsing"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testUnknownKindThrowsInternalInStd",
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testDefectWeirdStringHandlingURL",
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testCustomDeserializerNullFallthroughAndEmptyString",
+    "com.fasterxml.jackson.databind.deser.std.FromStringDeserializerGptTest::testInetSocketAddressParsing"
+  ],
+  "suite_sha256": "7ef01e409d739c2b65fcebf3f7cb8caa1b4f5b9efbe05793bbbf3a16ccb52b68",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_83b/FromStringDeserializerGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-83-Reevaluation-s0-161ca3b12faa"
+}

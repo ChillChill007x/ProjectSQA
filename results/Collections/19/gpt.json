@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 98.58,
+  "branch_cov": 100.0,
+  "test_file": "SetUniqueListGptTest.java",
+  "target_classes": "org.apache.commons.collections.list.SetUniqueList",
+  "buggy_failures": [
+    "org.apache.commons.collections.list.SetUniqueListGptTest::testSubListBehavior",
+    "org.apache.commons.collections.list.SetUniqueListGptTest::testSetCollections444"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.list.SetUniqueListGptTest::testSubListBehavior"
+  ],
+  "suite_sha256": "36d1894537861697107bd6b7e90036bf41b6728eb177d2a13e5b6f95b786fae5",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_19b/SetUniqueListGptTest.java"
+  ],
+  "run_id": "Collections-19-Reevaluation-s0-d469a88c8c77"
+}

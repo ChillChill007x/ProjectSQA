@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "BisectionSolverGptTest.java",
+  "target_classes": "org.apache.commons.math.analysis.solvers.BisectionSolver",
+  "buggy_failures": [
+    "org.apache.commons.math.analysis.solvers.BisectionSolverGptTest::testMath369Quadratic",
+    "org.apache.commons.math.analysis.solvers.BisectionSolverGptTest::testIntervalAlreadyWithinTolerance",
+    "org.apache.commons.math.analysis.solvers.BisectionSolverGptTest::testMath369"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.analysis.solvers.BisectionSolverGptTest::testIntervalAlreadyWithinTolerance"
+  ],
+  "suite_sha256": "a2236e1af45880bb2993b26a1afc86606bf9b50e0243e6ea54ed7dcbdbdea1ec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_70b/BisectionSolverGptTest.java"
+  ],
+  "run_id": "Math-70-Reevaluation-s0-4090da3ec784"
+}

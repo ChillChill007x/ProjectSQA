@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "GnuParserGptTest.java",
+  "target_classes": "org.apache.commons.cli.GnuParser",
+  "buggy_failures": [
+    "org.apache.commons.cli.GnuParserGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.GnuParserGptTest"
+  ],
+  "suite_sha256": "4cc06ebd6a184f507d22f58c0844d252a90ed9acc97423c15d3d5f11166ae300",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_12b/GnuParserGptTest.java"
+  ],
+  "run_id": "Cli-12-Reevaluation-s0-641a476562ff"
+}

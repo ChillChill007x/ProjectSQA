@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "HelpFormatterGptTest.java",
+  "target_classes": "org.apache.commons.cli.HelpFormatter",
+  "buggy_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest"
+  ],
+  "suite_sha256": "00d13f6b6f8f7ac3e5340e60eceb628ebbb05ecd65818a36057298c0b01d3843",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_8b/HelpFormatterGptTest.java"
+  ],
+  "run_id": "Cli-8-Reevaluation-s0-8f8460af2c23"
+}

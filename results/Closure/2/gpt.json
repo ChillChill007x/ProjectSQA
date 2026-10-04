@@ -1,0 +1,50 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 17,
+  "line_cov": 80.95,
+  "branch_cov": 62.74,
+  "test_file": "TypeCheckGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.TypeCheck",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIllegalPropertyCreationOnStructInstance",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBitwiseOperationOnIncompatibleTypeProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBadInterfaceExtendsNonExistentInterfaces",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testClassImplementsNonInterfaceProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testProcessWithoutInitializationThrowsIllegalStateException",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testObjectLiteralWithGettersAndSetters",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInitialTypedPercentIsZeroWhenNoNodes",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testForInOnStructThrowsWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testFunctionWithExplicitThisCalledWithoutThisProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInterfaceExtendsNonInterfaceProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testNoTypeCheckAnnotationSuppressesReporting",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testHiddenSuperclassPropertyWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInOperatorOnStructThrowsWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInterfaceExtendsRealAndNonExistentInterfaces",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testProcessForTestingWithParentlessJsRootThrowsIllegalStateException",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testDictEnforcesQuotedKeys",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testStructEnforcesUnquotedKeys"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIllegalPropertyCreationOnStructInstance",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBitwiseOperationOnIncompatibleTypeProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testClassImplementsNonInterfaceProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testProcessWithoutInitializationThrowsIllegalStateException",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testObjectLiteralWithGettersAndSetters",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInitialTypedPercentIsZeroWhenNoNodes",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testForInOnStructThrowsWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testFunctionWithExplicitThisCalledWithoutThisProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInterfaceExtendsNonInterfaceProducesWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testNoTypeCheckAnnotationSuppressesReporting",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testHiddenSuperclassPropertyWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInOperatorOnStructThrowsWarning",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testProcessForTestingWithParentlessJsRootThrowsIllegalStateException",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testDictEnforcesQuotedKeys",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testStructEnforcesUnquotedKeys"
+  ],
+  "suite_sha256": "f8578a777a6240202709d926cf468425fff9ec185b8dcee59f7ef4f5893303ec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_2b/TypeCheckGptTest.java"
+  ],
+  "run_id": "Closure-2-Reevaluation-s0-4d474d9fc51d"
+}

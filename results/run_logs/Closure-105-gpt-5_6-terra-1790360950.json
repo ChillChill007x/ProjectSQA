@@ -1,0 +1,41 @@
+{
+  "project": "Closure",
+  "bug_id": 105,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Closure-105-gpt-1790360950",
+  "suite_sha256": "c4da1f0bb0fd8e03492be8f003ea94d5a36cce3056ccbb822c6cf730a9fba7f9",
+  "test_files": "FoldConstantsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.FoldConstants",
+  "timestamp": "2026-10-03 01:29:33",
+  "evaluation_duration_sec": 23.393,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 56.8,
+  "branch_coverage_percent": 52.23,
+  "failures_count": 10,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLoopFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testRegExpConstructor",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringJoinAddDefect",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testUnaryOperators",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testConditionMinimization",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testMinimizeNot",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringIndexOfAndJoin",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLogicalAndOr",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testHookAndIfFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testComparisonFolding"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLoopFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testRegExpConstructor",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringJoinAddDefect",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testUnaryOperators",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testConditionMinimization",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testMinimizeNot",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringIndexOfAndJoin",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLogicalAndOr",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testHookAndIfFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testComparisonFolding"
+  ]
+}

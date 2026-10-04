@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 22:26:49",
+  "project": "Math",
+  "bug_id": 85,
+  "version": "b",
+  "target_class": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 50.6,
+    "input_tokens": 3607,
+    "output_tokens": 4868,
+    "reasoning_tokens": null,
+    "total_tokens": 8475,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 760592,
+    "limit": 1000000,
+    "remaining": 239408
+  }
+}

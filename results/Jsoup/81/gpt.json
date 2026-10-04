@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 92.72,
+  "branch_cov": 83.16,
+  "test_file": "DataUtilGptTest.java",
+  "target_classes": "org.jsoup.helper.DataUtil",
+  "buggy_failures": [
+    "org.jsoup.helper.DataUtilGptTest::testSupportsXmlCharsetDeclaration",
+    "org.jsoup.helper.DataUtilGptTest::testGetCharsetFromContentTypeVariants"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.DataUtilGptTest::testGetCharsetFromContentTypeVariants"
+  ],
+  "suite_sha256": "f9a16163a384d9e73dc68a35a7717abf9f87ac450a65e16608f6e47f5180d22c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_81b/DataUtilGptTest.java"
+  ],
+  "run_id": "Jsoup-81-Reevaluation-s0-827e617c6a4f"
+}

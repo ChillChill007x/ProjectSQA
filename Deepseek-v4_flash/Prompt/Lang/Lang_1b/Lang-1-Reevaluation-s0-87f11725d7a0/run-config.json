@@ -1,0 +1,38 @@
+{
+  "project": "Lang",
+  "bug": "1",
+  "target": "org.apache.commons.lang3.math.NumberUtils",
+  "targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "metadata_targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "excluded_non_java_targets": [],
+  "tool": "deepseek",
+  "round": "Reevaluation",
+  "seed": 0,
+  "budget_seconds": 0,
+  "generation_revision": "unknown",
+  "campaign_version": "existing-suites-2",
+  "protocol_version": "existing-suites-2",
+  "purpose": "imported-suite-evaluation",
+  "ai_mode": "imported",
+  "model": null,
+  "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+  "declared_models": [
+    "deepseek-v4-flash"
+  ],
+  "implementation_sha256": "eb83d891016f55350042e3fd406cbbb6a4f395ca77682eb53f252d736852c535",
+  "source_suite_path": "Deepseek-v4_flash/TestCode/Lang_1b",
+  "test_input_sha256": {
+    "Deepseek-v4_flash/TestCode/Lang_1b/NumberUtilsDeepseekTest.java": "059f949482beced09b028ae59f7b970b0f12ee218b538aa3efa117a51e52e974"
+  },
+  "prompt_input_sha256": {
+    "Deepseek-v4_flash/Prompt/Lang_1b/actual_prompt_NumberUtils.md": "8c7272bd662736b53c56f92f86dc47edfca3a3499e9c2020d7713fa323a4f32d"
+  },
+  "legacy_metric_sha256": {
+    "Deepseek-v4_flash/Result/Lang_1b/generation_metrics_NumberUtils.json": "6b6ea05486a00afb7f009888e01bba0deb312982d52b7b406cc63c86f8e725b2"
+  },
+  "explicit_ground_truth_in_saved_prompt": false
+}

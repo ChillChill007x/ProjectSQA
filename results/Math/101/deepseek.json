@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 98.32,
+  "branch_cov": 96.76,
+  "test_file": "ComplexFormatDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.complex.ComplexFormat",
+  "buggy_failures": [
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParseNumberWithSpecialFallback",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParseMissingImaginaryCharacterWithMinus",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParseOnlyRealWithSign",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testForgottenImaginaryCharacter",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParsePositionReturnsNullOnError",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParsePositions"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParseNumberWithSpecialFallback",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParseOnlyRealWithSign",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParsePositionReturnsNullOnError",
+    "org.apache.commons.math.complex.ComplexFormatDeepseekTest::testParsePositions"
+  ],
+  "suite_sha256": "fdf92f3dc39b426a1fa0ed027ac18c42cf86a6d4ffd68aa253963dba0a59a62d",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_101b/ComplexFormatDeepseekTest.java"
+  ],
+  "run_id": "Math-101-Reevaluation-s0-2e0429923876"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 91.95,
+  "branch_cov": 88.53,
+  "test_file": "CommandLineRunnerGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CommandLineRunner",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testQuotedArgumentStripping",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testGetMsgWiringNoWarnings",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCreateExternsWithUseOnlyCustomExterns",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCommonJsModuleWithoutEntryModuleFails",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testDefaultExternsIntegrity"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testQuotedArgumentStripping",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testGetMsgWiringNoWarnings",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCreateExternsWithUseOnlyCustomExterns",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCommonJsModuleWithoutEntryModuleFails",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testDefaultExternsIntegrity"
+  ],
+  "suite_sha256": "700625364681090722a69d7a82f13d13f0345be70666e675dffd2614fd5e8563",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_107b/CommandLineRunnerGptTest.java"
+  ],
+  "run_id": "Closure-107-Reevaluation-s0-9af79333b5cb"
+}

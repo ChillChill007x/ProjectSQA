@@ -1,0 +1,39 @@
+{
+  "audit_type": "READ_ONLY_RESULT_EVIDENCE_AUDIT",
+  "audited_at": "2026-10-04T05:55:56.064476+00:00",
+  "api_calls": 0,
+  "tests_executed_by_this_audit": 0,
+  "audit_script": {
+    "path": "AI_API/audit_results.py",
+    "sha256": "b16704a8a99ac2b0f66b2aec24d52c8591acb5ed06c25ec2e930e33c439644ef"
+  },
+  "summary": "AI_API/ImportedResults/progress.json",
+  "source_manifest": "AI_API/ImportedResults/source_manifest.json",
+  "checks": {
+    "expected_unique_units": true,
+    "all_17_projects": true,
+    "no_missing_or_duplicate_bug_rows": true,
+    "status_counts_reconcile": true,
+    "run_log_json_parse_errors": [],
+    "native_coverage_conflicts": 2,
+    "runtime_fingerprints_unchanged": true
+  },
+  "native_records": [
+    {
+      "path": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json",
+      "sha256": "b73e5bbca0e4aef2b21dd605e78e47d64449e0412d51169b2a01b1734b7affce",
+      "status": "INVALID_ORACLE",
+      "saved_test_hashes_match": true,
+      "fixed_evidence_present": true,
+      "buggy_evidence_present": true
+    },
+    {
+      "path": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json",
+      "sha256": "932568e60740929628d020bcc4a9b1040b352066876e88179b8e9373fbd07931",
+      "status": "INVALID_ORACLE",
+      "saved_test_hashes_match": true,
+      "fixed_evidence_present": true,
+      "buggy_evidence_present": true
+    }
+  ]
+}

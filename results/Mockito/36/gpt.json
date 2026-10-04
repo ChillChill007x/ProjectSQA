@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 95.58,
+  "branch_cov": 88.69,
+  "test_file": "InvocationGptTest.java",
+  "target_classes": "org.mockito.internal.invocation.Invocation",
+  "buggy_failures": [
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithArrayArgumentsCoversArrayEqualsMatcher",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithPrintSettingsMultilineForced",
+    "org.mockito.internal.invocation.InvocationGptTest::shouldScreamWhenCallingRealMethodOnInterface",
+    "org.mockito.internal.invocation.InvocationGptTest::testIsValidReturnTypeForVoid",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringSingleLineWhenShort",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringMultilineWhenExceedsMaxLineLength",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithEmptyMatchersAndLongInvocationLine"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.invocation.InvocationGptTest::testCallRealMethodRethrowsRuntimeException",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithArrayArgumentsCoversArrayEqualsMatcher",
+    "org.mockito.internal.invocation.InvocationGptTest::testCallRealMethodNormalExecution",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithPrintSettingsMultilineForced",
+    "org.mockito.internal.invocation.InvocationGptTest::shouldScreamWhenCallingRealMethodOnInterface",
+    "org.mockito.internal.invocation.InvocationGptTest::testIsValidReturnTypeForVoid",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringSingleLineWhenShort",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringMultilineWhenExceedsMaxLineLength",
+    "org.mockito.internal.invocation.InvocationGptTest::testToStringWithEmptyMatchersAndLongInvocationLine",
+    "org.mockito.internal.invocation.InvocationGptTest::testCallRealMethodRethrowsCheckedException"
+  ],
+  "suite_sha256": "382a43c94579c33ff1128c5f062057298150ff4b950e04d03023cbc247ea771d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_36b/InvocationGptTest.java"
+  ],
+  "run_id": "Mockito-36-Reevaluation-s0-25a07d5c1bc5"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 12:48:14",
+  "project": "Lang",
+  "bug_id": 9,
+  "version": "b",
+  "target_class": "org.apache.commons.lang3.time.FastDateParser",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 173.82,
+    "input_tokens": 7639,
+    "output_tokens": 11714,
+    "reasoning_tokens": null,
+    "total_tokens": 19353,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 86191,
+    "limit": 1000000,
+    "remaining": 913809
+  }
+}

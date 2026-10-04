@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 94.86,
+  "branch_cov": 83.37,
+  "test_file": "TextBufferGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.util.TextBuffer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testEmpty",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testResetWithCopy",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testContentsAsDecimalAllBranches",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testSetCurrentAndReturn",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testSetCurrentLengthContract"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testEmpty",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testResetWithCopy",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testContentsAsDecimalAllBranches",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testSetCurrentAndReturn",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testSetCurrentLengthContract"
+  ],
+  "suite_sha256": "893504134d1bc62beb4c94ca63a77ce06c73483ca3076c5daddd5e55644c074e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_8b/TextBufferGptTest.java"
+  ],
+  "run_id": "JacksonCore-8-Reevaluation-s0-dfe2d669f460"
+}

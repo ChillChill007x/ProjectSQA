@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "LookupTranslatorGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.translate.LookupTranslator",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.translate.LookupTranslatorGptTest::testLang882ViaInheritedTranslate",
+    "org.apache.commons.lang3.text.translate.LookupTranslatorGptTest::testLang882WithStringBuilderKeyAndStringInput",
+    "org.apache.commons.lang3.text.translate.LookupTranslatorGptTest::testLang882WithStringBufferKey",
+    "org.apache.commons.lang3.text.translate.LookupTranslatorGptTest::testNullOutputMapping"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.text.translate.LookupTranslatorGptTest::testNullOutputMapping"
+  ],
+  "suite_sha256": "569a2616826e1a60cac9dac634ccae275a56c9dc748fce5478ad15e70f26aece",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_4b/LookupTranslatorGptTest.java"
+  ],
+  "run_id": "Lang-4-Reevaluation-s0-98ae1fe59261"
+}

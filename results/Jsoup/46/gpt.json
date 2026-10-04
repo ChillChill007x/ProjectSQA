@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 98.03,
+  "branch_cov": 100.0,
+  "test_file": "EntitiesGptTest.java",
+  "target_classes": "org.jsoup.nodes.Entities",
+  "buggy_failures": [
+    "org.jsoup.nodes.EntitiesGptTest::testUnescapeBasicAndStrict",
+    "org.jsoup.nodes.EntitiesGptTest::testIsNamedEntityNull",
+    "org.jsoup.nodes.EntitiesGptTest::testIsBaseNamedEntityNull",
+    "org.jsoup.nodes.EntitiesGptTest::testGetCharacterByNameNull",
+    "org.jsoup.nodes.EntitiesGptTest::testAsciiRoundtripWithXhtmlNonBreakingSpace",
+    "org.jsoup.nodes.EntitiesGptTest::testShiftJisRoundtripWithXhtmlNonBreakingSpaceDefect"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.EntitiesGptTest::testUnescapeBasicAndStrict",
+    "org.jsoup.nodes.EntitiesGptTest::testIsNamedEntityNull",
+    "org.jsoup.nodes.EntitiesGptTest::testIsBaseNamedEntityNull",
+    "org.jsoup.nodes.EntitiesGptTest::testGetCharacterByNameNull"
+  ],
+  "suite_sha256": "c03d597fb0c31a39bfc14b5d530f866dca22decf43fa24523491283aa19657c9",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_46b/EntitiesGptTest.java"
+  ],
+  "run_id": "Jsoup-46-Reevaluation-s0-7732d8479318"
+}

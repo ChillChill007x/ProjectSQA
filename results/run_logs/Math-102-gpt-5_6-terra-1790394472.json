@@ -1,0 +1,23 @@
+{
+  "project": "Math",
+  "bug_id": 102,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-102-gpt-1790394472",
+  "suite_sha256": "8c381b3516b37dcdbc014fa3e6837b3a7a7d8fa31b4000cc474b9a7db210b399",
+  "test_files": "ChiSquareTestImplGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.inference.ChiSquareTestImpl",
+  "timestamp": "2026-10-03 10:48:16",
+  "evaluation_duration_sec": 24.16,
+  "execution_status": "DONE",
+  "fault_detection_status": "BUG_DETECTED",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 96.51,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareRescalingUnequalTotals",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareRescalingIdenticalProportions",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareTestRescalingPValue"
+  ],
+  "fixed_failures": []
+}

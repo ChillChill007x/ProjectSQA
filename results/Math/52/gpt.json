@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 97.26,
+  "branch_cov": 88.98,
+  "test_file": "RotationGptTest.java",
+  "target_classes": "org.apache.commons.math.geometry.euclidean.threed.Rotation",
+  "buggy_failures": [
+    "org.apache.commons.math.geometry.euclidean.threed.RotationGptTest::testMatrixNonOrthogonalNonConvergentThrows",
+    "org.apache.commons.math.geometry.euclidean.threed.RotationGptTest::testIssue639"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.geometry.euclidean.threed.RotationGptTest::testMatrixNonOrthogonalNonConvergentThrows",
+    "org.apache.commons.math.geometry.euclidean.threed.RotationGptTest::testIssue639"
+  ],
+  "suite_sha256": "756e8dc8b34bd06574b5a2ff152ebb028a0fa4402a9cbe54a5f15f10b30488b6",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_52b/RotationGptTest.java"
+  ],
+  "run_id": "Math-52-Reevaluation-s0-3a0346ecb024"
+}

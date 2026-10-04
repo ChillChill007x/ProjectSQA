@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "EmbeddedRungeKuttaIntegratorGptTest.java",
+  "target_classes": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator",
+  "buggy_failures": [
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorGptTest::testTooLargeFirstStepBackward",
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorGptTest::testTooLargeFirstStep"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "500fccc7ea47c948c8b7334a0d33e18f81c64280fe31a1ac66a3072ca5baa193",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_39b/EmbeddedRungeKuttaIntegratorGptTest.java"
+  ],
+  "run_id": "Math-39-Reevaluation-s0-0ef5fe1c2c03"
+}

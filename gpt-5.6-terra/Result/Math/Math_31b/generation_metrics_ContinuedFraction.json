@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 01:32:20",
+  "project": "Math",
+  "bug_id": 31,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.util.ContinuedFraction",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 52.02,
+    "input_tokens": 2904,
+    "output_tokens": 4066,
+    "reasoning_tokens": 3168,
+    "total_tokens": 10138,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 31771,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 368229
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 10:22:01",
+  "project": "Mockito",
+  "bug_id": 20,
+  "version": "b",
+  "target_class": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 77.59,
+    "input_tokens": 2305,
+    "output_tokens": 8978,
+    "reasoning_tokens": null,
+    "total_tokens": 11283,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 194092,
+    "limit": 1000000,
+    "remaining": 805908
+  }
+}

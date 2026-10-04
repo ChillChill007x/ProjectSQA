@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "GrayPaintScaleGptTest.java",
+  "target_classes": "org.jfree.chart.renderer.GrayPaintScale",
+  "buggy_failures": [
+    "org.jfree.chart.renderer.GrayPaintScaleGptTest::testGetPaintClampingBelowLowerBoundDefect",
+    "org.jfree.chart.renderer.GrayPaintScaleGptTest::testGetPaintClampingAboveUpperBoundDefect",
+    "org.jfree.chart.renderer.GrayPaintScaleGptTest::testGetPaintClampingExtremes"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "1bf050f3adf8cb835a33cb860a1b5e8e3c051962f55737b85f419ea49df6e66c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_24b/GrayPaintScaleGptTest.java"
+  ],
+  "run_id": "Chart-24-Reevaluation-s0-dd4e4b2ddfa6"
+}

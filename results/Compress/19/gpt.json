@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 92.09,
+  "test_file": "Zip64ExtendedInformationExtraFieldGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldGptTest::testReparseCentralDirectoryDataWithExcessData"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "3d035709ba1ce175b36c00222eab143cfdaaf56e06cb05246a65ea7946e3aee5",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_19b/Zip64ExtendedInformationExtraFieldGptTest.java"
+  ],
+  "run_id": "Compress-19-Reevaluation-s0-d56481286dab"
+}

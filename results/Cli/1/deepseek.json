@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "CommandLineDeepseekTest.java",
+  "target_classes": "org.apache.commons.cli.CommandLine",
+  "buggy_failures": [
+    "org.apache.commons.cli.CommandLineDeepseekTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.CommandLineDeepseekTest"
+  ],
+  "suite_sha256": "221ce95d6896e788b4e63dba0e9df7879c320a8500a1c755d34050fa09b8c085",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Cli_1b/CommandLineDeepseekTest.java"
+  ],
+  "run_id": "Cli-1-Reevaluation-s0-4e2f5a23a79f"
+}

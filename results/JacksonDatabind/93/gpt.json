@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "SubTypeValidatorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testSpringInterfaceLoopDoesNotThrowNullPointerException"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "7c5108c095b3c7f21a523446f1b70c75447a85ef56b255d5e4c166b132abb889",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_93b/SubTypeValidatorGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-93-Reevaluation-s0-575d98e32b74"
+}

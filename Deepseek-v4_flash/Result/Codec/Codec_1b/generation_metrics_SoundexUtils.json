@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:38:36",
+  "project": "Codec",
+  "bug_id": 1,
+  "version": "b",
+  "target_class": "org.apache.commons.codec.language.SoundexUtils",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 95.96,
+    "input_tokens": 2109,
+    "output_tokens": 3840,
+    "reasoning_tokens": null,
+    "total_tokens": 5949,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 170130,
+    "limit": 1000000,
+    "remaining": 829870
+  }
+}

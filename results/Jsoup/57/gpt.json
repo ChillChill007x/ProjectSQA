@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.56,
+  "branch_cov": 97.92,
+  "test_file": "AttributesGptTest.java",
+  "target_classes": "org.jsoup.nodes.Attributes",
+  "buggy_failures": [
+    "org.jsoup.nodes.AttributesGptTest::testChainedRemoveIgnoreCaseSequence",
+    "org.jsoup.nodes.AttributesGptTest::testDatasetIteratorRemoveIntegrity",
+    "org.jsoup.nodes.AttributesGptTest::testRemoveIgnoreCaseConcurrentModificationDefect"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.AttributesGptTest::testDatasetIteratorRemoveIntegrity"
+  ],
+  "suite_sha256": "d614186981caac8545fad77e6558b7aa05f24d7d6f25efb27a12bdbcbec1be28",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_57b/AttributesGptTest.java"
+  ],
+  "run_id": "Jsoup-57-Reevaluation-s0-277d5bb382ca"
+}

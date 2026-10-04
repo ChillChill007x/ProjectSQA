@@ -1,0 +1,28 @@
+{
+  "project": "Lang",
+  "bug_id": 28,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-28-gpt-1790385316",
+  "suite_sha256": "0cacefe5b42943e5330136ac08ce0419305cd4bbd572e95bf03f861a9e933f32",
+  "test_files": "NumericEntityUnescaperGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+  "timestamp": "2026-10-03 08:15:36",
+  "evaluation_duration_sec": 19.944,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 6,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testTranslateAmpersandWithoutHash",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryUnescapingDirectWriter",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryUnescaping",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryBoundaryMax",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryBoundaryMin",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryHexUnescaping"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testTranslateAmpersandWithoutHash"
+  ]
+}

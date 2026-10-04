@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.93,
+  "branch_cov": 86.24,
+  "test_file": "VarianceGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.descriptive.moment.Variance",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.descriptive.moment.VarianceGptTest::testEvaluateWeightedSingleAndEmpty",
+    "org.apache.commons.math.stat.descriptive.moment.VarianceGptTest::testEvaluateArraySegmentWeightedWithPrecomputedMean",
+    "org.apache.commons.math.stat.descriptive.moment.VarianceGptTest::testEvaluateArraySegmentWeighted"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.stat.descriptive.moment.VarianceGptTest::testEvaluateWeightedSingleAndEmpty"
+  ],
+  "suite_sha256": "17e2943278fd835dcb3dba8485a95fafc3eaa416aa1e9f8af6e1d719287572ca",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_41b/VarianceGptTest.java"
+  ],
+  "run_id": "Math-41-Reevaluation-s0-e20d35052197"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "EqualityGptTest.java",
+  "target_classes": "org.mockito.internal.matchers.Equality",
+  "buggy_failures": [
+    "org.mockito.internal.matchers.EqualityGptTest::shouldKnowIfObjectsAreEqual"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.matchers.EqualityGptTest::shouldKnowIfObjectsAreEqual"
+  ],
+  "suite_sha256": "a5106060bb219be6485344161f83a67f6e332bb3203b73f280dbd63619e072eb",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_22b/EqualityGptTest.java"
+  ],
+  "run_id": "Mockito-22-Reevaluation-s0-13d5fbc17771"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/scratch/existing-suite-checkouts/Lang-1-Reevaluation-s0-87f11725d7a0/buggy/target/classes",
+    "--dest",
+    "/scratch/existing-suite-checkouts/Lang-1-Reevaluation-s0-87f11725d7a0/bytecode/4d2d95e07d7d2c95b3281d95065c8194e943e0def19286e231ffb6a73cb7aa2b/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.628,
+  "stdout": "[INFO] 170 classes instrumented to /scratch/existing-suite-checkouts/Lang-1-Reevaluation-s0-87f11725d7a0/bytecode/4d2d95e07d7d2c95b3281d95065c8194e943e0def19286e231ffb6a73cb7aa2b/instrumented.\n",
+  "stderr": ""
+}

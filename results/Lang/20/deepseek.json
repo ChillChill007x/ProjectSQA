@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 59.9,
+  "branch_cov": 55.45,
+  "test_file": "StringUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testJoinArrayWithNulls",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testDifference"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testJoinArrayWithNulls",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testDifference"
+  ],
+  "suite_sha256": "ffc628e30256024333d57f159554d55730d2345418fa49e8744b49e9cde174d8",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_20b/StringUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-20-Reevaluation-s0-283cd602da12"
+}

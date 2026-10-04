@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "FDistributionImplGptTest.java",
+  "target_classes": "org.apache.commons.math.distribution.FDistributionImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomDenominatorOne",
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomDenominatorTwo",
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomAsymmetric"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "694f6eb561ab18467d6ded0feae8b3a3e8533f2990f0dab0bd38026217a3b9e9",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_95b/FDistributionImplGptTest.java"
+  ],
+  "run_id": "Math-95-Reevaluation-s0-0cc15ca76745"
+}

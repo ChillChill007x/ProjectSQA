@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 91.17,
+  "branch_cov": 82.9,
+  "test_file": "DateTimeZoneGptTest.java",
+  "target_classes": "org.joda.time.DateTimeZone",
+  "buggy_failures": [
+    "org.joda.time.DateTimeZoneGptTest::testGetOffsetFromLocal_Branches",
+    "org.joda.time.DateTimeZoneGptTest::testIsStandardOffset",
+    "org.joda.time.DateTimeZoneGptTest::testGetMillisKeepLocal",
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_UnknownZone"
+  ],
+  "fixed_failures": [
+    "org.joda.time.DateTimeZoneGptTest::testGetOffsetFromLocal_Branches",
+    "org.joda.time.DateTimeZoneGptTest::testIsStandardOffset",
+    "org.joda.time.DateTimeZoneGptTest::testGetMillisKeepLocal",
+    "org.joda.time.DateTimeZoneGptTest::testForTimeZone_UnknownZone"
+  ],
+  "suite_sha256": "a1b6ebeb309a6f86175c39ae5262c4f1eeb61fce3947229495a64b13f3cf04fa",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Time_23b/DateTimeZoneGptTest.java"
+  ],
+  "run_id": "Time-23-Reevaluation-s0-35dc74ced355"
+}

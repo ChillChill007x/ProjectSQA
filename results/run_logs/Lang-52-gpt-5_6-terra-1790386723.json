@@ -1,0 +1,24 @@
+{
+  "project": "Lang",
+  "bug_id": 52,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-52-gpt-1790386723",
+  "suite_sha256": "ee8f192dabd3177468cd4425c09c0aca209ac76d807b293d6bcd37454b7cb77e",
+  "test_files": "StringEscapeUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.StringEscapeUtils",
+  "timestamp": "2026-10-03 08:39:02",
+  "evaluation_duration_sec": 19.751,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 93.14,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testEscapeJavaScriptScriptTagDefect",
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testUnescapeJavaIncompleteUnicodeAtEof"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testUnescapeJavaIncompleteUnicodeAtEof"
+  ]
+}

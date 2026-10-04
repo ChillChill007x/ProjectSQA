@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 86.02,
+  "branch_cov": 66.97,
+  "test_file": "ByteQuadsCanonicalizerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCascadingLookupThroughSecondaryTertiaryAndSpillover",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testBasicAddAndFind2Quads",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testRootCreationAndStateInspection",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCalcTertiaryShiftBoundaries"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCascadingLookupThroughSecondaryTertiaryAndSpillover",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testBasicAddAndFind2Quads",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testRootCreationAndStateInspection",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCalcTertiaryShiftBoundaries"
+  ],
+  "suite_sha256": "294b987144eb09533382e7c9cf678c88515ee28564effa3aa9b5e0e2a9809932",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_10b/ByteQuadsCanonicalizerGptTest.java"
+  ],
+  "run_id": "JacksonCore-10-Reevaluation-s0-fdcfba57ea0f"
+}

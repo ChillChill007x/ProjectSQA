@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 01:37:11",
+  "project": "Math",
+  "bug_id": 38,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.direct.BOBYQAOptimizer",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 49.63,
+    "input_tokens": 30506,
+    "output_tokens": 4557,
+    "reasoning_tokens": 1138,
+    "total_tokens": 36201,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 101327,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 298673
+  }
+}

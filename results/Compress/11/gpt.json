@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 94.39,
+  "branch_cov": 96.56,
+  "test_file": "ArchiveStreamFactoryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.ArchiveStreamFactory",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamByNameAllFormats",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testAutoDetectEmptyStreamThrowsArchiveException",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testShortTextFilesAreNoTARs",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testArbitraryBinaryNonArchiveThrowsArchiveException",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamCaseInsensitive"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamByNameAllFormats",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamCaseInsensitive"
+  ],
+  "suite_sha256": "628032fad169a91601edc60287ef664a833c10b69869c28d0a530356028d3679",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_11b/ArchiveStreamFactoryGptTest.java"
+  ],
+  "run_id": "Compress-11-Reevaluation-s0-b3e2babdb1e1"
+}

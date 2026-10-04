@@ -1,0 +1,26 @@
+{
+  "project": "Jsoup",
+  "bug_id": 74,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-74-gpt-1790382124",
+  "suite_sha256": "950694e4a8c16c75ecd9dd16a25c9992ca0d9f9ff44c43f9fc4d859232baf3ff",
+  "test_files": "StringUtilGptTest.java",
+  "target_classes": "org.jsoup.helper.StringUtil",
+  "timestamp": "2026-10-03 07:22:20",
+  "evaluation_duration_sec": 15.539,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 98.65,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceRemovesInvisibleCharacters",
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceBasic",
+    "org.jsoup.helper.StringUtilGptTest::testResolveUrlDotRelativeWorkaround"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceBasic",
+    "org.jsoup.helper.StringUtilGptTest::testResolveUrlDotRelativeWorkaround"
+  ]
+}

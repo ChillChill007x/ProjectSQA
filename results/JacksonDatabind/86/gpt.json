@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 89.68,
+  "branch_cov": 60.43,
+  "test_file": "ResolvedRecursiveTypeGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.type.ResolvedRecursiveType",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.type.ResolvedRecursiveTypeGptTest::testEqualsContract",
+    "com.fasterxml.jackson.databind.type.ResolvedRecursiveTypeGptTest::testSuperClassWithReferencedJavaType"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.type.ResolvedRecursiveTypeGptTest::testEqualsContract"
+  ],
+  "suite_sha256": "ee135f5281ddad3d789536a1e7838ecfd234ce98f0ac582a28ebc932d59271a0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_86b/ResolvedRecursiveTypeGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-86-Reevaluation-s0-4c5c32b0971d"
+}

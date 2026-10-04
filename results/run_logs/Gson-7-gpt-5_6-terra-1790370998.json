@@ -1,0 +1,27 @@
+{
+  "project": "Gson",
+  "bug_id": 7,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Gson-7-gpt-1790370998",
+  "suite_sha256": "0846a75add670689e4ed5e4a21de4dcd1f5426593c9df189c2b2b9958f430bf5",
+  "test_files": "JsonReaderGptTest.java",
+  "target_classes": "com.google.gson.stream.JsonReader",
+  "timestamp": "2026-10-03 04:16:52",
+  "evaluation_duration_sec": 13.305,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 85.09,
+  "branch_coverage_percent": 73.77,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.google.gson.stream.JsonReaderGptTest::testPromotedUnquotedNameToLong",
+    "com.google.gson.stream.JsonReaderGptTest::testPromotedUnquotedNameToInt",
+    "com.google.gson.stream.JsonReaderGptTest::testNextStringFromVariousTokens",
+    "com.google.gson.stream.JsonReaderGptTest::testLenientSeparatorsAndUnquotedTokens"
+  ],
+  "fixed_failures": [
+    "com.google.gson.stream.JsonReaderGptTest::testNextStringFromVariousTokens",
+    "com.google.gson.stream.JsonReaderGptTest::testLenientSeparatorsAndUnquotedTokens"
+  ]
+}

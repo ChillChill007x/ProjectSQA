@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 94.47,
+  "branch_cov": 70.32,
+  "test_file": "ReturnsDeepStubsGptTest.java",
+  "target_classes": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+  "buggy_failures": [
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::deepStub_shouldDelegateToEmptyValuesWhenTypeIsNotMockable",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::deepStub_shouldResolveGenericTypeVariablesToConcreteTypes",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::returnsDeepStubsSerializationFallback_writeReplaceResolvesToSingleton"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::deepStub_shouldDelegateToEmptyValuesWhenTypeIsNotMockable",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::deepStub_shouldResolveGenericTypeVariablesToConcreteTypes",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubsGptTest::returnsDeepStubsSerializationFallback_writeReplaceResolvesToSingleton"
+  ],
+  "suite_sha256": "d451bb561f398fe2983f4ed0a4e7c0de9ed7099f2c04a5f30417cdac6741813b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_10b/ReturnsDeepStubsGptTest.java"
+  ],
+  "run_id": "Mockito-10-Reevaluation-s0-e0365f05b80c"
+}

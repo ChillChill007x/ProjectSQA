@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 87.67,
+  "branch_cov": 82.88,
+  "test_file": "StringUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testStripAll",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testStartsWithAny",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testSubstringsBetween",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testSwapCase",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testRepeatChar",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testEquals"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testStripAll",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testStartsWithAny",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testSubstringsBetween",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testSwapCase",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testRepeatChar"
+  ],
+  "suite_sha256": "165649c261d77a78614d3de55af7a7c64dfdfdc5daa48eb1c6306e9bac6b9eab",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_14b/StringUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-14-Reevaluation-s0-a3b0dbfbeed8"
+}

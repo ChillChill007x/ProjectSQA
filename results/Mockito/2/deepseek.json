@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 100.0,
+  "branch_cov": 57.9,
+  "test_file": "TimerDeepseekTest.java",
+  "target_classes": "org.mockito.internal.util.Timer",
+  "buggy_failures": [
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationShouldFailValidation",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingThrowsAssertionErrorWhenNotStarted",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingReturnsFalseImmediatelyForZeroDuration",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingThrowsWhenStartNeverCalled",
+    "org.mockito.internal.util.TimerDeepseekTest::testTimerWithZeroDurationAndDelayedStart",
+    "org.mockito.internal.util.TimerDeepseekTest::testLargeNegativeDuration",
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationShouldThrowException"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationShouldFailValidation",
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationShouldBeHandled",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingThrowsAssertionErrorWhenNotStarted",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingThrowsWhenStartNeverCalled",
+    "org.mockito.internal.util.TimerDeepseekTest::testIsCountingAfterElapsedOnNegativeDuration",
+    "org.mockito.internal.util.TimerDeepseekTest::testTimerWithZeroDurationAndDelayedStart",
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationBehaviorOverTime",
+    "org.mockito.internal.util.TimerDeepseekTest::testLargeNegativeDuration",
+    "org.mockito.internal.util.TimerDeepseekTest::testMinLongDuration",
+    "org.mockito.internal.util.TimerDeepseekTest::testNegativeDurationShouldThrowException"
+  ],
+  "suite_sha256": "5df3537f13b1c0b4ee7c6f842d001569618a87ed6fe2e1010a29aecff29d630b",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Mockito_2b/TimerDeepseekTest.java"
+  ],
+  "run_id": "Mockito-2-Reevaluation-s0-e43e7497bfec"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "RandomStringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.RandomStringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testLANG807",
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testLANG807_StartGreaterThanEnd"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "85cdbfab11e9bc43420ff03dc3fff410c6436ac9134f8af464aeddb3e2d03359",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_11b/RandomStringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-11-Reevaluation-s0-7403d59fd455"
+}

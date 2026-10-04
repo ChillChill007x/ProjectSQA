@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 11:09:41",
+  "project": "Lang",
+  "bug_id": 10,
+  "version": "b",
+  "target_class": "org.apache.commons.lang3.time.FastDateParser",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 60.96,
+    "input_tokens": 8569,
+    "output_tokens": 5225,
+    "reasoning_tokens": 5136,
+    "total_tokens": 18930,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 72962,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 327038
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 89.4,
+  "branch_cov": 79.93,
+  "test_file": "NumberUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_BigDecimal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_Long",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumber_TrailingDot",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_AllZeroesMantissaAndExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_ExponentWithLeadingPlusSign",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_InvalidTrailingDot",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_WithExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_TooLargeForFloatWithQualifier"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_BigDecimal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_Long",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_AllZeroesMantissaAndExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_ExponentWithLeadingPlusSign",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_InvalidTrailingDot",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_WithExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber_TooLargeForFloatWithQualifier"
+  ],
+  "suite_sha256": "f02098e120581f6735c6e2d4465f96a860acafa9e09dbe0ebbf4b4c05e87f264",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_36b/NumberUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-36-Reevaluation-s0-1347340b1487"
+}

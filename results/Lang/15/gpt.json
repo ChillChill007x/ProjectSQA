@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 86.79,
+  "branch_cov": 80.77,
+  "test_file": "TypeUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.reflect.TypeUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testIsAssignableGenericArrayTypeToGenericArrayType",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testIsAssignableTypeVariable",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testNormalizeUpperBounds",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testDefectGetTypeArgumentsInheritanceHierarchy"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testIsAssignableGenericArrayTypeToGenericArrayType",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testIsAssignableTypeVariable",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testNormalizeUpperBounds",
+    "org.apache.commons.lang3.reflect.TypeUtilsGptTest::testDefectGetTypeArgumentsInheritanceHierarchy"
+  ],
+  "suite_sha256": "19ac75a9dcfbade5dc3764b11a14018aed445628ce09e87368a86e0446b5ca71",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_15b/TypeUtilsGptTest.java"
+  ],
+  "run_id": "Lang-15-Reevaluation-s0-fe2823dfe8de"
+}

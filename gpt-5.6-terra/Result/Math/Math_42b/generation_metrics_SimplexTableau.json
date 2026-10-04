@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 01:43:41",
+  "project": "Math",
+  "bug_id": 42,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.linear.SimplexTableau",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 87.35,
+    "input_tokens": 6608,
+    "output_tokens": 6243,
+    "reasoning_tokens": 7345,
+    "total_tokens": 20196,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 154123,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 245877
+  }
+}

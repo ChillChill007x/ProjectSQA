@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 4,
+  "line_cov": 98.99,
+  "branch_cov": 93.15,
+  "test_file": "CSVFormatGptTest.java;CSVPrinterGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVFormat;org.apache.commons.csv.CSVPrinter",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVFormatGptTest::testMySqlNullFormatting",
+    "org.apache.commons.csv.CSVFormatGptTest::testMySqlNullStringDefault",
+    "org.apache.commons.csv.CSVPrinterGptTest::testMySqlNullOutput",
+    "org.apache.commons.csv.CSVPrinterGptTest::testMySqlNullStringDefault"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "7889080ee0726a4ae802c862229c85b4ecb26d93b849a09dac2bf5bd564e7603",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_13b/CSVFormatGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Csv_13b/CSVPrinterGptTest.java"
+  ],
+  "run_id": "Csv-13-Reevaluation-s0-451ff9d1072a"
+}

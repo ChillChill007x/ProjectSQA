@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 01:26:55",
+  "project": "Codec",
+  "bug_id": 3,
+  "version": "b",
+  "target_class": "org.apache.commons.codec.language.DoubleMetaphone",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 235.56,
+    "input_tokens": 10522,
+    "output_tokens": 5138,
+    "reasoning_tokens": null,
+    "total_tokens": 15660,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 227770,
+    "limit": 1000000,
+    "remaining": 772230
+  }
+}

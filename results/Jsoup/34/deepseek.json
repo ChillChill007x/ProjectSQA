@@ -1,0 +1,34 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 9,
+  "line_cov": 98.23,
+  "branch_cov": 86.4,
+  "test_file": "CharacterReaderDeepseekTest.java",
+  "target_classes": "org.jsoup.parser.CharacterReader",
+  "buggy_failures": [
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfSequenceOutOfBounds",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfSequenceBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfSequenceNotFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testEmptyReader",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToStringBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfCharBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToAnyBoundaries"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfSequenceBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testEmptyReader",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToStringBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testNextIndexOfCharBoundaries",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToAnyBoundaries"
+  ],
+  "suite_sha256": "2a176d8361835fb51efbcd016bd172ee947f7e074b68a61e942213fc217d701a",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Jsoup_34b/CharacterReaderDeepseekTest.java"
+  ],
+  "run_id": "Jsoup-34-Reevaluation-s0-2c33940207a7"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 96.12,
+  "test_file": "DSCompilerGptTest.java",
+  "target_classes": "org.apache.commons.math3.analysis.differentiation.DSCompiler",
+  "buggy_failures": [
+    "org.apache.commons.math3.analysis.differentiation.DSCompilerGptTest::testAtan2SpecialCasesZeroZero"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "26b88f40a04a5fe8e6a0991de332ee1041b329b1580acc4cdb71f82fb2ac0831",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_10b/DSCompilerGptTest.java"
+  ],
+  "run_id": "Math-10-Reevaluation-s0-ee428e079211"
+}

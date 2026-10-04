@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 99.08,
+  "branch_cov": 94.39,
+  "test_file": "ReferenceCollectingCallbackGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.ReferenceCollectingCallback",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.ReferenceCollectingCallbackGptTest::testAssignedOnceInLifetime_defectInForLoop",
+    "com.google.javascript.jscomp.ReferenceCollectingCallbackGptTest::testEmptyReferenceCollection",
+    "com.google.javascript.jscomp.ReferenceCollectingCallbackGptTest::testAssignedOnceInLifetime_defectInWhileLoop",
+    "com.google.javascript.jscomp.ReferenceCollectingCallbackGptTest::testAssignedOnceInLifetime_defectInDoWhileLoop"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.ReferenceCollectingCallbackGptTest::testEmptyReferenceCollection"
+  ],
+  "suite_sha256": "e95a3c73af937e945af110b37bd941d811a3f0f9bb1a1363631f180eb57ccb83",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_98b/ReferenceCollectingCallbackGptTest.java"
+  ],
+  "run_id": "Closure-98-Reevaluation-s0-fc62c3a7b890"
+}

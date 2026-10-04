@@ -1,0 +1,25 @@
+{
+  "project": "Jsoup",
+  "bug_id": 85,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-85-gpt-1790382632",
+  "suite_sha256": "e31626afbf9807539a8e5aefdb12e4a5b954be58d530362f940d149883fae788",
+  "test_files": "AttributeGptTest.java",
+  "target_classes": "org.jsoup.nodes.Attribute",
+  "timestamp": "2026-10-03 07:30:48",
+  "evaluation_duration_sec": 15.738,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 92.31,
+  "branch_coverage_percent": 88.0,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.AttributeGptTest::validatesKeysNotEmptyWithMultipleWhitespaces",
+    "org.jsoup.nodes.AttributeGptTest::validatesKeysNotEmpty",
+    "org.jsoup.nodes.AttributeGptTest::testSetValueWithParentWhenKeyNotFound"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.AttributeGptTest::testSetValueWithParentWhenKeyNotFound"
+  ]
+}

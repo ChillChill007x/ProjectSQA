@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 63.89,
+  "branch_cov": 46.9,
+  "test_file": "HttpConnectionGptTest.java",
+  "target_classes": "org.jsoup.helper.HttpConnection",
+  "buggy_failures": [
+    "org.jsoup.helper.HttpConnectionGptTest::testHandlesHeaderEncodingOnRequest",
+    "org.jsoup.helper.HttpConnectionGptTest::testConnectMalformedUrlThrows"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.HttpConnectionGptTest::testConnectMalformedUrlThrows"
+  ],
+  "suite_sha256": "002a8adaf52da3f8810db9801d20bb0e1a24ae893f7e997b70f908dceaf151ff",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_90b/HttpConnectionGptTest.java"
+  ],
+  "run_id": "Jsoup-90-Reevaluation-s0-ee32470ffde3"
+}

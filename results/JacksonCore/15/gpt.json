@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 71.35,
+  "branch_cov": 61.53,
+  "test_file": "FilteringParserDelegateGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.filter.FilteringParserDelegate",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testTextAndBinaryDelegation",
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testNotAllowMultipleMatchesScalarDefect",
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testFilteringWithIncludePathFalse"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testTextAndBinaryDelegation",
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testNotAllowMultipleMatchesScalarDefect",
+    "com.fasterxml.jackson.core.filter.FilteringParserDelegateGptTest::testFilteringWithIncludePathFalse"
+  ],
+  "suite_sha256": "04fe4f200ee73c10137caef8c9a154386435ceaeff830204e216fabee9df3e3c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_15b/FilteringParserDelegateGptTest.java"
+  ],
+  "run_id": "JacksonCore-15-Reevaluation-s0-515cd9b46889"
+}

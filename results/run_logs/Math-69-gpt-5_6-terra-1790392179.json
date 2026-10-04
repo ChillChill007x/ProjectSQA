@@ -1,0 +1,22 @@
+{
+  "project": "Math",
+  "bug_id": 69,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-69-gpt-1790392179",
+  "suite_sha256": "91b64809b1c9da711950ecc75fedfe06d26b1c59415c0f673874d806d7a63274",
+  "test_files": "PearsonsCorrelationGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.correlation.PearsonsCorrelation",
+  "timestamp": "2026-10-03 10:10:03",
+  "evaluation_duration_sec": 24.195,
+  "execution_status": "DONE",
+  "fault_detection_status": "BUG_DETECTED",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.correlation.PearsonsCorrelationGptTest::testPValueNearZero",
+    "org.apache.commons.math.stat.correlation.PearsonsCorrelationGptTest::testPValueNearZeroNegativeCorrelation"
+  ],
+  "fixed_failures": []
+}

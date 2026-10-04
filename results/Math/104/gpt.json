@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "GammaGptTest.java",
+  "target_classes": "org.apache.commons.math.special.Gamma",
+  "buggy_failures": [
+    "org.apache.commons.math.special.GammaGptTest::testRegularizedGammaPositivePositiveBug"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "1004f7b4ea484029088c15ef158bdeef0e63f85f6da467dd654c4413b528de7f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_104b/GammaGptTest.java"
+  ],
+  "run_id": "Math-104-Reevaluation-s0-e76541aafff2"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:41:15",
+  "project": "Math",
+  "bug_id": 74,
+  "version": "b",
+  "target_class": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 114.87,
+    "input_tokens": 4359,
+    "output_tokens": 7940,
+    "reasoning_tokens": null,
+    "total_tokens": 12299,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 442323,
+    "limit": 1000000,
+    "remaining": 557677
+  }
+}

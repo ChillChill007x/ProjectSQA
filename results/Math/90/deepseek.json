@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.95,
+  "branch_cov": 92.1,
+  "test_file": "FrequencyDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.stat.Frequency",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testAddNonComparableFirst",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testGetCumFreqWithNull",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testGetCountWithNull"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testAddNonComparable",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testAddNonComparableFirst",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testGetCumFreqWithNull",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testGetCountWithNull",
+    "org.apache.commons.math.stat.FrequencyDeepseekTest::testAddValueObjectWithNonComparableAfterComparable"
+  ],
+  "suite_sha256": "9260d8466cda4eb662833f32b297e7839e47186f2ba424819c462fa77acabb75",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_90b/FrequencyDeepseekTest.java"
+  ],
+  "run_id": "Math-90-Reevaluation-s0-3f6a1123db24"
+}

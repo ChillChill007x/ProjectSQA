@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 98.64,
+  "branch_cov": 92.59,
+  "test_file": "CSVFormatGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVFormat",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintNullValuesWithVariousModes",
+    "org.apache.commons.csv.CSVFormatGptTest::testQuoteModeNoneWithEscape",
+    "org.apache.commons.csv.CSVFormatGptTest::testDontQuoteUnicodeFirstCharInMinimal",
+    "org.apache.commons.csv.CSVFormatGptTest::testDontQuoteEuroFirstChar",
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintEmptyRecordAndMinimalQuotes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintNullValuesWithVariousModes",
+    "org.apache.commons.csv.CSVFormatGptTest::testQuoteModeNoneWithEscape",
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintEmptyRecordAndMinimalQuotes"
+  ],
+  "suite_sha256": "7b3ffb3bd2b2a216a971658b48fe53d8dc5f17d290cc01e1792f3ca456a6c925",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_15b/CSVFormatGptTest.java"
+  ],
+  "run_id": "Csv-15-Reevaluation-s0-eb3cb351b08c"
+}

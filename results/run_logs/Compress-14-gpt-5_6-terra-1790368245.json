@@ -1,0 +1,26 @@
+{
+  "project": "Compress",
+  "bug_id": 14,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-14-gpt-1790368245",
+  "suite_sha256": "f03e4dacd8bfeb32a77ffeaca83c0a9ec70bc1da26cb8d8275ee4681ddb59b0c",
+  "test_files": "TarUtilsGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarUtils",
+  "timestamp": "2026-10-03 03:31:01",
+  "evaluation_duration_sec": 16.229,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 99.01,
+  "branch_coverage_percent": 96.97,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingSpacesThenNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderParseOctalOrBinary"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingSpacesThenNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testParseOctalInvalidTrailingByteExceptionMessageContainsNulReplacement"
+  ]
+}

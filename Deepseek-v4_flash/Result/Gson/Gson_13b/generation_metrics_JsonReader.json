@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 08:25:44",
+  "project": "Gson",
+  "bug_id": 13,
+  "version": "b",
+  "target_class": "com.google.gson.stream.JsonReader",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 51.19,
+    "input_tokens": 14501,
+    "output_tokens": 5018,
+    "reasoning_tokens": null,
+    "total_tokens": 19519,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 980829,
+    "limit": 1000000,
+    "remaining": 19171
+  }
+}

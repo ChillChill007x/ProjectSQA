@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 10:00:19",
+  "project": "JacksonCore",
+  "bug_id": 1,
+  "version": "b",
+  "target_class": "com.fasterxml.jackson.core.io.NumberInput",
+  "token_slot": null,
+  "metrics": {
+    "generation_time_seconds": 66.02,
+    "input_tokens": 3918,
+    "output_tokens": 6033,
+    "reasoning_tokens": 3671,
+    "total_tokens": 13622,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": null,
+    "used": 49703,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": null
+  }
+}

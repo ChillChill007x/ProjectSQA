@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 99.43,
+  "branch_cov": 98.68,
+  "test_file": "ZipArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testNotEqualsFailureCondition"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "fc13f3068bbf147c314bac4a92beac90bc398c7270c1b5aea68d847811d104f2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_6b/ZipArchiveEntryGptTest.java"
+  ],
+  "run_id": "Compress-6-Reevaluation-s0-98342f7b7926"
+}

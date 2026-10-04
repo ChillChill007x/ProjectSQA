@@ -1,0 +1,33 @@
+{
+  "project": "Lang",
+  "bug_id": 31,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-31-gpt-1790385495",
+  "suite_sha256": "95ec3e0235d95be6deafbfa77f7e4874e8716a0fdfaf60ec9aa3fdbf5acab75a",
+  "test_files": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "timestamp": "2026-10-03 08:18:36",
+  "evaluation_duration_sec": 21.384,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 92.78,
+  "branch_coverage_percent": 90.43,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitByWholeSeparator",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAnyCharArrayWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfChar",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndContainsAny",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndLastIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAnyStringWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStripAccents"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitByWholeSeparator",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfChar",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndContainsAny",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndLastIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStripAccents"
+  ]
+}

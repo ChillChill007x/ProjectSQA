@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ChecksumCalculatingInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.utils.ChecksumCalculatingInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.utils.ChecksumCalculatingInputStreamGptTest::testClassInstantiationWithNullInputStreamThrowsNullPointerException",
+    "org.apache.commons.compress.utils.ChecksumCalculatingInputStreamGptTest::testClassInstantiationWithBothParametersNullThrowsNullPointerException",
+    "org.apache.commons.compress.utils.ChecksumCalculatingInputStreamGptTest::testClassInstantiationWithNullChecksumThrowsNullPointerException"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "fe73a0aa1863dd9e3c0ba5e996e96c014336c2f7ce2dc0f98ac6dd14423384c1",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_44b/ChecksumCalculatingInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-44-Reevaluation-s0-533ec059975f"
+}

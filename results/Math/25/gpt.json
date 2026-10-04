@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 99.18,
+  "branch_cov": 91.52,
+  "test_file": "HarmonicFitterGptTest.java",
+  "target_classes": "org.apache.commons.math3.optimization.fitting.HarmonicFitter",
+  "buggy_failures": [
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterGptTest::testTinyVariationsData",
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterGptTest::testMath844"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterGptTest::testParameterGuesserConstantYObservations",
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterGptTest::testTinyVariationsData",
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterGptTest::testGuesserClonesObservationsDefensively"
+  ],
+  "suite_sha256": "3f092301b840f136a2d4b0b38900613c73f50bc361d571b7e563992aeaeade32",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_25b/HarmonicFitterGptTest.java"
+  ],
+  "run_id": "Math-25-Reevaluation-s0-a83a08a76c24"
+}

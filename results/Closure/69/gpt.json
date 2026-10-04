@@ -1,0 +1,40 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 11,
+  "line_cov": 67.07,
+  "branch_cov": 55.43,
+  "test_file": "TypeCheckGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.TypeCheck",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testPropertyTestSuppression_inHookCondition",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCall1",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCall2",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testSuperclassOverrideMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReportMissingPropertiesChaining",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testTypedPercentInitialState",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testAllDiagnosticsGroupCompleteness",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInterface_nonEmptyBody",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReturn_outsideFunctionIgnored",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testOverridingPrototypeWithNonObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCallWithArgs"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testPropertyTestSuppression_inHookCondition",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCall1",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCall2",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testSuperclassOverrideMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReportMissingPropertiesChaining",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testTypedPercentInitialState",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testAllDiagnosticsGroupCompleteness",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInterface_nonEmptyBody",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReturn_outsideFunctionIgnored",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testOverridingPrototypeWithNonObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testThisTypeOfFunction_defectTargetFreeCallWithArgs"
+  ],
+  "suite_sha256": "023e6b5a654fdad734840799c5b20bd87097c85f72b368279ac2c791d27916e0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_69b/TypeCheckGptTest.java"
+  ],
+  "run_id": "Closure-69-Reevaluation-s0-f35a7bfc6221"
+}

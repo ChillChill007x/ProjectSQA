@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 23:30:05",
+  "project": "Chart",
+  "bug_id": 14,
+  "version": "b",
+  "target_class": "org.jfree.chart.plot.CategoryPlot",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 43.64,
+    "input_tokens": 37508,
+    "output_tokens": 6852,
+    "reasoning_tokens": 1575,
+    "total_tokens": 45935,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 316688,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 83312
+  }
+}

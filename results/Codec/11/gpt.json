@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "QuotedPrintableCodecGptTest.java",
+  "target_classes": "org.apache.commons.codec.net.QuotedPrintableCodec",
+  "buggy_failures": [
+    "org.apache.commons.codec.net.QuotedPrintableCodecGptTest::testSkipNotEncodedCRLFDefect",
+    "org.apache.commons.codec.net.QuotedPrintableCodecGptTest::testSoftLineBreakDecodeDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.codec.net.QuotedPrintableCodecGptTest::testEqualSignIsEscaped",
+    "org.apache.commons.codec.net.QuotedPrintableCodecGptTest::testEmptyInputsReturnEmpty"
+  ],
+  "suite_sha256": "0eed1e23ab70dea0ae71eba067d4f902980a7cc6c038f521664f7561832d51ca",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_11b/QuotedPrintableCodecGptTest.java"
+  ],
+  "run_id": "Codec-11-Reevaluation-s0-4bdca32b329f"
+}

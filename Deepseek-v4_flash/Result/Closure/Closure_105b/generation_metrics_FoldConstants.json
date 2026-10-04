@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:46:56",
+  "project": "Closure",
+  "bug_id": 105,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.FoldConstants",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 331.01,
+    "input_tokens": 16639,
+    "output_tokens": 57469,
+    "reasoning_tokens": null,
+    "total_tokens": 74108,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 889345,
+    "limit": 1000000,
+    "remaining": 110655
+  }
+}

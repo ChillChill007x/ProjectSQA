@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 99.23,
+  "branch_cov": 97.6,
+  "test_file": "TarUtilsGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarUtils",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingSpacesThenNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderParseOctalOrBinary"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testWorkaroundForBrokenTimeHeaderLeadingSpacesThenNul",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testParseOctalInvalidTrailingByteExceptionMessageContainsNulReplacement"
+  ],
+  "suite_sha256": "f03e4dacd8bfeb32a77ffeaca83c0a9ec70bc1da26cb8d8275ee4681ddb59b0c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_14b/TarUtilsGptTest.java"
+  ],
+  "run_id": "Compress-14-Reevaluation-s0-1f411c623db8"
+}

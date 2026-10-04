@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 14:31:16",
+  "project": "Closure",
+  "bug_id": 144,
+  "version": "b",
+  "target_class": "com.google.javascript.rhino.jstype.FunctionBuilder",
+  "token_slot": 7,
+  "metrics": {
+    "generation_time_seconds": 76.41,
+    "input_tokens": 6132,
+    "output_tokens": 3565,
+    "reasoning_tokens": 8300,
+    "total_tokens": 17997,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 7,
+    "used": 282409,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 117591
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 98.59,
+  "branch_cov": 95.05,
+  "test_file": "DefaultDateTypeAdapterGptTest.java",
+  "target_classes": "com.google.gson.DefaultDateTypeAdapter",
+  "buggy_failures": [
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testUnexpectedBooleanToken",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testUnexpectedNumberToken",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testUnexpectedToken",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testNullValueSqlDate",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testNullValue",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testNullValueTimestamp"
+  ],
+  "fixed_failures": [
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testUnexpectedBooleanToken",
+    "com.google.gson.DefaultDateTypeAdapterGptTest::testUnexpectedToken"
+  ],
+  "suite_sha256": "624437f84f2d8299d1114402a053e8063080dc110c9e361afcf61bc3713ad289",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_17b/DefaultDateTypeAdapterGptTest.java"
+  ],
+  "run_id": "Gson-17-Reevaluation-s0-31b7aa18446a"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 72.22,
+  "branch_cov": 79.68,
+  "test_file": "XmlTokenStreamGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testLocationsAndCloseAndToString",
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testDefectMixedContentTextBeforeChildTag",
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testRepeatStartElementAndDelayedReplay",
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testRepeatStartElementReplayEnd"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testLocationsAndCloseAndToString",
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testRepeatStartElementAndDelayedReplay",
+    "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStreamGptTest::testRepeatStartElementReplayEnd"
+  ],
+  "suite_sha256": "619f54f918f6b1b639c36855fd3b885f4a65e679283997275fcbe415be1506f6",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonXml_2b/XmlTokenStreamGptTest.java"
+  ],
+  "run_id": "JacksonXml-2-Reevaluation-s0-095859e035bd"
+}

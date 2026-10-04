@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 98.48,
+  "test_file": "ComplexFormatGptTest.java",
+  "target_classes": "org.apache.commons.math.complex.ComplexFormat",
+  "buggy_failures": [
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testParseWrongImaginaryCharacter",
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testForgottenImaginaryCharacterParsePosition",
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testForgottenImaginaryCharacter",
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testParseInvalidSign"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testParseWrongImaginaryCharacter",
+    "org.apache.commons.math.complex.ComplexFormatGptTest::testParseInvalidSign"
+  ],
+  "suite_sha256": "ac57a37b2d35ce9f3dad75747aecb117e79e24c220a184d40915d8b1dd7f8c94",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_101b/ComplexFormatGptTest.java"
+  ],
+  "run_id": "Math-101-Reevaluation-s0-e0d38c277c8d"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 06:07:39",
+  "project": "Closure",
+  "bug_id": 165,
+  "version": "b",
+  "target_class": "com.google.javascript.rhino.jstype.JSTypeRegistry",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 725.95,
+    "input_tokens": 15356,
+    "output_tokens": 26854,
+    "reasoning_tokens": null,
+    "total_tokens": 42210,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 271110,
+    "limit": 1000000,
+    "remaining": 728890
+  }
+}

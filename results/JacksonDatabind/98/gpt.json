@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 88.4,
+  "branch_cov": 75.05,
+  "test_file": "ExternalTypeHandlerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testMissingTypeIdThrowsExceptionWhenNoDefaultImpl",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testExternalTypeIdWithEnumInCreator",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testExternalTypeIdWithEnumInCreatorReversedOrder",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testDefaultImplWhenTypePropertyIsMissing"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testMissingTypeIdThrowsExceptionWhenNoDefaultImpl",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testDefaultImplWhenTypePropertyIsMissing"
+  ],
+  "suite_sha256": "447a991a46266fce9ec1d867cb8cbc9be3acd0da1c841e728a984564f52ccd3f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_98b/ExternalTypeHandlerGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-98-Reevaluation-s0-54b7320ca13f"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 17:01:35",
+  "project": "Math",
+  "bug_id": 18,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optimization.direct.CMAESOptimizer",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 53.47,
+    "input_tokens": 13823,
+    "output_tokens": 5565,
+    "reasoning_tokens": null,
+    "total_tokens": 19388,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 360353,
+    "limit": 1000000,
+    "remaining": 639647
+  }
+}

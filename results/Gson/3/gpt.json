@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.97,
+  "branch_cov": 98.32,
+  "test_file": "ConstructorConstructorGptTest.java",
+  "target_classes": "com.google.gson.internal.ConstructorConstructor",
+  "buggy_failures": [
+    "com.google.gson.internal.ConstructorConstructorGptTest::testDefectConcurrentNavigableMapConstruction",
+    "com.google.gson.internal.ConstructorConstructorGptTest::testDefectConcurrentMapConstruction"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "7cf6924a10d602841edf7321ba707db259179dc7ece88ba31b692a0a40282ca4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_3b/ConstructorConstructorGptTest.java"
+  ],
+  "run_id": "Gson-3-Reevaluation-s0-629cb18d4695"
+}

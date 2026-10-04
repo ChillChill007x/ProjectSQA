@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 99.23,
+  "branch_cov": 98.39,
+  "test_file": "ComplexGptTest.java",
+  "target_classes": "org.apache.commons.math.complex.Complex",
+  "buggy_failures": [
+    "org.apache.commons.math.complex.ComplexGptTest::testAtanI",
+    "org.apache.commons.math.complex.ComplexGptTest::testAtanNegativeI",
+    "org.apache.commons.math.complex.ComplexGptTest::testDivideDoubleZero",
+    "org.apache.commons.math.complex.ComplexGptTest::testDivideZero"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.complex.ComplexGptTest::testAtanNegativeI",
+    "org.apache.commons.math.complex.ComplexGptTest::testDivideDoubleZero",
+    "org.apache.commons.math.complex.ComplexGptTest::testDivideZero"
+  ],
+  "suite_sha256": "44cde283864071cf0b4989cbcba3fb985f0ec11239265ab1230c5521a8bbcf85",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_46b/ComplexGptTest.java"
+  ],
+  "run_id": "Math-46-Reevaluation-s0-7fb8658f4edb"
+}

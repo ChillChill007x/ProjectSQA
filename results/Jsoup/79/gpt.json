@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "LeafNodeGptTest.java",
+  "target_classes": "org.jsoup.nodes.LeafNode",
+  "buggy_failures": [
+    "org.jsoup.nodes.LeafNodeGptTest::testLeadNodesHaveNoChildren",
+    "org.jsoup.nodes.LeafNodeGptTest::testConcreteLeafNodeChildNodesContract",
+    "org.jsoup.nodes.LeafNodeGptTest::testCloningWithInflatedAttributes"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.LeafNodeGptTest::testCloningWithInflatedAttributes"
+  ],
+  "suite_sha256": "036b373cfb4348cabc4528aea551e41b4ac63aa8e008dfebb43e37b14cf062ef",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_79b/LeafNodeGptTest.java"
+  ],
+  "run_id": "Jsoup-79-Reevaluation-s0-e405a90bb9ba"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 91.57,
+  "branch_cov": 83.16,
+  "test_file": "ProperFractionFormatDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.fraction.ProperFractionFormat",
+  "buggy_failures": [
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testParseInvalidMinusInNumerator",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testFormatWholeOnly",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testFormatIntegerMax",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testParseDoubleMinus",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testParseInvalidMinusInDenominator",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testEqualsAndHashCode"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testFormatWholeOnly",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testFormatIntegerMax",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testParseDoubleMinus",
+    "org.apache.commons.math.fraction.ProperFractionFormatDeepseekTest::testEqualsAndHashCode"
+  ],
+  "suite_sha256": "1a95a592ec4e91bba4c2bc47f22209472e032a9c5a001084363e3872f6d39290",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_106b/ProperFractionFormatDeepseekTest.java"
+  ],
+  "run_id": "Math-106-Reevaluation-s0-7c02a601f257"
+}

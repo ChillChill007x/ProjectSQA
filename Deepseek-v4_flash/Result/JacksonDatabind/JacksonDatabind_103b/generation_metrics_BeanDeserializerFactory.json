@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 18:10:04",
+  "project": "JacksonDatabind",
+  "bug_id": 103,
+  "version": "b",
+  "target_class": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 209.49,
+    "input_tokens": 10183,
+    "output_tokens": 4190,
+    "reasoning_tokens": null,
+    "total_tokens": 14373,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 14385,
+    "limit": 1000000,
+    "remaining": 985615
+  }
+}

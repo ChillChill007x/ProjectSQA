@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 11,
+  "line_cov": 85.51,
+  "branch_cov": 73.82,
+  "test_file": "NumberInputDeepseekTest.java;TextBufferDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.core.io.NumberInput;com.fasterxml.jackson.core.util.TextBuffer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseAsLong_Overflow",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseBigDecimal_NegativeInfinity_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_WithWhitespace",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseBigDecimalCharArray_NaN_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseBigDecimal_NaN_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseAsInt_Overflow",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_SignOnly",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseBigDecimal_Infinity_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_NonDigitCharacters",
+    "com.fasterxml.jackson.core.util.TextBufferDeepseekTest::testFinishCurrentSegment",
+    "com.fasterxml.jackson.core.util.TextBufferDeepseekTest::testContentsAsDecimalWithNaN"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseAsLong_Overflow",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_WithWhitespace",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseAsInt_Overflow",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_SignOnly",
+    "com.fasterxml.jackson.core.io.NumberInputDeepseekTest::testParseIntString_NonDigitCharacters",
+    "com.fasterxml.jackson.core.util.TextBufferDeepseekTest::testFinishCurrentSegment"
+  ],
+  "suite_sha256": "2ad0a8c1b6f42ffb5ef1af202f405aa1bd75b6fc20c872c595a9c22788ffdc90",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonCore_1b/NumberInputDeepseekTest.java",
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonCore_1b/TextBufferDeepseekTest.java"
+  ],
+  "run_id": "JacksonCore-1-Reevaluation-s0-8f18cf532d0d"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 11:44:32",
+  "project": "Closure",
+  "bug_id": 20,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 1045.01,
+    "input_tokens": 14393,
+    "output_tokens": 22836,
+    "reasoning_tokens": null,
+    "total_tokens": 37229,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 543953,
+    "limit": 1000000,
+    "remaining": 456047
+  }
+}

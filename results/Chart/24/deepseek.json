@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "GrayPaintScaleDeepseekTest.java",
+  "target_classes": "org.jfree.chart.renderer.GrayPaintScale",
+  "buggy_failures": [
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testHashCodeConsistency",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testGetPaintValueAboveUpperBoundFixed",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testGetPaintValueBelowLowerBoundFixed",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testConstructorNanBounds"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testGetPaintValueAboveUpperBound",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testGetPaintValueBelowLowerBound",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testHashCodeConsistency",
+    "org.jfree.chart.renderer.GrayPaintScaleDeepseekTest::testConstructorNanBounds"
+  ],
+  "suite_sha256": "37227435ce289493eec723e6649230f85a25f803f48c6b23ff282c3b99a1694a",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Chart_24b/GrayPaintScaleDeepseekTest.java"
+  ],
+  "run_id": "Chart-24-Reevaluation-s0-729a9d169968"
+}

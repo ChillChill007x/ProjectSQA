@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 92.26,
+  "branch_cov": 92.09,
+  "test_file": "MockHandlerGptTest.java",
+  "target_classes": "org.mockito.internal.MockHandler",
+  "buggy_failures": [
+    "org.mockito.internal.MockHandlerGptTest::testDefectVerifyingWithExtraCallToDifferentMockPreservesVerificationMode",
+    "org.mockito.internal.MockHandlerGptTest::testNonMockAwareVerificationModeDoesNotTriggerVerification",
+    "org.mockito.internal.MockHandlerGptTest::testStubbedInvocationArgumentsCaptured",
+    "org.mockito.internal.MockHandlerGptTest::testHandleWithDefaultAnswer",
+    "org.mockito.internal.MockHandlerGptTest::testHandleWithAnswersForStubbingQueue"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.MockHandlerGptTest::testDefectVerifyingWithExtraCallToDifferentMockPreservesVerificationMode",
+    "org.mockito.internal.MockHandlerGptTest::testNonMockAwareVerificationModeDoesNotTriggerVerification",
+    "org.mockito.internal.MockHandlerGptTest::testStubbedInvocationArgumentsCaptured",
+    "org.mockito.internal.MockHandlerGptTest::testHandleWithDefaultAnswer",
+    "org.mockito.internal.MockHandlerGptTest::testHandleWithAnswersForStubbingQueue"
+  ],
+  "suite_sha256": "63b6d1368ac407b8d2216bbd3ca334d63c3d092e61122dda5497b2e6bcfea00a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_13b/MockHandlerGptTest.java"
+  ],
+  "run_id": "Mockito-13-Reevaluation-s0-e3d38cf1883d"
+}

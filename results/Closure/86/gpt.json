@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 68.66,
+  "branch_cov": 54.84,
+  "test_file": "NodeUtilGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.NodeUtil",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.NodeUtilGptTest::testEvaluatesToLocalValue_newOperatorDefect",
+    "com.google.javascript.jscomp.NodeUtilGptTest::testOpToStrNoFail_unknownTokenThrows"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.NodeUtilGptTest::testOpToStrNoFail_unknownTokenThrows"
+  ],
+  "suite_sha256": "811775545be878222d2db8d23b2c923b3f9cb775bd242166b18d7c3144b49fce",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_86b/NodeUtilGptTest.java"
+  ],
+  "run_id": "Closure-86-Reevaluation-s0-6e76638d6208"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 89.76,
+  "branch_cov": 82.47,
+  "test_file": "StrBuilderGptTest.java",
+  "target_classes": "org.apache.commons.lang.text.StrBuilder",
+  "buggy_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang412Left",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAllInsertVariants",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAsWriter",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang412Right",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchAndContains",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAllInsertVariants",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAsWriter",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchAndContains",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode"
+  ],
+  "suite_sha256": "54aff5d968f47b9c2d4d9619a0003f213195bbe561e52cb09a86f46425699f59",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_47b/StrBuilderGptTest.java"
+  ],
+  "run_id": "Lang-47-Reevaluation-s0-fdf38a0fb651"
+}

@@ -1,0 +1,28 @@
+{
+  "project": "Jsoup",
+  "bug_id": 26,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-26-gpt-1790379828",
+  "suite_sha256": "8cda6c1a94d625ed898afa8171d49a470298b126283bc0529650bc8e5827b175",
+  "test_files": "CleanerGptTest.java",
+  "target_classes": "org.jsoup.safety.Cleaner",
+  "timestamp": "2026-10-03 06:44:03",
+  "evaluation_duration_sec": 14.98,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.safety.CleanerGptTest::testHandlesPureFramesetDocumentWithoutHead",
+    "org.jsoup.safety.CleanerGptTest::testIsValidReturnsTrueForFullyCompliantHtml",
+    "org.jsoup.safety.CleanerGptTest::testHandlesFramesetsIsValidDoesNotThrowNPE",
+    "org.jsoup.safety.CleanerGptTest::testHandlesFramesetsCleanDoesNotThrowNPE"
+  ],
+  "fixed_failures": [
+    "org.jsoup.safety.CleanerGptTest::testHandlesPureFramesetDocumentWithoutHead",
+    "org.jsoup.safety.CleanerGptTest::testIsValidReturnsTrueForFullyCompliantHtml",
+    "org.jsoup.safety.CleanerGptTest::testHandlesFramesetsIsValidDoesNotThrowNPE"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 38.06,
+  "branch_cov": 39.67,
+  "test_file": "BZip2CompressorInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::testReadOffsetAtBufferLengthWithZeroLength",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::readOfLength0ShouldReturn0",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::readOfLength0WithNonZeroOffsetShouldReturn0"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "84a43866e395088a4e90e00163f7ec1e9d1c4e6760857f9e5fc07bec6a4c1586",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_30b/BZip2CompressorInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-30-Reevaluation-s0-50ceceba5ad0"
+}

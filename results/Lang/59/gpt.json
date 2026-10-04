@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 88.55,
+  "branch_cov": 74.59,
+  "test_file": "StrBuilderGptTest.java",
+  "target_classes": "org.apache.commons.lang.text.StrBuilder",
+  "buggy_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAppendStringAndSubstrings",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang299_appendFixedWidthPadRight_truncateWhenWidthLessThanStringLength",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang299_appendFixedWidthPadRight_intOverloadTruncate",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchMethods",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testDeleteAndTrimOperations"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAppendStringAndSubstrings",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchMethods",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testDeleteAndTrimOperations"
+  ],
+  "suite_sha256": "098afe0a3d7a0dbd69c8975400ef043b55b7f774404928b2c0cd67add8c90a6c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_59b/StrBuilderGptTest.java"
+  ],
+  "run_id": "Lang-59-Reevaluation-s0-5558bd730ecd"
+}

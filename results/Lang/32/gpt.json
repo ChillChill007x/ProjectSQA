@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.41,
+  "branch_cov": 98.16,
+  "test_file": "HashCodeBuilderGptTest.java",
+  "target_classes": "org.apache.commons.lang3.builder.HashCodeBuilder",
+  "buggy_failures": [
+    "org.apache.commons.lang3.builder.HashCodeBuilderGptTest::testReflectionObjectCycle",
+    "org.apache.commons.lang3.builder.HashCodeBuilderGptTest::testReflectionCycleDirectSelfReference"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "4c67e64037de5e089700a0f2e83dfa81c065c028e4bc1817ff9dbdf442b64ca2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_32b/HashCodeBuilderGptTest.java"
+  ],
+  "run_id": "Lang-32-Reevaluation-s0-c6d840cb9f93"
+}

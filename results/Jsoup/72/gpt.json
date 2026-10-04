@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 99.32,
+  "branch_cov": 94.4,
+  "test_file": "CharacterReaderGptTest.java",
+  "target_classes": "org.jsoup.parser.CharacterReader",
+  "buggy_failures": [
+    "org.jsoup.parser.CharacterReaderGptTest::testConsumeToNonexistentEndWhenAtEnd",
+    "org.jsoup.parser.CharacterReaderGptTest::testEmptyReaderConsumeToDelimiters",
+    "org.jsoup.parser.CharacterReaderGptTest::testConsumeToNonexistentSequenceWhenAtEnd"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "0e47d0dd8d431f70d212ac5bae743a1b92a28d6f51667399256a470faec0774e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_72b/CharacterReaderGptTest.java"
+  ],
+  "run_id": "Jsoup-72-Reevaluation-s0-8c80e0bd3870"
+}

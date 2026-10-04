@@ -1,0 +1,37 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 59.45,
+  "branch_cov": 50.15,
+  "test_file": "TokeniserStateGptTest.java",
+  "target_classes": "org.jsoup.parser.TokeniserState",
+  "buggy_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testRcdataWithInappropriateEndTag",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataDoubleEscapedTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTStateHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameHandlesQuotesInScriptCommentDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSectionHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterDoctypeSystemKeywordAndBogus",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameDirectReaderPositionDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testTokeniserStateEnumValuesAndCompleteness",
+    "org.jsoup.parser.TokeniserStateGptTest::testCharacterReferenceWithoutSemicolonOrInvalid"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testRcdataWithInappropriateEndTag",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataDoubleEscapedTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTStateHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameHandlesQuotesInScriptCommentDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSectionHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterDoctypeSystemKeywordAndBogus",
+    "org.jsoup.parser.TokeniserStateGptTest::testTokeniserStateEnumValuesAndCompleteness",
+    "org.jsoup.parser.TokeniserStateGptTest::testCharacterReferenceWithoutSemicolonOrInvalid"
+  ],
+  "suite_sha256": "fe6610edd4fc2ee095613e139be62faeeb0a113a045ebd7baed52c819fffc9ed",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_24b/TokeniserStateGptTest.java"
+  ],
+  "run_id": "Jsoup-24-Reevaluation-s0-2b69e1765777"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 6,
+  "line_cov": 100.0,
+  "branch_cov": 80.21,
+  "test_file": "GenericMasterGptTest.java",
+  "target_classes": "org.mockito.internal.util.reflection.GenericMaster",
+  "buggy_failures": [
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithDeeplyNestedGenerics",
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithUnboundedWildcardGenerics",
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithTypeVariableGenerics",
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithBoundedWildcardGenerics",
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithNestedMapGenerics",
+    "org.mockito.internal.util.reflection.GenericMasterGptTest::shouldDealWithNestedGenerics"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9695881e192510f10b65defc4328a1beabbf85c8fec2436d1739b957f9db6bfd",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_12b/GenericMasterGptTest.java"
+  ],
+  "run_id": "Mockito-12-Reevaluation-s0-26c765cfd74b"
+}

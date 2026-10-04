@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 83.35,
+  "branch_cov": 72.84,
+  "test_file": "AbstractPatriciaTrieGptTest.java",
+  "target_classes": "org.apache.commons.collections4.trie.AbstractPatriciaTrie",
+  "buggy_failures": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapClear_DefectTarget",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapIteratorRemoveSingleAndMultiple",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testEmptyStringAsRootKey"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapIteratorRemoveSingleAndMultiple",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testEmptyStringAsRootKey"
+  ],
+  "suite_sha256": "f85474495483d9df94b33fb7c4dd44bfb53255d62e8495a471e9b669b166f81a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_28b/AbstractPatriciaTrieGptTest.java"
+  ],
+  "run_id": "Collections-28-Reevaluation-s0-d1fbd81832bf"
+}

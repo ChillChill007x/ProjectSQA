@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 17:51:22",
+  "project": "Math",
+  "bug_id": 30,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.stat.inference.MannWhitneyUTest",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 56.77,
+    "input_tokens": 3122,
+    "output_tokens": 3816,
+    "reasoning_tokens": null,
+    "total_tokens": 6938,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 583703,
+    "limit": 1000000,
+    "remaining": 416297
+  }
+}

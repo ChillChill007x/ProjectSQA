@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 89.24,
+  "branch_cov": 86.81,
+  "test_file": "IRGptTest.java",
+  "target_classes": "com.google.javascript.rhino.IR",
+  "buggy_failures": [
+    "com.google.javascript.rhino.IRGptTest::testExpressionsAndCalls",
+    "com.google.javascript.rhino.IRGptTest::testConditionalsAndLoops",
+    "com.google.javascript.rhino.IRGptTest::testIssue727_1",
+    "com.google.javascript.rhino.IRGptTest::testIssue727_2",
+    "com.google.javascript.rhino.IRGptTest::testIssue727_3",
+    "com.google.javascript.rhino.IRGptTest::testBlockAndScript",
+    "com.google.javascript.rhino.IRGptTest::testTryCatchCatchFinally"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.rhino.IRGptTest::testExpressionsAndCalls",
+    "com.google.javascript.rhino.IRGptTest::testConditionalsAndLoops",
+    "com.google.javascript.rhino.IRGptTest::testBlockAndScript",
+    "com.google.javascript.rhino.IRGptTest::testTryCatchCatchFinally"
+  ],
+  "suite_sha256": "f8dabeedc548aca443d0b592faa759055060c47639f5f8fdab435b0a5f85ad80",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_27b/IRGptTest.java"
+  ],
+  "run_id": "Closure-27-Reevaluation-s0-9c3ce686e674"
+}

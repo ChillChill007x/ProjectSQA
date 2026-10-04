@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 13:33:44",
+  "project": "Time",
+  "bug_id": 1,
+  "version": "b",
+  "target_class": "org.joda.time.field.UnsupportedDurationField",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 38.02,
+    "input_tokens": 2823,
+    "output_tokens": 3010,
+    "reasoning_tokens": 1492,
+    "total_tokens": 7325,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 275583,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 124417
+  }
+}

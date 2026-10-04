@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 80.19,
+  "branch_cov": 71.1,
+  "test_file": "PropertyBuilderDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.ser.PropertyBuilder",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.ser.PropertyBuilderDeepseekTest::testNullSerializerAnnotation",
+    "com.fasterxml.jackson.databind.ser.PropertyBuilderDeepseekTest::testInclusionNonAbsent"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.ser.PropertyBuilderDeepseekTest::testNullSerializerAnnotation",
+    "com.fasterxml.jackson.databind.ser.PropertyBuilderDeepseekTest::testInclusionNonAbsent"
+  ],
+  "suite_sha256": "58a1cfdb7372951ad488022e894005c8bc5a52f7d0276fb2c3666def612aaf42",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonDatabind_54b/PropertyBuilderDeepseekTest.java"
+  ],
+  "run_id": "JacksonDatabind-54-Reevaluation-s0-4c4b9d22429e"
+}

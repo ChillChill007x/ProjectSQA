@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 81.01,
+  "branch_cov": 66.98,
+  "test_file": "FastDateFormatDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang.time.FastDateFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testSerializationWithAllRuleTypes",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testSerialization",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatObjectLong",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatEscapedQuote",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatLong",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatLiteralCharacters",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatYearUnpadded"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatObjectLong",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatEscapedQuote",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatLong",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatLiteralCharacters",
+    "org.apache.commons.lang.time.FastDateFormatDeepseekTest::testFormatYearUnpadded"
+  ],
+  "suite_sha256": "21c0fc014f742817a3500292040bc1b2d9e4c2cbda0d4332736a521563ff2a0b",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_56b/FastDateFormatDeepseekTest.java"
+  ],
+  "run_id": "Lang-56-Reevaluation-s0-21cbf0279754"
+}

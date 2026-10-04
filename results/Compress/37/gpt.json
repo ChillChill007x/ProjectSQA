@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 82.69,
+  "branch_cov": 70.84,
+  "test_file": "TarArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testOldGnuSparsePrematureEOF",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersApplication",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testSparseHeadersInPax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testGlobalPaxHeadersApplication",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testSurvivesBlankLinesInPaxHeader",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedEntryDataThrowsIOException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testOldGnuSparsePrematureEOF",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersApplication",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testSparseHeadersInPax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testGlobalPaxHeadersApplication",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testSurvivesBlankLinesInPaxHeader",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedEntryDataThrowsIOException"
+  ],
+  "suite_sha256": "b18347da7ec2a368cdcb377eb40c7e2a9f7b25607d19375628d469aa3a1b9397",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_37b/TarArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-37-Reevaluation-s0-fabdb970fbfa"
+}

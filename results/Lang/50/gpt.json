@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.52,
+  "branch_cov": 89.77,
+  "test_file": "FastDateFormatGptTest.java",
+  "target_classes": "org.apache.commons.lang.time.FastDateFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.FastDateFormatGptTest::test_changeDefault_Locale_DateInstance",
+    "org.apache.commons.lang.time.FastDateFormatGptTest::test_changeDefault_Locale_DateTimeInstance",
+    "org.apache.commons.lang.time.FastDateFormatGptTest::testCalendarTimeZoneForcing"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.time.FastDateFormatGptTest::testCalendarTimeZoneForcing"
+  ],
+  "suite_sha256": "25d1501f9c2b492bc222bb253bf98c452d4d7f2b613f196b6c64f652f5a15b5e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_50b/FastDateFormatGptTest.java"
+  ],
+  "run_id": "Lang-50-Reevaluation-s0-91b4c29bb53b"
+}

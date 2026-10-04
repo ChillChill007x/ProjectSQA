@@ -1,0 +1,38 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 15,
+  "line_cov": 99.18,
+  "branch_cov": 87.68,
+  "test_file": "CharacterReaderDeepseekTest.java",
+  "target_classes": "org.jsoup.parser.CharacterReader",
+  "buggy_failures": [
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testSingleCharInput",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testEmptyInput",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToEndWithOneChar",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToStringNotFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeAsString",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToEndOnEmptyDoesNotThrow",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToEndKnownBug",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToEndFull",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToStringFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharAtEnd",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharNotFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testHandleCarriageReturnAsLineFeed",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testMultipleOperations"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testEmptyInput",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeAsString",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToStringFound",
+    "org.jsoup.parser.CharacterReaderDeepseekTest::testConsumeToCharFound"
+  ],
+  "suite_sha256": "445a7259bac13b37e7f38dfdfbfb2ae5105fdd64d32a0e25e08e48019b605430",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Jsoup_18b/CharacterReaderDeepseekTest.java"
+  ],
+  "run_id": "Jsoup-18-Reevaluation-s0-40a47354af54"
+}

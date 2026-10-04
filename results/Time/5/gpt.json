@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 99.45,
+  "branch_cov": 96.17,
+  "test_file": "PeriodGptTest.java",
+  "target_classes": "org.joda.time.Period",
+  "buggy_failures": [
+    "org.joda.time.PeriodGptTest::testDefectNormalizedStandard_periodType_monthsWeeks",
+    "org.joda.time.PeriodGptTest::testWithers",
+    "org.joda.time.PeriodGptTest::testDefectNormalizedStandard_periodType_months2"
+  ],
+  "fixed_failures": [
+    "org.joda.time.PeriodGptTest::testWithers"
+  ],
+  "suite_sha256": "f50afc0cd82633c87f32dd3a6184f2b5a105494fd98742c4a43b22dac5769703",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Time_5b/PeriodGptTest.java"
+  ],
+  "run_id": "Time-5-Reevaluation-s0-ce2629ecf30d"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 99.67,
+  "branch_cov": 93.65,
+  "test_file": "Base64GptTest.java",
+  "target_classes": "org.apache.commons.codec.binary.Base64",
+  "buggy_failures": [
+    "org.apache.commons.codec.binary.Base64GptTest::testDefectEncodeBase64StringNoTrailingChunkSeparator",
+    "org.apache.commons.codec.binary.Base64GptTest::testDefectRfc4648VectorsEncodeString",
+    "org.apache.commons.codec.binary.Base64GptTest::testDefectRfc4648Section10SingleCharEncode"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "08a83c8220c0eb894853e7322df25056ed5b5356eeefa797591cb1464b938814",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_7b/Base64GptTest.java"
+  ],
+  "run_id": "Codec-7-Reevaluation-s0-5482e8e27038"
+}

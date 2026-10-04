@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 0,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "UnsafeAllocatorGptTest.java",
+  "target_classes": "com.google.gson.internal.UnsafeAllocator",
+  "buggy_failures": [],
+  "fixed_failures": [
+    "com.google.gson.internal.UnsafeAllocatorGptTest::testInstantiateStandardClassBypassesConstructor"
+  ],
+  "suite_sha256": "72b4f88c2f6d31c952bb774f488f74bbb2a00663d4244afbdc57a5f1c06c1bb2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_8b/UnsafeAllocatorGptTest.java"
+  ],
+  "run_id": "Gson-8-Reevaluation-s0-1e39bdb8ff67"
+}

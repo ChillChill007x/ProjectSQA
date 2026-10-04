@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "NumericEntityUnescaperGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testOutOfBoundsDefect",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testUnfinishedEntityWithoutSemicolonDefect",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testOutOfBoundsExactEnd"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "66de2293e31f732ef6888a08759e2aca41c65437edfa2b1ca434df4031d62ce6",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_19b/NumericEntityUnescaperGptTest.java"
+  ],
+  "run_id": "Lang-19-Reevaluation-s0-760e8094f79c"
+}

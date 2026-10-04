@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 95.83,
+  "branch_cov": 86.41,
+  "test_file": "ExtendedMessageFormatGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testEqualsHashcodeTargetingDefect",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testEqualsAndHashCodeWithNullRegistry",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testQuotesAndEscapedQuotesInPattern",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testFormatDescriptionWithQuotedString",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testMultipleFormatElementsAndSpacing",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testCustomRegistryWithArguments",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testUnterminatedQuotedString"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testEqualsHashcodeTargetingDefect",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testQuotesAndEscapedQuotesInPattern",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testFormatDescriptionWithQuotedString",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testMultipleFormatElementsAndSpacing",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testCustomRegistryWithArguments",
+    "org.apache.commons.lang3.text.ExtendedMessageFormatGptTest::testUnterminatedQuotedString"
+  ],
+  "suite_sha256": "ecc40613b2b463b1cb49589961e55a1b891ee600f9665497b6294cc2c7013a8b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_23b/ExtendedMessageFormatGptTest.java"
+  ],
+  "run_id": "Lang-23-Reevaluation-s0-7abc656a9856"
+}

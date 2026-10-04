@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 95.64,
+  "branch_cov": 78.89,
+  "test_file": "BaseSecantSolverGptTest.java",
+  "target_classes": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+  "buggy_failures": [
+    "org.apache.commons.math.analysis.solvers.BaseSecantSolverGptTest::testInitialMinIsExactRoot",
+    "org.apache.commons.math.analysis.solvers.BaseSecantSolverGptTest::testIssue631"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.analysis.solvers.BaseSecantSolverGptTest::testInitialMinIsExactRoot",
+    "org.apache.commons.math.analysis.solvers.BaseSecantSolverGptTest::testIssue631"
+  ],
+  "suite_sha256": "22c8b2ae2b4edaa104698642e96940b57b7afce389ed82f506beef05c0d13fb8",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_51b/BaseSecantSolverGptTest.java"
+  ],
+  "run_id": "Math-51-Reevaluation-s0-804f6260c6db"
+}

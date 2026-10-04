@@ -1,0 +1,28 @@
+{
+  "project": "Math",
+  "bug_id": 68,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-68-gpt-1790392097",
+  "suite_sha256": "19e15653a85eb451620fdeac85a0ee95680db492b2437b939a1eebc1a612d766",
+  "test_files": "LevenbergMarquardtOptimizerGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+  "timestamp": "2026-10-03 10:08:41",
+  "evaluation_duration_sec": 24.503,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 96.39,
+  "branch_coverage_percent": 85.2,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMismatchedTargetAndWeightsDimensions",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMinpackJennrichSampson",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMinpackFreudensteinRoth",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testVectorialConvergenceCheckerIntegration"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMismatchedTargetAndWeightsDimensions",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMinpackJennrichSampson",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerGptTest::testMinpackFreudensteinRoth"
+  ]
+}

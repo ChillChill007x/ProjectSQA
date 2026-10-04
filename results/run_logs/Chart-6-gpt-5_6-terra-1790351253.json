@@ -1,0 +1,28 @@
+{
+  "project": "Chart",
+  "bug_id": 6,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Chart-6-gpt-1790351253",
+  "suite_sha256": "7e580ec584e14abc1a0d22b5456ca8ad346069b28b61885f8c0fda452be264a7",
+  "test_files": "ShapeListGptTest.java",
+  "target_classes": "org.jfree.chart.util.ShapeList",
+  "timestamp": "2026-10-03 22:47:58",
+  "evaluation_duration_sec": 24.88,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 5,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsWithLine2DShapesRevealingDefect",
+    "org.jfree.chart.util.ShapeListGptTest::testSerializationWithNonObjectEqualsShapes",
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsWithEllipseAndGeneralPath",
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsDifferentLengthsAndElements",
+    "org.jfree.chart.util.ShapeListGptTest::testGetShapeNegativeIndexThrowsException"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsDifferentLengthsAndElements",
+    "org.jfree.chart.util.ShapeListGptTest::testGetShapeNegativeIndexThrowsException"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 96.41,
+  "branch_cov": 84.13,
+  "test_file": "RemoveUnusedVarsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.RemoveUnusedVars",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.RemoveUnusedVarsGptTest::testPreserveSetterParamInObjectLiteral",
+    "com.google.javascript.jscomp.RemoveUnusedVarsGptTest::testClosure1_DoNotRemoveFunctionArgsWhenNotRemovingGlobals"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.RemoveUnusedVarsGptTest::testPreserveSetterParamInObjectLiteral"
+  ],
+  "suite_sha256": "96a020784f8d83ea26400958e5ee664c6ad69580346f8ea6542fe2528da79906",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_1b/RemoveUnusedVarsGptTest.java"
+  ],
+  "run_id": "Closure-1-Reevaluation-s0-1d45232c2f16"
+}

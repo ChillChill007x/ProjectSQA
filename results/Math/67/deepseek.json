@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 81.05,
+  "branch_cov": 87.62,
+  "test_file": "MultiStartUnivariateRealOptimizerDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testNaNHandlingDefect",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testConstructorState",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testManyStartsWithFailures",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testQuinticMinDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testNaNHandlingDefect",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testConstructorState",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testManyStartsWithFailures",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerDeepseekTest::testQuinticMinDefect"
+  ],
+  "suite_sha256": "36a6aaf445e92f06684f961a96a737324baa1b5804544e1ef13d9d54a1d6d643",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_67b/MultiStartUnivariateRealOptimizerDeepseekTest.java"
+  ],
+  "run_id": "Math-67-Reevaluation-s0-ce746d1b8412"
+}

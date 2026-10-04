@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 97.98,
+  "branch_cov": 92.56,
+  "test_file": "MathArraysGptTest.java",
+  "target_classes": "org.apache.commons.math3.util.MathArrays",
+  "buggy_failures": [
+    "org.apache.commons.math3.util.MathArraysGptTest::testLinearCombinationWithSingleElementArray"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "8437dbe584e5befb16874fdbb051683cf38999d51687729ada781d631d259e00",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_3b/MathArraysGptTest.java"
+  ],
+  "run_id": "Math-3-Reevaluation-s0-101beae484a3"
+}

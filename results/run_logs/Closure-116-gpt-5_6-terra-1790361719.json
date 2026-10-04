@@ -1,0 +1,27 @@
+{
+  "project": "Closure",
+  "bug_id": 116,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Closure-116-gpt-1790361719",
+  "suite_sha256": "909809c891b2030b1436b465ea90a65b02937dff031271db230bf92a6480a8c4",
+  "test_files": "FunctionInjectorGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.FunctionInjector",
+  "timestamp": "2026-10-03 01:42:33",
+  "evaluation_duration_sec": 34.249,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 87.13,
+  "branch_coverage_percent": 62.84,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testDoesFunctionMeetMinimumRequirements_anonymousAssignedRecursion",
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testIssue1101a_directInlineArgumentWithSideEffectsRejected",
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testIssue1101b_directInlineAssignmentArgumentRejected"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testDoesFunctionMeetMinimumRequirements_anonymousAssignedRecursion",
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testIssue1101a_directInlineArgumentWithSideEffectsRejected",
+    "com.google.javascript.jscomp.FunctionInjectorGptTest::testIssue1101b_directInlineAssignmentArgumentRejected"
+  ]
+}

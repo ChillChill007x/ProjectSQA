@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 12,
+  "line_cov": 89.84,
+  "branch_cov": 85.29,
+  "test_file": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAny_StringStringWithSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_StringWithSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_CharArrayWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_StringWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAndLastIndexOf",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_CharArrayWithSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAny_StringCharArrayWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAny_StringCharArrayWithSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testTrimAndStrip",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAny_StringWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyBut_StringStringWithSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyBut_StringCharArrayWithSupplementaryChars_RevealsDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_CharArrayWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsNone_StringWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAndLastIndexOf",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAny_StringCharArrayWithBadSupplementaryChars_RevealsDefect",
+    "org.apache.commons.lang3.StringUtilsGptTest::testTrimAndStrip",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAny_StringWithBadSupplementaryChars_RevealsDefect"
+  ],
+  "suite_sha256": "e1625c829efc82eaa217b29c1df8ac5b3c9e526895470916553e8c332584046d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_30b/StringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-30-Reevaluation-s0-86a89912bac4"
+}

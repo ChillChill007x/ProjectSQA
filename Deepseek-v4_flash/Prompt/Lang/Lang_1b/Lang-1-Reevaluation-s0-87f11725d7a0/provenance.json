@@ -1,0 +1,15 @@
+{
+  "mode": "imported",
+  "tool": "deepseek",
+  "model_requested": null,
+  "model_reported": null,
+  "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+  "declared_models": [
+    "deepseek-v4-flash"
+  ],
+  "generation_time_sec": null,
+  "total_tokens": null,
+  "api_calls": 0,
+  "note": "Original API generation logs unavailable; no generation values have been reconstructed.",
+  "explicit_ground_truth_in_saved_prompt": false
+}

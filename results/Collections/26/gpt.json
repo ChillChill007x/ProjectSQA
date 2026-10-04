@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "MultiKeyGptTest.java",
+  "target_classes": "org.apache.commons.collections4.keyvalue.MultiKey",
+  "buggy_failures": [
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testGetKeysReturnsDefensiveCopy",
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testEqualsAfterSerializationOfDerivedClass"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testGetKeysReturnsDefensiveCopy"
+  ],
+  "suite_sha256": "1423edc0cc5c4bcf9d245800e6ab8f842d7564518ed1c59734afc2bd7b976bf4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_26b/MultiKeyGptTest.java"
+  ],
+  "run_id": "Collections-26-Reevaluation-s0-692393dadeb0"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.35,
+  "branch_cov": 94.44,
+  "test_file": "NumberUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointNoQualifier",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumberLang664HexUpperCase",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumberTypeQualifiers"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointNoQualifier",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumberLang664HexUpperCase"
+  ],
+  "suite_sha256": "94fa017292f8354e285f28a69edd9c2ab15c0af70f73586d20e819158391e00c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_24b/NumberUtilsGptTest.java"
+  ],
+  "run_id": "Lang-24-Reevaluation-s0-8208c10d1dc6"
+}

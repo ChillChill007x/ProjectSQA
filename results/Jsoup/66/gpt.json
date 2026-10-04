@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 91.27,
+  "branch_cov": 84.87,
+  "test_file": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespacePreservation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputAndPrettyPrintBranches",
+    "org.jsoup.nodes.ElementGptTest::testDomCollectorQueries",
+    "org.jsoup.nodes.ElementGptTest::testDomSiblingsBeforeAfterWrap"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespacePreservation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputAndPrettyPrintBranches",
+    "org.jsoup.nodes.ElementGptTest::testDomCollectorQueries",
+    "org.jsoup.nodes.ElementGptTest::testDomSiblingsBeforeAfterWrap"
+  ],
+  "suite_sha256": "ef96006e9ced1c1f648afb92bf71fd4b4bec49478e4723f1d379bcaee315d058",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_66b/ElementGptTest.java"
+  ],
+  "run_id": "Jsoup-66-Reevaluation-s0-80339418345f"
+}

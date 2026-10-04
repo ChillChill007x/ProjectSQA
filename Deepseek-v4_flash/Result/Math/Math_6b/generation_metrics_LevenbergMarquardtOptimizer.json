@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 15:38:19",
+  "project": "Math",
+  "bug_id": 6,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 86.54,
+    "input_tokens": 12036,
+    "output_tokens": 5518,
+    "reasoning_tokens": null,
+    "total_tokens": 17554,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 905585,
+    "limit": 1000000,
+    "remaining": 94415
+  }
+}

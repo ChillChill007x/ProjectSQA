@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.72,
+  "branch_cov": 96.79,
+  "test_file": "BrentOptimizerGptTest.java",
+  "target_classes": "org.apache.commons.math3.optimization.univariate.BrentOptimizer",
+  "buggy_failures": [
+    "org.apache.commons.math3.optimization.univariate.BrentOptimizerGptTest::testKeepInitIfBestMinimization",
+    "org.apache.commons.math3.optimization.univariate.BrentOptimizerGptTest::testKeepInitIfBestMaximization"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "f05b3030f6e52ee6aa3dd2b723170fd6d8768ce299abd0db8ddc1bf0c0ad962d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_23b/BrentOptimizerGptTest.java"
+  ],
+  "run_id": "Math-23-Reevaluation-s0-823ed657e913"
+}

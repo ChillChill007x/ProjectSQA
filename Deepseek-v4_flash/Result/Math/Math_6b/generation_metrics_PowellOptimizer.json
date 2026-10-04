@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 15:55:05",
+  "project": "Math",
+  "bug_id": 6,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 51.58,
+    "input_tokens": 5264,
+    "output_tokens": 3394,
+    "reasoning_tokens": null,
+    "total_tokens": 8658,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 995431,
+    "limit": 1000000,
+    "remaining": 4569
+  }
+}

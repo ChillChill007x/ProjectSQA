@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.09,
+  "branch_cov": 100.0,
+  "test_file": "SetUniqueListDeepseekTest.java",
+  "target_classes": "org.apache.commons.collections.list.SetUniqueList",
+  "buggy_failures": [
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testAddAllMiddleWithExistingDuplicatesInColl",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSetNormalUniqueObject",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testIntCollectionAddAll"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSetNormalUniqueObject"
+  ],
+  "suite_sha256": "2549106af50b67bf58680d057f9ef13458f7413c1a4f48525dcc980d96d9b432",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Collections_5b/SetUniqueListDeepseekTest.java"
+  ],
+  "run_id": "Collections-5-Reevaluation-s0-4409a127f9ba"
+}

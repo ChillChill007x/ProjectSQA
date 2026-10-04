@@ -1,0 +1,16 @@
+{
+  "status": "DONE",
+  "fault_detected": "NOT_DETECTED",
+  "failures_count": 0,
+  "line_cov": 93.12,
+  "branch_cov": 85.75,
+  "test_file": "EventStateGptTest.java",
+  "target_classes": "org.apache.commons.math.ode.events.EventState",
+  "buggy_failures": [],
+  "fixed_failures": [],
+  "suite_sha256": "7ae7fc9aa82c993f77b956d181289cf2af4150f82f3861ee4ef646c16efe5ef9",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_78b/EventStateGptTest.java"
+  ],
+  "run_id": "Math-78-Reevaluation-s0-c9305b8fb2db"
+}

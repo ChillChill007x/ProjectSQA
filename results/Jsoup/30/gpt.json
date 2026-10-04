@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "CleanerGptTest.java",
+  "target_classes": "org.jsoup.safety.Cleaner",
+  "buggy_failures": [
+    "org.jsoup.safety.CleanerGptTest::testCleanWithSimpleTextWhitelist",
+    "org.jsoup.safety.CleanerGptTest::testCleanStripsDisallowedTagsWhilePreservingValidChildren",
+    "org.jsoup.safety.CleanerGptTest::testCleanRelativeLinksAbsolutizedByDefault",
+    "org.jsoup.safety.CleanerGptTest::testCleanRelativeLinksPreservedWhenConfigured",
+    "org.jsoup.safety.CleanerGptTest::testIsValidCommentInBodyDefect",
+    "org.jsoup.safety.CleanerGptTest::testIsValidHeadContaminationDefect",
+    "org.jsoup.safety.CleanerGptTest::testIsValidGroundTruthDefectSuite"
+  ],
+  "fixed_failures": [
+    "org.jsoup.safety.CleanerGptTest::testCleanWithSimpleTextWhitelist",
+    "org.jsoup.safety.CleanerGptTest::testCleanStripsDisallowedTagsWhilePreservingValidChildren",
+    "org.jsoup.safety.CleanerGptTest::testCleanRelativeLinksAbsolutizedByDefault",
+    "org.jsoup.safety.CleanerGptTest::testCleanRelativeLinksPreservedWhenConfigured",
+    "org.jsoup.safety.CleanerGptTest::testIsValidHeadContaminationDefect",
+    "org.jsoup.safety.CleanerGptTest::testIsValidGroundTruthDefectSuite"
+  ],
+  "suite_sha256": "bc8eaea85c0a1a9da178e2e5a648e19cbafdc41ab2464fe903fa34fca51f3704",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_30b/CleanerGptTest.java"
+  ],
+  "run_id": "Jsoup-30-Reevaluation-s0-4acf2d2ceaf2"
+}

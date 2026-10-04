@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 97.14,
+  "branch_cov": 96.88,
+  "test_file": "RandomStringUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.RandomStringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.RandomStringUtilsDeepseekTest::testStartGreaterThanEndWithLetters",
+    "org.apache.commons.lang3.RandomStringUtilsDeepseekTest::testPrivateHighSurrogateSkipped",
+    "org.apache.commons.lang3.RandomStringUtilsDeepseekTest::testStartGreaterThanEndWithCharsArray",
+    "org.apache.commons.lang3.RandomStringUtilsDeepseekTest::testStartGreaterThanEnd_ShouldThrowWithStartInMessage"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.RandomStringUtilsDeepseekTest::testPrivateHighSurrogateSkipped"
+  ],
+  "suite_sha256": "2b01dee1e7cb3f8cb34e9f7d821172f15fa28e9344d9eaf7db06f98927acd2a1",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_11b/RandomStringUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-11-Reevaluation-s0-1711000fb9b2"
+}

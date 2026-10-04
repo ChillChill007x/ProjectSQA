@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:31:06",
+  "project": "Math",
+  "bug_id": 74,
+  "version": "b",
+  "target_class": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 40.67,
+    "input_tokens": 4637,
+    "output_tokens": 6128,
+    "reasoning_tokens": 1166,
+    "total_tokens": 11931,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 130927,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 269073
+  }
+}

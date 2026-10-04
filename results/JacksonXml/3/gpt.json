@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 69.56,
+  "branch_cov": 62.26,
+  "test_file": "FromXmlParserGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testHandleEOFThrowsExceptionWhenUnclosed",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testXmlAttributesWithNextTextValue",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testAddVirtualWrapping",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetValueAsString",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testCurrentNameAndOverrideCurrentName",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetBinaryValueCorruptBase64ThrowsException"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testHandleEOFThrowsExceptionWhenUnclosed",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testAddVirtualWrapping",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetValueAsString",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testCurrentNameAndOverrideCurrentName",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetBinaryValueCorruptBase64ThrowsException"
+  ],
+  "suite_sha256": "807b0bafcb2405336d7237ffb2b03466b4ff1cadca17591054a07d3773040aee",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonXml_3b/FromXmlParserGptTest.java"
+  ],
+  "run_id": "JacksonXml-3-Reevaluation-s0-bd23c6f4c048"
+}

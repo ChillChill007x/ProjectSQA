@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 96.66,
+  "branch_cov": 90.98,
+  "test_file": "FastDateFormatGptTest.java",
+  "target_classes": "org.apache.commons.lang3.time.FastDateFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang3.time.FastDateFormatGptTest::testLang538",
+    "org.apache.commons.lang3.time.FastDateFormatGptTest::testLang538BufferVariant"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "49681f92477046a0411e221adcacf3f18ad18af9c8cf25fce0af3d2035821204",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_38b/FastDateFormatGptTest.java"
+  ],
+  "run_id": "Lang-38-Reevaluation-s0-8143e0683440"
+}

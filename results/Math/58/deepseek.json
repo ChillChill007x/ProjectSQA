@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 84.99,
+  "branch_cov": 63.71,
+  "test_file": "GaussianFitterDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.optimization.fitting.GaussianFitter",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.fitting.GaussianFitterDeepseekTest::testFitWithNegativeSigmaGuess",
+    "org.apache.commons.math.optimization.fitting.GaussianFitterDeepseekTest::testInterpolateXAtYZeroStep"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.fitting.GaussianFitterDeepseekTest::testFitWithNegativeSigmaGuess",
+    "org.apache.commons.math.optimization.fitting.GaussianFitterDeepseekTest::testInterpolateXAtYZeroStep"
+  ],
+  "suite_sha256": "0dd63ba43fc44061961ba1fe271e3b475e0b5b1fe77430362196f6dbad4dee6b",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_58b/GaussianFitterDeepseekTest.java"
+  ],
+  "run_id": "Math-58-Reevaluation-s0-1c19f0743ea7"
+}

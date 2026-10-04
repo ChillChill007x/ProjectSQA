@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 98.45,
+  "branch_cov": 86.66,
+  "test_file": "ISO8601UtilsGptTest.java",
+  "target_classes": "com.google.gson.internal.bind.util.ISO8601Utils",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.util.ISO8601UtilsGptTest::testParseDateWithNegativeTwoDigitTimezoneWithoutMinutes",
+    "com.google.gson.internal.bind.util.ISO8601UtilsGptTest::testParseDateWithTwoDigitTimezoneWithoutMinutes"
+  ],
+  "fixed_failures": [
+    "com.google.gson.internal.bind.util.ISO8601UtilsGptTest::testParseDateWithNegativeTwoDigitTimezoneWithoutMinutes",
+    "com.google.gson.internal.bind.util.ISO8601UtilsGptTest::testParseDateWithTwoDigitTimezoneWithoutMinutes"
+  ],
+  "suite_sha256": "fc19a6679b5aed7eef0c3dde327866907237a1394c14de928ecd8ccc5bda3f2e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_5b/ISO8601UtilsGptTest.java"
+  ],
+  "run_id": "Gson-5-Reevaluation-s0-d312bfd2ea1a"
+}

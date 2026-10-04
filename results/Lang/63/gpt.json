@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 6,
+  "line_cov": 99.6,
+  "branch_cov": 94.81,
+  "test_file": "DurationFormatUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.time.DurationFormatUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testFormatPeriodTokenOmissionBranches",
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testFormatDurationZero",
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testFormatDurationWordsSuppressLeadingAndTrailing",
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testLexxLiteralHandling",
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testFormatDurationSimplePaddedAndUnpadded",
+    "org.apache.commons.lang.time.DurationFormatUtilsGptTest::testJiraLang281"
+  ],
+  "fixed_failures": []
+}

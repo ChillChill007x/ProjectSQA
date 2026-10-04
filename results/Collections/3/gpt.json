@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 99.06,
+  "branch_cov": 99.03,
+  "test_file": "CollectionUtilsGptTest.java",
+  "target_classes": "org.apache.commons.collections.CollectionUtils",
+  "buggy_failures": [
+    "org.apache.commons.collections.CollectionUtilsGptTest::testRemoveAllDefectRevealed"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "ed33cd8b53fb727b83d1838bc329ae754ff0adba045ed98b276fc75b1c738c19",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_3b/CollectionUtilsGptTest.java"
+  ],
+  "run_id": "Collections-3-Reevaluation-s0-d7e45f65d9bb"
+}

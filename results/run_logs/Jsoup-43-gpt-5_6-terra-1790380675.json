@@ -1,0 +1,33 @@
+{
+  "project": "Jsoup",
+  "bug_id": 43,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-43-gpt-1790380675",
+  "suite_sha256": "99ee985439848bdd749c3c0f6f1c005ba4a1f5a6c083d5347de12b6cf3adda52",
+  "test_files": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "timestamp": "2026-10-03 06:58:13",
+  "evaluation_duration_sec": 17.652,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 83.54,
+  "branch_coverage_percent": 66.09,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnText",
+    "org.jsoup.nodes.ElementGptTest::testGetElementsQueries",
+    "org.jsoup.nodes.ElementGptTest::testSiblingNavigationEdgeCases",
+    "org.jsoup.nodes.ElementGptTest::testCssSelector",
+    "org.jsoup.nodes.ElementGptTest::testElementSiblingIndexSameContent",
+    "org.jsoup.nodes.ElementGptTest::testGetSiblingsWithDuplicateContent",
+    "org.jsoup.nodes.ElementGptTest::testInsertionAndManipulation"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnText",
+    "org.jsoup.nodes.ElementGptTest::testGetElementsQueries",
+    "org.jsoup.nodes.ElementGptTest::testSiblingNavigationEdgeCases",
+    "org.jsoup.nodes.ElementGptTest::testGetSiblingsWithDuplicateContent",
+    "org.jsoup.nodes.ElementGptTest::testInsertionAndManipulation"
+  ]
+}

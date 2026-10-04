@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:17:20",
+  "project": "Collections",
+  "bug_id": 26,
+  "version": "b",
+  "target_class": "org.apache.commons.collections4.keyvalue.MultiKey",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 109.43,
+    "input_tokens": 3078,
+    "output_tokens": 3792,
+    "reasoning_tokens": null,
+    "total_tokens": 6870,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 791049,
+    "limit": 1000000,
+    "remaining": 208951
+  }
+}

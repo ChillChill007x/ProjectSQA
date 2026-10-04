@@ -1,0 +1,24 @@
+{
+  "project": "Math",
+  "bug_id": 57,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-57-gpt-1790391355",
+  "suite_sha256": "c3590fb1ba9f0785f66264013a230d5f4cd915fd7bdf047b4d7a6bef76f68960",
+  "test_files": "KMeansPlusPlusClustererGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer",
+  "timestamp": "2026-10-03 09:56:32",
+  "evaluation_duration_sec": 37.041,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 79.17,
+  "branch_coverage_percent": 77.78,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererGptTest::testSmallDistances",
+    "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererGptTest::testKGreaterThanPointsSizeThrowsException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererGptTest::testKGreaterThanPointsSizeThrowsException"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ShapeListGptTest.java",
+  "target_classes": "org.jfree.chart.util.ShapeList",
+  "buggy_failures": [
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsWithLine2DShapesRevealingDefect",
+    "org.jfree.chart.util.ShapeListGptTest::testSerializationWithNonObjectEqualsShapes",
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsWithEllipseAndGeneralPath",
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsDifferentLengthsAndElements",
+    "org.jfree.chart.util.ShapeListGptTest::testGetShapeNegativeIndexThrowsException"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.util.ShapeListGptTest::testEqualsDifferentLengthsAndElements",
+    "org.jfree.chart.util.ShapeListGptTest::testGetShapeNegativeIndexThrowsException"
+  ],
+  "suite_sha256": "7e580ec584e14abc1a0d22b5456ca8ad346069b28b61885f8c0fda452be264a7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_6b/ShapeListGptTest.java"
+  ],
+  "run_id": "Chart-6-Reevaluation-s0-d1ddba657e8c"
+}

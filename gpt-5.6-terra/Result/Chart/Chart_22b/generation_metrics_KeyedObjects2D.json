@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 00:34:25",
+  "project": "Chart",
+  "bug_id": 22,
+  "version": "b",
+  "target_class": "org.jfree.data.KeyedObjects2D",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 40.17,
+    "input_tokens": 4902,
+    "output_tokens": 4965,
+    "reasoning_tokens": 2165,
+    "total_tokens": 12032,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 18436,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 381564
+  }
+}

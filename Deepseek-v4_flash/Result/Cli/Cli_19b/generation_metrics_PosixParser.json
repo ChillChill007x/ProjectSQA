@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 04:07:43",
+  "project": "Cli",
+  "bug_id": 19,
+  "version": "b",
+  "target_class": "org.apache.commons.cli.PosixParser",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 94.19,
+    "input_tokens": 3275,
+    "output_tokens": 3554,
+    "reasoning_tokens": null,
+    "total_tokens": 6829,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 657671,
+    "limit": 1000000,
+    "remaining": 342329
+  }
+}

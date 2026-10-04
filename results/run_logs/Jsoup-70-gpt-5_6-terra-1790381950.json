@@ -1,0 +1,30 @@
+{
+  "project": "Jsoup",
+  "bug_id": 70,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-70-gpt-1790381950",
+  "suite_sha256": "ac439f737692e74eb2f3cc4fb3cd2422387d144067dd05d06f48e40132aa6dea",
+  "test_files": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "timestamp": "2026-10-03 07:19:27",
+  "evaluation_duration_sec": 16.348,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 93.65,
+  "branch_coverage_percent": 81.07,
+  "failures_count": 6,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testKeepsPreTextAtDepth",
+    "org.jsoup.nodes.ElementGptTest::testStandaloneElementNavigationNullGuards",
+    "org.jsoup.nodes.ElementGptTest::testDomQuerySelectors",
+    "org.jsoup.nodes.ElementGptTest::testKeepsPreTextAtDepthDirectHierarchy",
+    "org.jsoup.nodes.ElementGptTest::testPreserveWhitespaceMultiLevelAncestry",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorPaths"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testStandaloneElementNavigationNullGuards",
+    "org.jsoup.nodes.ElementGptTest::testDomQuerySelectors",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorPaths"
+  ]
+}

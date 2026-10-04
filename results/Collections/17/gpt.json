@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "EqualPredicateGptTest.java",
+  "target_classes": "org.apache.commons.collections.functors.EqualPredicate",
+  "buggy_failures": [
+    "org.apache.commons.collections.functors.EqualPredicateGptTest::testSerializationRoundTrip"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "688193e670edc3d4856a9faf066a1794954edb9584fef028d021efcd9e99da40",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_17b/EqualPredicateGptTest.java"
+  ],
+  "run_id": "Collections-17-Reevaluation-s0-e0765deb1508"
+}

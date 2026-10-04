@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.17,
+  "branch_cov": 95.35,
+  "test_file": "MappingIteratorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.MappingIterator",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.MappingIteratorGptTest::testUnmanagedParserNotClosedByIterator",
+    "com.fasterxml.jackson.databind.MappingIteratorGptTest::testCloseMultipleTimesIsSafe",
+    "com.fasterxml.jackson.databind.MappingIteratorGptTest::testExplicitCloseClosesParser"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.MappingIteratorGptTest::testUnmanagedParserNotClosedByIterator",
+    "com.fasterxml.jackson.databind.MappingIteratorGptTest::testEmptyArray"
+  ],
+  "suite_sha256": "3af3bb44977a44aca518516491f8a9e5bacb681d2c9f24e6cf83edd48ae518ea",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_18b/MappingIteratorGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-18-Reevaluation-s0-f82e6a9851c7"
+}

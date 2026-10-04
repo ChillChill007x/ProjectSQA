@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:05:44",
+  "project": "Math",
+  "bug_id": 61,
+  "version": "b",
+  "target_class": "org.apache.commons.math.distribution.PoissonDistributionImpl",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 65.3,
+    "input_tokens": 2833,
+    "output_tokens": 4417,
+    "reasoning_tokens": null,
+    "total_tokens": 7250,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 178775,
+    "limit": 1000000,
+    "remaining": 821225
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 97.83,
+  "branch_cov": 94.44,
+  "test_file": "CpioArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testReadOldBinaryFormatLittleEndian",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testCpioUnarchiveCreatedByRedlineRpm"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testReadOldBinaryFormatLittleEndian",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testCpioUnarchiveCreatedByRedlineRpm"
+  ],
+  "suite_sha256": "8477be16ea94ac038e0cb9c35bd43365463cc33b55b1aad6e17593217ac34d61",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_20b/CpioArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-20-Reevaluation-s0-a2d9b750d5e4"
+}

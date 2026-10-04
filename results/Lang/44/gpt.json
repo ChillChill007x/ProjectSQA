@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.55,
+  "branch_cov": 90.84,
+  "test_file": "NumberUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.NumberUtilsGptTest::testLang457_createNumber_L",
+    "org.apache.commons.lang.NumberUtilsGptTest::testLang457_createNumber_l",
+    "org.apache.commons.lang.NumberUtilsGptTest::testIsNumber_StandardIntegersAndDecimals"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.NumberUtilsGptTest::testIsNumber_StandardIntegersAndDecimals"
+  ],
+  "suite_sha256": "691be2ec7177b4e5a4d236bfb1d11534650927e54ac6463037844c98ac48cdf6",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_44b/NumberUtilsGptTest.java"
+  ],
+  "run_id": "Lang-44-Reevaluation-s0-e55f5292cf34"
+}

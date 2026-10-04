@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 74.52,
+  "branch_cov": 61.25,
+  "test_file": "TarArchiveInputStreamDeepseekTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testRead_NormalEntry",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testSkip_MoreThanAvailable",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testReadWithoutEntry",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testLongNameData_NullEntry",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testBigGid"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testRead_NormalEntry",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testSkip_MoreThanAvailable",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testReadWithoutEntry",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testLongNameData_NullEntry"
+  ],
+  "suite_sha256": "f5944c250429695ae8e65c959bc79feb964c14f98bffb2822f9f8a70f9e9f547",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Compress_32b/TarArchiveInputStreamDeepseekTest.java"
+  ],
+  "run_id": "Compress-32-Reevaluation-s0-2561ff4b893a"
+}

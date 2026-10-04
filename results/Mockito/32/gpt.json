@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 93.26,
+  "branch_cov": 100.0,
+  "test_file": "SpyAnnotationEngineGptTest.java",
+  "target_classes": "org.mockito.internal.configuration.SpyAnnotationEngine",
+  "buggy_failures": [
+    "org.mockito.internal.configuration.SpyAnnotationEngineGptTest::testSpyFieldRetainsFieldNameAsMockName_DefectTarget"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "90e41391ea4450d5c85364c1ad540a2650ab89a0065b98447fe0c0e1466aae6d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_32b/SpyAnnotationEngineGptTest.java"
+  ],
+  "run_id": "Mockito-32-Reevaluation-s0-28eee9276c6c"
+}

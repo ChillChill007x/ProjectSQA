@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:21:33",
+  "project": "Math",
+  "bug_id": 66,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 92.61,
+    "input_tokens": 3267,
+    "output_tokens": 4913,
+    "reasoning_tokens": 7733,
+    "total_tokens": 15913,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 57650,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 342350
+  }
+}

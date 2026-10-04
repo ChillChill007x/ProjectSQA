@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 07:32:55",
+  "project": "JacksonCore",
+  "bug_id": 11,
+  "version": "b",
+  "target_class": "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 53.49,
+    "input_tokens": 11970,
+    "output_tokens": 5999,
+    "reasoning_tokens": null,
+    "total_tokens": 17969,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 355973,
+    "limit": 1000000,
+    "remaining": 644027
+  }
+}

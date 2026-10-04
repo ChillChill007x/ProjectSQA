@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 23:51:38",
+  "project": "Jsoup",
+  "bug_id": 46,
+  "version": "b",
+  "target_class": "org.jsoup.nodes.Entities",
+  "token_slot": 6,
+  "metrics": {
+    "generation_time_seconds": 64.19,
+    "input_tokens": 3288,
+    "output_tokens": 4916,
+    "reasoning_tokens": 2641,
+    "total_tokens": 10845,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 6,
+    "used": 81900,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 318100
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "project": "Jsoup",
+  "bug_id": 41,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-41-gpt-1790380540",
+  "suite_sha256": "1c67f6ab4aa9eee375203aef91f265e0b07e61a58fe60d76f54e90b8660fa236",
+  "test_files": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "timestamp": "2026-10-03 06:55:58",
+  "evaluation_duration_sec": 18.077,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 84.05,
+  "branch_coverage_percent": 66.09,
+  "failures_count": 9,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testDomSearchMethods",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorBoundaries",
+    "org.jsoup.nodes.ElementGptTest::testChildAppendsAndPrepends",
+    "org.jsoup.nodes.ElementGptTest::testEmptyElementAndEmptyStateQueries",
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespaceHandlingWithBrAndPre",
+    "org.jsoup.nodes.ElementGptTest::testHashAndEqualsWithParsedDocumentsDefect",
+    "org.jsoup.nodes.ElementGptTest::testHashAndEqualsDefect",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputFormattingAndSyntaxModes"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testDomSearchMethods",
+    "org.jsoup.nodes.ElementGptTest::testCssSelectorBoundaries",
+    "org.jsoup.nodes.ElementGptTest::testChildAppendsAndPrepends",
+    "org.jsoup.nodes.ElementGptTest::testEmptyElementAndEmptyStateQueries",
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespaceHandlingWithBrAndPre",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputFormattingAndSyntaxModes"
+  ]
+}

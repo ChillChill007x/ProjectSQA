@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 75.59,
+  "branch_cov": 62.98,
+  "test_file": "XYPlotGptTest.java",
+  "target_classes": "org.jfree.chart.plot.XYPlot",
+  "buggy_failures": [
+    "org.jfree.chart.plot.XYPlotGptTest::testReplaceDatasetWithNullRendererTriggersAutoRange",
+    "org.jfree.chart.plot.XYPlotGptTest::testGetDataRangeWithNullRendererDefect",
+    "org.jfree.chart.plot.XYPlotGptTest::testCompleteDrawExecutionWithEmptyAndPopulatedData",
+    "org.jfree.chart.plot.XYPlotGptTest::testDatasetToAxesMapping"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.plot.XYPlotGptTest::testGetDataRangeWithNullRendererDefect",
+    "org.jfree.chart.plot.XYPlotGptTest::testCompleteDrawExecutionWithEmptyAndPopulatedData",
+    "org.jfree.chart.plot.XYPlotGptTest::testDatasetToAxesMapping"
+  ],
+  "suite_sha256": "4902ffeb8eb7f066099fec62d540c2f5e1b2b564de8a437efd839e48e20813b1",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_4b/XYPlotGptTest.java"
+  ],
+  "run_id": "Chart-4-Reevaluation-s0-4d294ecdc1ae"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 96.03,
+  "branch_cov": 100.0,
+  "test_file": "DocumentGptTest.java",
+  "target_classes": "org.jsoup.nodes.Document",
+  "buggy_failures": [
+    "org.jsoup.nodes.DocumentGptTest::testTitlesDefectInnerWhitespaceNormalization"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "fb214063030b89d99c2d813ba2c3895d6c60dddbe44b7e88f577451d07d69a70",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_29b/DocumentGptTest.java"
+  ],
+  "run_id": "Jsoup-29-Reevaluation-s0-7326ebd5360c"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.93,
+  "branch_cov": 92.35,
+  "test_file": "NumberUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testDefectLang27CreateNumberBothLowerAndUpperEWithDecimal",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumberTypeQualifiers",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testDefectLang27CreateNumberBothLowerAndUpperE"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumberTypeQualifiers"
+  ],
+  "suite_sha256": "b6bec95650d066180563163885a7ab71e2e7657e73c5ad6e47e8e81cf28cbf32",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_27b/NumberUtilsGptTest.java"
+  ],
+  "run_id": "Lang-27-Reevaluation-s0-d47ad1eeac8f"
+}

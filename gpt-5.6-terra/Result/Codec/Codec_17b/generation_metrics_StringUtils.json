@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 04:58:29",
+  "project": "Codec",
+  "bug_id": 17,
+  "version": "b",
+  "target_class": "org.apache.commons.codec.binary.StringUtils",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 35.4,
+    "input_tokens": 5816,
+    "output_tokens": 3017,
+    "reasoning_tokens": 1372,
+    "total_tokens": 10205,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 43780,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 356220
+  }
+}

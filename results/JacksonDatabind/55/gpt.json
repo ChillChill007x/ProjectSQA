@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 98.73,
+  "branch_cov": 97.86,
+  "test_file": "StdKeySerializersGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.ser.std.StdKeySerializers",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.ser.std.StdKeySerializersGptTest::testEnumsWithJsonPropertyAsKey"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.ser.std.StdKeySerializersGptTest::testGetFallbackKeySerializerEnumTypes"
+  ],
+  "suite_sha256": "855920df52b5d42cbcd5554632fc119f32b7767e97952873a463784c82cf75d3",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_55b/StdKeySerializersGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-55-Reevaluation-s0-8a74de957730"
+}

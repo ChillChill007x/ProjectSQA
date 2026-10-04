@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 01:02:50",
+  "project": "Cli",
+  "bug_id": 5,
+  "version": "b",
+  "target_class": "org.apache.commons.cli.Util",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 89.35,
+    "input_tokens": 1385,
+    "output_tokens": 3337,
+    "reasoning_tokens": null,
+    "total_tokens": 4722,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 200154,
+    "limit": 1000000,
+    "remaining": 799846
+  }
+}

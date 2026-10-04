@@ -1,0 +1,16 @@
+{
+  "status": "DONE",
+  "fault_detected": "NOT_DETECTED",
+  "failures_count": 0,
+  "line_cov": 93.66,
+  "branch_cov": 89.72,
+  "test_file": "TreeListGptTest.java",
+  "target_classes": "org.apache.commons.collections.list.TreeList",
+  "buggy_failures": [],
+  "fixed_failures": [],
+  "suite_sha256": "ba76dc8faa10d60cae70e4590d6098e5e934fcd4cc2516c53581800f02fec6c8",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_20b/TreeListGptTest.java"
+  ],
+  "run_id": "Collections-20-Reevaluation-s0-4398d13e0878"
+}

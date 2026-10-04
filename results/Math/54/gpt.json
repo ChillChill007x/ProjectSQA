@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 91.76,
+  "branch_cov": 82.67,
+  "test_file": "DfpGptTest.java",
+  "target_classes": "org.apache.commons.math.dfp.Dfp",
+  "buggy_failures": [
+    "org.apache.commons.math.dfp.DfpGptTest::testIssue567ZeroToDouble",
+    "org.apache.commons.math.dfp.DfpGptTest::testTruncationAndRoundingModes",
+    "org.apache.commons.math.dfp.DfpGptTest::testIssue567NegativeZeroToDouble",
+    "org.apache.commons.math.dfp.DfpGptTest::testRoundAllModes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.dfp.DfpGptTest::testTruncationAndRoundingModes",
+    "org.apache.commons.math.dfp.DfpGptTest::testRoundAllModes"
+  ],
+  "suite_sha256": "3bfe4652b076a415d7942cebd2592b514154543afde286eccbeeb535164a12ea",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_54b/DfpGptTest.java"
+  ],
+  "run_id": "Math-54-Reevaluation-s0-40a4d3b594f7"
+}

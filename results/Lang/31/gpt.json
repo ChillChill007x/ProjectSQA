@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 94.41,
+  "branch_cov": 92.43,
+  "test_file": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitByWholeSeparator",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAnyCharArrayWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfChar",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndContainsAny",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndLastIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsGptTest::testContainsAnyStringWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStripAccents"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitByWholeSeparator",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfChar",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndContainsAny",
+    "org.apache.commons.lang3.StringUtilsGptTest::testIndexOfAnyAndLastIndexOfAnyStrings",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStripAccents"
+  ],
+  "suite_sha256": "95ec3e0235d95be6deafbfa77f7e4874e8716a0fdfaf60ec9aa3fdbf5acab75a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_31b/StringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-31-Reevaluation-s0-835d96f5e05a"
+}

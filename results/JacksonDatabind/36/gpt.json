@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 93.18,
+  "branch_cov": 81.73,
+  "test_file": "StdDateFormatGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.util.StdDateFormat",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testLenientDefect",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseWithParsePosition"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseWithParsePosition"
+  ],
+  "suite_sha256": "5c8ddde95971dc722e9d804607d212f86245713f8ff81fefbca4758bac57cd90",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_36b/StdDateFormatGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-36-Reevaluation-s0-f579486d45d1"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 74.08,
+  "branch_cov": 60.31,
+  "test_file": "NumberUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testLang747",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsNegative",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexExactly8Digits",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot"
+  ],
+  "suite_sha256": "47894152a9447a7db7d4c089def139509536ccf2f9482b93440ba31f08de1715",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_1b/NumberUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-1-Reevaluation-s0-87f11725d7a0"
+}

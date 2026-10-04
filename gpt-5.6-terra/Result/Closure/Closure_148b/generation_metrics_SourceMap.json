@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 14:50:57",
+  "project": "Closure",
+  "bug_id": 148,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.SourceMap",
+  "token_slot": 8,
+  "metrics": {
+    "generation_time_seconds": 47.55,
+    "input_tokens": 5594,
+    "output_tokens": 4649,
+    "reasoning_tokens": 3141,
+    "total_tokens": 13384,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 8,
+    "used": 45959,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 354041
+  }
+}

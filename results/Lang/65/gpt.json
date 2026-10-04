@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 98.41,
+  "branch_cov": 96.81,
+  "test_file": "DateUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.time.DateUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.DateUtilsGptTest::testTruncateLang59",
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundAndTruncate_AmPm"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundAndTruncate_AmPm"
+  ],
+  "suite_sha256": "7e6f071a2d166246617e60bee37d5380e6fc44aacd4be999dbc6b83e1cf50275",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_65b/DateUtilsGptTest.java"
+  ],
+  "run_id": "Lang-65-Reevaluation-s0-b6da682bc200"
+}

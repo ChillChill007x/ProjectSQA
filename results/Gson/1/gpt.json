@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "TypeInfoFactoryGptTest.java",
+  "target_classes": "com.google.gson.TypeInfoFactory",
+  "buggy_failures": [
+    "com.google.gson.TypeInfoFactoryGptTest::testGetTypeInfoForField_SubclassInheritedTypeVariable_GSON40",
+    "com.google.gson.TypeInfoFactoryGptTest::testExtractRealTypes_NullArray_ThrowsNullPointerException"
+  ],
+  "fixed_failures": [
+    "com.google.gson.TypeInfoFactoryGptTest::testExtractRealTypes_NullArray_ThrowsNullPointerException"
+  ],
+  "suite_sha256": "c77ac3754a8a37f9738fd27c6782d405d49e7209e984a2f5a418c8b6dbdc1e12",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_1b/TypeInfoFactoryGptTest.java"
+  ],
+  "run_id": "Gson-1-Reevaluation-s0-a51529b01153"
+}

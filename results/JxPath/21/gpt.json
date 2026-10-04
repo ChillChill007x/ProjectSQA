@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 94.47,
+  "branch_cov": 87.83,
+  "test_file": "PropertyPointerGptTest.java",
+  "target_classes": "org.apache.commons.jxpath.ri.model.beans.PropertyPointer",
+  "buggy_failures": [
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testCreateChildWithAndWithoutQName",
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testGetLengthWhenBaseValueIsNullDefect",
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testNullPropertyIterationDefect",
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testCreatePathUsingAbstractFactorySuccess"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testCreateChildWithAndWithoutQName",
+    "org.apache.commons.jxpath.ri.model.beans.PropertyPointerGptTest::testCreatePathUsingAbstractFactorySuccess"
+  ],
+  "suite_sha256": "e57c75008e79ded50503e26ba579361b39d7ca72f4746ab35daa13c9f9068233",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JxPath_21b/PropertyPointerGptTest.java"
+  ],
+  "run_id": "JxPath-21-Reevaluation-s0-5464f28c2711"
+}

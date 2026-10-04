@@ -1,0 +1,31 @@
+{
+  "project": "Chart",
+  "bug_id": 16,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Chart-16-gpt-1790351909",
+  "suite_sha256": "8b74b76dad6b83cc4718d1b71b1c8a4fbcda1ea341399b36253fa7a7bbc0e129",
+  "test_files": "DefaultIntervalCategoryDatasetGptTest.java",
+  "target_classes": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+  "timestamp": "2026-10-03 22:58:53",
+  "evaluation_duration_sec": 24.122,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 97.87,
+  "branch_coverage_percent": 93.75,
+  "failures_count": 9,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetGetColumnIndexDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetGetRowIndexDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testNullStartsOrEnds",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetCloneDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetRowCountDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetGetSeriesIndexDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetGetCategoryIndexDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetColumnCountDefect",
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testEmptyDatasetSetCategoryKeysDefect"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.category.DefaultIntervalCategoryDatasetGptTest::testNullStartsOrEnds"
+  ]
+}

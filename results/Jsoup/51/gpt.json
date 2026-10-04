@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 97.62,
+  "branch_cov": 88.51,
+  "test_file": "CharacterReaderGptTest.java",
+  "target_classes": "org.jsoup.parser.CharacterReader",
+  "buggy_failures": [
+    "org.jsoup.parser.CharacterReaderGptTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderGptTest::testSupportsNonAsciiLettersInTagNamesAndSequences",
+    "org.jsoup.parser.CharacterReaderGptTest::testEmptyReaderBehavior",
+    "org.jsoup.parser.CharacterReaderGptTest::testNonAsciiLetterThenDigitSequence",
+    "org.jsoup.parser.CharacterReaderGptTest::testExhaustionBoundaries"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.CharacterReaderGptTest::testContainsIgnoreCase",
+    "org.jsoup.parser.CharacterReaderGptTest::testSupportsNonAsciiLettersInTagNamesAndSequences",
+    "org.jsoup.parser.CharacterReaderGptTest::testEmptyReaderBehavior",
+    "org.jsoup.parser.CharacterReaderGptTest::testNonAsciiLetterThenDigitSequence",
+    "org.jsoup.parser.CharacterReaderGptTest::testExhaustionBoundaries"
+  ],
+  "suite_sha256": "92ad2c664b42940162b4ae9056bb81ad8d96c55755cf88de828a6914ba0c09b8",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_51b/CharacterReaderGptTest.java"
+  ],
+  "run_id": "Jsoup-51-Reevaluation-s0-467b6389d404"
+}

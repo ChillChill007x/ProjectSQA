@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 94.63,
+  "branch_cov": 89.12,
+  "test_file": "GenericMetadataSupportGptTest.java",
+  "target_classes": "org.mockito.internal.util.reflection.GenericMetadataSupport",
+  "buggy_failures": [
+    "org.mockito.internal.util.reflection.GenericMetadataSupportGptTest::testTypeVariable_of_self_type_RegressionDefect",
+    "org.mockito.internal.util.reflection.GenericMetadataSupportGptTest::testTypeVarBoundedType_Contract"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.util.reflection.GenericMetadataSupportGptTest::testTypeVarBoundedType_Contract"
+  ],
+  "suite_sha256": "0fd21cf4a509efff7daa77dddaded2127360bdb89ee9785589438d3b1136b046",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_8b/GenericMetadataSupportGptTest.java"
+  ],
+  "run_id": "Mockito-8-Reevaluation-s0-05500deb8e43"
+}

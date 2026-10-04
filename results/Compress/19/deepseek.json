@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 92.99,
+  "test_file": "Zip64ExtendedInformationExtraFieldDeepseekTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataWithExcessData",
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataExcessDataDifferentFlags",
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataNullRawData"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataWithExcessData",
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataExcessDataDifferentFlags",
+    "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldDeepseekTest::testReparseCentralDirectoryDataNullRawData"
+  ],
+  "suite_sha256": "372c5703c5b36c01308dd85f5eef7ba2f5ef823d75a9a5a483530aa1ef98f921",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Compress_19b/Zip64ExtendedInformationExtraFieldDeepseekTest.java"
+  ],
+  "run_id": "Compress-19-Reevaluation-s0-9424e6e9b456"
+}

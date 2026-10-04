@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 98.5,
+  "test_file": "BooleanUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.BooleanUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.BooleanUtilsGptTest::testToBoolean_String_DefectTrigger_Length3StartsWithT"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "4d78f9754d0fb912e97087c3880498405dff3078b04699145fd39d5938a3c74c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_51b/BooleanUtilsGptTest.java"
+  ],
+  "run_id": "Lang-51-Reevaluation-s0-87b232d3cb74"
+}

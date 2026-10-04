@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 96.92,
+  "branch_cov": 87.08,
+  "test_file": "$Gson$TypesGptTest.java",
+  "target_classes": "com.google.gson.internal.$Gson$Types",
+  "buggy_failures": [
+    "com.google.gson.internal.$Gson$TypesGptTest::testIssue1107_WildcardSupertypeResolutionDirect",
+    "com.google.gson.internal.$Gson$TypesGptTest::testIssue1107_WildcardCollectionElementTypeResolution"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "5b611004458a49ee6338831ef043626b4acb9e453c1e38fdb16cde8f6ef0d172",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_18b/$Gson$TypesGptTest.java"
+  ],
+  "run_id": "Gson-18-Reevaluation-s0-97c628757a0a"
+}

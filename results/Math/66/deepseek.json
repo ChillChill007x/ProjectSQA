@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 99.22,
+  "branch_cov": 97.1,
+  "test_file": "BrentOptimizerDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testQuinticMin",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testQuinticMinStatistics",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testMaximizeQuadratic",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testParabolicInterpolationBranch",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testSinMin",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testClearResult"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testQuinticMin",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testDefaultSettings",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testQuinticMinStatistics",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testMaximizeQuadratic",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testParabolicInterpolationBranch",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerDeepseekTest::testSinMin"
+  ],
+  "suite_sha256": "84d102abe19eabecf20511ba1beddfda031671b592209813900e723de28b36cd",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_66b/BrentOptimizerDeepseekTest.java"
+  ],
+  "run_id": "Math-66-Reevaluation-s0-49957e0eae76"
+}

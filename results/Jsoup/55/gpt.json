@@ -1,0 +1,42 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 13,
+  "line_cov": 71.67,
+  "branch_cov": 64.45,
+  "test_file": "TokeniserStateGptTest.java",
+  "target_classes": "org.jsoup.parser.TokeniserState",
+  "buggy_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testBeforeAttributeNameSpecialChars",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTState",
+    "org.jsoup.parser.TokeniserStateGptTest::testBeforeAttributeValueSpecialChars",
+    "org.jsoup.parser.TokeniserStateGptTest::testTagOpenStates",
+    "org.jsoup.parser.TokeniserStateGptTest::testSelfClosingStartTagPreservesAttributeNameCharacter",
+    "org.jsoup.parser.TokeniserStateGptTest::testSelfClosingStartTagMultipleSlashesAndAttributes",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedDashDashBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicAndNullChar",
+    "org.jsoup.parser.TokeniserStateGptTest::testEndTagOpenVariants",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSection",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapeStartDashBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterAttributeNameBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testRawtextState"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testBeforeAttributeNameSpecialChars",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTState",
+    "org.jsoup.parser.TokeniserStateGptTest::testBeforeAttributeValueSpecialChars",
+    "org.jsoup.parser.TokeniserStateGptTest::testTagOpenStates",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedDashDashBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicAndNullChar",
+    "org.jsoup.parser.TokeniserStateGptTest::testEndTagOpenVariants",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSection",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapeStartDashBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterAttributeNameBranches",
+    "org.jsoup.parser.TokeniserStateGptTest::testRawtextState"
+  ],
+  "suite_sha256": "e1105848e56b2f34a748348d475c311488cb7b59464094229eceff75befd7e40",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_55b/TokeniserStateGptTest.java"
+  ],
+  "run_id": "Jsoup-55-Reevaluation-s0-1bd0e9aab2c0"
+}

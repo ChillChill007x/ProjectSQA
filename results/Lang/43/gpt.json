@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 94.87,
+  "branch_cov": 85.61,
+  "test_file": "ExtendedMessageFormatGptTest.java",
+  "target_classes": "org.apache.commons.lang.text.ExtendedMessageFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testUnterminatedFormatElementAtStart",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testCustomFormatWithWhitespace",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testRegistryWithNullFormatReturned",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testEqualsAndHashCodeContract",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testEscapedQuoteWithFormatElement",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testEscapedQuote_LANG_477",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testUnterminatedQuotedString",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testFormatDescriptionWithQuotedSection"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testUnterminatedFormatElementAtStart",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testCustomFormatWithWhitespace",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testRegistryWithNullFormatReturned",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testEqualsAndHashCodeContract",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testEscapedQuote_LANG_477",
+    "org.apache.commons.lang.text.ExtendedMessageFormatGptTest::testFormatDescriptionWithQuotedSection"
+  ],
+  "suite_sha256": "3721f27dd94a1d388480200e67263bc9f02363bc67894e36aa35c0b8ebe113eb",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_43b/ExtendedMessageFormatGptTest.java"
+  ],
+  "run_id": "Lang-43-Reevaluation-s0-6cb1c30d7ffc"
+}

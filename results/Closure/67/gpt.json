@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 98.16,
+  "branch_cov": 89.63,
+  "test_file": "AnalyzePrototypePropertiesGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.AnalyzePrototypeProperties",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.AnalyzePrototypePropertiesGptTest::testGlobalFunctionAstRemoval_SingleChildVar"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.AnalyzePrototypePropertiesGptTest::testGlobalFunctionAstRemoval_SingleChildVar"
+  ],
+  "suite_sha256": "1aebe0de53017f8a68a5dee48a39e69a9a731fd47cc2be326f271a1ae9393a34",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_67b/AnalyzePrototypePropertiesGptTest.java"
+  ],
+  "run_id": "Closure-67-Reevaluation-s0-ed70630b6b83"
+}

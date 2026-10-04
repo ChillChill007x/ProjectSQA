@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 94.05,
+  "branch_cov": 90.5,
+  "test_file": "AttributeGptTest.java",
+  "target_classes": "org.jsoup.nodes.Attribute",
+  "buggy_failures": [
+    "org.jsoup.nodes.AttributeGptTest::validatesKeysNotEmptyWithMultipleWhitespaces",
+    "org.jsoup.nodes.AttributeGptTest::validatesKeysNotEmpty",
+    "org.jsoup.nodes.AttributeGptTest::testSetValueWithParentWhenKeyNotFound"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.AttributeGptTest::testSetValueWithParentWhenKeyNotFound"
+  ],
+  "suite_sha256": "e31626afbf9807539a8e5aefdb12e4a5b954be58d530362f940d149883fae788",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_85b/AttributeGptTest.java"
+  ],
+  "run_id": "Jsoup-85-Reevaluation-s0-25f537db5432"
+}

@@ -1,0 +1,39 @@
+{
+  "project": "Closure",
+  "bug_id": 23,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Closure-23-gpt-1790355672",
+  "suite_sha256": "80b2f1228f44f1149bc07e3e17628c4603c1d4e2c46fc9c6f69c7f27dc4bd00b",
+  "test_files": "PeepholeFoldConstantsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.PeepholeFoldConstants",
+  "timestamp": "2026-10-03 00:01:45",
+  "evaluation_duration_sec": 33.839,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 80.43,
+  "branch_coverage_percent": 67.03,
+  "failures_count": 11,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignFoldingLateMode",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldCtorCall",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldObjectPropertyAccess",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldGetElemIndexNonZero",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testBitwiseNotBoundaries",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldGetElemDefectIndexZero",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testComparisonsBoundaries",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignUnfoldingEarlyMode",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignmentTargetGuards",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldGetElemEmptySlot",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldGetElemOutOfBoundsTooLarge"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignFoldingLateMode",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldCtorCall",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldObjectPropertyAccess",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testBitwiseNotBoundaries",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testComparisonsBoundaries",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignUnfoldingEarlyMode",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testAssignmentTargetGuards"
+  ]
+}

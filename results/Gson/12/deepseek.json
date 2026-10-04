@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 9,
+  "line_cov": 93.8,
+  "branch_cov": 86.29,
+  "test_file": "JsonTreeReaderDeepseekTest.java",
+  "target_classes": "com.google.gson.internal.bind.JsonTreeReader",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValueOnEmptyObjectDirectly",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValueOnNestedObject",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValueOnFilledObjectAfterBegin",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_emptyArray",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testLargeNestingToTriggerStackResize",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_filledJsonObject",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testPathSimple",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testHasNext",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_emptyJsonObject"
+  ],
+  "fixed_failures": [
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValueOnNestedObject",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValueOnFilledObjectAfterBegin",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_emptyArray",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testLargeNestingToTriggerStackResize",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_filledJsonObject",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testPathSimple",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testHasNext",
+    "com.google.gson.internal.bind.JsonTreeReaderDeepseekTest::testSkipValue_emptyJsonObject"
+  ],
+  "suite_sha256": "fc8d49ab63742aa574c34d77597576dc17b0b66cde0a12c8968b923f8dd351fd",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Gson_12b/JsonTreeReaderDeepseekTest.java"
+  ],
+  "run_id": "Gson-12-Reevaluation-s0-4e3e7b64f15a"
+}

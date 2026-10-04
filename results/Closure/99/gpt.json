@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 94.54,
+  "test_file": "CheckGlobalThisGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CheckGlobalThis",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testPropertyOfMethod",
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testDirectCallbackVisitWithNonThisNode",
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testMethod4",
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testInterface1"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testDirectCallbackVisitWithNonThisNode"
+  ],
+  "suite_sha256": "ddf7bfd403decaabe69477e68352904db837f547fe4b720237486c77771c98dc",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_99b/CheckGlobalThisGptTest.java"
+  ],
+  "run_id": "Closure-99-Reevaluation-s0-12d0a8d01609"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:12:12",
+  "project": "Math",
+  "bug_id": 98,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.BigMatrixImpl",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 91.41,
+    "input_tokens": 13819,
+    "output_tokens": 6623,
+    "reasoning_tokens": null,
+    "total_tokens": 20442,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 1004015,
+    "limit": 1000000,
+    "remaining": -4015
+  }
+}

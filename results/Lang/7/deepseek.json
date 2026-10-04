@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 86.3,
+  "branch_cov": 74.93,
+  "test_file": "NumberUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberAllZeros",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingPlus",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberDoubleMinus",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberValidWithExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberValidBigDecimal"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberAllZeros",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingPlus",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberValidWithExponent",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberValidBigDecimal"
+  ],
+  "suite_sha256": "674f20b473a43dfa77d770e9bb9ae67bf824cddce54809eaf0af569815087524",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_7b/NumberUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-7-Reevaluation-s0-d0cfb4a1ba42"
+}

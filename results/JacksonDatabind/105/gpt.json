@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "JdkDeserializersGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.JdkDeserializers",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.JdkDeserializersGptTest::testDefectVoidClassDeserializerMappedToNullifying",
+    "com.fasterxml.jackson.databind.deser.std.JdkDeserializersGptTest::testKnownClassNameWithCrossMatchedRawType"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.std.JdkDeserializersGptTest::testKnownClassNameWithCrossMatchedRawType"
+  ],
+  "suite_sha256": "91917950bbd955d59a2d31fa72b4b7c542cba7ebc71d1344884404f2664a256c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_105b/JdkDeserializersGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-105-Reevaluation-s0-80f8484ee64b"
+}

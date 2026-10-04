@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.29,
+  "branch_cov": 98.54,
+  "test_file": "MathUtilsGptTest.java",
+  "target_classes": "org.apache.commons.math.util.MathUtils",
+  "buggy_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testNormalizeAngle",
+    "org.apache.commons.math.util.MathUtilsGptTest::testFactorialDoubleDefectAt17",
+    "org.apache.commons.math.util.MathUtilsGptTest::testNextAfter"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testNormalizeAngle",
+    "org.apache.commons.math.util.MathUtilsGptTest::testNextAfter"
+  ],
+  "suite_sha256": "af3c60687322fad0019446d4f30cf026f725cbb10905f9828bea2ffac8041bca",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_93b/MathUtilsGptTest.java"
+  ],
+  "run_id": "Math-93-Reevaluation-s0-4a77b5468e1c"
+}

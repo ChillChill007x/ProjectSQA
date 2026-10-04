@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 11,
+  "line_cov": 77.61,
+  "branch_cov": 69.28,
+  "test_file": "TreeBuilderStateGptTest.java",
+  "target_classes": "org.jsoup.parser.TreeBuilderState",
+  "buggy_failures": [
+    "org.jsoup.parser.TreeBuilderStateGptTest::testAdoptionAgencyAlgorithmAnchorTags",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInHeadElementsHandling",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testHandles0CharacterInTable",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testFragmentParsingTdOrphan",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testHandles0CharacterInSelect",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInitialStateDoctypeQuirks",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testIsindexTagExpansion",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testHandles0CharacterAsText",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testTextareaXmpIframeNoembedRawTextTags",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInitialStateAndDoctypeTransitions",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testHandles0CharacterInTableFosterParenting"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TreeBuilderStateGptTest::testAdoptionAgencyAlgorithmAnchorTags",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInHeadElementsHandling",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testFragmentParsingTdOrphan",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInitialStateDoctypeQuirks",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testIsindexTagExpansion",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testTextareaXmpIframeNoembedRawTextTags",
+    "org.jsoup.parser.TreeBuilderStateGptTest::testInitialStateAndDoctypeTransitions"
+  ],
+  "suite_sha256": "876240d8378dc5e3d32193dba00a178aa571c7a257ad828dc262132c56359703",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_17b/TreeBuilderStateGptTest.java"
+  ],
+  "run_id": "Jsoup-17-Reevaluation-s0-fc035c09e391"
+}

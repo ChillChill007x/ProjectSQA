@@ -1,0 +1,33 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 91.07,
+  "branch_cov": 81.63,
+  "test_file": "UnreachableCodeEliminationGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.UnreachableCodeElimination",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testCascadedRemovalOfUnlessUnconditonalJumps",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testEmptyStatementHandling",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testDirectVisitNodeNotInCurCfg",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testRedeclareVarsInUnreachableBranch",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testScopeStackPushPopIntegrity",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testEmptyBlockHandling",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testUnreachableDoLoopPreserved"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testUnreachableCodeAfterReturn",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testEmptyStatementHandling",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testDirectVisitNodeNotInCurCfg",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testRedeclareVarsInUnreachableBranch",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testScopeStackPushPopIntegrity",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testFineLoggerLoggingPath",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testEmptyBlockHandling",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationGptTest::testUnreachableDoLoopPreserved"
+  ],
+  "suite_sha256": "2ba552e884e906660983aa8a316682e16eed52240cf9448235c18046432d888b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_85b/UnreachableCodeEliminationGptTest.java"
+  ],
+  "run_id": "Closure-85-Reevaluation-s0-8a8bf85913a9"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ValuedEnumGptTest.java",
+  "target_classes": "org.apache.commons.lang.enums.ValuedEnum",
+  "buggy_failures": [
+    "org.apache.commons.lang.enums.ValuedEnumGptTest::testCompareTo_otherEnumType",
+    "org.apache.commons.lang.enums.ValuedEnumGptTest::testCompareTo_otherEnumTypeDifferentValues"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9d16d3e3c46db6e5c65b0a1825392a10f9a53764bdbaabf1e486c958a7b42617",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_64b/ValuedEnumGptTest.java"
+  ],
+  "run_id": "Lang-64-Reevaluation-s0-e1963f0c56cb"
+}

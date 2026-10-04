@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 88.04,
+  "branch_cov": 78.01,
+  "test_file": "TarArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testInvalidHeaderThrowsWrappedIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testAvailableBoundaryIntegerMax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersAllStandardFields",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::shouldReadBigGid",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::shouldReadBigUid",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedArchiveDuringEntryRead"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testInvalidHeaderThrowsWrappedIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testAvailableBoundaryIntegerMax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersAllStandardFields",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedArchiveDuringEntryRead"
+  ],
+  "suite_sha256": "428054f5d3f874d545c2f079527c46f1c53efb52920fd43626431818e8ee539e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_32b/TarArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-32-Reevaluation-s0-31c947c607a8"
+}

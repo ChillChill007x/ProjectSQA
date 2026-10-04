@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 98.85,
+  "branch_cov": 100.0,
+  "test_file": "SimpleTypeGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.type.SimpleType",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.type.SimpleTypeGptTest::testObjectIdOnMapSubtypeDefect1083Exact",
+    "com.fasterxml.jackson.databind.type.SimpleTypeGptTest::testObjectIdOnMapSubtypeDefect1083WithAdditionalMapEntries"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.type.SimpleTypeGptTest::testObjectIdOnMapSubtypeDefect1083Exact",
+    "com.fasterxml.jackson.databind.type.SimpleTypeGptTest::testObjectIdOnMapSubtypeDefect1083WithAdditionalMapEntries"
+  ],
+  "suite_sha256": "6f60e3f442136f25a388e25110b92dbce7f8649e2d8b8809f669d24374dbf275",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_37b/SimpleTypeGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-37-Reevaluation-s0-ecc7957ffc01"
+}

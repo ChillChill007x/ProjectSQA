@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 100.0,
+  "branch_cov": 97.17,
+  "test_file": "TarArchiveOutputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCloseIdempotency",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCustomBlockAndRecordSizes",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCloseWithoutCloseArchiveEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testFinishWithoutCloseArchiveEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testWriteExceedingDeclaredSizeAcrossMultipleWritesThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testFinishWritesTwoZeroRecords"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCloseIdempotency",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCustomBlockAndRecordSizes",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testWriteExceedingDeclaredSizeThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testCloseArchiveEntryBeforeSpecifiedBytesWrittenThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testWriteExceedingDeclaredSizeAcrossMultipleWritesThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamGptTest::testFinishWritesTwoZeroRecords"
+  ],
+  "suite_sha256": "87ad5472d00a9efa3b8e01d8e309c1db19c205cb371a36c7552a91356403ae8e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_3b/TarArchiveOutputStreamGptTest.java"
+  ],
+  "run_id": "Compress-3-Reevaluation-s0-22d150cf7c72"
+}

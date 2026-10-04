@@ -1,0 +1,30 @@
+{
+  "project": "Jsoup",
+  "bug_id": 37,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-37-gpt-1790380323",
+  "suite_sha256": "c97834a0b732097a56b345b8909b2d63bee3346d5ead157ca0825ce7b192fda2",
+  "test_files": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "timestamp": "2026-10-03 06:52:19",
+  "evaluation_duration_sec": 15.8,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 88.93,
+  "branch_coverage_percent": 82.89,
+  "failures_count": 5,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testPreserveWhitespaceInText",
+    "org.jsoup.nodes.ElementGptTest::testElementSelectionMethods",
+    "org.jsoup.nodes.ElementGptTest::testAppendAndPrependHtml",
+    "org.jsoup.nodes.ElementGptTest::testNotPretty",
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnTextExtraction"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testPreserveWhitespaceInText",
+    "org.jsoup.nodes.ElementGptTest::testElementSelectionMethods",
+    "org.jsoup.nodes.ElementGptTest::testAppendAndPrependHtml",
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnTextExtraction"
+  ]
+}

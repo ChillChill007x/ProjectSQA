@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "OptionGroupGptTest.java",
+  "target_classes": "org.apache.commons.cli.OptionGroup",
+  "buggy_failures": [
+    "org.apache.commons.cli.OptionGroupGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.OptionGroupGptTest"
+  ],
+  "suite_sha256": "5bfff75dc02d72e80a19018a3501e62c2e584b8ae880172b58eba67f29751001",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_27b/OptionGroupGptTest.java"
+  ],
+  "run_id": "Cli-27-Reevaluation-s0-9bb46670a8b6"
+}

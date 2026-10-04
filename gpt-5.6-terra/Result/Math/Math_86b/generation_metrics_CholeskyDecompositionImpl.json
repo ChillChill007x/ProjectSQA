@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:54:09",
+  "project": "Math",
+  "bug_id": 86,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.CholeskyDecompositionImpl",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 76.13,
+    "input_tokens": 4240,
+    "output_tokens": 5243,
+    "reasoning_tokens": 6565,
+    "total_tokens": 16048,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 294254,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 105746
+  }
+}

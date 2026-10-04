@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 21:38:22",
+  "project": "Collections",
+  "bug_id": 6,
+  "version": "b",
+  "target_class": "org.apache.commons.collections.map.Flat3Map",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 96.73,
+    "input_tokens": 9354,
+    "output_tokens": 7370,
+    "reasoning_tokens": 11448,
+    "total_tokens": 28172,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 200997,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 199003
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 02:25:10",
+  "project": "Codec",
+  "bug_id": 14,
+  "version": "b",
+  "target_class": "org.apache.commons.codec.language.bm.Lang",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 2238.72,
+    "input_tokens": 0,
+    "output_tokens": 53192,
+    "reasoning_tokens": null,
+    "total_tokens": 53192,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": null
+}

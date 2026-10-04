@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 99.3,
+  "branch_cov": 92.71,
+  "test_file": "Base64GptTest.java",
+  "target_classes": "org.apache.commons.codec.binary.Base64",
+  "buggy_failures": [
+    "org.apache.commons.codec.binary.Base64GptTest::testChunkedEncodingAndLineBreakBehavior",
+    "org.apache.commons.codec.binary.Base64GptTest::testCodec112",
+    "org.apache.commons.codec.binary.Base64GptTest::testEncodeWhenAlreadyEof"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.codec.binary.Base64GptTest::testChunkedEncodingAndLineBreakBehavior",
+    "org.apache.commons.codec.binary.Base64GptTest::testEncodeWhenAlreadyEof"
+  ],
+  "suite_sha256": "6905a3a66612484812d92ca6950c786493e457f39ce85dbb01e6c90629f1e85e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_9b/Base64GptTest.java"
+  ],
+  "run_id": "Codec-9-Reevaluation-s0-1ac90dcb26a6"
+}

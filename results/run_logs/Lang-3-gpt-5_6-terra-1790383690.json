@@ -1,0 +1,24 @@
+{
+  "project": "Lang",
+  "bug_id": 3,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-3-gpt-1790383690",
+  "suite_sha256": "134947feb65a846668634e2a89b2cae5b32cf7a3b5d3ab4ab6603eae465264cf",
+  "test_files": "NumberUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "timestamp": "2026-10-03 07:48:31",
+  "evaluation_duration_sec": 20.955,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 89.01,
+  "branch_coverage_percent": 70.36,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testStringCreateNumberEnsureNoPrecisionLoss"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testIsNumber"
+  ]
+}

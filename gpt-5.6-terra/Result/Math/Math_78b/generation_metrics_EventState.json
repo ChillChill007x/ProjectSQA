@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:45:15",
+  "project": "Math",
+  "bug_id": 78,
+  "version": "b",
+  "target_class": "org.apache.commons.math.ode.events.EventState",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 437.78,
+    "input_tokens": 3867,
+    "output_tokens": 7661,
+    "reasoning_tokens": 16715,
+    "total_tokens": 28243,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 28243,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 371757
+  }
+}

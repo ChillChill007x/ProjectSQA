@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "CharSequenceTranslatorGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.translate.CharSequenceTranslatorGptTest::testEscapeSurrogatePairsDefectWithCustomTranslator"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "d83438624f657327616441fc9c256c66daad8c1b4a50f2c35c2329d40647f1e3",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_6b/CharSequenceTranslatorGptTest.java"
+  ],
+  "run_id": "Lang-6-Reevaluation-s0-f909b2c7418c"
+}

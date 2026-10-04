@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 01:09:55",
+  "project": "Math",
+  "bug_id": 17,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.dfp.Dfp",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 122.93,
+    "input_tokens": 22864,
+    "output_tokens": 6436,
+    "reasoning_tokens": 13855,
+    "total_tokens": 43155,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 245053,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 154947
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 97.48,
+  "branch_cov": 96.4,
+  "test_file": "JsonMappingExceptionGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.JsonMappingException",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testReferenceChainForInnerClassInstance",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testJsonMappingExceptionSerialization",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testReferenceChainForDeepInnerClass",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testReferenceChainForInnerClass",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testDeprecatedConstructors",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testNullOrEmptyMessageBuild",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testCloseableProcessorConstructorsAndFactories"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testJsonMappingExceptionSerialization",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testDeprecatedConstructors",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testNullOrEmptyMessageBuild",
+    "com.fasterxml.jackson.databind.JsonMappingExceptionGptTest::testCloseableProcessorConstructorsAndFactories"
+  ],
+  "suite_sha256": "4d9e9e36272bc8a9c1df33b4c1cb8df15b597c809d0f37619fa483cc2f7e7414",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_63b/JsonMappingExceptionGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-63-Reevaluation-s0-e526c952b196"
+}

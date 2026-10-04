@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 17:43:29",
+  "project": "Math",
+  "bug_id": 23,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optimization.univariate.BrentOptimizer",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 528.11,
+    "input_tokens": 3378,
+    "output_tokens": 22550,
+    "reasoning_tokens": null,
+    "total_tokens": 25928,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 510385,
+    "limit": 1000000,
+    "remaining": 489615
+  }
+}

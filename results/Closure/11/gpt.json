@@ -1,0 +1,46 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 14,
+  "line_cov": 82.26,
+  "branch_cov": 64.75,
+  "test_file": "TypeCheckGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.TypeCheck",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testGetprop4",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIncDecOperatorMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBitwiseOperationsMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testNoTypeCheckSection",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBinaryBitwiseOperatorsMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testTypedPercentEmpty",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReportUnknownTypesSetting",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testSignOperatorMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testWithRequiresObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIssue810",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testFunctionMasksVariable",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testExpectedThisTypeDiagnostic",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInOperatorRequiresObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testConstructorChainingAndReportMissingProperties"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.TypeCheckGptTest::testGetprop4",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIncDecOperatorMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBitwiseOperationsMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testNoTypeCheckSection",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testBinaryBitwiseOperatorsMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testTypedPercentEmpty",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testReportUnknownTypesSetting",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testSignOperatorMismatch",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testWithRequiresObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testIssue810",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testFunctionMasksVariable",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testExpectedThisTypeDiagnostic",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testInOperatorRequiresObject",
+    "com.google.javascript.jscomp.TypeCheckGptTest::testConstructorChainingAndReportMissingProperties"
+  ],
+  "suite_sha256": "91ee11e1f862a2606da8685e98f5c0c4ca73847ce64bc17153cafc3f45f6ea8d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_11b/TypeCheckGptTest.java"
+  ],
+  "run_id": "Closure-11-Reevaluation-s0-4cd2da19a509"
+}

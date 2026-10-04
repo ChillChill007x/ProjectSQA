@@ -1,0 +1,25 @@
+{
+  "project": "Jsoup",
+  "bug_id": 57,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-57-gpt-1790381354",
+  "suite_sha256": "d614186981caac8545fad77e6558b7aa05f24d7d6f25efb27a12bdbcbec1be28",
+  "test_files": "AttributesGptTest.java",
+  "target_classes": "org.jsoup.nodes.Attributes",
+  "timestamp": "2026-10-03 07:09:31",
+  "evaluation_duration_sec": 17.518,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 96.85,
+  "branch_coverage_percent": 97.37,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.AttributesGptTest::testChainedRemoveIgnoreCaseSequence",
+    "org.jsoup.nodes.AttributesGptTest::testDatasetIteratorRemoveIntegrity",
+    "org.jsoup.nodes.AttributesGptTest::testRemoveIgnoreCaseConcurrentModificationDefect"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.AttributesGptTest::testDatasetIteratorRemoveIntegrity"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 98.09,
+  "branch_cov": 100.0,
+  "test_file": "TypeHandlerDeepseekTest.java",
+  "target_classes": "org.apache.commons.cli.TypeHandler",
+  "buggy_failures": [
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testTypeHandlerConstructorIsPrivate",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateClassNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateFileNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithFileClassAndNullString",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateNumberNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithNullStringAndNumberClass",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testExistingFilePatternWithExistingFile",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testExistingFilePatternWithNonExistingFile",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueStringClassExistingFile",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithObjectClassAndNullString"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testTypeHandlerConstructorIsPrivate",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateClassNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateFileNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithFileClassAndNullString",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateNumberNull",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithNullStringAndNumberClass",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testExistingFilePatternWithNonExistingFile",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueStringClassExistingFile",
+    "org.apache.commons.cli.TypeHandlerDeepseekTest::testCreateValueWithObjectClassAndNullString"
+  ],
+  "suite_sha256": "291af84a686051b085b6b779c4ffa2f486ecd8ba9fe7cc3d945913d05b4b39a3",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Cli_39b/TypeHandlerDeepseekTest.java"
+  ],
+  "run_id": "Cli-39-Reevaluation-s0-1533e2f22899"
+}

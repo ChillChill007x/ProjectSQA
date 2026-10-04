@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "CaverphoneGptTest.java",
+  "target_classes": "org.apache.commons.codec.language.Caverphone",
+  "buggy_failures": [
+    "org.apache.commons.codec.language.CaverphoneGptTest::testEncodeValidStringAsObject",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testGhAndWHLRules",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testCoreEncodingExamples",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testSpecialPrefixReplacements",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testPhoneticRulesCoverage",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testVowelAndYRules",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testEndMbDefect",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testEndMbWord"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.codec.language.CaverphoneGptTest::testEncodeValidStringAsObject",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testGhAndWHLRules",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testCoreEncodingExamples",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testSpecialPrefixReplacements",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testPhoneticRulesCoverage",
+    "org.apache.commons.codec.language.CaverphoneGptTest::testVowelAndYRules"
+  ],
+  "suite_sha256": "e5c8d439d914a14bf47957a37b3ecd9a68fd05c7c27e55e5c15d82dcdc2b486d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_10b/CaverphoneGptTest.java"
+  ],
+  "run_id": "Codec-10-Reevaluation-s0-6b1c7ff4a629"
+}

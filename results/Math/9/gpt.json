@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 98.32,
+  "branch_cov": 100.0,
+  "test_file": "LineGptTest.java",
+  "target_classes": "org.apache.commons.math3.geometry.euclidean.threed.Line",
+  "buggy_failures": [
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testRevertPointConsistency",
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testWholeLine",
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testLargeCoordinatesStability",
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testRevert"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testWholeLine",
+    "org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testLargeCoordinatesStability"
+  ],
+  "suite_sha256": "6e96a0d355abe845cc18c6a3dc612a64ce02d2fa6e9b562324d592a7871e2cc5",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_9b/LineGptTest.java"
+  ],
+  "run_id": "Math-9-Reevaluation-s0-bf59e99daa9b",
+  "coverage_error": ""
+}

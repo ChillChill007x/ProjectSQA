@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:27:32",
+  "project": "Math",
+  "bug_id": 106,
+  "version": "b",
+  "target_class": "org.apache.commons.math.fraction.ProperFractionFormat",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 42.62,
+    "input_tokens": 2517,
+    "output_tokens": 3347,
+    "reasoning_tokens": null,
+    "total_tokens": 5864,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 101177,
+    "limit": 1000000,
+    "remaining": 898823
+  }
+}

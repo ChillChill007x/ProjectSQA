@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 96.89,
+  "branch_cov": 90.02,
+  "test_file": "NumberInputGptTest.java;TextBufferGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.io.NumberInput;com.fasterxml.jackson.core.util.TextBuffer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.io.NumberInputGptTest::testParseBigDecimal_NaN_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.io.NumberInputGptTest::testParseBigDecimal_Infinities_DescriptiveMessage_Issue98",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testManualSegmentManipulation",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testContentsAsDecimal_NegativeInfinity_DescriptiveMessage",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testInitializationAndReleaseWithRecycler",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testContentsAsDecimal_Infinity_DescriptiveMessage",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testContentsAsDecimal_NaN_DescriptiveMessage_Issue98"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testManualSegmentManipulation",
+    "com.fasterxml.jackson.core.util.TextBufferGptTest::testInitializationAndReleaseWithRecycler"
+  ],
+  "suite_sha256": "bdffedf8e211d54236dbebb1565dc0bd2f331a2a96c1d56761cbf20be753473d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_1b/NumberInputGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_1b/TextBufferGptTest.java"
+  ],
+  "run_id": "JacksonCore-1-Reevaluation-s0-a28719fc9a48"
+}

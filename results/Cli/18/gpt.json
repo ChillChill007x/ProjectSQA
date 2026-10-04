@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "PosixParserGptTest.java",
+  "target_classes": "org.apache.commons.cli.PosixParser",
+  "buggy_failures": [
+    "org.apache.commons.cli.PosixParserGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.PosixParserGptTest"
+  ],
+  "suite_sha256": "26c1e435f14bfd49c8a90ff7dee33cf747ef7b573fb3afd4cfae54e55b3ff860",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_18b/PosixParserGptTest.java"
+  ],
+  "run_id": "Cli-18-Reevaluation-s0-7cf9f39f7204"
+}

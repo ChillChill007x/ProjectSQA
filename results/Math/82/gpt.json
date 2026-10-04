@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 97.42,
+  "branch_cov": 95.6,
+  "test_file": "SimplexSolverGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.linear.SimplexSolver",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.linear.SimplexSolverGptTest::testTwoPhaseWithEqualityConstraint",
+    "org.apache.commons.math.optimization.linear.SimplexSolverGptTest::testNegativeVariablesAllowed"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.linear.SimplexSolverGptTest::testTwoPhaseWithEqualityConstraint",
+    "org.apache.commons.math.optimization.linear.SimplexSolverGptTest::testNegativeVariablesAllowed"
+  ],
+  "suite_sha256": "d25bd52291ec672d88a0a245872856c8b89158cb6bf25fb2752cfda2738237e4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_82b/SimplexSolverGptTest.java"
+  ],
+  "run_id": "Math-82-Reevaluation-s0-fbddd8a134ba"
+}

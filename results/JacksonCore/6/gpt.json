@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 94.9,
+  "test_file": "JsonPointerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.JsonPointer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.JsonPointerGptTest::testLeadingZeroVariants",
+    "com.fasterxml.jackson.core.JsonPointerGptTest::testIZeroIndex"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "e6184e4c85f42ce349ad10324e13102f64dae35dcd6777ac0c111e78bbc39d5c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_6b/JsonPointerGptTest.java"
+  ],
+  "run_id": "JacksonCore-6-Reevaluation-s0-c59347b68eed"
+}

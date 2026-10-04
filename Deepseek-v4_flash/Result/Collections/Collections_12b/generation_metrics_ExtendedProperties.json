@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 17:43:57",
+  "project": "Collections",
+  "bug_id": 12,
+  "version": "b",
+  "target_class": "org.apache.commons.collections.ExtendedProperties",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 1724.42,
+    "input_tokens": 14040,
+    "output_tokens": 65536,
+    "reasoning_tokens": null,
+    "total_tokens": 79576,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 618794,
+    "limit": 1000000,
+    "remaining": 381206
+  }
+}

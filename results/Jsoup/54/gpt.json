@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 95.64,
+  "branch_cov": 96.95,
+  "test_file": "W3CDomGptTest.java",
+  "target_classes": "org.jsoup.helper.W3CDom",
+  "buggy_failures": [
+    "org.jsoup.helper.W3CDomGptTest::testPrefixWithoutDeclaredNamespace",
+    "org.jsoup.helper.W3CDomGptTest::testHandlesInvalidAttributeNames",
+    "org.jsoup.helper.W3CDomGptTest::testHandlesEmptyAttributeNameAfterSanitization"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.W3CDomGptTest::testPrefixWithoutDeclaredNamespace"
+  ],
+  "suite_sha256": "5e023a11fb35c5059a3a193bb7789e7dc5c8f1bf823ccdc0291b805eb718925f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_54b/W3CDomGptTest.java"
+  ],
+  "run_id": "Jsoup-54-Reevaluation-s0-8cfbc9b14736"
+}

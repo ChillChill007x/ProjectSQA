@@ -1,0 +1,317 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-1-Reevaluation-s0-87f11725d7a0",
+  "unit": {
+    "project": "Lang",
+    "bug": "1",
+    "target": "org.apache.commons.lang3.math.NumberUtils",
+    "targets": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "metadata_targets": [
+      "org.apache.commons.lang3.math.NumberUtils"
+    ],
+    "excluded_non_java_targets": [],
+    "tool": "deepseek",
+    "round": "Reevaluation",
+    "seed": 0,
+    "budget_seconds": 0,
+    "generation_revision": "unknown",
+    "campaign_version": "existing-suites-2",
+    "protocol_version": "existing-suites-2",
+    "purpose": "imported-suite-evaluation",
+    "ai_mode": "imported",
+    "model": null,
+    "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+    "declared_models": [
+      "deepseek-v4-flash"
+    ],
+    "implementation_sha256": "eb83d891016f55350042e3fd406cbbb6a4f395ca77682eb53f252d736852c535",
+    "source_suite_path": "Deepseek-v4_flash/TestCode/Lang_1b",
+    "test_input_sha256": {
+      "Deepseek-v4_flash/TestCode/Lang_1b/NumberUtilsDeepseekTest.java": "059f949482beced09b028ae59f7b970b0f12ee218b538aa3efa117a51e52e974"
+    },
+    "prompt_input_sha256": {
+      "Deepseek-v4_flash/Prompt/Lang_1b/actual_prompt_NumberUtils.md": "8c7272bd662736b53c56f92f86dc47edfca3a3499e9c2020d7713fa323a4f32d"
+    },
+    "legacy_metric_sha256": {
+      "Deepseek-v4_flash/Result/Lang_1b/generation_metrics_NumberUtils.json": "6b6ea05486a00afb7f009888e01bba0deb312982d52b7b406cc63c86f8e725b2"
+    },
+    "explicit_ground_truth_in_saved_prompt": false
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-03T18:17:04.288486+00:00",
+  "paths": {
+    "result": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0",
+    "tests": "Deepseek-v4_flash/TestCode/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0",
+    "config": "Deepseek-v4_flash/Prompt/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0"
+  },
+  "ai_provenance": {
+    "mode": "imported",
+    "tool": "deepseek",
+    "model_requested": null,
+    "model_reported": null,
+    "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+    "declared_models": [
+      "deepseek-v4-flash"
+    ],
+    "generation_time_sec": null,
+    "total_tokens": null,
+    "api_calls": 0,
+    "note": "Original API generation logs unavailable; no generation values have been reconstructed.",
+    "explicit_ground_truth_in_saved_prompt": false
+  },
+  "generation_time_sec": null,
+  "test_sha256": {
+    "Deepseek-v4_flash/TestCode/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/NumberUtilsDeepseekTest.java": "059f949482beced09b028ae59f7b970b0f12ee218b538aa3efa117a51e52e974"
+  },
+  "generation_model_verified": false,
+  "evaluated_targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "excluded_non_java_targets": [],
+  "fixed": {
+    "junit": {
+      "run_count": 45,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 219,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberAllZeros",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex9Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToFloat",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToShort",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToDouble",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToInt",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberFloatQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateFloat",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexWithMinus0x",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBlank",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testLang747",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBigDecimalViaD",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testArrayMinMax",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberWhitespace",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexNegative",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexEmpty",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsDigits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleDots",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateBigDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsAllZeros",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexStandard",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumber",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberNull",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexInvalidChar",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateBigInteger",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateLong",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsNegative",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex7Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex16Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLongQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexExactly8Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToByte",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToLong",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateInteger",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBigIntegerViaL",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsMaxInt",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex17Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberDoubleQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateDouble"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected exception: java.lang.NumberFormatException",
+          "trace": "java.lang.AssertionError: Expected exception: java.lang.NumberFormatException\n\tat org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:34)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Double or Float",
+          "trace": "java.lang.AssertionError: Expected Double or Float\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberScientificWithoutDecimal(NumberUtilsDeepseekTest.java:187)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected exception: java.lang.NumberFormatException",
+          "trace": "java.lang.AssertionError: Expected exception: java.lang.NumberFormatException\n\tat org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:34)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Float or Double",
+          "trace": "java.lang.AssertionError: Expected Float or Double\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberScientific(NumberUtilsDeepseekTest.java:165)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Double",
+          "trace": "java.lang.AssertionError: Expected Double\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberTrailingDot(NumberUtilsDeepseekTest.java:275)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 257,
+      "line_total": 380,
+      "line_coverage_percent": 67.63157894736842,
+      "branch_covered": 185,
+      "branch_total": 350,
+      "branch_coverage_percent": 52.857142857142854
+    },
+    "coverage_by_target": {
+      "org.apache.commons.lang3.math.NumberUtils": {
+        "line_covered": 257,
+        "line_total": 380,
+        "line_coverage_percent": 67.63157894736842,
+        "branch_covered": 185,
+        "branch_total": 350,
+        "branch_coverage_percent": 52.857142857142854
+      }
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "revision_errors": {},
+  "buggy": {
+    "junit": {
+      "run_count": 45,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 252,
+      "tests": [
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberAllZeros",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex9Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToFloat",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToShort",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToDouble",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToInt",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberFloatQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateFloat",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexWithMinus0x",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBlank",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testLang747",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBigDecimalViaD",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testArrayMinMax",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberWhitespace",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexNegative",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexEmpty",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsDigits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleDots",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateBigDecimal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsAllZeros",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexStandard",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumber",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberNull",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexInvalidChar",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateBigInteger",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateLong",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsNegative",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex7Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex16Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLongQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexExactly8Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToByte",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testToLong",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateInteger",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberBigIntegerViaL",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsMaxInt",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHex17Digits",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberDoubleQualifier",
+        "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateDouble"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberMultipleSigns",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected exception: java.lang.NumberFormatException",
+          "trace": "java.lang.AssertionError: Expected exception: java.lang.NumberFormatException\n\tat org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:34)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testLang747",
+          "exception": "java.lang.NumberFormatException",
+          "message": "For input string: \"80000000\"",
+          "trace": "java.lang.NumberFormatException: For input string: \"80000000\"\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\n\tat java.base/java.lang.Integer.valueOf(Integer.java:957)\n\tat java.base/java.lang.Integer.decode(Integer.java:1436)\n\tat org.apache.commons.lang3.math.NumberUtils.createInteger(NumberUtils.java:684)\n\tat org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:474)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testLang747(NumberUtilsDeepseekTest.java:297)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientificWithoutDecimal",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Double or Float",
+          "trace": "java.lang.AssertionError: Expected Double or Float\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberScientificWithoutDecimal(NumberUtilsDeepseekTest.java:187)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testHex8DigitsNegative",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Long",
+          "trace": "java.lang.AssertionError: Expected Long\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testHex8DigitsNegative(NumberUtilsDeepseekTest.java:315)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberLeadingZerosAsOctal",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected exception: java.lang.NumberFormatException",
+          "trace": "java.lang.AssertionError: Expected exception: java.lang.NumberFormatException\n\tat org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:34)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberScientific",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Float or Double",
+          "trace": "java.lang.AssertionError: Expected Float or Double\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberScientific(NumberUtilsDeepseekTest.java:165)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberHexExactly8Digits",
+          "exception": "java.lang.NumberFormatException",
+          "message": "For input string: \"80000000\"",
+          "trace": "java.lang.NumberFormatException: For input string: \"80000000\"\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\n\tat java.base/java.lang.Integer.valueOf(Integer.java:957)\n\tat java.base/java.lang.Integer.decode(Integer.java:1436)\n\tat org.apache.commons.lang3.math.NumberUtils.createInteger(NumberUtils.java:684)\n\tat org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:474)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberHexExactly8Digits(NumberUtilsDeepseekTest.java:123)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumberTrailingDot",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected Double",
+          "trace": "java.lang.AssertionError: Expected Double\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.apache.commons.lang3.math.NumberUtilsDeepseekTest.testCreateNumberTrailingDot(NumberUtilsDeepseekTest.java:275)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 253,
+      "line_total": 375,
+      "line_coverage_percent": 67.46666666666667,
+      "branch_covered": 175,
+      "branch_total": 338,
+      "branch_coverage_percent": 51.77514792899408
+    },
+    "coverage_by_target": {
+      "org.apache.commons.lang3.math.NumberUtils": {
+        "line_covered": 253,
+        "line_total": 375,
+        "line_coverage_percent": 67.46666666666667,
+        "branch_covered": 175,
+        "branch_total": 338,
+        "branch_coverage_percent": 51.77514792899408
+      }
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747",
+    "available_triggers": [
+      "org.apache.commons.lang3.math.NumberUtilsTest::TestLang747"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-03T18:18:04.248597+00:00",
+  "evaluation_time_sec": 52.616
+}

@@ -1,0 +1,28 @@
+{
+  "project": "Compress",
+  "bug_id": 11,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-11-gpt-1790368056",
+  "suite_sha256": "628032fad169a91601edc60287ef664a833c10b69869c28d0a530356028d3679",
+  "test_files": "ArchiveStreamFactoryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.ArchiveStreamFactory",
+  "timestamp": "2026-10-03 03:27:52",
+  "evaluation_duration_sec": 15.916,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 92.75,
+  "branch_coverage_percent": 95.65,
+  "failures_count": 5,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamByNameAllFormats",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testAutoDetectEmptyStreamThrowsArchiveException",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testShortTextFilesAreNoTARs",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testArbitraryBinaryNonArchiveThrowsArchiveException",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamCaseInsensitive"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamByNameAllFormats",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryGptTest::testCreateArchiveInputStreamCaseInsensitive"
+  ]
+}

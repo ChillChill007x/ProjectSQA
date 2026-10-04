@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 08:39:03",
+  "project": "JacksonCore",
+  "bug_id": 24,
+  "version": "b",
+  "target_class": "com.fasterxml.jackson.core.base.ParserBase",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 144.3,
+    "input_tokens": 10664,
+    "output_tokens": 9562,
+    "reasoning_tokens": null,
+    "total_tokens": 20226,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 786547,
+    "limit": 1000000,
+    "remaining": 213453
+  }
+}

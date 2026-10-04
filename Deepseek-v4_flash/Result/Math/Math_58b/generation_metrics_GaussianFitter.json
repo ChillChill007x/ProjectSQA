@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:00:58",
+  "project": "Math",
+  "bug_id": 58,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.fitting.GaussianFitter",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 146.54,
+    "input_tokens": 3989,
+    "output_tokens": 11461,
+    "reasoning_tokens": null,
+    "total_tokens": 15450,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 123543,
+    "limit": 1000000,
+    "remaining": 876457
+  }
+}

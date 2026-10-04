@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 28.46,
+  "branch_cov": 22.63,
+  "test_file": "BeanDeserializerFactoryDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testSerialization",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testIsPotentialBeanTypeForProxyThrows",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testBuildBeanDeserializerWithErrorThrowingDeserializer",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testCreateBeanDeserializerForDangerousType",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testBuildThrowableDeserializer"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testSerialization",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testIsPotentialBeanTypeForProxyThrows",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testBuildBeanDeserializerWithErrorThrowingDeserializer",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testCreateBeanDeserializerForDangerousType",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerFactoryDeepseekTest::testBuildThrowableDeserializer"
+  ],
+  "suite_sha256": "0cafbb2bbfbb44f0c1ce46e231e1817c9041a32d9ef9821c12c966f018de7b00",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonDatabind_78b/BeanDeserializerFactoryDeepseekTest.java"
+  ],
+  "run_id": "JacksonDatabind-78-Reevaluation-s0-f09289fac97a"
+}

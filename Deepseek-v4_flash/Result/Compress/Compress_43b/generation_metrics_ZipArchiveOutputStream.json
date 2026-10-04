@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 11:18:18",
+  "project": "Compress",
+  "bug_id": 43,
+  "version": "b",
+  "target_class": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 90.33,
+    "input_tokens": 15780,
+    "output_tokens": 8414,
+    "reasoning_tokens": null,
+    "total_tokens": 24194,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 943200,
+    "limit": 1000000,
+    "remaining": 56800
+  }
+}

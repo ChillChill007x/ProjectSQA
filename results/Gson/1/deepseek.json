@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 9,
+  "line_cov": 91.66,
+  "branch_cov": 84.69,
+  "test_file": "TypeInfoFactoryDeepseekTest.java",
+  "target_classes": "com.google.gson.TypeInfoFactory",
+  "buggy_failures": [
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_WildcardWithUpperBound",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_TypeVariableInListOnSubclass",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_SubclassInheritedTypeVariable_GSON40",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForArray_NullType",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_WildcardField",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_GenericArrayOnSubclass",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_MultipleTypeVariablesOnSubclass",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_MapWithTypeVariableOnSubclass",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_NullTypeDefiningF"
+  ],
+  "fixed_failures": [
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_WildcardWithUpperBound",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForArray_NullType",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_WildcardField",
+    "com.google.gson.TypeInfoFactoryDeepseekTest::testGetTypeInfoForField_NullTypeDefiningF"
+  ],
+  "suite_sha256": "a1bfca62009e188c56ee0e5a0a35385ca2b1b2100b2b959a8512c2e886ba3d4d",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Gson_1b/TypeInfoFactoryDeepseekTest.java"
+  ],
+  "run_id": "Gson-1-Reevaluation-s0-f920812f381f"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 95.98,
+  "branch_cov": 91.96,
+  "test_file": "TimeSeriesGptTest.java",
+  "target_classes": "org.jfree.data.time.TimeSeries",
+  "buggy_failures": [
+    "org.jfree.data.time.TimeSeriesGptTest::testBug1864222CreateCopyEmptySubRangeBetweenPoints",
+    "org.jfree.data.time.TimeSeriesGptTest::testDeleteAndClear"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.time.TimeSeriesGptTest::testDeleteAndClear"
+  ],
+  "suite_sha256": "ed2246653d3fb4e1f3ebb492f7a8a0e155825e5ff715b637b6bb273f201a4d64",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_9b/TimeSeriesGptTest.java"
+  ],
+  "run_id": "Chart-9-Reevaluation-s0-e7dd470aba64"
+}

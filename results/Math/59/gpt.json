@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.85,
+  "branch_cov": 83.85,
+  "test_file": "FastMathGptTest.java",
+  "target_classes": "org.apache.commons.math.util.FastMath",
+  "buggy_failures": [
+    "org.apache.commons.math.util.FastMathGptTest::testMaxFloatDefect",
+    "org.apache.commons.math.util.FastMathGptTest::testLogAndLog10",
+    "org.apache.commons.math.util.FastMathGptTest::testNextAfterAndNextUp"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.FastMathGptTest::testLogAndLog10",
+    "org.apache.commons.math.util.FastMathGptTest::testNextAfterAndNextUp"
+  ],
+  "suite_sha256": "6092875559f273b4121c106531b41dcd2cffc956024f707dd537e75545a48928",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_59b/FastMathGptTest.java"
+  ],
+  "run_id": "Math-59-Reevaluation-s0-6299a8d4c27e"
+}

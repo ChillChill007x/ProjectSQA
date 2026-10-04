@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "LightweightMessageFormatterGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.LightweightMessageFormatter",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.LightweightMessageFormatterGptTest::testFormatErrorSpaceEndOfLine1",
+    "com.google.javascript.jscomp.LightweightMessageFormatterGptTest::testFormatErrorSpaceEndOfLine2"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "6a60ef9587dccceae107c5d9733bfdd3bd541296d45a916739b67554a0048995",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_62b/LightweightMessageFormatterGptTest.java"
+  ],
+  "run_id": "Closure-62-Reevaluation-s0-d559102495d8"
+}

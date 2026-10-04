@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 97.35,
+  "branch_cov": 95.91,
+  "test_file": "ReflectiveTypeAdapterFactoryGptTest.java",
+  "target_classes": "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.ReflectiveTypeAdapterFactoryGptTest::testPrimitiveFieldAnnotationTakesPrecedenceOverDefault"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "bb0f76e48fb937f28ab8a2031f712a6960178e2dc14b5abc873e79aac4ea5ce8",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_10b/ReflectiveTypeAdapterFactoryGptTest.java"
+  ],
+  "run_id": "Gson-10-Reevaluation-s0-649f8a20ab8c"
+}

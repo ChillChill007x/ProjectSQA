@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 95.95,
+  "branch_cov": 91.23,
+  "test_file": "SimplexSolverDeepseekTest.java",
+  "target_classes": "org.apache.commons.math3.optimization.linear.SimplexSolver",
+  "buggy_failures": [
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullFunction",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testSimpleMaximization",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullGoalType",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testSimpleMinimization",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullConstraints",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNoConstraints",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testMath828Cycle"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullFunction",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testSimpleMaximization",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullGoalType",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testSimpleMinimization",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNullConstraints",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testNoConstraints",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverDeepseekTest::testMath828Cycle"
+  ],
+  "suite_sha256": "afd3851e7e1abd6c80874262c6a05a3eada6590d3163f097e8af30f2fa297e11",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_28b/SimplexSolverDeepseekTest.java"
+  ],
+  "run_id": "Math-28-Reevaluation-s0-322c77e0040e"
+}

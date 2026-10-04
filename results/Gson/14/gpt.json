@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 96.18,
+  "branch_cov": 88.33,
+  "test_file": "$Gson$TypesGptTest.java",
+  "target_classes": "com.google.gson.internal.$Gson$Types",
+  "buggy_failures": [
+    "com.google.gson.internal.$Gson$TypesGptTest::testDoubleSupertype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testSubSupertype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testGetGenericSupertype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testDoubleSubtype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testGetArrayComponentTypeNonArrayThrows",
+    "com.google.gson.internal.$Gson$TypesGptTest::testSuperSubtype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testRecursiveResolveSimple"
+  ],
+  "fixed_failures": [
+    "com.google.gson.internal.$Gson$TypesGptTest::testGetGenericSupertype",
+    "com.google.gson.internal.$Gson$TypesGptTest::testGetArrayComponentTypeNonArrayThrows",
+    "com.google.gson.internal.$Gson$TypesGptTest::testRecursiveResolveSimple"
+  ],
+  "suite_sha256": "3b7cfd03fdb0b8766cdc4bc709fde654c4747a74e51f3bd2f484a87452c3b798",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_14b/$Gson$TypesGptTest.java"
+  ],
+  "run_id": "Gson-14-Reevaluation-s0-54570765397a"
+}

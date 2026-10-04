@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 73.45,
+  "branch_cov": 28.28,
+  "test_file": "JsonWriteContextGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.json.JsonWriteContext",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.json.JsonWriteContextGptTest::testFailOnWritingConsecutiveValuesInObjectContext",
+    "com.fasterxml.jackson.core.json.JsonWriteContextGptTest::testFailOnWritingValueInObjectContextWhenExpectingFieldName"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9b8b1612908c15762a550fbec154bc44a0e6d9a778622c1b9bf0134eb8067e36",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_7b/JsonWriteContextGptTest.java"
+  ],
+  "run_id": "JacksonCore-7-Reevaluation-s0-24ed4e3718cf"
+}

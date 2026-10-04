@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.0,
+  "branch_cov": 92.58,
+  "test_file": "NodeGptTest.java",
+  "target_classes": "org.jsoup.nodes.Node",
+  "buggy_failures": [
+    "org.jsoup.nodes.NodeGptTest::testAbsUrlResolutionBranches",
+    "org.jsoup.nodes.NodeGptTest::testHandlesAbsPrefixOnHasAttr",
+    "org.jsoup.nodes.NodeGptTest::testHandlesAbsPrefixWhenBaseUriEmpty"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.NodeGptTest::testAbsUrlResolutionBranches"
+  ],
+  "suite_sha256": "4f09186db73165ec9ab2c1dc4b616a8ae8dec6f312e9eacadc7952252a989cd2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_13b/NodeGptTest.java"
+  ],
+  "run_id": "Jsoup-13-Reevaluation-s0-76eab1db3b0a"
+}

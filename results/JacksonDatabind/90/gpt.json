@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 86.21,
+  "branch_cov": 85.54,
+  "test_file": "StdValueInstantiatorGptTest.java;ValueInstantiatorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.ValueInstantiator;com.fasterxml.jackson.databind.deser.std.StdValueInstantiator",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testScalarCreatorsExecution",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testWithArgsCreatorInvocationExceptionHandling",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testCreateUsingArrayDelegateFallbackToDelegate",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testIntWideningToLongCreator",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testWithArgsCreatorInvocationSuccess",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testDefaultCreatorInvocationExceptionHandling",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testCreateUsingDelegateFallbackToArrayDelegate",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testUnconfiguredCreatorsThrowMappingException"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testScalarCreatorsExecution",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testWithArgsCreatorInvocationExceptionHandling",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testCreateUsingArrayDelegateFallbackToDelegate",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testIntWideningToLongCreator",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testWithArgsCreatorInvocationSuccess",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testDefaultCreatorInvocationExceptionHandling",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testCreateUsingDelegateFallbackToArrayDelegate",
+    "com.fasterxml.jackson.databind.deser.std.StdValueInstantiatorGptTest::testUnconfiguredCreatorsThrowMappingException"
+  ],
+  "suite_sha256": "4fd711bf25400e1b6d05cfe13c50bfc012411663d10b1ad8deaa58d30baf8abb",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_90b/StdValueInstantiatorGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_90b/ValueInstantiatorGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-90-Reevaluation-s0-338d92604c50"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 12:35:13",
+  "project": "Closure",
+  "bug_id": 29,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.InlineObjectLiterals",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 40.11,
+    "input_tokens": 4643,
+    "output_tokens": 4241,
+    "reasoning_tokens": null,
+    "total_tokens": 8884,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 692846,
+    "limit": 1000000,
+    "remaining": 307154
+  }
+}

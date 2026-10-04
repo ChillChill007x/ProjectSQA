@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ListOrderedSetGptTest.java",
+  "target_classes": "org.apache.commons.collections.set.ListOrderedSet",
+  "buggy_failures": [
+    "org.apache.commons.collections.set.ListOrderedSetGptTest::testFactoryDecorateListWithDuplicates"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.set.ListOrderedSetGptTest::testFactoryDecorateListWithDuplicates"
+  ],
+  "suite_sha256": "795cfba1d43486f7c91e68b51efbde4dbd3a06015c33ed65ae0df5c3f696d916",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_18b/ListOrderedSetGptTest.java"
+  ],
+  "run_id": "Collections-18-Reevaluation-s0-a96b6ec2ec67"
+}

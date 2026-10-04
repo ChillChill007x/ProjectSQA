@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 100.0,
+  "branch_cov": 96.95,
+  "test_file": "LiveVariablesAnalysisGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.LiveVariablesAnalysis",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testStandardForInWithVar",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testExpressionInForInCallTargetingDefect",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testMarkAllParametersEscapedDirectly",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testExpressionInForInGetElemTargetingDefect",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testExpressionInForInGetPropTargetingDefect",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testStandardForInWithoutVar"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testStandardForInWithVar",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testMarkAllParametersEscapedDirectly",
+    "com.google.javascript.jscomp.LiveVariablesAnalysisGptTest::testStandardForInWithoutVar"
+  ],
+  "suite_sha256": "80063920a32694d4b183af7cdc18bb65b2dff104cffa761bef64d94bcaf0b91c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_58b/LiveVariablesAnalysisGptTest.java"
+  ],
+  "run_id": "Closure-58-Reevaluation-s0-9bd6258086b6"
+}

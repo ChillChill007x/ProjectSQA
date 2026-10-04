@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 58.04,
+  "branch_cov": 54.59,
+  "test_file": "StringUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAny_StringCharArrayWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAny_StringStringWithSupplementaryChars"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAnyBut_StringStringWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAny_StringCharArrayWithSupplementaryChars",
+    "org.apache.commons.lang3.StringUtilsDeepseekTest::testIndexOfAny_StringStringWithSupplementaryChars"
+  ],
+  "suite_sha256": "9e0c0ac37ffe0f6afff06460447c2f3333acaf4d6752dce6818618a23f1142d2",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_30b/StringUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-30-Reevaluation-s0-0531f8ef57fe"
+}

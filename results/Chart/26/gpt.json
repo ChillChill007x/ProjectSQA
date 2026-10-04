@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 97.53,
+  "test_file": "AxisGptTest.java",
+  "target_classes": "org.jfree.chart.axis.Axis",
+  "buggy_failures": [
+    "org.jfree.chart.axis.AxisGptTest::testDrawLabelWithEntitiesCollected",
+    "org.jfree.chart.axis.AxisGptTest::testDrawLabelDefectNullChartRenderingInfoOwner"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.axis.AxisGptTest::testDrawLabelWithEntitiesCollected"
+  ],
+  "suite_sha256": "8b45f292e647a5595754c3022ea7f2d16ad5a73fa2d588921550fee3e288305a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_26b/AxisGptTest.java"
+  ],
+  "run_id": "Chart-26-Reevaluation-s0-f72a30bc5f67"
+}

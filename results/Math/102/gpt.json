@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 97.24,
+  "test_file": "ChiSquareTestImplGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.inference.ChiSquareTestImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareRescalingUnequalTotals",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareRescalingIdenticalProportions",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplGptTest::testChiSquareTestRescalingPValue"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "8c381b3516b37dcdbc014fa3e6837b3a7a7d8fa31b4000cc474b9a7db210b399",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_102b/ChiSquareTestImplGptTest.java"
+  ],
+  "run_id": "Math-102-Reevaluation-s0-347f76146b1c"
+}
