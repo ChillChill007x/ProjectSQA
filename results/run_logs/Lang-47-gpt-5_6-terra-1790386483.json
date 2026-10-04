@@ -1,0 +1,31 @@
+{
+  "project": "Lang",
+  "bug_id": 47,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-47-gpt-1790386483",
+  "suite_sha256": "54aff5d968f47b9c2d4d9619a0003f213195bbe561e52cb09a86f46425699f59",
+  "test_files": "StrBuilderGptTest.java",
+  "target_classes": "org.apache.commons.lang.text.StrBuilder",
+  "timestamp": "2026-10-03 08:35:03",
+  "evaluation_duration_sec": 20.83,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 86.78,
+  "branch_coverage_percent": 77.85,
+  "failures_count": 6,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang412Left",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAllInsertVariants",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAsWriter",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testLang412Right",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchAndContains",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAllInsertVariants",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testAsWriter",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testSearchAndContains",
+    "org.apache.commons.lang.text.StrBuilderGptTest::testEqualsAndHashCode"
+  ]
+}

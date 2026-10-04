@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.82,
+  "branch_cov": 94.84,
+  "test_file": "JsonWriterGptTest.java",
+  "target_classes": "com.google.gson.stream.JsonWriter",
+  "buggy_failures": [
+    "com.google.gson.stream.JsonWriterGptTest::testNonFiniteDoublesWhenLenient",
+    "com.google.gson.stream.JsonWriterGptTest::testNameAtDocumentRootThrows",
+    "com.google.gson.stream.JsonWriterGptTest::testNameWithoutObjectThrows"
+  ],
+  "fixed_failures": [
+    "com.google.gson.stream.JsonWriterGptTest::testNameAtDocumentRootThrows",
+    "com.google.gson.stream.JsonWriterGptTest::testNameWithoutObjectThrows"
+  ],
+  "suite_sha256": "dcfe32c00f82de4b1cb5b3549c7d559b7e8c2dccf821edccbad89f097fd2e5db",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_15b/JsonWriterGptTest.java"
+  ],
+  "run_id": "Gson-15-Reevaluation-s0-c2fa2ec02ee5"
+}

@@ -1,0 +1,22 @@
+{
+  "project": "Time",
+  "bug_id": 10,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Time-10-gpt-1790398922",
+  "suite_sha256": "e4d8c453f38ef79071c909eff1acb7cd546e9dadb43cbe24dd225056abf9dd2f",
+  "test_files": "BaseSingleFieldPeriodGptTest.java",
+  "target_classes": "org.joda.time.base.BaseSingleFieldPeriod",
+  "timestamp": "2026-10-03 12:02:28",
+  "evaluation_duration_sec": 25.748,
+  "execution_status": "DONE",
+  "fault_detection_status": "BUG_DETECTED",
+  "line_coverage_percent": 98.59,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.joda.time.base.BaseSingleFieldPeriodGptTest::testBetween_ReadablePartial_MonthDay_LeapYear_Defect",
+    "org.joda.time.base.BaseSingleFieldPeriodGptTest::testBetween_ReadablePartial_MonthDay_LeapYearToLeapYear"
+  ],
+  "fixed_failures": []
+}

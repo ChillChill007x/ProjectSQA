@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 94.84,
+  "branch_cov": 97.53,
+  "test_file": "InvocationMatcherGptTest.java",
+  "target_classes": "org.mockito.internal.invocation.InvocationMatcher",
+  "buggy_failures": [
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCreateFrom_ListConversion_WrapsAllInvocations",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testDefect_InheritedPolymorphicCall_hasSimilarMethodShouldBeTrue",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testToString_AndPrintSettingsFormatting_ReturnsValidRepresentation",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testDefect_InheritedPolymorphicCall_hasSameMethodShouldMatchSubInterfaceOverriddenMethod",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testDefect_GenericInterfaceHierarchy_hasSameMethodShouldMatch"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCreateFrom_ListConversion_WrapsAllInvocations",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testToString_AndPrintSettingsFormatting_ReturnsValidRepresentation"
+  ],
+  "suite_sha256": "6465649574172bc620cc2ab2a3d0e7013aa8e518853a4d3a661aeaee08d44eae",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_33b/InvocationMatcherGptTest.java"
+  ],
+  "run_id": "Mockito-33-Reevaluation-s0-8bd4b0605b18"
+}

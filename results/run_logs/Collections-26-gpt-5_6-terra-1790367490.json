@@ -1,0 +1,24 @@
+{
+  "project": "Collections",
+  "bug_id": 26,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Collections-26-gpt-1790367490",
+  "suite_sha256": "1423edc0cc5c4bcf9d245800e6ab8f842d7564518ed1c59734afc2bd7b976bf4",
+  "test_files": "MultiKeyGptTest.java",
+  "target_classes": "org.apache.commons.collections4.keyvalue.MultiKey",
+  "timestamp": "2026-10-03 03:18:27",
+  "evaluation_duration_sec": 17.4,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testGetKeysReturnsDefensiveCopy",
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testEqualsAfterSerializationOfDerivedClass"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.keyvalue.MultiKeyGptTest::testGetKeysReturnsDefensiveCopy"
+  ]
+}

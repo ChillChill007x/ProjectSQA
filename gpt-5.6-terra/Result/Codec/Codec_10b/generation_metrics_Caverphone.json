@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 04:24:31",
+  "project": "Codec",
+  "bug_id": 10,
+  "version": "b",
+  "target_class": "org.apache.commons.codec.language.Caverphone",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 51.63,
+    "input_tokens": 3057,
+    "output_tokens": 3834,
+    "reasoning_tokens": 1240,
+    "total_tokens": 8131,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 305596,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 94404
+  }
+}

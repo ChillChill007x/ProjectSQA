@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 91.47,
+  "branch_cov": 88.84,
+  "test_file": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplittingMethods",
+    "org.apache.commons.lang3.StringUtilsGptTest::testSupplementarySurrogatePairsInSearch"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplittingMethods",
+    "org.apache.commons.lang3.StringUtilsGptTest::testSupplementarySurrogatePairsInSearch"
+  ],
+  "suite_sha256": "f2a56e614ac45788838ac732b610536ca854aab84f03564ef2030b82c2e3b734",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_20b/StringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-20-Reevaluation-s0-1f1eb39cf1cc"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 21:52:20",
+  "project": "Collections",
+  "bug_id": 8,
+  "version": "b",
+  "target_class": "org.apache.commons.collections.UnboundedFifoBuffer",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 186.96,
+    "input_tokens": 2692,
+    "output_tokens": 19958,
+    "reasoning_tokens": null,
+    "total_tokens": 22650,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 22660,
+    "limit": 1000000,
+    "remaining": 977340
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 01:28:19",
+  "project": "Jsoup",
+  "bug_id": 33,
+  "version": "b",
+  "target_class": "org.jsoup.parser.HtmlTreeBuilder",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 49.72,
+    "input_tokens": 6456,
+    "output_tokens": 5149,
+    "reasoning_tokens": null,
+    "total_tokens": 11605,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 599549,
+    "limit": 1000000,
+    "remaining": 400451
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 97.72,
+  "branch_cov": 100.0,
+  "test_file": "UnmodifiableTrieGptTest.java",
+  "target_classes": "org.apache.commons.collections4.trie.UnmodifiableTrie",
+  "buggy_failures": [
+    "org.apache.commons.collections4.trie.UnmodifiableTrieGptTest::testCoreDelegationReads",
+    "org.apache.commons.collections4.trie.UnmodifiableTrieGptTest::testDecorateFactoryDoesNotDoubleWrap"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.trie.UnmodifiableTrieGptTest::testCoreDelegationReads"
+  ],
+  "suite_sha256": "ec912b3cbe90b71ecf14b97208db04e61e0f0dd15b713c29260fc7c5e17c1557",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_23b/UnmodifiableTrieGptTest.java"
+  ],
+  "run_id": "Collections-23-Reevaluation-s0-9e5674734926"
+}

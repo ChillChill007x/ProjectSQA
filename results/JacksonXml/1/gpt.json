@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 77.09,
+  "branch_cov": 70.39,
+  "test_file": "FromXmlParserGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testBinaryValueInvalidBase64ContentThrows"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testBinaryValueInvalidBase64ContentThrows"
+  ],
+  "suite_sha256": "6e18ea83b0aa777302a56fc9eadad3b6c5f9abdd00109f0e8c58562a63e4e2d0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonXml_1b/FromXmlParserGptTest.java"
+  ],
+  "run_id": "JacksonXml-1-Reevaluation-s0-19020ac37efc"
+}

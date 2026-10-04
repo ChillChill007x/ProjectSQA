@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "SameGptTest.java",
+  "target_classes": "org.mockito.internal.matchers.Same",
+  "buggy_failures": [
+    "org.mockito.internal.matchers.SameGptTest::testDescribeToShouldNotThrowNPEWhenNullPassedToSame"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "a107dfa39e86d8f0a63b0c74d9cbe46b399da422ebcdbab49ab9e334ee7ac6a0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_29b/SameGptTest.java"
+  ],
+  "run_id": "Mockito-29-Reevaluation-s0-e47582644c50"
+}

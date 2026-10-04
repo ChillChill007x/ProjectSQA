@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 59.14,
+  "branch_cov": 56.83,
+  "test_file": "ObjectMapperGptTest.java;StdTypeResolverBuilderGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.ObjectMapper;com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.ObjectMapperGptTest::testReadTreeFromNullOrEmptyInput",
+    "com.fasterxml.jackson.databind.ObjectMapperGptTest::testLocaleAndTimeZoneConfiguration",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testDefectPrimitiveBaseTypeDeserializerReturnsNull",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testDefectPrimitiveBaseTypeSerializerReturnsNull",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testBuildTypeDeserializerNullInclusionThrowsISE",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testDefectPrimitiveBaseTypeIntSerializerReturnsNull",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testBuildTypeSerializerNullInclusionThrowsISE"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.ObjectMapperGptTest::testReadTreeFromNullOrEmptyInput",
+    "com.fasterxml.jackson.databind.ObjectMapperGptTest::testLocaleAndTimeZoneConfiguration",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testBuildTypeDeserializerNullInclusionThrowsISE",
+    "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilderGptTest::testBuildTypeSerializerNullInclusionThrowsISE"
+  ],
+  "suite_sha256": "f0728b1d1ad47c6b0dd5e34eb437f77de42ba0465f846c3e349238c44db9bda7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_61b/ObjectMapperGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_61b/StdTypeResolverBuilderGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-61-Reevaluation-s0-61d93651fb64"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:12:22",
+  "project": "Collections",
+  "bug_id": 22,
+  "version": "b",
+  "target_class": "org.apache.commons.collections4.map.ListOrderedMap",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 137.62,
+    "input_tokens": 6461,
+    "output_tokens": 17548,
+    "reasoning_tokens": null,
+    "total_tokens": 24009,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 766838,
+    "limit": 1000000,
+    "remaining": 233162
+  }
+}

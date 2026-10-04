@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 84.46,
+  "branch_cov": 80.4,
+  "test_file": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.StringUtilsGptTest::testAnyAllNoneSearches",
+    "org.apache.commons.lang.StringUtilsGptTest::testSplitOperations",
+    "org.apache.commons.lang.StringUtilsGptTest::testContainsIgnoreCase_DefectTurkishLocale",
+    "org.apache.commons.lang.StringUtilsGptTest::testIndexOfAndLastIndexOf",
+    "org.apache.commons.lang.StringUtilsGptTest::testContainsIgnoreCase_DefectGermanSharpS"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.StringUtilsGptTest::testAnyAllNoneSearches",
+    "org.apache.commons.lang.StringUtilsGptTest::testSplitOperations",
+    "org.apache.commons.lang.StringUtilsGptTest::testIndexOfAndLastIndexOf"
+  ],
+  "suite_sha256": "9eed387f27620d1200c7f169393641b6c221920578df6447444e8adc4f205efd",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_40b/StringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-40-Reevaluation-s0-2870d7304dd0"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "MockUtilGptTest.java",
+  "target_classes": "org.mockito.internal.util.MockUtil",
+  "buggy_failures": [
+    "org.mockito.internal.util.MockUtilGptTest::testCreateMockWithSpiedInstanceCopiesState",
+    "org.mockito.internal.util.MockUtilGptTest::testListenersNotLostOnResetMock_DefectTarget"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.util.MockUtilGptTest::testCreateMockWithSpiedInstanceCopiesState",
+    "org.mockito.internal.util.MockUtilGptTest::testListenersNotLostOnResetMock_DefectTarget"
+  ],
+  "suite_sha256": "0e464a4937a8868ed7bdeeb50faf12d92b27101a7e2df75f72b8f9f0aef9fe05",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_27b/MockUtilGptTest.java"
+  ],
+  "run_id": "Mockito-27-Reevaluation-s0-4a3701bf573c"
+}

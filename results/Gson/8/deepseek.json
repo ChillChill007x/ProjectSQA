@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 0,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "UnsafeAllocatorDeepseekTest.java",
+  "target_classes": "com.google.gson.internal.UnsafeAllocator",
+  "buggy_failures": [],
+  "fixed_failures": [
+    "com.google.gson.internal.UnsafeAllocatorDeepseekTest::testNewInstancePrimitiveClass",
+    "com.google.gson.internal.UnsafeAllocatorDeepseekTest::testInterfaceInstantiation",
+    "com.google.gson.internal.UnsafeAllocatorDeepseekTest::testAbstractClassInstantiation"
+  ],
+  "suite_sha256": "83da2b013e16d2a8b05712e14430161c33cd4cabcd5b30417375f1631b02cc36",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Gson_8b/UnsafeAllocatorDeepseekTest.java"
+  ],
+  "run_id": "Gson-8-Reevaluation-s0-489227a4df2f"
+}

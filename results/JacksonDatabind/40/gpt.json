@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 96.82,
+  "branch_cov": 91.48,
+  "test_file": "NumberDeserializersGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.NumberDeserializers",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.NumberDeserializersGptTest::testDefectEmptyStringToPrimitiveWithFailOnNull"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "d661abd13dd8398cd7f18e749ad1bbecb76684f4c1f64e8951a3c76a08574f4e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_40b/NumberDeserializersGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-40-Reevaluation-s0-fe3849f024e2"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:52:56",
+  "project": "Math",
+  "bug_id": 80,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.EigenDecompositionImpl",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 75.3,
+    "input_tokens": 18564,
+    "output_tokens": 7077,
+    "reasoning_tokens": null,
+    "total_tokens": 25641,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 560689,
+    "limit": 1000000,
+    "remaining": 439311
+  }
+}

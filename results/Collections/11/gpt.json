@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "MultiKeyGptTest.java",
+  "target_classes": "org.apache.commons.collections.keyvalue.MultiKey",
+  "buggy_failures": [
+    "org.apache.commons.collections.keyvalue.MultiKeyGptTest::testSerializationRoundTripPreservesKeys",
+    "org.apache.commons.collections.keyvalue.MultiKeyGptTest::testEqualsAfterSerialization"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "f549a0855f4411b4c8f69599ffc9fec48f966a978e8d42f961fe240c64f06361",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_11b/MultiKeyGptTest.java"
+  ],
+  "run_id": "Collections-11-Reevaluation-s0-b721d1ad093d"
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:35:48",
+  "project": "Math",
+  "bug_id": 77,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.ArrayRealVector",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 104.33,
+    "input_tokens": 11064,
+    "output_tokens": 9992,
+    "reasoning_tokens": 9309,
+    "total_tokens": 30365,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 180764,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 219236
+  }
+}

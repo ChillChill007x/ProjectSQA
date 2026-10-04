@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 97.07,
+  "branch_cov": 96.99,
+  "test_file": "LocaleUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.LocaleUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_WithCountryNoVariant",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLang865",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_DefaultLocaleNotInList",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_LanguageOnly",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLanguagesByCountry_Existing",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_WithVariant"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_WithCountryNoVariant",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_DefaultLocaleNotInList",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_LanguageOnly",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLanguagesByCountry_Existing",
+    "org.apache.commons.lang3.LocaleUtilsDeepseekTest::testLocaleLookupList_WithVariant"
+  ],
+  "suite_sha256": "0a270682f70523c49eb276988abd2636debdde577b853b3e0073db32f723e6a2",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_5b/LocaleUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-5-Reevaluation-s0-4a40a9981569"
+}

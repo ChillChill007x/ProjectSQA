@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 98.37,
+  "branch_cov": 95.35,
+  "test_file": "ComplexGptTest.java",
+  "target_classes": "org.apache.commons.math.complex.Complex",
+  "buggy_failures": [
+    "org.apache.commons.math.complex.ComplexGptTest::testMath221"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "1bcc199518436bf4e6442454614c798f963ac1a075fc9de5ed6bd66fdf8970cc",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_96b/ComplexGptTest.java"
+  ],
+  "run_id": "Math-96-Reevaluation-s0-a1e1033273cf"
+}

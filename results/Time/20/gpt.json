@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 70.09,
+  "branch_cov": 59.02,
+  "test_file": "DateTimeFormatterBuilderGptTest.java",
+  "target_classes": "org.joda.time.format.DateTimeFormatterBuilder",
+  "buggy_failures": [
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::test_printParseZoneDawsonCreek",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTimeZoneOffsetWithFractionsAndNoSeparators",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTimeZoneOffsetFormattingAndParsing",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTextFieldsLongAndShort",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testToPrinterThrowsWhenParserOnly",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testToParserThrowsWhenPrinterOnly"
+  ],
+  "fixed_failures": [
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTimeZoneOffsetWithFractionsAndNoSeparators",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTimeZoneOffsetFormattingAndParsing",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testTextFieldsLongAndShort",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testToPrinterThrowsWhenParserOnly",
+    "org.joda.time.format.DateTimeFormatterBuilderGptTest::testToParserThrowsWhenPrinterOnly"
+  ],
+  "suite_sha256": "d907e7b1d4370d69590d73098e2975c6d07151ea03c05f33369a4a784a65e20a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Time_20b/DateTimeFormatterBuilderGptTest.java"
+  ],
+  "run_id": "Time-20-Reevaluation-s0-b8bd19a1ef2b"
+}

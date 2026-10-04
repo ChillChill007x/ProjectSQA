@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 96.7,
+  "test_file": "BorderArrangementGptTest.java",
+  "target_classes": "org.jfree.chart.block.BorderArrangement",
+  "buggy_failures": [
+    "org.jfree.chart.block.BorderArrangementGptTest::testArrangeFRDelegatingToFFWithNarrowWidthDefect",
+    "org.jfree.chart.block.BorderArrangementGptTest::testArrangeFNLeftBlockLargerThanWidth",
+    "org.jfree.chart.block.BorderArrangementGptTest::testSizingWithWidthConstraintDefect"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "1cb52ef869eabe1603b4c5d730c398547a9991691d91870d7b071489cc8175dd",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_13b/BorderArrangementGptTest.java"
+  ],
+  "run_id": "Chart-13-Reevaluation-s0-828112ca66d7"
+}

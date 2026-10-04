@@ -1,0 +1,16 @@
+{
+  "status": "DONE",
+  "fault_detected": "NOT_DETECTED",
+  "failures_count": 0,
+  "line_cov": 98.73,
+  "branch_cov": 94.72,
+  "test_file": "SimplexTableauGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.linear.SimplexTableau",
+  "buggy_failures": [],
+  "fixed_failures": [],
+  "suite_sha256": "b317eb06c70737106d92623f21d3c67b2c06ee116c3fa75b037d0a47c39814c4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_42b/SimplexTableauGptTest.java"
+  ],
+  "run_id": "Math-42-Reevaluation-s0-75f583cca159"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.48,
+  "branch_cov": 87.19,
+  "test_file": "CSVParserGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVParser",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVParserGptTest::testCurrentLineNumberMultiLine",
+    "org.apache.commons.csv.CSVParserGptTest::testDuplicateEmptyHeaderNamesAllowedWhenConfigured",
+    "org.apache.commons.csv.CSVParserGptTest::testHeaderCaseInsensitive"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.csv.CSVParserGptTest::testCurrentLineNumberMultiLine",
+    "org.apache.commons.csv.CSVParserGptTest::testDuplicateEmptyHeaderNamesAllowedWhenConfigured",
+    "org.apache.commons.csv.CSVParserGptTest::testHeaderCaseInsensitive"
+  ],
+  "suite_sha256": "6dfcb70ff386d876760e4b6d156072e6afd083622887e7cbc3f3a6f7a978a426",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_16b/CSVParserGptTest.java"
+  ],
+  "run_id": "Csv-16-Reevaluation-s0-85f9b0a15eb3"
+}

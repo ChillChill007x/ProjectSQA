@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "ParserDeepseekTest.java",
+  "target_classes": "org.apache.commons.cli.Parser",
+  "buggy_failures": [
+    "org.apache.commons.cli.ParserDeepseekTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.ParserDeepseekTest"
+  ],
+  "suite_sha256": "3f358ce141a0f9482659d4c5ff2e9912a486ef4f3709bbbd52186a401f0a1274",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Cli_10b/ParserDeepseekTest.java"
+  ],
+  "run_id": "Cli-10-Reevaluation-s0-61a3e46ceb4b"
+}

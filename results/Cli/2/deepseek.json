@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "PosixParserDeepseekTest.java",
+  "target_classes": "org.apache.commons.cli.PosixParser",
+  "buggy_failures": [
+    "org.apache.commons.cli.PosixParserDeepseekTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.PosixParserDeepseekTest"
+  ],
+  "suite_sha256": "a376bfe889030aae7cc752986f29699720cf99c2bf1f03e044979b7c2ab5b402",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Cli_2b/PosixParserDeepseekTest.java"
+  ],
+  "run_id": "Cli-2-Reevaluation-s0-f3db9244f613"
+}

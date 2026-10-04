@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 85.66,
+  "branch_cov": 89.45,
+  "test_file": "CheckSideEffectsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CheckSideEffects",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testDefectSideEffectFollowedByUselessCodeInCommaAssignment",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testStripProtectionRestoresOriginalNode",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testDefectMultipleUselessCodeInCommaAssignment",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testProtectionPassWithNoProblemsDoesNotAddExtern",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testProtectionModeWrapsProblemNodeAndAddsExtern"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testStripProtectionRestoresOriginalNode",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testProtectionPassWithNoProblemsDoesNotAddExtern",
+    "com.google.javascript.jscomp.CheckSideEffectsGptTest::testProtectionModeWrapsProblemNodeAndAddsExtern"
+  ],
+  "suite_sha256": "edc812756cd7c8f997e4ba6c6c3dda92a4b39f9a39e0cd5ce9a2299ffa1a4870",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_21b/CheckSideEffectsGptTest.java"
+  ],
+  "run_id": "Closure-21-Reevaluation-s0-cad7f4589f90"
+}

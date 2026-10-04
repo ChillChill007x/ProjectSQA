@@ -1,0 +1,26 @@
+{
+  "project": "Collections",
+  "bug_id": 28,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Collections-28-gpt-1790367580",
+  "suite_sha256": "f85474495483d9df94b33fb7c4dd44bfb53255d62e8495a471e9b669b166f81a",
+  "test_files": "AbstractPatriciaTrieGptTest.java",
+  "target_classes": "org.apache.commons.collections4.trie.AbstractPatriciaTrie",
+  "timestamp": "2026-10-03 03:19:58",
+  "evaluation_duration_sec": 18.275,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 78.49,
+  "branch_coverage_percent": 65.68,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapClear_DefectTarget",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapIteratorRemoveSingleAndMultiple",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testEmptyStringAsRootKey"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testPrefixMapIteratorRemoveSingleAndMultiple",
+    "org.apache.commons.collections4.trie.AbstractPatriciaTrieGptTest::testEmptyStringAsRootKey"
+  ]
+}

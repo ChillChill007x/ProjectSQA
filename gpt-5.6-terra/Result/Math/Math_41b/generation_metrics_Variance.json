@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 01:42:11",
+  "project": "Math",
+  "bug_id": 41,
+  "version": "b",
+  "target_class": "org.apache.commons.math.stat.descriptive.moment.Variance",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 61.23,
+    "input_tokens": 7375,
+    "output_tokens": 5610,
+    "reasoning_tokens": 3567,
+    "total_tokens": 16552,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 137494,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 262506
+  }
+}

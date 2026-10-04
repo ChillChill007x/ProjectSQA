@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 97.84,
+  "branch_cov": 93.15,
+  "test_file": "ChiSquareTestImplDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.stat.inference.ChiSquareTestImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testChiSquareTestWithAlpha",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testConstructorWithDistribution",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testChiSquareTwoWayTableAllZero",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testDefaultConstructor"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testChiSquareTestWithAlpha",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testConstructorWithDistribution",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testChiSquareTwoWayTableAllZero",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testChiSquareLargeTestStatisticDefect",
+    "org.apache.commons.math.stat.inference.ChiSquareTestImplDeepseekTest::testDefaultConstructor"
+  ],
+  "suite_sha256": "6aaf6e1853dcc844ce542da970ec554683751b3ada6d250dfe715ffc83c0feae",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_102b/ChiSquareTestImplDeepseekTest.java"
+  ],
+  "run_id": "Math-102-Reevaluation-s0-510a5dcc8928"
+}

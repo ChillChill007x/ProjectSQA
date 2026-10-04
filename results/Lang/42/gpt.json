@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 98.51,
+  "branch_cov": 97.53,
+  "test_file": "EntitiesGptTest.java",
+  "target_classes": "org.apache.commons.lang.Entities",
+  "buggy_failures": [
+    "org.apache.commons.lang.EntitiesGptTest::testUnescapeMalformedAmpersands",
+    "org.apache.commons.lang.EntitiesGptTest::testEscapeHtmlHighUnicode"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.EntitiesGptTest::testUnescapeMalformedAmpersands"
+  ],
+  "suite_sha256": "a0993b27cd901b6d94211ea0d47c99529b34124413b9aada60fe580a4213b563",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_42b/EntitiesGptTest.java"
+  ],
+  "run_id": "Lang-42-Reevaluation-s0-97faa0aff9f4"
+}

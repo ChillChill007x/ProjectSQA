@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 9,
+  "line_cov": 81.47,
+  "branch_cov": 65.9,
+  "test_file": "TypedScopeCreatorGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.TypedScopeCreator",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testInitialNativeScopeContent",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testNamespacedFunctionStubLocal",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testObjectLiteralCastValid",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testCollectedFunctionStubLocal",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testGlobalFunctionAliasRegistration",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testValidEnumCreationAndValues",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testWarningOnDuplicateEnumKeys",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testWarningOnMalformedTypedef",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testPrototypeRedefinition"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testInitialNativeScopeContent",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testNamespacedFunctionStubLocal",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testObjectLiteralCastValid",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testCollectedFunctionStubLocal",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testGlobalFunctionAliasRegistration",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testValidEnumCreationAndValues",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testWarningOnDuplicateEnumKeys",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testWarningOnMalformedTypedef",
+    "com.google.javascript.jscomp.TypedScopeCreatorGptTest::testPrototypeRedefinition"
+  ],
+  "suite_sha256": "e8979f4f56930f78feedfb471840ffb60b6af9a47ecf58ea8f9abde4e9547629",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_150b/TypedScopeCreatorGptTest.java"
+  ],
+  "run_id": "Closure-150-Reevaluation-s0-2d6ca5c82806"
+}

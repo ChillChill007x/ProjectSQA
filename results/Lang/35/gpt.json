@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.5,
+  "branch_cov": 82.62,
+  "test_file": "ArrayUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.ArrayUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testLANG571AddNullArrayAndElementWithIndex",
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testLANG571AddNullArrayAndElement",
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testAddAllIncompatibleTypes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testAddAllIncompatibleTypes"
+  ],
+  "suite_sha256": "41f18ef292312c884a59620ee839ae1d0f1963b24d9b7ab462679f98366e8d35",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_35b/ArrayUtilsGptTest.java"
+  ],
+  "run_id": "Lang-35-Reevaluation-s0-4e53d7d59d94"
+}

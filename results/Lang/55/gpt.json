@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "StopWatchGptTest.java",
+  "target_classes": "org.apache.commons.lang.time.StopWatch",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.StopWatchGptTest::testLang315"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "38a367f9e7fb0c39ac57e522181fab30fb8fdf424f65ad30cbd72b626eb85f87",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_55b/StopWatchGptTest.java"
+  ],
+  "run_id": "Lang-55-Reevaluation-s0-c4afc07678d1"
+}

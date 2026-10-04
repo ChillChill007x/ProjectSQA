@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 94.8,
+  "branch_cov": 95.05,
+  "test_file": "MultiValueMapGptTest.java",
+  "target_classes": "org.apache.commons.collections.map.MultiValueMap",
+  "buggy_failures": [
+    "org.apache.commons.collections.map.MultiValueMapGptTest::testFullMapSerializationDefectTarget",
+    "org.apache.commons.collections.map.MultiValueMapGptTest::testEmptyMapSerializationDefectTarget"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "3f332f47020b79d3f7adf220f02dd125877ec4f7ba480aa053146b23c7db0087",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_10b/MultiValueMapGptTest.java"
+  ],
+  "run_id": "Collections-10-Reevaluation-s0-a3624d6e0db4"
+}

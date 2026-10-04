@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 96.88,
+  "branch_cov": 95.2,
+  "test_file": "ClassUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.ClassUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.ClassUtilsGptTest::testGetShortClassName_Class",
+    "org.apache.commons.lang.ClassUtilsGptTest::testGetPublicMethod_NoPublicImplementationThrowsNoSuchMethod",
+    "org.apache.commons.lang.ClassUtilsGptTest::testIsAssignable_NullChecks",
+    "org.apache.commons.lang.ClassUtilsGptTest::testDefect_getShortClassName_ArrayClass",
+    "org.apache.commons.lang.ClassUtilsGptTest::testDefect_getPackageName_ArrayClass"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.ClassUtilsGptTest::testGetShortClassName_Class",
+    "org.apache.commons.lang.ClassUtilsGptTest::testGetPublicMethod_NoPublicImplementationThrowsNoSuchMethod",
+    "org.apache.commons.lang.ClassUtilsGptTest::testIsAssignable_NullChecks"
+  ],
+  "suite_sha256": "da5322e101ca69c6018d29da52c6fa16d2001617df19646f329a747555f5937b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_41b/ClassUtilsGptTest.java"
+  ],
+  "run_id": "Lang-41-Reevaluation-s0-545f333d2f77"
+}

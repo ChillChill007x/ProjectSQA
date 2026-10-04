@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.6,
+  "branch_cov": 93.67,
+  "test_file": "Base32GptTest.java",
+  "target_classes": "org.apache.commons.codec.binary.Base32",
+  "buggy_failures": [
+    "org.apache.commons.codec.binary.Base32GptTest::testCodec200IsInAlphabetWOnHex",
+    "org.apache.commons.codec.binary.Base32GptTest::testCodec200HexCustomPadW"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "c575083827cbdcd5d1f84c94b649c75ee4bc374c6d1aa0a9f2d3b1bd6ad03207",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_16b/Base32GptTest.java"
+  ],
+  "run_id": "Codec-16-Reevaluation-s0-2cd63e936ab8"
+}

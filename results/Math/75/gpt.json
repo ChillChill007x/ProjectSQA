@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.53,
+  "branch_cov": 88.46,
+  "test_file": "FrequencyGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.Frequency",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.FrequencyGptTest::testSerializationIntegrity",
+    "org.apache.commons.math.stat.FrequencyGptTest::testDefectTargetedGetPctObjectCall",
+    "org.apache.commons.math.stat.FrequencyGptTest::testDefectTargetedIntegerObjectPct"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.stat.FrequencyGptTest::testSerializationIntegrity"
+  ],
+  "suite_sha256": "c1e654ebfc8a4d6b1e23111acdd574e967d00b6c965eb6490bd50d66d5d3331e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_75b/FrequencyGptTest.java"
+  ],
+  "run_id": "Math-75-Reevaluation-s0-afb1754a1435"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 99.18,
+  "branch_cov": 94.85,
+  "test_file": "EmbeddedRungeKuttaIntegratorDeepseekTest.java;RungeKuttaIntegratorDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator;org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator",
+  "buggy_failures": [
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorDeepseekTest::testResetStateEventContinues",
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorDeepseekTest::testEventExactlyAtStartIsNotSkipped",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullY",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testMissedEndEvent",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullEquations",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testStepRejectionNearStart",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullY0"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorDeepseekTest::testResetStateEventContinues",
+    "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegratorDeepseekTest::testEventExactlyAtStartIsNotSkipped",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullY",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testMissedEndEvent",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullEquations",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testStepRejectionNearStart",
+    "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegratorDeepseekTest::testNullY0"
+  ],
+  "suite_sha256": "fabf01a998ce3cab744753ed2f77ca2080c22e35c0836796582332ce043c4cbf",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_71b/EmbeddedRungeKuttaIntegratorDeepseekTest.java",
+    "/workspace/Deepseek-v4_flash/TestCode/Math_71b/RungeKuttaIntegratorDeepseekTest.java"
+  ],
+  "run_id": "Math-71-Reevaluation-s0-dad599ce4204"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 11,
+  "line_cov": 100.0,
+  "branch_cov": 94.35,
+  "test_file": "SubTypeValidatorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testDefectC3P0ComboPooledDataSourceBlocked",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringAbstractApplicationContextHierarchy",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testDefectC3P0JndiRefForwardingDataSourceBlocked",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedCommonsCollectionsInvokerTransformer",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdkRemoteObject",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testSubclassCustomIllegalClassNamesOverride",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdkLoggingFileHandler",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringAbstractPointcutAdvisorHierarchy",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringDirectMatchAbstractPointcutAdvisor",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdbcRowSetImpl",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringDirectMatchAbstractApplicationContext"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testDefectC3P0ComboPooledDataSourceBlocked",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringAbstractApplicationContextHierarchy",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testDefectC3P0JndiRefForwardingDataSourceBlocked",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedCommonsCollectionsInvokerTransformer",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdkRemoteObject",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testSubclassCustomIllegalClassNamesOverride",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdkLoggingFileHandler",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringAbstractPointcutAdvisorHierarchy",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringDirectMatchAbstractPointcutAdvisor",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedJdbcRowSetImpl",
+    "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidatorGptTest::testBlockedSpringDirectMatchAbstractApplicationContext"
+  ],
+  "suite_sha256": "470419f6b581fc4f2db385d3954b1397ba3a241db50502348fb1a00a531e935f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_94b/SubTypeValidatorGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-94-Reevaluation-s0-2d243c6a8e4d"
+}

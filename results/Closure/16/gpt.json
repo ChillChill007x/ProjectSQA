@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.08,
+  "branch_cov": 92.98,
+  "test_file": "ScopedAliasesGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.ScopedAliases",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testMultipleDeclaratorsInSingleVarStatement",
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testHotSwapScriptDirectInvocation",
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testNamespaceShadowRenamingInInnerScope"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testMultipleDeclaratorsInSingleVarStatement",
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testHotSwapScriptDirectInvocation",
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testNamespaceShadowRenamingInInnerScope"
+  ],
+  "suite_sha256": "e20993078d1c59cc8b1b55f811a3f8e7512e7058b88aa438a5895c1247386b40",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_16b/ScopedAliasesGptTest.java"
+  ],
+  "run_id": "Closure-16-Reevaluation-s0-4a0aab3f66a2"
+}

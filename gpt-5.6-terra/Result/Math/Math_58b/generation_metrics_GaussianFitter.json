@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 02:11:24",
+  "project": "Math",
+  "bug_id": 58,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.fitting.GaussianFitter",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 133.73,
+    "input_tokens": 4377,
+    "output_tokens": 7631,
+    "reasoning_tokens": 18048,
+    "total_tokens": 30056,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 358237,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 41763
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "JsonAdapterAnnotationTypeAdapterFactoryGptTest.java",
+  "target_classes": "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactoryGptTest::testNullSafeBugDeserialize",
+    "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactoryGptTest::testGetTypeAdapterReturnsNullWhenFactoryReturnsNullDirectly",
+    "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactoryGptTest::testNullSafeBugSerialize",
+    "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactoryGptTest::testCreateReturnsNullWhenFactoryReturnsNullDirectly"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9be5b9e89c6ce3bc1fa44c9f5fe4e8c4415af7c514e4c18bfcdbd1d59e9805d2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_6b/JsonAdapterAnnotationTypeAdapterFactoryGptTest.java"
+  ],
+  "run_id": "Gson-6-Reevaluation-s0-e26a4d284ce6"
+}

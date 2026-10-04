@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 05:19:06",
+  "project": "Closure",
+  "bug_id": 157,
+  "version": "b",
+  "target_class": "com.google.javascript.rhino.IRFactory",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 840.62,
+    "input_tokens": 6986,
+    "output_tokens": 24276,
+    "reasoning_tokens": null,
+    "total_tokens": 31262,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 1026082,
+    "limit": 1000000,
+    "remaining": -26082
+  }
+}

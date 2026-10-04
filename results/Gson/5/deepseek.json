@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 98.94,
+  "branch_cov": 88.65,
+  "test_file": "ISO8601UtilsDeepseekTest.java",
+  "target_classes": "com.google.gson.internal.bind.util.ISO8601Utils",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithTimeOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithPositiveOffsetHoursOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithNegativeOffsetHoursOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithNegativeOffsetHoursOnlyAndMillis",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testFormatDateWithMillisAndNegativeOffset"
+  ],
+  "fixed_failures": [
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithTimeOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithPositiveOffsetHoursOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithNegativeOffsetHoursOnly",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testParseDateWithNegativeOffsetHoursOnlyAndMillis",
+    "com.google.gson.internal.bind.util.ISO8601UtilsDeepseekTest::testFormatDateWithMillisAndNegativeOffset"
+  ],
+  "suite_sha256": "facf867fded0f5b6cbfc4753c37d6826258c9fbbb3d6976ac2b63a8f7e342775",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Gson_5b/ISO8601UtilsDeepseekTest.java"
+  ],
+  "run_id": "Gson-5-Reevaluation-s0-9ab41285d3d7"
+}

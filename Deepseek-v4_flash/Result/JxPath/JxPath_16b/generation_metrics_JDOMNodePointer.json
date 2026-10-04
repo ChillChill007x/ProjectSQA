@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 12:23:12",
+  "project": "JxPath",
+  "bug_id": 16,
+  "version": "b",
+  "target_class": "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 191.25,
+    "input_tokens": 6513,
+    "output_tokens": 9683,
+    "reasoning_tokens": null,
+    "total_tokens": 16196,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 495467,
+    "limit": 1000000,
+    "remaining": 504533
+  }
+}

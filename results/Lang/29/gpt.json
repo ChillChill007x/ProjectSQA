@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.16,
+  "branch_cov": 88.92,
+  "test_file": "SystemUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.SystemUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.SystemUtilsGptTest::testToJavaVersionIntArray",
+    "org.apache.commons.lang3.SystemUtilsGptTest::testJavaVersionAsInt",
+    "org.apache.commons.lang3.SystemUtilsGptTest::testToJavaVersionIntArrayBoundary"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.SystemUtilsGptTest::testToJavaVersionIntArray",
+    "org.apache.commons.lang3.SystemUtilsGptTest::testToJavaVersionIntArrayBoundary"
+  ],
+  "suite_sha256": "89843d8fb332b6da924f94ae3c491e338b2dacebd100017e112f11f679b1b77d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_29b/SystemUtilsGptTest.java"
+  ],
+  "run_id": "Lang-29-Reevaluation-s0-128f7b7310a4"
+}

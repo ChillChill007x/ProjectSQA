@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 89.35,
+  "branch_cov": 72.81,
+  "test_file": "NumberUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumber_LANG664",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumberEdgeCases"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testCreateNumber",
+    "org.apache.commons.lang3.math.NumberUtilsDeepseekTest::testIsNumberEdgeCases"
+  ],
+  "suite_sha256": "d2f09f7faecab7de5fbbf6c784d1f5fd5d7d85a388135cbc5e5acdd0b6507319",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_24b/NumberUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-24-Reevaluation-s0-2b1244d8a0ec"
+}

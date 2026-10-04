@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 00:13:57",
+  "project": "Csv",
+  "bug_id": 8,
+  "version": "b",
+  "target_class": "org.apache.commons.csv.CSVFormat",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 75.02,
+    "input_tokens": 8365,
+    "output_tokens": 5122,
+    "reasoning_tokens": null,
+    "total_tokens": 13487,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 65351,
+    "limit": 1000000,
+    "remaining": 934649
+  }
+}

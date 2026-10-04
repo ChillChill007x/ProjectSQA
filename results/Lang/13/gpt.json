@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 95.16,
+  "branch_cov": 94.35,
+  "test_file": "SerializationUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.SerializationUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.SerializationUtilsGptTest::testPrimitiveTypeClassSerialization",
+    "org.apache.commons.lang3.SerializationUtilsGptTest::testPrimitiveTypeArrayClassSerialization"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "0181c2aa704bb114b93ee5d3585487816ee0b547db332f4657c83666d6f235a2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_13b/SerializationUtilsGptTest.java"
+  ],
+  "run_id": "Lang-13-Reevaluation-s0-3fbb6c2c3ee8"
+}

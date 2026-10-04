@@ -1,0 +1,35 @@
+{
+  "project": "Compress",
+  "bug_id": 13,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-13-gpt-1790368177",
+  "suite_sha256": "7be27f694e40619e9828d6a672307fb9f823cc3d22c6f001c6fcc19118a2e325",
+  "test_files": "ZipArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+  "timestamp": "2026-10-03 03:29:53",
+  "evaluation_duration_sec": 16.749,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 79.5,
+  "branch_coverage_percent": 69.23,
+  "failures_count": 8,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraAndCentralDirectoryMerging",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraFieldsReplacesAll",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testWinzipBackSlashWorkaroundInZipFile",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistingExtraFieldThrowsException",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testEqualsAndHashCodeExhaustiveBranches",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructors",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testWinzipBackSlashWorkaroundInZipArchiveInputStream",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testAddAsFirstExtraFieldAndReordering"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraAndCentralDirectoryMerging",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testSetExtraFieldsReplacesAll",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistingExtraFieldThrowsException",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testEqualsAndHashCodeExhaustiveBranches",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructors",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testAddAsFirstExtraFieldAndReordering"
+  ]
+}

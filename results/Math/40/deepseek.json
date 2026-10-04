@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 96.19,
+  "branch_cov": 85.97,
+  "test_file": "BracketingNthOrderBrentSolverDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver",
+  "buggy_failures": [
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testSolverWorksWithPolynomialOfHighOrder",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testMaxEvaluationsExceeded",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testNullAllowedSolution",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testExactRootAtMax",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testExactRootAtMin",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testAllAllowedSolutions"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testSolverWorksWithPolynomialOfHighOrder",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testMaxEvaluationsExceeded",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testNullAllowedSolution",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testExactRootAtMax",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testExactRootAtMin",
+    "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverDeepseekTest::testAllAllowedSolutions"
+  ],
+  "suite_sha256": "433ae227cececc4af5f5823c41bcb4203bfa684692bcdf4845429f05a162c175",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_40b/BracketingNthOrderBrentSolverDeepseekTest.java"
+  ],
+  "run_id": "Math-40-Reevaluation-s0-fcf1708e601a"
+}

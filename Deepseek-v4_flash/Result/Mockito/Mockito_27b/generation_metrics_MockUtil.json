@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 10:31:41",
+  "project": "Mockito",
+  "bug_id": 27,
+  "version": "b",
+  "target_class": "org.mockito.internal.util.MockUtil",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 84.34,
+    "input_tokens": 1789,
+    "output_tokens": 5728,
+    "reasoning_tokens": null,
+    "total_tokens": 7517,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 246910,
+    "limit": 1000000,
+    "remaining": 753090
+  }
+}

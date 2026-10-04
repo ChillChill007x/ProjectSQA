@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 75.4,
+  "branch_cov": 66.68,
+  "test_file": "XmlSerializerProviderGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProviderGptTest::testDynamicRootNameWithNamespaceAndNullValue",
+    "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProviderGptTest::testDynamicRootNameWithNullValue"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "2b740cf7fe9dcef5f4dcbd4104bd8972212c00919fbaf142f9f3ec1021ba59a7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonXml_4b/XmlSerializerProviderGptTest.java"
+  ],
+  "run_id": "JacksonXml-4-Reevaluation-s0-e917eb1e5c72"
+}

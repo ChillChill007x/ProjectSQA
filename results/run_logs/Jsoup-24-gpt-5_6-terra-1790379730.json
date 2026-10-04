@@ -1,0 +1,40 @@
+{
+  "project": "Jsoup",
+  "bug_id": 24,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-24-gpt-1790379730",
+  "suite_sha256": "fe6610edd4fc2ee095613e139be62faeeb0a113a045ebd7baed52c819fffc9ed",
+  "test_files": "TokeniserStateGptTest.java",
+  "target_classes": "org.jsoup.parser.TokeniserState",
+  "timestamp": "2026-10-03 06:42:26",
+  "evaluation_duration_sec": 15.93,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 47.62,
+  "branch_coverage_percent": 37.01,
+  "failures_count": 10,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testRcdataWithInappropriateEndTag",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataDoubleEscapedTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTStateHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameHandlesQuotesInScriptCommentDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSectionHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterDoctypeSystemKeywordAndBogus",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameDirectReaderPositionDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testTokeniserStateEnumValuesAndCompleteness",
+    "org.jsoup.parser.TokeniserStateGptTest::testCharacterReferenceWithoutSemicolonOrInvalid"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TokeniserStateGptTest::testRcdataWithInappropriateEndTag",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataDoubleEscapedTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testPLAINTEXTStateHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testScriptDataEscapedEndTagNameHandlesQuotesInScriptCommentDefect",
+    "org.jsoup.parser.TokeniserStateGptTest::testCdataSectionHandling",
+    "org.jsoup.parser.TokeniserStateGptTest::testDataStateBasicTransitions",
+    "org.jsoup.parser.TokeniserStateGptTest::testAfterDoctypeSystemKeywordAndBogus",
+    "org.jsoup.parser.TokeniserStateGptTest::testTokeniserStateEnumValuesAndCompleteness",
+    "org.jsoup.parser.TokeniserStateGptTest::testCharacterReferenceWithoutSemicolonOrInvalid"
+  ]
+}

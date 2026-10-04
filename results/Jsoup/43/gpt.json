@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 87.26,
+  "branch_cov": 73.16,
+  "test_file": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnText",
+    "org.jsoup.nodes.ElementGptTest::testGetElementsQueries",
+    "org.jsoup.nodes.ElementGptTest::testSiblingNavigationEdgeCases",
+    "org.jsoup.nodes.ElementGptTest::testCssSelector",
+    "org.jsoup.nodes.ElementGptTest::testElementSiblingIndexSameContent",
+    "org.jsoup.nodes.ElementGptTest::testGetSiblingsWithDuplicateContent",
+    "org.jsoup.nodes.ElementGptTest::testInsertionAndManipulation"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndOwnText",
+    "org.jsoup.nodes.ElementGptTest::testGetElementsQueries",
+    "org.jsoup.nodes.ElementGptTest::testSiblingNavigationEdgeCases",
+    "org.jsoup.nodes.ElementGptTest::testGetSiblingsWithDuplicateContent",
+    "org.jsoup.nodes.ElementGptTest::testInsertionAndManipulation"
+  ],
+  "suite_sha256": "99ee985439848bdd749c3c0f6f1c005ba4a1f5a6c083d5347de12b6cf3adda52",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_43b/ElementGptTest.java"
+  ],
+  "run_id": "Jsoup-43-Reevaluation-s0-8f1bc7cb07bf"
+}

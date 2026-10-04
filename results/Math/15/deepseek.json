@@ -1,0 +1,41 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 12,
+  "line_cov": 71.49,
+  "branch_cov": 57.06,
+  "test_file": "FastMathDeepseekTest.java",
+  "target_classes": "org.apache.commons.math3.util.FastMath",
+  "buggy_failures": [
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testTanBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testUlp",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowIntExponent",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testScalb",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testFloorCeilRint",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testMath904",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testHyperbolic",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowBasic",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testSinhCoshTanhBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testNextAfter",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testExpBoundaries"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testTanBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testUlp",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowIntExponent",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testScalb",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testFloorCeilRint",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testHyperbolic",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testPowBasic",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testSinhCoshTanhBoundaries",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testNextAfter",
+    "org.apache.commons.math3.util.FastMathDeepseekTest::testExpBoundaries"
+  ],
+  "suite_sha256": "a9071fee092e18eee74ae7d7075f4398317796da883332b9aae001c4b1ea1213",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_15b/FastMathDeepseekTest.java"
+  ],
+  "run_id": "Math-15-Reevaluation-s0-da94b26ace98"
+}

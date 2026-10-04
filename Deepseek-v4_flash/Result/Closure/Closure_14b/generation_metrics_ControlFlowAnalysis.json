@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 10:54:08",
+  "project": "Closure",
+  "bug_id": 14,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.ControlFlowAnalysis",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 190.25,
+    "input_tokens": 9332,
+    "output_tokens": 10370,
+    "reasoning_tokens": null,
+    "total_tokens": 19702,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 399271,
+    "limit": 1000000,
+    "remaining": 600729
+  }
+}

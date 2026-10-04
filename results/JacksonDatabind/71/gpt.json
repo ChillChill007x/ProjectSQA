@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 96.36,
+  "branch_cov": 94.17,
+  "test_file": "StdKeyDeserializerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializerGptTest::testDefectCharSequenceKeyDeserializerSupported"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "476712278fcea37b83fc27d8bf471188a0ea4f97a5f478d82e73555bd2646eee",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_71b/StdKeyDeserializerGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-71-Reevaluation-s0-d808f3630f1e"
+}

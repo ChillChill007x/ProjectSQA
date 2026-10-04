@@ -1,0 +1,34 @@
+{
+  "project": "Compress",
+  "bug_id": 38,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-38-gpt-1790369625",
+  "suite_sha256": "1a372bcdc110869aa8244b041621c4c1953cf21c015dfbc94e8458e0bca2870d",
+  "test_files": "TarArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+  "timestamp": "2026-10-03 03:54:04",
+  "evaluation_duration_sec": 19.006,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 86.84,
+  "branch_coverage_percent": 54.55,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testOldGnuFormatHeaderParsing",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testLinkTypeClassifications",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testHeaderEvaluationFormats",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testNormalizeFileNameWindowsDriveLetters",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testPaxHeaderEndingInSlashNotADirectory",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testEqualsAndHashCode",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testGnuLongLinkAndNameEndingInSlashNotADirectory"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testOldGnuFormatHeaderParsing",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testLinkTypeClassifications",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testHeaderEvaluationFormats",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testNormalizeFileNameWindowsDriveLetters",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testEqualsAndHashCode",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testGnuLongLinkAndNameEndingInSlashNotADirectory"
+  ]
+}

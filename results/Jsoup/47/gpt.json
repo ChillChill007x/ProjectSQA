@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.69,
+  "branch_cov": 100.0,
+  "test_file": "EntitiesGptTest.java",
+  "target_classes": "org.jsoup.nodes.Entities",
+  "buggy_failures": [
+    "org.jsoup.nodes.EntitiesGptTest::testUnescapeBasicAndStrict",
+    "org.jsoup.nodes.EntitiesGptTest::escapesGtInXmlAttributesButNotInHtml",
+    "org.jsoup.nodes.EntitiesGptTest::testXmlAttributeEscapingDirect"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.EntitiesGptTest::testUnescapeBasicAndStrict",
+    "org.jsoup.nodes.EntitiesGptTest::escapesGtInXmlAttributesButNotInHtml"
+  ],
+  "suite_sha256": "b7467006a6274c59f29212a310c3bc4f09b8c368e7dce66a14d191f62161f181",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_47b/EntitiesGptTest.java"
+  ],
+  "run_id": "Jsoup-47-Reevaluation-s0-e7e13c5e2ab8"
+}

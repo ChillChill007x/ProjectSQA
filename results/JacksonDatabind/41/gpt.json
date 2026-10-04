@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 90.41,
+  "branch_cov": 84.02,
+  "test_file": "TypeFactoryGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.type.TypeFactory",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.type.TypeFactoryGptTest::testDeprecatedTypeResolutionWithNullContextType",
+    "com.fasterxml.jackson.databind.type.TypeFactoryGptTest::testConstructMapTypeAndProperties",
+    "com.fasterxml.jackson.databind.type.TypeFactoryGptTest::testDeprecatedTypeResolutionWithNullContextClass"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.type.TypeFactoryGptTest::testConstructMapTypeAndProperties"
+  ],
+  "suite_sha256": "f982bc20c37e0c28bdca03932ca6554500e4893d04427ab612db2835bb02780a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_41b/TypeFactoryGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-41-Reevaluation-s0-6c90a66e4f50"
+}

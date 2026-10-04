@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 86.44,
+  "branch_cov": 79.37,
+  "test_file": "Flat3MapGptTest.java",
+  "target_classes": "org.apache.commons.collections.map.Flat3Map",
+  "buggy_failures": [
+    "org.apache.commons.collections.map.Flat3MapGptTest::testRemoveNonDelegateAllSizes",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testEntryIteratorSetValue2",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testEntryIteratorSetValue3",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testNullKeyOperations",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testMapIteratorSetValue2",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testMapIteratorSetValue3"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.map.Flat3MapGptTest::testRemoveNonDelegateAllSizes",
+    "org.apache.commons.collections.map.Flat3MapGptTest::testNullKeyOperations"
+  ],
+  "suite_sha256": "fabbc9714ce54a7ca2c317f47011fe3d9368dde3f590a227e4f872fa232e9cbb",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_1b/Flat3MapGptTest.java"
+  ],
+  "run_id": "Collections-1-Reevaluation-s0-c45a3e62323c"
+}

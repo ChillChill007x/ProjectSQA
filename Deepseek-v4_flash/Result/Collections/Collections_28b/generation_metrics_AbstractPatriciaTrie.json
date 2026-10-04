@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:19:34",
+  "project": "Collections",
+  "bug_id": 28,
+  "version": "b",
+  "target_class": "org.apache.commons.collections4.trie.AbstractPatriciaTrie",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 49.92,
+    "input_tokens": 18113,
+    "output_tokens": 6732,
+    "reasoning_tokens": null,
+    "total_tokens": 24845,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 827290,
+    "limit": 1000000,
+    "remaining": 172710
+  }
+}

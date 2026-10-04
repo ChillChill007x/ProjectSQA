@@ -1,0 +1,38 @@
+{
+  "project": "Lang",
+  "bug": "1",
+  "target": "org.apache.commons.lang3.math.NumberUtils",
+  "targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "metadata_targets": [
+    "org.apache.commons.lang3.math.NumberUtils"
+  ],
+  "excluded_non_java_targets": [],
+  "tool": "openai",
+  "round": "Reevaluation",
+  "seed": 0,
+  "budget_seconds": 0,
+  "generation_revision": "unknown",
+  "campaign_version": "existing-suites-2",
+  "protocol_version": "existing-suites-2",
+  "purpose": "imported-suite-evaluation",
+  "ai_mode": "imported",
+  "model": null,
+  "model_identity_status": "UNVERIFIED_MISSING_ORIGINAL_API_LOGS",
+  "declared_models": [
+    "gpt-5.6-terra"
+  ],
+  "implementation_sha256": "eb83d891016f55350042e3fd406cbbb6a4f395ca77682eb53f252d736852c535",
+  "source_suite_path": "gpt-5.6-terra/TestCode/Lang_1b",
+  "test_input_sha256": {
+    "gpt-5.6-terra/TestCode/Lang_1b/NumberUtilsGptTest.java": "32b0edfccf5286149a058cb778435fa53293baa47a635ec7fcc129ad46175d77"
+  },
+  "prompt_input_sha256": {
+    "gpt-5.6-terra/Prompt/Lang_1b/actual_prompt_NumberUtils.md": "4b2f91729d0fe6408361e582a237d97d61a6d1bc97c1cf6793c7998536e95133"
+  },
+  "legacy_metric_sha256": {
+    "gpt-5.6-terra/Result/Lang_1b/generation_metrics_NumberUtils.json": "943b1da3b992f9fd805a8a876b80e2fb664a30a60164efbe8edc6021e823b07b"
+  },
+  "explicit_ground_truth_in_saved_prompt": false
+}

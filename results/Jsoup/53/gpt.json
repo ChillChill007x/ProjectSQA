@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 99.4,
+  "branch_cov": 97.8,
+  "test_file": "TokenQueueGptTest.java",
+  "target_classes": "org.jsoup.parser.TokenQueue",
+  "buggy_failures": [
+    "org.jsoup.parser.TokenQueueGptTest::testChompBalancedWithQuotesContainingCloseBracket",
+    "org.jsoup.parser.TokenQueueGptTest::testBasicQueueLifecycleAndState",
+    "org.jsoup.parser.TokenQueueGptTest::testChompBalancedUnclosedOrEmpty",
+    "org.jsoup.parser.TokenQueueGptTest::testChompBalancedWithDoubleQuotesContainingCloseBracket"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TokenQueueGptTest::testBasicQueueLifecycleAndState",
+    "org.jsoup.parser.TokenQueueGptTest::testChompBalancedUnclosedOrEmpty"
+  ],
+  "suite_sha256": "1d88dbd969cc2f6853b6d40ccc03c2a145cc5720352e215517af64a174166e39",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_53b/TokenQueueGptTest.java"
+  ],
+  "run_id": "Jsoup-53-Reevaluation-s0-ae7a43d6f998"
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 03:19:55",
+  "project": "Math",
+  "bug_id": 102,
+  "version": "b",
+  "target_class": "org.apache.commons.math.stat.inference.ChiSquareTestImpl",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 279.12,
+    "input_tokens": 5185,
+    "output_tokens": 6225,
+    "reasoning_tokens": 19997,
+    "total_tokens": 31407,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 155051,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 244949
+  }
+}

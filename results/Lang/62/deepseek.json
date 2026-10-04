@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 99.01,
+  "branch_cov": 99.07,
+  "test_file": "EntitiesDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang.Entities",
+  "buggy_failures": [
+    "org.apache.commons.lang.EntitiesDeepseekTest::testNumberOverflowString",
+    "org.apache.commons.lang.EntitiesDeepseekTest::testNumberOverflowWriter",
+    "org.apache.commons.lang.EntitiesDeepseekTest::testNumberOverflowHexString"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "595969518e34b8155476efbd2899303e43532c7f1d18540f77ad637dffb3d049",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_62b/EntitiesDeepseekTest.java"
+  ],
+  "run_id": "Lang-62-Reevaluation-s0-6d8e8f7dc067"
+}

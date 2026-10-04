@@ -1,0 +1,27 @@
+{
+  "project": "Jsoup",
+  "bug_id": 12,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-12-gpt-1790379247",
+  "suite_sha256": "d36f46a2672055ada3a65104436ddf1be5ed60bd47a92fda05e7418be2522197",
+  "test_files": "SelectorGptTest.java",
+  "target_classes": "org.jsoup.select.Selector",
+  "timestamp": "2026-10-03 06:34:23",
+  "evaluation_duration_sec": 15.08,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 97.71,
+  "branch_coverage_percent": 94.7,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.select.SelectorGptTest::testMalformedAttributeQueryThrows",
+    "org.jsoup.select.SelectorGptTest::testByAttributeRegexWithMultipleAlternations",
+    "org.jsoup.select.SelectorGptTest::testSelectorStartingWithCombinators",
+    "org.jsoup.select.SelectorGptTest::testByAttributeRegexCombined"
+  ],
+  "fixed_failures": [
+    "org.jsoup.select.SelectorGptTest::testMalformedAttributeQueryThrows",
+    "org.jsoup.select.SelectorGptTest::testSelectorStartingWithCombinators"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 99.64,
+  "branch_cov": 89.81,
+  "test_file": "FunctionToBlockMutatorGptTest.java;RenameLabelsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.FunctionToBlockMutator;com.google.javascript.jscomp.RenameLabels",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.FunctionToBlockMutatorGptTest::testInlineFunctions31_multipleUninitializedVarsInLoop",
+    "com.google.javascript.jscomp.FunctionToBlockMutatorGptTest::testInlineFunctions31_firstInitializedSecondUninitializedVarInLoop",
+    "com.google.javascript.jscomp.RenameLabelsGptTest::testUnreferencedLabelPreservedWhenRemoveUnusedIsFalse",
+    "com.google.javascript.jscomp.RenameLabelsGptTest::testDuplicateLabelInSameScopeThrowsIllegalState"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.FunctionToBlockMutatorGptTest::testInlineFunctions31_multipleUninitializedVarsInLoop",
+    "com.google.javascript.jscomp.FunctionToBlockMutatorGptTest::testInlineFunctions31_firstInitializedSecondUninitializedVarInLoop",
+    "com.google.javascript.jscomp.RenameLabelsGptTest::testDuplicateLabelInSameScopeThrowsIllegalState"
+  ],
+  "suite_sha256": "e1af27c38483fa24ebb06e90f433c12859dcc5c465f23913fe4e292bd89ee8b2",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_72b/FunctionToBlockMutatorGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Closure_72b/RenameLabelsGptTest.java"
+  ],
+  "run_id": "Closure-72-Reevaluation-s0-77b4631ff7c7"
+}

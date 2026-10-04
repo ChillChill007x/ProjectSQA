@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 04:53:32",
+  "project": "Cli",
+  "bug_id": 22,
+  "version": "b",
+  "target_class": "org.apache.commons.cli.PosixParser",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 63.67,
+    "input_tokens": 3251,
+    "output_tokens": 4117,
+    "reasoning_tokens": 7719,
+    "total_tokens": 15087,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 246864,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 153136
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 94.28,
+  "branch_cov": 91.37,
+  "test_file": "ZipArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testNullCommentEqualsEmptyComment",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructorFromZipArchiveEntry",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistentExtraFieldThrowsException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testCopyConstructorFromZipArchiveEntry",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveEntryGptTest::testRemoveNonExistentExtraFieldThrowsException"
+  ],
+  "suite_sha256": "940f637c153b6958b623bdad6d16a3e117cf3e3d1a0e675e91c3b46672c8437c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_15b/ZipArchiveEntryGptTest.java"
+  ],
+  "run_id": "Compress-15-Reevaluation-s0-b354fa86939f"
+}

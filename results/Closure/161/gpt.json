@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 77.35,
+  "branch_cov": 65.19,
+  "test_file": "PeepholeFoldConstantsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.PeepholeFoldConstants",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldComparisonNodes",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldAssignmentsToCompound",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testObjectPropAccessWithGetterFoldsToCall",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testIssue522",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testIssue522NonEmptyArrayOutOfBounds"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldComparisonNodes",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldAssignmentsToCompound",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testObjectPropAccessWithGetterFoldsToCall",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testIssue522",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testIssue522NonEmptyArrayOutOfBounds"
+  ],
+  "suite_sha256": "5dc9bbd1f933301f8bb95b5cfb2b9eabf03a7ca84579d906699aa1be23983fbb",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_161b/PeepholeFoldConstantsGptTest.java"
+  ],
+  "run_id": "Closure-161-Reevaluation-s0-89365149e713"
+}

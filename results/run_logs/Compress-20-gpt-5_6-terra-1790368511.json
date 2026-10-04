@@ -1,0 +1,25 @@
+{
+  "project": "Compress",
+  "bug_id": 20,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-20-gpt-1790368511",
+  "suite_sha256": "8477be16ea94ac038e0cb9c35bd43365463cc33b55b1aad6e17593217ac34d61",
+  "test_files": "CpioArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream",
+  "timestamp": "2026-10-03 03:35:30",
+  "evaluation_duration_sec": 18.709,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 97.2,
+  "branch_coverage_percent": 92.98,
+  "failures_count": 2,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testReadOldBinaryFormatLittleEndian",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testCpioUnarchiveCreatedByRedlineRpm"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testReadOldBinaryFormatLittleEndian",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamGptTest::testCpioUnarchiveCreatedByRedlineRpm"
+  ]
+}

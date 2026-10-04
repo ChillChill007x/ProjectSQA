@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 84.19,
+  "branch_cov": 72.16,
+  "test_file": "PeepholeFoldConstantsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.PeepholeFoldConstants",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldComparisons",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testErrorNegatingNonNumber",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldArithmeticModuloByZeroKnownDefect",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldLeftChildAssociativeOps",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldArithmeticDivideByZeroKnownDefect",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldAssign"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldComparisons",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testErrorNegatingNonNumber",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldLeftChildAssociativeOps",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsGptTest::testFoldAssign"
+  ],
+  "suite_sha256": "3e415c2c1d66ea12c81ab039e1ed36c18c64488e5bc2ccaae3cd6c4ed54738aa",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_78b/PeepholeFoldConstantsGptTest.java"
+  ],
+  "run_id": "Closure-78-Reevaluation-s0-3390ea4ada98"
+}

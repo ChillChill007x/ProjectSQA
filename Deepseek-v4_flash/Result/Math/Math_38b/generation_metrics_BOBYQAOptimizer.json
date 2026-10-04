@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 18:28:25",
+  "project": "Math",
+  "bug_id": 38,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.direct.BOBYQAOptimizer",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 53.25,
+    "input_tokens": 27499,
+    "output_tokens": 4142,
+    "reasoning_tokens": null,
+    "total_tokens": 31641,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 755675,
+    "limit": 1000000,
+    "remaining": 244325
+  }
+}

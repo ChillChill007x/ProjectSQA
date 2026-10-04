@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 98.06,
+  "branch_cov": 98.2,
+  "test_file": "TokenGptTest.java",
+  "target_classes": "org.jsoup.parser.Token",
+  "buggy_failures": [
+    "org.jsoup.parser.TokenGptTest::testFinaliseTagControlCharsCollapsingToEmptyAttributeNameDoesNotThrow",
+    "org.jsoup.parser.TokenGptTest::testStartTagNameAttrMethod",
+    "org.jsoup.parser.TokenGptTest::testNewAttributeControlCharsCollapsingToEmptyAttributeNameDoesNotThrow",
+    "org.jsoup.parser.TokenGptTest::testStartTagCoreOperationsAndToString"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.TokenGptTest::testStartTagNameAttrMethod",
+    "org.jsoup.parser.TokenGptTest::testStartTagCoreOperationsAndToString"
+  ],
+  "suite_sha256": "164898549e760d01d73eb459af178fe8cc069b0769bedcbbcd4b43b5388be763",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_59b/TokenGptTest.java"
+  ],
+  "run_id": "Jsoup-59-Reevaluation-s0-c97eb7c475e9"
+}

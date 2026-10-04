@@ -1,0 +1,34 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 9,
+  "line_cov": 40.68,
+  "branch_cov": 36.43,
+  "test_file": "BeanDeserializerDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.BeanDeserializer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeWithUnresolvedForwardReference",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeOtherWithStringToken",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088MultipleUnwrappedFieldsAfterCreator",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088UnwrappedFieldsAfterLastCreatorProp",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeWithNullTokenAndCustomCodec",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeOtherWithNullToken",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testUnwrappingDeserializerRecursionDetection",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088UnwrappedFieldsOnlyBeforeCreatorProp",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088WithoutUnwrappedProperties"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeWithUnresolvedForwardReference",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeOtherWithStringToken",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088MultipleUnwrappedFieldsAfterCreator",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testIssue2088UnwrappedFieldsAfterLastCreatorProp",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeWithNullTokenAndCustomCodec",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testDeserializeOtherWithNullToken",
+    "com.fasterxml.jackson.databind.deser.BeanDeserializerDeepseekTest::testUnwrappingDeserializerRecursionDetection"
+  ],
+  "suite_sha256": "e233e436fadfebf62a72993c83fb07c2457b59c44471f2f9d7625e177b0bdce5",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonDatabind_101b/BeanDeserializerDeepseekTest.java"
+  ],
+  "run_id": "JacksonDatabind-101-Reevaluation-s0-1f922b4f2ea5"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 67.4,
+  "branch_cov": 56.24,
+  "test_file": "HtmlTreeBuilderDeepseekTest.java",
+  "target_classes": "org.jsoup.parser.HtmlTreeBuilder",
+  "buggy_failures": [
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testParseFragmentWithContext",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testActiveFormattingElementsMarker",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::handlesKnownEmptyBlocks",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testReplaceOnStackAndActiveFormatting",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testSelfClosingKnownEmptyTag"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testParseFragmentWithContext",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testActiveFormattingElementsMarker",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::handlesKnownEmptyBlocks",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testReplaceOnStackAndActiveFormatting",
+    "org.jsoup.parser.HtmlTreeBuilderDeepseekTest::testSelfClosingKnownEmptyTag"
+  ],
+  "suite_sha256": "b5a9f4e9b56865bda129e78e75555e6f53a4eb77a32712e5cbb953fcd40086d2",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Jsoup_33b/HtmlTreeBuilderDeepseekTest.java"
+  ],
+  "run_id": "Jsoup-33-Reevaluation-s0-f1dadfb57df4"
+}

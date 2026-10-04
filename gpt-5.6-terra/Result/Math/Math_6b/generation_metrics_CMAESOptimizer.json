@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 00:49:53",
+  "project": "Math",
+  "bug_id": 6,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 132.59,
+    "input_tokens": 15315,
+    "output_tokens": 5311,
+    "reasoning_tokens": 11590,
+    "total_tokens": 32216,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 39540,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 360460
+  }
+}

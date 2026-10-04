@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "HelpFormatterGptTest.java;OptionBuilderGptTest.java;OptionGptTest.java",
+  "target_classes": "org.apache.commons.cli.HelpFormatter;org.apache.commons.cli.Option;org.apache.commons.cli.OptionBuilder",
+  "buggy_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest",
+    "org.apache.commons.cli.OptionBuilderGptTest",
+    "org.apache.commons.cli.OptionGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest",
+    "org.apache.commons.cli.OptionBuilderGptTest",
+    "org.apache.commons.cli.OptionGptTest"
+  ],
+  "suite_sha256": "9278d6aa3d6e98bed1e2e9554d539885671ccccf49968b1e17d03b73c79766c7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_31b/HelpFormatterGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Cli_31b/OptionBuilderGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Cli_31b/OptionGptTest.java"
+  ],
+  "run_id": "Cli-31-Reevaluation-s0-381b33a4e375"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 64.12,
+  "branch_cov": 58.05,
+  "test_file": "ZipArchiveOutputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStreamGptTest::testDefectDoesntWriteDataDescriptorWhenAddingRawEntries"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStreamGptTest::testDefectDoesntWriteDataDescriptorWhenAddingRawEntries"
+  ],
+  "suite_sha256": "a0532050aab3214f2332209105ad76f9468f211c2db7ce55ccc9d60481a3c6ba",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_43b/ZipArchiveOutputStreamGptTest.java"
+  ],
+  "run_id": "Compress-43-Reevaluation-s0-6cb3559a5105"
+}

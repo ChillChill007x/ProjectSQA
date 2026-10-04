@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 96.7,
+  "test_file": "Vector3DGptTest.java",
+  "target_classes": "org.apache.commons.math.geometry.Vector3D",
+  "buggy_failures": [
+    "org.apache.commons.math.geometry.Vector3DGptTest::testCrossProductCancellation"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "18bb4157f53dedb5452cb6a2798717b4d3fffefd1591c6391522edb339367930",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_55b/Vector3DGptTest.java"
+  ],
+  "run_id": "Math-55-Reevaluation-s0-2b5c47eba609"
+}

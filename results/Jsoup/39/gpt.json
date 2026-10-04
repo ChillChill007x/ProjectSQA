@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 91.4,
+  "test_file": "DataUtilGptTest.java",
+  "target_classes": "org.jsoup.helper.DataUtil",
+  "buggy_failures": [
+    "org.jsoup.helper.DataUtilGptTest::discardsSpuriousByteOrderMarkWhenNoCharsetSet"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "1ca83830de7d5f5cac7aa87a676d47a933eeebde9dece5051f91dfad7f3c8d66",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_39b/DataUtilGptTest.java"
+  ],
+  "run_id": "Jsoup-39-Reevaluation-s0-e35981442ff5"
+}

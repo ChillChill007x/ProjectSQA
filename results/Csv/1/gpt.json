@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 96.4,
+  "test_file": "ExtendedBufferedReaderGptTest.java",
+  "target_classes": "org.apache.commons.csv.ExtendedBufferedReader",
+  "buggy_failures": [
+    "org.apache.commons.csv.ExtendedBufferedReaderGptTest::testRead_IncrementsLineCounterOnCRLF_CSV75",
+    "org.apache.commons.csv.ExtendedBufferedReaderGptTest::testRead_IncrementsLineCounterOnCarriageReturn_CSV75"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "c09d00c0e2e3b79e365ef46f9692b9ab1421022d45056e4f188af05361285b84",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_1b/ExtendedBufferedReaderGptTest.java"
+  ],
+  "run_id": "Csv-1-Reevaluation-s0-cb1071e45c12"
+}

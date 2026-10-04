@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 94.91,
+  "branch_cov": 94.97,
+  "test_file": "IteratorUtilsGptTest.java",
+  "target_classes": "org.apache.commons.collections4.IteratorUtils",
+  "buggy_failures": [
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testCollatedIterator_NullComparator_NaturalOrder_COLLECTIONS566",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testLoopingIterators",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testPushbackIteratorNull",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testAsIteratorAndAsEnumeration",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testPeekingIteratorNull"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testLoopingIterators",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testPushbackIteratorNull",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testAsIteratorAndAsEnumeration",
+    "org.apache.commons.collections4.IteratorUtilsGptTest::testPeekingIteratorNull"
+  ],
+  "suite_sha256": "fa6b55e36e621456e21d40d477134e15ab30e4925b7becc5a53b4bd8396ae821",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_25b/IteratorUtilsGptTest.java"
+  ],
+  "run_id": "Collections-25-Reevaluation-s0-7570e69e34f1"
+}

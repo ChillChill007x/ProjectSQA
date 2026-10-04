@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 93.22,
+  "branch_cov": 80.51,
+  "test_file": "ByteQuadsCanonicalizerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCreateRootAndChildLifecycle",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testConstructorSizeRoundingAndPadding",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testSymbolTableExpansionBytesDefect",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testMaxEntriesForReuseResetOnChildRelease",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testBasic2QuadFindAndAdd"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testCreateRootAndChildLifecycle",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testConstructorSizeRoundingAndPadding",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testSymbolTableExpansionBytesDefect",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testMaxEntriesForReuseResetOnChildRelease",
+    "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizerGptTest::testBasic2QuadFindAndAdd"
+  ],
+  "suite_sha256": "5e7ea9ea332862050acc0e202bcc170488c401dc66749e196e2dc64fac2d6234",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_11b/ByteQuadsCanonicalizerGptTest.java"
+  ],
+  "run_id": "JacksonCore-11-Reevaluation-s0-29c428695951"
+}

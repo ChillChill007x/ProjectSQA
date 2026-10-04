@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 22:25:56",
+  "project": "Math",
+  "bug_id": 84,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.direct.MultiDirectional",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 1526.04,
+    "input_tokens": 1991,
+    "output_tokens": 65536,
+    "reasoning_tokens": null,
+    "total_tokens": 67527,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 752117,
+    "limit": 1000000,
+    "remaining": 247883
+  }
+}

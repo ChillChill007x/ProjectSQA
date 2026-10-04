@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:39:39",
+  "project": "Chart",
+  "bug_id": 9,
+  "version": "b",
+  "target_class": "org.jfree.data.time.TimeSeries",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 106.95,
+    "input_tokens": 9124,
+    "output_tokens": 8797,
+    "reasoning_tokens": null,
+    "total_tokens": 17921,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 1000184,
+    "limit": 1000000,
+    "remaining": -184
+  }
+}

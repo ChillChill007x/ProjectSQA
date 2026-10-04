@@ -1,0 +1,32 @@
+{
+  "project": "JacksonXml",
+  "bug_id": 3,
+  "technique": "gpt-5.6-terra",
+  "run_id": "JacksonXml-3-gpt-1790378685",
+  "suite_sha256": "807b0bafcb2405336d7237ffb2b03466b4ff1cadca17591054a07d3773040aee",
+  "test_files": "FromXmlParserGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser",
+  "timestamp": "2026-10-03 06:25:00",
+  "evaluation_duration_sec": 14.77,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 60.68,
+  "branch_coverage_percent": 52.32,
+  "failures_count": 6,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testHandleEOFThrowsExceptionWhenUnclosed",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testXmlAttributesWithNextTextValue",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testAddVirtualWrapping",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetValueAsString",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testCurrentNameAndOverrideCurrentName",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetBinaryValueCorruptBase64ThrowsException"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testHandleEOFThrowsExceptionWhenUnclosed",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testAddVirtualWrapping",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetValueAsString",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testCurrentNameAndOverrideCurrentName",
+    "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParserGptTest::testGetBinaryValueCorruptBase64ThrowsException"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 98.97,
+  "branch_cov": 97.67,
+  "test_file": "MultidimensionalCounterGptTest.java",
+  "target_classes": "org.apache.commons.math.util.MultidimensionalCounter",
+  "buggy_failures": [
+    "org.apache.commons.math.util.MultidimensionalCounterGptTest::testIterationConsistency",
+    "org.apache.commons.math.util.MultidimensionalCounterGptTest::testDefectSingleDimensionGetCounts",
+    "org.apache.commons.math.util.MultidimensionalCounterGptTest::testDefectGetCountsLastDimension"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "17808c31919cbc09a6d2506b0942e42e70671054175980e7e115d1c0e43cef26",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_56b/MultidimensionalCounterGptTest.java"
+  ],
+  "run_id": "Math-56-Reevaluation-s0-7b325a9d2ec2"
+}

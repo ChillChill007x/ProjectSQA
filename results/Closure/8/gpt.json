@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 96.95,
+  "test_file": "CollapseVariableDeclarationsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CollapseVariableDeclarations",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testSequenceOfAssignmentsWithoutVarNotCollapsed",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820_simpleReassignmentFollowedByNoVar",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820_multipleSequentialReassignments",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testSequenceOfAssignmentsWithoutVarNotCollapsed",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820_simpleReassignmentFollowedByNoVar",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820_multipleSequentialReassignments",
+    "com.google.javascript.jscomp.CollapseVariableDeclarationsGptTest::testIssue820"
+  ],
+  "suite_sha256": "6cc93e0a1358c4d9905e1ff8f5dd09cf1a1e12b756e0e76b4690722464891f91",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_8b/CollapseVariableDeclarationsGptTest.java"
+  ],
+  "run_id": "Closure-8-Reevaluation-s0-2a8ae778eb97"
+}

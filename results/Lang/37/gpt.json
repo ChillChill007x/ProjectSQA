@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 99.91,
+  "branch_cov": 97.25,
+  "test_file": "ArrayUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.ArrayUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testJira567"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.ArrayUtilsGptTest::testJira567"
+  ],
+  "suite_sha256": "8c4923f230ed8b64413eec378916036be0a0d63a79527ae0d4863e7aa084c391",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_37b/ArrayUtilsGptTest.java"
+  ],
+  "run_id": "Lang-37-Reevaluation-s0-5b860a2b5bae"
+}

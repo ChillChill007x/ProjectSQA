@@ -1,0 +1,124 @@
+{
+  "audited_at": "2026-10-04T05:55:56.064476+00:00",
+  "basis": "Supplied results files; this audit runs no API, compiler or tests.",
+  "meaning_of_100_percent": "CSV status coverage of the expected bug list, not successful tests or verified new API generation.",
+  "providers": {
+    "deepseek": {
+      "expected_bugs": 854,
+      "csv_rows": 854,
+      "unique_bugs": 854,
+      "reported_scope_percent": 100.0,
+      "missing_bugs": [],
+      "extra_bugs": [],
+      "duplicate_rows": 0,
+      "reported_status_counts": {
+        "COMPILE_ERROR": 661,
+        "FLAKY_OR_REGRESSION": 177,
+        "NOT_DETECTED": 4,
+        "BUG_DETECTED": 11,
+        "NO_SUITE": 1
+      },
+      "per_bug_json_count": 193,
+      "bugs_with_run_logs": 854,
+      "bugs_with_exact_run_id_logs": 0,
+      "current_suite_hash_matches": 846,
+      "native_result_count": 1,
+      "summary_nonempty_result_paths": 1,
+      "flags": {
+        "CSV_RUN_ID_NOT_IN_PER_RUN_LOGS": 854,
+        "CURRENT_SUITE_HASH_MISMATCH": 7,
+        "PER_BUG_STATUS_DIFFERS": 1,
+        "NATIVE_FIXED_COVERAGE_DIFFERS": 1,
+        "NO_RECORDED_SUITE_HASH": 1,
+        "NO_SUITE_REPORTED_BUT_JAVA_PRESENT_NOW": 1
+      }
+    },
+    "openai": {
+      "expected_bugs": 854,
+      "csv_rows": 854,
+      "unique_bugs": 854,
+      "reported_scope_percent": 100.0,
+      "missing_bugs": [],
+      "extra_bugs": [],
+      "duplicate_rows": 0,
+      "reported_status_counts": {
+        "COMPILE_ERROR": 429,
+        "BUG_DETECTED": 107,
+        "FLAKY_OR_REGRESSION": 308,
+        "NOT_DETECTED": 9,
+        "NO_SUITE": 1
+      },
+      "per_bug_json_count": 433,
+      "bugs_with_run_logs": 854,
+      "bugs_with_exact_run_id_logs": 0,
+      "current_suite_hash_matches": 0,
+      "native_result_count": 1,
+      "summary_nonempty_result_paths": 1,
+      "flags": {
+        "CSV_RUN_ID_NOT_IN_PER_RUN_LOGS": 854,
+        "CURRENT_SUITE_HASH_MISMATCH": 853,
+        "PER_BUG_STATUS_DIFFERS": 9,
+        "PER_BUG_COVERAGE_DIFFERS": 2,
+        "NATIVE_FIXED_COVERAGE_DIFFERS": 1,
+        "NO_RECORDED_SUITE_HASH": 1,
+        "NO_SUITE_REPORTED_BUT_JAVA_PRESENT_NOW": 1
+      }
+    }
+  },
+  "native_runner": {
+    "generate": {
+      "status_counts": {
+        "NOT_RUN": 1708
+      },
+      "result_files": [],
+      "manifest_sha256": "2091ce2d64b6fd8cf1bae5b4d93763f81b6b1038c852448a7ba5910500cda342"
+    },
+    "existing": {
+      "status_counts": {
+        "NOT_RUN": 1706,
+        "INVALID_ORACLE": 2
+      },
+      "result_files": [
+        "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json",
+        "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+      ],
+      "manifest_sha256": "efde0ddfb32d0a3449f6f9bac0e1da4ca8ad689f255af9ab99bff309b4c5a66d"
+    }
+  },
+  "coverage_conflicts": [
+    {
+      "project": "Lang",
+      "bug": "1",
+      "provider": "deepseek",
+      "csv_run_id": "Lang-1-Reevaluation-s0-87f11725d7a0",
+      "native_run_id": "Lang-1-Reevaluation-s0-87f11725d7a0",
+      "csv_line": "74.08",
+      "native_fixed_line": 67.63157894736842,
+      "csv_branch": "60.31",
+      "native_fixed_branch": 52.857142857142854,
+      "native_result": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json"
+    },
+    {
+      "project": "Lang",
+      "bug": "1",
+      "provider": "openai",
+      "csv_run_id": "Lang-1-Reevaluation-s0-b6cd12c8a406",
+      "native_run_id": "Lang-1-Reevaluation-s0-b6cd12c8a406",
+      "csv_line": "94.09",
+      "native_fixed_line": 92.36842105263158,
+      "csv_branch": "80.1",
+      "native_fixed_branch": 74.85714285714286,
+      "native_result": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+    }
+  ],
+  "parse_errors": [],
+  "source_file_count": 4789,
+  "delivery_logs": {
+    "files": 29,
+    "identical_in_new_folder": 0,
+    "zip_files": 29,
+    "zip_matching_files": 0
+  },
+  "suite_hash_method": "For current flat Java files: sorted filename UTF-8 + NUL + file bytes, with raw/LF/CRLF variants; matches do not establish model origin.",
+  "caveat": "Different metric definitions/runs must be reconciled against raw coverage evidence; do not overwrite contradictory evidence."
+}

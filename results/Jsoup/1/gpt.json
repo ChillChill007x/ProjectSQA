@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "DocumentGptTest.java",
+  "target_classes": "org.jsoup.nodes.Document",
+  "buggy_failures": [
+    "org.jsoup.nodes.DocumentGptTest::testCreatesStructureFromBodySnippet_TextOrder_Issue23",
+    "org.jsoup.nodes.DocumentGptTest::testNormaliseTextOrderingWhenLeadingTextOutsideBody"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "4b780b9459919b93e0ccf1078948c82120de935a576bd8b69d2a8f5925131bbd",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_1b/DocumentGptTest.java"
+  ],
+  "run_id": "Jsoup-1-Reevaluation-s0-26875fd5eb67"
+}

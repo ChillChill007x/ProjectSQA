@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "CSVRecordGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVRecord",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVRecordGptTest::testGetStringInconsistentRecord"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "4c5317d136531072fe65c24d0ae56ac020be3849122157208e77a87c9fdedd8b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_2b/CSVRecordGptTest.java"
+  ],
+  "run_id": "Csv-2-Reevaluation-s0-778181d68368"
+}

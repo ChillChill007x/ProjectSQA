@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "TypeHandlerGptTest.java",
+  "target_classes": "org.apache.commons.cli.TypeHandler",
+  "buggy_failures": [
+    "org.apache.commons.cli.TypeHandlerGptTest::testDefectExistingFilePatternFileNotExistThrowsParseException",
+    "org.apache.commons.cli.TypeHandlerGptTest::testDefectExistingFilePatternReturnsFileInputStream"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "24e589f8b26c7dffdb258eb275ab5b48f3fd4dd728e09bd48b8db829688c54de",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_39b/TypeHandlerGptTest.java"
+  ],
+  "run_id": "Cli-39-Reevaluation-s0-f0b9c185f46a"
+}

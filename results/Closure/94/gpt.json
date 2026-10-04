@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 62.7,
+  "branch_cov": 52.54,
+  "test_file": "NodeUtilGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.NodeUtil",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.NodeUtilGptTest::testValidDefine_BinaryOperatorValidBothChildren",
+    "com.google.javascript.jscomp.NodeUtilGptTest::testValidDefine_AdditionOperationStringConcat",
+    "com.google.javascript.jscomp.NodeUtilGptTest::testValidDefine_BinaryOperatorRejectsInvalidSecondChild",
+    "com.google.javascript.jscomp.NodeUtilGptTest::testAstFactoryMethods"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.NodeUtilGptTest::testAstFactoryMethods"
+  ],
+  "suite_sha256": "3dbec3286c44f0a01c0568c869572d19ae8b596dc72d2215a4277771074ab1ac",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_94b/NodeUtilGptTest.java"
+  ],
+  "run_id": "Closure-94-Reevaluation-s0-be9c8393e83e"
+}

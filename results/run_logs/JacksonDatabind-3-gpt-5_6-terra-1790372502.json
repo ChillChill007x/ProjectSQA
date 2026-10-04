@@ -1,0 +1,33 @@
+{
+  "project": "JacksonDatabind",
+  "bug_id": 3,
+  "technique": "gpt-5.6-terra",
+  "run_id": "JacksonDatabind-3-gpt-1790372502",
+  "suite_sha256": "1123bc59c65eb159bb316d7cee91ae5fe3c86eae34c6b3f06742ec4df6b727f9",
+  "test_files": "StringArrayDeserializerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer",
+  "timestamp": "2026-10-03 04:42:07",
+  "evaluation_duration_sec": 24.844,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 95.16,
+  "branch_coverage_percent": 86.11,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testAcceptSingleValueAsArrayEnabledNull",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDefectOnlyNullElements",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDeserializeWithType",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDirectCreateContextualWithDefault",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testInstanceConstant",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDefectNullPointerExceptionOnNullElement",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDirectCreateContextualWithCustomElementDeser"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testAcceptSingleValueAsArrayEnabledNull",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDeserializeWithType",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDirectCreateContextualWithDefault",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testInstanceConstant",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerGptTest::testDirectCreateContextualWithCustomElementDeser"
+  ]
+}

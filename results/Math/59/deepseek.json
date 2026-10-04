@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 76.63,
+  "branch_cov": 57.39,
+  "test_file": "FastMathDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.util.FastMath",
+  "buggy_failures": [
+    "org.apache.commons.math.util.FastMathDeepseekTest::testSinCosTan",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testPow",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testLog10",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testMaxFloat",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testNextUp",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testNextAfter"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.FastMathDeepseekTest::testSinCosTan",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testPow",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testLog10",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testNextUp",
+    "org.apache.commons.math.util.FastMathDeepseekTest::testNextAfter"
+  ],
+  "suite_sha256": "627e46ded477098271ead04cae8d7853b3a2bf122ef5cbb9c4564f72d7cf56d1",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_59b/FastMathDeepseekTest.java"
+  ],
+  "run_id": "Math-59-Reevaluation-s0-05cfd68e6236"
+}

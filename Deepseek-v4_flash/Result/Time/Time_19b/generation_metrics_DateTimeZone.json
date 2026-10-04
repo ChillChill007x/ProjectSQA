@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 15:17:29",
+  "project": "Time",
+  "bug_id": 19,
+  "version": "b",
+  "target_class": "org.joda.time.DateTimeZone",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 74.53,
+    "input_tokens": 12000,
+    "output_tokens": 6260,
+    "reasoning_tokens": null,
+    "total_tokens": 18260,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 101410,
+    "limit": 1000000,
+    "remaining": 898590
+  }
+}

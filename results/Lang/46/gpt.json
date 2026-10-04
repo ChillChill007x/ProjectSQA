@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 93.34,
+  "branch_cov": 99.26,
+  "test_file": "StringEscapeUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.StringEscapeUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testEscapeJavaWithSlash",
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testEscapeJavaWithMultipleSlashes"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "b172734ad52231876bc4aa5887139e2db6f3d2755d88614220b7a1097f118201",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_46b/StringEscapeUtilsGptTest.java"
+  ],
+  "run_id": "Lang-46-Reevaluation-s0-ce37e13b5c0d"
+}

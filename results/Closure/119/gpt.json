@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 88.14,
+  "branch_cov": 70.72,
+  "test_file": "GlobalNamespaceGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.GlobalNamespace",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testGlobalCatchDefectExposed",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testExternsBoundary",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testObjectLiteralsAndNestedKeys",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testGlobalCatchWithAssignment"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testGlobalCatchDefectExposed",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testExternsBoundary",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testObjectLiteralsAndNestedKeys",
+    "com.google.javascript.jscomp.GlobalNamespaceGptTest::testGlobalCatchWithAssignment"
+  ],
+  "suite_sha256": "ecb79ca7a4b17d85866de227191d10584d7ba0988f76750283c56b9c3b3fd84a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_119b/GlobalNamespaceGptTest.java"
+  ],
+  "run_id": "Closure-119-Reevaluation-s0-a36c59eb3e52"
+}

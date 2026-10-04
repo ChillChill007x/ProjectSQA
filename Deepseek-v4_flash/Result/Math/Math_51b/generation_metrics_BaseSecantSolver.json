@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:47:53",
+  "project": "Math",
+  "bug_id": 51,
+  "version": "b",
+  "target_class": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 150.5,
+    "input_tokens": 3100,
+    "output_tokens": 5343,
+    "reasoning_tokens": null,
+    "total_tokens": 8443,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 8443,
+    "limit": 1000000,
+    "remaining": 991557
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 99.26,
+  "branch_cov": 97.02,
+  "test_file": "MathUtilsGptTest.java",
+  "target_classes": "org.apache.commons.math.util.MathUtils",
+  "buggy_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testBinomialCoefficient"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testBinomialCoefficient"
+  ],
+  "suite_sha256": "467cf2da545dbf30996dea05446bfecdf218c801368b4eae27478f94db0b656b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_79b/MathUtilsGptTest.java"
+  ],
+  "run_id": "Math-79-Reevaluation-s0-70fd4c25a4bb"
+}

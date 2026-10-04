@@ -1,0 +1,38 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 95.01,
+  "branch_cov": 84.03,
+  "test_file": "NormalizeGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.Normalize",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithForInitializer",
+    "com.google.javascript.jscomp.NormalizeGptTest::testSplitVarDeclarationsEmptyVarAssertOnChange",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithMultipleVarDeclarations",
+    "com.google.javascript.jscomp.NormalizeGptTest::testPropagateConstantAnnotationsAssertOnChange",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithWhile",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithLabelNormalization",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsUnexpectedConstantAnnotated",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithDuplicateVar",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsExpectedConstantNotAnnotated",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsInconsistentAnnotation"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithForInitializer",
+    "com.google.javascript.jscomp.NormalizeGptTest::testSplitVarDeclarationsEmptyVarAssertOnChange",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithMultipleVarDeclarations",
+    "com.google.javascript.jscomp.NormalizeGptTest::testPropagateConstantAnnotationsAssertOnChange",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithWhile",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithLabelNormalization",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsUnexpectedConstantAnnotated",
+    "com.google.javascript.jscomp.NormalizeGptTest::testAssertOnChangeWithDuplicateVar",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsExpectedConstantNotAnnotated",
+    "com.google.javascript.jscomp.NormalizeGptTest::testVerifyConstantsInconsistentAnnotation"
+  ],
+  "suite_sha256": "f02392a01bdaa4102782c3ba3d97e2ba5070e1f1426a00ef0698015df93ec976",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_102b/NormalizeGptTest.java"
+  ],
+  "run_id": "Closure-102-Reevaluation-s0-f27033907961"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 89.48,
+  "branch_cov": 79.05,
+  "test_file": "CommandLineRunnerGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CommandLineRunner",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testFullSuiteOfSupportedCommandLineFlags",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testVersionFlag",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testGetDefaultExternsDirectly",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCreateExternsDefaultVsCustomOnly"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testFullSuiteOfSupportedCommandLineFlags",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testGetDefaultExternsDirectly",
+    "com.google.javascript.jscomp.CommandLineRunnerGptTest::testCreateExternsDefaultVsCustomOnly"
+  ],
+  "suite_sha256": "5fbb34e40f2bcf9f60b5f8a7bf32f2a0d282d774fbb1cd9140a85715eb973bea",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_151b/CommandLineRunnerGptTest.java"
+  ],
+  "run_id": "Closure-151-Reevaluation-s0-2a013e848a8b"
+}

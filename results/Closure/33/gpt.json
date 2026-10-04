@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 83.87,
+  "branch_cov": 80.21,
+  "test_file": "PrototypeObjectTypeGptTest.java",
+  "target_classes": "com.google.javascript.rhino.jstype.PrototypeObjectType",
+  "buggy_failures": [
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testMatchConstraintOnAnonymousType",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testIssue700_matchConstraintOnFunctionPrototypeDoesNotMutate",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testToStringHelperRepresentations",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testPrototypeChainSlotLookupAndCounts",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testIssue700_matchConstraintOnNamedTypeDoesNotMutate"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testMatchConstraintOnAnonymousType",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testToStringHelperRepresentations",
+    "com.google.javascript.rhino.jstype.PrototypeObjectTypeGptTest::testPrototypeChainSlotLookupAndCounts"
+  ],
+  "suite_sha256": "da3589805791088ba8e0f04b82bd2827b64093cbb7ae7ccde94feb6215d45bac",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_33b/PrototypeObjectTypeGptTest.java"
+  ],
+  "run_id": "Closure-33-Reevaluation-s0-1feaef99490c"
+}

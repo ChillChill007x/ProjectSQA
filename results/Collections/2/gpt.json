@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 92.68,
+  "branch_cov": 83.17,
+  "test_file": "ExtendedPropertiesGptTest.java",
+  "target_classes": "org.apache.commons.collections.ExtendedProperties",
+  "buggy_failures": [
+    "org.apache.commons.collections.ExtendedPropertiesGptTest::testPropertiesTokenizer",
+    "org.apache.commons.collections.ExtendedPropertiesGptTest::testIncludeInstanceIsolationDefect",
+    "org.apache.commons.collections.ExtendedPropertiesGptTest::testPropertiesReaderDirect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.ExtendedPropertiesGptTest::testPropertiesTokenizer",
+    "org.apache.commons.collections.ExtendedPropertiesGptTest::testPropertiesReaderDirect"
+  ],
+  "suite_sha256": "5c8fe66a728e9d544bb41661a6ae1135cd1e5c07f4479b67074897eb5d0ee678",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_2b/ExtendedPropertiesGptTest.java"
+  ],
+  "run_id": "Collections-2-Reevaluation-s0-90c8ca7098e1"
+}

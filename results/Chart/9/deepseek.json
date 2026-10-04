@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 91.41,
+  "branch_cov": 86.18,
+  "test_file": "TimeSeriesDeepseekTest.java",
+  "target_classes": "org.jfree.data.time.TimeSeries",
+  "buggy_failures": [
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testGetTimePeriodsUniqueToOtherSeries",
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testConstructorNullTimePeriodClass",
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testCreateCopyWithPeriodsNotInSeries"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testGetTimePeriodsUniqueToOtherSeries",
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testConstructorNullTimePeriodClass",
+    "org.jfree.data.time.TimeSeriesDeepseekTest::testCreateCopyWithPeriodsNotInSeries"
+  ],
+  "suite_sha256": "f6dd963d582e85470d64a5bcdcad83558cb06e42cf5f1892057c317f14d33a76",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Chart_9b/TimeSeriesDeepseekTest.java"
+  ],
+  "run_id": "Chart-9-Reevaluation-s0-46c30a880ace"
+}

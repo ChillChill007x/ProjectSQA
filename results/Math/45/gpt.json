@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "OpenMapRealMatrixGptTest.java",
+  "target_classes": "org.apache.commons.math.linear.OpenMapRealMatrix",
+  "buggy_failures": [
+    "org.apache.commons.math.linear.OpenMapRealMatrixGptTest::testMath679"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "015a480e75f2aa915333e2f9104f0b6784d0ff84abee02af5f857d8aeb84847b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_45b/OpenMapRealMatrixGptTest.java"
+  ],
+  "run_id": "Math-45-Reevaluation-s0-a24c52d87032"
+}

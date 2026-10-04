@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 99.47,
+  "branch_cov": 93.91,
+  "test_file": "WhitelistGptTest.java",
+  "target_classes": "org.jsoup.safety.Whitelist",
+  "buggy_failures": [
+    "org.jsoup.safety.WhitelistGptTest::testHandlesCustomProtocolsCidAndData"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "05dccea96fba721fce00c033cae3347ed7c77b416ad8dc83687ec3afd809ea6d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_19b/WhitelistGptTest.java"
+  ],
+  "run_id": "Jsoup-19-Reevaluation-s0-a486cfb184d9"
+}

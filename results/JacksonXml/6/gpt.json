@@ -1,0 +1,52 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 18,
+  "line_cov": 53.82,
+  "branch_cov": 46.76,
+  "test_file": "ToXmlGeneratorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator",
+  "buggy_failures": [
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testNestedElementsAndFieldNames",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrimitivesUnwrapped",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testAttributesAndCData",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrettyPrinterPaths",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrimitiveTypesStandardAndAttributes",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWrappedValueLifecycle",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testUnwrappedElements",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testAutoCloseOpenJsonContent",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testBinaryStreamWithZeroBytesDefectTarget",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testInitGeneratorXml10Declaration",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testInitGeneratorXml11Declaration",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testFlushPassedToStreamFeature",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testArraysAndObjects",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWriteRawMethodsOnNativeWriter",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testReportUnimplementedStax2OnEmulatedWriter",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testBigDecimalAsPlain",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWriteBinaryVariations",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testBinaryStreamSerializationDefectTarget"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testNestedElementsAndFieldNames",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrimitivesUnwrapped",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testAttributesAndCData",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrettyPrinterPaths",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testPrimitiveTypesStandardAndAttributes",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWrappedValueLifecycle",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testUnwrappedElements",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testAutoCloseOpenJsonContent",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testInitGeneratorXml10Declaration",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testInitGeneratorXml11Declaration",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testFlushPassedToStreamFeature",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testArraysAndObjects",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWriteRawMethodsOnNativeWriter",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testReportUnimplementedStax2OnEmulatedWriter",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testBigDecimalAsPlain",
+    "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGeneratorGptTest::testWriteBinaryVariations"
+  ],
+  "suite_sha256": "133ddad550bb90f8cbcaf6844a1b58dc5511d5c3b1e76eb384665fceae5adfd1",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonXml_6b/ToXmlGeneratorGptTest.java"
+  ],
+  "run_id": "JacksonXml-6-Reevaluation-s0-3773687684b4"
+}

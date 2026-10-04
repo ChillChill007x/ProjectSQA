@@ -1,0 +1,21 @@
+{
+  "project": "Math",
+  "bug_id": 5,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-5-gpt-1790387883",
+  "suite_sha256": "4a1c2c10201d65655b724f227b390775371f5513098d8d5d05363b136fa9eadb",
+  "test_files": "ComplexGptTest.java",
+  "target_classes": "org.apache.commons.math3.complex.Complex",
+  "timestamp": "2026-10-03 08:58:29",
+  "evaluation_duration_sec": 26.531,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 93.81,
+  "branch_coverage_percent": 82.35,
+  "failures_count": 0,
+  "error_detail": "",
+  "buggy_failures": [],
+  "fixed_failures": [
+    "org.apache.commons.math3.complex.ComplexGptTest::testReciprocalZero"
+  ]
+}

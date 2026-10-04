@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 94.69,
+  "branch_cov": 100.0,
+  "test_file": "StringEscapeUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.StringEscapeUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testEscapeJavaScriptScriptTagDefect",
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testUnescapeJavaIncompleteUnicodeAtEof"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.StringEscapeUtilsGptTest::testUnescapeJavaIncompleteUnicodeAtEof"
+  ],
+  "suite_sha256": "ee8f192dabd3177468cd4425c09c0aca209ac76d807b293d6bcd37454b7cb77e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_52b/StringEscapeUtilsGptTest.java"
+  ],
+  "run_id": "Lang-52-Reevaluation-s0-de85efa0987d"
+}

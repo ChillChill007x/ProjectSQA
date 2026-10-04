@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "InlineCostEstimatorGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.InlineCostEstimator",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testFunctionReturningConstantCost",
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testCostOfConstants_RevealsIssue728Defect",
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testNullRootNodeReturnsZeroCost"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testCostOfConstants_RevealsIssue728Defect",
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testNullRootNodeReturnsZeroCost",
+    "com.google.javascript.jscomp.InlineCostEstimatorGptTest::testNumberLiteralCost"
+  ],
+  "suite_sha256": "a6b59dfe44b9f1326f95fe62ca424ee329e84c8491228c0d51bd1f81f742c63c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_28b/InlineCostEstimatorGptTest.java"
+  ],
+  "run_id": "Closure-28-Reevaluation-s0-0a2e723b4e74"
+}

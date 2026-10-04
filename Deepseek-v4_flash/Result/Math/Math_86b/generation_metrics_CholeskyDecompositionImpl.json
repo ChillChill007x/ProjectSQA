@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 22:27:35",
+  "project": "Math",
+  "bug_id": 86,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.CholeskyDecompositionImpl",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 44.69,
+    "input_tokens": 3943,
+    "output_tokens": 5753,
+    "reasoning_tokens": null,
+    "total_tokens": 9696,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 770288,
+    "limit": 1000000,
+    "remaining": 229712
+  }
+}

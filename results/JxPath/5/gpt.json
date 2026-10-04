@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 95.67,
+  "branch_cov": 92.09,
+  "test_file": "NodePointerGptTest.java",
+  "target_classes": "org.apache.commons.jxpath.ri.model.NodePointer",
+  "buggy_failures": [
+    "org.apache.commons.jxpath.ri.model.NodePointerGptTest::testUnionOfVariableAndNodeDefect",
+    "org.apache.commons.jxpath.ri.model.NodePointerGptTest::testLocaleInheritanceAndLanguageMatching"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.jxpath.ri.model.NodePointerGptTest::testLocaleInheritanceAndLanguageMatching"
+  ],
+  "suite_sha256": "13887361d0f27b54a0de3376eb6591b98fb6aafff271890ef9ed315f74edb709",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JxPath_5b/NodePointerGptTest.java"
+  ],
+  "run_id": "JxPath-5-Reevaluation-s0-dc48a9b73fda"
+}

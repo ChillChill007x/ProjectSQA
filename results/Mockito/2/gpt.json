@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 60.43,
+  "test_file": "TimerGptTest.java",
+  "target_classes": "org.mockito.internal.util.Timer",
+  "buggy_failures": [
+    "org.mockito.internal.util.TimerGptTest::testNegativeDurationBoundaryMinusOneThrowsException",
+    "org.mockito.internal.util.TimerGptTest::testNegativeDurationArbitraryThrowsException",
+    "org.mockito.internal.util.TimerGptTest::testNegativeDurationMinValueThrowsException",
+    "org.mockito.internal.util.TimerGptTest::should_throw_friendly_reminder_exception_when_duration_is_negative"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.util.TimerGptTest::testNegativeDurationArbitraryThrowsException",
+    "org.mockito.internal.util.TimerGptTest::testNegativeDurationMinValueThrowsException",
+    "org.mockito.internal.util.TimerGptTest::should_throw_friendly_reminder_exception_when_duration_is_negative"
+  ],
+  "suite_sha256": "682565f7a1da11c2f98b8f188ce13860a703b6bfe723db010cc23722a4394237",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_2b/TimerGptTest.java"
+  ],
+  "run_id": "Mockito-2-Reevaluation-s0-b63d933ddccd"
+}

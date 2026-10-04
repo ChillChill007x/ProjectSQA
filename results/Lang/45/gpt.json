@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.32,
+  "branch_cov": 98.45,
+  "test_file": "WordUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.WordUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.WordUtilsGptTest::testAbbreviateDefectOutOfBoundsLowerGreaterThanLength",
+    "org.apache.commons.lang.WordUtilsGptTest::testAbbreviateDefectOutOfBoundsLowerGreaterThanLengthWithAppend",
+    "org.apache.commons.lang.WordUtilsGptTest::testAbbreviateStandardBranches"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.WordUtilsGptTest::testAbbreviateStandardBranches"
+  ],
+  "suite_sha256": "40954d2122ebacb7fe570b1d498c4006b48a61fa6d1bdbdb23436d02b22d1f79",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_45b/WordUtilsGptTest.java"
+  ],
+  "run_id": "Lang-45-Reevaluation-s0-fe07f740d00e"
+}

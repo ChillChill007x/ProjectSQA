@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 06:37:01",
+  "project": "JacksonDatabind",
+  "bug_id": 77,
+  "version": "b",
+  "target_class": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory",
+  "token_slot": 8,
+  "metrics": {
+    "generation_time_seconds": 92.2,
+    "input_tokens": 9860,
+    "output_tokens": 5887,
+    "reasoning_tokens": 9222,
+    "total_tokens": 24969,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 8,
+    "used": 345736,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 54264
+  }
+}

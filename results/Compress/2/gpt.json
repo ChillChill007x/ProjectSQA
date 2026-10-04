@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ArArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStreamGptTest::testReadAtEofReturnsNegativeOne",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStreamGptTest::testArDeleteDefectTargetReadMustStopAtEntryBoundary",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStreamGptTest::testSingleByteReadReturnsEofAtEntryBoundary"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStreamGptTest::testCallingGetNextEntryWithoutReadingContentThrowsIOException"
+  ],
+  "suite_sha256": "07fb9c5de26d57129adf5b256a0e0b3752341f971a2d405a860db1c0584cf2d1",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_2b/ArArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-2-Reevaluation-s0-e38c85201026"
+}

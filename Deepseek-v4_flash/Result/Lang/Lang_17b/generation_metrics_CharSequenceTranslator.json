@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 12:59:47",
+  "project": "Lang",
+  "bug_id": 17,
+  "version": "b",
+  "target_class": "org.apache.commons.lang3.text.translate.CharSequenceTranslator",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 54.46,
+    "input_tokens": 2010,
+    "output_tokens": 3777,
+    "reasoning_tokens": null,
+    "total_tokens": 5787,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 254090,
+    "limit": 1000000,
+    "remaining": 745910
+  }
+}

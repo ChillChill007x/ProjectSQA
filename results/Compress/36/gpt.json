@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 50.18,
+  "branch_cov": 41.75,
+  "test_file": "SevenZFileGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.sevenz.SevenZFile",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.sevenz.SevenZFileGptTest::testReadEntriesOfSize0ReturnsEOF"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.sevenz.SevenZFileGptTest::testReadWithoutGetNextEntryThrowsIllegalStateException",
+    "org.apache.commons.compress.archivers.sevenz.SevenZFileGptTest::testReadBufferWithoutGetNextEntryThrowsIllegalStateException"
+  ],
+  "suite_sha256": "89d2c5932ced1aa9f46f4d20f377d1fc7736b5593e31d9d9ee3d354205ed7bcf",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_36b/SevenZFileGptTest.java"
+  ],
+  "run_id": "Compress-36-Reevaluation-s0-6b60057eeb7b"
+}

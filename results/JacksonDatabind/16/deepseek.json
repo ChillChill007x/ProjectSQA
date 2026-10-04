@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 88.31,
+  "test_file": "AnnotationMapDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.introspect.AnnotationMap",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.introspect.AnnotationMapDeepseekTest::testChainOfOperations",
+    "com.fasterxml.jackson.databind.introspect.AnnotationMapDeepseekTest::testMergeBothNullMapsInside"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.introspect.AnnotationMapDeepseekTest::testMergeBothNullMapsInside"
+  ],
+  "suite_sha256": "16de352b0e50735d6af31f92ff0e0084bdd78366ebc0a178bce0727171bd6800",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonDatabind_16b/AnnotationMapDeepseekTest.java"
+  ],
+  "run_id": "JacksonDatabind-16-Reevaluation-s0-6d36df75d582"
+}

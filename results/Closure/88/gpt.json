@@ -1,0 +1,34 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 92.96,
+  "branch_cov": 81.8,
+  "test_file": "DeadAssignmentsEliminationGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.DeadAssignmentsElimination",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testEmptyReturnStatement",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297a",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297b",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297c",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297d",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297e",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297f",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testForLoopUpdateIncrementElimination"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testEmptyReturnStatement",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297a",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297b",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297c",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297d",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297e",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297f",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testForLoopUpdateIncrementElimination"
+  ],
+  "suite_sha256": "74186b658109b2d4c0f2201b074935f00d848a357496c75a9b218e8107df481d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_88b/DeadAssignmentsEliminationGptTest.java"
+  ],
+  "run_id": "Closure-88-Reevaluation-s0-3cea09957810"
+}

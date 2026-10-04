@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 10,
+  "line_cov": 51.92,
+  "branch_cov": 84.62,
+  "test_file": "MockitoCoreGptTest.java;MockitoGptTest.java",
+  "target_classes": "org.mockito.internal.MockitoCore;org.mockito.Mockito",
+  "buggy_failures": [
+    "org.mockito.internal.MockitoCoreGptTest::testResetWithSingleAndMultipleMocks",
+    "org.mockito.internal.MockitoCoreGptTest::testVerifyNoMoreInteractionsSuccess",
+    "org.mockito.internal.MockitoCoreGptTest::testInOrderSuccess",
+    "org.mockito.internal.MockitoCoreGptTest::testGetLastInvocation",
+    "org.mockito.internal.MockitoCoreGptTest::testMockMethodHonorsShouldResetOngoingStubbingFalse",
+    "org.mockito.internal.MockitoCoreGptTest::testVerifySuccessfulInvocation",
+    "org.mockito.internal.MockitoCoreGptTest::testMockCreationAndSimpleStubbingWithWhen",
+    "org.mockito.internal.MockitoCoreGptTest::testMultipleSequentialMocksLifecycle",
+    "org.mockito.internal.MockitoCoreGptTest::shouldAllowStubbingMocksConfiguredWithRETURNS_MOCKS",
+    "org.mockito.internal.MockitoCoreGptTest::testDeprecatedStubMethod"
+  ],
+  "fixed_failures": []
+}

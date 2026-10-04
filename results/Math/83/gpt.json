@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 28.08,
+  "branch_cov": 28.6,
+  "test_file": "SimplexTableauGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.linear.SimplexTableau",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.linear.SimplexTableauGptTest::testMath286Defect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.linear.SimplexTableauGptTest::testSolutionBasicRowHandlingAndCollision",
+    "org.apache.commons.math.optimization.linear.SimplexTableauGptTest::testMath286Defect"
+  ],
+  "suite_sha256": "c20fe295f43e6278fea25c056e6e70f33b552a339a595316a373876f97d29f88",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_83b/SimplexTableauGptTest.java"
+  ],
+  "run_id": "Math-83-Reevaluation-s0-1c085799e2a0"
+}

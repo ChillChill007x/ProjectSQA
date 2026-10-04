@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 96.75,
+  "branch_cov": 86.55,
+  "test_file": "HtmlTreeBuilderGptTest.java",
+  "target_classes": "org.jsoup.parser.HtmlTreeBuilder",
+  "buggy_failures": [
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testResetInsertionModeAllBranches",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testInScopeVariants",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testGenerateImpliedEndTagsWithNullExcludeTag",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testActiveFormattingElementsLifecycleAndLimit"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testResetInsertionModeAllBranches",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testInScopeVariants",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testGenerateImpliedEndTagsWithNullExcludeTag",
+    "org.jsoup.parser.HtmlTreeBuilderGptTest::testActiveFormattingElementsLifecycleAndLimit"
+  ],
+  "suite_sha256": "cd29155ebdd49c7c3bac1bd0b6e77edc122aebdb2dd489448830d53e90244a83",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_67b/HtmlTreeBuilderGptTest.java"
+  ],
+  "run_id": "Jsoup-67-Reevaluation-s0-56ccfab4e648"
+}

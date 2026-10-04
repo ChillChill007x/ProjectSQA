@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 00:50:41",
+  "project": "Math",
+  "bug_id": 6,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 46.88,
+    "input_tokens": 3711,
+    "output_tokens": 4844,
+    "reasoning_tokens": 389,
+    "total_tokens": 8944,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 36894,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 363106
+  }
+}

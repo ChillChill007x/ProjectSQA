@@ -1,0 +1,42 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 12,
+  "line_cov": 87.28,
+  "branch_cov": 83.51,
+  "test_file": "CSVParserDeepseekTest.java",
+  "target_classes": "org.apache.commons.csv.CSVParser",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVParserDeepseekTest::testBasicParsing",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testMultipleIterators",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testLineEndings",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testParseStaticMethods",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testGetCurrentLineNumberWithMultiline",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullStringParse",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testCaseInsensitiveHeader",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullFormat",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testDelimiterVariations",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testManyRecords",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullReader",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testCharacterOffset"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.csv.CSVParserDeepseekTest::testBasicParsing",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testMultipleIterators",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testLineEndings",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testParseStaticMethods",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testGetCurrentLineNumberWithMultiline",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullStringParse",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testCaseInsensitiveHeader",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullFormat",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testDelimiterVariations",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testManyRecords",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testNullReader",
+    "org.apache.commons.csv.CSVParserDeepseekTest::testCharacterOffset"
+  ],
+  "suite_sha256": "8a7c046a80711bed864c213d4237f17b95dd57f309a5dd05b7fccab577d41c6f",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Csv_16b/CSVParserDeepseekTest.java"
+  ],
+  "run_id": "Csv-16-Reevaluation-s0-64f14b8a8dda"
+}

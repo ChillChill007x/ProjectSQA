@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "OptionBuilderGptTest.java",
+  "target_classes": "org.apache.commons.cli.OptionBuilder",
+  "buggy_failures": [
+    "org.apache.commons.cli.OptionBuilderGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.OptionBuilderGptTest"
+  ],
+  "suite_sha256": "db29e8be8b4eb157c8a058b726c99309b2b4b74b21e6e1c8cc09891c264ac512",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_26b/OptionBuilderGptTest.java"
+  ],
+  "run_id": "Cli-26-Reevaluation-s0-6d71ad94e21a"
+}

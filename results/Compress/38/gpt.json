@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 89.81,
+  "branch_cov": 64.03,
+  "test_file": "TarArchiveEntryGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveEntry",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testOldGnuFormatHeaderParsing",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testLinkTypeClassifications",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testHeaderEvaluationFormats",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testNormalizeFileNameWindowsDriveLetters",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testPaxHeaderEndingInSlashNotADirectory",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testEqualsAndHashCode",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testGnuLongLinkAndNameEndingInSlashNotADirectory"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testOldGnuFormatHeaderParsing",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testLinkTypeClassifications",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testHeaderEvaluationFormats",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testNormalizeFileNameWindowsDriveLetters",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testEqualsAndHashCode",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntryGptTest::testGnuLongLinkAndNameEndingInSlashNotADirectory"
+  ],
+  "suite_sha256": "1a372bcdc110869aa8244b041621c4c1953cf21c015dfbc94e8458e0bca2870d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_38b/TarArchiveEntryGptTest.java"
+  ],
+  "run_id": "Compress-38-Reevaluation-s0-f431b7243081"
+}

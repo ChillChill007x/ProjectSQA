@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 17:12:35",
+  "project": "Collections",
+  "bug_id": 10,
+  "version": "b",
+  "target_class": "org.apache.commons.collections.map.MultiValueMap",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 49.94,
+    "input_tokens": 4384,
+    "output_tokens": 5062,
+    "reasoning_tokens": null,
+    "total_tokens": 9446,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 531283,
+    "limit": 1000000,
+    "remaining": 468717
+  }
+}

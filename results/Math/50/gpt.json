@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 88.64,
+  "branch_cov": 68.67,
+  "test_file": "BaseSecantSolverGptTest.java",
+  "target_classes": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+  "buggy_failures": [
+    "org.apache.commons.math.analysis.solvers.BaseSecantSolverGptTest::testIssue631"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "7409799279bc9d38f37a3d1c3238bc569f72b28a7e64f35cc8805dac7847131a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_50b/BaseSecantSolverGptTest.java"
+  ],
+  "run_id": "Math-50-Reevaluation-s0-01483c571c58"
+}

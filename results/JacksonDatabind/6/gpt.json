@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 98.96,
+  "branch_cov": 88.22,
+  "test_file": "StdDateFormatGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.util.StdDateFormat",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseEmptyStringThrowsParseException",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testDefectISO8601PartialMilliseconds",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testDefectISO8601MissingSeconds"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseEmptyStringThrowsParseException"
+  ],
+  "suite_sha256": "ee7257725d04ed867bfb4f19483cb716a7e7588f851089ca4545626a3778950c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_6b/StdDateFormatGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-6-Reevaluation-s0-ab2dba25a7b0"
+}

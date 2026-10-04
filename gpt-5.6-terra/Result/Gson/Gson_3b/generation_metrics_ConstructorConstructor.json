@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 05:07:04",
+  "project": "Gson",
+  "bug_id": 3,
+  "version": "b",
+  "target_class": "com.google.gson.internal.ConstructorConstructor",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 36.76,
+    "input_tokens": 2828,
+    "output_tokens": 3791,
+    "reasoning_tokens": 2846,
+    "total_tokens": 9465,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 77080,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 322920
+  }
+}

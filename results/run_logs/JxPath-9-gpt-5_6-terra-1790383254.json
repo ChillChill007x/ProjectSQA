@@ -1,0 +1,31 @@
+{
+  "project": "JxPath",
+  "bug_id": 9,
+  "technique": "gpt-5.6-terra",
+  "run_id": "JxPath-9-gpt-1790383254",
+  "suite_sha256": "8c4c9c82a6be773781deadb824030ba79e4c06efa941cc0180745900833a8c4f",
+  "test_files": "CoreOperationCompareGptTest.java;CoreOperationEqualGptTest.java;CoreOperationNotEqualGptTest.java",
+  "target_classes": "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare;org.apache.commons.jxpath.ri.compiler.CoreOperationEqual;org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual",
+  "timestamp": "2026-10-03 07:41:09",
+  "evaluation_duration_sec": 14.777,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 5,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationCompareGptTest::testInitialContextReset",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationCompareGptTest::testNanEquality_DefectTarget",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationEqualGptTest::testDefectNanViaJXPathContextEvaluation",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanSameInstanceNotEqual",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanViaXPathEvaluation"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationCompareGptTest::testInitialContextReset",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanAgainstNumber",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanSameInstanceNotEqual",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanViaXPathEvaluation",
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqualGptTest::testDefectNanDistinctInstancesNotEqual"
+  ]
+}

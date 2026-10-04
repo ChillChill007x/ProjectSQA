@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ValuedEnumDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang.enums.ValuedEnum",
+  "buggy_failures": [
+    "org.apache.commons.lang.enums.ValuedEnumDeepseekTest::testCompareToBoundaryValues",
+    "org.apache.commons.lang.enums.ValuedEnumDeepseekTest::testCompareTo_otherEnumType"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.enums.ValuedEnumDeepseekTest::testCompareToBoundaryValues"
+  ],
+  "suite_sha256": "be8bfbf2888284111206686201632f20ce7b6fdc601ab556b1f5184a8301ac25",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_64b/ValuedEnumDeepseekTest.java"
+  ],
+  "run_id": "Lang-64-Reevaluation-s0-5e3c3e403a3f"
+}

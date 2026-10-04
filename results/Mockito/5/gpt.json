@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 95.7,
+  "branch_cov": 100.0,
+  "test_file": "VerificationOverTimeImplGptTest.java",
+  "target_classes": "org.mockito.internal.verification.VerificationOverTimeImpl",
+  "buggy_failures": [
+    "org.mockito.internal.verification.VerificationOverTimeImplGptTest::pure_mockito_should_not_depend_JUnit",
+    "org.mockito.internal.verification.VerificationOverTimeImplGptTest::testVerifyRecoversFromGenericAssertionError"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "cf75f2727e83a9c3371e6fb8c2aeda91e64c7d9dca31af47866e4d8b7ff02e5e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_5b/VerificationOverTimeImplGptTest.java"
+  ],
+  "run_id": "Mockito-5-Reevaluation-s0-0232c0e8ddfb"
+}

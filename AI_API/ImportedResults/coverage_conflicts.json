@@ -1,0 +1,26 @@
+[
+  {
+    "project": "Lang",
+    "bug": "1",
+    "provider": "deepseek",
+    "csv_run_id": "Lang-1-Reevaluation-s0-87f11725d7a0",
+    "native_run_id": "Lang-1-Reevaluation-s0-87f11725d7a0",
+    "csv_line": "74.08",
+    "native_fixed_line": 67.63157894736842,
+    "csv_branch": "60.31",
+    "native_fixed_branch": 52.857142857142854,
+    "native_result": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json"
+  },
+  {
+    "project": "Lang",
+    "bug": "1",
+    "provider": "openai",
+    "csv_run_id": "Lang-1-Reevaluation-s0-b6cd12c8a406",
+    "native_run_id": "Lang-1-Reevaluation-s0-b6cd12c8a406",
+    "csv_line": "94.09",
+    "native_fixed_line": 92.36842105263158,
+    "csv_branch": "80.1",
+    "native_fixed_branch": 74.85714285714286,
+    "native_result": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+  }
+]

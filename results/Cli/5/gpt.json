@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "UtilGptTest.java",
+  "target_classes": "org.apache.commons.cli.Util",
+  "buggy_failures": [
+    "org.apache.commons.cli.UtilGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.UtilGptTest"
+  ],
+  "suite_sha256": "88cfa04c1e04f5eb135b2d6166d05de17fc33dd5eae5f841724e8984d8e78537",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_5b/UtilGptTest.java"
+  ],
+  "run_id": "Cli-5-Reevaluation-s0-c33e2baa271c"
+}

@@ -1,0 +1,43 @@
+{
+  "project": "Jsoup",
+  "bug_id": 3,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-3-gpt-1790378966",
+  "suite_sha256": "b9f42c17330bb050c0f52fbddccfeee6947201bd6c103df02af0b59abd47043d",
+  "test_files": "ElementGptTest.java;ParserGptTest.java;TagGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element;org.jsoup.parser.Parser;org.jsoup.parser.Tag",
+  "timestamp": "2026-10-03 06:29:41",
+  "evaluation_duration_sec": 15.207,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 93.42,
+  "branch_coverage_percent": 88.44,
+  "failures_count": 11,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testEqualsAndHashCodeContract",
+    "org.jsoup.nodes.ElementGptTest::testPrependRowToTableDefect",
+    "org.jsoup.nodes.ElementGptTest::testAppendRowToTableDefect",
+    "org.jsoup.nodes.ElementGptTest::testDomQueryMethods",
+    "org.jsoup.nodes.ElementGptTest::testOuterHtmlVoidElements",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.parser.ParserGptTest::testHandlesNestedImplicitTableDefect",
+    "org.jsoup.parser.ParserGptTest::testUnclosedAndMismatchedEndTags",
+    "org.jsoup.parser.ParserGptTest::testNestedTableImplicitRowDirect",
+    "org.jsoup.parser.ParserGptTest::testAttributeWithCorruptChar",
+    "org.jsoup.parser.TagGptTest::testTableRowAncestrySupportsTbodyTheadTfoot"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testEqualsAndHashCodeContract",
+    "org.jsoup.nodes.ElementGptTest::testDomQueryMethods",
+    "org.jsoup.nodes.ElementGptTest::testOuterHtmlVoidElements",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.parser.ParserGptTest::testHandlesNestedImplicitTableDefect",
+    "org.jsoup.parser.ParserGptTest::testUnclosedAndMismatchedEndTags",
+    "org.jsoup.parser.ParserGptTest::testNestedTableImplicitRowDirect",
+    "org.jsoup.parser.ParserGptTest::testAttributeWithCorruptChar",
+    "org.jsoup.parser.TagGptTest::testTableRowAncestrySupportsTbodyTheadTfoot",
+    "org.jsoup.parser.TagGptTest::testMultiAncestorResolution",
+    "org.jsoup.parser.TagGptTest::testHtmlTagIsValidParentForAny"
+  ]
+}

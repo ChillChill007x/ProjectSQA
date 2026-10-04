@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 97.77,
+  "branch_cov": 92.2,
+  "test_file": "CodeConsumerDeepseekTest.java",
+  "target_classes": "com.google.javascript.jscomp.CodeConsumer",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberBoundaryExponent",
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberNegativeZeroAfterMinus",
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberNegativeZero",
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberNegativeZeroAfterMinusNoSpaceIfPrevNotMinus"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberBoundaryExponent",
+    "com.google.javascript.jscomp.CodeConsumerDeepseekTest::testAddNumberNegativeZeroAfterMinus"
+  ],
+  "suite_sha256": "2dc75992a4e08e8412f8a96c315b39dfcb1b5e9137ffa0231870e986a25cf813",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Closure_51b/CodeConsumerDeepseekTest.java"
+  ],
+  "run_id": "Closure-51-Reevaluation-s0-d4b92134703f"
+}

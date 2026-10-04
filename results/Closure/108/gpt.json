@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.27,
+  "branch_cov": 92.62,
+  "test_file": "ScopedAliasesGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.ScopedAliases",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testIssue1144VarDeclarationWithDoc",
+    "com.google.javascript.jscomp.ScopedAliasesGptTest::testTypeNodeRewritingSimpleAndComposite"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "814e435d14adfed1e07234e30d7a7dcde772d01c313dd0339ffac0bc3882f5ac",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_108b/ScopedAliasesGptTest.java"
+  ],
+  "run_id": "Closure-108-Reevaluation-s0-81ca976bec13"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 96.4,
+  "test_file": "CheckGlobalThisGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CheckGlobalThis",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testLendsAnnotation1",
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testLendsAnnotation3",
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testSyntheticAstTransitionsAndAssignLhsChildReset"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CheckGlobalThisGptTest::testSyntheticAstTransitionsAndAssignLhsChildReset"
+  ],
+  "suite_sha256": "1e4b7b5ec7ca802b0a301a96f21582a9187339ba51f4848bb554443118e596bf",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_91b/CheckGlobalThisGptTest.java"
+  ],
+  "run_id": "Closure-91-Reevaluation-s0-58cf45712006"
+}

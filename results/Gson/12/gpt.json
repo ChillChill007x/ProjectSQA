@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 97.69,
+  "branch_cov": 89.88,
+  "test_file": "JsonTreeReaderGptTest.java",
+  "target_classes": "com.google.gson.internal.bind.JsonTreeReader",
+  "buggy_failures": [
+    "com.google.gson.internal.bind.JsonTreeReaderGptTest::testSkipValue_rootPrimitiveAndArray",
+    "com.google.gson.internal.bind.JsonTreeReaderGptTest::testPathFormatAcrossMixedNesting",
+    "com.google.gson.internal.bind.JsonTreeReaderGptTest::testSkipValue_filledJsonObject",
+    "com.google.gson.internal.bind.JsonTreeReaderGptTest::testSkipValue_emptyJsonObject"
+  ],
+  "fixed_failures": [
+    "com.google.gson.internal.bind.JsonTreeReaderGptTest::testPathFormatAcrossMixedNesting"
+  ],
+  "suite_sha256": "085fca49d19ee96b61f0d751848818b4066368bec2c9969bdd163efc641dc973",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_12b/JsonTreeReaderGptTest.java"
+  ],
+  "run_id": "Gson-12-Reevaluation-s0-c61b09d17902"
+}

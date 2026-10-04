@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 92.68,
+  "branch_cov": 92.51,
+  "test_file": "CreatorCollectorGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.impl.CreatorCollector",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testDeprecatedCreatorMethods",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testVerifyNonDupDifferentCreatorClasses",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testAddPropertyCreatorEmptyAndSingleProperties",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testSetDefaultCreatorAndFixAccess",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testDefectPropertyArgsNotOverwrittenByImplicit",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testDefectPropertyArgsNotOverwrittenWhenGenericIgnored"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testDeprecatedCreatorMethods",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testVerifyNonDupDifferentCreatorClasses",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testAddPropertyCreatorEmptyAndSingleProperties",
+    "com.fasterxml.jackson.databind.deser.impl.CreatorCollectorGptTest::testSetDefaultCreatorAndFixAccess"
+  ],
+  "suite_sha256": "1d0a188aaaf0343662f411d3e0fa9b3c0b0a856c6bba9ed98a68d575f61edc16",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_69b/CreatorCollectorGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-69-Reevaluation-s0-3a7cbb1047d1"
+}

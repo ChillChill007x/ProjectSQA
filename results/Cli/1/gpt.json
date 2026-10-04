@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "CommandLineGptTest.java",
+  "target_classes": "org.apache.commons.cli.CommandLine",
+  "buggy_failures": [
+    "org.apache.commons.cli.CommandLineGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.CommandLineGptTest"
+  ],
+  "suite_sha256": "966d664d5a8f5f9484ba0c3f5046d7a31f0a0767f2d2e82318d80e435882c440",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_1b/CommandLineGptTest.java"
+  ],
+  "run_id": "Cli-1-Reevaluation-s0-5651af94228c"
+}

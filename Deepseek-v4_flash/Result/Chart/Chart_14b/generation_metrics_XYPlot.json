@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:39:34",
+  "project": "Chart",
+  "bug_id": 14,
+  "version": "b",
+  "target_class": "org.jfree.chart.plot.XYPlot",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 78.0,
+    "input_tokens": 41640,
+    "output_tokens": 9355,
+    "reasoning_tokens": null,
+    "total_tokens": 50995,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 217399,
+    "limit": 1000000,
+    "remaining": 782601
+  }
+}

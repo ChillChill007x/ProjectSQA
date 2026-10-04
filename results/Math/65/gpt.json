@@ -1,0 +1,16 @@
+{
+  "status": "DONE",
+  "fault_detected": "NOT_DETECTED",
+  "failures_count": 0,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "AbstractLeastSquaresOptimizerGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer",
+  "buggy_failures": [],
+  "fixed_failures": [],
+  "suite_sha256": "eb8b2cde00df1888b15a04fb96d199739ec8e55012a21939a4588c9b100e6f8e",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_65b/AbstractLeastSquaresOptimizerGptTest.java"
+  ],
+  "run_id": "Math-65-Reevaluation-s0-50b4eb183535"
+}

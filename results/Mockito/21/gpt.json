@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ConstructorInstantiatorGptTest.java",
+  "target_classes": "org.mockito.internal.creation.instance.ConstructorInstantiator",
+  "buggy_failures": [
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorGptTest::creates_instances_of_inner_classes_with_multilevel_subclass",
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorGptTest::creates_instances_of_inner_classes"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorGptTest::newInstance_withOuter_throwsWhenTargetClassHasNoOuterConstructor",
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorGptTest::newInstance_withOuter_throwsWhenOuterInstanceIsIncompatible"
+  ],
+  "suite_sha256": "aa327a1d179f7ad3d3969cbb674dfc9aeb267a5f728a0784eda3c785620e181a",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_21b/ConstructorInstantiatorGptTest.java"
+  ],
+  "run_id": "Mockito-21-Reevaluation-s0-f1516b96dd81"
+}

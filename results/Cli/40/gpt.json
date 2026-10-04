@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "TypeHandlerGptTest.java",
+  "target_classes": "org.apache.commons.cli.TypeHandler",
+  "buggy_failures": [
+    "org.apache.commons.cli.TypeHandlerGptTest::testCreateValueInteger_failure"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.TypeHandlerGptTest::testCreateValueUnregisteredClassReturnsNull"
+  ],
+  "suite_sha256": "e7532594a96bfd58f9496e84af02d2086600cc909fd0359b756cbba4c8984b7b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_40b/TypeHandlerGptTest.java"
+  ],
+  "run_id": "Cli-40-Reevaluation-s0-78dac2a3e65f"
+}

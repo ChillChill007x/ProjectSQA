@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:28:09",
+  "project": "Math",
+  "bug_id": 68,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 73.2,
+    "input_tokens": 9608,
+    "output_tokens": 5036,
+    "reasoning_tokens": null,
+    "total_tokens": 14644,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 337747,
+    "limit": 1000000,
+    "remaining": 662253
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 88.5,
+  "branch_cov": 79.33,
+  "test_file": "TarArchiveInputStreamDeepseekTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testCOMPRESS178EmbeddedNulInModeDoesNotThrow",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testUnexpectedEofThrowsIoException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testCOMPRESS178EmbeddedNulInModeDoesNotThrow",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamDeepseekTest::testUnexpectedEofThrowsIoException"
+  ],
+  "suite_sha256": "3e9d5082306a4f7533c2dcec2380dd27caea20fb5c19267b28ceba24056d1d24",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Compress_12b/TarArchiveInputStreamDeepseekTest.java"
+  ],
+  "run_id": "Compress-12-Reevaluation-s0-a34665e58df3"
+}

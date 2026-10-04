@@ -1,0 +1,33 @@
+{
+  "project": "Compress",
+  "bug_id": 32,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-32-gpt-1790369252",
+  "suite_sha256": "428054f5d3f874d545c2f079527c46f1c53efb52920fd43626431818e8ee539e",
+  "test_files": "TarArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "timestamp": "2026-10-03 03:47:51",
+  "evaluation_duration_sec": 18.954,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 84.55,
+  "branch_coverage_percent": 72.22,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testInvalidHeaderThrowsWrappedIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testAvailableBoundaryIntegerMax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersAllStandardFields",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::shouldReadBigGid",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::shouldReadBigUid",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedArchiveDuringEntryRead"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadWithoutCurrentEntryThrowsException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testInvalidHeaderThrowsWrappedIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testAvailableBoundaryIntegerMax",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testPaxHeadersAllStandardFields",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testTruncatedArchiveDuringEntryRead"
+  ]
+}

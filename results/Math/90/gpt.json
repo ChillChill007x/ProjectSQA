@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 97.81,
+  "branch_cov": 92.58,
+  "test_file": "FrequencyGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.Frequency",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.FrequencyGptTest::testAddNonComparable"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "3f64ef431ef52087143185c86b41fe806995c93cd50a2ff6b7c31709011866c4",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_90b/FrequencyGptTest.java"
+  ],
+  "run_id": "Math-90-Reevaluation-s0-f3dcd0b850f6"
+}

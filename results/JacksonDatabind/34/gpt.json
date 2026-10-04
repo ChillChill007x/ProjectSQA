@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.33,
+  "branch_cov": 100.0,
+  "test_file": "NumberSerializerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.ser.std.NumberSerializer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.ser.std.NumberSerializerGptTest::testSerializeZeroAndNegativeValues",
+    "com.fasterxml.jackson.databind.ser.std.NumberSerializerGptTest::testBigDecimalVisitorNumberTypeExactDefectTrigger",
+    "com.fasterxml.jackson.databind.ser.std.NumberSerializerGptTest::testSerializeExtremeValues"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.ser.std.NumberSerializerGptTest::testSerializeZeroAndNegativeValues",
+    "com.fasterxml.jackson.databind.ser.std.NumberSerializerGptTest::testSerializeExtremeValues"
+  ],
+  "suite_sha256": "49b13c7509d973b4bfa303f937ee1b40e12502a4bfabad835e977342d5ceebec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_34b/NumberSerializerGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-34-Reevaluation-s0-327676630b16"
+}

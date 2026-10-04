@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.21,
+  "branch_cov": 89.68,
+  "test_file": "BasicMonthOfYearDateTimeFieldGptTest.java",
+  "target_classes": "org.joda.time.chrono.BasicMonthOfYearDateTimeField",
+  "buggy_failures": [
+    "org.joda.time.chrono.BasicMonthOfYearDateTimeFieldGptTest::testDefectAddPartialFromLeapDay",
+    "org.joda.time.chrono.BasicMonthOfYearDateTimeFieldGptTest::testSerializationReadResolve",
+    "org.joda.time.chrono.BasicMonthOfYearDateTimeFieldGptTest::testDefectSubtractMonthsEndOfMonthLeapAdjust"
+  ],
+  "fixed_failures": [
+    "org.joda.time.chrono.BasicMonthOfYearDateTimeFieldGptTest::testSerializationReadResolve"
+  ],
+  "suite_sha256": "d9bf551f077be0947e42254ce120d2fca27e31ec737f44b12c6de1d50c541028",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Time_14b/BasicMonthOfYearDateTimeFieldGptTest.java"
+  ],
+  "run_id": "Time-14-Reevaluation-s0-d6fe7fd5c5f7"
+}

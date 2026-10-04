@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 13,
+  "line_cov": 100.0,
+  "branch_cov": 0.0,
+  "test_file": "MatchersGptTest.java",
+  "target_classes": "org.mockito.Matchers",
+  "buggy_failures": [
+    "org.mockito.MatchersGptTest::testAnyMapOfClassesMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnyListMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnyListOfClassMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnySetMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnyStringMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnySetOfClassMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testEqObjectBoundaries",
+    "org.mockito.MatchersGptTest::testAnyCollectionMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnyMapMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testIsAMatcherTypeChecking",
+    "org.mockito.MatchersGptTest::testSameIdentityBoundaries",
+    "org.mockito.MatchersGptTest::testAnyCollectionOfClassMustNotAcceptNull",
+    "org.mockito.MatchersGptTest::testAnyPrimitiveWrapperMatchersMustNotAcceptNull"
+  ],
+  "fixed_failures": [
+    "org.mockito.MatchersGptTest::testEqObjectBoundaries",
+    "org.mockito.MatchersGptTest::testAnyObjectAndAnyMatchesNullPerContract",
+    "org.mockito.MatchersGptTest::testIsAMatcherTypeChecking",
+    "org.mockito.MatchersGptTest::testSameIdentityBoundaries"
+  ],
+  "suite_sha256": "293cadff5364f48a57244202c9e7b5f9b31920cae61d3fc2467bbff360e01c43",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_6b/MatchersGptTest.java"
+  ],
+  "run_id": "Mockito-6-Reevaluation-s0-7f475ca64e64"
+}

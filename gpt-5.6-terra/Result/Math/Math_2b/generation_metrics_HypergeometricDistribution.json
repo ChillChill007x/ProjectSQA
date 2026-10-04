@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 13:36:21",
+  "project": "Math",
+  "bug_id": 2,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.distribution.HypergeometricDistribution",
+  "token_slot": null,
+  "metrics": {
+    "generation_time_seconds": 27.37,
+    "input_tokens": 4401,
+    "output_tokens": 4048,
+    "reasoning_tokens": 956,
+    "total_tokens": 9405,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": null,
+    "used": 43509,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": null
+  }
+}

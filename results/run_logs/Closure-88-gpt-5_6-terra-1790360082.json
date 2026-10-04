@@ -1,0 +1,37 @@
+{
+  "project": "Closure",
+  "bug_id": 88,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Closure-88-gpt-1790360082",
+  "suite_sha256": "74186b658109b2d4c0f2201b074935f00d848a357496c75a9b218e8107df481d",
+  "test_files": "DeadAssignmentsEliminationGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.DeadAssignmentsElimination",
+  "timestamp": "2026-10-03 01:15:09",
+  "evaluation_duration_sec": 27.461,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 90.91,
+  "branch_coverage_percent": 77.0,
+  "failures_count": 8,
+  "error_detail": "",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testEmptyReturnStatement",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297a",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297b",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297c",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297d",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297e",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297f",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testForLoopUpdateIncrementElimination"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testEmptyReturnStatement",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297a",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297b",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297c",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297d",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297e",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testIssue297f",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationGptTest::testForLoopUpdateIncrementElimination"
+  ]
+}

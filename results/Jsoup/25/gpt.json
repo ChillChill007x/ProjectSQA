@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 99.14,
+  "branch_cov": 91.4,
+  "test_file": "TagGptTest.java",
+  "target_classes": "org.jsoup.parser.Tag",
+  "buggy_failures": [
+    "org.jsoup.parser.TagGptTest::testPreservesWhitespaceInTextarea"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "56ddc76628594f00c4bb628ef6899e6ef480463a65d3797cc652bf9b3bf8cd7d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_25b/TagGptTest.java"
+  ],
+  "run_id": "Jsoup-25-Reevaluation-s0-caa15f1cb752"
+}

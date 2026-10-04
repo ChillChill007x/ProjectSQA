@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 18:23:47",
+  "project": "Math",
+  "bug_id": 36,
+  "version": "b",
+  "target_class": "org.apache.commons.math.fraction.BigFraction",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 1597.38,
+    "input_tokens": 10055,
+    "output_tokens": 65536,
+    "reasoning_tokens": null,
+    "total_tokens": 75591,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 703203,
+    "limit": 1000000,
+    "remaining": 296797
+  }
+}

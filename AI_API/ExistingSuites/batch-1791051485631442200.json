@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-10-03T18:17:04.273003+00:00",
+  "finished_at": "2026-10-03T18:18:05.631467+00:00",
+  "selected": [
+    "Lang-1-Reevaluation-s0-87f11725d7a0",
+    "Lang-1-Reevaluation-s0-b6cd12c8a406"
+  ],
+  "projects": [
+    "Lang"
+  ],
+  "errors": [],
+  "api_calls": 0,
+  "workers": 2
+}

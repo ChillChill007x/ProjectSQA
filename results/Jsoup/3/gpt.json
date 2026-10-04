@@ -1,0 +1,42 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 11,
+  "line_cov": 94.91,
+  "branch_cov": 90.85,
+  "test_file": "ElementGptTest.java;ParserGptTest.java;TagGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element;org.jsoup.parser.Parser;org.jsoup.parser.Tag",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testEqualsAndHashCodeContract",
+    "org.jsoup.nodes.ElementGptTest::testPrependRowToTableDefect",
+    "org.jsoup.nodes.ElementGptTest::testAppendRowToTableDefect",
+    "org.jsoup.nodes.ElementGptTest::testDomQueryMethods",
+    "org.jsoup.nodes.ElementGptTest::testOuterHtmlVoidElements",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.parser.ParserGptTest::testHandlesNestedImplicitTableDefect",
+    "org.jsoup.parser.ParserGptTest::testUnclosedAndMismatchedEndTags",
+    "org.jsoup.parser.ParserGptTest::testNestedTableImplicitRowDirect",
+    "org.jsoup.parser.ParserGptTest::testAttributeWithCorruptChar",
+    "org.jsoup.parser.TagGptTest::testTableRowAncestrySupportsTbodyTheadTfoot"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testEqualsAndHashCodeContract",
+    "org.jsoup.nodes.ElementGptTest::testDomQueryMethods",
+    "org.jsoup.nodes.ElementGptTest::testOuterHtmlVoidElements",
+    "org.jsoup.nodes.ElementGptTest::testClassManipulation",
+    "org.jsoup.parser.ParserGptTest::testHandlesNestedImplicitTableDefect",
+    "org.jsoup.parser.ParserGptTest::testUnclosedAndMismatchedEndTags",
+    "org.jsoup.parser.ParserGptTest::testNestedTableImplicitRowDirect",
+    "org.jsoup.parser.ParserGptTest::testAttributeWithCorruptChar",
+    "org.jsoup.parser.TagGptTest::testTableRowAncestrySupportsTbodyTheadTfoot",
+    "org.jsoup.parser.TagGptTest::testMultiAncestorResolution",
+    "org.jsoup.parser.TagGptTest::testHtmlTagIsValidParentForAny"
+  ],
+  "suite_sha256": "b9f42c17330bb050c0f52fbddccfeee6947201bd6c103df02af0b59abd47043d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_3b/ElementGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_3b/ParserGptTest.java",
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_3b/TagGptTest.java"
+  ],
+  "run_id": "Jsoup-3-Reevaluation-s0-edbe90877bcc"
+}

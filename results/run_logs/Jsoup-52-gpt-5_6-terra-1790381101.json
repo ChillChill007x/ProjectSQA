@@ -1,0 +1,38 @@
+{
+  "project": "Jsoup",
+  "bug_id": 52,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-52-gpt-1790381101",
+  "suite_sha256": "e7849eaeb756ca0eced42a6c16d3bc4df8d9cd96984735693f5e9003ee50d478",
+  "test_files": "DataUtilGptTest.java;XmlDeclarationGptTest.java;XmlTreeBuilderGptTest.java",
+  "target_classes": "org.jsoup.helper.DataUtil;org.jsoup.nodes.XmlDeclaration;org.jsoup.parser.XmlTreeBuilder",
+  "timestamp": "2026-10-03 07:05:19",
+  "evaluation_duration_sec": 18.335,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 97.95,
+  "branch_coverage_percent": 85.37,
+  "failures_count": 10,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.helper.DataUtilGptTest::testGetCharsetFromContentTypeBoundaryValues",
+    "org.jsoup.helper.DataUtilGptTest::testDetectCharsetEncodingDeclarationXml",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithSingleVersionAttribute",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationPreservesStandaloneAndCustomAttributes",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testProcessingInstructionOuterHtmlFormatting",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithSingleEncodingAttribute",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testXmlDeclarationOuterHtmlMustEndWithQuestionMarkGreater",
+    "org.jsoup.parser.XmlTreeBuilderGptTest::testHandlesXmlDeclarationAsDeclarationNode",
+    "org.jsoup.parser.XmlTreeBuilderGptTest::testProcessingInstructionBangDeclaration",
+    "org.jsoup.parser.XmlTreeBuilderGptTest::testDetectAndParseDeclarationAttributesXml"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.DataUtilGptTest::testGetCharsetFromContentTypeBoundaryValues",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithNonXmlNameIgnoresAttributes",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithSingleVersionAttribute",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithXmlNameAndBothAttributesPresent",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testProcessingInstructionOuterHtmlFormatting",
+    "org.jsoup.nodes.XmlDeclarationGptTest::testGetWholeDeclarationWithSingleEncodingAttribute",
+    "org.jsoup.parser.XmlTreeBuilderGptTest::testProcessingInstructionBangDeclaration"
+  ]
+}

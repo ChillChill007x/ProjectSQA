@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "NumericEntityUnescaperGptTest.java",
+  "target_classes": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+  "buggy_failures": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testTranslateAmpersandWithoutHash",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryUnescapingDirectWriter",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryUnescaping",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryBoundaryMax",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryBoundaryMin",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testSupplementaryHexUnescaping"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperGptTest::testTranslateAmpersandWithoutHash"
+  ],
+  "suite_sha256": "0cacefe5b42943e5330136ac08ce0419305cd4bbd572e95bf03f861a9e933f32",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_28b/NumericEntityUnescaperGptTest.java"
+  ],
+  "run_id": "Lang-28-Reevaluation-s0-8b968c472763"
+}

@@ -1,0 +1,23 @@
+{
+  "project": "Math",
+  "bug_id": 95,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-95-gpt-1790393995",
+  "suite_sha256": "694f6eb561ab18467d6ded0feae8b3a3e8533f2990f0dab0bd38026217a3b9e9",
+  "test_files": "FDistributionImplGptTest.java",
+  "target_classes": "org.apache.commons.math.distribution.FDistributionImpl",
+  "timestamp": "2026-10-03 10:40:17",
+  "evaluation_duration_sec": 22.459,
+  "execution_status": "DONE",
+  "fault_detection_status": "BUG_DETECTED",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomDenominatorOne",
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomDenominatorTwo",
+    "org.apache.commons.math.distribution.FDistributionImplGptTest::testSmallDegreesOfFreedomAsymmetric"
+  ],
+  "fixed_failures": []
+}

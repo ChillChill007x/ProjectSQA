@@ -1,0 +1,23 @@
+{
+  "project": "Cli",
+  "bug_id": 8,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Cli-8-gpt-1790352835",
+  "suite_sha256": "00d13f6b6f8f7ac3e5340e60eceb628ebbb05ecd65818a36057298c0b01d3843",
+  "test_files": "HelpFormatterGptTest.java",
+  "target_classes": "org.apache.commons.cli.HelpFormatter",
+  "timestamp": "2026-10-03 23:14:08",
+  "evaluation_duration_sec": 12.452,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 0.0,
+  "branch_coverage_percent": 0.0,
+  "failures_count": 1,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.HelpFormatterGptTest"
+  ]
+}

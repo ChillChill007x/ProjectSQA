@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 22:06:04",
+  "project": "Collections",
+  "bug_id": 18,
+  "version": "b",
+  "target_class": "org.apache.commons.collections.set.ListOrderedSet",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 236.54,
+    "input_tokens": 4097,
+    "output_tokens": 6513,
+    "reasoning_tokens": 34773,
+    "total_tokens": 45383,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 377250,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 22750
+  }
+}

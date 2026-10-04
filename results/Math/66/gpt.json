@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 100.0,
+  "branch_cov": 97.27,
+  "test_file": "BrentOptimizerGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testResetAccuraciesToDefaults",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testResultClearedBeforeOptimization",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testQuinticMinDefect",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testMaximizationHistoryAssignmentBranches",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testSinMinDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testResetAccuraciesToDefaults",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testResultClearedBeforeOptimization",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testQuinticMinDefect",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testMaximizationHistoryAssignmentBranches",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testConstructorDefaultState",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testSinMinDefect",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerGptTest::testDoOptimizeThrowsUnsupportedOperationException"
+  ],
+  "suite_sha256": "a237be1550a8a9f7164bad684280db0c534f313ac277e1021d3a11af814ab39c",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_66b/BrentOptimizerGptTest.java"
+  ],
+  "run_id": "Math-66-Reevaluation-s0-4ee5e8e8d2b3"
+}

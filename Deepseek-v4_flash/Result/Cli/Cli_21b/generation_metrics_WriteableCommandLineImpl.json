@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 04:52:26",
+  "project": "Cli",
+  "bug_id": 21,
+  "version": "b",
+  "target_class": "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 190.84,
+    "input_tokens": 2884,
+    "output_tokens": 8791,
+    "reasoning_tokens": null,
+    "total_tokens": 11675,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 762638,
+    "limit": 1000000,
+    "remaining": 237362
+  }
+}

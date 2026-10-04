@@ -1,0 +1,35 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 88.5,
+  "branch_cov": 76.38,
+  "test_file": "CodeGeneratorGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CodeGenerator",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testDefectUnicodeEscape0x7FInRegexp",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testDefectUnicodeEscape0x7F",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testDefectUnicodeEscape0x7FInDoubleQuotedJsString",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testControlFlowStatements",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testUnknownTokenTypeThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testThrowAndReturn",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testStringUnexpectedChildrenThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testInOperatorInForInitClauseContext",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testLabelsBreakContinue",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOperatorInvalidChildCount"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testControlFlowStatements",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testUnknownTokenTypeThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testThrowAndReturn",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testStringUnexpectedChildrenThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testInOperatorInForInitClauseContext",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testLabelsBreakContinue",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOperatorInvalidChildCount"
+  ],
+  "suite_sha256": "c76b9ea691c5c69afe2208029a4212cf335af3dee8313dddadefb72743a1b8e8",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_73b/CodeGeneratorGptTest.java"
+  ],
+  "run_id": "Closure-73-Reevaluation-s0-648e3a328a62"
+}

@@ -1,0 +1,31 @@
+Command: /usr/bin/python3 /workspace/scripts/run_benchmark.py --project Math --bug 9 --techniques gpt --resume
+=================================================================
+ProjectSQA Universal Benchmark Runner
+Total Target Queue: 1 Bugs
+Techniques: gpt-5_6-terra
+Results CSV: /workspace/results/benchmark_results.csv
+Resume Mode: ENABLED
+=================================================================
+
+[Math-9-gpt] Starting evaluation...
+[Math-9-gpt] Target modified classes: ['org.apache.commons.math3.geometry.euclidean.threed.Line']
+[Math-9-gpt] Checking out Math-9b...
+[Math-9-gpt] Packaging test files: ['LineGptTest.java']
+[Math-9-gpt] Measuring code coverage via defects4j coverage -s...
+[Math-9-gpt] Target Modified Class Coverage -> Line: 97.83% | Branch: 100.0%
+[Math-9-gpt] Running test on Buggy version to verify failure exposure...
+[Math-9-gpt] Buggy Failures (4): ['org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testRevertPointConsistency', 'org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testWholeLine']
+[Math-9-gpt] Checking out Fixed version (Math-9f)...
+[Math-9-gpt] Running test on Fixed version to verify fix passing...
+[Math-9-gpt] Fixed Failures (2): ['org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testWholeLine', 'org.apache.commons.math3.geometry.euclidean.threed.LineGptTest::testLargeCoordinatesStability']
+[Math-9-gpt] [RESULT] Status: DONE | Line Cov: 97.83% | Branch Cov: 100.0% | Fault: FLAKY_OR_REGRESSION (4 Failures)
+
+=================================================================
+Benchmark Execution Completed!
+Summary CSV available at: /workspace/results/benchmark_results.csv
+=================================================================
+
+Process_Exit_Code: 0
+Execution_Status: DONE
+Run_ID: Math-9-gpt-1790431292
+Suite_SHA256: 6e96a0d355abe845cc18c6a3dc612a64ce02d2fa6e9b562324d592a7871e2cc5

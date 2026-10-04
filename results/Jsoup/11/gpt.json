@@ -1,0 +1,29 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 94.91,
+  "branch_cov": 87.47,
+  "test_file": "SelectorGptTest.java",
+  "target_classes": "org.jsoup.select.Selector",
+  "buggy_failures": [
+    "org.jsoup.select.SelectorGptTest::testDefectPseudoHasDescendants",
+    "org.jsoup.select.SelectorGptTest::testDefectNotAllSelector",
+    "org.jsoup.select.SelectorGptTest::testDefectNotAttributeSelector",
+    "org.jsoup.select.SelectorGptTest::testTextAndRegexPseudoSelectors",
+    "org.jsoup.select.SelectorGptTest::testAttributeOperators",
+    "org.jsoup.select.SelectorGptTest::testDefectNotClassSelector",
+    "org.jsoup.select.SelectorGptTest::testInvalidAttributeSelectorThrowsException"
+  ],
+  "fixed_failures": [
+    "org.jsoup.select.SelectorGptTest::testDefectNotAllSelector",
+    "org.jsoup.select.SelectorGptTest::testTextAndRegexPseudoSelectors",
+    "org.jsoup.select.SelectorGptTest::testAttributeOperators",
+    "org.jsoup.select.SelectorGptTest::testInvalidAttributeSelectorThrowsException"
+  ],
+  "suite_sha256": "ef05e218230dbe2f317db10ff120aa368913a87add00a55aeee59cdabe407be5",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_11b/SelectorGptTest.java"
+  ],
+  "run_id": "Jsoup-11-Reevaluation-s0-9b7a1ef6f0cd"
+}

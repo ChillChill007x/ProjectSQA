@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "SetUniqueListDeepseekTest.java",
+  "target_classes": "org.apache.commons.collections.list.SetUniqueList",
+  "buggy_failures": [
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSetAndAddInteraction",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSubListInvalidIndices",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSetMethodNormalNoDuplicate",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSubListMaintainsUniqueness"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSubListInvalidIndices",
+    "org.apache.commons.collections.list.SetUniqueListDeepseekTest::testSubListMaintainsUniqueness"
+  ],
+  "suite_sha256": "8ccc78ee3c06c3b774a1865161c84749b50740aaee48d2c7f2cc110d3b548386",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Collections_15b/SetUniqueListDeepseekTest.java"
+  ],
+  "run_id": "Collections-15-Reevaluation-s0-3a609141ef2f"
+}

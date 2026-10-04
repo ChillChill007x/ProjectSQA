@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 95.24,
+  "branch_cov": 92.09,
+  "test_file": "TarArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testCOMPRESS178DefectTarget",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadUnexpectedEOFThrowsIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testGNUSparseHitEOFDuringSparseRead"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testCOMPRESS178DefectTarget",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testReadUnexpectedEOFThrowsIOException",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamGptTest::testGNUSparseHitEOFDuringSparseRead"
+  ],
+  "suite_sha256": "877b53a6c6fe19b6103ba2fa7d3ad7fea8fbb49f127055af17eea6463b7b8340",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_12b/TarArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-12-Reevaluation-s0-05e5aab2564f"
+}

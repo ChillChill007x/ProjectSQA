@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 97.78,
+  "branch_cov": 94.21,
+  "test_file": "GenericMetadataSupportGptTest.java",
+  "target_classes": "org.mockito.internal.util.reflection.GenericMetadataSupport",
+  "buggy_failures": [
+    "org.mockito.internal.util.reflection.GenericMetadataSupportGptTest::test_defect_discoverDeepMockingOfGenerics_with_bounded_type_variable",
+    "org.mockito.internal.util.reflection.GenericMetadataSupportGptTest::test_defect_discoverDeepMockingOfGenerics_raw_nested_type"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "ead672bd2518f29f2ef90e23c28965d4ecaf00aabadd53b7b57a952c4d158f04",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_7b/GenericMetadataSupportGptTest.java"
+  ],
+  "run_id": "Mockito-7-Reevaluation-s0-13073e654bed"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 99.42,
+  "branch_cov": 97.07,
+  "test_file": "SingularValueDecompositionImplGptTest.java",
+  "target_classes": "org.apache.commons.math.linear.SingularValueDecompositionImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.linear.SingularValueDecompositionImplGptTest::testZeroMatrixRank"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.linear.SingularValueDecompositionImplGptTest::testZeroMatrixRank"
+  ],
+  "suite_sha256": "4d745e85800dca5137e45c656bd450a06a1a503eb412cf2aab76d6157f37e647",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_76b/SingularValueDecompositionImplGptTest.java"
+  ],
+  "run_id": "Math-76-Reevaluation-s0-8be46e0dba59"
+}

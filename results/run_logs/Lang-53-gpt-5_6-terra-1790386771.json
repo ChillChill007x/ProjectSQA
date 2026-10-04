@@ -1,0 +1,25 @@
+{
+  "project": "Lang",
+  "bug_id": 53,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Lang-53-gpt-1790386771",
+  "suite_sha256": "144ba32df28e3a8a084f4884fc05e68ca9e661d22f5322df24d1b60ae094438c",
+  "test_files": "DateUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang.time.DateUtils",
+  "timestamp": "2026-10-03 08:39:51",
+  "evaluation_duration_sec": 20.419,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 98.16,
+  "branch_coverage_percent": 96.0,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundLang346",
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundAndTruncate_AmPm",
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundLang346Seconds"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.time.DateUtilsGptTest::testRoundAndTruncate_AmPm"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 96.3,
+  "branch_cov": 88.14,
+  "test_file": "DateUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang.time.DateUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddDays",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testIsSameDayDifferentDay",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundMonth",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundAmPmBoundary",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddYears",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testTruncateLang59",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSemiMonth",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSemiMonthDay16",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddMonths",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testIsSameLocalTime"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddDays",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundMinute",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testIsSameDayDifferentDay",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSecond",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundMonth",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundAmPmBoundary",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddYears",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testTruncateLang59",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSecondDST",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSemiMonth",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testRoundSemiMonthDay16",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testAddMonths",
+    "org.apache.commons.lang.time.DateUtilsDeepseekTest::testIsSameLocalTime"
+  ],
+  "suite_sha256": "d804b2f524f87b9c55660b068efaf5634c4156e0e5595300262749afe0c43c53",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_65b/DateUtilsDeepseekTest.java"
+  ],
+  "run_id": "Lang-65-Reevaluation-s0-f65dabbb4d46"
+}

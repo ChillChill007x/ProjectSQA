@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 90.11,
+  "branch_cov": 77.02,
+  "test_file": "ExternalTypeHandlerGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testExternalTypeIdWithNullValueFirst",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testMissingTypeIdThrowsMappingException",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testExternalTypeIdWithNullTypeFirst",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testCreatorWithExternalTypeNormal",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testDefaultImplUsedWhenTypeIdMissing"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testMissingTypeIdThrowsMappingException",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testCreatorWithExternalTypeNormal",
+    "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandlerGptTest::testDefaultImplUsedWhenTypeIdMissing"
+  ],
+  "suite_sha256": "f495bbd4384f805a30e5cd8e1265acfaa6f33bf21ad6dfc85247ab6b4bd821ea",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_29b/ExternalTypeHandlerGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-29-Reevaluation-s0-4f197530bbd6"
+}

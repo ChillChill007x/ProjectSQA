@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 6,
+  "line_cov": 100.0,
+  "branch_cov": 0.0,
+  "test_file": "CallsRealMethodsGptTest.java",
+  "target_classes": "org.mockito.internal.stubbing.answers.CallsRealMethods",
+  "buggy_failures": [
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenAbstractMethodReturnsVoid_shouldReturnNull",
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenAbstractMethodReturnsPrimitiveBoolean_shouldReturnDefaultFalse",
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenAbstractMethodReturnsObject_shouldReturnDefaultNullWithoutCallingRealMethod",
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenInterfaceMethod_shouldReturnDefaultWithoutCallingRealMethod",
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenAbstractMethodReturnsPrimitiveInt_shouldReturnDefaultZero",
+    "org.mockito.internal.stubbing.answers.CallsRealMethodsGptTest::testAnswer_whenInterfacePrimitiveMethod_shouldReturnDefaultValue"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "371ff54bc4c8c0263e2de842cbe9967a6924c8ac080b536863e8e009ecdfd450",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_9b/CallsRealMethodsGptTest.java"
+  ],
+  "run_id": "Mockito-9-Reevaluation-s0-038059156d5f"
+}

@@ -1,0 +1,29 @@
+{
+  "project": "Jsoup",
+  "bug_id": 66,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Jsoup-66-gpt-1790381762",
+  "suite_sha256": "ef96006e9ced1c1f648afb92bf71fd4b4bec49478e4723f1d379bcaee315d058",
+  "test_files": "ElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.Element",
+  "timestamp": "2026-10-03 07:16:18",
+  "evaluation_duration_sec": 16.211,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 88.72,
+  "branch_coverage_percent": 80.88,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespacePreservation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputAndPrettyPrintBranches",
+    "org.jsoup.nodes.ElementGptTest::testDomCollectorQueries",
+    "org.jsoup.nodes.ElementGptTest::testDomSiblingsBeforeAfterWrap"
+  ],
+  "fixed_failures": [
+    "org.jsoup.nodes.ElementGptTest::testTextAndWhitespacePreservation",
+    "org.jsoup.nodes.ElementGptTest::testHtmlOutputAndPrettyPrintBranches",
+    "org.jsoup.nodes.ElementGptTest::testDomCollectorQueries",
+    "org.jsoup.nodes.ElementGptTest::testDomSiblingsBeforeAfterWrap"
+  ]
+}

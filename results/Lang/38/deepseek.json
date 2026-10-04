@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.1,
+  "branch_cov": 83.01,
+  "test_file": "FastDateFormatDeepseekTest.java",
+  "target_classes": "org.apache.commons.lang3.time.FastDateFormat",
+  "buggy_failures": [
+    "org.apache.commons.lang3.time.FastDateFormatDeepseekTest::testLiteralCharacters",
+    "org.apache.commons.lang3.time.FastDateFormatDeepseekTest::testCalendarTimeZoneForced",
+    "org.apache.commons.lang3.time.FastDateFormatDeepseekTest::testIllegalPatternToken"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.time.FastDateFormatDeepseekTest::testLiteralCharacters",
+    "org.apache.commons.lang3.time.FastDateFormatDeepseekTest::testIllegalPatternToken"
+  ],
+  "suite_sha256": "5957f060ea47a20c65e2d556a5d99250c9782da6d6873445a2be6357f9dae583",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Lang_38b/FastDateFormatDeepseekTest.java"
+  ],
+  "run_id": "Lang-38-Reevaluation-s0-bc282c3bcc0d"
+}

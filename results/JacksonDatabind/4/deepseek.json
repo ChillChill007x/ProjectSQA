@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 94.84,
+  "branch_cov": 85.97,
+  "test_file": "StringArrayDeserializerDeepseekTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testExceptionOnSecondElementReportsCorrectIndex",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testSingleNullAsArrayEnabled",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testExceptionOnFirstElementReportsIndex0",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testHandleNonArrayWithNullAndSingleValueEnabled"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testExceptionOnSecondElementReportsCorrectIndex",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testSingleNullAsArrayEnabled",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testExceptionOnFirstElementReportsIndex0",
+    "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializerDeepseekTest::testHandleNonArrayWithNullAndSingleValueEnabled"
+  ],
+  "suite_sha256": "5a83a03435d4be8cbf2d31359fa238d176b955b791004934ef4843f778e635b5",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/JacksonDatabind_4b/StringArrayDeserializerDeepseekTest.java"
+  ],
+  "run_id": "JacksonDatabind-4-Reevaluation-s0-8881e9e420f2"
+}

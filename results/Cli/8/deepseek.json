@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "HelpFormatterDeepseekTest.java",
+  "target_classes": "org.apache.commons.cli.HelpFormatter",
+  "buggy_failures": [
+    "org.apache.commons.cli.HelpFormatterDeepseekTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.HelpFormatterDeepseekTest"
+  ],
+  "suite_sha256": "404d3d13e21549d4cad3b66e1aa93957c0c0b90e6667afff56fc706d5281a067",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Cli_8b/HelpFormatterDeepseekTest.java"
+  ],
+  "run_id": "Cli-8-Reevaluation-s0-5e8d8eda9fda"
+}

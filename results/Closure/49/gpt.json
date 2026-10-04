@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 99.19,
+  "branch_cov": 90.95,
+  "test_file": "MakeDeclaredNamesUniqueGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.MakeDeclaredNamesUnique",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testFullTraversalRemovesConstantPropertyWhenConfigured",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testContextualRenamerCannotStartAtFunctionContext",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testContextualRenamerRenamesShadowedArgumentsInLocalScope",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testInlineRenamerHandlesShadowedArgumentsWithoutException"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testFullTraversalRemovesConstantPropertyWhenConfigured",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testContextualRenamerCannotStartAtFunctionContext",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testContextualRenamerRenamesShadowedArgumentsInLocalScope",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueGptTest::testInlineRenamerHandlesShadowedArgumentsWithoutException"
+  ],
+  "suite_sha256": "0271658dfafd8ef67993e811a92c1e99d84aac47ee011c3e62bc9c5a048e8eec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_49b/MakeDeclaredNamesUniqueGptTest.java"
+  ],
+  "run_id": "Closure-49-Reevaluation-s0-d5af02cbb768"
+}

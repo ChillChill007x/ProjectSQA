@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 98.65,
+  "branch_cov": 94.72,
+  "test_file": "ProperFractionFormatGptTest.java",
+  "target_classes": "org.apache.commons.math.fraction.ProperFractionFormat",
+  "buggy_failures": [
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseProperInvalidMinusDenominator",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseProperInvalidMinusWithNegativeWhole",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseProperInvalidMinusWithParsePosition",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testFormatCustomBufferAndFieldPosition",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseTerminatingWithoutSlash",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseProperInvalidMinusNumerator",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseProperInvalidMinusBothNumeratorAndDenominator"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testFormatCustomBufferAndFieldPosition",
+    "org.apache.commons.math.fraction.ProperFractionFormatGptTest::testParseTerminatingWithoutSlash"
+  ],
+  "suite_sha256": "b6f1a47740baa416e3bad1ed1b5e13ee74e4f2deca1c75ebcae79f02fba9ef1d",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_106b/ProperFractionFormatGptTest.java"
+  ],
+  "run_id": "Math-106-Reevaluation-s0-acd07c0ce871"
+}

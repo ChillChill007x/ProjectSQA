@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.93,
+  "branch_cov": 89.48,
+  "test_file": "DefaultParserGptTest.java",
+  "target_classes": "org.apache.commons.cli.DefaultParser",
+  "buggy_failures": [
+    "org.apache.commons.cli.DefaultParserGptTest::testPartialLongOptionMatching",
+    "org.apache.commons.cli.DefaultParserGptTest::testPartialLongOptionWithEqualSign",
+    "org.apache.commons.cli.DefaultParserGptTest::testCli265ShortOptionWithoutValue"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.DefaultParserGptTest::testPartialLongOptionMatching",
+    "org.apache.commons.cli.DefaultParserGptTest::testPartialLongOptionWithEqualSign"
+  ],
+  "suite_sha256": "ac33e5b3bec390dc5d49b4c5001fadce3a34e55d64cc53479663927ffb130b59",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_37b/DefaultParserGptTest.java"
+  ],
+  "run_id": "Cli-37-Reevaluation-s0-8b9458000834"
+}

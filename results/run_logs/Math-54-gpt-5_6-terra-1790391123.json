@@ -1,0 +1,27 @@
+{
+  "project": "Math",
+  "bug_id": 54,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-54-gpt-1790391123",
+  "suite_sha256": "3bfe4652b076a415d7942cebd2592b514154543afde286eccbeeb535164a12ea",
+  "test_files": "DfpGptTest.java",
+  "target_classes": "org.apache.commons.math.dfp.Dfp",
+  "timestamp": "2026-10-03 09:52:28",
+  "evaluation_duration_sec": 25.29,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 89.36,
+  "branch_coverage_percent": 78.1,
+  "failures_count": 4,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.dfp.DfpGptTest::testIssue567ZeroToDouble",
+    "org.apache.commons.math.dfp.DfpGptTest::testTruncationAndRoundingModes",
+    "org.apache.commons.math.dfp.DfpGptTest::testIssue567NegativeZeroToDouble",
+    "org.apache.commons.math.dfp.DfpGptTest::testRoundAllModes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.dfp.DfpGptTest::testTruncationAndRoundingModes",
+    "org.apache.commons.math.dfp.DfpGptTest::testRoundAllModes"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "project": "Math",
+  "bug_id": 99,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-99-gpt-1790394256",
+  "suite_sha256": "795c9d0b6df989010312ee6636bd95af84e3249ff42569e042bb48e245ce25f1",
+  "test_files": "MathUtilsGptTest.java",
+  "target_classes": "org.apache.commons.math.util.MathUtils",
+  "timestamp": "2026-10-03 10:44:40",
+  "evaluation_duration_sec": 23.725,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 96.65,
+  "branch_coverage_percent": 97.05,
+  "failures_count": 6,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testLcmOneIntegerMinValueDefect",
+    "org.apache.commons.math.util.MathUtilsGptTest::testSubAndCheckLong",
+    "org.apache.commons.math.util.MathUtilsGptTest::testLcmIntegerMinValueOneDefect",
+    "org.apache.commons.math.util.MathUtilsGptTest::testLcmIntegerMinValuePowerOfTwoDefect",
+    "org.apache.commons.math.util.MathUtilsGptTest::testGcdIntegerMinValueZeroDefect",
+    "org.apache.commons.math.util.MathUtilsGptTest::testGcdZeroIntegerMinValueDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.MathUtilsGptTest::testSubAndCheckLong"
+  ]
+}

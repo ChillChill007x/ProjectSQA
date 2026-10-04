@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 94.64,
+  "branch_cov": 81.36,
+  "test_file": "CSVFormatDeepseekTest.java",
+  "target_classes": "org.apache.commons.csv.CSVFormat",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVFormatDeepseekTest::testDefaultFormat",
+    "org.apache.commons.csv.CSVFormatDeepseekTest::testToString",
+    "org.apache.commons.csv.CSVFormatDeepseekTest::testDuplicateHeaderElements"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.csv.CSVFormatDeepseekTest::testDefaultFormat",
+    "org.apache.commons.csv.CSVFormatDeepseekTest::testToString"
+  ],
+  "suite_sha256": "edfb37990f3d725c635420979bc3be05241123cbbe2b56a5573cf1a6d196c22f",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Csv_8b/CSVFormatDeepseekTest.java"
+  ],
+  "run_id": "Csv-8-Reevaluation-s0-dbca2f689635"
+}

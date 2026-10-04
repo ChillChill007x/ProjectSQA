@@ -1,0 +1,32 @@
+{
+  "project": "Math",
+  "bug_id": 84,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Math-84-gpt-1790393205",
+  "suite_sha256": "5f38e71d745bd0deebbf02c4bd9865c12cd1a0c98c0d849cd3336ee0e979b82b",
+  "test_files": "MultiDirectionalGptTest.java",
+  "target_classes": "org.apache.commons.math.optimization.direct.MultiDirectional",
+  "timestamp": "2026-10-03 10:27:09",
+  "evaluation_duration_sec": 24.213,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 100.0,
+  "branch_coverage_percent": 100.0,
+  "failures_count": 7,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testCustomSimplexConfiguration",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMaxEvaluationsExceeded",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMinimizeMaximize",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testHighDimensionalSphere",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testRosenbrockValley",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMath283",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testOneDimensionalOptimization"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMaxEvaluationsExceeded",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMinimizeMaximize",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testRosenbrockValley",
+    "org.apache.commons.math.optimization.direct.MultiDirectionalGptTest::testMath283"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "CSVRecordGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVRecord",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVRecordGptTest::testPutInWithShortRecord",
+    "org.apache.commons.csv.CSVRecordGptTest::testToMapWithShortRecord"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "27465dadbec86381f0ea299aa019b258e157b26bab3574af2080a137e8a23f8f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Csv_6b/CSVRecordGptTest.java"
+  ],
+  "run_id": "Csv-6-Reevaluation-s0-fbc4423d53d6"
+}

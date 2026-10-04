@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.73,
+  "branch_cov": 89.35,
+  "test_file": "DateTimeSerializerBaseGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBaseGptTest::testDateConfigOverrideRootValue",
+    "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBaseGptTest::testSqlDateConfigOverride",
+    "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBaseGptTest::testContextualSimpleDateFormatCloneAndModify"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBaseGptTest::testContextualSimpleDateFormatCloneAndModify"
+  ],
+  "suite_sha256": "bd7ffb9050dcc0a8aeae1d87c6bb5038367c8b5dd5e09809adb4f609d58c0134",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_102b/DateTimeSerializerBaseGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-102-Reevaluation-s0-bccbfd1b5e81"
+}

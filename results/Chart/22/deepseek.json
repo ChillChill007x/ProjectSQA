@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 97.41,
+  "branch_cov": 91.29,
+  "test_file": "KeyedObjects2DDeepseekTest.java",
+  "target_classes": "org.jfree.data.KeyedObjects2D",
+  "buggy_failures": [
+    "org.jfree.data.KeyedObjects2DDeepseekTest::testHashCodeConsistency",
+    "org.jfree.data.KeyedObjects2DDeepseekTest::testRemoveColumnByKeyDefect"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.KeyedObjects2DDeepseekTest::testHashCodeConsistency",
+    "org.jfree.data.KeyedObjects2DDeepseekTest::testRemoveColumnByKeyDefect",
+    "org.jfree.data.KeyedObjects2DDeepseekTest::testRemoveObjectRemovesRowWhenAllNull"
+  ],
+  "suite_sha256": "e3b15e91761242aa9c25d013cd91a60110ac0e8078d52e2bc5ff90cb66e84197",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Chart_22b/KeyedObjects2DDeepseekTest.java"
+  ],
+  "run_id": "Chart-22-Reevaluation-s0-b8b72ebf5263"
+}

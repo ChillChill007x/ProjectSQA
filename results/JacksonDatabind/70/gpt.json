@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 97.6,
+  "branch_cov": 89.68,
+  "test_file": "BeanPropertyMapGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMapGptTest::testDefectCaseInsensitiveRemoveMultiplePropsWithMixedCase",
+    "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMapGptTest::testFindDeserializeAndSetUnwrapsInvocationTargetException",
+    "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMapGptTest::testDefectCaseInsensitiveRemoveMixedCase"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMapGptTest::testFindDeserializeAndSetUnwrapsInvocationTargetException"
+  ],
+  "suite_sha256": "c92368786a2bdc9d0a015900f8422e5d3f2039054979d2099283b59135cce4d6",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_70b/BeanPropertyMapGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-70-Reevaluation-s0-c2c1a9ef0826"
+}

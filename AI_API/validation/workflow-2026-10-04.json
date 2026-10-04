@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-03T18:20:31.963551+00:00",
+  "automated_tests": {
+    "passed": 49,
+    "failed": 0
+  },
+  "docker_setup": "PASS",
+  "kku_model_list": "BOTH_REQUESTED_IDS_AVAILABLE",
+  "live_generation": "NOT_RUN_APPROVAL_REQUIRED",
+  "generation_api_calls": 0,
+  "generation_plan_units": 1708,
+  "existing_plan_units": 1708,
+  "pilots": [
+    {
+      "provider": "deepseek",
+      "status": "INVALID_ORACLE",
+      "fixed_tests": 45,
+      "fixed_failures": 5,
+      "buggy_failures": 8,
+      "evaluation_seconds": 52.616,
+      "fixed_coverage": {
+        "line_covered": 257,
+        "line_total": 380,
+        "line_coverage_percent": 67.63157894736842,
+        "branch_covered": 185,
+        "branch_total": 350,
+        "branch_coverage_percent": 52.857142857142854
+      },
+      "result": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json"
+    },
+    {
+      "provider": "openai",
+      "status": "INVALID_ORACLE",
+      "fixed_tests": 35,
+      "fixed_failures": 1,
+      "buggy_failures": 2,
+      "evaluation_seconds": 53.007,
+      "fixed_coverage": {
+        "line_covered": 351,
+        "line_total": 380,
+        "line_coverage_percent": 92.36842105263158,
+        "branch_covered": 262,
+        "branch_total": 350,
+        "branch_coverage_percent": 74.85714285714286
+      },
+      "result": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+    }
+  ]
+}

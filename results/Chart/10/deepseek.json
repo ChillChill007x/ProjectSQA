@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 100.0,
+  "branch_cov": 0.0,
+  "test_file": "StandardToolTipTagFragmentGeneratorDeepseekTest.java",
+  "target_classes": "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator",
+  "buggy_failures": [
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentWithDoubleQuote",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentNullInput",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentWithLessThan",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentWithAllSpecialChars",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentWithGreaterThan",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentWithAmpersand",
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentDefectTrigger"
+  ],
+  "fixed_failures": [
+    "org.jfree.chart.imagemap.StandardToolTipTagFragmentGeneratorDeepseekTest::testGenerateToolTipFragmentNullInput"
+  ],
+  "suite_sha256": "fe88507bc1f2ea4b4d80c03f751e9e7fd6812d7c1ae601ba43b8b44e4bb2f682",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Chart_10b/StandardToolTipTagFragmentGeneratorDeepseekTest.java"
+  ],
+  "run_id": "Chart-10-Reevaluation-s0-28746d691e94"
+}

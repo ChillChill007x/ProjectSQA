@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 95.16,
+  "branch_cov": 90.72,
+  "test_file": "TimeSeriesGptTest.java",
+  "target_classes": "org.jfree.data.time.TimeSeries",
+  "buggy_failures": [
+    "org.jfree.data.time.TimeSeriesGptTest::testBug1832432_cloneEmptySeries",
+    "org.jfree.data.time.TimeSeriesGptTest::testDeletionMethods",
+    "org.jfree.data.time.TimeSeriesGptTest::testRemoveAgedItemsByTimestamp"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.time.TimeSeriesGptTest::testDeletionMethods",
+    "org.jfree.data.time.TimeSeriesGptTest::testRemoveAgedItemsByTimestamp"
+  ],
+  "suite_sha256": "660d45c633676787ef892d3d58254c2ee615ee38a18f1caacd7ac509343fc506",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_17b/TimeSeriesGptTest.java"
+  ],
+  "run_id": "Chart-17-Reevaluation-s0-b6e943f76528"
+}

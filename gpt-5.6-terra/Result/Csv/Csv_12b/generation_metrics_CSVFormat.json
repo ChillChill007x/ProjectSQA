@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 04:01:57",
+  "project": "Csv",
+  "bug_id": 12,
+  "version": "b",
+  "target_class": "org.apache.commons.csv.CSVFormat",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 43.96,
+    "input_tokens": 9992,
+    "output_tokens": 5357,
+    "reasoning_tokens": 1936,
+    "total_tokens": 17285,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 97199,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 302801
+  }
+}

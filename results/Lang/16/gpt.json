@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 96.07,
+  "branch_cov": 87.18,
+  "test_file": "NumberUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.math.NumberUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberHexUppercaseXDefect",
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointTypes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.math.NumberUtilsGptTest::testCreateNumberFloatingPointTypes"
+  ],
+  "suite_sha256": "05f6c5ad94f1cc4aa1ef21a21f8fbc60cc9069c32ad5e140cc1eead47c58283f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_16b/NumberUtilsGptTest.java"
+  ],
+  "run_id": "Lang-16-Reevaluation-s0-7c30e7e309aa"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 10,
+  "line_cov": 66.55,
+  "branch_cov": 62.19,
+  "test_file": "FoldConstantsGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.FoldConstants",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLoopFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testRegExpConstructor",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringJoinAddDefect",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testUnaryOperators",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testConditionMinimization",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testMinimizeNot",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringIndexOfAndJoin",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLogicalAndOr",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testHookAndIfFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testComparisonFolding"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLoopFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testRegExpConstructor",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringJoinAddDefect",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testUnaryOperators",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testConditionMinimization",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testMinimizeNot",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testStringIndexOfAndJoin",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testLogicalAndOr",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testHookAndIfFolding",
+    "com.google.javascript.jscomp.FoldConstantsGptTest::testComparisonFolding"
+  ],
+  "suite_sha256": "c4da1f0bb0fd8e03492be8f003ea94d5a36cce3056ccbb822c6cf730a9fba7f9",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_105b/FoldConstantsGptTest.java"
+  ],
+  "run_id": "Closure-105-Reevaluation-s0-90bcbfe156e4"
+}

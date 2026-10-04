@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 90.61,
+  "branch_cov": 83.91,
+  "test_file": "StdDateFormatGptTest.java",
+  "target_classes": "com.fasterxml.jackson.databind.util.StdDateFormat",
+  "buggy_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseISO8601MalformedTime",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseExceptionOnEmptyString",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testMutantFactories",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseISO8601MalformedMonth",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testDateISO8601_10k",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testDateISO8601_BCE",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseExceptionOnWhitespaceOnly"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseISO8601MalformedTime",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseExceptionOnEmptyString",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testMutantFactories",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseISO8601MalformedMonth",
+    "com.fasterxml.jackson.databind.util.StdDateFormatGptTest::testParseExceptionOnWhitespaceOnly"
+  ],
+  "suite_sha256": "181bfb701a8e1a6de1926d24a86da4e887b11a61c7093a584047339a64391789",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonDatabind_104b/StdDateFormatGptTest.java"
+  ],
+  "run_id": "JacksonDatabind-104-Reevaluation-s0-9d724134ac66"
+}

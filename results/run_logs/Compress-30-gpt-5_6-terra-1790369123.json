@@ -1,0 +1,23 @@
+{
+  "project": "Compress",
+  "bug_id": 30,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Compress-30-gpt-1790369123",
+  "suite_sha256": "84a43866e395088a4e90e00163f7ec1e9d1c4e6760857f9e5fc07bec6a4c1586",
+  "test_files": "BZip2CompressorInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+  "timestamp": "2026-10-03 03:45:42",
+  "evaluation_duration_sec": 19.016,
+  "execution_status": "DONE",
+  "fault_detection_status": "BUG_DETECTED",
+  "line_coverage_percent": 20.0,
+  "branch_coverage_percent": 23.77,
+  "failures_count": 3,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::testReadOffsetAtBufferLengthWithZeroLength",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::readOfLength0ShouldReturn0",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamGptTest::readOfLength0WithNonZeroOffsetShouldReturn0"
+  ],
+  "fixed_failures": []
+}

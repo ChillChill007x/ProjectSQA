@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 96.25,
+  "branch_cov": 86.11,
+  "test_file": "LevenbergMarquardtOptimizerDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+  "buggy_failures": [
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testMinpackJennrichSampson",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testWithNonnullChecker",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testMinpackFreudensteinRoth",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testConvergenceByCostRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallParRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallCostRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallOrthoTolerance"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testMinpackJennrichSampson",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testWithNonnullChecker",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testMinpackFreudensteinRoth",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testConvergenceByCostRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallParRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallCostRelativeTolerance",
+    "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerDeepseekTest::testTooSmallOrthoTolerance"
+  ],
+  "suite_sha256": "5b6fb11b515eb818734f499eca3db9f8b0eb742831f52b69418b5b8156ba06f0",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_64b/LevenbergMarquardtOptimizerDeepseekTest.java"
+  ],
+  "run_id": "Math-64-Reevaluation-s0-114a76ef7442"
+}

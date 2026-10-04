@@ -1,0 +1,52 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 18,
+  "line_cov": 63.02,
+  "branch_cov": 51.4,
+  "test_file": "DateTimeFormatterBuilderDeepseekTest.java",
+  "target_classes": "org.joda.time.format.DateTimeFormatterBuilder",
+  "buggy_failures": [
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testMatchingParserOrdering",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToFormatterWithOnlyPrinter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testCanBuildMethods",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendParserArrayWithNullMiddleElementThrows",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParseTimeZoneOffsetWithZeroText",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneNameWithoutLookup",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParseTimeZoneOffsetWithZero",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneOffsetFiveArg",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneOffsetFourArg",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testPrinterOnlyFormatter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToParserThrowsWhenNoParser",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneShortNameWithoutLookup",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testPrintParseZoneDawsonCreek",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToPrinterThrowsWhenNoPrinter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testPrintWithNullZone",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToFormatterWithOnlyParser",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParseTimeZoneIdWithUnderscore",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParserOnlyFormatter"
+  ],
+  "fixed_failures": [
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testMatchingParserOrdering",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToFormatterWithOnlyPrinter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testCanBuildMethods",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendParserArrayWithNullMiddleElementThrows",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParseTimeZoneOffsetWithZeroText",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneNameWithoutLookup",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParseTimeZoneOffsetWithZero",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneOffsetFiveArg",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneOffsetFourArg",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testPrinterOnlyFormatter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToParserThrowsWhenNoParser",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testAppendTimeZoneShortNameWithoutLookup",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToPrinterThrowsWhenNoPrinter",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testPrintWithNullZone",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testToFormatterWithOnlyParser",
+    "org.joda.time.format.DateTimeFormatterBuilderDeepseekTest::testParserOnlyFormatter"
+  ],
+  "suite_sha256": "cd754212029ca9e9cc818021890092ae23ed522bbf00fb06a51c1ac607b5b1c7",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Time_20b/DateTimeFormatterBuilderDeepseekTest.java"
+  ],
+  "run_id": "Time-20-Reevaluation-s0-95ee13be95f0"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 99.05,
+  "branch_cov": 95.4,
+  "test_file": "ParserGptTest.java",
+  "target_classes": "org.jsoup.parser.Parser",
+  "buggy_failures": [
+    "org.jsoup.parser.ParserGptTest::testAttributeEdgeCases",
+    "org.jsoup.parser.ParserGptTest::testHandlesTextAfterTextareaDataTag",
+    "org.jsoup.parser.ParserGptTest::testAttributeParsingVariations",
+    "org.jsoup.parser.ParserGptTest::testHandlesTextAfterDataTag",
+    "org.jsoup.parser.ParserGptTest::testSelfClosingAndEmptyTags"
+  ],
+  "fixed_failures": [
+    "org.jsoup.parser.ParserGptTest::testAttributeEdgeCases",
+    "org.jsoup.parser.ParserGptTest::testHandlesTextAfterTextareaDataTag",
+    "org.jsoup.parser.ParserGptTest::testAttributeParsingVariations",
+    "org.jsoup.parser.ParserGptTest::testSelfClosingAndEmptyTags"
+  ],
+  "suite_sha256": "12b6f251c9d006634d012d8b3a3699522c21bcb4ec79eac0c24a3d47d81b3e2b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_2b/ParserGptTest.java"
+  ],
+  "run_id": "Jsoup-2-Reevaluation-s0-8c7e566d3b3f"
+}

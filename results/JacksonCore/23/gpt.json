@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 99.27,
+  "branch_cov": 100.0,
+  "test_file": "DefaultPrettyPrinterGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.util.DefaultPrettyPrinterGptTest::testObjectFormattingLifecycleInlineIndenter",
+    "com.fasterxml.jackson.core.util.DefaultPrettyPrinterGptTest::testInvalidSubClass"
+  ],
+  "fixed_failures": [
+    "com.fasterxml.jackson.core.util.DefaultPrettyPrinterGptTest::testObjectFormattingLifecycleInlineIndenter"
+  ],
+  "suite_sha256": "a75e9a704246ffea0b0cd74a45af8ef68cf6d035a8cec93dd63ec973be621aff",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_23b/DefaultPrettyPrinterGptTest.java"
+  ],
+  "run_id": "JacksonCore-23-Reevaluation-s0-a8cda16b8e10"
+}

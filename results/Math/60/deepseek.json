@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 89.77,
+  "branch_cov": 81.29,
+  "test_file": "NormalDistributionImplDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.distribution.NormalDistributionImpl",
+  "buggy_failures": [
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testCumulativeProbabilityNegativeInfinity",
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testCumulativeProbabilityAtNegativeInfinity",
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testInverseCumulativeProbabilityNaN",
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testCumulativeProbabilityPositiveInfinity",
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testMultipleInstances"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testInverseCumulativeProbabilityNaN",
+    "org.apache.commons.math.distribution.NormalDistributionImplDeepseekTest::testMultipleInstances"
+  ],
+  "suite_sha256": "09bf074e109b89e96dca0873ab41d4458146e6a7f71e1af307b9d16e5bc99722",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_60b/NormalDistributionImplDeepseekTest.java"
+  ],
+  "run_id": "Math-60-Reevaluation-s0-cecf23a54623"
+}

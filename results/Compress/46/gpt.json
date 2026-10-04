@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 93.41,
+  "test_file": "X5455_ExtendedTimestampGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampGptTest::testAccessJavaTimeNegativeOverflowThrowsException",
+    "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampGptTest::testCreateJavaTimeNegativeOverflowThrowsException",
+    "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestampGptTest::testModifyJavaTimeNegativeOverflowThrowsException"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "e1f5d8723a816b79e4bf26d051a90aa589930429e77549a877e7b9f0c906f054",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_46b/X5455_ExtendedTimestampGptTest.java"
+  ],
+  "run_id": "Compress-46-Reevaluation-s0-c616b6a18952"
+}

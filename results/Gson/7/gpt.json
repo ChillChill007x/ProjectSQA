@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 88.46,
+  "branch_cov": 79.24,
+  "test_file": "JsonReaderGptTest.java",
+  "target_classes": "com.google.gson.stream.JsonReader",
+  "buggy_failures": [
+    "com.google.gson.stream.JsonReaderGptTest::testPromotedUnquotedNameToLong",
+    "com.google.gson.stream.JsonReaderGptTest::testPromotedUnquotedNameToInt",
+    "com.google.gson.stream.JsonReaderGptTest::testNextStringFromVariousTokens",
+    "com.google.gson.stream.JsonReaderGptTest::testLenientSeparatorsAndUnquotedTokens"
+  ],
+  "fixed_failures": [
+    "com.google.gson.stream.JsonReaderGptTest::testNextStringFromVariousTokens",
+    "com.google.gson.stream.JsonReaderGptTest::testLenientSeparatorsAndUnquotedTokens"
+  ],
+  "suite_sha256": "0846a75add670689e4ed5e4a21de4dcd1f5426593c9df189c2b2b9958f430bf5",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Gson_7b/JsonReaderGptTest.java"
+  ],
+  "run_id": "Gson-7-Reevaluation-s0-753a28cbbc6a"
+}

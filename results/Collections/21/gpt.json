@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "SetUniqueListGptTest.java",
+  "target_classes": "org.apache.commons.collections4.list.SetUniqueList",
+  "buggy_failures": [
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testListIteratorOperations",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testSubListRemoveIsUnmodifiable",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testSubListIsUnmodifiable",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testSetMethod",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testConstructorNullListThrowsException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testListIteratorOperations",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testSetMethod",
+    "org.apache.commons.collections4.list.SetUniqueListGptTest::testConstructorNullListThrowsException"
+  ],
+  "suite_sha256": "abe35a8e5d320449d022ee997202a3b146b5b97021ed4d065328b7ad5db2d1a0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Collections_21b/SetUniqueListGptTest.java"
+  ],
+  "run_id": "Collections-21-Reevaluation-s0-ac35c8fbc70e"
+}

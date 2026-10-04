@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 97.16,
+  "branch_cov": 100.0,
+  "test_file": "CodeConsumerGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CodeConsumer",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CodeConsumerGptTest::testIssue620ForwardSlashAfterDiv",
+    "com.google.javascript.jscomp.CodeConsumerGptTest::testIssue620RegexpDivRegexpSpacing"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "30aa9ec5a7706566122a246281aecfb01a033afc833ee74c1c7c883a7f953048",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_44b/CodeConsumerGptTest.java"
+  ],
+  "run_id": "Closure-44-Reevaluation-s0-a620e5589e09"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 4,
+  "line_cov": 95.53,
+  "branch_cov": 96.7,
+  "test_file": "RandomStringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.RandomStringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testLANG805WithLettersNumbersFalse",
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testEmptyCharArrayThrowsIllegalArgumentException",
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testLANG805WithLettersNumbersTrue",
+    "org.apache.commons.lang3.RandomStringUtilsGptTest::testEmptyStringThrowsIllegalArgumentException"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "bf6e54a7420eb8f80a36b61737d3d63add9f735125464e9359c5640de4c19b20",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_12b/RandomStringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-12-Reevaluation-s0-27ea7e8fc259"
+}

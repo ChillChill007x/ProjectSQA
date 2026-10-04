@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 96.11,
+  "branch_cov": 95.91,
+  "test_file": "TarUtilsGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.tar.TarUtils",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testVerifyCheckSumCompress197StarTarHeader",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testVerifyCheckSumCompress197StarTarHeaderTrailingNull",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testParseNameStandard"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testVerifyCheckSumCompress197StarTarHeader",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testVerifyCheckSumCompress197StarTarHeaderTrailingNull",
+    "org.apache.commons.compress.archivers.tar.TarUtilsGptTest::testParseNameStandard"
+  ],
+  "suite_sha256": "1c269d14f6a7ff48245287688f3b3b03ddf645eb854d53153203635776cd0c2b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_17b/TarUtilsGptTest.java"
+  ],
+  "run_id": "Compress-17-Reevaluation-s0-1dddb6039a9e"
+}

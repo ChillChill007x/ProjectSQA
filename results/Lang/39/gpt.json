@@ -1,0 +1,28 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 88.73,
+  "branch_cov": 86.93,
+  "test_file": "StringUtilsGptTest.java",
+  "target_classes": "org.apache.commons.lang3.StringUtils",
+  "buggy_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testDefectReplaceEachRepeatedlyWithNullElements",
+    "org.apache.commons.lang3.StringUtilsGptTest::testDefectReplaceEachWithNullSearchElements",
+    "org.apache.commons.lang3.StringUtilsGptTest::testDefectReplaceEachWithNullReplacementElements",
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitting",
+    "org.apache.commons.lang3.StringUtilsGptTest::testTrimAndStripOperations",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStartsWithAndEndsWith"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.lang3.StringUtilsGptTest::testDefectReplaceEachWithNullReplacementElements",
+    "org.apache.commons.lang3.StringUtilsGptTest::testSplitting",
+    "org.apache.commons.lang3.StringUtilsGptTest::testTrimAndStripOperations",
+    "org.apache.commons.lang3.StringUtilsGptTest::testStartsWithAndEndsWith"
+  ],
+  "suite_sha256": "fe4f891f84fe223d6ce41754297fde85ef1d8d34686a6e539ec2e65f271ed2ec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Lang_39b/StringUtilsGptTest.java"
+  ],
+  "run_id": "Lang-39-Reevaluation-s0-02ef2c6b13f4"
+}

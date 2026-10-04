@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 93.23,
+  "branch_cov": 93.02,
+  "test_file": "CodersGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.sevenz.Coders",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderNonDefaultDictionarySizeSignExtension",
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderDictionarySizeProperty1SignExtension",
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderDictionarySizeExceedsMax"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderNonDefaultDictionarySizeSignExtension",
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderDictionarySizeProperty1SignExtension",
+    "org.apache.commons.compress.archivers.sevenz.CodersGptTest::testLzmaDecoderDictionarySizeExceedsMax"
+  ],
+  "suite_sha256": "6e5a850340f5e5ffd4610b8a0c44d20f11e6c6fd7facd38964a06e5673b696b7",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_23b/CodersGptTest.java"
+  ],
+  "run_id": "Compress-23-Reevaluation-s0-7c7f2a1630bc"
+}

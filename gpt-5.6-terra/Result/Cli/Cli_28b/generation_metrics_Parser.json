@@ -1,0 +1,18 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 05:35:54",
+  "project": "Cli",
+  "bug_id": 28,
+  "version": "b",
+  "target_class": "org.apache.commons.cli.Parser",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 134.9,
+    "input_tokens": 0,
+    "output_tokens": 2885,
+    "reasoning_tokens": null,
+    "total_tokens": 2885,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": null
+}

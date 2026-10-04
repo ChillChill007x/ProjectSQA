@@ -1,0 +1,44 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 14,
+  "line_cov": 82.05,
+  "branch_cov": 70.34,
+  "test_file": "CodeGeneratorGptTest.java",
+  "target_classes": "com.google.javascript.jscomp.CodeGenerator",
+  "buggy_failures": [
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOpWithInvalidChildCountThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testDoWhileAndWhile",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testZeroEscapeToDoubleQuotedJsString",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOperatorsAssociativity",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testTokensDelpropLabelBreakContinueDebuggerThisNullTrueFalse",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testZero",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testGetAndSetInObjectLit",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testLabelAndWith",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testSwitchCaseDefault",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testThrowAndReturn",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBreakAndContinueWithLabel",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testForLoops",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testUnknownNodeTypeThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testIfElseAndDanglingElse"
+  ],
+  "fixed_failures": [
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOpWithInvalidChildCountThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testDoWhileAndWhile",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBinaryOperatorsAssociativity",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testTokensDelpropLabelBreakContinueDebuggerThisNullTrueFalse",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testGetAndSetInObjectLit",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testLabelAndWith",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testSwitchCaseDefault",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testThrowAndReturn",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testBreakAndContinueWithLabel",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testForLoops",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testUnknownNodeTypeThrows",
+    "com.google.javascript.jscomp.CodeGeneratorGptTest::testIfElseAndDanglingElse"
+  ],
+  "suite_sha256": "85aaa82a38bd82db1a70dff14231fa923e3930d8edec1f0f60d54a0a674a2993",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Closure_65b/CodeGeneratorGptTest.java"
+  ],
+  "run_id": "Closure-65-Reevaluation-s0-bffeb65aabf5"
+}

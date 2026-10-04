@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 14:46:41",
+  "project": "Math",
+  "bug_id": 1,
+  "version": "b",
+  "target_class": "org.apache.commons.math3.fraction.Fraction",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 240.57,
+    "input_tokens": 7221,
+    "output_tokens": 6821,
+    "reasoning_tokens": 36232,
+    "total_tokens": 50274,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 339464,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 60536
+  }
+}

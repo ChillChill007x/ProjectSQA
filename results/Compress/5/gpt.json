@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 2,
+  "line_cov": 96.15,
+  "branch_cov": 91.58,
+  "test_file": "ZipArchiveInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamGptTest::testRead7ZipMultiVolumeArchiveForStreamDefect",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamGptTest::testDataDescriptorFlagProcessing"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamGptTest::testDataDescriptorFlagProcessing"
+  ],
+  "suite_sha256": "ed6db52c23ba60a1206e87e7755b2ca0603ca9a7f3a131c1e985fd218f4ea4ec",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_5b/ZipArchiveInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-5-Reevaluation-s0-c47cba0a5588"
+}

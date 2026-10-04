@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 20:58:02",
+  "project": "Math",
+  "bug_id": 83,
+  "version": "b",
+  "target_class": "org.apache.commons.math.optimization.linear.SimplexTableau",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 119.07,
+    "input_tokens": 5504,
+    "output_tokens": 13698,
+    "reasoning_tokens": null,
+    "total_tokens": 19202,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 617063,
+    "limit": 1000000,
+    "remaining": 382937
+  }
+}

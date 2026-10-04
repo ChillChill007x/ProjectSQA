@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 93.67,
+  "test_file": "InvocationMatcherGptTest.java",
+  "target_classes": "org.mockito.internal.invocation.InvocationMatcher",
+  "buggy_failures": [
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCaptureArgumentsFromPureVarargsMethod",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testSerializationAndDeserializationIntegrity",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCaptureArgumentsFromMixedVarargsMethod",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testToStringContainsMethodDescription"
+  ],
+  "fixed_failures": [
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCaptureArgumentsFromPureVarargsMethod",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testSerializationAndDeserializationIntegrity",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testCaptureArgumentsFromMixedVarargsMethod",
+    "org.mockito.internal.invocation.InvocationMatcherGptTest::testToStringContainsMethodDescription"
+  ],
+  "suite_sha256": "b3a650deb988904ce48d8e53b3ed7167faf546239792e752acec82e91f73956f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Mockito_3b/InvocationMatcherGptTest.java"
+  ],
+  "run_id": "Mockito-3-Reevaluation-s0-51142f11b023"
+}

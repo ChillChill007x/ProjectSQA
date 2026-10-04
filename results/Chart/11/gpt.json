@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 96.86,
+  "branch_cov": 92.5,
+  "test_file": "ShapeUtilitiesGptTest.java",
+  "target_classes": "org.jfree.chart.util.ShapeUtilities",
+  "buggy_failures": [
+    "org.jfree.chart.util.ShapeUtilitiesGptTest::testEqualGeneralPaths_DifferentSegmentTypes",
+    "org.jfree.chart.util.ShapeUtilitiesGptTest::testEqualGeneralPaths_DifferentPoints",
+    "org.jfree.chart.util.ShapeUtilitiesGptTest::testEqualGeneralPaths_DifferentLengths"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "d81728022b3b60bfc160c29a1baeffba914061dd590edaaa261b9c2cff24dd33",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_11b/ShapeUtilitiesGptTest.java"
+  ],
+  "run_id": "Chart-11-Reevaluation-s0-43c43dbad540"
+}

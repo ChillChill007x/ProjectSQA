@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 12:09:59",
+  "project": "Closure",
+  "bug_id": 87,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 97.61,
+    "input_tokens": 10522,
+    "output_tokens": 3739,
+    "reasoning_tokens": 13012,
+    "total_tokens": 27273,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 364546,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 35454
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 13:42:07",
+  "project": "Mockito",
+  "bug_id": 1,
+  "version": "b",
+  "target_class": "org.mockito.internal.invocation.InvocationMatcher",
+  "token_slot": null,
+  "metrics": {
+    "generation_time_seconds": 24.68,
+    "input_tokens": 3758,
+    "output_tokens": 3109,
+    "reasoning_tokens": 1178,
+    "total_tokens": 8045,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": null,
+    "used": 50598,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": null
+  }
+}

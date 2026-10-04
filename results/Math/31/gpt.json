@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 98.69,
+  "branch_cov": 86.81,
+  "test_file": "ContinuedFractionGptTest.java",
+  "target_classes": "org.apache.commons.math3.util.ContinuedFraction",
+  "buggy_failures": [
+    "org.apache.commons.math3.util.ContinuedFractionGptTest::testDirectHNInfinityThrowsConvergenceException"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math3.util.ContinuedFractionGptTest::testScalingBranchWithBGreaterThanA"
+  ],
+  "suite_sha256": "ff668f9e6fc611febdf88a1c610292e2535c0685b00eeee45a7d68004599d5c0",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_31b/ContinuedFractionGptTest.java"
+  ],
+  "run_id": "Math-31-Reevaluation-s0-af158a871bce"
+}

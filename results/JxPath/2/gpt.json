@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "ExpressionGptTest.java",
+  "target_classes": "org.apache.commons.jxpath.ri.compiler.Expression",
+  "buggy_failures": [
+    "org.apache.commons.jxpath.ri.compiler.ExpressionGptTest::testNodeSetReturn_DefectTarget"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "ba5cd5b78304476ba9476c9c85ca1ba46e7c988b05d7c7d44f391fa7a7c4d061",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JxPath_2b/ExpressionGptTest.java"
+  ],
+  "run_id": "JxPath-2-Reevaluation-s0-bc9175c7576d"
+}

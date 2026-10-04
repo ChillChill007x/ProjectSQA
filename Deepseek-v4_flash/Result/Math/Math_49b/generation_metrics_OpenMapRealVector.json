@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 19:18:07",
+  "project": "Math",
+  "bug_id": 49,
+  "version": "b",
+  "target_class": "org.apache.commons.math.linear.OpenMapRealVector",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 291.41,
+    "input_tokens": 7367,
+    "output_tokens": 11182,
+    "reasoning_tokens": null,
+    "total_tokens": 18549,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 968280,
+    "limit": 1000000,
+    "remaining": 31720
+  }
+}

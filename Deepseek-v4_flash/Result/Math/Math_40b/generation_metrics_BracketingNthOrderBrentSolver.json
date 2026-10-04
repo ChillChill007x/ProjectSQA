@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 18:30:47",
+  "project": "Math",
+  "bug_id": 40,
+  "version": "b",
+  "target_class": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver",
+  "token_slot": 2,
+  "metrics": {
+    "generation_time_seconds": 72.02,
+    "input_tokens": 4332,
+    "output_tokens": 5490,
+    "reasoning_tokens": null,
+    "total_tokens": 9822,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 2,
+    "used": 774525,
+    "limit": 1000000,
+    "remaining": 225475
+  }
+}

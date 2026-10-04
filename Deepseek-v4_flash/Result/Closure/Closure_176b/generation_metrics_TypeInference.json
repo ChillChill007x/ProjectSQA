@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 07:48:59",
+  "project": "Closure",
+  "bug_id": 176,
+  "version": "b",
+  "target_class": "com.google.javascript.jscomp.TypeInference",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 306.26,
+    "input_tokens": 14898,
+    "output_tokens": 4162,
+    "reasoning_tokens": null,
+    "total_tokens": 19060,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 784833,
+    "limit": 1000000,
+    "remaining": 215167
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 00:31:26",
+  "project": "Jsoup",
+  "bug_id": 21,
+  "version": "b",
+  "target_class": "org.jsoup.select.CombiningEvaluator",
+  "token_slot": 1,
+  "metrics": {
+    "generation_time_seconds": 59.03,
+    "input_tokens": 1386,
+    "output_tokens": 4352,
+    "reasoning_tokens": null,
+    "total_tokens": 5738,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 1,
+    "used": 316275,
+    "limit": 1000000,
+    "remaining": 683725
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project": "Csv",
+  "bug_id": 15,
+  "technique": "gpt-5.6-terra",
+  "run_id": "Csv-15-gpt-1790370710",
+  "suite_sha256": "7b3ffb3bd2b2a216a971658b48fe53d8dc5f17d290cc01e1792f3ca456a6c925",
+  "test_files": "CSVFormatGptTest.java",
+  "target_classes": "org.apache.commons.csv.CSVFormat",
+  "timestamp": "2026-10-03 04:12:06",
+  "evaluation_duration_sec": 15.876,
+  "execution_status": "DONE",
+  "fault_detection_status": "FLAKY_OR_REGRESSION",
+  "line_coverage_percent": 98.24,
+  "branch_coverage_percent": 87.64,
+  "failures_count": 5,
+  "error_detail": "",
+  "buggy_failures": [
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintNullValuesWithVariousModes",
+    "org.apache.commons.csv.CSVFormatGptTest::testQuoteModeNoneWithEscape",
+    "org.apache.commons.csv.CSVFormatGptTest::testDontQuoteUnicodeFirstCharInMinimal",
+    "org.apache.commons.csv.CSVFormatGptTest::testDontQuoteEuroFirstChar",
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintEmptyRecordAndMinimalQuotes"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintNullValuesWithVariousModes",
+    "org.apache.commons.csv.CSVFormatGptTest::testQuoteModeNoneWithEscape",
+    "org.apache.commons.csv.CSVFormatGptTest::testPrintEmptyRecordAndMinimalQuotes"
+  ]
+}

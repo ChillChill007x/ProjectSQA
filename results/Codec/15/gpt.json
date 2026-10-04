@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 7,
+  "line_cov": 100.0,
+  "branch_cov": 95.35,
+  "test_file": "SoundexGptTest.java",
+  "target_classes": "org.apache.commons.codec.language.Soundex",
+  "buggy_failures": [
+    "org.apache.commons.codec.language.SoundexGptTest::testCharacterBeforeUpperAThrowsIllegalArgumentException",
+    "org.apache.commons.codec.language.SoundexGptTest::testAdjacentConsonantsSameGroupCodedOnce",
+    "org.apache.commons.codec.language.SoundexGptTest::testNonLetterAndCleanHandling",
+    "org.apache.commons.codec.language.SoundexGptTest::testHWRuleSameCodeGroupSeparatedByHW",
+    "org.apache.commons.codec.language.SoundexGptTest::testShortStringsPadding",
+    "org.apache.commons.codec.language.SoundexGptTest::testHWRuleEx1",
+    "org.apache.commons.codec.language.SoundexGptTest::testDifferenceCalculation"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.codec.language.SoundexGptTest::testCharacterBeforeUpperAThrowsIllegalArgumentException",
+    "org.apache.commons.codec.language.SoundexGptTest::testAdjacentConsonantsSameGroupCodedOnce",
+    "org.apache.commons.codec.language.SoundexGptTest::testNonLetterAndCleanHandling",
+    "org.apache.commons.codec.language.SoundexGptTest::testHWRuleSameCodeGroupSeparatedByHW",
+    "org.apache.commons.codec.language.SoundexGptTest::testShortStringsPadding",
+    "org.apache.commons.codec.language.SoundexGptTest::testDifferenceCalculation"
+  ],
+  "suite_sha256": "26ae234a544be686de2fbbaf726365c189c63849870e7dc590a2a1453842af58",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Codec_15b/SoundexGptTest.java"
+  ],
+  "run_id": "Codec-15-Reevaluation-s0-203aab253e81"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "deepseek-v4-flash",
+  "experiment_timestamp": "2026-10-03 23:25:10",
+  "project": "Math",
+  "bug_id": 103,
+  "version": "b",
+  "target_class": "org.apache.commons.math.distribution.NormalDistributionImpl",
+  "token_slot": 4,
+  "metrics": {
+    "generation_time_seconds": 39.0,
+    "input_tokens": 2434,
+    "output_tokens": 3147,
+    "reasoning_tokens": null,
+    "total_tokens": 5581,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 4,
+    "used": 78828,
+    "limit": 1000000,
+    "remaining": 921172
+  }
+}

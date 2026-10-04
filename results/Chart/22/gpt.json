@@ -1,0 +1,26 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 6,
+  "line_cov": 95.63,
+  "branch_cov": 87.72,
+  "test_file": "KeyedObjects2DGptTest.java",
+  "target_classes": "org.jfree.data.KeyedObjects2D",
+  "buggy_failures": [
+    "org.jfree.data.KeyedObjects2DGptTest::testRemoveColumnSparseDefect",
+    "org.jfree.data.KeyedObjects2DGptTest::testSerialization",
+    "org.jfree.data.KeyedObjects2DGptTest::testRemoveColumnByIndexSparseDefect",
+    "org.jfree.data.KeyedObjects2DGptTest::testRemoveObjectColumnCleanedUpDefect",
+    "org.jfree.data.KeyedObjects2DGptTest::testRemoveRowByUnknownKeyDefect",
+    "org.jfree.data.KeyedObjects2DGptTest::testEqualsAndHashCode"
+  ],
+  "fixed_failures": [
+    "org.jfree.data.KeyedObjects2DGptTest::testSerialization",
+    "org.jfree.data.KeyedObjects2DGptTest::testEqualsAndHashCode"
+  ],
+  "suite_sha256": "f34c157ce847b340346d23253cb7261363a16634e280dcec588159e71fe1fc0b",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Chart_22b/KeyedObjects2DGptTest.java"
+  ],
+  "run_id": "Chart-22-Reevaluation-s0-bb0a18ae978d"
+}

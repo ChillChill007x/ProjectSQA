@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 1,
+  "line_cov": 100.0,
+  "branch_cov": 97.17,
+  "test_file": "FormElementGptTest.java",
+  "target_classes": "org.jsoup.nodes.FormElement",
+  "buggy_failures": [
+    "org.jsoup.nodes.FormElementGptTest::testRemoveFormElementReflectedInFormDataAndElements"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9000834f9695f3312c426a7857ab9a3eeed3713a5620c215394e4b532158d967",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_69b/FormElementGptTest.java"
+  ],
+  "run_id": "Jsoup-69-Reevaluation-s0-f18d8339c3c8"
+}

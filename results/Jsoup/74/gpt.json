@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 98.93,
+  "test_file": "StringUtilGptTest.java",
+  "target_classes": "org.jsoup.helper.StringUtil",
+  "buggy_failures": [
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceRemovesInvisibleCharacters",
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceBasic",
+    "org.jsoup.helper.StringUtilGptTest::testResolveUrlDotRelativeWorkaround"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.StringUtilGptTest::testNormaliseWhitespaceBasic",
+    "org.jsoup.helper.StringUtilGptTest::testResolveUrlDotRelativeWorkaround"
+  ],
+  "suite_sha256": "950694e4a8c16c75ecd9dd16a25c9992ca0d9f9ff44c43f9fc4d859232baf3ff",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Jsoup_74b/StringUtilGptTest.java"
+  ],
+  "run_id": "Jsoup-74-Reevaluation-s0-96503fe7adea"
+}

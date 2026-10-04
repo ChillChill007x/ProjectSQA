@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 3,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "JsonGeneratorImplGptTest.java",
+  "target_classes": "com.fasterxml.jackson.core.json.JsonGeneratorImpl",
+  "buggy_failures": [
+    "com.fasterxml.jackson.core.json.JsonGeneratorImplGptTest::testFieldNameQuotingDisabledViaDisableWriter",
+    "com.fasterxml.jackson.core.json.JsonGeneratorImplGptTest::testFieldNameQuotingDisabledViaDisableBytes",
+    "com.fasterxml.jackson.core.json.JsonGeneratorImplGptTest::testDirectCfgUnqNamesFlagUpdatedOnDisable"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "a49e8da23c7e13fb5e15cb936b69da1bb784f80138e0255b66a08ced691e0379",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/JacksonCore_13b/JsonGeneratorImplGptTest.java"
+  ],
+  "run_id": "JacksonCore-13-Reevaluation-s0-7e9e1795415b"
+}

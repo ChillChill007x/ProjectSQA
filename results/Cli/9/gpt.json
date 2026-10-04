@@ -1,0 +1,20 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 1,
+  "line_cov": 0.0,
+  "branch_cov": 0.0,
+  "test_file": "ParserGptTest.java",
+  "target_classes": "org.apache.commons.cli.Parser",
+  "buggy_failures": [
+    "org.apache.commons.cli.ParserGptTest"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.cli.ParserGptTest"
+  ],
+  "suite_sha256": "10c87125d92d90edc77549a43be2786930129bc3653b8396897cb333014b8531",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Cli_9b/ParserGptTest.java"
+  ],
+  "run_id": "Cli-9-Reevaluation-s0-e741d8d7fbb4"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "PearsonsCorrelationGptTest.java",
+  "target_classes": "org.apache.commons.math.stat.correlation.PearsonsCorrelation",
+  "buggy_failures": [
+    "org.apache.commons.math.stat.correlation.PearsonsCorrelationGptTest::testPValueNearZero",
+    "org.apache.commons.math.stat.correlation.PearsonsCorrelationGptTest::testPValueNearZeroNegativeCorrelation"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "91b64809b1c9da711950ecc75fedfe06d26b1c59415c0f673874d806d7a63274",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Math_69b/PearsonsCorrelationGptTest.java"
+  ],
+  "run_id": "Math-69-Reevaluation-s0-665185cc5bd8"
+}

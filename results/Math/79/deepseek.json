@@ -1,0 +1,24 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 3,
+  "line_cov": 75.22,
+  "branch_cov": 69.5,
+  "test_file": "MathUtilsDeepseekTest.java",
+  "target_classes": "org.apache.commons.math.util.MathUtils",
+  "buggy_failures": [
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testHashDoubleArrayNull",
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testNormalizeAngle",
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testBinomialCoefficientBoundaries"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testHashDoubleArrayNull",
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testNormalizeAngle",
+    "org.apache.commons.math.util.MathUtilsDeepseekTest::testBinomialCoefficientBoundaries"
+  ],
+  "suite_sha256": "8c6a2c1238d170d72530ea6512a0903ada3085222d2fada692193ff382aae7e7",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Math_79b/MathUtilsDeepseekTest.java"
+  ],
+  "run_id": "Math-79-Reevaluation-s0-619ea0754a7d"
+}

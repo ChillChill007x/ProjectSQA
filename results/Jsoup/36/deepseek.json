@@ -1,0 +1,31 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 8,
+  "line_cov": 81.32,
+  "branch_cov": 86.71,
+  "test_file": "DataUtilDeepseekTest.java",
+  "target_classes": "org.jsoup.helper.DataUtil",
+  "buggy_failures": [
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_quotedCharsetReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_emptyCharsetReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_trailingCommaReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_invalidCharsetNameReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_validCharset",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_singleDoubleQuoteReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::parseByteData_withBOM",
+    "org.jsoup.helper.DataUtilDeepseekTest::parseByteData_metaCharsetWithQuotesCausesNoException"
+  ],
+  "fixed_failures": [
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_quotedCharsetReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_trailingCommaReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_validCharset",
+    "org.jsoup.helper.DataUtilDeepseekTest::getCharsetFromContentType_singleDoubleQuoteReturnsNull",
+    "org.jsoup.helper.DataUtilDeepseekTest::parseByteData_withBOM"
+  ],
+  "suite_sha256": "b1e1727b093daccd8e4d5e8b15d697a26df3f23d113513ca17d8c5bb7324f278",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Jsoup_36b/DataUtilDeepseekTest.java"
+  ],
+  "run_id": "Jsoup-36-Reevaluation-s0-68ecdf3c4195"
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gpt-5.6-terra",
+  "experiment_timestamp": "2026-10-03 10:53:54",
+  "project": "JxPath",
+  "bug_id": 7,
+  "version": "b",
+  "target_class": "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual",
+  "token_slot": 3,
+  "metrics": {
+    "generation_time_seconds": 101.9,
+    "input_tokens": 1336,
+    "output_tokens": 4425,
+    "reasoning_tokens": 9058,
+    "total_tokens": 14819,
+    "generation_status": "สำเร็จ (Code Extracted)"
+  },
+  "daily_token_quota": {
+    "slot": 3,
+    "used": 65092,
+    "keys": 2,
+    "per_key_limit": 200000,
+    "limit": 400000,
+    "remaining": 334908
+  }
+}

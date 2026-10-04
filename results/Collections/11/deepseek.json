@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 4,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "MultiKeyDeepseekTest.java",
+  "target_classes": "org.apache.commons.collections.keyvalue.MultiKey",
+  "buggy_failures": [
+    "org.apache.commons.collections.keyvalue.MultiKeyDeepseekTest::testEqualsAfterSerializationWithThreeKeys",
+    "org.apache.commons.collections.keyvalue.MultiKeyDeepseekTest::testSerializationWithComplexObjects",
+    "org.apache.commons.collections.keyvalue.MultiKeyDeepseekTest::testEqualsAfterSerializationWithNullKeys",
+    "org.apache.commons.collections.keyvalue.MultiKeyDeepseekTest::testEqualsAfterSerialization"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "c48cc58294155f6069bb1ebe36fc4355d423f9fa635ccfd8af5cbf1fa87d8cc5",
+  "test_paths": [
+    "/workspace/Deepseek-v4_flash/TestCode/Collections_11b/MultiKeyDeepseekTest.java"
+  ],
+  "run_id": "Collections-11-Reevaluation-s0-7f7a4213e593"
+}

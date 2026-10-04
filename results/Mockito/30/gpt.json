@@ -1,0 +1,14 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 98.21,
+  "branch_cov": 92.86,
+  "test_file": "ReporterGptTest.java;ReturnsSmartNullsGptTest.java",
+  "target_classes": "org.mockito.exceptions.Reporter;org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+  "buggy_failures": [
+    "org.mockito.exceptions.ReporterGptTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsGptTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
+  ],
+  "fixed_failures": []
+}

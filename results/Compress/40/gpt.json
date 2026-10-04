@@ -1,0 +1,25 @@
+{
+  "status": "DONE",
+  "fault_detected": "FLAKY_OR_REGRESSION",
+  "failures_count": 5,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "BitInputStreamGptTest.java",
+  "target_classes": "org.apache.commons.compress.utils.BitInputStream",
+  "buggy_failures": [
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testLittleEndianMaxOverflowAt62Bits",
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testBigEndianMaxOverflowAt62Bits",
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testReadBitsStreamEndsPrematurelyReturnsNegativeOne",
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testBigEndianBitCacheOverflowRevealsDefect",
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testLittleEndianBitCacheOverflowRevealsDefect"
+  ],
+  "fixed_failures": [
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testLittleEndianMaxOverflowAt62Bits",
+    "org.apache.commons.compress.utils.BitInputStreamGptTest::testReadBitsStreamEndsPrematurelyReturnsNegativeOne"
+  ],
+  "suite_sha256": "ac1a646a27c5435cf0d6422bc00a850e3756231c2acb1bbcf3b406c7b99dcd89",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_40b/BitInputStreamGptTest.java"
+  ],
+  "run_id": "Compress-40-Reevaluation-s0-179c62f1c6bc"
+}

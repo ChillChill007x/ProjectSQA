@@ -1,0 +1,19 @@
+{
+  "status": "DONE",
+  "fault_detected": "BUG_DETECTED",
+  "failures_count": 2,
+  "line_cov": 100.0,
+  "branch_cov": 100.0,
+  "test_file": "IOUtilsGptTest.java",
+  "target_classes": "org.apache.commons.compress.utils.IOUtils",
+  "buggy_failures": [
+    "org.apache.commons.compress.utils.IOUtilsGptTest::testSkipUsingSkipAndRead",
+    "org.apache.commons.compress.utils.IOUtilsGptTest::testSkipUsingRead"
+  ],
+  "fixed_failures": [],
+  "suite_sha256": "9e88591c7bc603485145e6bfe41feb6cd2fa7dea930a4280d941ccb97c7cec0f",
+  "test_paths": [
+    "/workspace/gpt-5_6-terra/TestCode/Compress_26b/IOUtilsGptTest.java"
+  ],
+  "run_id": "Compress-26-Reevaluation-s0-a6414d3d059d"
+}
