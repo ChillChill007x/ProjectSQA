@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-5-Round1-s101-677fd2859694/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.apache.commons.cli.UtilTest::testStripLeadingHyphens\norg.apache.commons.cli.bug.BugCLI133Test::testOrder",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

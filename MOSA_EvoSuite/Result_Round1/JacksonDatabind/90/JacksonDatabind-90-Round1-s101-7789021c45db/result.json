@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-90-Round1-s101-7789021c45db",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "90",
+    "target": "com.fasterxml.jackson.databind.deser.ValueInstantiator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:35:58.662357+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db"
+  },
+  "generation_time_sec": 55.561,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db/com/fasterxml/jackson/databind/deser/ValueInstantiator_ESTest.java": "cf381cdda6f1664dd14b62d8c9d4ac2515caf6ca98832e2623a1a63dd194e9ee",
+    "MOSA_EvoSuite/Test/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db/com/fasterxml/jackson/databind/deser/ValueInstantiator_ESTest_scaffolding.java": "e09425e2bdbcbcdd932458e10499ec3e3ca5dfe2e7fd530d477e19f53d989792"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 21,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3982,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test07",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test18",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test06",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test17",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test09",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test08",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test19",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test03",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test14",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test02",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test13",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test05",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test16",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test04",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test15",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test10",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test20",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test01",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test12",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test00",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test11"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 52,
+      "line_coverage_percent": 50.0,
+      "branch_covered": 14,
+      "branch_total": 32,
+      "branch_coverage_percent": 43.75
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3081,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test07",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test18",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test06",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test17",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test09",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test08",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test19",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test03",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test14",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test02",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test13",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test05",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test16",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test04",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test15",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test10",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test20",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test01",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test12",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test00",
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator_ESTest::test11"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 52,
+      "line_coverage_percent": 50.0,
+      "branch_covered": 13,
+      "branch_total": 30,
+      "branch_coverage_percent": 43.333333333333336
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-7789021c45db/evaluation-1",
+  "finished_at": "2026-10-05T00:38:27.853412+00:00"
+}

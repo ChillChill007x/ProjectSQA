@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Csv",
+    "-v",
+    "13f",
+    "-w",
+    "/workspace/work/checkouts/Csv-13-Round1-s101-ee98fd45dffc/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.771,
+  "stdout": "",
+  "stderr": "Checking out f8b80e83 to /workspace/work/checkouts/Csv-13-Round1-s101-ee98f OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Csv-13-Round1-s101-ee98fd4 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff f8b80e83:913e4a8b..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Csv-13f......................................... OK\n"
+}

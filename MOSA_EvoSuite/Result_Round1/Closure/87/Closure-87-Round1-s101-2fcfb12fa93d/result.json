@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-87-Round1-s101-2fcfb12fa93d",
+  "unit": {
+    "project": "Closure",
+    "bug": "87",
+    "target": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:47:46.113582+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d",
+    "tests": "MOSA_EvoSuite/Test/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d",
+    "config": "MOSA_EvoSuite/Configuration/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d"
+  },
+  "generation_time_sec": 52.642,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax_ESTest.java": "8c5f4653e2b7fdf0ef0d639f52fe50330a3712be48a14f0dfd1a2d5f5cf85846",
+    "MOSA_EvoSuite/Test/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax_ESTest_scaffolding.java": "64803b2283039802989a09b68b8fffc8a14beb024d3cad1b1bcfc7d22a0e1026"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testIssue291",
+    "available_triggers": [
+      "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testIssue291"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 17,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 17,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3187,
+      "tests": [
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test09",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test08",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test07",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test06",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test05",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test16",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test04",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test15",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test03",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test14",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test02",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test13",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test01",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test12",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test00",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test11",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 54,
+      "line_total": 455,
+      "line_coverage_percent": 11.868131868131869,
+      "branch_covered": 28,
+      "branch_total": 311,
+      "branch_coverage_percent": 9.003215434083602
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 17,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3205,
+      "tests": [
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test09",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test08",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test07",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test06",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test05",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test16",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test04",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test15",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test03",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test14",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test02",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test13",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test01",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test12",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test00",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test11",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 54,
+      "line_total": 446,
+      "line_coverage_percent": 12.10762331838565,
+      "branch_covered": 28,
+      "branch_total": 301,
+      "branch_coverage_percent": 9.30232558139535
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/87/Closure-87-Round1-s101-2fcfb12fa93d/evaluation-1",
+  "finished_at": "2026-10-04T20:49:55.742504+00:00"
+}

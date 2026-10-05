@@ -1,0 +1,1 @@
+{"run_count":5,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":329,"tests":["org.mockito.internal.matchers.Same_ESTest::test0","org.mockito.internal.matchers.Same_ESTest::test1","org.mockito.internal.matchers.Same_ESTest::test2","org.mockito.internal.matchers.Same_ESTest::test3","org.mockito.internal.matchers.Same_ESTest::test4"],"failures":[],"passed":true}

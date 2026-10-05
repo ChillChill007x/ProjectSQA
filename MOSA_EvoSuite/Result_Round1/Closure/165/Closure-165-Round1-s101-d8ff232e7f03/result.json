@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-165-Round1-s101-d8ff232e7f03",
+  "unit": {
+    "project": "Closure",
+    "bug": "165",
+    "target": "com.google.javascript.rhino.jstype.RecordType",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T22:25:09.071118+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/165/Closure-165-Round1-s101-d8ff232e7f03",
+    "tests": "MOSA_EvoSuite/Test/Closure/165/Closure-165-Round1-s101-d8ff232e7f03",
+    "config": "MOSA_EvoSuite/Configuration/Closure/165/Closure-165-Round1-s101-d8ff232e7f03"
+  },
+  "generation_time_sec": 48.554,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/165/Closure-165-Round1-s101-d8ff232e7f03/com/google/javascript/rhino/jstype/RecordType_ESTest.java": "c64eaa28408858b85fe54b944dd79faf4312ef1f9dbda78aeb1fe602083a376c",
+    "MOSA_EvoSuite/Test/Closure/165/Closure-165-Round1-s101-d8ff232e7f03/com/google/javascript/rhino/jstype/RecordType_ESTest_scaffolding.java": "070b25f100412342e5975073f5b5d27ad1ba8eb9f23f4b4757bc0a7e600ab346"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.TypeCheckTest::testIssue725",
+    "available_triggers": [
+      "com.google.javascript.jscomp.TypeCheckTest::testIssue725"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T22:27:43.635893+00:00"
+}

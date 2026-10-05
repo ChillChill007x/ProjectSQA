@@ -1,0 +1,10 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.deser.exc.ExceptionPathTest::testReferenceChainForInnerClass",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.deser.exc.ExceptionPathTest::testReferenceChainForInnerClass",
+    "com.fasterxml.jackson.databind.deser.exc.TestExceptionHandlingWithDefaultDeserialization::testShouldThrowJsonMappingExceptionWithPathReference",
+    "com.fasterxml.jackson.databind.deser.exc.TestExceptionHandlingWithJsonCreatorDeserialization::testShouldThrowJsonMappingExceptionWithPathReference"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

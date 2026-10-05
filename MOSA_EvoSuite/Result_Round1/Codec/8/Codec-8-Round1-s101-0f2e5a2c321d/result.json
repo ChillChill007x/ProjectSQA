@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-8-Round1-s101-0f2e5a2c321d",
+  "unit": {
+    "project": "Codec",
+    "bug": "8",
+    "target": "org.apache.commons.codec.binary.Base64InputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:14:03.156374+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d",
+    "tests": "MOSA_EvoSuite/Test/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d",
+    "config": "MOSA_EvoSuite/Configuration/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d"
+  },
+  "generation_time_sec": 35.593,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d/org/apache/commons/codec/binary/Base64InputStream_ESTest.java": "343dd4b26a487265d6833e6bfff2853b5c3772e1550eb7a4308ddde90af4d2fc",
+    "MOSA_EvoSuite/Test/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d/org/apache/commons/codec/binary/Base64InputStream_ESTest_scaffolding.java": "f4d7a52ea337c17f72f9662b348cf2b3efeaf09499be2696150fab611a2895a5"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec105",
+    "available_triggers": [
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec105"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 10,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 300,
+      "tests": [
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test5",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test4",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test3",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test2",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test9",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test8",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test7",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test6",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test1",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 35,
+      "line_total": 36,
+      "line_coverage_percent": 97.22222222222223,
+      "branch_covered": 24,
+      "branch_total": 26,
+      "branch_coverage_percent": 92.3076923076923
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 285,
+      "tests": [
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test5",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test4",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test3",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test2",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test9",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test8",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test7",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test6",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test1",
+        "org.apache.commons.codec.binary.Base64InputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 37,
+      "line_total": 38,
+      "line_coverage_percent": 97.36842105263158,
+      "branch_covered": 27,
+      "branch_total": 30,
+      "branch_coverage_percent": 90.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d/evaluation-1",
+  "finished_at": "2026-10-04T21:14:58.442235+00:00"
+}

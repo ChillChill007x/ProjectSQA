@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-91-Round1-s101-58773ac3670f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.084,
+  "stdout": "org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored\norg.jsoup.integration.ConnectTest::testBinaryResultThrows\norg.jsoup.integration.ParseTest::testBinaryThrowsException",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

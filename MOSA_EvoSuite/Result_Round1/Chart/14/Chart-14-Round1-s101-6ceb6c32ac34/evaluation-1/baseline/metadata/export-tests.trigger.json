@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-14-Round1-s101-6ceb6c32ac34/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.jfree.chart.plot.junit.CategoryPlotTests::testRemoveRangeMarker\norg.jfree.chart.plot.junit.CategoryPlotTests::testRemoveDomainMarker\norg.jfree.chart.plot.junit.XYPlotTests::testRemoveRangeMarker\norg.jfree.chart.plot.junit.XYPlotTests::testRemoveDomainMarker",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

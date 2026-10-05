@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/checkouts/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/target/classes:/workspace/work/checkouts/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/target/lib/commons-lang/jars/commons-lang-2.1.jar:/workspace/work/checkouts/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/target/lib/jdepend/jars/jdepend-2.5.jar:/workspace/work/checkouts/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/target/test-classes",
+    "-d",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/classes",
+    "@/workspace/MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-9e7ee30c563a/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "elapsed_sec": 0.716,
+  "stdout": "",
+  "stderr": "/workspace/MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-9e7ee30c563a/org/apache/commons/cli2/option/OptionImpl_ESTest.java:374: error: cannot find symbol\n      propertyOption0.setParent((Option) null);\n                     ^\n  symbol:   method setParent(Option)\n  location: variable propertyOption0 of type PropertyOption\n/workspace/MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-9e7ee30c563a/org/apache/commons/cli2/option/OptionImpl_ESTest.java:408: error: cannot find symbol\n      Option option0 = propertyOption0.getParent();\n                                      ^\n  symbol:   method getParent()\n  location: variable propertyOption0 of type PropertyOption\n2 errors\n"
+}

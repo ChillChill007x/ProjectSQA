@@ -1,0 +1,8 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.objectid.ObjectWithCreator1261Test::testObjectIds1261",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.objectid.ObjectWithCreator1261Test::testObjectIds1261"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-111-Round1-s101-8a22dbdbb671",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "111",
+    "target": "com.fasterxml.jackson.databind.deser.impl.FieldProperty",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:02:48.229579+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671"
+  },
+  "generation_time_sec": 41.818,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671/com/fasterxml/jackson/databind/deser/impl/FieldProperty_ESTest.java": "4dfca7dedcb9506626b7e93b3974ab42694908b126d038ab35b6a33b0c2eda94",
+    "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671/com/fasterxml/jackson/databind/deser/impl/FieldProperty_ESTest_scaffolding.java": "821e36bda5d95ab7d709c8ff793b844b56c8e4cc537316b07662f9a63c2610da"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.deser.jdk.JDKAtomicTypesDeserTest::testNullWithinNested",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.deser.jdk.JDKAtomicTypesDeserTest::testNullWithinNested"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2261,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test1",
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test0",
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 77,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 28,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2441,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test1",
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test0",
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 76,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 26,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8a22dbdbb671/evaluation-1",
+  "finished_at": "2026-10-05T01:05:08.759465+00:00"
+}

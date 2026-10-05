@@ -1,0 +1,9 @@
+{
+  "trigger": "org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear",
+  "available_triggers": [
+    "org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear",
+    "org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_tokyo_endOfYear"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

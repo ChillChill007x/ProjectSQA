@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-21-Round1-s101-2ebce3fee57e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

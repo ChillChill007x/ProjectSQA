@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-130-Round1-s101-c9f9785a3b1f/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.CollapsePropertiesTest::testIssue931"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.354,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

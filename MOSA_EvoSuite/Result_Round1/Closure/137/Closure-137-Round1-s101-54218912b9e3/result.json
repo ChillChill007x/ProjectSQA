@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-137-Round1-s101-54218912b9e3",
+  "unit": {
+    "project": "Closure",
+    "bug": "137",
+    "target": "com.google.javascript.jscomp.NodeUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T21:39:20.439772+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/137/Closure-137-Round1-s101-54218912b9e3",
+    "tests": "MOSA_EvoSuite/Test/Closure/137/Closure-137-Round1-s101-54218912b9e3",
+    "config": "MOSA_EvoSuite/Configuration/Closure/137/Closure-137-Round1-s101-54218912b9e3"
+  },
+  "generation_time_sec": 131.465,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/137/Closure-137-Round1-s101-54218912b9e3/com/google/javascript/jscomp/NodeUtil_ESTest.java": "4409b007263ecab7371d55d345699c48d05de4d72a83d098978b193c960f0209",
+    "MOSA_EvoSuite/Test/Closure/137/Closure-137-Round1-s101-54218912b9e3/com/google/javascript/jscomp/NodeUtil_ESTest_scaffolding.java": "f7c8da4dfbc42b0b9c8fced3886a6ad4c492c9aec8271edb07e2404efe6a5c90"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion3",
+    "available_triggers": [
+      "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion3",
+      "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion4",
+      "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testArguments",
+      "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testMakeLocalNamesUniqueWithContext1",
+      "com.google.javascript.jscomp.NormalizeTest::testRemoveDuplicateVarDeclarations2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T21:42:36.097348+00:00"
+}

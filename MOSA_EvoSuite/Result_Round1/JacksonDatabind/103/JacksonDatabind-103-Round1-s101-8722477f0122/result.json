@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-103-Round1-s101-8722477f0122",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "103",
+    "target": "com.fasterxml.jackson.databind.DatabindContext",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:49:32.288793+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122"
+  },
+  "generation_time_sec": 60.574,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122/com/fasterxml/jackson/databind/DatabindContext_ESTest.java": "5eb59c2d77edd20b0eb4f5c8212ad23d130d0a87dcf4f67f5f06046b0090ea19",
+    "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122/com/fasterxml/jackson/databind/DatabindContext_ESTest_scaffolding.java": "e6c76cde9d72319bd46230b5b5161e10a486409dcaf1f2fdc6d10d7cc4eb79fa"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2625,
+      "tests": [
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test06",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test17",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test07",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test08",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test09",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test10",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test00",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test11",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test01",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test12",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test02",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test13",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test03",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test14",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test04",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test15",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test05",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 76,
+      "line_coverage_percent": 65.78947368421052,
+      "branch_covered": 26,
+      "branch_total": 46,
+      "branch_coverage_percent": 56.52173913043478
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2918,
+      "tests": [
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test06",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test17",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test07",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test08",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test09",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test10",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test00",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test11",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test01",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test12",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test02",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test13",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test03",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test14",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test04",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test15",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test05",
+        "com.fasterxml.jackson.databind.DatabindContext_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 76,
+      "line_coverage_percent": 65.78947368421052,
+      "branch_covered": 26,
+      "branch_total": 46,
+      "branch_coverage_percent": 56.52173913043478
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-8722477f0122/evaluation-1",
+  "finished_at": "2026-10-05T00:52:13.660684+00:00"
+}

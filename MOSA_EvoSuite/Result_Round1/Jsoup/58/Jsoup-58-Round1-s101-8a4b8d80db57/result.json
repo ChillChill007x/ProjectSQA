@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-58-Round1-s101-8a4b8d80db57",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "58",
+    "target": "org.jsoup.Jsoup",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T01:49:53.450530+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/58/Jsoup-58-Round1-s101-8a4b8d80db57",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/58/Jsoup-58-Round1-s101-8a4b8d80db57",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/58/Jsoup-58-Round1-s101-8a4b8d80db57"
+  },
+  "generation_time_sec": 29.823,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/58/Jsoup-58-Round1-s101-8a4b8d80db57/org/jsoup/Jsoup_ESTest.java": "67c3cdbfba9e7d07a56a08a1d7d45ebf0b8162810b4fd2ea13aaf858a0dfd72b",
+    "MOSA_EvoSuite/Test/Jsoup/58/Jsoup-58-Round1-s101-8a4b8d80db57/org/jsoup/Jsoup_ESTest_scaffolding.java": "c3670c6aeb82516a942adf09e10847ad02f3d1c6e43cc8651a7b60638e694ed4"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.safety.CleanerTest::testIsValidBodyHtml",
+    "available_triggers": [
+      "org.jsoup.safety.CleanerTest::testIsValidBodyHtml",
+      "org.jsoup.safety.CleanerTest::testIsValidDocument"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 13,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1781,
+      "tests": [
+        "org.jsoup.Jsoup_ESTest::test04",
+        "org.jsoup.Jsoup_ESTest::test05",
+        "org.jsoup.Jsoup_ESTest::test02",
+        "org.jsoup.Jsoup_ESTest::test03",
+        "org.jsoup.Jsoup_ESTest::test00",
+        "org.jsoup.Jsoup_ESTest::test11",
+        "org.jsoup.Jsoup_ESTest::test01",
+        "org.jsoup.Jsoup_ESTest::test12",
+        "org.jsoup.Jsoup_ESTest::test10",
+        "org.jsoup.Jsoup_ESTest::test08",
+        "org.jsoup.Jsoup_ESTest::test09",
+        "org.jsoup.Jsoup_ESTest::test06",
+        "org.jsoup.Jsoup_ESTest::test07"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.Jsoup_ESTest::test07",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException",
+          "message": "Must set charset arg to character set of file to parse. Set to null to attempt to detect from HTML",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Must set charset arg to character set of file to parse. Set to null to attempt to detect from HTML\n\tat org.jsoup.helper.Validate.notEmpty(Validate.java:102)\n\tat org.jsoup.helper.DataUtil.parseByteData(DataUtil.java:131)\n\tat org.jsoup.helper.DataUtil.load(DataUtil.java:73)\n\tat org.jsoup.Jsoup.parse(Jsoup.java:135)\n\tat org.jsoup.Jsoup_ESTest.test07(Jsoup_ESTest.java:181)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 16,
+      "line_total": 24,
+      "line_coverage_percent": 66.66666666666667,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T01:51:00.818830+00:00"
+}

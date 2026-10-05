@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.jsoup.parser.Token",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-59-Round1-s101-0cafec0c47f7/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Jsoup/59/Jsoup-59-Round1-s101-0cafec0c47f7",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Jsoup/59/Jsoup-59-Round1-s101-0cafec0c47f7/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 24.585,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.jsoup.parser.Token\n* Starting Client-0\n* Connecting to master process on port 19619\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83570/checkouts/Jsoup-59-Round1-s101-0cafec0c47f7/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.jsoup.parser.Token\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 86\n* Using seed 101\n\r[Progress:>                             0%] [Cov:>                                  0%]* Starting evolution\n[MASTER] 18:51:30.761 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsoup.parser.Token.reset(Ljava/lang/StringBuilder;)V: I3 Branch 1 IFNULL L28 - true\n[MASTER] 18:51:30.761 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsoup.parser.Token$Tag.getAttributes()Lorg/jsoup/nodes/Attributes;: root-Branch\n[MASTER] 18:51:30.761 [logback-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was org.jsoup.parser.Token$Tag.finaliseTag()V: I4 Branch 14 IFNULL L128 - true\n\r[Progress:>                             0%] [Cov:=======================>           67%]\r[Progress:>                             0%] [Cov:=========================>         72%]\r[Progress:>                             0%] [Cov:==========================>        76%]\r[Progress:>                             3%] [Cov:===========================>       79%]\r[Progress:>                             3%] [Cov:===========================>       79%]\r[Progress:>                             3%] [Cov:============================>      80%]\r[Progress:>                             3%] [Cov:=============================>     84%]\r[Progress:>                             3%] [Cov:==============================>    86%]\r[Progress:>                             3%] [Cov:==============================>    86%]\r[Progress:>                             3%] [Cov:===============================>   90%]\r[Progress:>                             3%] [Cov:===============================>   91%]\r[Progress:=>                            6%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 97%]\r[Progress:===>                          13%] [Cov:==================================>98%]\r[Progress:===>                          13%] [Cov:==================================>98%]\r[Progress:====>                         16%] [Cov:==================================>98%]\r[Progress:====>                         16%] [Cov:===================================100%]\n* Search finished after 5s and 16 generations, 7299 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 86\n* Number of covered goals: 86\n* Generated 51 tests with total length 128\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'Token_ESTest' to /workspace/MOSA_EvoSuite/Test/Jsoup/59/Jsoup-59-Round1-s101-0cafec0c47f7\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

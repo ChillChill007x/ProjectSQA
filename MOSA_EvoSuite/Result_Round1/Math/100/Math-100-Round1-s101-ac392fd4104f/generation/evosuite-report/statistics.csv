@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.apache.commons.math.estimation.AbstractEstimator,BRANCH,0.9285714285714286,28,26

@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-35-Round1-s101-6830a7763588",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "35",
+    "target": "org.jsoup.parser.HtmlTreeBuilderState",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:38:05.219354+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588"
+  },
+  "generation_time_sec": 39.641,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588/org/jsoup/parser/HtmlTreeBuilderState_ESTest.java": "8c02b86fae697837cbb69325ca846822c564b94acf90554cda58c94810eb6ae5",
+    "MOSA_EvoSuite/Test/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588/org/jsoup/parser/HtmlTreeBuilderState_ESTest_scaffolding.java": "2f27d3ad90de852304186e8cad45983aa31bb10edcb423f39eeb89d68cc63ef2"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.HtmlParserTest::handlesUnclosedAnchors",
+    "available_triggers": [
+      "org.jsoup.parser.HtmlParserTest::handlesUnclosedAnchors"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 28,
+      "tests": [
+        "org.jsoup.parser.HtmlTreeBuilderState_ESTest::notGeneratedAnyTest"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 43,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 6,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 23,
+      "tests": [
+        "org.jsoup.parser.HtmlTreeBuilderState_ESTest::notGeneratedAnyTest"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 43,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 6,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/35/Jsoup-35-Round1-s101-6830a7763588/evaluation-1",
+  "finished_at": "2026-10-05T01:39:22.095450+00:00"
+}

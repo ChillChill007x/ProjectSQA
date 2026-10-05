@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "77f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-77-Round1-s101-fc70c9895568/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.086,
+  "stdout": "",
+  "stderr": "Checking out b88400ce to /workspace/work/parallel/evosuite/83570/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: can't read /workspace/work/parallel/evosuite/83570/checkouts/Closure-77-Round1-s101-fc70c9895568/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83570/checkouts/Closure-77-Round1-s101-fc70c9895568/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83570/checkouts/Closure-77-Round1-s101-fc70c9895568/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83570/checkouts/Closure-77-Round1-s101-fc70c9895568/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff b88400ce:25827942..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-77f..................................... OK\n"
+}

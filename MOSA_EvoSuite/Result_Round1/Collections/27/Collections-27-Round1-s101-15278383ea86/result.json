@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-27-Round1-s101-15278383ea86",
+  "unit": {
+    "project": "Collections",
+    "bug": "27",
+    "target": "org.apache.commons.collections4.map.MultiValueMap",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:57:12.567159+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/27/Collections-27-Round1-s101-15278383ea86",
+    "tests": "MOSA_EvoSuite/Test/Collections/27/Collections-27-Round1-s101-15278383ea86",
+    "config": "MOSA_EvoSuite/Configuration/Collections/27/Collections-27-Round1-s101-15278383ea86"
+  },
+  "generation_time_sec": 36.452,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/27/Collections-27-Round1-s101-15278383ea86/org/apache/commons/collections4/map/MultiValueMap_ESTest.java": "84ec44440a4e5c5eea69526a65339e7dbda23e739b5492f41b49e76a5b533b6d",
+    "MOSA_EvoSuite/Test/Collections/27/Collections-27-Round1-s101-15278383ea86/org/apache/commons/collections4/map/MultiValueMap_ESTest_scaffolding.java": "da58a30633e88c87140f95d2ea20907308f6de615c8ff1d89043fc1c5dfb99e2"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections4.map.MultiValueMapTest::testUnsafeDeSerialization",
+    "available_triggers": [
+      "org.apache.commons.collections4.map.MultiValueMapTest::testUnsafeDeSerialization"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 22,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 419,
+      "tests": [
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test04",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test15",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test05",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test16",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test02",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test13",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test03",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test14",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test00",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test11",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test01",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test12",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test20",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test10",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test21",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test08",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test19",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test09",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test06",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test17",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test07",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test18"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 88,
+      "line_coverage_percent": 90.9090909090909,
+      "branch_covered": 40,
+      "branch_total": 44,
+      "branch_coverage_percent": 90.9090909090909
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 414,
+      "tests": [
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test04",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test15",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test05",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test16",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test02",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test13",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test03",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test14",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test00",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test11",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test01",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test12",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test20",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test10",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test21",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test08",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test19",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test09",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test06",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test17",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test07",
+        "org.apache.commons.collections4.map.MultiValueMap_ESTest::test18"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 88,
+      "line_coverage_percent": 90.9090909090909,
+      "branch_covered": 40,
+      "branch_total": 44,
+      "branch_coverage_percent": 90.9090909090909
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Collections/27/Collections-27-Round1-s101-15278383ea86/evaluation-1",
+  "finished_at": "2026-10-04T21:58:22.570118+00:00"
+}

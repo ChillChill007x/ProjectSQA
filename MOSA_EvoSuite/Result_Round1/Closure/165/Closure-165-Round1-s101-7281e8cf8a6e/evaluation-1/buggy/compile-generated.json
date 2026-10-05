@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/build/classes:/workspace/work/parallel/evosuite/83569/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/build/classes:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/args4j.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/guava.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/json.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/jsr305.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/protobuf-java.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/build/lib/rhino.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/ant.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/ant-launcher.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/caja-r4314.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/jarjar.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/lib/junit.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/build/test",
+    "-d",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Closure/165/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/classes",
+    "@/workspace/MOSA_EvoSuite/Result_Round1/Closure/165/Closure-165-Round1-s101-7281e8cf8a6e/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "elapsed_sec": 2.25,
+  "stdout": "",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n/workspace/MOSA_EvoSuite/Test/Closure/165/Closure-165-Round1-s101-7281e8cf8a6e/com/google/javascript/rhino/jstype/ObjectType_ESTest.java:10276: error: cannot find symbol\n      boolean boolean0 = enumType0.defineSynthesizedProperty(\";(QK@U?/LT|2&$p\", noType0, node0);\n                                  ^\n  symbol:   method defineSynthesizedProperty(String,NoType,Node)\n  location: variable enumType0 of type EnumType\n1 error\n"
+}

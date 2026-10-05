@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.mockito.internal.creation.instance.ConstructorInstantiator,BRANCH,0.8,15,12

@@ -1,0 +1,8 @@
+{
+  "trigger": "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest::testPrimitiveFieldAnnotationTakesPrecedenceOverDefault",
+  "available_triggers": [
+    "com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest::testPrimitiveFieldAnnotationTakesPrecedenceOverDefault"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

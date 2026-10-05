@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-91-Round1-s101-e3dcbfecae87",
+  "unit": {
+    "project": "Closure",
+    "bug": "91",
+    "target": "com.google.javascript.jscomp.CheckGlobalThis",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:51:04.133411+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/91/Closure-91-Round1-s101-e3dcbfecae87",
+    "tests": "MOSA_EvoSuite/Test/Closure/91/Closure-91-Round1-s101-e3dcbfecae87",
+    "config": "MOSA_EvoSuite/Configuration/Closure/91/Closure-91-Round1-s101-e3dcbfecae87"
+  },
+  "generation_time_sec": 52.004,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/91/Closure-91-Round1-s101-e3dcbfecae87/com/google/javascript/jscomp/CheckGlobalThis_ESTest.java": "822edfca20764f3336ca82412f900582057389cad02b6d6203bfba1064ab7a2c",
+    "MOSA_EvoSuite/Test/Closure/91/Closure-91-Round1-s101-e3dcbfecae87/com/google/javascript/jscomp/CheckGlobalThis_ESTest_scaffolding.java": "a5a97609f8c2f5b7455551e60be208e1421de0912964dc5f00b468d843301bdd"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CheckGlobalThisTest::testLendsAnnotation3",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CheckGlobalThisTest::testLendsAnnotation3"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 9,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2649,
+      "tests": [
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test0",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test1",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test4",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test5",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test2",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test3",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test8",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test6",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test7"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 33,
+      "line_total": 58,
+      "line_coverage_percent": 56.89655172413793,
+      "branch_covered": 31,
+      "branch_total": 74,
+      "branch_coverage_percent": 41.891891891891895
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3024,
+      "tests": [
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test0",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test1",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test4",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test5",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test2",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test3",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test8",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test6",
+        "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test7"
+      ],
+      "failures": [
+        {
+          "test": "com.google.javascript.jscomp.CheckGlobalThis_ESTest::test6",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NullPointerException",
+          "trace": "java.lang.AssertionError: Expecting exception: NullPointerException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat com.google.javascript.jscomp.CheckGlobalThis_ESTest.test6(CheckGlobalThis_ESTest.java:2499)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 32,
+      "line_total": 51,
+      "line_coverage_percent": 62.745098039215684,
+      "branch_covered": 31,
+      "branch_total": 66,
+      "branch_coverage_percent": 46.96969696969697
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/91/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1",
+  "finished_at": "2026-10-04T20:53:10.467860+00:00"
+}

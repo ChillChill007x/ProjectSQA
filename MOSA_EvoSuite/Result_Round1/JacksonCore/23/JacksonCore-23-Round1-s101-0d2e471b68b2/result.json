@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-23-Round1-s101-0d2e471b68b2",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "23",
+    "target": "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:59:38.155781+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2"
+  },
+  "generation_time_sec": 37.293,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2/com/fasterxml/jackson/core/util/DefaultPrettyPrinter_ESTest.java": "9c5a160db80b9163f66afab75e542c9a872ddb6f91df24e25c906cd7ec4f96a4",
+    "MOSA_EvoSuite/Test/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2/com/fasterxml/jackson/core/util/DefaultPrettyPrinter_ESTest_scaffolding.java": "ac54b2c4d7e2178b6fa8ef1f2f742b26bd9ab46ce16cc4fe768796fa55d67893"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.util.TestDefaultPrettyPrinter::testInvalidSubClass",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.util.TestDefaultPrettyPrinter::testInvalidSubClass"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 29,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 510,
+      "tests": [
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test08",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test09",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test06",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test28",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test07",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test04",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test26",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test05",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test27",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test02",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test24",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test03",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test25",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test00",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test22",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test01",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test23",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test20",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test21",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test19",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test17",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test18",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test15",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test16",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test13",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test14",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test11",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test12",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 98,
+      "line_coverage_percent": 81.63265306122449,
+      "branch_covered": 39,
+      "branch_total": 42,
+      "branch_coverage_percent": 92.85714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 512,
+      "tests": [
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test08",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test09",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test06",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test28",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test07",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test04",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test26",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test05",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test27",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test02",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test24",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test03",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test25",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test00",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test22",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test01",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test23",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test20",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test21",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test19",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test17",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test18",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test15",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test16",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test13",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test14",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test11",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test12",
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 79,
+      "line_total": 96,
+      "line_coverage_percent": 82.29166666666667,
+      "branch_covered": 38,
+      "branch_total": 40,
+      "branch_coverage_percent": 95.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2/evaluation-1",
+  "finished_at": "2026-10-05T00:00:46.175191+00:00"
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonXml-4-Round1-s101-195f9fe1b922",
+  "unit": {
+    "project": "JacksonXml",
+    "bug": "4",
+    "target": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:10:06.724763+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922",
+    "tests": "MOSA_EvoSuite/Test/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922",
+    "config": "MOSA_EvoSuite/Configuration/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922"
+  },
+  "generation_time_sec": 52.515,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider_ESTest.java": "038b032790a54951fa0ed2d07c8b1626ca916d3a2a8ccf4537e10741e26cf4ff",
+    "MOSA_EvoSuite/Test/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider_ESTest_scaffolding.java": "7c1a9afecf5ff16fe98983da324283a779dc40603a874b84a2dff7f5000b2fdf"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.dataformat.xml.misc.RootNameTest::testDynamicRootName",
+    "available_triggers": [
+      "com.fasterxml.jackson.dataformat.xml.misc.RootNameTest::testDynamicRootName"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1382,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test06",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test17",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test07",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test08",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test09",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test10",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test00",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test11",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test01",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test12",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test02",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test13",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test03",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test14",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test04",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test15",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test05",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 53,
+      "line_total": 122,
+      "line_coverage_percent": 43.442622950819676,
+      "branch_covered": 27,
+      "branch_total": 60,
+      "branch_coverage_percent": 45.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1348,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test06",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test17",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test07",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test08",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test09",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test10",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test00",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test11",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test01",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test12",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test02",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test13",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test03",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test14",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test04",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test15",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test05",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test16"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test07",
+          "exception": "com.fasterxml.jackson.databind.JsonMappingException",
+          "message": "[no message for java.lang.NullPointerException]",
+          "trace": "com.fasterxml.jackson.databind.JsonMappingException: [no message for java.lang.NullPointerException]\n\tat com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:291)\n\tat com.fasterxml.jackson.databind.SerializerProvider.mappingException(SerializerProvider.java:1124)\n\tat com.fasterxml.jackson.databind.SerializerProvider.reportMappingProblem(SerializerProvider.java:1146)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serializeNull(DefaultSerializerProvider.java:523)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:265)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._serializeXmlNull(XmlSerializerProvider.java:207)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializeValue(XmlSerializerProvider.java:161)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest.test07(XmlSerializerProvider_ESTest.java:1175)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test10",
+          "exception": "com.fasterxml.jackson.databind.JsonMappingException",
+          "message": "[no message for java.lang.NullPointerException]",
+          "trace": "com.fasterxml.jackson.databind.JsonMappingException: [no message for java.lang.NullPointerException]\n\tat com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:291)\n\tat com.fasterxml.jackson.databind.SerializerProvider.mappingException(SerializerProvider.java:1124)\n\tat com.fasterxml.jackson.databind.SerializerProvider.reportMappingProblem(SerializerProvider.java:1146)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serializeNull(DefaultSerializerProvider.java:523)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:265)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._serializeXmlNull(XmlSerializerProvider.java:207)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializeValue(XmlSerializerProvider.java:115)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest.test10(XmlSerializerProvider_ESTest.java:1365)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test13",
+          "exception": "com.fasterxml.jackson.databind.JsonMappingException",
+          "message": "[no message for java.lang.NullPointerException]",
+          "trace": "com.fasterxml.jackson.databind.JsonMappingException: [no message for java.lang.NullPointerException]\n\tat com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:291)\n\tat com.fasterxml.jackson.databind.SerializerProvider.mappingException(SerializerProvider.java:1124)\n\tat com.fasterxml.jackson.databind.SerializerProvider.reportMappingProblem(SerializerProvider.java:1146)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serializeNull(DefaultSerializerProvider.java:523)\n\tat com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:265)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._serializeXmlNull(XmlSerializerProvider.java:207)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider.serializeValue(XmlSerializerProvider.java:69)\n\tat com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest.test13(XmlSerializerProvider_ESTest.java:1661)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 47,
+      "line_total": 119,
+      "line_coverage_percent": 39.49579831932773,
+      "branch_covered": 25,
+      "branch_total": 58,
+      "branch_coverage_percent": 43.10344827586207
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922/evaluation-1",
+  "finished_at": "2026-10-05T00:11:27.408930+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-66-Round1-s101-45f794cb5ebf/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.ElementTest::testNextElementSiblingAfterClone"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.482,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.ElementTest::testNextElementSiblingAfterClone\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

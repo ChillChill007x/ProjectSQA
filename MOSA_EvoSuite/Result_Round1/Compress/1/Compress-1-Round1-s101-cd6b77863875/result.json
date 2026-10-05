@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-1-Round1-s101-cd6b77863875",
+  "unit": {
+    "project": "Compress",
+    "bug": "1",
+    "target": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:42:31.670280+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/1/Compress-1-Round1-s101-cd6b77863875",
+    "tests": "MOSA_EvoSuite/Test/Compress/1/Compress-1-Round1-s101-cd6b77863875",
+    "config": "MOSA_EvoSuite/Configuration/Compress/1/Compress-1-Round1-s101-cd6b77863875"
+  },
+  "generation_time_sec": 38.61,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/1/Compress-1-Round1-s101-cd6b77863875/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream_ESTest.java": "a28036db9c0710f88630928ece72dacacd2e36468623a772e9c7c5cff22930dc",
+    "MOSA_EvoSuite/Test/Compress/1/Compress-1-Round1-s101-cd6b77863875/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream_ESTest_scaffolding.java": "603ba3790e52bc24436244a8bc485720994d34719862336d3bc90bca4c9203a6"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 20,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 20,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 657,
+      "tests": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test08",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test19",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test09",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test06",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test17",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test07",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test18",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test00",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test11",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test01",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test12",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test10",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test04",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test15",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test05",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test16",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test02",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test13",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test03",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test14"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 158,
+      "line_total": 165,
+      "line_coverage_percent": 95.75757575757575,
+      "branch_covered": 51,
+      "branch_total": 59,
+      "branch_coverage_percent": 86.44067796610169
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 20,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 555,
+      "tests": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test08",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test19",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test09",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test06",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test17",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test07",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test18",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test00",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test11",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test01",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test12",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test10",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test04",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test15",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test05",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test16",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test02",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test13",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test03",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test14"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test08",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<38> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<38> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test08(CpioArchiveOutputStream_ESTest.java:303)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test19",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<124> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<124> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test19(CpioArchiveOutputStream_ESTest.java:596)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test00",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<124> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<124> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test00(CpioArchiveOutputStream_ESTest.java:38)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: IOException",
+          "trace": "java.lang.AssertionError: Expecting exception: IOException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test10(CpioArchiveOutputStream_ESTest.java:379)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test15",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[0707020000000000000000000000000000000000000001ffffffff00000000000000000000000000000000000000000000000b00000000TRAILER!!!\u0000\u0000\u0000\u0000]> but was:<[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<[0707020000000000000000000000000000000000000001ffffffff00000000000000000000000000000000000000000000000b00000000TRAILER!!!\u0000\u0000\u0000\u0000]> but was:<[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test15(CpioArchiveOutputStream_ESTest.java:472)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest::test16",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<87> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<87> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream_ESTest.test16(CpioArchiveOutputStream_ESTest.java:489)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 102,
+      "line_total": 164,
+      "line_coverage_percent": 62.19512195121951,
+      "branch_covered": 35,
+      "branch_total": 59,
+      "branch_coverage_percent": 59.32203389830509
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/1/Compress-1-Round1-s101-cd6b77863875/evaluation-1",
+  "finished_at": "2026-10-04T22:43:50.986626+00:00"
+}

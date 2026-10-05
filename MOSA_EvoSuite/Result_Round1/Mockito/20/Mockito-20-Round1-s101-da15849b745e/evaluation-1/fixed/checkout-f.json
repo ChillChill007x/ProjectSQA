@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Mockito",
+    "-v",
+    "20f",
+    "-w",
+    "/workspace/work/checkouts/Mockito-20-Round1-s101-da15849b745e/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.039,
+  "stdout": "",
+  "stderr": "Checking out 7616cd17 to /workspace/work/checkouts/Mockito-20-Round1-s101-d OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: -e expression #1, char 84: unterminated `s' command\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 7616cd17:98610b68..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Mockito-20f..................................... OK\n"
+}

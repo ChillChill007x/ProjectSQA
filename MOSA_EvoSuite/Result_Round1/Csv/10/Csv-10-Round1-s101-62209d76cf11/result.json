@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-10-Round1-s101-62209d76cf11",
+  "unit": {
+    "project": "Csv",
+    "bug": "10",
+    "target": "org.apache.commons.csv.CSVPrinter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:08:36.124244+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/10/Csv-10-Round1-s101-62209d76cf11",
+    "tests": "MOSA_EvoSuite/Test/Csv/10/Csv-10-Round1-s101-62209d76cf11",
+    "config": "MOSA_EvoSuite/Configuration/Csv/10/Csv-10-Round1-s101-62209d76cf11"
+  },
+  "generation_time_sec": 39.278,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/10/Csv-10-Round1-s101-62209d76cf11/org/apache/commons/csv/CSVPrinter_ESTest.java": "dcb948592e551c2f6a3fca048810f05b5c35fc20dd730417c9a05ba7c4fb4542",
+    "MOSA_EvoSuite/Test/Csv/10/Csv-10-Round1-s101-62209d76cf11/org/apache/commons/csv/CSVPrinter_ESTest_scaffolding.java": "955f123cf8dfda087e451c5932cfc0ca4a1b079281d21b45d2440a57d8d496dc"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVPrinterTest::testHeader",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVPrinterTest::testHeader"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 24,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 790,
+      "tests": [
+        "org.apache.commons.csv.CSVPrinter_ESTest::test01",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test12",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test23",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test00",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test11",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test22",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test10",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test21",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test20",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test05",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test16",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test04",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test15",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test03",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test14",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test02",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test13",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test09",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test08",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test19",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test07",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test18",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test06",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test17"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 153,
+      "line_total": 161,
+      "line_coverage_percent": 95.03105590062111,
+      "branch_covered": 102,
+      "branch_total": 120,
+      "branch_coverage_percent": 85.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 823,
+      "tests": [
+        "org.apache.commons.csv.CSVPrinter_ESTest::test01",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test12",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test23",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test00",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test11",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test22",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test10",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test21",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test20",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test05",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test16",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test04",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test15",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test03",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test14",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test02",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test13",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test09",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test08",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test19",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test07",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test18",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test06",
+        "org.apache.commons.csv.CSVPrinter_ESTest::test17"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.csv.CSVPrinter_ESTest::test22",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[\n]> but was:<[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<[\n]> but was:<[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVPrinter_ESTest.test22(CSVPrinter_ESTest.java:2785)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 151,
+      "line_total": 159,
+      "line_coverage_percent": 94.96855345911949,
+      "branch_covered": 100,
+      "branch_total": 118,
+      "branch_coverage_percent": 84.7457627118644
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Csv/10/Csv-10-Round1-s101-62209d76cf11/evaluation-1",
+  "finished_at": "2026-10-04T22:09:40.371391+00:00"
+}

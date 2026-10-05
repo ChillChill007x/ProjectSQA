@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "com.fasterxml.jackson.core.io.IOContext",
+    "-projectCP",
+    "/workspace/work/checkouts/JacksonCore-14-Round1-s101-bd6cba4df509/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/JacksonCore/14/JacksonCore-14-Round1-s101-bd6cba4df509",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/JacksonCore/14/JacksonCore-14-Round1-s101-bd6cba4df509/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.683,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: com.fasterxml.jackson.core.io.IOContext\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/JacksonCore-14-Round1-s101-bd6cba4df509/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class com.fasterxml.jackson.core.io.IOContext\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 39\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:===========================>       79%]\r[Progress:>                             0%] [Cov:=============================>     84%]\r[Progress:>                             0%] [Cov:================================>  94%]\r[Progress:>                             0%] [Cov:===================================100%]\n* Search finished after 1s and 3 generations, 2620 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 39\n* Number of covered goals: 39\n* Generated 28 tests with total length 108\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'IOContext_ESTest' to /workspace/MOSA_EvoSuite/Test/JacksonCore/14/JacksonCore-14-Round1-s101-bd6cba4df509\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

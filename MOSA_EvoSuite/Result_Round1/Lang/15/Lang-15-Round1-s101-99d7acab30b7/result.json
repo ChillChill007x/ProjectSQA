@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-15-Round1-s101-99d7acab30b7",
+  "unit": {
+    "project": "Lang",
+    "bug": "15",
+    "target": "org.apache.commons.lang3.reflect.TypeUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:26:58.219516+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/15/Lang-15-Round1-s101-99d7acab30b7",
+    "tests": "MOSA_EvoSuite/Test/Lang/15/Lang-15-Round1-s101-99d7acab30b7",
+    "config": "MOSA_EvoSuite/Configuration/Lang/15/Lang-15-Round1-s101-99d7acab30b7"
+  },
+  "generation_time_sec": 53.758,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/15/Lang-15-Round1-s101-99d7acab30b7/org/apache/commons/lang3/reflect/TypeUtils_ESTest.java": "8992e688c0bf245372d09c2b238bd308daa0580970b928a20d37521585a72062",
+    "MOSA_EvoSuite/Test/Lang/15/Lang-15-Round1-s101-99d7acab30b7/org/apache/commons/lang3/reflect/TypeUtils_ESTest_scaffolding.java": "ace91c167e082c009a5844374527f8d0e879cfa8fad51cf057f2a37393cbc84e"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments",
+    "available_triggers": [
+      "org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments",
+      "org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 22,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1685,
+      "tests": [
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test02",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test13",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test03",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test14",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test04",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test15",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test05",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test16",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test20",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test10",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test21",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test00",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test11",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test01",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test12",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test06",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test17",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test07",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test18",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test08",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test19",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 142,
+      "line_total": 299,
+      "line_coverage_percent": 47.491638795986624,
+      "branch_covered": 128,
+      "branch_total": 282,
+      "branch_coverage_percent": 45.39007092198582
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1643,
+      "tests": [
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test02",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test13",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test03",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test14",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test04",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test15",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test05",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test16",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test20",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test10",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test21",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test00",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test11",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test01",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test12",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test06",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test17",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test07",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test18",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test08",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test19",
+        "org.apache.commons.lang3.reflect.TypeUtils_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 142,
+      "line_total": 299,
+      "line_coverage_percent": 47.491638795986624,
+      "branch_covered": 129,
+      "branch_total": 284,
+      "branch_coverage_percent": 45.42253521126761
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/15/Lang-15-Round1-s101-99d7acab30b7/evaluation-1",
+  "finished_at": "2026-10-05T02:28:51.771459+00:00"
+}

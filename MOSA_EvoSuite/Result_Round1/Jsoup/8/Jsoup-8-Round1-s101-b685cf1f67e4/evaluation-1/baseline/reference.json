@@ -1,0 +1,8 @@
+{
+  "trigger": "org.jsoup.nodes.ElementTest::parentlessToString",
+  "available_triggers": [
+    "org.jsoup.nodes.ElementTest::parentlessToString"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

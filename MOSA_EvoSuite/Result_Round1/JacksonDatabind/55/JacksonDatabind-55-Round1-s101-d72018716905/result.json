@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-55-Round1-s101-d72018716905",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "55",
+    "target": "com.fasterxml.jackson.databind.ser.std.StdKeySerializers",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:01:49.507640+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905"
+  },
+  "generation_time_sec": 53.117,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905/com/fasterxml/jackson/databind/ser/std/StdKeySerializers_ESTest.java": "cf5f8270f4a1043a4cecfe300d1a04dd54420306e5653108fa517bdf6c2311fb",
+    "MOSA_EvoSuite/Test/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905/com/fasterxml/jackson/databind/ser/std/StdKeySerializers_ESTest_scaffolding.java": "aa26b6029df733618892cb2df9262faac90e6bd494253565efae3c5bf9bd3a22"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.ser.TestEnumSerialization::testEnumsWithJsonPropertyAsKey",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.ser.TestEnumSerialization::testEnumsWithJsonPropertyAsKey"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1867,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test12",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test14",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test13",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test09",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test08",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 25,
+      "line_coverage_percent": 76.0,
+      "branch_covered": 18,
+      "branch_total": 26,
+      "branch_coverage_percent": 69.23076923076923
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2012,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test12",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test14",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test13",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test09",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test08",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 18,
+      "line_total": 24,
+      "line_coverage_percent": 75.0,
+      "branch_covered": 18,
+      "branch_total": 26,
+      "branch_coverage_percent": 69.23076923076923
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-d72018716905/evaluation-1",
+  "finished_at": "2026-10-05T00:03:55.890747+00:00"
+}

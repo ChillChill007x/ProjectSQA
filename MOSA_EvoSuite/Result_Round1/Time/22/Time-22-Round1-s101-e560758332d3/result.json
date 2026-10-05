@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-22-Round1-s101-e560758332d3",
+  "unit": {
+    "project": "Time",
+    "bug": "22",
+    "target": "org.joda.time.base.BasePeriod",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:03:27.937974+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/22/Time-22-Round1-s101-e560758332d3",
+    "tests": "MOSA_EvoSuite/Test/Time/22/Time-22-Round1-s101-e560758332d3",
+    "config": "MOSA_EvoSuite/Configuration/Time/22/Time-22-Round1-s101-e560758332d3"
+  },
+  "generation_time_sec": 41.661,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/22/Time-22-Round1-s101-e560758332d3/org/joda/time/base/BasePeriod_ESTest.java": "1f2f4ea98829f505e31465914ea25fb3380cef9f7a930fda831f1af2f5b82551",
+    "MOSA_EvoSuite/Test/Time/22/Time-22-Round1-s101-e560758332d3/org/joda/time/base/BasePeriod_ESTest_scaffolding.java": "b70f58a51d6c439209a74f663a0b73aa0bfce94f0df6983932feb9a89a74af56"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.TestDuration_Basics::testToPeriod_fixedZone",
+    "available_triggers": [
+      "org.joda.time.TestDuration_Basics::testToPeriod_fixedZone",
+      "org.joda.time.TestPeriod_Constructors::testConstructor_long_fixedZone"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 29,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 887,
+      "tests": [
+        "org.joda.time.base.BasePeriod_ESTest::test07",
+        "org.joda.time.base.BasePeriod_ESTest::test06",
+        "org.joda.time.base.BasePeriod_ESTest::test28",
+        "org.joda.time.base.BasePeriod_ESTest::test09",
+        "org.joda.time.base.BasePeriod_ESTest::test08",
+        "org.joda.time.base.BasePeriod_ESTest::test03",
+        "org.joda.time.base.BasePeriod_ESTest::test25",
+        "org.joda.time.base.BasePeriod_ESTest::test02",
+        "org.joda.time.base.BasePeriod_ESTest::test24",
+        "org.joda.time.base.BasePeriod_ESTest::test05",
+        "org.joda.time.base.BasePeriod_ESTest::test27",
+        "org.joda.time.base.BasePeriod_ESTest::test04",
+        "org.joda.time.base.BasePeriod_ESTest::test26",
+        "org.joda.time.base.BasePeriod_ESTest::test21",
+        "org.joda.time.base.BasePeriod_ESTest::test20",
+        "org.joda.time.base.BasePeriod_ESTest::test01",
+        "org.joda.time.base.BasePeriod_ESTest::test23",
+        "org.joda.time.base.BasePeriod_ESTest::test00",
+        "org.joda.time.base.BasePeriod_ESTest::test22",
+        "org.joda.time.base.BasePeriod_ESTest::test18",
+        "org.joda.time.base.BasePeriod_ESTest::test17",
+        "org.joda.time.base.BasePeriod_ESTest::test19",
+        "org.joda.time.base.BasePeriod_ESTest::test14",
+        "org.joda.time.base.BasePeriod_ESTest::test13",
+        "org.joda.time.base.BasePeriod_ESTest::test16",
+        "org.joda.time.base.BasePeriod_ESTest::test15",
+        "org.joda.time.base.BasePeriod_ESTest::test10",
+        "org.joda.time.base.BasePeriod_ESTest::test12",
+        "org.joda.time.base.BasePeriod_ESTest::test11"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 175,
+      "line_total": 176,
+      "line_coverage_percent": 99.43181818181819,
+      "branch_covered": 56,
+      "branch_total": 58,
+      "branch_coverage_percent": 96.55172413793103
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 889,
+      "tests": [
+        "org.joda.time.base.BasePeriod_ESTest::test07",
+        "org.joda.time.base.BasePeriod_ESTest::test06",
+        "org.joda.time.base.BasePeriod_ESTest::test28",
+        "org.joda.time.base.BasePeriod_ESTest::test09",
+        "org.joda.time.base.BasePeriod_ESTest::test08",
+        "org.joda.time.base.BasePeriod_ESTest::test03",
+        "org.joda.time.base.BasePeriod_ESTest::test25",
+        "org.joda.time.base.BasePeriod_ESTest::test02",
+        "org.joda.time.base.BasePeriod_ESTest::test24",
+        "org.joda.time.base.BasePeriod_ESTest::test05",
+        "org.joda.time.base.BasePeriod_ESTest::test27",
+        "org.joda.time.base.BasePeriod_ESTest::test04",
+        "org.joda.time.base.BasePeriod_ESTest::test26",
+        "org.joda.time.base.BasePeriod_ESTest::test21",
+        "org.joda.time.base.BasePeriod_ESTest::test20",
+        "org.joda.time.base.BasePeriod_ESTest::test01",
+        "org.joda.time.base.BasePeriod_ESTest::test23",
+        "org.joda.time.base.BasePeriod_ESTest::test00",
+        "org.joda.time.base.BasePeriod_ESTest::test22",
+        "org.joda.time.base.BasePeriod_ESTest::test18",
+        "org.joda.time.base.BasePeriod_ESTest::test17",
+        "org.joda.time.base.BasePeriod_ESTest::test19",
+        "org.joda.time.base.BasePeriod_ESTest::test14",
+        "org.joda.time.base.BasePeriod_ESTest::test13",
+        "org.joda.time.base.BasePeriod_ESTest::test16",
+        "org.joda.time.base.BasePeriod_ESTest::test15",
+        "org.joda.time.base.BasePeriod_ESTest::test10",
+        "org.joda.time.base.BasePeriod_ESTest::test12",
+        "org.joda.time.base.BasePeriod_ESTest::test11"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 170,
+      "line_total": 171,
+      "line_coverage_percent": 99.41520467836257,
+      "branch_covered": 56,
+      "branch_total": 58,
+      "branch_coverage_percent": 96.55172413793103
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Time/22/Time-22-Round1-s101-e560758332d3/evaluation-1",
+  "finished_at": "2026-10-05T04:05:06.624776+00:00"
+}

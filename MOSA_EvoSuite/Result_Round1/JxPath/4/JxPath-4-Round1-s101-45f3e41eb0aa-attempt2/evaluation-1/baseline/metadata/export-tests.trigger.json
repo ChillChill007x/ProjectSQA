@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JxPath-4-Round1-s101-45f3e41eb0aa-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveDOM\norg.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedJDOM\norg.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsJDOM\norg.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveJDOM\norg.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedDOM\norg.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsDOM",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

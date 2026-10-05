@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-3-Round1-s101-3e1d49c5d6e4/evaluation-1/fixed",
+    "-t",
+    "org.joda.time.TestMutableDateTime_Adds::testAddYears_int_dstOverlapWinter_addZero"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.323,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

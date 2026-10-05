@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-21-Round1-s101-4bce1cf38c15-attempt2",
+  "unit": {
+    "project": "Cli",
+    "bug": "21",
+    "target": "org.apache.commons.cli2.WriteableCommandLine",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COVERAGE_ERROR",
+  "started_at": "2026-10-05T08:58:09.223992+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2"
+  },
+  "generation_time_sec": 1.619,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2/org/apache/commons/cli2/WriteableCommandLine_ESTest.java": "7be2577111bd56bfc443ede6b4065b6f147eddf6a3d158c4c8f46a055991e471",
+    "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2/org/apache/commons/cli2/WriteableCommandLine_ESTest_scaffolding.java": "a53acf3829011aa271e6461b2d82bc9a8e3aaea5bb24a9c7469d9fb70cf94ed6"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Missing LINE counter",
+  "finished_at": "2026-10-05T08:58:29.336062+00:00"
+}

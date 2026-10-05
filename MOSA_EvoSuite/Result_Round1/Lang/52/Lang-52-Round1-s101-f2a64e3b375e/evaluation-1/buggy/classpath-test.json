@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-52-Round1-s101-f2a64e3b375e/evaluation-1/buggy/target/classes",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-52-Round1-s101-f2a64e3b375e/evaluation-1/buggy/target/tests",
+    "/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+    "/opt/defects4j/framework/projects/Lang/lib/cglib.jar",
+    "/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+    "/opt/defects4j/framework/projects/Lang/lib/easymock.jar",
+    "/opt/defects4j/framework/projects/Lang/lib/commons-io.jar"
+  ],
+  "missing_entries": []
+}

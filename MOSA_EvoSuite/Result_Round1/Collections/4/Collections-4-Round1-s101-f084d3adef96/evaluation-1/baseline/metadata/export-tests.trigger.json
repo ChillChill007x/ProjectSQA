@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-4-Round1-s101-f084d3adef96/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.apache.commons.collections.map.TestMultiValueMap::testPutWithList\norg.apache.commons.collections.map.TestMultiValueMap::testPutAll_KeyCollection\norg.apache.commons.collections.map.TestMultiValueMap::testPutWithSet",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

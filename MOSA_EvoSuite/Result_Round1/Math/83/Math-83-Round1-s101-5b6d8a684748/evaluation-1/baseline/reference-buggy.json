@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Math-83-Round1-s101-5b6d8a684748/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath286"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.776,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath286\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

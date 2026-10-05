@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Codec-10-Round1-s101-aec814af5de7/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.codec.language.CaverphoneTest::testEndMb",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

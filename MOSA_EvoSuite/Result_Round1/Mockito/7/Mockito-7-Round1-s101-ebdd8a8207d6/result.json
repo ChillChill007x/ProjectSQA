@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-7-Round1-s101-ebdd8a8207d6",
+  "unit": {
+    "project": "Mockito",
+    "bug": "7",
+    "target": "org.mockito.internal.util.reflection.GenericMetadataSupport",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:24:56.164458+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6",
+    "tests": "MOSA_EvoSuite/Test/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6"
+  },
+  "generation_time_sec": 35.592,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6/org/mockito/internal/util/reflection/GenericMetadataSupport_ESTest.java": "67b2cc27072e3bdac4c161bf2f3da6c46983c79e6ffeab58d44ecb8b4bec0365",
+    "MOSA_EvoSuite/Test/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6/org/mockito/internal/util/reflection/GenericMetadataSupport_ESTest_scaffolding.java": "a14b4d6d1aeec08f9b1329ee38750f215b692182ad87f7e1b391fc082fb71a5e"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.bugs.deepstubs.DeepStubFailingWhenGenricNestedAsRawTypeTest::discoverDeepMockingOfGenerics",
+    "available_triggers": [
+      "org.mockitousage.bugs.deepstubs.DeepStubFailingWhenGenricNestedAsRawTypeTest::discoverDeepMockingOfGenerics"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 771,
+      "tests": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test05",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test04",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test03",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test14",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test02",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test13",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test01",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test12",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test00",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test11",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test10",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test09",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test08",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test07",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 56,
+      "line_coverage_percent": 7.142857142857143,
+      "branch_covered": 2,
+      "branch_total": 32,
+      "branch_coverage_percent": 6.25
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 703,
+      "tests": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test05",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test04",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test03",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test14",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test02",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test13",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test01",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test12",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test00",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test11",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test10",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test09",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test08",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test07",
+        "org.mockito.internal.util.reflection.GenericMetadataSupport_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 56,
+      "line_coverage_percent": 7.142857142857143,
+      "branch_covered": 2,
+      "branch_total": 32,
+      "branch_coverage_percent": 6.25
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6/evaluation-1",
+  "finished_at": "2026-10-05T01:29:36.118409+00:00"
+}

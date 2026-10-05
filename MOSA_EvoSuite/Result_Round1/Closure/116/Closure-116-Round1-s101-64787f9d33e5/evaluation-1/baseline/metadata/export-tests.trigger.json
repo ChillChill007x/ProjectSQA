@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-116-Round1-s101-64787f9d33e5/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.071,
+  "stdout": "com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101a\ncom.google.javascript.jscomp.FunctionInjectorTest::testIssue1101b\ncom.google.javascript.jscomp.InlineFunctionsTest::testBug4944818\ncom.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining2\ncom.google.javascript.jscomp.InlineFunctionsTest::testIssue1101\ncom.google.javascript.jscomp.InlineFunctionsTest::testInlineIfParametersModified8\ncom.google.javascript.jscomp.InlineFunctionsTest::testInlineIfParametersModified9\ncom.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

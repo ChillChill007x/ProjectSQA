@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-16-Round1-s101-9e7ee30c563a-attempt2",
+  "unit": {
+    "project": "Cli",
+    "bug": "16",
+    "target": "org.apache.commons.cli2.option.OptionImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T08:56:18.840928+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2"
+  },
+  "generation_time_sec": 35.631,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2/org/apache/commons/cli2/option/OptionImpl_ESTest.java": "a2784bf041d19e86b8d750abd3acd2c3ef0628a8055166e82c2051f1c2e1ad5a",
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2/org/apache/commons/cli2/option/OptionImpl_ESTest_scaffolding.java": "a120be289e759b46f215ff8ca2b602db1e8841619f715ed4ff07d18b86c842e5"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption",
+      "org.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T08:57:15.366720+00:00"
+}

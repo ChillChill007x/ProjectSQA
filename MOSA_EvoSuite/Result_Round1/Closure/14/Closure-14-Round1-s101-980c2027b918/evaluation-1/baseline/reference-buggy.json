@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/742/checkouts/Closure-14-Round1-s101-980c2027b918/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.812,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

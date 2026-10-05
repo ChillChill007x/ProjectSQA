@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-19-Round1-s101-c147c42d3c1d/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.safety.CleanerTest::handlesCustomProtocols"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.012,
+  "stdout": "Failing tests: 1\n  - org.jsoup.safety.CleanerTest::handlesCustomProtocols\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.google.javascript.jscomp.RuntimeTypeCheck,BRANCH,0.11363636363636363,88,10

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Math-14-Round1-s101-0fb960273d8e/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.737,
+  "stdout": "/workspace/work/parallel/evosuite/83570/checkouts/Math-14-Round1-s101-0fb960273d8e/generation-fixed/target/classes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.compile)............................................ OK\n\n"
+}

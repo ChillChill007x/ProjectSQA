@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Cli-39-Round1-s101-9174cf0135ee/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.967,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

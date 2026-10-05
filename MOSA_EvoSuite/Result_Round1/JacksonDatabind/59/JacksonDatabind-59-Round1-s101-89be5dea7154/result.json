@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-59-Round1-s101-89be5dea7154",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "59",
+    "target": "com.fasterxml.jackson.databind.JavaType",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:04:31.107435+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-89be5dea7154",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-89be5dea7154",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-89be5dea7154"
+  },
+  "generation_time_sec": 59.519,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-89be5dea7154/com/fasterxml/jackson/databind/JavaType_ESTest.java": "48fa4f931b295c586319d6acb4aec9d25538b37adf8b0942200c7d5def3c0971",
+    "MOSA_EvoSuite/Test/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-89be5dea7154/com/fasterxml/jackson/databind/JavaType_ESTest_scaffolding.java": "d517c91668c95c255bef10e7bde64fccc592e061bc37ea40020e46c03d5d254d"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.jsontype.TypeRefinementForMapTest::testMapKeyRefinement1384",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.jsontype.TypeRefinementForMapTest::testMapKeyRefinement1384"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:06:50.250821+00:00"
+}

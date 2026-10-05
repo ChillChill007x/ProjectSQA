@@ -1,0 +1,8 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.deser.creators.DelegatingArrayCreator2324Test::testDeserializeBagOfStrings",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.deser.creators.DelegatingArrayCreator2324Test::testDeserializeBagOfStrings"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

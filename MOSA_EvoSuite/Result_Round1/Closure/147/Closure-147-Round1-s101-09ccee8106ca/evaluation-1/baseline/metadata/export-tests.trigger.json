@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-147-Round1-s101-09ccee8106ca/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.445,
+  "stdout": "com.google.javascript.jscomp.CheckGlobalThisTest::testIssue182a\ncom.google.javascript.jscomp.CheckGlobalThisTest::testIssue182b\ncom.google.javascript.jscomp.RuntimeTypeCheckTest::testValueWithInnerFn",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

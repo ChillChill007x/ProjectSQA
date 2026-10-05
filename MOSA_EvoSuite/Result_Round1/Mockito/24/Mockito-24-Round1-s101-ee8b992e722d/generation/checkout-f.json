@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Mockito",
+    "-v",
+    "24f",
+    "-w",
+    "/workspace/work/checkouts/Mockito-24-Round1-s101-ee8b992e722d/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.942,
+  "stdout": "",
+  "stderr": "Checking out c17169c2 to /workspace/work/checkouts/Mockito-24-Round1-s101-e OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: -e expression #1, char 84: unterminated `s' command\nsed: can't read /workspace/work/checkouts/Mockito-24-Round1-s101-ee8b992e722d/generation-fixed/buildSrc/build.gradle: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Mockito-24-Round1-s101-ee8 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff c17169c2:585b06d8..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Mockito-24f..................................... OK\n"
+}

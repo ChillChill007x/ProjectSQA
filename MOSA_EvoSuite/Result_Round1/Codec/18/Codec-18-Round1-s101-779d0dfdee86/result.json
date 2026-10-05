@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-18-Round1-s101-779d0dfdee86",
+  "unit": {
+    "project": "Codec",
+    "bug": "18",
+    "target": "org.apache.commons.codec.binary.StringUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:25:17.987578+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/18/Codec-18-Round1-s101-779d0dfdee86",
+    "tests": "MOSA_EvoSuite/Test/Codec/18/Codec-18-Round1-s101-779d0dfdee86",
+    "config": "MOSA_EvoSuite/Configuration/Codec/18/Codec-18-Round1-s101-779d0dfdee86"
+  },
+  "generation_time_sec": 5.486,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/18/Codec-18-Round1-s101-779d0dfdee86/org/apache/commons/codec/binary/StringUtils_ESTest.java": "58007c430354c63bd15fbf1adc780336647b28f84c1bce8f473363af9ee40695",
+    "MOSA_EvoSuite/Test/Codec/18/Codec-18-Round1-s101-779d0dfdee86/org/apache/commons/codec/binary/StringUtils_ESTest_scaffolding.java": "63c6df9a06c46516e2c79bdcd30b7c436d05350666d39e7527e4957afd27337a"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS1",
+    "available_triggers": [
+      "org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS1",
+      "org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 23,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 23,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 341,
+      "tests": [
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test10",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test21",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test20",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test01",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test12",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test00",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test11",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test22",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test03",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test14",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test02",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test13",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test05",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test16",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test04",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test15",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test07",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test18",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test06",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test17",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test09",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test08",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test19"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 37,
+      "line_total": 39,
+      "line_coverage_percent": 94.87179487179488,
+      "branch_covered": 24,
+      "branch_total": 24,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 23,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 369,
+      "tests": [
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test10",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test21",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test20",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test01",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test12",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test00",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test11",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test22",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test03",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test14",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test02",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test13",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test05",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test16",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test04",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test15",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test07",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test18",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test06",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test17",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test09",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test08",
+        "org.apache.commons.codec.binary.StringUtils_ESTest::test19"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.codec.binary.StringUtils_ESTest::test07",
+          "exception": "java.lang.StringIndexOutOfBoundsException",
+          "message": "String index out of range: 0",
+          "trace": "java.lang.StringIndexOutOfBoundsException: String index out of range: 0\n\tat java.base/java.lang.StringLatin1.charAt(StringLatin1.java:47)\n\tat java.base/java.lang.String.charAt(String.java:693)\n\tat org.apache.commons.codec.binary.CharSequenceUtils.regionMatches(CharSequenceUtils.java:60)\n\tat org.apache.commons.codec.binary.StringUtils.equals(StringUtils.java:81)\n\tat org.apache.commons.codec.binary.StringUtils_ESTest.test07(StringUtils_ESTest.java:150)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 37,
+      "line_total": 39,
+      "line_coverage_percent": 94.87179487179488,
+      "branch_covered": 20,
+      "branch_total": 20,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/18/Codec-18-Round1-s101-779d0dfdee86/evaluation-1",
+  "finished_at": "2026-10-04T21:25:46.578297+00:00"
+}

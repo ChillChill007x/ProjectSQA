@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-69-Round1-s101-3e0795fdcfdb",
+  "unit": {
+    "project": "Math",
+    "bug": "69",
+    "target": "org.apache.commons.math.stat.correlation.PearsonsCorrelation",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:04:30.435344+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/69/Math-69-Round1-s101-3e0795fdcfdb",
+    "tests": "MOSA_EvoSuite/Test/Math/69/Math-69-Round1-s101-3e0795fdcfdb",
+    "config": "MOSA_EvoSuite/Configuration/Math/69/Math-69-Round1-s101-3e0795fdcfdb"
+  },
+  "generation_time_sec": 12.815,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/69/Math-69-Round1-s101-3e0795fdcfdb/org/apache/commons/math/stat/correlation/PearsonsCorrelation_ESTest.java": "54afa806957370b0949899353d60c0210e50838f2f9b5e2ae41f1b4a536e14d0",
+    "MOSA_EvoSuite/Test/Math/69/Math-69-Round1-s101-3e0795fdcfdb/org/apache/commons/math/stat/correlation/PearsonsCorrelation_ESTest_scaffolding.java": "ccf6cf0d9b06a3e3d66ccab1e01813095b847324297545a8a57d82fb796b3b26"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero",
+    "available_triggers": [
+      "org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero",
+      "org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest::testPValueNearZero"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 10,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 806,
+      "tests": [
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test2",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test3",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test4",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test5",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test6",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test7",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test8",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test9",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test0",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 75,
+      "line_total": 75,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 30,
+      "branch_total": 30,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1259,
+      "tests": [
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test2",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test3",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test4",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test5",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test6",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test7",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test8",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test9",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test0",
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 75,
+      "line_total": 75,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 30,
+      "branch_total": 30,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/69/Math-69-Round1-s101-3e0795fdcfdb/evaluation-1",
+  "finished_at": "2026-10-05T04:06:07.698162+00:00"
+}

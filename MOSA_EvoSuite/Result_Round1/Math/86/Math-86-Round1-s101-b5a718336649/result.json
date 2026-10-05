@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-86-Round1-s101-b5a718336649",
+  "unit": {
+    "project": "Math",
+    "bug": "86",
+    "target": "org.apache.commons.math.linear.CholeskyDecompositionImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:18:52.672231+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/86/Math-86-Round1-s101-b5a718336649",
+    "tests": "MOSA_EvoSuite/Test/Math/86/Math-86-Round1-s101-b5a718336649",
+    "config": "MOSA_EvoSuite/Configuration/Math/86/Math-86-Round1-s101-b5a718336649"
+  },
+  "generation_time_sec": 38.178,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/86/Math-86-Round1-s101-b5a718336649/org/apache/commons/math/linear/CholeskyDecompositionImpl_ESTest.java": "a3d48f5f600f6ae23c58a8ae3f3470874268e4269bab86f4bab296bbc0698dba",
+    "MOSA_EvoSuite/Test/Math/86/Math-86-Round1-s101-b5a718336649/org/apache/commons/math/linear/CholeskyDecompositionImpl_ESTest_scaffolding.java": "72ab81b89e61598f91644149bedfe77537f35c4788aa503a51c92a7e6c2426ba"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.linear.CholeskyDecompositionImplTest::testMath274",
+    "available_triggers": [
+      "org.apache.commons.math.linear.CholeskyDecompositionImplTest::testMath274",
+      "org.apache.commons.math.linear.CholeskyDecompositionImplTest::testNotPositiveDefinite"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1124,
+      "tests": [
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test1",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test0",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test6",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test5",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test4",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test3",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 43,
+      "line_total": 45,
+      "line_coverage_percent": 95.55555555555556,
+      "branch_covered": 22,
+      "branch_total": 22,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1073,
+      "tests": [
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test1",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test0",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test6",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test5",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test4",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test3",
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 39,
+      "line_total": 45,
+      "line_coverage_percent": 86.66666666666667,
+      "branch_covered": 19,
+      "branch_total": 22,
+      "branch_coverage_percent": 86.36363636363636
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/86/Math-86-Round1-s101-b5a718336649/evaluation-1",
+  "finished_at": "2026-10-05T04:20:56.008602+00:00"
+}

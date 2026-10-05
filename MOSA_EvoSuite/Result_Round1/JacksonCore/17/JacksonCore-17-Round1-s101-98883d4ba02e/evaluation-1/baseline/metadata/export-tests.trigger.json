@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-17-Round1-s101-98883d4ba02e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.fasterxml.jackson.core.json.RawValueWithSurrogatesTest::testRawWithSurrogatesString",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

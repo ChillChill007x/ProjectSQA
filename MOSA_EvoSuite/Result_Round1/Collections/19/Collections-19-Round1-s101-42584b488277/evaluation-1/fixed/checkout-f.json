@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Collections",
+    "-v",
+    "19f",
+    "-w",
+    "/workspace/work/checkouts/Collections-19-Round1-s101-42584b488277/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.676,
+  "stdout": "",
+  "stderr": "Checking out bb9952db to /workspace/work/checkouts/Collections-19-Round1-s1 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff bb9952db:89d8791f..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Collections-19f................................. OK\n"
+}

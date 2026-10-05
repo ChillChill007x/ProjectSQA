@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-5-Round1-s101-9bf4ca68eb06",
+  "unit": {
+    "project": "Closure",
+    "bug": "5",
+    "target": "com.google.javascript.jscomp.InlineObjectLiterals",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:07:33.075099+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06",
+    "tests": "MOSA_EvoSuite/Test/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06",
+    "config": "MOSA_EvoSuite/Configuration/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06"
+  },
+  "generation_time_sec": 43.416,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06/com/google/javascript/jscomp/InlineObjectLiterals_ESTest.java": "0cf6e2f56b2b34dc287d6fc7b45e4c638e40aa0283275ce208472e1c6e1c8bf8",
+    "MOSA_EvoSuite/Test/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06/com/google/javascript/jscomp/InlineObjectLiterals_ESTest_scaffolding.java": "c21ffd4c214182de5a28f1f5d169a81c86cef8d1340a9bdc365c8ad3985442b8"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.InlineObjectLiteralsTest::testNoInlineDeletedProperties",
+    "available_triggers": [
+      "com.google.javascript.jscomp.InlineObjectLiteralsTest::testNoInlineDeletedProperties"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2812,
+      "tests": [
+        "com.google.javascript.jscomp.InlineObjectLiterals_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 5,
+      "line_total": 7,
+      "line_coverage_percent": 71.42857142857143,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2866,
+      "tests": [
+        "com.google.javascript.jscomp.InlineObjectLiterals_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 5,
+      "line_total": 7,
+      "line_coverage_percent": 71.42857142857143,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/5/Closure-5-Round1-s101-9bf4ca68eb06/evaluation-1",
+  "finished_at": "2026-10-04T19:10:49.306909+00:00"
+}

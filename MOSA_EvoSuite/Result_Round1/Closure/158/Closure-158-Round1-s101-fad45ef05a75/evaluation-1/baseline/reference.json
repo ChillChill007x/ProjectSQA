@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.jscomp.CommandLineRunnerTest::testWarningGuardOrdering2",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testWarningGuardOrdering2",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testWarningGuardOrdering4"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

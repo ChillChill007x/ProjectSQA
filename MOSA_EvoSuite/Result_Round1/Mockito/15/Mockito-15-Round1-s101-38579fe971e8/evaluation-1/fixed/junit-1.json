@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":306,"tests":["org.mockito.internal.configuration.injection.FinalMockCandidateFilter_ESTest::test1","org.mockito.internal.configuration.injection.FinalMockCandidateFilter_ESTest::test0"],"failures":[],"passed":true}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-4-Round1-s101-a579b879b23c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.google.gson.stream.JsonReaderTest::testTopLevelValueTypeWithSkipValue\ncom.google.gson.stream.JsonReaderTest::testTopLevelValueTypes\ncom.google.gson.stream.JsonWriterTest::testTopLevelValueTypes",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

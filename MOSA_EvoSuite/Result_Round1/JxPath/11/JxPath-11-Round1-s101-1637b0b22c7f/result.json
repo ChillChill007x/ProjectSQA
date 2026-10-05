@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-11-Round1-s101-1637b0b22c7f",
+  "unit": {
+    "project": "JxPath",
+    "bug": "11",
+    "target": "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:31:38.165679+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f",
+    "tests": "MOSA_EvoSuite/Test/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f"
+  },
+  "generation_time_sec": 41.922,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f/org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator_ESTest.java": "c91e3825311c55b658363b09f126fe5a9662e09fbb8a489612423afe75a2cfe1",
+    "MOSA_EvoSuite/Test/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f/org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator_ESTest_scaffolding.java": "c7ab2925e9d1bba7c5487d5e9866b70ad9323a847323b115878ecc559869e065"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testNamespaceMapping",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testNamespaceMapping",
+      "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testNamespaceMapping"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:32:38.364646+00:00"
+}

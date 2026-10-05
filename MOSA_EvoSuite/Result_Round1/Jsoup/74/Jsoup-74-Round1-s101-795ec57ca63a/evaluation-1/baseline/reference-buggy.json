@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-74-Round1-s101-795ec57ca63a/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.ElementTest::testNormalizesInvisiblesInText"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.072,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.ElementTest::testNormalizesInvisiblesInText\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

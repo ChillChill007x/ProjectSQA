@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":2234,"tests":["com.fasterxml.jackson.databind.deser.impl.JavaUtilCollectionsDeserializers_ESTest::test0","com.fasterxml.jackson.databind.deser.impl.JavaUtilCollectionsDeserializers_ESTest::test1"],"failures":[],"passed":true}

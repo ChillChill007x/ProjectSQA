@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-11-Round1-s101-207f93acdec7",
+  "unit": {
+    "project": "Math",
+    "bug": "11",
+    "target": "org.apache.commons.math3.distribution.MultivariateNormalDistribution",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:11:16.827447+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/11/Math-11-Round1-s101-207f93acdec7",
+    "tests": "MOSA_EvoSuite/Test/Math/11/Math-11-Round1-s101-207f93acdec7",
+    "config": "MOSA_EvoSuite/Configuration/Math/11/Math-11-Round1-s101-207f93acdec7"
+  },
+  "generation_time_sec": 13.94,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/11/Math-11-Round1-s101-207f93acdec7/org/apache/commons/math3/distribution/MultivariateNormalDistribution_ESTest.java": "7f757d0423e8b1162c1e331a825c0cbcbe7d45af1320caeb796098257f664372",
+    "MOSA_EvoSuite/Test/Math/11/Math-11-Round1-s101-207f93acdec7/org/apache/commons/math3/distribution/MultivariateNormalDistribution_ESTest_scaffolding.java": "b82e2329d770756505b25142220819516e1fdb48f49fb4d8ecdde284146f0073"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.distribution.MultivariateNormalDistributionTest::testUnivariateDistribution",
+    "available_triggers": [
+      "org.apache.commons.math3.distribution.MultivariateNormalDistributionTest::testUnivariateDistribution"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 913,
+      "tests": [
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test6",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test7",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test4",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test5",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test2",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test3",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test0",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 59,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 28,
+      "branch_total": 28,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1123,
+      "tests": [
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test6",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test7",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test4",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test5",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test2",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test3",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test0",
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest::test6",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<2.0038634780635494E10> but was:<5.02294085261451E10>",
+          "trace": "java.lang.AssertionError: expected:<2.0038634780635494E10> but was:<5.02294085261451E10>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat org.junit.Assert.assertEquals(Assert.java:685)\n\tat org.apache.commons.math3.distribution.MultivariateNormalDistribution_ESTest.test6(MultivariateNormalDistribution_ESTest.java:185)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 59,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 28,
+      "branch_total": 28,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/11/Math-11-Round1-s101-207f93acdec7/evaluation-1",
+  "finished_at": "2026-10-05T03:13:18.770711+00:00"
+}

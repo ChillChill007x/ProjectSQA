@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.lang3.time.FastDateFormat_PrinterTest::testCalendarTimezoneRespected",
+  "available_triggers": [
+    "org.apache.commons.lang3.time.FastDateFormat_PrinterTest::testCalendarTimezoneRespected",
+    "org.apache.commons.lang3.time.FastDatePrinterTest::testCalendarTimezoneRespected"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

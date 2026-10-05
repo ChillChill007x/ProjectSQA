@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-88-Round1-s101-f069682435f1",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "88",
+    "target": "org.jsoup.nodes.Attribute",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:12:03.646245+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1"
+  },
+  "generation_time_sec": 47.413,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1/org/jsoup/nodes/Attribute_ESTest.java": "00fceff28454f02bf2e8a34613c86666c742805aa58c11c1bff37223ffeb4f78",
+    "MOSA_EvoSuite/Test/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1/org/jsoup/nodes/Attribute_ESTest_scaffolding.java": "65ac22ed8add26e1948cb90a252e13e83dc30ed4df56f4d1897340ea49197580"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.nodes.AttributeTest::booleanAttributesAreEmptyStringValues",
+    "available_triggers": [
+      "org.jsoup.nodes.AttributeTest::booleanAttributesAreEmptyStringValues"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 26,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1605,
+      "tests": [
+        "org.jsoup.nodes.Attribute_ESTest::test15",
+        "org.jsoup.nodes.Attribute_ESTest::test16",
+        "org.jsoup.nodes.Attribute_ESTest::test13",
+        "org.jsoup.nodes.Attribute_ESTest::test14",
+        "org.jsoup.nodes.Attribute_ESTest::test11",
+        "org.jsoup.nodes.Attribute_ESTest::test12",
+        "org.jsoup.nodes.Attribute_ESTest::test10",
+        "org.jsoup.nodes.Attribute_ESTest::test19",
+        "org.jsoup.nodes.Attribute_ESTest::test17",
+        "org.jsoup.nodes.Attribute_ESTest::test18",
+        "org.jsoup.nodes.Attribute_ESTest::test04",
+        "org.jsoup.nodes.Attribute_ESTest::test05",
+        "org.jsoup.nodes.Attribute_ESTest::test02",
+        "org.jsoup.nodes.Attribute_ESTest::test24",
+        "org.jsoup.nodes.Attribute_ESTest::test03",
+        "org.jsoup.nodes.Attribute_ESTest::test25",
+        "org.jsoup.nodes.Attribute_ESTest::test00",
+        "org.jsoup.nodes.Attribute_ESTest::test22",
+        "org.jsoup.nodes.Attribute_ESTest::test01",
+        "org.jsoup.nodes.Attribute_ESTest::test23",
+        "org.jsoup.nodes.Attribute_ESTest::test20",
+        "org.jsoup.nodes.Attribute_ESTest::test21",
+        "org.jsoup.nodes.Attribute_ESTest::test08",
+        "org.jsoup.nodes.Attribute_ESTest::test09",
+        "org.jsoup.nodes.Attribute_ESTest::test06",
+        "org.jsoup.nodes.Attribute_ESTest::test07"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 65,
+      "line_coverage_percent": 93.84615384615384,
+      "branch_covered": 45,
+      "branch_total": 50,
+      "branch_coverage_percent": 90.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1828,
+      "tests": [
+        "org.jsoup.nodes.Attribute_ESTest::test15",
+        "org.jsoup.nodes.Attribute_ESTest::test16",
+        "org.jsoup.nodes.Attribute_ESTest::test13",
+        "org.jsoup.nodes.Attribute_ESTest::test14",
+        "org.jsoup.nodes.Attribute_ESTest::test11",
+        "org.jsoup.nodes.Attribute_ESTest::test12",
+        "org.jsoup.nodes.Attribute_ESTest::test10",
+        "org.jsoup.nodes.Attribute_ESTest::test19",
+        "org.jsoup.nodes.Attribute_ESTest::test17",
+        "org.jsoup.nodes.Attribute_ESTest::test18",
+        "org.jsoup.nodes.Attribute_ESTest::test04",
+        "org.jsoup.nodes.Attribute_ESTest::test05",
+        "org.jsoup.nodes.Attribute_ESTest::test02",
+        "org.jsoup.nodes.Attribute_ESTest::test24",
+        "org.jsoup.nodes.Attribute_ESTest::test03",
+        "org.jsoup.nodes.Attribute_ESTest::test25",
+        "org.jsoup.nodes.Attribute_ESTest::test00",
+        "org.jsoup.nodes.Attribute_ESTest::test22",
+        "org.jsoup.nodes.Attribute_ESTest::test01",
+        "org.jsoup.nodes.Attribute_ESTest::test23",
+        "org.jsoup.nodes.Attribute_ESTest::test20",
+        "org.jsoup.nodes.Attribute_ESTest::test21",
+        "org.jsoup.nodes.Attribute_ESTest::test08",
+        "org.jsoup.nodes.Attribute_ESTest::test09",
+        "org.jsoup.nodes.Attribute_ESTest::test06",
+        "org.jsoup.nodes.Attribute_ESTest::test07"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.nodes.Attribute_ESTest::test17",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.nodes.Attribute_ESTest.test17(Attribute_ESTest.java:320)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.nodes.Attribute_ESTest::test02",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.nodes.Attribute_ESTest.test02(Attribute_ESTest.java:49)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.nodes.Attribute_ESTest::test00",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.nodes.Attribute_ESTest.test00(Attribute_ESTest.java:25)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.nodes.Attribute_ESTest::test09",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.nodes.Attribute_ESTest.test09(Attribute_ESTest.java:188)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 65,
+      "line_coverage_percent": 93.84615384615384,
+      "branch_covered": 41,
+      "branch_total": 50,
+      "branch_coverage_percent": 82.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/88/Jsoup-88-Round1-s101-f069682435f1/evaluation-1",
+  "finished_at": "2026-10-05T02:13:39.453565+00:00"
+}

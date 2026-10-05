@@ -1,0 +1,104 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-22-Round1-s101-646c311a219f",
+  "unit": {
+    "project": "Closure",
+    "bug": "22",
+    "target": "com.google.javascript.jscomp.CheckSideEffects",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:28:28.940353+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/22/Closure-22-Round1-s101-646c311a219f",
+    "tests": "MOSA_EvoSuite/Test/Closure/22/Closure-22-Round1-s101-646c311a219f",
+    "config": "MOSA_EvoSuite/Configuration/Closure/22/Closure-22-Round1-s101-646c311a219f"
+  },
+  "generation_time_sec": 52.474,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/22/Closure-22-Round1-s101-646c311a219f/com/google/javascript/jscomp/CheckSideEffects_ESTest.java": "1de6358b7d4b3dc1d22d9cc420c572b1759cb47c7c0509be0d32a733b741febd",
+    "MOSA_EvoSuite/Test/Closure/22/Closure-22-Round1-s101-646c311a219f/com/google/javascript/jscomp/CheckSideEffects_ESTest_scaffolding.java": "39bad30c10227ebb52bbb2ac760bf519d66766c5ee5f6f89ab7d43fb641ff84e"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 5,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2203,
+      "tests": [
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test2",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test3",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test4",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test0",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 30,
+      "line_total": 58,
+      "line_coverage_percent": 51.724137931034484,
+      "branch_covered": 17,
+      "branch_total": 32,
+      "branch_coverage_percent": 53.125
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 4453,
+      "tests": [
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test2",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test3",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test4",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test0",
+        "com.google.javascript.jscomp.CheckSideEffects_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "com.google.javascript.jscomp.CheckSideEffects_ESTest::test1",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NullPointerException",
+          "trace": "java.lang.AssertionError: Expecting exception: NullPointerException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat com.google.javascript.jscomp.CheckSideEffects_ESTest.test1(CheckSideEffects_ESTest.java:1030)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 22,
+      "line_total": 74,
+      "line_coverage_percent": 29.72972972972973,
+      "branch_covered": 14,
+      "branch_total": 66,
+      "branch_coverage_percent": 21.21212121212121
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/22/Closure-22-Round1-s101-646c311a219f/evaluation-1",
+  "finished_at": "2026-10-04T19:31:27.594478+00:00"
+}

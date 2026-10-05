@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-52-Round1-s101-aa8247e99479/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.76,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

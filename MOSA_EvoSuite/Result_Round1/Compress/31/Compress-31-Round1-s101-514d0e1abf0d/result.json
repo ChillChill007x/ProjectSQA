@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-31-Round1-s101-514d0e1abf0d",
+  "unit": {
+    "project": "Compress",
+    "bug": "31",
+    "target": "org.apache.commons.compress.archivers.tar.TarUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:57:53.107316+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/31/Compress-31-Round1-s101-514d0e1abf0d",
+    "tests": "MOSA_EvoSuite/Test/Compress/31/Compress-31-Round1-s101-514d0e1abf0d",
+    "config": "MOSA_EvoSuite/Configuration/Compress/31/Compress-31-Round1-s101-514d0e1abf0d"
+  },
+  "generation_time_sec": 36.368,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/31/Compress-31-Round1-s101-514d0e1abf0d/org/apache/commons/compress/archivers/tar/TarUtils_ESTest.java": "b54d52a93258bc729c7c862d9e74a35a5bfed82181cba859ef38f399b6d178f5",
+    "MOSA_EvoSuite/Test/Compress/31/Compress-31-Round1-s101-514d0e1abf0d/org/apache/commons/compress/archivers/tar/TarUtils_ESTest_scaffolding.java": "789102efd6df91a9003bbf18504f39838fb4779a2b0f2e05303f0321ffe060cb"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178",
+      "org.apache.commons.compress.archivers.tar.TarUtilsTest::testParseOctalInvalid"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 30,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 488,
+      "tests": [
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test17",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test18",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test19",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test13",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test14",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test15",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test16",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test10",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test11",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test12",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test06",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test28",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test07",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test29",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test08",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test09",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test02",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test24",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test03",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test25",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test04",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test26",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test05",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test27",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test20",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test21",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test00",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test22",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test01",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test23"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 138,
+      "line_total": 158,
+      "line_coverage_percent": 87.34177215189874,
+      "branch_covered": 98,
+      "branch_total": 108,
+      "branch_coverage_percent": 90.74074074074075
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 674,
+      "tests": [
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test17",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test18",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test19",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test13",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test14",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test15",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test16",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test10",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test11",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test12",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test06",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test28",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test07",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test29",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test08",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test09",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test02",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test24",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test03",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test25",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test04",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test26",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test05",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test27",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test20",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test21",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test00",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test22",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test01",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test23"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 139,
+      "line_total": 160,
+      "line_coverage_percent": 86.875,
+      "branch_covered": 99,
+      "branch_total": 110,
+      "branch_coverage_percent": 90.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/31/Compress-31-Round1-s101-514d0e1abf0d/evaluation-1",
+  "finished_at": "2026-10-04T22:59:10.880813+00:00"
+}

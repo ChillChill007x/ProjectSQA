@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-22-Round1-s101-2c737c908912/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.825,
+  "stdout": "org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself\norg.jsoup.nodes.NodeTest::nodeIsNotASiblingOfItself\norg.jsoup.nodes.NodeTest::orphanNodeReturnsNullForSiblingElements",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-14-Round1-s101-c9141b87ba80",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "14",
+    "target": "org.jsoup.parser.Tokeniser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:19:49.654600+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80"
+  },
+  "generation_time_sec": 43.729,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80/org/jsoup/parser/Tokeniser_ESTest.java": "f4d9e7779deaf044bca00d2294e657c76dfd1f639687e24d57ddb442c8a325f6",
+    "MOSA_EvoSuite/Test/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80/org/jsoup/parser/Tokeniser_ESTest_scaffolding.java": "5af0dbc08e7afc49544b430914c99c20a2696937f8174c672430d919a7a251a7"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.ParserTest::parsesUnterminatedTextarea",
+    "available_triggers": [
+      "org.jsoup.parser.ParserTest::parsesUnterminatedTextarea",
+      "org.jsoup.parser.ParserTest::handlesUnclosedTitle"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 32,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 824,
+      "tests": [
+        "org.jsoup.parser.Tokeniser_ESTest::test19",
+        "org.jsoup.parser.Tokeniser_ESTest::test17",
+        "org.jsoup.parser.Tokeniser_ESTest::test18",
+        "org.jsoup.parser.Tokeniser_ESTest::test11",
+        "org.jsoup.parser.Tokeniser_ESTest::test12",
+        "org.jsoup.parser.Tokeniser_ESTest::test31",
+        "org.jsoup.parser.Tokeniser_ESTest::test10",
+        "org.jsoup.parser.Tokeniser_ESTest::test15",
+        "org.jsoup.parser.Tokeniser_ESTest::test16",
+        "org.jsoup.parser.Tokeniser_ESTest::test13",
+        "org.jsoup.parser.Tokeniser_ESTest::test14",
+        "org.jsoup.parser.Tokeniser_ESTest::test30",
+        "org.jsoup.parser.Tokeniser_ESTest::test08",
+        "org.jsoup.parser.Tokeniser_ESTest::test09",
+        "org.jsoup.parser.Tokeniser_ESTest::test06",
+        "org.jsoup.parser.Tokeniser_ESTest::test28",
+        "org.jsoup.parser.Tokeniser_ESTest::test07",
+        "org.jsoup.parser.Tokeniser_ESTest::test29",
+        "org.jsoup.parser.Tokeniser_ESTest::test00",
+        "org.jsoup.parser.Tokeniser_ESTest::test22",
+        "org.jsoup.parser.Tokeniser_ESTest::test01",
+        "org.jsoup.parser.Tokeniser_ESTest::test23",
+        "org.jsoup.parser.Tokeniser_ESTest::test20",
+        "org.jsoup.parser.Tokeniser_ESTest::test21",
+        "org.jsoup.parser.Tokeniser_ESTest::test04",
+        "org.jsoup.parser.Tokeniser_ESTest::test26",
+        "org.jsoup.parser.Tokeniser_ESTest::test05",
+        "org.jsoup.parser.Tokeniser_ESTest::test27",
+        "org.jsoup.parser.Tokeniser_ESTest::test02",
+        "org.jsoup.parser.Tokeniser_ESTest::test24",
+        "org.jsoup.parser.Tokeniser_ESTest::test03",
+        "org.jsoup.parser.Tokeniser_ESTest::test25"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 108,
+      "line_total": 122,
+      "line_coverage_percent": 88.52459016393442,
+      "branch_covered": 58,
+      "branch_total": 70,
+      "branch_coverage_percent": 82.85714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1138,
+      "tests": [
+        "org.jsoup.parser.Tokeniser_ESTest::test19",
+        "org.jsoup.parser.Tokeniser_ESTest::test17",
+        "org.jsoup.parser.Tokeniser_ESTest::test18",
+        "org.jsoup.parser.Tokeniser_ESTest::test11",
+        "org.jsoup.parser.Tokeniser_ESTest::test12",
+        "org.jsoup.parser.Tokeniser_ESTest::test31",
+        "org.jsoup.parser.Tokeniser_ESTest::test10",
+        "org.jsoup.parser.Tokeniser_ESTest::test15",
+        "org.jsoup.parser.Tokeniser_ESTest::test16",
+        "org.jsoup.parser.Tokeniser_ESTest::test13",
+        "org.jsoup.parser.Tokeniser_ESTest::test14",
+        "org.jsoup.parser.Tokeniser_ESTest::test30",
+        "org.jsoup.parser.Tokeniser_ESTest::test08",
+        "org.jsoup.parser.Tokeniser_ESTest::test09",
+        "org.jsoup.parser.Tokeniser_ESTest::test06",
+        "org.jsoup.parser.Tokeniser_ESTest::test28",
+        "org.jsoup.parser.Tokeniser_ESTest::test07",
+        "org.jsoup.parser.Tokeniser_ESTest::test29",
+        "org.jsoup.parser.Tokeniser_ESTest::test00",
+        "org.jsoup.parser.Tokeniser_ESTest::test22",
+        "org.jsoup.parser.Tokeniser_ESTest::test01",
+        "org.jsoup.parser.Tokeniser_ESTest::test23",
+        "org.jsoup.parser.Tokeniser_ESTest::test20",
+        "org.jsoup.parser.Tokeniser_ESTest::test21",
+        "org.jsoup.parser.Tokeniser_ESTest::test04",
+        "org.jsoup.parser.Tokeniser_ESTest::test26",
+        "org.jsoup.parser.Tokeniser_ESTest::test05",
+        "org.jsoup.parser.Tokeniser_ESTest::test27",
+        "org.jsoup.parser.Tokeniser_ESTest::test02",
+        "org.jsoup.parser.Tokeniser_ESTest::test24",
+        "org.jsoup.parser.Tokeniser_ESTest::test03",
+        "org.jsoup.parser.Tokeniser_ESTest::test25"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.parser.Tokeniser_ESTest::test30",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NullPointerException",
+          "trace": "java.lang.AssertionError: Expecting exception: NullPointerException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.parser.Tokeniser_ESTest.test30(Tokeniser_ESTest.java:556)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 108,
+      "line_total": 121,
+      "line_coverage_percent": 89.25619834710744,
+      "branch_covered": 58,
+      "branch_total": 70,
+      "branch_coverage_percent": 82.85714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/14/Jsoup-14-Round1-s101-c9141b87ba80/evaluation-1",
+  "finished_at": "2026-10-05T01:21:18.915041+00:00"
+}

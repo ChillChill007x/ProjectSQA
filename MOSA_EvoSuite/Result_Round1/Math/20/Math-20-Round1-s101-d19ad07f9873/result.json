@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-20-Round1-s101-d19ad07f9873",
+  "unit": {
+    "project": "Math",
+    "bug": "20",
+    "target": "org.apache.commons.math3.optimization.direct.CMAESOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:22:05.339552+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/20/Math-20-Round1-s101-d19ad07f9873",
+    "tests": "MOSA_EvoSuite/Test/Math/20/Math-20-Round1-s101-d19ad07f9873",
+    "config": "MOSA_EvoSuite/Configuration/Math/20/Math-20-Round1-s101-d19ad07f9873"
+  },
+  "generation_time_sec": 46.766,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/20/Math-20-Round1-s101-d19ad07f9873/org/apache/commons/math3/optimization/direct/CMAESOptimizer_ESTest.java": "ee8f290da37025c35734c9c1ff587df2bc3b35644d6d42ef23d5025c263a45d7",
+    "MOSA_EvoSuite/Test/Math/20/Math-20-Round1-s101-d19ad07f9873/org/apache/commons/math3/optimization/direct/CMAESOptimizer_ESTest_scaffolding.java": "f051b6591ca80d47dcaf9252648510fa86ff5bcedcdad2091d8b5f9462f341b0"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864",
+    "available_triggers": [
+      "org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 13,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 13,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 919,
+      "tests": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test09",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test08",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test07",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test06",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test05",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test04",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test03",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test02",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test01",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test12",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test00",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test11",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 387,
+      "line_total": 434,
+      "line_coverage_percent": 89.17050691244239,
+      "branch_covered": 185,
+      "branch_total": 230,
+      "branch_coverage_percent": 80.43478260869566
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 13,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1558,
+      "tests": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test09",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test08",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test07",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test06",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test05",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test04",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test03",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test02",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test01",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test12",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test00",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test11",
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 387,
+      "line_total": 434,
+      "line_coverage_percent": 89.17050691244239,
+      "branch_covered": 185,
+      "branch_total": 230,
+      "branch_coverage_percent": 80.43478260869566
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/20/Math-20-Round1-s101-d19ad07f9873/evaluation-1",
+  "finished_at": "2026-10-05T03:24:37.125752+00:00"
+}

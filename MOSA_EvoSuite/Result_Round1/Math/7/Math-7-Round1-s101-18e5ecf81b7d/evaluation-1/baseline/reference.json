@@ -1,0 +1,8 @@
+{
+  "trigger": "org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest::testEventsScheduling",
+  "available_triggers": [
+    "org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest::testEventsScheduling"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

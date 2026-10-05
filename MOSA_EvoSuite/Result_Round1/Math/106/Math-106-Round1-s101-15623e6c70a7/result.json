@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-106-Round1-s101-15623e6c70a7",
+  "unit": {
+    "project": "Math",
+    "bug": "106",
+    "target": "org.apache.commons.math.fraction.ProperFractionFormat",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T04:32:35.165788+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/106/Math-106-Round1-s101-15623e6c70a7",
+    "tests": "MOSA_EvoSuite/Test/Math/106/Math-106-Round1-s101-15623e6c70a7",
+    "config": "MOSA_EvoSuite/Configuration/Math/106/Math-106-Round1-s101-15623e6c70a7"
+  },
+  "generation_time_sec": 38.28,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/106/Math-106-Round1-s101-15623e6c70a7/org/apache/commons/math/fraction/ProperFractionFormat_ESTest.java": "8f55eb2f8e0a04bb57b956c91425db222fac1725e7591cc2b1b17477d57fb6c7",
+    "MOSA_EvoSuite/Test/Math/106/Math-106-Round1-s101-15623e6c70a7/org/apache/commons/math/fraction/ProperFractionFormat_ESTest_scaffolding.java": "c47c1f24554c3678b2814b25bcb78d9751e8a0b20831c0fe7dc3d1bba311c4b6"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.fraction.FractionFormatTest::testParseProperInvalidMinus",
+    "available_triggers": [
+      "org.apache.commons.math.fraction.FractionFormatTest::testParseProperInvalidMinus"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 391,
+      "tests": [
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test0",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test1",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test6",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test2",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test3",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test4",
+        "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test5"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.fraction.ProperFractionFormat_ESTest::test5",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<¤[ ]#,##0.00> but was:<¤[]#,##0.00>",
+          "trace": "org.junit.ComparisonFailure: expected:<¤[ ]#,##0.00> but was:<¤[]#,##0.00>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.fraction.ProperFractionFormat_ESTest.test5(ProperFractionFormat_ESTest.java:223)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 47,
+      "line_total": 63,
+      "line_coverage_percent": 74.60317460317461,
+      "branch_covered": 12,
+      "branch_total": 19,
+      "branch_coverage_percent": 63.1578947368421
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T04:34:08.668283+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Codec-12-Round1-s101-9eb1c17cfa38/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipToEnd\norg.apache.commons.codec.binary.Base32InputStreamTest::testCodec130\norg.apache.commons.codec.binary.Base32InputStreamTest::testSkipWrongArgument\norg.apache.commons.codec.binary.Base32InputStreamTest::testAvailable\norg.apache.commons.codec.binary.Base32InputStreamTest::testSkipPastEnd\norg.apache.commons.codec.binary.Base32InputStreamTest::testSkipBig\norg.apache.commons.codec.binary.Base64InputStreamTest::testSkipToEnd\norg.apache.commons.codec.binary.Base64InputStreamTest::testCodec130\norg.apache.commons.codec.binary.Base64InputStreamTest::testSkipWrongArgument\norg.apache.commons.codec.binary.Base64InputStreamTest::testAvailable\norg.apache.commons.codec.binary.Base64InputStreamTest::testSkipPastEnd\norg.apache.commons.codec.binary.Base64InputStreamTest::testSkipBig",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

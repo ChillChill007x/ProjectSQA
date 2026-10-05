@@ -1,0 +1,12 @@
+{
+  "trigger": "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF",
+  "available_triggers": [
+    "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF",
+    "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakDecode",
+    "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakEncode",
+    "org.apache.commons.codec.net.QuotedPrintableCodecTest::testUltimateSoftBreak",
+    "org.apache.commons.codec.net.QuotedPrintableCodecTest::testTrailingSpecial"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

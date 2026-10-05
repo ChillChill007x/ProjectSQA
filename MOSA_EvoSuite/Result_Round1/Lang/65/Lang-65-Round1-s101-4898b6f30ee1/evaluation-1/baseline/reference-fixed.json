@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Lang-65-Round1-s101-4898b6f30ee1/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang.time.DateUtilsTest::testTruncateLang59"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.619,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

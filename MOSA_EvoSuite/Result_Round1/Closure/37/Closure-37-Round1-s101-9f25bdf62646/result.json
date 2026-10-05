@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-37-Round1-s101-9f25bdf62646",
+  "unit": {
+    "project": "Closure",
+    "bug": "37",
+    "target": "com.google.javascript.jscomp.parsing.IRFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:53:46.957133+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/37/Closure-37-Round1-s101-9f25bdf62646",
+    "tests": "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-9f25bdf62646",
+    "config": "MOSA_EvoSuite/Configuration/Closure/37/Closure-37-Round1-s101-9f25bdf62646"
+  },
+  "generation_time_sec": 73.506,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-9f25bdf62646/com/google/javascript/jscomp/parsing/IRFactory_ESTest.java": "f704134abb06868aaaa11cfeca1b4ea8cf450027a061efd717e62751f8e31df6",
+    "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-9f25bdf62646/com/google/javascript/jscomp/parsing/IRFactory_ESTest_scaffolding.java": "9a3f82e54bac6e9f2ce7e8516652d1501e58f8bf577583944b9c5e96f1fc419d"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction",
+    "available_triggers": [
+      "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 11,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1752,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 83,
+      "line_total": 228,
+      "line_coverage_percent": 36.40350877192982,
+      "branch_covered": 20,
+      "branch_total": 139,
+      "branch_coverage_percent": 14.388489208633093
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2357,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 83,
+      "line_total": 228,
+      "line_coverage_percent": 36.40350877192982,
+      "branch_covered": 20,
+      "branch_total": 139,
+      "branch_coverage_percent": 14.388489208633093
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/37/Closure-37-Round1-s101-9f25bdf62646/evaluation-1",
+  "finished_at": "2026-10-04T19:57:40.947159+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-14-Round1-s101-bd6cba4df509/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.fasterxml.jackson.core.io.TestIOContext::testAllocations",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-10-Round1-s101-7e0ac87ccef5",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "10",
+    "target": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:18:12.931029+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5"
+  },
+  "generation_time_sec": 46.496,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5/com/fasterxml/jackson/databind/ser/BeanSerializerFactory_ESTest.java": "1d36fa8665604da74d1b27cbdd3306e05ea2584a78a2a291a034429c07047755",
+    "MOSA_EvoSuite/Test/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5/com/fasterxml/jackson/databind/ser/BeanSerializerFactory_ESTest_scaffolding.java": "827893789336bf653641a15293aabcbedb0acf6816eb58502cb89d49289b9c80"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.ser.TestAnyGetter::testIssue705",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.ser.TestAnyGetter::testIssue705"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 11,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1735,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test06",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test08",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 34,
+      "line_total": 250,
+      "line_coverage_percent": 13.6,
+      "branch_covered": 23,
+      "branch_total": 154,
+      "branch_coverage_percent": 14.935064935064934
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1624,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test06",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test08",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 34,
+      "line_total": 248,
+      "line_coverage_percent": 13.709677419354838,
+      "branch_covered": 23,
+      "branch_total": 152,
+      "branch_coverage_percent": 15.131578947368421
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-7e0ac87ccef5/evaluation-1",
+  "finished_at": "2026-10-04T23:20:11.981160+00:00"
+}

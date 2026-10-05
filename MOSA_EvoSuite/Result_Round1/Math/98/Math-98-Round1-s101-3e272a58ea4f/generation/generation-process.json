@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.math.linear.RealMatrixImpl",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Math-98-Round1-s101-3e272a58ea4f/generation-fixed/target/classes:/opt/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Math/98/Math-98-Round1-s101-3e272a58ea4f",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Math/98/Math-98-Round1-s101-3e272a58ea4f/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 32.062,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.math.linear.RealMatrixImpl\n* Starting Client-0\n* Connecting to master process on port 19617\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83569/checkouts/Math-98-Round1-s101-3e272a58ea4f/generation-fixed/target/classes\n  - /opt/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.math.linear.RealMatrixImpl\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 268\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:===========>                       34%]\r[Progress:>                             3%] [Cov:===============>                   45%]\r[Progress:>                             3%] [Cov:==================>                52%]\r[Progress:>                             3%] [Cov:===================>               55%]\r[Progress:=>                            6%] [Cov:====================>              58%]\r[Progress:===>                          10%] [Cov:=====================>             60%]\r[Progress:===>                          10%] [Cov:=========================>         73%]\r[Progress:======>                       23%] [Cov:==========================>        76%]\r[Progress:=========>                    33%] [Cov:==========================>        77%]\r[Progress:============>                 40%] [Cov:===========================>       78%]\r[Progress:================>             56%] [Cov:============================>      80%]* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n[MASTER] 21:29:41.021 [logback-2] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.math.linear.RealMatrixImpl with seed 101. Configuration id : null\njava.lang.OutOfMemoryError: GC overhead limit exceeded\n[MASTER] 21:29:41.294 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:43.301 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:44.302 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:45.305 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:46.306 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:47.307 [main] ERROR SearchStatistics - No obtained value for output variable: Total_Goals\n[MASTER] 21:29:47.307 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing\n[MASTER] 21:29:47.408 [main] ERROR TestGeneration - failed to write statistics data\n"
+}

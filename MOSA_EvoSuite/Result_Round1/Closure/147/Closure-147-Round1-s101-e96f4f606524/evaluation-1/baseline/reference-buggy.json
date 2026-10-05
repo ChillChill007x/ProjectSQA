@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-147-Round1-s101-e96f4f606524/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CheckGlobalThisTest::testIssue182a"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.828,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CheckGlobalThisTest::testIssue182a\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

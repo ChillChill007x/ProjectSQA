@@ -1,0 +1,1 @@
+{"run_count":4,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":2196,"tests":["com.google.javascript.jscomp.ScopedAliases_ESTest::test2","com.google.javascript.jscomp.ScopedAliases_ESTest::test3","com.google.javascript.jscomp.ScopedAliases_ESTest::test0","com.google.javascript.jscomp.ScopedAliases_ESTest::test1"],"failures":[],"passed":true}

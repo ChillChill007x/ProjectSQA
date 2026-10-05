@@ -1,0 +1,126 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-56-Round1-s101-c120e959c005",
+  "unit": {
+    "project": "Math",
+    "bug": "56",
+    "target": "org.apache.commons.math.util.MultidimensionalCounter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:53:53.973204+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/56/Math-56-Round1-s101-c120e959c005",
+    "tests": "MOSA_EvoSuite/Test/Math/56/Math-56-Round1-s101-c120e959c005",
+    "config": "MOSA_EvoSuite/Configuration/Math/56/Math-56-Round1-s101-c120e959c005"
+  },
+  "generation_time_sec": 26.828,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/56/Math-56-Round1-s101-c120e959c005/org/apache/commons/math/util/MultidimensionalCounter_ESTest.java": "437a7d4eef4684669de7d5a86eb312a17c5b9245773322e96fe0ac0b768da46d",
+    "MOSA_EvoSuite/Test/Math/56/Math-56-Round1-s101-c120e959c005/org/apache/commons/math/util/MultidimensionalCounter_ESTest_scaffolding.java": "1666b6e3a7a56ea627ffb2ca5e8ffc712d88061d60c4690dd4d048302650b8f1"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.util.MultidimensionalCounterTest::testIterationConsistency",
+    "available_triggers": [
+      "org.apache.commons.math.util.MultidimensionalCounterTest::testIterationConsistency"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 16,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 16,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2888,
+      "tests": [
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test08",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test09",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test06",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test07",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test00",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test11",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test01",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test12",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test10",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test04",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test15",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test05",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test02",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test13",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test03",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test14"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 49,
+      "line_total": 49,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 24,
+      "branch_total": 24,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 16,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2262,
+      "tests": [
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test08",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test09",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test06",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test07",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test00",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test11",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test01",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test12",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test10",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test04",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test15",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test05",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test02",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test13",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test03",
+        "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test14"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.util.MultidimensionalCounter_ESTest::test05",
+          "exception": "org.junit.internal.ArrayComparisonFailure",
+          "message": "arrays first differed at element [8]; expected:<360> but was:<27>",
+          "trace": "arrays first differed at element [8]; expected:<360> but was:<27>\n\tat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)\n\tat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)\n\tat org.junit.Assert.internalArrayEquals(Assert.java:534)\n\tat org.junit.Assert.assertArrayEquals(Assert.java:418)\n\tat org.junit.Assert.assertArrayEquals(Assert.java:429)\n\tat org.apache.commons.math.util.MultidimensionalCounter_ESTest.test05(MultidimensionalCounter_ESTest.java:167)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.lang.AssertionError: expected:<360> but was:<27>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)\n\tat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)\n\t... 17 more\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 54,
+      "line_total": 54,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 26,
+      "branch_total": 26,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/56/Math-56-Round1-s101-c120e959c005/evaluation-1",
+  "finished_at": "2026-10-05T03:55:50.110204+00:00"
+}

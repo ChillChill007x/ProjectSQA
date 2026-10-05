@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-23-Round1-s101-45defacdbedb",
+  "unit": {
+    "project": "Chart",
+    "bug": "23",
+    "target": "org.jfree.chart.renderer.category.MinMaxCategoryRenderer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:12:07.990882+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/23/Chart-23-Round1-s101-45defacdbedb",
+    "tests": "MOSA_EvoSuite/Test/Chart/23/Chart-23-Round1-s101-45defacdbedb",
+    "config": "MOSA_EvoSuite/Configuration/Chart/23/Chart-23-Round1-s101-45defacdbedb"
+  },
+  "generation_time_sec": 46.936,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/23/Chart-23-Round1-s101-45defacdbedb/org/jfree/chart/renderer/category/MinMaxCategoryRenderer_ESTest.java": "de1041d6cbcd3a5e38473eec1a93ed8dceb8fbf0f5a1637b1194fdf600e6d5ce",
+    "MOSA_EvoSuite/Test/Chart/23/Chart-23-Round1-s101-45defacdbedb/org/jfree/chart/renderer/category/MinMaxCategoryRenderer_ESTest_scaffolding.java": "4d836a218ce81059e18ede73f328fcb2fc587c2ad3831564e7a17af8c617acd6"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests::testEquals",
+    "available_triggers": [
+      "org.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests::testEquals"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 21,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1161,
+      "tests": [
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test06",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test17",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test07",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test18",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test08",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test19",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test09",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test20",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test10",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test00",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test11",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test01",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test12",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test02",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test13",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test03",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test14",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test04",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test15",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test05",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 68,
+      "line_total": 132,
+      "line_coverage_percent": 51.515151515151516,
+      "branch_covered": 23,
+      "branch_total": 48,
+      "branch_coverage_percent": 47.916666666666664
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 21,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1201,
+      "tests": [
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test06",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test17",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test07",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test18",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test08",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test19",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test09",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test20",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test10",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test00",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test11",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test01",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test12",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test02",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test13",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test03",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test14",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test04",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test15",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test05",
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test16"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test00",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest.test00(MinMaxCategoryRenderer_ESTest.java:109)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test11",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest.test11(MinMaxCategoryRenderer_ESTest.java:810)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest::test13",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.jfree.chart.renderer.category.MinMaxCategoryRenderer_ESTest.test13(MinMaxCategoryRenderer_ESTest.java:937)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 56,
+      "line_total": 120,
+      "line_coverage_percent": 46.666666666666664,
+      "branch_covered": 13,
+      "branch_total": 38,
+      "branch_coverage_percent": 34.21052631578947
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Chart/23/Chart-23-Round1-s101-45defacdbedb/evaluation-1",
+  "finished_at": "2026-10-04T20:13:45.237030+00:00"
+}

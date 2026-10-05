@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":459,"tests":["org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter_ESTest::test1","org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter_ESTest::test0"],"failures":[],"passed":true}

@@ -1,0 +1,14 @@
+{
+  "trigger": "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset",
+  "available_triggers": [
+    "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset",
+    "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlIso8859",
+    "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlUtf8",
+    "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlDisabledNoChanges",
+    "org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration",
+    "org.jsoup.parser.XmlTreeBuilderTest::testDetectCharsetEncodingDeclaration",
+    "org.jsoup.parser.XmlTreeBuilderTest::testParseDeclarationAttributes"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-61-Round1-s101-662a723fe5e4",
+  "unit": {
+    "project": "Math",
+    "bug": "61",
+    "target": "org.apache.commons.math.distribution.PoissonDistributionImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:58:14.511761+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/61/Math-61-Round1-s101-662a723fe5e4",
+    "tests": "MOSA_EvoSuite/Test/Math/61/Math-61-Round1-s101-662a723fe5e4",
+    "config": "MOSA_EvoSuite/Configuration/Math/61/Math-61-Round1-s101-662a723fe5e4"
+  },
+  "generation_time_sec": 24.658,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/61/Math-61-Round1-s101-662a723fe5e4/org/apache/commons/math/distribution/PoissonDistributionImpl_ESTest.java": "7af06e0cfbc598c22c854c33047a72efa4d726adce163af116305e36840dc7ab",
+    "MOSA_EvoSuite/Test/Math/61/Math-61-Round1-s101-662a723fe5e4/org/apache/commons/math/distribution/PoissonDistributionImpl_ESTest_scaffolding.java": "84df95b69cce4c9626f828d5542a0bfef599a7b2cf00b44b1790617f9dee7e40"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.distribution.PoissonDistributionTest::testMean",
+    "available_triggers": [
+      "org.apache.commons.math.distribution.PoissonDistributionTest::testMean"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 12,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2319,
+      "tests": [
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test05",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test04",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test03",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test02",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test01",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test00",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test11",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test10",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test09",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test08",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test07",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 34,
+      "line_total": 34,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 12,
+      "branch_total": 12,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2278,
+      "tests": [
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test05",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test04",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test03",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test02",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test01",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test00",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test11",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test10",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test09",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test08",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test07",
+        "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test06"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in org.apache.commons.math.distribution.PoissonDistributionImpl but in org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:387): org.evosuite.runtime.mock.java.lang.MockThrowable",
+          "trace": "java.lang.AssertionError: Exception was not thrown in org.apache.commons.math.distribution.PoissonDistributionImpl but in org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:387): org.evosuite.runtime.mock.java.lang.MockThrowable\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.apache.commons.math.distribution.PoissonDistributionImpl_ESTest.test06(PoissonDistributionImpl_ESTest.java:120)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 34,
+      "line_total": 34,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 12,
+      "branch_total": 12,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/61/Math-61-Round1-s101-662a723fe5e4/evaluation-1",
+  "finished_at": "2026-10-05T04:00:06.238080+00:00"
+}

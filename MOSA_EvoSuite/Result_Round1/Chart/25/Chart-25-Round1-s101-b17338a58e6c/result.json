@@ -1,0 +1,88 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-25-Round1-s101-b17338a58e6c",
+  "unit": {
+    "project": "Chart",
+    "bug": "25",
+    "target": "org.jfree.chart.renderer.category.StatisticalBarRenderer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T20:14:56.092185+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/25/Chart-25-Round1-s101-b17338a58e6c",
+    "tests": "MOSA_EvoSuite/Test/Chart/25/Chart-25-Round1-s101-b17338a58e6c",
+    "config": "MOSA_EvoSuite/Configuration/Chart/25/Chart-25-Round1-s101-b17338a58e6c"
+  },
+  "generation_time_sec": 43.422,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/25/Chart-25-Round1-s101-b17338a58e6c/org/jfree/chart/renderer/category/StatisticalBarRenderer_ESTest.java": "09bc9b346ff369d932e0ae55470e8fa9404ec281b89cb647eec083e7cd8754a6",
+    "MOSA_EvoSuite/Test/Chart/25/Chart-25-Round1-s101-b17338a58e6c/org/jfree/chart/renderer/category/StatisticalBarRenderer_ESTest_scaffolding.java": "f26b51155710db76d2a7e16fb2e936ab46b128a6d030d2c29bbc1bfb9ac6a623"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanVertical",
+    "available_triggers": [
+      "org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanVertical",
+      "org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationVertical",
+      "org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanHorizontal",
+      "org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationHorizontal"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1182,
+      "tests": [
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test08",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test09",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test06",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test07",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test04",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test05",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test02",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test13",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test03",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test14",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test00",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test11",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test01",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test12",
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test10"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest::test11",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.chart.renderer.category.StatisticalBarRenderer_ESTest.test11(StatisticalBarRenderer_ESTest.java:2472)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 82,
+      "line_total": 182,
+      "line_coverage_percent": 45.05494505494506,
+      "branch_covered": 25,
+      "branch_total": 90,
+      "branch_coverage_percent": 27.77777777777778
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T20:16:22.642408+00:00"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-18-Round1-s101-49899b482e8b",
+  "unit": {
+    "project": "JxPath",
+    "bug": "18",
+    "target": "org.apache.commons.jxpath.ri.axes.AttributeContext",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:44:38.848285+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/18/JxPath-18-Round1-s101-49899b482e8b",
+    "tests": "MOSA_EvoSuite/Test/JxPath/18/JxPath-18-Round1-s101-49899b482e8b",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/18/JxPath-18-Round1-s101-49899b482e8b"
+  },
+  "generation_time_sec": 7.49,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/18/JxPath-18-Round1-s101-49899b482e8b/org/apache/commons/jxpath/ri/axes/AttributeContext_ESTest.java": "9f9d5472508e8a5ea530cf60c51f6c7d1f1fdabc52139be31eb817966db69d01",
+    "MOSA_EvoSuite/Test/JxPath/18/JxPath-18-Round1-s101-49899b482e8b/org/apache/commons/jxpath/ri/axes/AttributeContext_ESTest_scaffolding.java": "9b6665afcf6439591bce9c70f6c39bfdee98542ce13887859994ca1458a94e33"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisAttribute",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisAttribute",
+      "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisAttribute"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 535,
+      "tests": [
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test5",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test4",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test3",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test2",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test1",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 35,
+      "line_total": 35,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 20,
+      "branch_total": 20,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 542,
+      "tests": [
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test5",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test4",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test3",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test2",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test1",
+        "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest::test1",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NullPointerException",
+          "trace": "java.lang.AssertionError: Expecting exception: NullPointerException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.jxpath.ri.axes.AttributeContext_ESTest.test1(AttributeContext_ESTest.java:63)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 29,
+      "line_total": 29,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JxPath/18/JxPath-18-Round1-s101-49899b482e8b/evaluation-1",
+  "finished_at": "2026-10-05T00:45:10.861506+00:00"
+}

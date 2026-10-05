@@ -1,0 +1,205 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-12-Round1-s101-9eb1c17cfa38",
+  "unit": {
+    "project": "Codec",
+    "bug": "12",
+    "target": "org.apache.commons.codec.binary.BaseNCodecInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:17:36.160251+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38",
+    "tests": "MOSA_EvoSuite/Test/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38",
+    "config": "MOSA_EvoSuite/Configuration/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38"
+  },
+  "generation_time_sec": 36.405,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest.java": "757ac36d14bcea045ea82d7af5e01a86e08344cac51b7eb2008191e157b6800f",
+    "MOSA_EvoSuite/Test/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38/org/apache/commons/codec/binary/BaseNCodecInputStream_ESTest_scaffolding.java": "ef9d4029ce9a332010f9dd5425a645f47ed5f45fe678478b61490327766abc04"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipToEnd",
+    "available_triggers": [
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipToEnd",
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testCodec130",
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipWrongArgument",
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testAvailable",
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipPastEnd",
+      "org.apache.commons.codec.binary.Base32InputStreamTest::testSkipBig",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testSkipToEnd",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec130",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testSkipWrongArgument",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testAvailable",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testSkipPastEnd",
+      "org.apache.commons.codec.binary.Base64InputStreamTest::testSkipBig"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 14,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 229,
+      "tests": [
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test02",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test13",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test03",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test04",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test05",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test10",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test00",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test11",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test01",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test12",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test06",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test07",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test08",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 48,
+      "line_total": 49,
+      "line_coverage_percent": 97.95918367346938,
+      "branch_covered": 35,
+      "branch_total": 36,
+      "branch_coverage_percent": 97.22222222222223
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 233,
+      "tests": [
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test02",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test13",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test03",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test04",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test05",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test10",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test00",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test11",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test01",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test12",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test06",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test07",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test08",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test09"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test02",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<3>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<3>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test02(BaseNCodecInputStream_ESTest.java:146)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test13",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test13(BaseNCodecInputStream_ESTest.java:622)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test03",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<9>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<9>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test03(BaseNCodecInputStream_ESTest.java:185)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test04",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test04(BaseNCodecInputStream_ESTest.java:231)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test05",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test05(BaseNCodecInputStream_ESTest.java:269)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test10",
+          "exception": "java.io.IOException",
+          "message": "Stream closed",
+          "trace": "java.io.IOException: Stream closed\n\tat java.base/java.io.PushbackInputStream.ensureOpen(PushbackInputStream.java:75)\n\tat java.base/java.io.PushbackInputStream.available(PushbackInputStream.java:272)\n\tat java.base/java.io.FilterInputStream.available(FilterInputStream.java:167)\n\tat java.base/java.io.FilterInputStream.available(FilterInputStream.java:167)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test10(BaseNCodecInputStream_ESTest.java:465)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test00",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test00(BaseNCodecInputStream_ESTest.java:53)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test11",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<9>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<9>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test11(BaseNCodecInputStream_ESTest.java:507)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test01",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test01(BaseNCodecInputStream_ESTest.java:108)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test12",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<3>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<3>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test12(BaseNCodecInputStream_ESTest.java:567)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test07",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test07(BaseNCodecInputStream_ESTest.java:351)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test08",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<9>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<9>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test08(BaseNCodecInputStream_ESTest.java:392)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest::test09",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.binary.BaseNCodecInputStream_ESTest.test09(BaseNCodecInputStream_ESTest.java:431)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 10,
+      "line_total": 31,
+      "line_coverage_percent": 32.25806451612903,
+      "branch_covered": 5,
+      "branch_total": 26,
+      "branch_coverage_percent": 19.23076923076923
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38/evaluation-1",
+  "finished_at": "2026-10-04T21:18:34.673802+00:00"
+}

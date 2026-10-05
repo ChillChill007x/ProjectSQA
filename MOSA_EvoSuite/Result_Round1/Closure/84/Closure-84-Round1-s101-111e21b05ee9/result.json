@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-84-Round1-s101-111e21b05ee9",
+  "unit": {
+    "project": "Closure",
+    "bug": "84",
+    "target": "com.google.javascript.jscomp.parsing.IRFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:45:21.622050+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/84/Closure-84-Round1-s101-111e21b05ee9",
+    "tests": "MOSA_EvoSuite/Test/Closure/84/Closure-84-Round1-s101-111e21b05ee9",
+    "config": "MOSA_EvoSuite/Configuration/Closure/84/Closure-84-Round1-s101-111e21b05ee9"
+  },
+  "generation_time_sec": 58.885,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/84/Closure-84-Round1-s101-111e21b05ee9/com/google/javascript/jscomp/parsing/IRFactory_ESTest.java": "675e090d443281d7b51b99edf37e7303ae5077adaf82b01f9c4a071347d99448",
+    "MOSA_EvoSuite/Test/Closure/84/Closure-84-Round1-s101-111e21b05ee9/com/google/javascript/jscomp/parsing/IRFactory_ESTest_scaffolding.java": "ce90652b1cfbde62aab56d4afba02bdcfbc592e15ff1a2cf752f372a4cf26c7b"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.parsing.ParserTest::testDestructuringAssignForbidden4",
+    "available_triggers": [
+      "com.google.javascript.jscomp.parsing.ParserTest::testDestructuringAssignForbidden4"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 19,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2035,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test17",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test18",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test13",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test14",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test15",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test16",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test11",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 73,
+      "line_total": 248,
+      "line_coverage_percent": 29.43548387096774,
+      "branch_covered": 20,
+      "branch_total": 187,
+      "branch_coverage_percent": 10.695187165775401
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1763,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test17",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test18",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test13",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test14",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test15",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test16",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test11",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 73,
+      "line_total": 248,
+      "line_coverage_percent": 29.43548387096774,
+      "branch_covered": 20,
+      "branch_total": 187,
+      "branch_coverage_percent": 10.695187165775401
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/84/Closure-84-Round1-s101-111e21b05ee9/evaluation-1",
+  "finished_at": "2026-10-04T20:47:41.987282+00:00"
+}

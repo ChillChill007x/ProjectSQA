@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-26-Round1-s101-9701385bc030/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.TestDateTimeZoneCutover::testWithSecondOfMinuteInDstChange\norg.joda.time.TestDateTimeZoneCutover::testWithMinuteOfHourInDstChange\norg.joda.time.TestDateTimeZoneCutover::testWithMinuteOfHourInDstChange_mockZone\norg.joda.time.TestDateTimeZoneCutover::testBug2182444_usCentral\norg.joda.time.TestDateTimeZoneCutover::testWithMillisOfSecondInDstChange_Paris_summer\norg.joda.time.TestDateTimeZoneCutover::testWithHourOfDayInDstChange\norg.joda.time.TestDateTimeZoneCutover::testWithMillisOfSecondInDstChange_NewYork_winter\norg.joda.time.TestDateTimeZoneCutover::testBug2182444_ausNSW",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

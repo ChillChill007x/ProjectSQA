@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.LooseTypeCheckTest::testTypeRedefinition",
+  "available_triggers": [
+    "com.google.javascript.jscomp.LooseTypeCheckTest::testTypeRedefinition",
+    "com.google.javascript.jscomp.TypeCheckTest::testIssue635b",
+    "com.google.javascript.jscomp.TypeCheckTest::testTypeRedefinition"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

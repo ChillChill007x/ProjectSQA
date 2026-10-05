@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-148-Round1-s101-00296149c40b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.982,
+  "stdout": "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldTypeof\ncom.google.javascript.jscomp.SourceMapTest::testGoldenOutput0\ncom.google.javascript.jscomp.SourceMapTest::testGoldenOutput1\ncom.google.javascript.jscomp.SourceMapTest::testGoldenOutput2\ncom.google.javascript.jscomp.SourceMapTest::testGoldenOutput3\ncom.google.javascript.jscomp.SourceMapTest::testGoldenOutput4",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

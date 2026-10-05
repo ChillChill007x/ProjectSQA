@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-34-Round1-s101-da9feeebebce/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.481,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

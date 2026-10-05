@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-153-Round1-s101-aa9ad4228e30/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.NormalizeTest::testDuplicateVarInExterns"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.939,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.NormalizeTest::testDuplicateVarInExterns\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

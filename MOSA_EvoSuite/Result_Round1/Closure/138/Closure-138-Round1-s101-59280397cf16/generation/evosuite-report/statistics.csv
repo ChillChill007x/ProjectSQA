@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreter,BRANCH,0.296875,64,19

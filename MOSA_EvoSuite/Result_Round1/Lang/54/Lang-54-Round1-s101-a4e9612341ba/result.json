@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-54-Round1-s101-a4e9612341ba",
+  "unit": {
+    "project": "Lang",
+    "bug": "54",
+    "target": "org.apache.commons.lang.LocaleUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T02:52:05.675671+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/54/Lang-54-Round1-s101-a4e9612341ba",
+    "tests": "MOSA_EvoSuite/Test/Lang/54/Lang-54-Round1-s101-a4e9612341ba",
+    "config": "MOSA_EvoSuite/Configuration/Lang/54/Lang-54-Round1-s101-a4e9612341ba"
+  },
+  "generation_time_sec": 40.463,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/54/Lang-54-Round1-s101-a4e9612341ba/org/apache/commons/lang/LocaleUtils_ESTest.java": "d95c5e88afe65777d109fb286dee390523fc17cfebeb0dd6b6b42aa54df22436",
+    "MOSA_EvoSuite/Test/Lang/54/Lang-54-Round1-s101-a4e9612341ba/org/apache/commons/lang/LocaleUtils_ESTest_scaffolding.java": "cdee6b0aa7c16872c79623dd864d2240d4756fcfb56d84df7ce3002ff3668411"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.LocaleUtilsTest::testLang328",
+    "available_triggers": [
+      "org.apache.commons.lang.LocaleUtilsTest::testLang328"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 517,
+      "tests": [
+        "org.apache.commons.lang.LocaleUtils_ESTest::test09",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test08",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test19",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test07",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test18",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test06",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test17",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test05",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test16",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test04",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test15",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test03",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test14",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test02",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test13",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test01",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test12",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test00",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test11",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test10",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test21",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test20"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang.LocaleUtils_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<160> but was:<748>",
+          "trace": "java.lang.AssertionError: expected:<160> but was:<748>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang.LocaleUtils_ESTest.test06(LocaleUtils_ESTest.java:544)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 81,
+      "line_coverage_percent": 98.76543209876543,
+      "branch_covered": 62,
+      "branch_total": 66,
+      "branch_coverage_percent": 93.93939393939394
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T02:53:34.322080+00:00"
+}

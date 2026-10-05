@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-15-Round1-s101-29587ccf8b7d",
+  "unit": {
+    "project": "Cli",
+    "bug": "15",
+    "target": "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T20:32:39.984771+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/15/Cli-15-Round1-s101-29587ccf8b7d",
+    "tests": "MOSA_EvoSuite/Test/Cli/15/Cli-15-Round1-s101-29587ccf8b7d",
+    "config": "MOSA_EvoSuite/Configuration/Cli/15/Cli-15-Round1-s101-29587ccf8b7d"
+  },
+  "generation_time_sec": 38.742,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/15/Cli-15-Round1-s101-29587ccf8b7d/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java": "f2bda2fe6c5b6475f7162fc31cc7fe54a488c3c4657dd04b53d623467dc79ce7",
+    "MOSA_EvoSuite/Test/Cli/15/Cli-15-Round1-s101-29587ccf8b7d/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest_scaffolding.java": "79ababdfc6a7d21fd0652a9d6629d9a19d6aea683226a1d4dbb0a42697f1b4b6"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI158Test::testSingleOptionSingleArgument",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI158Test::testSingleOptionSingleArgument",
+      "org.apache.commons.cli2.bug.BugCLI158Test::testSingleOptionMaximumNumberOfArgument"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 445,
+      "tests": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test08",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test09",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test06",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test28",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test07",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test04",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test26",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test05",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test27",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test02",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test24",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test03",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test25",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test00",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test22",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test01",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test23",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test20",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test21",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test19",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test17",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test18",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test15",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test16",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test13",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test14",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test11",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test12",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test10"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test26",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.Hashtable but in java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011): java.lang.NullPointerException",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.Hashtable but in java.base/java.util.concurrent.ConcurrentHashMap.putVal(ConcurrentHashMap.java:1011): java.lang.NullPointerException\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest.test26(WriteableCommandLineImpl_ESTest.java:1350)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 98,
+      "line_total": 98,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 53,
+      "branch_total": 54,
+      "branch_coverage_percent": 98.14814814814815
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T20:33:39.624592+00:00"
+}

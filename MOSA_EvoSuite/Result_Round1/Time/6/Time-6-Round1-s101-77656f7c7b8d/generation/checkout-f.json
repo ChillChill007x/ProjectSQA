@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Time",
+    "-v",
+    "6f",
+    "-w",
+    "/workspace/work/checkouts/Time-6-Round1-s101-77656f7c7b8d/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.593,
+  "stdout": "",
+  "stderr": "Checking out 28aeba95 to /workspace/work/checkouts/Time-6-Round1-s101-77656 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Time-6-Round1-s101-77656f7 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 28aeba95:91b1ba4e..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Time-6f......................................... OK\n"
+}

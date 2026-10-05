@@ -1,0 +1,1 @@
+{"run_count":3,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":421,"tests":["org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual_ESTest::test2","org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual_ESTest::test0","org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual_ESTest::test1"],"failures":[],"passed":true}

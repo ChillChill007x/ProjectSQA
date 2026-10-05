@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-27-Round1-s101-f576953d7239",
+  "unit": {
+    "project": "Mockito",
+    "bug": "27",
+    "target": "org.mockito.internal.util.MockUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:59:04.509244+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/27/Mockito-27-Round1-s101-f576953d7239",
+    "tests": "MOSA_EvoSuite/Test/Mockito/27/Mockito-27-Round1-s101-f576953d7239",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/27/Mockito-27-Round1-s101-f576953d7239"
+  },
+  "generation_time_sec": 35.943,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/27/Mockito-27-Round1-s101-f576953d7239/org/mockito/internal/util/MockUtil_ESTest.java": "b73d07dcd035dad03ef62204860dbe9515aa2710c2243fd6b959573223b082bf",
+    "MOSA_EvoSuite/Test/Mockito/27/Mockito-27-Round1-s101-f576953d7239/org/mockito/internal/util/MockUtil_ESTest_scaffolding.java": "00ab636250cfa64addb41528ba1d3f63c6ea4eb545f3557b3e65137c7e5750bd"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.bugs.ListenersLostOnResetMockTest::listener",
+    "available_triggers": [
+      "org.mockitousage.bugs.ListenersLostOnResetMockTest::listener"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 735,
+      "tests": [
+        "org.mockito.internal.util.MockUtil_ESTest::test7",
+        "org.mockito.internal.util.MockUtil_ESTest::test6",
+        "org.mockito.internal.util.MockUtil_ESTest::test3",
+        "org.mockito.internal.util.MockUtil_ESTest::test2",
+        "org.mockito.internal.util.MockUtil_ESTest::test5",
+        "org.mockito.internal.util.MockUtil_ESTest::test4",
+        "org.mockito.internal.util.MockUtil_ESTest::test1",
+        "org.mockito.internal.util.MockUtil_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 41,
+      "line_coverage_percent": 63.41463414634146,
+      "branch_covered": 14,
+      "branch_total": 22,
+      "branch_coverage_percent": 63.63636363636363
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 705,
+      "tests": [
+        "org.mockito.internal.util.MockUtil_ESTest::test7",
+        "org.mockito.internal.util.MockUtil_ESTest::test6",
+        "org.mockito.internal.util.MockUtil_ESTest::test3",
+        "org.mockito.internal.util.MockUtil_ESTest::test2",
+        "org.mockito.internal.util.MockUtil_ESTest::test5",
+        "org.mockito.internal.util.MockUtil_ESTest::test4",
+        "org.mockito.internal.util.MockUtil_ESTest::test1",
+        "org.mockito.internal.util.MockUtil_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 42,
+      "line_coverage_percent": 61.904761904761905,
+      "branch_covered": 14,
+      "branch_total": 22,
+      "branch_coverage_percent": 63.63636363636363
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Mockito/27/Mockito-27-Round1-s101-f576953d7239/evaluation-1",
+  "finished_at": "2026-10-05T03:00:44.258907+00:00"
+}

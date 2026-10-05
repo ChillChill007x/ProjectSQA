@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.497,
+  "stdout": "/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/build/classes:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/args4j.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/guava.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/json.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/jsr305.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/protobuf-java.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/build/lib/rhino.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/ant.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/ant-launcher.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/caja-r4314.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/jarjar.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/lib/junit.jar:/workspace/work/parallel/evosuite/743/checkouts/Closure-22-Round1-s101-646c311a219f/evaluation-1/fixed/build/test",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.test)............................................... OK\n\n"
+}

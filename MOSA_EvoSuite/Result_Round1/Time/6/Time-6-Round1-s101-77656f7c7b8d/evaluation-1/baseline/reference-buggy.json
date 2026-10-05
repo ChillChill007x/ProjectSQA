@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-6-Round1-s101-77656f7c7b8d/evaluation-1/buggy",
+    "-t",
+    "org.joda.time.chrono.TestGJDate::test_cutoverPreZero"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.222,
+  "stdout": "Failing tests: 1\n  - org.joda.time.chrono.TestGJDate::test_cutoverPreZero\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-50-Round1-s101-0d36dcca7122",
+  "unit": {
+    "project": "Math",
+    "bug": "50",
+    "target": "org.apache.commons.math.analysis.solvers.BaseSecantSolver",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:48:30.780317+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/50/Math-50-Round1-s101-0d36dcca7122",
+    "tests": "MOSA_EvoSuite/Test/Math/50/Math-50-Round1-s101-0d36dcca7122",
+    "config": "MOSA_EvoSuite/Configuration/Math/50/Math-50-Round1-s101-0d36dcca7122"
+  },
+  "generation_time_sec": 55.094,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/50/Math-50-Round1-s101-0d36dcca7122/org/apache/commons/math/analysis/solvers/BaseSecantSolver_ESTest.java": "13125a0c7ce341922705c690cb13274caace863c803a9205dd9cb9c552e2e73b",
+    "MOSA_EvoSuite/Test/Math/50/Math-50-Round1-s101-0d36dcca7122/org/apache/commons/math/analysis/solvers/BaseSecantSolver_ESTest_scaffolding.java": "5b0898a4289cee7a1ae37bd7608fe252e444cf048dda917023d715b2a1f2969a"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631",
+    "available_triggers": [
+      "org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1924,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test08",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test09",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test06",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test17",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test07",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test04",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test15",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test05",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test16",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test02",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test13",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test03",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test14",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test00",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test11",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test01",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test12",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 67,
+      "line_coverage_percent": 91.04477611940298,
+      "branch_covered": 42,
+      "branch_total": 46,
+      "branch_coverage_percent": 91.30434782608695
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1713,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test08",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test09",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test06",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test17",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test07",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test04",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test15",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test05",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test16",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test02",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test13",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test03",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test14",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test00",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test11",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test01",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test12",
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 69,
+      "line_coverage_percent": 88.40579710144928,
+      "branch_covered": 43,
+      "branch_total": 48,
+      "branch_coverage_percent": 89.58333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/50/Math-50-Round1-s101-0d36dcca7122/evaluation-1",
+  "finished_at": "2026-10-05T03:50:58.910962+00:00"
+}

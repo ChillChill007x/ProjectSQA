@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-40-Round1-s101-9c1f3fc13b37",
+  "unit": {
+    "project": "Compress",
+    "bug": "40",
+    "target": "org.apache.commons.compress.utils.BitInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:04:59.913493+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37",
+    "tests": "MOSA_EvoSuite/Test/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37",
+    "config": "MOSA_EvoSuite/Configuration/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37"
+  },
+  "generation_time_sec": 36.831,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37/org/apache/commons/compress/utils/BitInputStream_ESTest.java": "69f5784f1f87b89271e70e0ebec40f106b1ce2e2f0f44acc28da95a5c2554678",
+    "MOSA_EvoSuite/Test/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37/org/apache/commons/compress/utils/BitInputStream_ESTest_scaffolding.java": "ab182a8756259982294d14ebeb1a8f93b2ce28e6f0e2aeef5ff14dfd67144ae6"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.utils.BitInputStreamTest::littleEndianWithOverflow",
+    "available_triggers": [
+      "org.apache.commons.compress.utils.BitInputStreamTest::littleEndianWithOverflow",
+      "org.apache.commons.compress.utils.BitInputStreamTest::bigEndianWithOverflow"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 603,
+      "tests": [
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test5",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test4",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test3",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test2",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test6",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test1",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 35,
+      "line_total": 55,
+      "line_coverage_percent": 63.63636363636363,
+      "branch_covered": 17,
+      "branch_total": 24,
+      "branch_coverage_percent": 70.83333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 380,
+      "tests": [
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test5",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test4",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test3",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test2",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test6",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test1",
+        "org.apache.commons.compress.utils.BitInputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 31,
+      "line_total": 33,
+      "line_coverage_percent": 93.93939393939394,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/40/Compress-40-Round1-s101-9c1f3fc13b37/evaluation-1",
+  "finished_at": "2026-10-04T23:06:22.087363+00:00"
+}

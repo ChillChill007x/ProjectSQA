@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Lang-50-Round1-s101-607c5b93fd6a/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateInstance"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.688,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateInstance\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

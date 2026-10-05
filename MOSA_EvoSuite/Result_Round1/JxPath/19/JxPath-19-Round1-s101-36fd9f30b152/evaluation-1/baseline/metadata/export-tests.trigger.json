@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JxPath-19-Round1-s101-36fd9f30b152/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateJDOM\norg.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateDOM",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

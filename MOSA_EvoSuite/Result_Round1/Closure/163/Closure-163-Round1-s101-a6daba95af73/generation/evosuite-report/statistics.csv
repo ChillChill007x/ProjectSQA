@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.google.javascript.jscomp.AnalyzePrototypeProperties,BRANCH,0.4307692307692308,195,84

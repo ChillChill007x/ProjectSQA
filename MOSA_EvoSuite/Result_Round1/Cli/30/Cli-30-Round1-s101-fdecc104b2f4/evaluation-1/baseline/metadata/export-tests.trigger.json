@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-30-Round1-s101-fdecc104b2f4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.apache.commons.cli.BasicParserTest::testPropertyOptionGroup\norg.apache.commons.cli.BasicParserTest::testPropertyOptionUnexpected\norg.apache.commons.cli.DefaultParserTest::testPropertyOptionGroup\norg.apache.commons.cli.DefaultParserTest::testPropertyOptionUnexpected\norg.apache.commons.cli.GnuParserTest::testPropertyOptionGroup\norg.apache.commons.cli.GnuParserTest::testPropertyOptionUnexpected\norg.apache.commons.cli.OptionGroupTest::testTwoOptionsFromGroupWithProperties\norg.apache.commons.cli.PosixParserTest::testPropertyOptionGroup\norg.apache.commons.cli.PosixParserTest::testPropertyOptionUnexpected",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

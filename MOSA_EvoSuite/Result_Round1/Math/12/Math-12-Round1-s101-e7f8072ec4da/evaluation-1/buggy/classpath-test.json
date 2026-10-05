@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/83570/checkouts/Math-12-Round1-s101-e7f8072ec4da/evaluation-1/buggy/target/classes",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Math-12-Round1-s101-e7f8072ec4da/evaluation-1/buggy/target/test-classes",
+    "/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar"
+  ],
+  "missing_entries": []
+}

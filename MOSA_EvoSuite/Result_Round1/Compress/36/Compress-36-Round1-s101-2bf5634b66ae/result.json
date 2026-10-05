@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-36-Round1-s101-2bf5634b66ae",
+  "unit": {
+    "project": "Compress",
+    "bug": "36",
+    "target": "org.apache.commons.compress.archivers.sevenz.SevenZFile",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T23:02:01.466648+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/36/Compress-36-Round1-s101-2bf5634b66ae",
+    "tests": "MOSA_EvoSuite/Test/Compress/36/Compress-36-Round1-s101-2bf5634b66ae",
+    "config": "MOSA_EvoSuite/Configuration/Compress/36/Compress-36-Round1-s101-2bf5634b66ae"
+  },
+  "generation_time_sec": 36.088,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/36/Compress-36-Round1-s101-2bf5634b66ae/org/apache/commons/compress/archivers/sevenz/SevenZFile_ESTest.java": "65ad21b513ce686ca5b2757d44adb0d5564fa44f7d0fd2f1001cf4f957018da4",
+    "MOSA_EvoSuite/Test/Compress/36/Compress-36-Round1-s101-2bf5634b66ae/org/apache/commons/compress/archivers/sevenz/SevenZFile_ESTest_scaffolding.java": "d80324cbbfd47e7f4fd08fd59dd2c12510277786d4ffc96e53d0ed9317ad3e06"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.sevenz.SevenZFileTest::readEntriesOfSize0",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.sevenz.SevenZFileTest::readEntriesOfSize0"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1028,
+      "tests": [
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile_ESTest::test0",
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile_ESTest::test1",
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile_ESTest::test2"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.archivers.sevenz.SevenZFile_ESTest::test2",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in org.apache.commons.compress.archivers.sevenz.SevenZFile but in org.evosuite.runtime.mock.java.io.MockRandomAccessFile.<init>(MockRandomAccessFile.java:104): java.io.FileNotFoundException: File does not exist, and RandomAccessFile is not open in write mode",
+          "trace": "java.lang.AssertionError: Exception was not thrown in org.apache.commons.compress.archivers.sevenz.SevenZFile but in org.evosuite.runtime.mock.java.io.MockRandomAccessFile.<init>(MockRandomAccessFile.java:104): java.io.FileNotFoundException: File does not exist, and RandomAccessFile is not open in write mode\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.apache.commons.compress.archivers.sevenz.SevenZFile_ESTest.test2(SevenZFile_ESTest.java:60)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 531,
+      "line_coverage_percent": 2.2598870056497176,
+      "branch_covered": 5,
+      "branch_total": 305,
+      "branch_coverage_percent": 1.639344262295082
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T23:03:17.038401+00:00"
+}

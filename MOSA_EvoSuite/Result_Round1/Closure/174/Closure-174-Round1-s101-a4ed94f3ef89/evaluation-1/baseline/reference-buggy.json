@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-174-Round1-s101-a4ed94f3ef89/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.953,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

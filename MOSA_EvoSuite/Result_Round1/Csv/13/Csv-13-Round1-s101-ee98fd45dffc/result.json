@@ -1,0 +1,273 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-13-Round1-s101-ee98fd45dffc",
+  "unit": {
+    "project": "Csv",
+    "bug": "13",
+    "target": "org.apache.commons.csv.CSVFormat",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:54:24.411344+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/13/Csv-13-Round1-s101-ee98fd45dffc",
+    "tests": "MOSA_EvoSuite/Test/Csv/13/Csv-13-Round1-s101-ee98fd45dffc",
+    "config": "MOSA_EvoSuite/Configuration/Csv/13/Csv-13-Round1-s101-ee98fd45dffc"
+  },
+  "generation_time_sec": 40.575,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/13/Csv-13-Round1-s101-ee98fd45dffc/org/apache/commons/csv/CSVFormat_ESTest.java": "0709dd510e2e091324c18c17b8a29be30325e0dfc07e81d78d2dd827e3839f9c",
+    "MOSA_EvoSuite/Test/Csv/13/Csv-13-Round1-s101-ee98fd45dffc/org/apache/commons/csv/CSVFormat_ESTest_scaffolding.java": "10792b84933812cf22ff5e98293468f819aa56f434985164793b7b8e1e778e35"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput",
+      "org.apache.commons.csv.CSVPrinterTest::testMySqlNullStringDefault"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 53,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 53,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 848,
+      "tests": [
+        "org.apache.commons.csv.CSVFormat_ESTest::test50",
+        "org.apache.commons.csv.CSVFormat_ESTest::test51",
+        "org.apache.commons.csv.CSVFormat_ESTest::test52",
+        "org.apache.commons.csv.CSVFormat_ESTest::test17",
+        "org.apache.commons.csv.CSVFormat_ESTest::test18",
+        "org.apache.commons.csv.CSVFormat_ESTest::test19",
+        "org.apache.commons.csv.CSVFormat_ESTest::test13",
+        "org.apache.commons.csv.CSVFormat_ESTest::test14",
+        "org.apache.commons.csv.CSVFormat_ESTest::test15",
+        "org.apache.commons.csv.CSVFormat_ESTest::test16",
+        "org.apache.commons.csv.CSVFormat_ESTest::test10",
+        "org.apache.commons.csv.CSVFormat_ESTest::test11",
+        "org.apache.commons.csv.CSVFormat_ESTest::test12",
+        "org.apache.commons.csv.CSVFormat_ESTest::test40",
+        "org.apache.commons.csv.CSVFormat_ESTest::test41",
+        "org.apache.commons.csv.CSVFormat_ESTest::test06",
+        "org.apache.commons.csv.CSVFormat_ESTest::test07",
+        "org.apache.commons.csv.CSVFormat_ESTest::test08",
+        "org.apache.commons.csv.CSVFormat_ESTest::test09",
+        "org.apache.commons.csv.CSVFormat_ESTest::test02",
+        "org.apache.commons.csv.CSVFormat_ESTest::test46",
+        "org.apache.commons.csv.CSVFormat_ESTest::test03",
+        "org.apache.commons.csv.CSVFormat_ESTest::test47",
+        "org.apache.commons.csv.CSVFormat_ESTest::test04",
+        "org.apache.commons.csv.CSVFormat_ESTest::test48",
+        "org.apache.commons.csv.CSVFormat_ESTest::test05",
+        "org.apache.commons.csv.CSVFormat_ESTest::test49",
+        "org.apache.commons.csv.CSVFormat_ESTest::test42",
+        "org.apache.commons.csv.CSVFormat_ESTest::test43",
+        "org.apache.commons.csv.CSVFormat_ESTest::test00",
+        "org.apache.commons.csv.CSVFormat_ESTest::test44",
+        "org.apache.commons.csv.CSVFormat_ESTest::test01",
+        "org.apache.commons.csv.CSVFormat_ESTest::test45",
+        "org.apache.commons.csv.CSVFormat_ESTest::test30",
+        "org.apache.commons.csv.CSVFormat_ESTest::test39",
+        "org.apache.commons.csv.CSVFormat_ESTest::test35",
+        "org.apache.commons.csv.CSVFormat_ESTest::test36",
+        "org.apache.commons.csv.CSVFormat_ESTest::test37",
+        "org.apache.commons.csv.CSVFormat_ESTest::test38",
+        "org.apache.commons.csv.CSVFormat_ESTest::test31",
+        "org.apache.commons.csv.CSVFormat_ESTest::test32",
+        "org.apache.commons.csv.CSVFormat_ESTest::test33",
+        "org.apache.commons.csv.CSVFormat_ESTest::test34",
+        "org.apache.commons.csv.CSVFormat_ESTest::test28",
+        "org.apache.commons.csv.CSVFormat_ESTest::test29",
+        "org.apache.commons.csv.CSVFormat_ESTest::test24",
+        "org.apache.commons.csv.CSVFormat_ESTest::test25",
+        "org.apache.commons.csv.CSVFormat_ESTest::test26",
+        "org.apache.commons.csv.CSVFormat_ESTest::test27",
+        "org.apache.commons.csv.CSVFormat_ESTest::test20",
+        "org.apache.commons.csv.CSVFormat_ESTest::test21",
+        "org.apache.commons.csv.CSVFormat_ESTest::test22",
+        "org.apache.commons.csv.CSVFormat_ESTest::test23"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 199,
+      "line_total": 210,
+      "line_coverage_percent": 94.76190476190476,
+      "branch_covered": 156,
+      "branch_total": 162,
+      "branch_coverage_percent": 96.29629629629629
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 53,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 791,
+      "tests": [
+        "org.apache.commons.csv.CSVFormat_ESTest::test50",
+        "org.apache.commons.csv.CSVFormat_ESTest::test51",
+        "org.apache.commons.csv.CSVFormat_ESTest::test52",
+        "org.apache.commons.csv.CSVFormat_ESTest::test17",
+        "org.apache.commons.csv.CSVFormat_ESTest::test18",
+        "org.apache.commons.csv.CSVFormat_ESTest::test19",
+        "org.apache.commons.csv.CSVFormat_ESTest::test13",
+        "org.apache.commons.csv.CSVFormat_ESTest::test14",
+        "org.apache.commons.csv.CSVFormat_ESTest::test15",
+        "org.apache.commons.csv.CSVFormat_ESTest::test16",
+        "org.apache.commons.csv.CSVFormat_ESTest::test10",
+        "org.apache.commons.csv.CSVFormat_ESTest::test11",
+        "org.apache.commons.csv.CSVFormat_ESTest::test12",
+        "org.apache.commons.csv.CSVFormat_ESTest::test40",
+        "org.apache.commons.csv.CSVFormat_ESTest::test41",
+        "org.apache.commons.csv.CSVFormat_ESTest::test06",
+        "org.apache.commons.csv.CSVFormat_ESTest::test07",
+        "org.apache.commons.csv.CSVFormat_ESTest::test08",
+        "org.apache.commons.csv.CSVFormat_ESTest::test09",
+        "org.apache.commons.csv.CSVFormat_ESTest::test02",
+        "org.apache.commons.csv.CSVFormat_ESTest::test46",
+        "org.apache.commons.csv.CSVFormat_ESTest::test03",
+        "org.apache.commons.csv.CSVFormat_ESTest::test47",
+        "org.apache.commons.csv.CSVFormat_ESTest::test04",
+        "org.apache.commons.csv.CSVFormat_ESTest::test48",
+        "org.apache.commons.csv.CSVFormat_ESTest::test05",
+        "org.apache.commons.csv.CSVFormat_ESTest::test49",
+        "org.apache.commons.csv.CSVFormat_ESTest::test42",
+        "org.apache.commons.csv.CSVFormat_ESTest::test43",
+        "org.apache.commons.csv.CSVFormat_ESTest::test00",
+        "org.apache.commons.csv.CSVFormat_ESTest::test44",
+        "org.apache.commons.csv.CSVFormat_ESTest::test01",
+        "org.apache.commons.csv.CSVFormat_ESTest::test45",
+        "org.apache.commons.csv.CSVFormat_ESTest::test30",
+        "org.apache.commons.csv.CSVFormat_ESTest::test39",
+        "org.apache.commons.csv.CSVFormat_ESTest::test35",
+        "org.apache.commons.csv.CSVFormat_ESTest::test36",
+        "org.apache.commons.csv.CSVFormat_ESTest::test37",
+        "org.apache.commons.csv.CSVFormat_ESTest::test38",
+        "org.apache.commons.csv.CSVFormat_ESTest::test31",
+        "org.apache.commons.csv.CSVFormat_ESTest::test32",
+        "org.apache.commons.csv.CSVFormat_ESTest::test33",
+        "org.apache.commons.csv.CSVFormat_ESTest::test34",
+        "org.apache.commons.csv.CSVFormat_ESTest::test28",
+        "org.apache.commons.csv.CSVFormat_ESTest::test29",
+        "org.apache.commons.csv.CSVFormat_ESTest::test24",
+        "org.apache.commons.csv.CSVFormat_ESTest::test25",
+        "org.apache.commons.csv.CSVFormat_ESTest::test26",
+        "org.apache.commons.csv.CSVFormat_ESTest::test27",
+        "org.apache.commons.csv.CSVFormat_ESTest::test20",
+        "org.apache.commons.csv.CSVFormat_ESTest::test21",
+        "org.apache.commons.csv.CSVFormat_ESTest::test22",
+        "org.apache.commons.csv.CSVFormat_ESTest::test23"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test50",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test50(CSVFormat_ESTest.java:3756)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test17",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test17(CSVFormat_ESTest.java:1154)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test15",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test15(CSVFormat_ESTest.java:959)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test10(CSVFormat_ESTest.java:570)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test06(CSVFormat_ESTest.java:301)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test03",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test03(CSVFormat_ESTest.java:191)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test48",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test48(CSVFormat_ESTest.java:3559)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test30",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test30(CSVFormat_ESTest.java:2475)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test29",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test29(CSVFormat_ESTest.java:2418)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test24",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test24(CSVFormat_ESTest.java:1828)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test27",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test27(CSVFormat_ESTest.java:2211)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test22",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test22(CSVFormat_ESTest.java:1629)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.csv.CSVFormat_ESTest::test23",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<\\N> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<\\N> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.csv.CSVFormat_ESTest.test23(CSVFormat_ESTest.java:1723)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 188,
+      "line_total": 210,
+      "line_coverage_percent": 89.52380952380952,
+      "branch_covered": 142,
+      "branch_total": 162,
+      "branch_coverage_percent": 87.65432098765432
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Csv/13/Csv-13-Round1-s101-ee98fd45dffc/evaluation-1",
+  "finished_at": "2026-10-04T22:55:30.750643+00:00"
+}

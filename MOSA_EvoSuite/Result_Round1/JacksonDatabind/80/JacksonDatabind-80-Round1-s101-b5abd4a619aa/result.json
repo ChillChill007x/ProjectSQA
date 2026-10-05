@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-80-Round1-s101-b5abd4a619aa",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "80",
+    "target": "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:27:26.638854+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa"
+  },
+  "generation_time_sec": 41.802,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver_ESTest.java": "6b355efcab295fe935f3d09d70adc3c8488293358a9de81548b9974e37964d27",
+    "MOSA_EvoSuite/Test/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa/com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver_ESTest_scaffolding.java": "443be3d57823378eef85b8e1ce837e746230a38a0b2dd9e45d1f14de42cc781d"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.jsontype.TestTypeNames::testBaseTypeId1616",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.jsontype.TestTypeNames::testBaseTypeId1616"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1724,
+      "tests": [
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test1",
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test0",
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 10,
+      "line_total": 126,
+      "line_coverage_percent": 7.936507936507937,
+      "branch_covered": 6,
+      "branch_total": 82,
+      "branch_coverage_percent": 7.317073170731708
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1423,
+      "tests": [
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test1",
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test0",
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 10,
+      "line_total": 124,
+      "line_coverage_percent": 8.064516129032258,
+      "branch_covered": 6,
+      "branch_total": 78,
+      "branch_coverage_percent": 7.6923076923076925
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-b5abd4a619aa/evaluation-1",
+  "finished_at": "2026-10-05T00:29:37.359868+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-2-Round1-s101-612ba7702d4f/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.util.TimerTest::should_throw_friendly_reminder_exception_when_duration_is_negative"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 30.326,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.util.TimerTest::should_throw_friendly_reminder_exception_when_duration_is_negative\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

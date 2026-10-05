@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-71-Round1-s101-5222a772f65f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.024,
+  "stdout": "com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6\ncom.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

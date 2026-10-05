@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-163-Round1-s101-c810a0b4ef7c",
+  "unit": {
+    "project": "Closure",
+    "bug": "163",
+    "target": "com.google.javascript.jscomp.CrossModuleMethodMotion",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:18:17.260059+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c",
+    "tests": "MOSA_EvoSuite/Test/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c",
+    "config": "MOSA_EvoSuite/Configuration/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c"
+  },
+  "generation_time_sec": 41.913,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c/com/google/javascript/jscomp/CrossModuleMethodMotion_ESTest.java": "bb3fb44d1fcea4b7c41d3d6091f4a037e42e17fb7ed70a905c2e7cdb86232789",
+    "MOSA_EvoSuite/Test/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c/com/google/javascript/jscomp/CrossModuleMethodMotion_ESTest_scaffolding.java": "648a1c687aea1707d3636e7bab6017c561caa1e2b5a694f87bce271d3eb72008"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600b",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600b",
+      "com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600e",
+      "com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2271,
+      "tests": [
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test2",
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test1",
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 11,
+      "line_total": 67,
+      "line_coverage_percent": 16.417910447761194,
+      "branch_covered": 1,
+      "branch_total": 32,
+      "branch_coverage_percent": 3.125
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2331,
+      "tests": [
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test2",
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test1",
+        "com.google.javascript.jscomp.CrossModuleMethodMotion_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 11,
+      "line_total": 65,
+      "line_coverage_percent": 16.923076923076923,
+      "branch_covered": 1,
+      "branch_total": 28,
+      "branch_coverage_percent": 3.5714285714285716
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/163/Closure-163-Round1-s101-c810a0b4ef7c/evaluation-1",
+  "finished_at": "2026-10-04T22:20:52.492745+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.ser.jdk.BigDecimalPlain2230Test::testBigIntegerAsPlainTest",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.ser.jdk.BigDecimalPlain2230Test::testBigIntegerAsPlainTest"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-4-Round1-s101-011c8867c719",
+  "unit": {
+    "project": "Lang",
+    "bug": "4",
+    "target": "org.apache.commons.lang3.text.translate.LookupTranslator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:19:52.444095+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/4/Lang-4-Round1-s101-011c8867c719",
+    "tests": "MOSA_EvoSuite/Test/Lang/4/Lang-4-Round1-s101-011c8867c719",
+    "config": "MOSA_EvoSuite/Configuration/Lang/4/Lang-4-Round1-s101-011c8867c719"
+  },
+  "generation_time_sec": 8.418,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/4/Lang-4-Round1-s101-011c8867c719/org/apache/commons/lang3/text/translate/LookupTranslator_ESTest.java": "a929869e525fdac2f34049cbd8fd3acfeae61ac4f5d7784843413af354e4db76",
+    "MOSA_EvoSuite/Test/Lang/4/Lang-4-Round1-s101-011c8867c719/org/apache/commons/lang3/text/translate/LookupTranslator_ESTest_scaffolding.java": "6520909cbb3a2be43af68380a6beb60c36e2d24d4882a8d280e010dbc871f266"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882",
+    "available_triggers": [
+      "org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 669,
+      "tests": [
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test1",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test0",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test3",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 25,
+      "line_total": 25,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 566,
+      "tests": [
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test1",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test0",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test3",
+        "org.apache.commons.lang3.text.translate.LookupTranslator_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 25,
+      "line_total": 25,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/4/Lang-4-Round1-s101-011c8867c719/evaluation-1",
+  "finished_at": "2026-10-05T02:21:09.608675+00:00"
+}

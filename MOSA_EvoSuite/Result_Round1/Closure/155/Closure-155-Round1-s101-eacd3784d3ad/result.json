@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-155-Round1-s101-eacd3784d3ad",
+  "unit": {
+    "project": "Closure",
+    "bug": "155",
+    "target": "com.google.javascript.jscomp.Scope",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-04T22:08:05.288175+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/155/Closure-155-Round1-s101-eacd3784d3ad",
+    "tests": "MOSA_EvoSuite/Test/Closure/155/Closure-155-Round1-s101-eacd3784d3ad",
+    "config": "MOSA_EvoSuite/Configuration/Closure/155/Closure-155-Round1-s101-eacd3784d3ad"
+  },
+  "generation_time_sec": 100.09,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/155/Closure-155-Round1-s101-eacd3784d3ad/com/google/javascript/jscomp/Scope_ESTest.java": "5831e3996bdc7949762e3e4b9222fc918a34db81321a9ef80b5c11d98bf47841",
+    "MOSA_EvoSuite/Test/Closure/155/Closure-155-Round1-s101-eacd3784d3ad/com/google/javascript/jscomp/Scope_ESTest_scaffolding.java": "eff06ba4e00e0cc0ad4f994488c73e7fa9ca84a55370e06dcf124395855344aa"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.InlineVariablesTest::testArgumentsModifiedInInnerFunction",
+    "available_triggers": [
+      "com.google.javascript.jscomp.InlineVariablesTest::testArgumentsModifiedInInnerFunction",
+      "com.google.javascript.jscomp.InlineVariablesTest::testArgumentsModifiedInOuterFunction",
+      "com.google.javascript.jscomp.InlineVariablesTest::testIssue378ModifiedArguments1",
+      "com.google.javascript.jscomp.InlineVariablesTest::testIssue378ModifiedArguments2",
+      "com.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments1",
+      "com.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments2",
+      "com.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments4"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-04T22:10:55.823260+00:00"
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-93-Round1-s101-1db74d66aada",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "93",
+    "target": "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:39:06.593633+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada"
+  },
+  "generation_time_sec": 42.228,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator_ESTest.java": "367e56f21e11a30f5a47b68bb41dc23eac4bd6d7b8ee0c56ef86ac825a54e348",
+    "MOSA_EvoSuite/Test/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada/com/fasterxml/jackson/databind/jsontype/impl/SubTypeValidator_ESTest_scaffolding.java": "f8c0aa052bd8a0088d08967f806426be94e3cb4c05e0f77f796e294130f1fffe"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1872",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1872"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2193,
+      "tests": [
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test1",
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test0",
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 28,
+      "line_total": 36,
+      "line_coverage_percent": 77.77777777777777,
+      "branch_covered": 4,
+      "branch_total": 14,
+      "branch_coverage_percent": 28.571428571428573
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1635,
+      "tests": [
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test1",
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test0",
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 28,
+      "line_total": 36,
+      "line_coverage_percent": 77.77777777777777,
+      "branch_covered": 2,
+      "branch_total": 10,
+      "branch_coverage_percent": 20.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-1db74d66aada/evaluation-1",
+  "finished_at": "2026-10-05T00:41:16.915523+00:00"
+}

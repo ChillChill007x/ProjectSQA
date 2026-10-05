@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-20-Round1-s101-da15849b745e/evaluation-1/buggy",
+    "-t",
+    "org.mockitousage.annotation.SpyAnnotationTest::should_spy_inner_class"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 30.879,
+  "stdout": "Failing tests: 1\n  - org.mockitousage.annotation.SpyAnnotationTest::should_spy_inner_class\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.lang3.RandomStringUtils",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Lang-11-Round1-s101-8a84700a0298/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Lang/11/Lang-11-Round1-s101-8a84700a0298",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Lang/11/Lang-11-Round1-s101-8a84700a0298/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 42.885,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.lang3.RandomStringUtils\n* Starting Client-0\n* Connecting to master process on port 19617\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83568/checkouts/Lang-11-Round1-s101-8a84700a0298/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.lang3.RandomStringUtils\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 65\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:>                                  0%]\r[Progress:===>                          10%] [Cov:=========================>         73%]\r[Progress:======>                       23%] [Cov:=========================>         73%]\r[Progress:=========>                    33%] [Cov:==========================>        76%]\r[Progress:===============>              50%] [Cov:==========================>        76%]\r[Progress:==================>           63%] [Cov:==========================>        76%]\r[Progress:=========================>    86%] [Cov:===========================>       78%]\r[Progress:==============================100%] [Cov:===========================>       78%]\r[Progress:==============================100%] [Cov:==============================>    87%]\n* Search finished after 31s and 7 generations, 3264 statements, best individual has fitness: 8.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 88%\n* Total number of goals: 65\n* Number of covered goals: 57\n* Generated 15 tests with total length 18\n* Resulting test suite's coverage: 88%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'RandomStringUtils_ESTest' to /workspace/MOSA_EvoSuite/Test/Lang/11/Lang-11-Round1-s101-8a84700a0298\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

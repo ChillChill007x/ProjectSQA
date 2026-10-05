@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec98NPE",
+  "available_triggers": [
+    "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec98NPE",
+    "org.apache.commons.codec.binary.Base64OutputStreamTest::testCodec98NPE"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

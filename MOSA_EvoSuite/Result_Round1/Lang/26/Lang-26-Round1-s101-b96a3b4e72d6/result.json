@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-26-Round1-s101-b96a3b4e72d6",
+  "unit": {
+    "project": "Lang",
+    "bug": "26",
+    "target": "org.apache.commons.lang3.time.FastDateFormat",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T02:32:59.675778+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/26/Lang-26-Round1-s101-b96a3b4e72d6",
+    "tests": "MOSA_EvoSuite/Test/Lang/26/Lang-26-Round1-s101-b96a3b4e72d6",
+    "config": "MOSA_EvoSuite/Configuration/Lang/26/Lang-26-Round1-s101-b96a3b4e72d6"
+  },
+  "generation_time_sec": 51.634,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/26/Lang-26-Round1-s101-b96a3b4e72d6/org/apache/commons/lang3/time/FastDateFormat_ESTest.java": "b1f712e32029750398645fbf6dd36f72afd3060a2ab4cb16ac0b04500ab87351",
+    "MOSA_EvoSuite/Test/Lang/26/Lang-26-Round1-s101-b96a3b4e72d6/org/apache/commons/lang3/time/FastDateFormat_ESTest_scaffolding.java": "d6778c3e79f32dad0a1263099b7ab625033eaa74c710cb3373e7ddbbaaaa1e2a"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.time.FastDateFormatTest::testLang645",
+    "available_triggers": [
+      "org.apache.commons.lang3.time.FastDateFormatTest::testLang645"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 61,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 848,
+      "tests": [
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test07",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test06",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test09",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test08",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test03",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test47",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test02",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test46",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test05",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test49",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test04",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test48",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test43",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test42",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test01",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test45",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test00",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test44",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test41",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test40",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test18",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test17",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test19",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test14",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test58",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test13",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test57",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test16",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test15",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test59",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test10",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test54",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test53",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test12",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test56",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test11",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test55",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test50",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test52",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test51",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test29",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test28",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test25",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test24",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test27",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test26",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test21",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test20",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test23",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test22",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test60",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test39",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test36",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test35",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test38",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test37",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test32",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test31",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test34",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test33",
+        "org.apache.commons.lang3.time.FastDateFormat_ESTest::test30"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test07",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>",
+          "trace": "org.junit.ComparisonFailure: expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test07(FastDateFormat_ESTest.java:308)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<15> but was:<20>",
+          "trace": "java.lang.AssertionError: expected:<15> but was:<20>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test06(FastDateFormat_ESTest.java:269)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test08",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>",
+          "trace": "org.junit.ComparisonFailure: expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test08(FastDateFormat_ESTest.java:333)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test03",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<18> but was:<54>",
+          "trace": "java.lang.AssertionError: expected:<18> but was:<54>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test03(FastDateFormat_ESTest.java:140)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test02",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<21> but was:<22>",
+          "trace": "java.lang.AssertionError: expected:<21> but was:<22>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test02(FastDateFormat_ESTest.java:116)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test46",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<H['時'mm'分'ss'秒' ]z> but was:<H[時mm分ss秒 zzz]z>",
+          "trace": "org.junit.ComparisonFailure: expected:<H['時'mm'分'ss'秒' ]z> but was:<H[時mm分ss秒 zzz]z>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test46(FastDateFormat_ESTest.java:1023)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test05",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<21> but was:<22>",
+          "trace": "java.lang.AssertionError: expected:<21> but was:<22>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test05(FastDateFormat_ESTest.java:217)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test04",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>",
+          "trace": "org.junit.ComparisonFailure: expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test04(FastDateFormat_ESTest.java:162)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test42",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<21> but was:<22>",
+          "trace": "java.lang.AssertionError: expected:<21> but was:<22>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test42(FastDateFormat_ESTest.java:868)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test01",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>",
+          "trace": "org.junit.ComparisonFailure: expected:<EEEE, MMMM d, y[yyy h:mm:ss a ]z> but was:<EEEE, MMMM d, y[ 'at' h:mm:ss a zzz]z>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test01(FastDateFormat_ESTest.java:80)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test45",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<55> but was:<56>",
+          "trace": "java.lang.AssertionError: expected:<55> but was:<56>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test45(FastDateFormat_ESTest.java:970)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test00",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<MMMM d, y[yyy] h:mm:ss a z> but was:<MMMM d, y[ 'at'] h:mm:ss a z>",
+          "trace": "org.junit.ComparisonFailure: expected:<MMMM d, y[yyy] h:mm:ss a z> but was:<MMMM d, y[ 'at'] h:mm:ss a z>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test00(FastDateFormat_ESTest.java:39)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test44",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<EEEE, MMMM d, y[yyy]> but was:<EEEE, MMMM d, y[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<EEEE, MMMM d, y[yyy]> but was:<EEEE, MMMM d, y[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test44(FastDateFormat_ESTest.java:933)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test58",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>",
+          "trace": "org.junit.ComparisonFailure: expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test58(FastDateFormat_ESTest.java:1399)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test10",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<y[yyy'年'M'月'd'日']> but was:<y[年M月d日EEEE]>",
+          "trace": "org.junit.ComparisonFailure: expected:<y[yyy'年'M'月'd'日']> but was:<y[年M月d日EEEE]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test10(FastDateFormat_ESTest.java:391)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test56",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<50> but was:<87>",
+          "trace": "java.lang.AssertionError: expected:<50> but was:<87>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test56(FastDateFormat_ESTest.java:1354)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test50",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>",
+          "trace": "org.junit.ComparisonFailure: expected:<M/d/yy[] h:mm a> but was:<M/d/yy[,] h:mm a>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test50(FastDateFormat_ESTest.java:1110)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test52",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<21> but was:<22>",
+          "trace": "java.lang.AssertionError: expected:<21> but was:<22>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test52(FastDateFormat_ESTest.java:1202)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.time.FastDateFormat_ESTest::test60",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<MMM d, y[yyy]> but was:<MMM d, y[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<MMM d, y[yyy]> but was:<MMM d, y[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang3.time.FastDateFormat_ESTest.test60(FastDateFormat_ESTest.java:1518)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 220,
+      "line_total": 266,
+      "line_coverage_percent": 82.70676691729324,
+      "branch_covered": 111,
+      "branch_total": 148,
+      "branch_coverage_percent": 75.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T02:34:43.501005+00:00"
+}

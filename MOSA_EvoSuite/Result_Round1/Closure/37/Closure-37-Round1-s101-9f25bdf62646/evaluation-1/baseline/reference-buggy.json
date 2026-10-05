@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-37-Round1-s101-9f25bdf62646/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.805,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

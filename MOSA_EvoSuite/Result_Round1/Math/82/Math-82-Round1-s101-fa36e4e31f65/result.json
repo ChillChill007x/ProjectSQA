@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-82-Round1-s101-fa36e4e31f65",
+  "unit": {
+    "project": "Math",
+    "bug": "82",
+    "target": "org.apache.commons.math.optimization.linear.SimplexSolver",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:16:07.607893+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/82/Math-82-Round1-s101-fa36e4e31f65",
+    "tests": "MOSA_EvoSuite/Test/Math/82/Math-82-Round1-s101-fa36e4e31f65",
+    "config": "MOSA_EvoSuite/Configuration/Math/82/Math-82-Round1-s101-fa36e4e31f65"
+  },
+  "generation_time_sec": 39.189,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/82/Math-82-Round1-s101-fa36e4e31f65/org/apache/commons/math/optimization/linear/SimplexSolver_ESTest.java": "c15cc8ade560ce0dddda512a2f28596c6ffd4bfa0e6d0fb249fd346b04e4f7bf",
+    "MOSA_EvoSuite/Test/Math/82/Math-82-Round1-s101-fa36e4e31f65/org/apache/commons/math/optimization/linear/SimplexSolver_ESTest_scaffolding.java": "fafbbaafdfce146635f2f0304feffbf7ba6b3f3e6bc24b948d1100c1dae5b86e"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1070,
+      "tests": [
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test3",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test2",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test5",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test4",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test1",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 43,
+      "line_total": 60,
+      "line_coverage_percent": 71.66666666666667,
+      "branch_covered": 25,
+      "branch_total": 36,
+      "branch_coverage_percent": 69.44444444444444
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1298,
+      "tests": [
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test3",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test2",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test5",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test4",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test1",
+        "org.apache.commons.math.optimization.linear.SimplexSolver_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 43,
+      "line_total": 60,
+      "line_coverage_percent": 71.66666666666667,
+      "branch_covered": 25,
+      "branch_total": 36,
+      "branch_coverage_percent": 69.44444444444444
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/82/Math-82-Round1-s101-fa36e4e31f65/evaluation-1",
+  "finished_at": "2026-10-05T04:18:14.094612+00:00"
+}

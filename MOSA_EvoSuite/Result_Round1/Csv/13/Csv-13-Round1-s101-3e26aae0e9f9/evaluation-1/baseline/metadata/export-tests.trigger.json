@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Csv-13-Round1-s101-3e26aae0e9f9/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput\norg.apache.commons.csv.CSVPrinterTest::testMySqlNullStringDefault",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

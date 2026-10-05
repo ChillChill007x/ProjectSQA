@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-12-Round1-s101-e7f8072ec4da",
+  "unit": {
+    "project": "Math",
+    "bug": "12",
+    "target": "org.apache.commons.math3.random.BitsStreamGenerator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:11:54.027858+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/12/Math-12-Round1-s101-e7f8072ec4da",
+    "tests": "MOSA_EvoSuite/Test/Math/12/Math-12-Round1-s101-e7f8072ec4da",
+    "config": "MOSA_EvoSuite/Configuration/Math/12/Math-12-Round1-s101-e7f8072ec4da"
+  },
+  "generation_time_sec": 12.017,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/12/Math-12-Round1-s101-e7f8072ec4da/org/apache/commons/math3/random/BitsStreamGenerator_ESTest.java": "8d22c67bfec5b2098061bc031bebcc8060f8a2e57ae7342b62a8fff10a0fe1b9",
+    "MOSA_EvoSuite/Test/Math/12/Math-12-Round1-s101-e7f8072ec4da/org/apache/commons/math3/random/BitsStreamGenerator_ESTest_scaffolding.java": "92bf06fbb7c517e07a4a663d593cd2848946f39f3b04edbb19e02a9f6944e1d5"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.distribution.GammaDistributionTest::testDistributionClone",
+    "available_triggers": [
+      "org.apache.commons.math3.distribution.GammaDistributionTest::testDistributionClone",
+      "org.apache.commons.math3.distribution.LogNormalDistributionTest::testDistributionClone",
+      "org.apache.commons.math3.distribution.NormalDistributionTest::testDistributionClone"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 11,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1241,
+      "tests": [
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test10",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test01",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test00",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test03",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test02",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test05",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test04",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test07",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test06",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test09",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 48,
+      "line_total": 48,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 991,
+      "tests": [
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test10",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test01",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test00",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test03",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test02",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test05",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test04",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test07",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test06",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test09",
+        "org.apache.commons.math3.random.BitsStreamGenerator_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 48,
+      "line_total": 48,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/12/Math-12-Round1-s101-e7f8072ec4da/evaluation-1",
+  "finished_at": "2026-10-05T03:13:51.366214+00:00"
+}

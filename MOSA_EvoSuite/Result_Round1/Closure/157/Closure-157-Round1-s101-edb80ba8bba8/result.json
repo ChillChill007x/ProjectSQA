@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-157-Round1-s101-edb80ba8bba8",
+  "unit": {
+    "project": "Closure",
+    "bug": "157",
+    "target": "com.google.javascript.jscomp.parsing.IRFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:07:23.616768+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/157/Closure-157-Round1-s101-edb80ba8bba8",
+    "tests": "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-edb80ba8bba8",
+    "config": "MOSA_EvoSuite/Configuration/Closure/157/Closure-157-Round1-s101-edb80ba8bba8"
+  },
+  "generation_time_sec": 59.51,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-edb80ba8bba8/com/google/javascript/jscomp/parsing/IRFactory_ESTest.java": "d5f832d84a581d92e86114f68d1c51f29f533a50accb4bdf56b35d1b337542ab",
+    "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-edb80ba8bba8/com/google/javascript/jscomp/parsing/IRFactory_ESTest_scaffolding.java": "5ec80f6477c7b8a04ae08890b6a70be791112e7991adc361af186670dbd24127"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CodePrinterTest::testObjectLit2",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CodePrinterTest::testObjectLit2",
+      "com.google.javascript.jscomp.CodePrinterTest::testObjectLit3",
+      "com.google.javascript.jscomp.CodePrinterTest::testGetter",
+      "com.google.javascript.jscomp.CodePrinterTest::testSetter",
+      "com.google.javascript.jscomp.FunctionNamesTest::testFunctionsNamesAndIds",
+      "com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys2",
+      "com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys3",
+      "com.google.javascript.jscomp.SimpleDefinitionFinderTest::testDefineNumber",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral6",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral7",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral8",
+      "com.google.javascript.jscomp.parsing.ParserTest::testObjectLiteralDoc1"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 25,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3033,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test24",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test20",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test21",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test22",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test23",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test17",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test18",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test19",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test13",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test14",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test15",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test16",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test11",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 86,
+      "line_total": 278,
+      "line_coverage_percent": 30.93525179856115,
+      "branch_covered": 23,
+      "branch_total": 197,
+      "branch_coverage_percent": 11.6751269035533
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1661,
+      "tests": [
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test06",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test07",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test08",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test09",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test02",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test24",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test03",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test04",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test05",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test20",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test21",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test00",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test22",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test01",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test23",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test17",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test18",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test19",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test13",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test14",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test15",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test16",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test10",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test11",
+        "com.google.javascript.jscomp.parsing.IRFactory_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 86,
+      "line_total": 268,
+      "line_coverage_percent": 32.08955223880597,
+      "branch_covered": 23,
+      "branch_total": 193,
+      "branch_coverage_percent": 11.917098445595855
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/157/Closure-157-Round1-s101-edb80ba8bba8/evaluation-1",
+  "finished_at": "2026-10-04T22:09:54.782380+00:00"
+}

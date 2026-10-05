@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/JacksonDatabind-69-Round1-s101-8c12e4f8e5cf/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.097,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

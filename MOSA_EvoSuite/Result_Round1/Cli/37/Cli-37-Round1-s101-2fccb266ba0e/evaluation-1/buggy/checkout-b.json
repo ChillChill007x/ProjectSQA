@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "37b",
+    "-w",
+    "/workspace/work/checkouts/Cli-37-Round1-s101-2fccb266ba0e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.32,
+  "stdout": "",
+  "stderr": "Checking out 1bf9e6c5 to /workspace/work/checkouts/Cli-37-Round1-s101-2fccb OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Cli-37-Round1-s101-2fccb26 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 1bf9e6c5:9e519623..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-37b......................................... OK\n"
+}

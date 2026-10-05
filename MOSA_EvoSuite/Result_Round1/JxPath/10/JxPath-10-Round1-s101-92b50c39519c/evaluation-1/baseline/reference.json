@@ -1,0 +1,8 @@
+{
+  "trigger": "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testEmptyNodeSetOperations",
+  "available_triggers": [
+    "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testEmptyNodeSetOperations"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

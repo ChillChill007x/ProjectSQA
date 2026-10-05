@@ -1,0 +1,277 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-1-Round1-s101-96d68d58caf4",
+  "unit": {
+    "project": "Math",
+    "bug": "1",
+    "target": "org.apache.commons.math3.fraction.BigFraction",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:59:20.981280+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/1/Math-1-Round1-s101-96d68d58caf4",
+    "tests": "MOSA_EvoSuite/Test/Math/1/Math-1-Round1-s101-96d68d58caf4",
+    "config": "MOSA_EvoSuite/Configuration/Math/1/Math-1-Round1-s101-96d68d58caf4"
+  },
+  "generation_time_sec": 51.873,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/1/Math-1-Round1-s101-96d68d58caf4/org/apache/commons/math3/fraction/BigFraction_ESTest.java": "985b973420c36f63f0a3bd2b4a0ae8ac10a96cca70305f614bdcbb784fb785b4",
+    "MOSA_EvoSuite/Test/Math/1/Math-1-Round1-s101-96d68d58caf4/org/apache/commons/math3/fraction/BigFraction_ESTest_scaffolding.java": "02c228e2d2668b5d88ed0dd4a5c59f46895fb02e062acc0ac62d2232e26d0401"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor",
+    "available_triggers": [
+      "org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor",
+      "org.apache.commons.math3.fraction.FractionTest::testDigitLimitConstructor"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 55,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 55,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1085,
+      "tests": [
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test36",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test35",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test38",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test37",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test32",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test31",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test34",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test33",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test39",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test30",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test25",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test24",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test27",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test26",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test21",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test20",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test23",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test22",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test29",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test28",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test14",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test13",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test16",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test15",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test10",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test54",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test53",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test12",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test11",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test18",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test17",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test19",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test50",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test52",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test51",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test03",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test47",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test02",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test46",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test05",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test49",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test04",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test48",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test43",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test42",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test01",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test45",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test00",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test44",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test07",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test06",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test09",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test08",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test41",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test40"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 219,
+      "line_total": 243,
+      "line_coverage_percent": 90.12345679012346,
+      "branch_covered": 85,
+      "branch_total": 102,
+      "branch_coverage_percent": 83.33333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 55,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1417,
+      "tests": [
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test36",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test35",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test38",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test37",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test32",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test31",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test34",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test33",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test39",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test30",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test25",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test24",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test27",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test26",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test21",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test20",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test23",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test22",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test29",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test28",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test14",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test13",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test16",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test15",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test10",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test54",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test53",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test12",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test11",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test18",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test17",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test19",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test50",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test52",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test51",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test03",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test47",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test02",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test46",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test05",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test49",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test04",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test48",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test43",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test42",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test01",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test45",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test00",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test44",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test07",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test06",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test09",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test08",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test41",
+        "org.apache.commons.math3.fraction.BigFraction_ESTest::test40"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test37",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test37(BigFraction_ESTest.java:829)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test31",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test31(BigFraction_ESTest.java:707)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test34",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test34(BigFraction_ESTest.java:767)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test33",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test33(BigFraction_ESTest.java:749)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test21",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test21(BigFraction_ESTest.java:532)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test20",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test20(BigFraction_ESTest.java:515)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test29",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test29(BigFraction_ESTest.java:675)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test28",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test28(BigFraction_ESTest.java:662)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test15",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test15(BigFraction_ESTest.java:365)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test10",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test10(BigFraction_ESTest.java:256)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test50",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test50(BigFraction_ESTest.java:1095)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test03",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test03(BigFraction_ESTest.java:70)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math3.fraction.BigFraction_ESTest::test00",
+          "exception": "org.apache.commons.math3.fraction.FractionConversionException",
+          "message": "illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)",
+          "trace": "org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0 to fraction (1/9,223,372,036,854,775,807)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)\n\tat org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)\n\tat org.apache.commons.math3.fraction.BigFraction_ESTest.test00(BigFraction_ESTest.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 208,
+      "line_total": 241,
+      "line_coverage_percent": 86.30705394190872,
+      "branch_covered": 74,
+      "branch_total": 98,
+      "branch_coverage_percent": 75.51020408163265
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/1/Math-1-Round1-s101-96d68d58caf4/evaluation-1",
+  "finished_at": "2026-10-05T03:01:57.905531+00:00"
+}

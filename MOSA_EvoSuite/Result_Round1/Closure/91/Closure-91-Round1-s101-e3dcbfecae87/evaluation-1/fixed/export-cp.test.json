@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.337,
+  "stdout": "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/build/classes:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/ant_deploy.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/args4j_deploy.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/guava-r06.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/hamcrest-core-1.1.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/json.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/jsr305.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/junit.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/lib/protobuf-java-2.3.0.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/fixed/build/test",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.test)............................................... OK\n\n"
+}

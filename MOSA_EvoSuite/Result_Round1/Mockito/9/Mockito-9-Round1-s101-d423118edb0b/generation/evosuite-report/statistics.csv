@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.mockito.internal.stubbing.answers.CallsRealMethods,BRANCH,0.3333333333333333,3,1

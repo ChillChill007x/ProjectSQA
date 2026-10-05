@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.cli2.Option",
+    "-projectCP",
+    "/workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/classes:/workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/lib/commons-lang/jars/commons-lang-2.1.jar:/workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/lib/jdepend/jars/jdepend-2.5.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-d373b08c19e5",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-d373b08c19e5/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.719,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.cli2.Option\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/classes\n  - /workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/lib/commons-lang/jars/commons-lang-2.1.jar\n  - /workspace/work/checkouts/Cli-16-Round1-s101-d373b08c19e5/generation-fixed/target/lib/jdepend/jars/jdepend-2.5.jar\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.cli2.Option\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 0\n\n* Search finished after 0s and 0 generations, 0 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100% (no goals)\n* Generated 0 tests with total length 0\n* Resulting test suite's coverage: 0%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'Option_ESTest' to /workspace/MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-d373b08c19e5\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

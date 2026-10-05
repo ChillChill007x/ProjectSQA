@@ -1,0 +1,13 @@
+{
+  "trigger": "org.jsoup.nodes.EntitiesTest::unescape",
+  "available_triggers": [
+    "org.jsoup.nodes.EntitiesTest::unescape",
+    "org.jsoup.nodes.EntitiesTest::noSpuriousDecodes",
+    "org.jsoup.parser.AttributeParseTest::moreAttributeUnescapes",
+    "org.jsoup.parser.AttributeParseTest::strictAttributeUnescapes",
+    "org.jsoup.parser.HtmlParserTest::doesNotFindShortestMatchingEntity",
+    "org.jsoup.parser.HtmlParserTest::relaxedBaseEntityMatchAndStrictExtendedMatch"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

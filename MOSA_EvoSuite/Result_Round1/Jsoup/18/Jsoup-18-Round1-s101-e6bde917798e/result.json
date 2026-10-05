@@ -1,0 +1,230 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-18-Round1-s101-e6bde917798e",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "18",
+    "target": "org.jsoup.parser.CharacterReader",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:22:47.901884+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e"
+  },
+  "generation_time_sec": 16.413,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e/org/jsoup/parser/CharacterReader_ESTest.java": "ff03f4edec4eeddba252711556e52ec108c45a4eea054a41cd1e040751fec0d1",
+    "MOSA_EvoSuite/Test/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e/org/jsoup/parser/CharacterReader_ESTest_scaffolding.java": "badc7ce06487f345f75bbbcce23cead571eb1bd2d5c109dcf0c5656c02f33148"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed",
+    "available_triggers": [
+      "org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed",
+      "org.jsoup.parser.CharacterReaderTest::consumeToEnd",
+      "org.jsoup.parser.ParserTest::handlesNewlinesAndWhitespaceInTag"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 43,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 43,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 774,
+      "tests": [
+        "org.jsoup.parser.CharacterReader_ESTest::test15",
+        "org.jsoup.parser.CharacterReader_ESTest::test37",
+        "org.jsoup.parser.CharacterReader_ESTest::test16",
+        "org.jsoup.parser.CharacterReader_ESTest::test38",
+        "org.jsoup.parser.CharacterReader_ESTest::test13",
+        "org.jsoup.parser.CharacterReader_ESTest::test35",
+        "org.jsoup.parser.CharacterReader_ESTest::test14",
+        "org.jsoup.parser.CharacterReader_ESTest::test36",
+        "org.jsoup.parser.CharacterReader_ESTest::test11",
+        "org.jsoup.parser.CharacterReader_ESTest::test33",
+        "org.jsoup.parser.CharacterReader_ESTest::test12",
+        "org.jsoup.parser.CharacterReader_ESTest::test34",
+        "org.jsoup.parser.CharacterReader_ESTest::test31",
+        "org.jsoup.parser.CharacterReader_ESTest::test10",
+        "org.jsoup.parser.CharacterReader_ESTest::test32",
+        "org.jsoup.parser.CharacterReader_ESTest::test19",
+        "org.jsoup.parser.CharacterReader_ESTest::test17",
+        "org.jsoup.parser.CharacterReader_ESTest::test39",
+        "org.jsoup.parser.CharacterReader_ESTest::test18",
+        "org.jsoup.parser.CharacterReader_ESTest::test30",
+        "org.jsoup.parser.CharacterReader_ESTest::test04",
+        "org.jsoup.parser.CharacterReader_ESTest::test26",
+        "org.jsoup.parser.CharacterReader_ESTest::test05",
+        "org.jsoup.parser.CharacterReader_ESTest::test27",
+        "org.jsoup.parser.CharacterReader_ESTest::test02",
+        "org.jsoup.parser.CharacterReader_ESTest::test24",
+        "org.jsoup.parser.CharacterReader_ESTest::test03",
+        "org.jsoup.parser.CharacterReader_ESTest::test25",
+        "org.jsoup.parser.CharacterReader_ESTest::test00",
+        "org.jsoup.parser.CharacterReader_ESTest::test22",
+        "org.jsoup.parser.CharacterReader_ESTest::test01",
+        "org.jsoup.parser.CharacterReader_ESTest::test23",
+        "org.jsoup.parser.CharacterReader_ESTest::test20",
+        "org.jsoup.parser.CharacterReader_ESTest::test42",
+        "org.jsoup.parser.CharacterReader_ESTest::test21",
+        "org.jsoup.parser.CharacterReader_ESTest::test08",
+        "org.jsoup.parser.CharacterReader_ESTest::test09",
+        "org.jsoup.parser.CharacterReader_ESTest::test06",
+        "org.jsoup.parser.CharacterReader_ESTest::test28",
+        "org.jsoup.parser.CharacterReader_ESTest::test07",
+        "org.jsoup.parser.CharacterReader_ESTest::test29",
+        "org.jsoup.parser.CharacterReader_ESTest::test40",
+        "org.jsoup.parser.CharacterReader_ESTest::test41"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 98,
+      "line_total": 98,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 82,
+      "branch_total": 82,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 43,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 847,
+      "tests": [
+        "org.jsoup.parser.CharacterReader_ESTest::test15",
+        "org.jsoup.parser.CharacterReader_ESTest::test37",
+        "org.jsoup.parser.CharacterReader_ESTest::test16",
+        "org.jsoup.parser.CharacterReader_ESTest::test38",
+        "org.jsoup.parser.CharacterReader_ESTest::test13",
+        "org.jsoup.parser.CharacterReader_ESTest::test35",
+        "org.jsoup.parser.CharacterReader_ESTest::test14",
+        "org.jsoup.parser.CharacterReader_ESTest::test36",
+        "org.jsoup.parser.CharacterReader_ESTest::test11",
+        "org.jsoup.parser.CharacterReader_ESTest::test33",
+        "org.jsoup.parser.CharacterReader_ESTest::test12",
+        "org.jsoup.parser.CharacterReader_ESTest::test34",
+        "org.jsoup.parser.CharacterReader_ESTest::test31",
+        "org.jsoup.parser.CharacterReader_ESTest::test10",
+        "org.jsoup.parser.CharacterReader_ESTest::test32",
+        "org.jsoup.parser.CharacterReader_ESTest::test19",
+        "org.jsoup.parser.CharacterReader_ESTest::test17",
+        "org.jsoup.parser.CharacterReader_ESTest::test39",
+        "org.jsoup.parser.CharacterReader_ESTest::test18",
+        "org.jsoup.parser.CharacterReader_ESTest::test30",
+        "org.jsoup.parser.CharacterReader_ESTest::test04",
+        "org.jsoup.parser.CharacterReader_ESTest::test26",
+        "org.jsoup.parser.CharacterReader_ESTest::test05",
+        "org.jsoup.parser.CharacterReader_ESTest::test27",
+        "org.jsoup.parser.CharacterReader_ESTest::test02",
+        "org.jsoup.parser.CharacterReader_ESTest::test24",
+        "org.jsoup.parser.CharacterReader_ESTest::test03",
+        "org.jsoup.parser.CharacterReader_ESTest::test25",
+        "org.jsoup.parser.CharacterReader_ESTest::test00",
+        "org.jsoup.parser.CharacterReader_ESTest::test22",
+        "org.jsoup.parser.CharacterReader_ESTest::test01",
+        "org.jsoup.parser.CharacterReader_ESTest::test23",
+        "org.jsoup.parser.CharacterReader_ESTest::test20",
+        "org.jsoup.parser.CharacterReader_ESTest::test42",
+        "org.jsoup.parser.CharacterReader_ESTest::test21",
+        "org.jsoup.parser.CharacterReader_ESTest::test08",
+        "org.jsoup.parser.CharacterReader_ESTest::test09",
+        "org.jsoup.parser.CharacterReader_ESTest::test06",
+        "org.jsoup.parser.CharacterReader_ESTest::test28",
+        "org.jsoup.parser.CharacterReader_ESTest::test07",
+        "org.jsoup.parser.CharacterReader_ESTest::test29",
+        "org.jsoup.parser.CharacterReader_ESTest::test40",
+        "org.jsoup.parser.CharacterReader_ESTest::test41"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test13",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[]\n?> but was:<[\r]\n?>",
+          "trace": "org.junit.ComparisonFailure: expected:<[]\n?> but was:<[\r]\n?>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test13(CharacterReader_ESTest.java:193)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test36",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[]\n?> but was:<[\r]\n?>",
+          "trace": "org.junit.ComparisonFailure: expected:<[]\n?> but was:<[\r]\n?>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test36(CharacterReader_ESTest.java:545)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test10",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test10(CharacterReader_ESTest.java:150)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test30",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test30(CharacterReader_ESTest.java:460)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test27",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<h,:[]]> but was:<h,:[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<h,:[]]> but was:<h,:[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test27(CharacterReader_ESTest.java:424)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test25",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<(zy&Lv-}lc[0]> but was:<(zy&Lv-}lc[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test25(CharacterReader_ESTest.java:394)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test01",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[]\n?> but was:<[\r]\n?>",
+          "trace": "org.junit.ComparisonFailure: expected:<[]\n?> but was:<[\r]\n?>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test01(CharacterReader_ESTest.java:32)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test06",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<[]\n?> but was:<[\r]\n?>",
+          "trace": "org.junit.ComparisonFailure: expected:<[]\n?> but was:<[\r]\n?>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test06(CharacterReader_ESTest.java:90)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.CharacterReader_ESTest::test29",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<\".530bqnYY[_]> but was:<\".530bqnYY[]>",
+          "trace": "org.junit.ComparisonFailure: expected:<\".530bqnYY[_]> but was:<\".530bqnYY[]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.parser.CharacterReader_ESTest.test29(CharacterReader_ESTest.java:448)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 94,
+      "line_total": 97,
+      "line_coverage_percent": 96.90721649484536,
+      "branch_covered": 75,
+      "branch_total": 82,
+      "branch_coverage_percent": 91.46341463414635
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-e6bde917798e/evaluation-1",
+  "finished_at": "2026-10-05T01:23:48.357648+00:00"
+}

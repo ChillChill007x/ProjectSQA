@@ -1,0 +1,9 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowLong",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowLong",
+    "com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowInt"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

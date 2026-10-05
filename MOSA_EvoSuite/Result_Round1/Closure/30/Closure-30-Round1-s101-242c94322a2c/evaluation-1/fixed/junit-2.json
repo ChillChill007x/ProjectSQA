@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":4529,"tests":["com.google.javascript.jscomp.FlowSensitiveInlineVariables_ESTest::test1","com.google.javascript.jscomp.FlowSensitiveInlineVariables_ESTest::test0"],"failures":[],"passed":true}

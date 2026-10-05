@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-9-Round1-s101-78f114b7b49c-attempt2",
+  "unit": {
+    "project": "Chart",
+    "bug": "9",
+    "target": "org.jfree.data.time.TimeSeries",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T08:37:49.169186+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2"
+  },
+  "generation_time_sec": 42.144,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2/org/jfree/data/time/TimeSeries_ESTest.java": "4295e20e09ccb4ec80d6b11b44d409565335ba2ac4f2700f07c80b0a9ad71ba0",
+    "MOSA_EvoSuite/Test/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2/org/jfree/data/time/TimeSeries_ESTest_scaffolding.java": "1aec70da2a239f7caf739b809f2ab050e3a70be3f0ce5a20d70c6b0546bebb63"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.data.time.junit.TimeSeriesTests::testBug1864222",
+    "available_triggers": [
+      "org.jfree.data.time.junit.TimeSeriesTests::testBug1864222"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 56,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 657,
+      "tests": [
+        "org.jfree.data.time.TimeSeries_ESTest::test52",
+        "org.jfree.data.time.TimeSeries_ESTest::test51",
+        "org.jfree.data.time.TimeSeries_ESTest::test50",
+        "org.jfree.data.time.TimeSeries_ESTest::test12",
+        "org.jfree.data.time.TimeSeries_ESTest::test11",
+        "org.jfree.data.time.TimeSeries_ESTest::test55",
+        "org.jfree.data.time.TimeSeries_ESTest::test10",
+        "org.jfree.data.time.TimeSeries_ESTest::test54",
+        "org.jfree.data.time.TimeSeries_ESTest::test53",
+        "org.jfree.data.time.TimeSeries_ESTest::test16",
+        "org.jfree.data.time.TimeSeries_ESTest::test15",
+        "org.jfree.data.time.TimeSeries_ESTest::test14",
+        "org.jfree.data.time.TimeSeries_ESTest::test13",
+        "org.jfree.data.time.TimeSeries_ESTest::test19",
+        "org.jfree.data.time.TimeSeries_ESTest::test18",
+        "org.jfree.data.time.TimeSeries_ESTest::test17",
+        "org.jfree.data.time.TimeSeries_ESTest::test41",
+        "org.jfree.data.time.TimeSeries_ESTest::test40",
+        "org.jfree.data.time.TimeSeries_ESTest::test01",
+        "org.jfree.data.time.TimeSeries_ESTest::test45",
+        "org.jfree.data.time.TimeSeries_ESTest::test00",
+        "org.jfree.data.time.TimeSeries_ESTest::test44",
+        "org.jfree.data.time.TimeSeries_ESTest::test43",
+        "org.jfree.data.time.TimeSeries_ESTest::test42",
+        "org.jfree.data.time.TimeSeries_ESTest::test05",
+        "org.jfree.data.time.TimeSeries_ESTest::test49",
+        "org.jfree.data.time.TimeSeries_ESTest::test04",
+        "org.jfree.data.time.TimeSeries_ESTest::test48",
+        "org.jfree.data.time.TimeSeries_ESTest::test03",
+        "org.jfree.data.time.TimeSeries_ESTest::test47",
+        "org.jfree.data.time.TimeSeries_ESTest::test02",
+        "org.jfree.data.time.TimeSeries_ESTest::test46",
+        "org.jfree.data.time.TimeSeries_ESTest::test09",
+        "org.jfree.data.time.TimeSeries_ESTest::test08",
+        "org.jfree.data.time.TimeSeries_ESTest::test07",
+        "org.jfree.data.time.TimeSeries_ESTest::test06",
+        "org.jfree.data.time.TimeSeries_ESTest::test30",
+        "org.jfree.data.time.TimeSeries_ESTest::test34",
+        "org.jfree.data.time.TimeSeries_ESTest::test33",
+        "org.jfree.data.time.TimeSeries_ESTest::test32",
+        "org.jfree.data.time.TimeSeries_ESTest::test31",
+        "org.jfree.data.time.TimeSeries_ESTest::test38",
+        "org.jfree.data.time.TimeSeries_ESTest::test37",
+        "org.jfree.data.time.TimeSeries_ESTest::test36",
+        "org.jfree.data.time.TimeSeries_ESTest::test35",
+        "org.jfree.data.time.TimeSeries_ESTest::test39",
+        "org.jfree.data.time.TimeSeries_ESTest::test23",
+        "org.jfree.data.time.TimeSeries_ESTest::test22",
+        "org.jfree.data.time.TimeSeries_ESTest::test21",
+        "org.jfree.data.time.TimeSeries_ESTest::test20",
+        "org.jfree.data.time.TimeSeries_ESTest::test27",
+        "org.jfree.data.time.TimeSeries_ESTest::test26",
+        "org.jfree.data.time.TimeSeries_ESTest::test25",
+        "org.jfree.data.time.TimeSeries_ESTest::test24",
+        "org.jfree.data.time.TimeSeries_ESTest::test29",
+        "org.jfree.data.time.TimeSeries_ESTest::test28"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.data.time.TimeSeries_ESTest::test52",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": "Index -1 out of bounds for length 0",
+          "trace": "java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:374)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:459)\n\tat org.jfree.data.time.TimeSeries.getDataItem(TimeSeries.java:341)\n\tat org.jfree.data.time.TimeSeries.getTimePeriod(TimeSeries.java:372)\n\tat org.jfree.data.time.TimeSeries.getNextTimePeriod(TimeSeries.java:382)\n\tat org.jfree.data.time.TimeSeries_ESTest.test52(TimeSeries_ESTest.java:3395)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.time.TimeSeries_ESTest::test55",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 59 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 59 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.time.TimeSeries_ESTest.test55(TimeSeries_ESTest.java:3534)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 271,
+      "line_total": 289,
+      "line_coverage_percent": 93.77162629757785,
+      "branch_covered": 127,
+      "branch_total": 130,
+      "branch_coverage_percent": 97.6923076923077
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T08:39:11.430303+00:00"
+}

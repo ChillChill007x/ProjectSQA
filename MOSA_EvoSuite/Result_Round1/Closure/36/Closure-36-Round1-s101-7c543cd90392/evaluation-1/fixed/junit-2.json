@@ -1,0 +1,1 @@
+{"run_count":3,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":4338,"tests":["com.google.javascript.jscomp.InlineVariables_ESTest::test2","com.google.javascript.jscomp.InlineVariables_ESTest::test0","com.google.javascript.jscomp.InlineVariables_ESTest::test1"],"failures":[],"passed":true}

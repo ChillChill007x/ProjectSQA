@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-34-Round1-s101-16f006c11bab",
+  "unit": {
+    "project": "Closure",
+    "bug": "34",
+    "target": "com.google.javascript.jscomp.CodePrinter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:49:34.153917+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/34/Closure-34-Round1-s101-16f006c11bab",
+    "tests": "MOSA_EvoSuite/Test/Closure/34/Closure-34-Round1-s101-16f006c11bab",
+    "config": "MOSA_EvoSuite/Configuration/Closure/34/Closure-34-Round1-s101-16f006c11bab"
+  },
+  "generation_time_sec": 54.37,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/34/Closure-34-Round1-s101-16f006c11bab/com/google/javascript/jscomp/CodePrinter_ESTest.java": "32a1f626d8f85655ac013eeb82ca7a0c289aadded80ee736109ffb505a236359",
+    "MOSA_EvoSuite/Test/Closure/34/Closure-34-Round1-s101-16f006c11bab/com/google/javascript/jscomp/CodePrinter_ESTest_scaffolding.java": "54e6bcdc734025581c26ec4257f266bb6d9c7e824adab2012126d57ab6d1d1aa"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CodePrinterTest::testManyAdds",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CodePrinterTest::testManyAdds"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1997,
+      "tests": [
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test03",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test14",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test02",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test13",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test05",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test16",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test04",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test15",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test10",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test01",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test12",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test00",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test11",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test07",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test06",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test17",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test09",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 17,
+      "line_total": 17,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 11,
+      "branch_total": 12,
+      "branch_coverage_percent": 91.66666666666667
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1790,
+      "tests": [
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test03",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test14",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test02",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test13",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test05",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test16",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test04",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test15",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test10",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test01",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test12",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test00",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test11",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test07",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test06",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test17",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test09",
+        "com.google.javascript.jscomp.CodePrinter_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 17,
+      "line_total": 17,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 11,
+      "branch_total": 12,
+      "branch_coverage_percent": 91.66666666666667
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/34/Closure-34-Round1-s101-16f006c11bab/evaluation-1",
+  "finished_at": "2026-10-04T19:52:57.410317+00:00"
+}

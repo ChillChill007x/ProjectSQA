@@ -1,0 +1,149 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-18-Round1-s101-7d4811476f9f",
+  "unit": {
+    "project": "Time",
+    "bug": "18",
+    "target": "org.joda.time.chrono.GJChronology",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:57:32.905573+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/18/Time-18-Round1-s101-7d4811476f9f",
+    "tests": "MOSA_EvoSuite/Test/Time/18/Time-18-Round1-s101-7d4811476f9f",
+    "config": "MOSA_EvoSuite/Configuration/Time/18/Time-18-Round1-s101-7d4811476f9f"
+  },
+  "generation_time_sec": 42.376,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/18/Time-18-Round1-s101-7d4811476f9f/org/joda/time/chrono/GJChronology_ESTest.java": "d9dfa464b07d359aba896503f4d913729cd2466b7696a02a922b90a640066901",
+    "MOSA_EvoSuite/Test/Time/18/Time-18-Round1-s101-7d4811476f9f/org/joda/time/chrono/GJChronology_ESTest_scaffolding.java": "d1b786fd60095c141e66641311674cbba57a75122b14d1030f150f4f6ea157bc"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.chrono.TestGJChronology::testLeapYearRulesConstruction",
+    "available_triggers": [
+      "org.joda.time.chrono.TestGJChronology::testLeapYearRulesConstruction"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 31,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 31,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 867,
+      "tests": [
+        "org.joda.time.chrono.GJChronology_ESTest::test06",
+        "org.joda.time.chrono.GJChronology_ESTest::test28",
+        "org.joda.time.chrono.GJChronology_ESTest::test07",
+        "org.joda.time.chrono.GJChronology_ESTest::test29",
+        "org.joda.time.chrono.GJChronology_ESTest::test08",
+        "org.joda.time.chrono.GJChronology_ESTest::test09",
+        "org.joda.time.chrono.GJChronology_ESTest::test20",
+        "org.joda.time.chrono.GJChronology_ESTest::test21",
+        "org.joda.time.chrono.GJChronology_ESTest::test00",
+        "org.joda.time.chrono.GJChronology_ESTest::test22",
+        "org.joda.time.chrono.GJChronology_ESTest::test01",
+        "org.joda.time.chrono.GJChronology_ESTest::test23",
+        "org.joda.time.chrono.GJChronology_ESTest::test02",
+        "org.joda.time.chrono.GJChronology_ESTest::test24",
+        "org.joda.time.chrono.GJChronology_ESTest::test03",
+        "org.joda.time.chrono.GJChronology_ESTest::test25",
+        "org.joda.time.chrono.GJChronology_ESTest::test04",
+        "org.joda.time.chrono.GJChronology_ESTest::test26",
+        "org.joda.time.chrono.GJChronology_ESTest::test05",
+        "org.joda.time.chrono.GJChronology_ESTest::test27",
+        "org.joda.time.chrono.GJChronology_ESTest::test30",
+        "org.joda.time.chrono.GJChronology_ESTest::test17",
+        "org.joda.time.chrono.GJChronology_ESTest::test18",
+        "org.joda.time.chrono.GJChronology_ESTest::test19",
+        "org.joda.time.chrono.GJChronology_ESTest::test10",
+        "org.joda.time.chrono.GJChronology_ESTest::test11",
+        "org.joda.time.chrono.GJChronology_ESTest::test12",
+        "org.joda.time.chrono.GJChronology_ESTest::test13",
+        "org.joda.time.chrono.GJChronology_ESTest::test14",
+        "org.joda.time.chrono.GJChronology_ESTest::test15",
+        "org.joda.time.chrono.GJChronology_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 156,
+      "line_total": 165,
+      "line_coverage_percent": 94.54545454545455,
+      "branch_covered": 44,
+      "branch_total": 50,
+      "branch_coverage_percent": 88.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 31,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 845,
+      "tests": [
+        "org.joda.time.chrono.GJChronology_ESTest::test06",
+        "org.joda.time.chrono.GJChronology_ESTest::test28",
+        "org.joda.time.chrono.GJChronology_ESTest::test07",
+        "org.joda.time.chrono.GJChronology_ESTest::test29",
+        "org.joda.time.chrono.GJChronology_ESTest::test08",
+        "org.joda.time.chrono.GJChronology_ESTest::test09",
+        "org.joda.time.chrono.GJChronology_ESTest::test20",
+        "org.joda.time.chrono.GJChronology_ESTest::test21",
+        "org.joda.time.chrono.GJChronology_ESTest::test00",
+        "org.joda.time.chrono.GJChronology_ESTest::test22",
+        "org.joda.time.chrono.GJChronology_ESTest::test01",
+        "org.joda.time.chrono.GJChronology_ESTest::test23",
+        "org.joda.time.chrono.GJChronology_ESTest::test02",
+        "org.joda.time.chrono.GJChronology_ESTest::test24",
+        "org.joda.time.chrono.GJChronology_ESTest::test03",
+        "org.joda.time.chrono.GJChronology_ESTest::test25",
+        "org.joda.time.chrono.GJChronology_ESTest::test04",
+        "org.joda.time.chrono.GJChronology_ESTest::test26",
+        "org.joda.time.chrono.GJChronology_ESTest::test05",
+        "org.joda.time.chrono.GJChronology_ESTest::test27",
+        "org.joda.time.chrono.GJChronology_ESTest::test30",
+        "org.joda.time.chrono.GJChronology_ESTest::test17",
+        "org.joda.time.chrono.GJChronology_ESTest::test18",
+        "org.joda.time.chrono.GJChronology_ESTest::test19",
+        "org.joda.time.chrono.GJChronology_ESTest::test10",
+        "org.joda.time.chrono.GJChronology_ESTest::test11",
+        "org.joda.time.chrono.GJChronology_ESTest::test12",
+        "org.joda.time.chrono.GJChronology_ESTest::test13",
+        "org.joda.time.chrono.GJChronology_ESTest::test14",
+        "org.joda.time.chrono.GJChronology_ESTest::test15",
+        "org.joda.time.chrono.GJChronology_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 152,
+      "line_total": 157,
+      "line_coverage_percent": 96.81528662420382,
+      "branch_covered": 41,
+      "branch_total": 44,
+      "branch_coverage_percent": 93.18181818181819
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Time/18/Time-18-Round1-s101-7d4811476f9f/evaluation-1",
+  "finished_at": "2026-10-05T03:59:10.857304+00:00"
+}

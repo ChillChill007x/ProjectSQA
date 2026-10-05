@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-1-Round1-s101-7567c13d957d-attempt2",
+  "unit": {
+    "project": "Collections",
+    "bug": "1",
+    "target": "org.apache.commons.collections.map.Flat3Map",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-05T09:06:19.428587+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2"
+  },
+  "generation_time_sec": 58.063,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2/org/apache/commons/collections/map/Flat3Map_ESTest.java": "8d7ac3038f406f0abb3c12dea2f025408779ea85dad36e8b799171b47b3bacea",
+    "MOSA_EvoSuite/Test/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2/org/apache/commons/collections/map/Flat3Map_ESTest_scaffolding.java": "0204360e479a1bad2edc9de34befe046c783dee56cd93050f5f26edc26c4c2d5"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+    "available_triggers": [
+      "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2",
+      "org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue3",
+      "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue2",
+      "org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue3"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-05T09:07:43.876486+00:00"
+}

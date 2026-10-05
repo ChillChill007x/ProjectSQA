@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/JacksonDatabind-75-Round1-s101-7e8a39b731c3/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.databind.struct.EnumFormatShapeTest::testEnumPropertyAsNumber"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.578,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.databind.struct.EnumFormatShapeTest::testEnumPropertyAsNumber\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

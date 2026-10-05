@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall1",
+  "available_triggers": [
+    "com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall1",
+    "com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall2",
+    "com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testRemoveUselessOps"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-5-Round1-s101-0624c5503f5f/evaluation-1/buggy",
+    "-t",
+    "org.jfree.data.xy.junit.XYSeriesTests::testBug1955483"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 28.152,
+  "stdout": "Failing tests: 1\n  - org.jfree.data.xy.junit.XYSeriesTests::testBug1955483\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

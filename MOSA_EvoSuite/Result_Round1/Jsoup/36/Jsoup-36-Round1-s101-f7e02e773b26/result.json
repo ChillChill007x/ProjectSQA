@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-36-Round1-s101-f7e02e773b26",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "36",
+    "target": "org.jsoup.helper.DataUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:38:39.928558+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26"
+  },
+  "generation_time_sec": 50.248,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26/org/jsoup/helper/DataUtil_ESTest.java": "8340cefd1d58de857f953af29a129ee69ec8dc68084e44b5211f5ade583dce07",
+    "MOSA_EvoSuite/Test/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26/org/jsoup/helper/DataUtil_ESTest_scaffolding.java": "887496c5d87330534fa28bb992c87dbcd33ce687b152befcd2d8edb7d2beefe5"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString",
+    "available_triggers": [
+      "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString",
+      "org.jsoup.helper.DataUtilTest::shouldNotThrowExceptionOnEmptyCharset",
+      "org.jsoup.helper.DataUtilTest::testQuotedCharset",
+      "org.jsoup.helper.DataUtilTest::shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags",
+      "org.jsoup.helper.DataUtilTest::shouldReturnNullForIllegalCharsetNames",
+      "org.jsoup.integration.ParseTest::testBrokenHtml5CharsetWithASingleDoubleQuote"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 12,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 989,
+      "tests": [
+        "org.jsoup.helper.DataUtil_ESTest::test10",
+        "org.jsoup.helper.DataUtil_ESTest::test01",
+        "org.jsoup.helper.DataUtil_ESTest::test00",
+        "org.jsoup.helper.DataUtil_ESTest::test11",
+        "org.jsoup.helper.DataUtil_ESTest::test03",
+        "org.jsoup.helper.DataUtil_ESTest::test02",
+        "org.jsoup.helper.DataUtil_ESTest::test05",
+        "org.jsoup.helper.DataUtil_ESTest::test04",
+        "org.jsoup.helper.DataUtil_ESTest::test07",
+        "org.jsoup.helper.DataUtil_ESTest::test06",
+        "org.jsoup.helper.DataUtil_ESTest::test09",
+        "org.jsoup.helper.DataUtil_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 44,
+      "line_total": 70,
+      "line_coverage_percent": 62.857142857142854,
+      "branch_covered": 24,
+      "branch_total": 46,
+      "branch_coverage_percent": 52.17391304347826
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 953,
+      "tests": [
+        "org.jsoup.helper.DataUtil_ESTest::test10",
+        "org.jsoup.helper.DataUtil_ESTest::test01",
+        "org.jsoup.helper.DataUtil_ESTest::test00",
+        "org.jsoup.helper.DataUtil_ESTest::test11",
+        "org.jsoup.helper.DataUtil_ESTest::test03",
+        "org.jsoup.helper.DataUtil_ESTest::test02",
+        "org.jsoup.helper.DataUtil_ESTest::test05",
+        "org.jsoup.helper.DataUtil_ESTest::test04",
+        "org.jsoup.helper.DataUtil_ESTest::test07",
+        "org.jsoup.helper.DataUtil_ESTest::test06",
+        "org.jsoup.helper.DataUtil_ESTest::test09",
+        "org.jsoup.helper.DataUtil_ESTest::test08"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.helper.DataUtil_ESTest::test02",
+          "exception": "java.nio.charset.IllegalCharsetNameException",
+          "message": "",
+          "trace": "java.nio.charset.IllegalCharsetNameException: \n\tat java.base/java.nio.charset.Charset.checkName(Charset.java:296)\n\tat java.base/java.nio.charset.Charset.lookup2(Charset.java:482)\n\tat java.base/java.nio.charset.Charset.lookup(Charset.java:462)\n\tat java.base/java.nio.charset.Charset.isSupported(Charset.java:503)\n\tat org.jsoup.helper.DataUtil.getCharsetFromContentType(DataUtil.java:161)\n\tat org.jsoup.helper.DataUtil_ESTest.test02(DataUtil_ESTest.java:46)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 42,
+      "line_total": 58,
+      "line_coverage_percent": 72.41379310344827,
+      "branch_covered": 23,
+      "branch_total": 38,
+      "branch_coverage_percent": 60.526315789473685
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/36/Jsoup-36-Round1-s101-f7e02e773b26/evaluation-1",
+  "finished_at": "2026-10-05T01:40:07.761179+00:00"
+}

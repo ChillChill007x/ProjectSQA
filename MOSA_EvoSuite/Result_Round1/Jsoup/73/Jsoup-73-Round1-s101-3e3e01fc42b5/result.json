@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-73-Round1-s101-3e3e01fc42b5",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "73",
+    "target": "org.jsoup.helper.W3CDom",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T02:03:05.767554+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/73/Jsoup-73-Round1-s101-3e3e01fc42b5",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/73/Jsoup-73-Round1-s101-3e3e01fc42b5",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/73/Jsoup-73-Round1-s101-3e3e01fc42b5"
+  },
+  "generation_time_sec": 41.122,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/73/Jsoup-73-Round1-s101-3e3e01fc42b5/org/jsoup/helper/W3CDom_ESTest.java": "b44f7d41bb09c973d3cae5eb1ebc15b7b9b30f6ca5e179ae4beb2eca684ff787",
+    "MOSA_EvoSuite/Test/Jsoup/73/Jsoup-73-Round1-s101-3e3e01fc42b5/org/jsoup/helper/W3CDom_ESTest_scaffolding.java": "197603cc22b05e9c4824a78d28c34df29004091af971d33ffc1ec863ee1cdfa4"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.helper.W3CDomTest::namespacePreservation",
+    "available_triggers": [
+      "org.jsoup.helper.W3CDomTest::namespacePreservation"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1830,
+      "tests": [
+        "org.jsoup.helper.W3CDom_ESTest::test8",
+        "org.jsoup.helper.W3CDom_ESTest::test7",
+        "org.jsoup.helper.W3CDom_ESTest::test6",
+        "org.jsoup.helper.W3CDom_ESTest::test5",
+        "org.jsoup.helper.W3CDom_ESTest::test4",
+        "org.jsoup.helper.W3CDom_ESTest::test3",
+        "org.jsoup.helper.W3CDom_ESTest::test2",
+        "org.jsoup.helper.W3CDom_ESTest::test1",
+        "org.jsoup.helper.W3CDom_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.helper.W3CDom_ESTest::test7",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<<html>\n[<head>\n<META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n</head>\n]<body></body>\n</html...> but was:<<html>\n[    <head>\n        <META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    </head>\n    ]<body></body>\n</html...>",
+          "trace": "org.junit.ComparisonFailure: expected:<<html>\n[<head>\n<META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n</head>\n]<body></body>\n</html...> but was:<<html>\n[    <head>\n        <META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    </head>\n    ]<body></body>\n</html...>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.jsoup.helper.W3CDom_ESTest.test7(W3CDom_ESTest.java:588)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 20,
+      "line_total": 24,
+      "line_coverage_percent": 83.33333333333333,
+      "branch_covered": 2,
+      "branch_total": 2,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T02:04:28.179383+00:00"
+}

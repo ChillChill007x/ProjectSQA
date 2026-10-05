@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-38-Round1-s101-a309328045c3",
+  "unit": {
+    "project": "Cli",
+    "bug": "38",
+    "target": "org.apache.commons.cli.DefaultParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:01:46.325800+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/38/Cli-38-Round1-s101-a309328045c3",
+    "tests": "MOSA_EvoSuite/Test/Cli/38/Cli-38-Round1-s101-a309328045c3",
+    "config": "MOSA_EvoSuite/Configuration/Cli/38/Cli-38-Round1-s101-a309328045c3"
+  },
+  "generation_time_sec": 35.687,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/38/Cli-38-Round1-s101-a309328045c3/org/apache/commons/cli/DefaultParser_ESTest.java": "8c88e9784ab720e32f03aa89e97a53dc918eaefe01c5cb8cdaf5158863b5e2b8",
+    "MOSA_EvoSuite/Test/Cli/38/Cli-38-Round1-s101-a309328045c3/org/apache/commons/cli/DefaultParser_ESTest_scaffolding.java": "c970261f5d78b4e9d2b64052c6d089b0b99cf99b0fc38ec6c010b90da850854f"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions",
+    "available_triggers": [
+      "org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 365,
+      "tests": [
+        "org.apache.commons.cli.DefaultParser_ESTest::test10",
+        "org.apache.commons.cli.DefaultParser_ESTest::test00",
+        "org.apache.commons.cli.DefaultParser_ESTest::test11",
+        "org.apache.commons.cli.DefaultParser_ESTest::test01",
+        "org.apache.commons.cli.DefaultParser_ESTest::test12",
+        "org.apache.commons.cli.DefaultParser_ESTest::test02",
+        "org.apache.commons.cli.DefaultParser_ESTest::test13",
+        "org.apache.commons.cli.DefaultParser_ESTest::test03",
+        "org.apache.commons.cli.DefaultParser_ESTest::test14",
+        "org.apache.commons.cli.DefaultParser_ESTest::test04",
+        "org.apache.commons.cli.DefaultParser_ESTest::test15",
+        "org.apache.commons.cli.DefaultParser_ESTest::test05",
+        "org.apache.commons.cli.DefaultParser_ESTest::test16",
+        "org.apache.commons.cli.DefaultParser_ESTest::test06",
+        "org.apache.commons.cli.DefaultParser_ESTest::test17",
+        "org.apache.commons.cli.DefaultParser_ESTest::test07",
+        "org.apache.commons.cli.DefaultParser_ESTest::test08",
+        "org.apache.commons.cli.DefaultParser_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 102,
+      "line_total": 193,
+      "line_coverage_percent": 52.84974093264249,
+      "branch_covered": 67,
+      "branch_total": 164,
+      "branch_coverage_percent": 40.853658536585364
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 367,
+      "tests": [
+        "org.apache.commons.cli.DefaultParser_ESTest::test10",
+        "org.apache.commons.cli.DefaultParser_ESTest::test00",
+        "org.apache.commons.cli.DefaultParser_ESTest::test11",
+        "org.apache.commons.cli.DefaultParser_ESTest::test01",
+        "org.apache.commons.cli.DefaultParser_ESTest::test12",
+        "org.apache.commons.cli.DefaultParser_ESTest::test02",
+        "org.apache.commons.cli.DefaultParser_ESTest::test13",
+        "org.apache.commons.cli.DefaultParser_ESTest::test03",
+        "org.apache.commons.cli.DefaultParser_ESTest::test14",
+        "org.apache.commons.cli.DefaultParser_ESTest::test04",
+        "org.apache.commons.cli.DefaultParser_ESTest::test15",
+        "org.apache.commons.cli.DefaultParser_ESTest::test05",
+        "org.apache.commons.cli.DefaultParser_ESTest::test16",
+        "org.apache.commons.cli.DefaultParser_ESTest::test06",
+        "org.apache.commons.cli.DefaultParser_ESTest::test17",
+        "org.apache.commons.cli.DefaultParser_ESTest::test07",
+        "org.apache.commons.cli.DefaultParser_ESTest::test08",
+        "org.apache.commons.cli.DefaultParser_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 102,
+      "line_total": 191,
+      "line_coverage_percent": 53.403141361256544,
+      "branch_covered": 67,
+      "branch_total": 158,
+      "branch_coverage_percent": 42.40506329113924
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/38/Cli-38-Round1-s101-a309328045c3/evaluation-1",
+  "finished_at": "2026-10-04T21:02:44.062387+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-26-Round1-s101-702080e1a0f4-attempt2/evaluation-1/fixed",
+    "-t",
+    "org.joda.time.TestDateTimeZoneCutover::testWithSecondOfMinuteInDstChange"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.171,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

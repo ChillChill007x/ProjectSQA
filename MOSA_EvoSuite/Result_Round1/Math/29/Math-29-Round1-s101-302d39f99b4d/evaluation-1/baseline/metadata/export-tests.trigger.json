@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Math-29-Round1-s101-302d39f99b4d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.693,
+  "stdout": "org.apache.commons.math3.linear.SparseRealVectorTest::testEbeDivideMixedTypes\norg.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplyMixedTypes\norg.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplySameType",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-16-Round1-s101-71252c745a6e",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "16",
+    "target": "com.fasterxml.jackson.core.util.JsonParserSequence",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:46:29.379627+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e"
+  },
+  "generation_time_sec": 37.686,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e/com/fasterxml/jackson/core/util/JsonParserSequence_ESTest.java": "f2eca16ae8e8986038a480524b19f427941a55cdad6d5f8d7ea7e7d35bdac235",
+    "MOSA_EvoSuite/Test/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e/com/fasterxml/jackson/core/util/JsonParserSequence_ESTest_scaffolding.java": "8e9785ecefda75b00bbfef9b0f53015f438b6cab2cdad32ffc3310064bc0e65d"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.json.ParserSequenceTest::testInitialized",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.json.ParserSequenceTest::testInitialized"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 359,
+      "tests": [
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test2",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test3",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test4",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test5",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test0",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 35,
+      "line_total": 38,
+      "line_coverage_percent": 92.10526315789474,
+      "branch_covered": 23,
+      "branch_total": 26,
+      "branch_coverage_percent": 88.46153846153847
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 356,
+      "tests": [
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test2",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test3",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test4",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test5",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test0",
+        "com.fasterxml.jackson.core.util.JsonParserSequence_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 33,
+      "line_total": 33,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 21,
+      "branch_total": 22,
+      "branch_coverage_percent": 95.45454545454545
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e/evaluation-1",
+  "finished_at": "2026-10-04T23:47:32.323746+00:00"
+}

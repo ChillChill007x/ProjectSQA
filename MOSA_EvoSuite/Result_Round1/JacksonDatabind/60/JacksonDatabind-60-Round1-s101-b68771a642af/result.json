@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-60-Round1-s101-b68771a642af",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "60",
+    "target": "com.fasterxml.jackson.databind.ser.std.JsonValueSerializer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:06:22.959838+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-b68771a642af",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-b68771a642af",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-b68771a642af"
+  },
+  "generation_time_sec": 62.329,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-b68771a642af/com/fasterxml/jackson/databind/ser/std/JsonValueSerializer_ESTest.java": "b8919c09a375c4ee28f60f41b51c42fcae0bbf6ee79a051e2452ceabf8f9f285",
+    "MOSA_EvoSuite/Test/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-b68771a642af/com/fasterxml/jackson/databind/ser/std/JsonValueSerializer_ESTest_scaffolding.java": "dc84f17e32ea39d32ecb815809e4de51b2b20e76080c2bc36c82ca5a98213ef1"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue",
+      "com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest::testWithAsValue"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:08:46.923134+00:00"
+}

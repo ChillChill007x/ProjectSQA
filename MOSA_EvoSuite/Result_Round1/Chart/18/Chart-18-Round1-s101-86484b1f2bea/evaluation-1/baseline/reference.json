@@ -1,0 +1,11 @@
+{
+  "trigger": "org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955",
+  "available_triggers": [
+    "org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955",
+    "org.jfree.data.junit.DefaultKeyedValues2DTests::testRemoveColumnByKey",
+    "org.jfree.data.junit.DefaultKeyedValuesTests::testRemoveValue",
+    "org.jfree.data.junit.DefaultKeyedValuesTests::testGetIndex2"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

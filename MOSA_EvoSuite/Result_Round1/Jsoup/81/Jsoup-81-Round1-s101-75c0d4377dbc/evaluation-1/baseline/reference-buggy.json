@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-81-Round1-s101-75c0d4377dbc/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.helper.DataUtilTest::supportsXmlCharsetDeclaration"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.654,
+  "stdout": "Failing tests: 1\n  - org.jsoup.helper.DataUtilTest::supportsXmlCharsetDeclaration\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

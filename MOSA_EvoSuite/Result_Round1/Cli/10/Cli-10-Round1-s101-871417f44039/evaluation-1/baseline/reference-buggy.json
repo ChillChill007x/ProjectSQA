@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Cli-10-Round1-s101-871417f44039/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.cli.ParseRequiredTest::testReuseOptionsTwice"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.917,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.cli.ParseRequiredTest::testReuseOptionsTwice\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

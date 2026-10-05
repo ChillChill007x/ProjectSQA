@@ -1,0 +1,114 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-37-Round1-s101-a745e7d8f344",
+  "unit": {
+    "project": "Closure",
+    "bug": "37",
+    "target": "com.google.javascript.jscomp.NodeTraversal",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T19:50:09.592799+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/37/Closure-37-Round1-s101-a745e7d8f344",
+    "tests": "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-a745e7d8f344",
+    "config": "MOSA_EvoSuite/Configuration/Closure/37/Closure-37-Round1-s101-a745e7d8f344"
+  },
+  "generation_time_sec": 88.375,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-a745e7d8f344/com/google/javascript/jscomp/NodeTraversal_ESTest.java": "b444f5c3eab5286df66465edbbe4669b7c7bb8f97b71149ad2695728c5b054a2",
+    "MOSA_EvoSuite/Test/Closure/37/Closure-37-Round1-s101-a745e7d8f344/com/google/javascript/jscomp/NodeTraversal_ESTest_scaffolding.java": "d885392631a4549f4fc8c7236d3c295afe1e7b160e8679125b189c16de1212e9"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction",
+    "available_triggers": [
+      "com.google.javascript.jscomp.IntegrationTest::testIncompleteFunction"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3937,
+      "tests": [
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test10",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test11",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test12",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test13",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test14",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test15",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test16",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test17",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test18",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test19",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test20",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test21",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test00",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test22",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test01",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test23",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test02",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test24",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test03",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test25",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test04",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test05",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test06",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test07",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test08",
+        "com.google.javascript.jscomp.NodeTraversal_ESTest::test09"
+      ],
+      "failures": [
+        {
+          "test": "com.google.javascript.jscomp.NodeTraversal_ESTest::test24",
+          "exception": "java.lang.ExceptionInInitializerError",
+          "message": null,
+          "trace": "java.lang.ExceptionInInitializerError\n\tat java.logging/java.util.logging.LogRecord.inferCaller(LogRecord.java:683)\n\tat java.logging/java.util.logging.LogRecord.getSourceClassName(LogRecord.java:352)\n\tat java.logging/java.util.logging.SimpleFormatter.format(SimpleFormatter.java:160)\n\tat java.logging/java.util.logging.StreamHandler.publish(StreamHandler.java:199)\n\tat java.logging/java.util.logging.ConsoleHandler.publish(ConsoleHandler.java:95)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:979)\n\tat java.logging/java.util.logging.Logger.doLog(Logger.java:1006)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:1029)\n\tat java.logging/java.util.logging.Logger.info(Logger.java:1802)\n\tat com.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:136)\n\tat com.google.javascript.jscomp.JsAst.parse(JsAst.java:86)\n\tat com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:52)\n\tat com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:119)\n\tat com.google.javascript.jscomp.Compiler.parseTestCode(Compiler.java:1476)\n\tat com.google.javascript.jscomp.NodeTraversal_ESTest.test24(NodeTraversal_ESTest.java:3873)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.lang.SecurityException: Security manager blocks (\"java.lang.RuntimePermission\" \"getStackWalkerWithClassReference\")\njava.base/java.lang.Thread.getStackTrace(Thread.java:1602)\norg.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:424)\njava.base/java.lang.StackWalker.checkPermission(StackWalker.java:424)\njava.base/java.lang.StackWalker.getInstance(StackWalker.java:365)\njava.base/java.lang.StackWalker.getInstance(StackWalker.java:336)\njava.logging/java.util.logging.LogRecord$CallerFinder.lambda$static$0(LogRecord.java:700)\njava.base/java.security.AccessController.doPrivileged(Native Method)\njava.logging/java.util.logging.LogRecord$CallerFinder.<clinit>(LogRecord.java:701)\njava.logging/java.util.logging.LogRecord.inferCaller(LogRecord.java:683)\njava.logging/java.util.logging.LogRecord.getSourceClassName(LogRecord.java:352)\njava.logging/java.util.logging.SimpleFormatter.format(SimpleFormatter.java:160)\njava.logging/java.util.logging.StreamHandler.publish(StreamHandler.java:199)\njava.logging/java.util.logging.ConsoleHandler.publish(ConsoleHandler.java:95)\njava.logging/java.util.logging.Logger.log(Logger.java:979)\njava.logging/java.util.logging.Logger.doLog(Logger.java:1006)\njava.logging/java.util.logging.Logger.log(Logger.java:1029)\njava.logging/java.util.logging.Logger.info(Logger.java:1802)\ncom.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:136)\ncom.google.javascript.jscomp.JsAst.parse(JsAst.java:86)\ncom.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:52)\ncom.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:119)\ncom.google.javascript.jscomp.Compiler.parseTestCode(Compiler.java:1476)\ncom.google.javascript.jscomp.NodeTraversal_ESTest.test24(NodeTraversal_ESTest.java:3873)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:566)\norg.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\norg.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\norg.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\norg.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\njava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\njava.base/java.lang.Thread.run(Thread.java:829)\n\n\tat org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:436)\n\tat java.base/java.lang.StackWalker.checkPermission(StackWalker.java:424)\n\tat java.base/java.lang.StackWalker.getInstance(StackWalker.java:365)\n\tat java.base/java.lang.StackWalker.getInstance(StackWalker.java:336)\n\tat java.logging/java.util.logging.LogRecord$CallerFinder.lambda$static$0(LogRecord.java:700)\n\tat java.base/java.security.AccessController.doPrivileged(Native Method)\n\tat java.logging/java.util.logging.LogRecord$CallerFinder.<clinit>(LogRecord.java:701)\n\t... 27 more\n"
+        },
+        {
+          "test": "com.google.javascript.jscomp.NodeTraversal_ESTest::test05",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.logging.LogRecord$CallerFinder",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.logging.LogRecord$CallerFinder\n\tat java.logging/java.util.logging.LogRecord.inferCaller(LogRecord.java:683)\n\tat java.logging/java.util.logging.LogRecord.getSourceClassName(LogRecord.java:352)\n\tat java.logging/java.util.logging.SimpleFormatter.format(SimpleFormatter.java:160)\n\tat java.logging/java.util.logging.StreamHandler.publish(StreamHandler.java:199)\n\tat java.logging/java.util.logging.ConsoleHandler.publish(ConsoleHandler.java:95)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:979)\n\tat java.logging/java.util.logging.Logger.doLog(Logger.java:1006)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:1029)\n\tat java.logging/java.util.logging.Logger.info(Logger.java:1802)\n\tat com.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:136)\n\tat com.google.javascript.jscomp.JsAst.parse(JsAst.java:86)\n\tat com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:52)\n\tat com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:119)\n\tat com.google.javascript.jscomp.Compiler.parseTestCode(Compiler.java:1476)\n\tat com.google.javascript.jscomp.NodeTraversal_ESTest.test05(NodeTraversal_ESTest.java:706)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "com.google.javascript.jscomp.NodeTraversal_ESTest::test06",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.logging.LogRecord$CallerFinder",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.logging.LogRecord$CallerFinder\n\tat java.logging/java.util.logging.LogRecord.inferCaller(LogRecord.java:683)\n\tat java.logging/java.util.logging.LogRecord.getSourceClassName(LogRecord.java:352)\n\tat java.logging/java.util.logging.SimpleFormatter.format(SimpleFormatter.java:160)\n\tat java.logging/java.util.logging.StreamHandler.publish(StreamHandler.java:199)\n\tat java.logging/java.util.logging.ConsoleHandler.publish(ConsoleHandler.java:95)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:979)\n\tat java.logging/java.util.logging.Logger.doLog(Logger.java:1006)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:1029)\n\tat java.logging/java.util.logging.Logger.info(Logger.java:1802)\n\tat com.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:136)\n\tat com.google.javascript.jscomp.JsAst.parse(JsAst.java:86)\n\tat com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:52)\n\tat com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:119)\n\tat com.google.javascript.jscomp.Compiler.parseTestCode(Compiler.java:1476)\n\tat com.google.javascript.jscomp.NodeTraversal_ESTest.test06(NodeTraversal_ESTest.java:862)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "com.google.javascript.jscomp.NodeTraversal_ESTest::test09",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.logging.LogRecord$CallerFinder",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.logging.LogRecord$CallerFinder\n\tat java.logging/java.util.logging.LogRecord.inferCaller(LogRecord.java:683)\n\tat java.logging/java.util.logging.LogRecord.getSourceClassName(LogRecord.java:352)\n\tat java.logging/java.util.logging.SimpleFormatter.format(SimpleFormatter.java:160)\n\tat java.logging/java.util.logging.StreamHandler.publish(StreamHandler.java:199)\n\tat java.logging/java.util.logging.ConsoleHandler.publish(ConsoleHandler.java:95)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:979)\n\tat java.logging/java.util.logging.Logger.doLog(Logger.java:1006)\n\tat java.logging/java.util.logging.Logger.log(Logger.java:1029)\n\tat java.logging/java.util.logging.Logger.info(Logger.java:1802)\n\tat com.google.javascript.jscomp.parsing.ParserRunner.parse(ParserRunner.java:136)\n\tat com.google.javascript.jscomp.JsAst.parse(JsAst.java:86)\n\tat com.google.javascript.jscomp.JsAst.getAstRoot(JsAst.java:52)\n\tat com.google.javascript.jscomp.CompilerInput.getAstRoot(CompilerInput.java:119)\n\tat com.google.javascript.jscomp.Compiler.parseTestCode(Compiler.java:1476)\n\tat com.google.javascript.jscomp.NodeTraversal_ESTest.test09(NodeTraversal_ESTest.java:1788)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 133,
+      "line_total": 210,
+      "line_coverage_percent": 63.333333333333336,
+      "branch_covered": 53,
+      "branch_total": 90,
+      "branch_coverage_percent": 58.888888888888886
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T19:53:46.950643+00:00"
+}

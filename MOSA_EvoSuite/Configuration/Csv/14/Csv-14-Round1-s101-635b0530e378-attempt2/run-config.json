@@ -1,0 +1,16 @@
+{
+  "project": "Csv",
+  "bug": "14",
+  "target": "org.apache.commons.csv.CSVFormat",
+  "tool": "evosuite",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 30,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null,
+  "campaign": "round1-full854-30s-s101-v1"
+}

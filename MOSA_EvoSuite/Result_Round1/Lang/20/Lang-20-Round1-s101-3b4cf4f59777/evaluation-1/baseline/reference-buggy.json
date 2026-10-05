@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Lang-20-Round1-s101-3b4cf4f59777/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang3.StringUtilsTest::testJoin_ArrayChar"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.702,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang3.StringUtilsTest::testJoin_ArrayChar\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

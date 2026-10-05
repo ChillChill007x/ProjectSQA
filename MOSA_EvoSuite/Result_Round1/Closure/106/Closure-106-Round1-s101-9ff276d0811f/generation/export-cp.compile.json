@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.551,
+  "stdout": "/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed/build/classes:/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed/lib/google_common_deploy.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed/lib/google_compiled_protos_deploy.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed/lib/junit.jar:/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-9ff276d0811f/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.compile)............................................ OK\n\n"
+}

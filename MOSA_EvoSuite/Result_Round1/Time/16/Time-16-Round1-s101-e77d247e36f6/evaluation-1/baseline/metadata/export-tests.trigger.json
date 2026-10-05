@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-16-Round1-s101-e77d247e36f6/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseStartYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseStartYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseEndYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_withDefaultYear_feb29\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseEndYear",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

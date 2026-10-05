@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-159-Round1-s101-3093b12f43a1",
+  "unit": {
+    "project": "Closure",
+    "bug": "159",
+    "target": "com.google.javascript.jscomp.InlineFunctions",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:11:00.861114+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/159/Closure-159-Round1-s101-3093b12f43a1",
+    "tests": "MOSA_EvoSuite/Test/Closure/159/Closure-159-Round1-s101-3093b12f43a1",
+    "config": "MOSA_EvoSuite/Configuration/Closure/159/Closure-159-Round1-s101-3093b12f43a1"
+  },
+  "generation_time_sec": 50.733,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/159/Closure-159-Round1-s101-3093b12f43a1/com/google/javascript/jscomp/InlineFunctions_ESTest.java": "938348b2fc96ffad435b2caf8855918e48507b827d0b9d342908f19862d2eec5",
+    "MOSA_EvoSuite/Test/Closure/159/Closure-159-Round1-s101-3093b12f43a1/com/google/javascript/jscomp/InlineFunctions_ESTest_scaffolding.java": "a73ae234af015674303fc6eac1ceaa59a7efa38df2366736a3ebcd54cdd3862c"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.InlineFunctionsTest::testIssue423",
+    "available_triggers": [
+      "com.google.javascript.jscomp.InlineFunctionsTest::testIssue423"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2342,
+      "tests": [
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test7",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test6",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test3",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test2",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test5",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test4",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test1",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 184,
+      "line_coverage_percent": 10.326086956521738,
+      "branch_covered": 8,
+      "branch_total": 136,
+      "branch_coverage_percent": 5.882352941176471
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2498,
+      "tests": [
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test7",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test6",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test3",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test2",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test5",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test4",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test1",
+        "com.google.javascript.jscomp.InlineFunctions_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 185,
+      "line_coverage_percent": 10.27027027027027,
+      "branch_covered": 8,
+      "branch_total": 136,
+      "branch_coverage_percent": 5.882352941176471
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/159/Closure-159-Round1-s101-3093b12f43a1/evaluation-1",
+  "finished_at": "2026-10-04T22:13:19.780532+00:00"
+}

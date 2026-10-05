@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-45-Round1-s101-871757228284",
+  "unit": {
+    "project": "Lang",
+    "bug": "45",
+    "target": "org.apache.commons.lang.WordUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:46:33.623912+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/45/Lang-45-Round1-s101-871757228284",
+    "tests": "MOSA_EvoSuite/Test/Lang/45/Lang-45-Round1-s101-871757228284",
+    "config": "MOSA_EvoSuite/Configuration/Lang/45/Lang-45-Round1-s101-871757228284"
+  },
+  "generation_time_sec": 40.058,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/45/Lang-45-Round1-s101-871757228284/org/apache/commons/lang/WordUtils_ESTest.java": "0f6420f7f627e78c9f45cfd8f9f9f04cc8d8a4e33f6d0f766b6ac72114f06afc",
+    "MOSA_EvoSuite/Test/Lang/45/Lang-45-Round1-s101-871757228284/org/apache/commons/lang/WordUtils_ESTest_scaffolding.java": "50e491dce53156b8566740432c7cf2a491b8f455811e9e229a4210b29a97aa3b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.WordUtilsTest::testAbbreviate",
+    "available_triggers": [
+      "org.apache.commons.lang.WordUtilsTest::testAbbreviate"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 34,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 34,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1045,
+      "tests": [
+        "org.apache.commons.lang.WordUtils_ESTest::test13",
+        "org.apache.commons.lang.WordUtils_ESTest::test14",
+        "org.apache.commons.lang.WordUtils_ESTest::test15",
+        "org.apache.commons.lang.WordUtils_ESTest::test16",
+        "org.apache.commons.lang.WordUtils_ESTest::test31",
+        "org.apache.commons.lang.WordUtils_ESTest::test10",
+        "org.apache.commons.lang.WordUtils_ESTest::test32",
+        "org.apache.commons.lang.WordUtils_ESTest::test11",
+        "org.apache.commons.lang.WordUtils_ESTest::test33",
+        "org.apache.commons.lang.WordUtils_ESTest::test12",
+        "org.apache.commons.lang.WordUtils_ESTest::test17",
+        "org.apache.commons.lang.WordUtils_ESTest::test18",
+        "org.apache.commons.lang.WordUtils_ESTest::test19",
+        "org.apache.commons.lang.WordUtils_ESTest::test30",
+        "org.apache.commons.lang.WordUtils_ESTest::test02",
+        "org.apache.commons.lang.WordUtils_ESTest::test24",
+        "org.apache.commons.lang.WordUtils_ESTest::test03",
+        "org.apache.commons.lang.WordUtils_ESTest::test25",
+        "org.apache.commons.lang.WordUtils_ESTest::test04",
+        "org.apache.commons.lang.WordUtils_ESTest::test26",
+        "org.apache.commons.lang.WordUtils_ESTest::test05",
+        "org.apache.commons.lang.WordUtils_ESTest::test27",
+        "org.apache.commons.lang.WordUtils_ESTest::test20",
+        "org.apache.commons.lang.WordUtils_ESTest::test21",
+        "org.apache.commons.lang.WordUtils_ESTest::test00",
+        "org.apache.commons.lang.WordUtils_ESTest::test22",
+        "org.apache.commons.lang.WordUtils_ESTest::test01",
+        "org.apache.commons.lang.WordUtils_ESTest::test23",
+        "org.apache.commons.lang.WordUtils_ESTest::test06",
+        "org.apache.commons.lang.WordUtils_ESTest::test28",
+        "org.apache.commons.lang.WordUtils_ESTest::test07",
+        "org.apache.commons.lang.WordUtils_ESTest::test29",
+        "org.apache.commons.lang.WordUtils_ESTest::test08",
+        "org.apache.commons.lang.WordUtils_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 139,
+      "line_total": 140,
+      "line_coverage_percent": 99.28571428571429,
+      "branch_covered": 103,
+      "branch_total": 104,
+      "branch_coverage_percent": 99.03846153846153
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 34,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 765,
+      "tests": [
+        "org.apache.commons.lang.WordUtils_ESTest::test13",
+        "org.apache.commons.lang.WordUtils_ESTest::test14",
+        "org.apache.commons.lang.WordUtils_ESTest::test15",
+        "org.apache.commons.lang.WordUtils_ESTest::test16",
+        "org.apache.commons.lang.WordUtils_ESTest::test31",
+        "org.apache.commons.lang.WordUtils_ESTest::test10",
+        "org.apache.commons.lang.WordUtils_ESTest::test32",
+        "org.apache.commons.lang.WordUtils_ESTest::test11",
+        "org.apache.commons.lang.WordUtils_ESTest::test33",
+        "org.apache.commons.lang.WordUtils_ESTest::test12",
+        "org.apache.commons.lang.WordUtils_ESTest::test17",
+        "org.apache.commons.lang.WordUtils_ESTest::test18",
+        "org.apache.commons.lang.WordUtils_ESTest::test19",
+        "org.apache.commons.lang.WordUtils_ESTest::test30",
+        "org.apache.commons.lang.WordUtils_ESTest::test02",
+        "org.apache.commons.lang.WordUtils_ESTest::test24",
+        "org.apache.commons.lang.WordUtils_ESTest::test03",
+        "org.apache.commons.lang.WordUtils_ESTest::test25",
+        "org.apache.commons.lang.WordUtils_ESTest::test04",
+        "org.apache.commons.lang.WordUtils_ESTest::test26",
+        "org.apache.commons.lang.WordUtils_ESTest::test05",
+        "org.apache.commons.lang.WordUtils_ESTest::test27",
+        "org.apache.commons.lang.WordUtils_ESTest::test20",
+        "org.apache.commons.lang.WordUtils_ESTest::test21",
+        "org.apache.commons.lang.WordUtils_ESTest::test00",
+        "org.apache.commons.lang.WordUtils_ESTest::test22",
+        "org.apache.commons.lang.WordUtils_ESTest::test01",
+        "org.apache.commons.lang.WordUtils_ESTest::test23",
+        "org.apache.commons.lang.WordUtils_ESTest::test06",
+        "org.apache.commons.lang.WordUtils_ESTest::test28",
+        "org.apache.commons.lang.WordUtils_ESTest::test07",
+        "org.apache.commons.lang.WordUtils_ESTest::test29",
+        "org.apache.commons.lang.WordUtils_ESTest::test08",
+        "org.apache.commons.lang.WordUtils_ESTest::test09"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang.WordUtils_ESTest::test02",
+          "exception": "java.lang.StringIndexOutOfBoundsException",
+          "message": "begin 0, end 8192, length 24",
+          "trace": "java.lang.StringIndexOutOfBoundsException: begin 0, end 8192, length 24\n\tat java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)\n\tat java.base/java.lang.String.substring(String.java:1874)\n\tat org.apache.commons.lang.WordUtils.abbreviate(WordUtils.java:629)\n\tat org.apache.commons.lang.WordUtils_ESTest.test02(WordUtils_ESTest.java:34)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 137,
+      "line_total": 138,
+      "line_coverage_percent": 99.27536231884058,
+      "branch_covered": 101,
+      "branch_total": 102,
+      "branch_coverage_percent": 99.01960784313725
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/45/Lang-45-Round1-s101-871757228284/evaluation-1",
+  "finished_at": "2026-10-05T02:48:18.261503+00:00"
+}

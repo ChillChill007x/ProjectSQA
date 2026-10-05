@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-8-Round1-s101-b54ed13f68c8/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation\ncom.google.gson.internal.UnsafeAllocatorInstantiationTest::testAbstractClassInstantiation",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

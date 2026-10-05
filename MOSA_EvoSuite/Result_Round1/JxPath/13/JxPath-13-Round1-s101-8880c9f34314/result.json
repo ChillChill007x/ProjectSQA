@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-13-Round1-s101-8880c9f34314",
+  "unit": {
+    "project": "JxPath",
+    "bug": "13",
+    "target": "org.apache.commons.jxpath.ri.NamespaceResolver",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:35:19.481005+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/13/JxPath-13-Round1-s101-8880c9f34314",
+    "tests": "MOSA_EvoSuite/Test/JxPath/13/JxPath-13-Round1-s101-8880c9f34314",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/13/JxPath-13-Round1-s101-8880c9f34314"
+  },
+  "generation_time_sec": 36.291,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/13/JxPath-13-Round1-s101-8880c9f34314/org/apache/commons/jxpath/ri/NamespaceResolver_ESTest.java": "55468430bfab91d26d0aa91b227239b0923ea90f598f221a2606933b8c4ff29d",
+    "MOSA_EvoSuite/Test/JxPath/13/JxPath-13-Round1-s101-8880c9f34314/org/apache/commons/jxpath/ri/NamespaceResolver_ESTest_scaffolding.java": "93eb048f5f6b43208af024301009e929dab11267885acb997a8c423c8b588cea"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:36:18.626577+00:00"
+}

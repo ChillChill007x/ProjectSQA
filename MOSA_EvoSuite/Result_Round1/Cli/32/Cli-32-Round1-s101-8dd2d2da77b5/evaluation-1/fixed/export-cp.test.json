@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Cli-32-Round1-s101-8dd2d2da77b5/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "/opt/defects4j/framework/projects/Cli/lib/junit/junit/3.8.2/junit-3.8.2.jar:/opt/defects4j/framework/projects/Cli/lib/junit-addons/junit-addons/1.4/junit-addons-1.4.jar:/workspace/work/checkouts/Cli-32-Round1-s101-8dd2d2da77b5/evaluation-1/fixed/target/classes:/workspace/work/checkouts/Cli-32-Round1-s101-8dd2d2da77b5/evaluation-1/fixed/target/test-classes",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

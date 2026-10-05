@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-74-Round1-s101-fc9a88ac3d8d",
+  "unit": {
+    "project": "Math",
+    "bug": "74",
+    "target": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:08:26.339187+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/74/Math-74-Round1-s101-fc9a88ac3d8d",
+    "tests": "MOSA_EvoSuite/Test/Math/74/Math-74-Round1-s101-fc9a88ac3d8d",
+    "config": "MOSA_EvoSuite/Configuration/Math/74/Math-74-Round1-s101-fc9a88ac3d8d"
+  },
+  "generation_time_sec": 59.049,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/74/Math-74-Round1-s101-fc9a88ac3d8d/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator_ESTest.java": "e77f9247974d478d78d400489fdae89cb4535338adf3a375683a48ab07d41505",
+    "MOSA_EvoSuite/Test/Math/74/Math-74-Round1-s101-fc9a88ac3d8d/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator_ESTest_scaffolding.java": "55308fd33e9510ab7fc6c940ea7e2cb905f2a97f23ac0a2e9ad6dfd80d2c1da7"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest::polynomial",
+    "available_triggers": [
+      "org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest::polynomial"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1508,
+      "tests": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test1",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test0",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test7",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test6",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test3",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test2",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test5",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test4"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 124,
+      "line_coverage_percent": 64.51612903225806,
+      "branch_covered": 26,
+      "branch_total": 58,
+      "branch_coverage_percent": 44.827586206896555
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2004,
+      "tests": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test1",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test0",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test7",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test6",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test3",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test2",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test5",
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator_ESTest::test4"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 122,
+      "line_coverage_percent": 65.57377049180327,
+      "branch_covered": 24,
+      "branch_total": 54,
+      "branch_coverage_percent": 44.44444444444444
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/74/Math-74-Round1-s101-fc9a88ac3d8d/evaluation-1",
+  "finished_at": "2026-10-05T04:11:00.256412+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-29-Round1-s101-f5198208322d",
+  "unit": {
+    "project": "Compress",
+    "bug": "29",
+    "target": "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:01:01.389534+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/29/Compress-29-Round1-s101-f5198208322d",
+    "tests": "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-f5198208322d",
+    "config": "MOSA_EvoSuite/Configuration/Compress/29/Compress-29-Round1-s101-f5198208322d"
+  },
+  "generation_time_sec": 37.571,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-f5198208322d/org/apache/commons/compress/archivers/dump/DumpArchiveInputStream_ESTest.java": "bba22c2bd741d7eeff6a57f98aaadf5a73b5ac37e4b12ed9f4303f3a1871b5ca",
+    "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-f5198208322d/org/apache/commons/compress/archivers/dump/DumpArchiveInputStream_ESTest_scaffolding.java": "fd542bda103fe2c200f94d83f620f80bb609317321be3a37416668f9d99dbb1e"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStreamAutodetect",
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingOutputStream"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 561,
+      "tests": [
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test2",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test3",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test0",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 201,
+      "line_coverage_percent": 6.467661691542289,
+      "branch_covered": 3,
+      "branch_total": 112,
+      "branch_coverage_percent": 2.6785714285714284
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 486,
+      "tests": [
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test2",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test3",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test0",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 200,
+      "line_coverage_percent": 6.0,
+      "branch_covered": 3,
+      "branch_total": 112,
+      "branch_coverage_percent": 2.6785714285714284
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/29/Compress-29-Round1-s101-f5198208322d/evaluation-1",
+  "finished_at": "2026-10-04T23:02:23.856127+00:00"
+}

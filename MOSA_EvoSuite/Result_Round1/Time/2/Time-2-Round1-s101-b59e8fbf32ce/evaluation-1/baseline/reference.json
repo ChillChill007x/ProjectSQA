@@ -1,0 +1,8 @@
+{
+  "trigger": "org.joda.time.TestPartial_Basics::testWith_baseAndArgHaveNoRange",
+  "available_triggers": [
+    "org.joda.time.TestPartial_Basics::testWith_baseAndArgHaveNoRange"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-8-Round1-s101-15b07cc61fde",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "8",
+    "target": "com.fasterxml.jackson.core.util.TextBuffer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T23:32:54.324439+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde"
+  },
+  "generation_time_sec": 40.705,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde/com/fasterxml/jackson/core/util/TextBuffer_ESTest.java": "104652afd843d6447a69adff395dca1c383259d3cc7e7c4245dec9fa5513746a",
+    "MOSA_EvoSuite/Test/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde/com/fasterxml/jackson/core/util/TextBuffer_ESTest_scaffolding.java": "1d1791d9b70a402924486296e62ea7501a1057fff7ac28477202d34279e15fc3"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.util.TestTextBuffer::testEmpty",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.util.TestTextBuffer::testEmpty"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 60,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 584,
+      "tests": [
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test39",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test35",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test36",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test37",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test38",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test31",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test32",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test33",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test34",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test30",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test28",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test29",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test24",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test25",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test26",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test27",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test20",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test21",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test22",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test23",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test17",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test18",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test19",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test13",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test57",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test14",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test58",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test15",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test59",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test16",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test53",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test10",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test54",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test11",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test55",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test12",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test56",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test50",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test51",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test52",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test06",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test07",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test08",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test09",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test02",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test46",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test03",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test47",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test04",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test48",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test05",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test49",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test42",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test43",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test00",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test44",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test01",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test45",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test40",
+        "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test41"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.core.util.TextBuffer_ESTest::test11",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": "start 0, end 1266, length 1000",
+          "trace": "java.lang.IndexOutOfBoundsException: start 0, end 1266, length 1000\n\tat java.base/java.lang.AbstractStringBuilder.checkRange(AbstractStringBuilder.java:1716)\n\tat java.base/java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:685)\n\tat java.base/java.lang.StringBuilder.append(StringBuilder.java:232)\n\tat com.fasterxml.jackson.core.util.TextBuffer.contentsAsString(TextBuffer.java:348)\n\tat com.fasterxml.jackson.core.util.TextBuffer.setCurrentAndReturn(TextBuffer.java:560)\n\tat com.fasterxml.jackson.core.util.TextBuffer_ESTest.test11(TextBuffer_ESTest.java:1141)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 265,
+      "line_total": 271,
+      "line_coverage_percent": 97.7859778597786,
+      "branch_covered": 138,
+      "branch_total": 140,
+      "branch_coverage_percent": 98.57142857142857
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T23:33:58.735528+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.668,
+  "stdout": "/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/classes:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/src/java:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/commons-beanutils-1.7.0.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/commons-logging-1.1.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/jdom-1.0.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/jsp-api-2.0.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/junit-3.8.1.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/mockrunner-0.4.1.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/mockrunner-jdk1.3-j2ee1.3-0.4.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/servletapi-2.4.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/xerces-2.4.0.jar:/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/generation-fixed/target/lib/xml-apis-2.0.2.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

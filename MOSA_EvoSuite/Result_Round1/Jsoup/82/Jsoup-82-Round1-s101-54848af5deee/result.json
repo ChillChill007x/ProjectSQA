@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-82-Round1-s101-54848af5deee",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "82",
+    "target": "org.jsoup.helper.DataUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:07:42.919610+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee"
+  },
+  "generation_time_sec": 48.25,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee/org/jsoup/helper/DataUtil_ESTest.java": "39471515b0956b710bf3765ab235c692fe94e7f9df70ce1fc1a00a4d83b0cb75",
+    "MOSA_EvoSuite/Test/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee/org/jsoup/helper/DataUtil_ESTest_scaffolding.java": "fcc8f21f579a166e99d29d730b22e4ab918e7e7f234c7028ce968aeb5f4200e0"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode",
+    "available_triggers": [
+      "org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 12,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2652,
+      "tests": [
+        "org.jsoup.helper.DataUtil_ESTest::test10",
+        "org.jsoup.helper.DataUtil_ESTest::test01",
+        "org.jsoup.helper.DataUtil_ESTest::test00",
+        "org.jsoup.helper.DataUtil_ESTest::test11",
+        "org.jsoup.helper.DataUtil_ESTest::test03",
+        "org.jsoup.helper.DataUtil_ESTest::test02",
+        "org.jsoup.helper.DataUtil_ESTest::test05",
+        "org.jsoup.helper.DataUtil_ESTest::test04",
+        "org.jsoup.helper.DataUtil_ESTest::test07",
+        "org.jsoup.helper.DataUtil_ESTest::test06",
+        "org.jsoup.helper.DataUtil_ESTest::test09",
+        "org.jsoup.helper.DataUtil_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 64,
+      "line_total": 109,
+      "line_coverage_percent": 58.71559633027523,
+      "branch_covered": 39,
+      "branch_total": 98,
+      "branch_coverage_percent": 39.795918367346935
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2101,
+      "tests": [
+        "org.jsoup.helper.DataUtil_ESTest::test10",
+        "org.jsoup.helper.DataUtil_ESTest::test01",
+        "org.jsoup.helper.DataUtil_ESTest::test00",
+        "org.jsoup.helper.DataUtil_ESTest::test11",
+        "org.jsoup.helper.DataUtil_ESTest::test03",
+        "org.jsoup.helper.DataUtil_ESTest::test02",
+        "org.jsoup.helper.DataUtil_ESTest::test05",
+        "org.jsoup.helper.DataUtil_ESTest::test04",
+        "org.jsoup.helper.DataUtil_ESTest::test07",
+        "org.jsoup.helper.DataUtil_ESTest::test06",
+        "org.jsoup.helper.DataUtil_ESTest::test09",
+        "org.jsoup.helper.DataUtil_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 64,
+      "line_total": 107,
+      "line_coverage_percent": 59.81308411214953,
+      "branch_covered": 39,
+      "branch_total": 96,
+      "branch_coverage_percent": 40.625
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/82/Jsoup-82-Round1-s101-54848af5deee/evaluation-1",
+  "finished_at": "2026-10-05T02:09:23.393896+00:00"
+}

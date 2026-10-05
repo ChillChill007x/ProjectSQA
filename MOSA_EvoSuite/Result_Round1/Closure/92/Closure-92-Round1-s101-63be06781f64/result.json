@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-92-Round1-s101-63be06781f64",
+  "unit": {
+    "project": "Closure",
+    "bug": "92",
+    "target": "com.google.javascript.jscomp.ProcessClosurePrimitives",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:53:14.712743+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/92/Closure-92-Round1-s101-63be06781f64",
+    "tests": "MOSA_EvoSuite/Test/Closure/92/Closure-92-Round1-s101-63be06781f64",
+    "config": "MOSA_EvoSuite/Configuration/Closure/92/Closure-92-Round1-s101-63be06781f64"
+  },
+  "generation_time_sec": 51.409,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/92/Closure-92-Round1-s101-63be06781f64/com/google/javascript/jscomp/ProcessClosurePrimitives_ESTest.java": "67ef5c44d8319815ee184f65f4fe47eeaa61fb026221f2bdc3ba7858699d66f9",
+    "MOSA_EvoSuite/Test/Closure/92/Closure-92-Round1-s101-63be06781f64/com/google/javascript/jscomp/ProcessClosurePrimitives_ESTest_scaffolding.java": "0d5cbc5578a7c5fb00debe6d9d638acddc963bcbcc0916b83b580a27fc0793ad"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.ProcessClosurePrimitivesTest::testProvideInIndependentModules4",
+    "available_triggers": [
+      "com.google.javascript.jscomp.ProcessClosurePrimitivesTest::testProvideInIndependentModules4"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 9,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3573,
+      "tests": [
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test0",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test1",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test2",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test3",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test4",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test5",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test6",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test7",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test8"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 62,
+      "line_total": 301,
+      "line_coverage_percent": 20.59800664451827,
+      "branch_covered": 32,
+      "branch_total": 208,
+      "branch_coverage_percent": 15.384615384615385
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3829,
+      "tests": [
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test0",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test1",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test2",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test3",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test4",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test5",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test6",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test7",
+        "com.google.javascript.jscomp.ProcessClosurePrimitives_ESTest::test8"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 62,
+      "line_total": 301,
+      "line_coverage_percent": 20.59800664451827,
+      "branch_covered": 32,
+      "branch_total": 208,
+      "branch_coverage_percent": 15.384615384615385
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/92/Closure-92-Round1-s101-63be06781f64/evaluation-1",
+  "finished_at": "2026-10-04T20:55:21.528017+00:00"
+}

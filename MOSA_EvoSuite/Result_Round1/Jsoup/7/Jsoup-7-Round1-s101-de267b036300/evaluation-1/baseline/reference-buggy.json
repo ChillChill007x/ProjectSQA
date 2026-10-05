@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-7-Round1-s101-de267b036300/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.DocumentTest::testNormalisesStructure"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.503,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.DocumentTest::testNormalisesStructure\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

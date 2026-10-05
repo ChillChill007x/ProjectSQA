@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-33-Round1-s101-268be9e9ca4e",
+  "unit": {
+    "project": "Mockito",
+    "bug": "33",
+    "target": "org.mockito.internal.invocation.InvocationMatcher",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-05T03:10:53.846089+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e",
+    "tests": "MOSA_EvoSuite/Test/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e"
+  },
+  "generation_time_sec": 36.3,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e/org/mockito/internal/invocation/InvocationMatcher_ESTest.java": "c27d678964f534ddd879ec519efb089cea457d111e027471335c4bc10238fe08",
+    "MOSA_EvoSuite/Test/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e/org/mockito/internal/invocation/InvocationMatcher_ESTest_scaffolding.java": "458d68ca3de0dcf9e101c81b1123dcfd758e3c549381fc06ac87063aab243288"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldStubbingWork",
+    "available_triggers": [
+      "org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldStubbingWork",
+      "org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldVerificationWorks"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-05T03:12:28.444519+00:00"
+}

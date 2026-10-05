@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-3-Round1-s101-0f88d89a05f4",
+  "unit": {
+    "project": "Csv",
+    "bug": "3",
+    "target": "org.apache.commons.csv.Lexer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:01:15.552978+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/3/Csv-3-Round1-s101-0f88d89a05f4",
+    "tests": "MOSA_EvoSuite/Test/Csv/3/Csv-3-Round1-s101-0f88d89a05f4",
+    "config": "MOSA_EvoSuite/Configuration/Csv/3/Csv-3-Round1-s101-0f88d89a05f4"
+  },
+  "generation_time_sec": 35.274,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/3/Csv-3-Round1-s101-0f88d89a05f4/org/apache/commons/csv/Lexer_ESTest.java": "1d8930f3c35582abed9dd2b839035608c52b2221eaf21aa9ea94f94289fbf1a0",
+    "MOSA_EvoSuite/Test/Csv/3/Csv-3-Round1-s101-0f88d89a05f4/org/apache/commons/csv/Lexer_ESTest_scaffolding.java": "ba2efad7998d1f0a7e09b17ac227ab5237100e0e27a2df52e7d04924d9536230"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue",
+      "org.apache.commons.csv.CSVLexerTest::testEscapedCharacter",
+      "org.apache.commons.csv.CSVParserTest::testBackslashEscaping"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 20,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 20,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 347,
+      "tests": [
+        "org.apache.commons.csv.Lexer_ESTest::test06",
+        "org.apache.commons.csv.Lexer_ESTest::test17",
+        "org.apache.commons.csv.Lexer_ESTest::test07",
+        "org.apache.commons.csv.Lexer_ESTest::test18",
+        "org.apache.commons.csv.Lexer_ESTest::test08",
+        "org.apache.commons.csv.Lexer_ESTest::test19",
+        "org.apache.commons.csv.Lexer_ESTest::test09",
+        "org.apache.commons.csv.Lexer_ESTest::test02",
+        "org.apache.commons.csv.Lexer_ESTest::test13",
+        "org.apache.commons.csv.Lexer_ESTest::test03",
+        "org.apache.commons.csv.Lexer_ESTest::test14",
+        "org.apache.commons.csv.Lexer_ESTest::test04",
+        "org.apache.commons.csv.Lexer_ESTest::test15",
+        "org.apache.commons.csv.Lexer_ESTest::test05",
+        "org.apache.commons.csv.Lexer_ESTest::test16",
+        "org.apache.commons.csv.Lexer_ESTest::test10",
+        "org.apache.commons.csv.Lexer_ESTest::test00",
+        "org.apache.commons.csv.Lexer_ESTest::test11",
+        "org.apache.commons.csv.Lexer_ESTest::test01",
+        "org.apache.commons.csv.Lexer_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 40,
+      "line_total": 40,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 49,
+      "branch_total": 52,
+      "branch_coverage_percent": 94.23076923076923
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 20,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 351,
+      "tests": [
+        "org.apache.commons.csv.Lexer_ESTest::test06",
+        "org.apache.commons.csv.Lexer_ESTest::test17",
+        "org.apache.commons.csv.Lexer_ESTest::test07",
+        "org.apache.commons.csv.Lexer_ESTest::test18",
+        "org.apache.commons.csv.Lexer_ESTest::test08",
+        "org.apache.commons.csv.Lexer_ESTest::test19",
+        "org.apache.commons.csv.Lexer_ESTest::test09",
+        "org.apache.commons.csv.Lexer_ESTest::test02",
+        "org.apache.commons.csv.Lexer_ESTest::test13",
+        "org.apache.commons.csv.Lexer_ESTest::test03",
+        "org.apache.commons.csv.Lexer_ESTest::test14",
+        "org.apache.commons.csv.Lexer_ESTest::test04",
+        "org.apache.commons.csv.Lexer_ESTest::test15",
+        "org.apache.commons.csv.Lexer_ESTest::test05",
+        "org.apache.commons.csv.Lexer_ESTest::test16",
+        "org.apache.commons.csv.Lexer_ESTest::test10",
+        "org.apache.commons.csv.Lexer_ESTest::test00",
+        "org.apache.commons.csv.Lexer_ESTest::test11",
+        "org.apache.commons.csv.Lexer_ESTest::test01",
+        "org.apache.commons.csv.Lexer_ESTest::test12"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.csv.Lexer_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-1> but was:<108>",
+          "trace": "java.lang.AssertionError: expected:<-1> but was:<108>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.csv.Lexer_ESTest.test10(Lexer_ESTest.java:625)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 38,
+      "line_total": 38,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 41,
+      "branch_total": 44,
+      "branch_coverage_percent": 93.18181818181819
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Csv/3/Csv-3-Round1-s101-0f88d89a05f4/evaluation-1",
+  "finished_at": "2026-10-04T22:02:09.566459+00:00"
+}

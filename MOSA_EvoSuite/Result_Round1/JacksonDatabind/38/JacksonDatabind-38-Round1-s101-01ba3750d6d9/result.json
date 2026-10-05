@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-38-Round1-s101-01ba3750d6d9",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "38",
+    "target": "com.fasterxml.jackson.databind.type.CollectionType",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:45:20.982878+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9"
+  },
+  "generation_time_sec": 42.614,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9/com/fasterxml/jackson/databind/type/CollectionType_ESTest.java": "f50de4c434afbce84934e72cb5625787672e993b21b8bfc94248dd559bbaaf71",
+    "MOSA_EvoSuite/Test/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9/com/fasterxml/jackson/databind/type/CollectionType_ESTest_scaffolding.java": "edc58c25e6f1054bd8a033b0910ccd0e0822c8a2d6c583332699e7e94776e3e4"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType",
+      "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitCollectionType",
+      "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testPOJOSubType"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2464,
+      "tests": [
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test0",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test1",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test4",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test5",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test2",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test3",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 27,
+      "line_total": 27,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 7,
+      "branch_total": 8,
+      "branch_coverage_percent": 87.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1791,
+      "tests": [
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test0",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test1",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test4",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test5",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test2",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test3",
+        "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test6"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test3",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat com.fasterxml.jackson.databind.type.CollectionType_ESTest.test3(CollectionType_ESTest.java:448)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "com.fasterxml.jackson.databind.type.CollectionType_ESTest::test6",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat com.fasterxml.jackson.databind.type.CollectionType_ESTest.test6(CollectionType_ESTest.java:748)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 17,
+      "line_total": 23,
+      "line_coverage_percent": 73.91304347826087,
+      "branch_covered": 4,
+      "branch_total": 4,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-01ba3750d6d9/evaluation-1",
+  "finished_at": "2026-10-04T23:47:19.705390+00:00"
+}

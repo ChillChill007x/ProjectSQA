@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-91-Round1-s101-58773ac3670f",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "91",
+    "target": "org.jsoup.UncheckedIOException",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T02:13:55.917813+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/91/Jsoup-91-Round1-s101-58773ac3670f",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/91/Jsoup-91-Round1-s101-58773ac3670f",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/91/Jsoup-91-Round1-s101-58773ac3670f"
+  },
+  "generation_time_sec": 6.618,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/91/Jsoup-91-Round1-s101-58773ac3670f/org/jsoup/UncheckedIOException_ESTest.java": "4813a358571f38567c44192aaae8eabd2933e1aabada2004733171198f9691c6",
+    "MOSA_EvoSuite/Test/Jsoup/91/Jsoup-91-Round1-s101-58773ac3670f/org/jsoup/UncheckedIOException_ESTest_scaffolding.java": "6a9eeb13c3b492fde69b236e5ed260d2bada992c94b005903babcf364d37aaf1"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored",
+    "available_triggers": [
+      "org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored",
+      "org.jsoup.integration.ConnectTest::testBinaryResultThrows",
+      "org.jsoup.integration.ParseTest::testBinaryThrowsException"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T02:14:44.901311+00:00"
+}

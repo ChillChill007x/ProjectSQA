@@ -1,0 +1,4660 @@
+{
+  "updated_at": "2026-10-05T10:48:15.664828+00:00",
+  "expected_bugs": 263,
+  "bug_counts": {
+    "FAILED": 51,
+    "EVALUATED": 212
+  },
+  "bugs": [
+    {
+      "project": "Chart",
+      "bug": "1",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/1/Chart-1-Round1-s101-4f511d2bbe4d-attempt2/result.json",
+          "started_at": "2026-10-05T08:28:42.071302+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.general.DatasetUtilities"
+      ],
+      "units": {
+        "org.jfree.data.general.DatasetUtilities": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/2/Chart-2-Round1-s101-54db92f2f1c8/result.json",
+          "started_at": "2026-10-04T16:39:24.583463+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "3",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/3/Chart-3-Round1-s101-4f0864e86db4-attempt2/result.json",
+          "started_at": "2026-10-05T08:30:43.108852+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "4",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.chart.plot.XYPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.XYPlot": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/4/Chart-4-Round1-s101-6872af6b479d-attempt2/result.json",
+          "started_at": "2026-10-05T08:32:16.792565+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "5",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.xy.XYSeries"
+      ],
+      "units": {
+        "org.jfree.data.xy.XYSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/5/Chart-5-Round1-s101-0624c5503f5f-attempt2/result.json",
+          "started_at": "2026-10-05T08:34:51.969856+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.util.ShapeList"
+      ],
+      "units": {
+        "org.jfree.chart.util.ShapeList": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/6/Chart-6-Round1-s101-6143912d2a4c/result.json",
+          "started_at": "2026-10-04T17:41:02.840206+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimePeriodValues"
+      ],
+      "units": {
+        "org.jfree.data.time.TimePeriodValues": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/7/Chart-7-Round1-s101-572c66769181-attempt3/result.json",
+          "started_at": "2026-10-05T08:35:44.653387+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "8",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.Week"
+      ],
+      "units": {
+        "org.jfree.data.time.Week": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3/result.json",
+          "started_at": "2026-10-05T08:36:35.533437+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "9",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/9/Chart-9-Round1-s101-78f114b7b49c-attempt2/result.json",
+          "started_at": "2026-10-05T08:37:49.169186+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator"
+      ],
+      "units": {
+        "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/10/Chart-10-Round1-s101-ead2d0881ed8/result.json",
+          "started_at": "2026-10-04T19:44:13.549371+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.util.ShapeUtilities"
+      ],
+      "units": {
+        "org.jfree.chart.util.ShapeUtilities": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/11/Chart-11-Round1-s101-5ac0fea3f24b/result.json",
+          "started_at": "2026-10-04T19:45:13.909742+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.MultiplePiePlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.MultiplePiePlot": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/12/Chart-12-Round1-s101-2a74668638c7/result.json",
+          "started_at": "2026-10-04T19:46:36.403520+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.block.BorderArrangement"
+      ],
+      "units": {
+        "org.jfree.chart.block.BorderArrangement": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/13/Chart-13-Round1-s101-68b36fb886bd/result.json",
+          "started_at": "2026-10-04T19:48:28.707814+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.CategoryPlot",
+        "org.jfree.chart.plot.XYPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.CategoryPlot": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/14/Chart-14-Round1-s101-14008075f06e/result.json",
+          "started_at": "2026-10-04T19:50:10.520616+00:00",
+          "error": null
+        },
+        "org.jfree.chart.plot.XYPlot": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/14/Chart-14-Round1-s101-6ceb6c32ac34/result.json",
+          "started_at": "2026-10-04T19:52:47.510077+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.PiePlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.PiePlot": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/15/Chart-15-Round1-s101-8b9310f5df21-attempt2/result.json",
+          "started_at": "2026-10-05T08:39:11.445092+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.category.DefaultIntervalCategoryDataset"
+      ],
+      "units": {
+        "org.jfree.data.category.DefaultIntervalCategoryDataset": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/16/Chart-16-Round1-s101-2a0a5c9086e3/result.json",
+          "started_at": "2026-10-04T19:58:37.229512+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/17/Chart-17-Round1-s101-f379aa239dcf-attempt2/result.json",
+          "started_at": "2026-10-05T08:41:24.120430+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "18",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.DefaultKeyedValues",
+        "org.jfree.data.DefaultKeyedValues2D"
+      ],
+      "units": {
+        "org.jfree.data.DefaultKeyedValues": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/18/Chart-18-Round1-s101-1f7f90463c0b/result.json",
+          "started_at": "2026-10-04T20:01:59.617581+00:00",
+          "error": null
+        },
+        "org.jfree.data.DefaultKeyedValues2D": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2/result.json",
+          "started_at": "2026-10-05T08:42:46.197197+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.CategoryPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.CategoryPlot": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/19/Chart-19-Round1-s101-d7b22e579a15/result.json",
+          "started_at": "2026-10-04T20:04:54.557162+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.ValueMarker"
+      ],
+      "units": {
+        "org.jfree.chart.plot.ValueMarker": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/20/Chart-20-Round1-s101-51aad2d35920/result.json",
+          "started_at": "2026-10-04T20:07:44.128843+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "21",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset"
+      ],
+      "units": {
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/21/Chart-21-Round1-s101-2a01ffd45c08-attempt2/result.json",
+          "started_at": "2026-10-05T08:44:00.463444+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "22",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.KeyedObjects2D"
+      ],
+      "units": {
+        "org.jfree.data.KeyedObjects2D": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/22/Chart-22-Round1-s101-19804b258b45-attempt2/result.json",
+          "started_at": "2026-10-05T08:45:22.351513+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/23/Chart-23-Round1-s101-45defacdbedb/result.json",
+          "started_at": "2026-10-04T20:12:07.990882+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.GrayPaintScale"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.GrayPaintScale": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/24/Chart-24-Round1-s101-4bd306a6f723/result.json",
+          "started_at": "2026-10-04T20:13:56.982819+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/25/Chart-25-Round1-s101-b17338a58e6c-attempt2/result.json",
+          "started_at": "2026-10-05T08:46:36.666915+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.axis.Axis"
+      ],
+      "units": {
+        "org.jfree.chart.axis.Axis": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Chart/26/Chart-26-Round1-s101-d33e3835375b-attempt2/result.json",
+          "started_at": "2026-10-05T08:48:07.395108+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.CommandLine"
+      ],
+      "units": {
+        "org.apache.commons.cli.CommandLine": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/1/Cli-1-Round1-s101-336c6762ee2b/result.json",
+          "started_at": "2026-10-04T20:18:24.030704+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/2/Cli-2-Round1-s101-e9e376765c84/result.json",
+          "started_at": "2026-10-04T20:18:57.589596+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "3",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/3/Cli-3-Round1-s101-5079d3c40867-attempt2/result.json",
+          "started_at": "2026-10-05T08:49:55.804128+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/4/Cli-4-Round1-s101-812e1aaa16ba/result.json",
+          "started_at": "2026-10-04T20:21:01.198171+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Util"
+      ],
+      "units": {
+        "org.apache.commons.cli.Util": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/5/Cli-5-Round1-s101-677fd2859694/result.json",
+          "started_at": "2026-10-04T20:22:07.737488+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.builder.PatternBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli2.builder.PatternBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/7/Cli-7-Round1-s101-a4665d03626b/result.json",
+          "started_at": "2026-10-04T20:22:38.893400+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/8/Cli-8-Round1-s101-3a06b6975549/result.json",
+          "started_at": "2026-10-04T20:23:42.559913+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/9/Cli-9-Round1-s101-eb56f2a92c31/result.json",
+          "started_at": "2026-10-04T20:24:45.778573+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/10/Cli-10-Round1-s101-871417f44039/result.json",
+          "started_at": "2026-10-04T20:25:47.281001+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/11/Cli-11-Round1-s101-aa406f71e3fe/result.json",
+          "started_at": "2026-10-04T20:26:50.401340+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "12",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.GnuParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.GnuParser": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/12/Cli-12-Round1-s101-2d92c53566f5-attempt2/result.json",
+          "started_at": "2026-10-05T08:50:49.141054+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.ArgumentImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.WriteableCommandLine": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-6666c863c6d0-attempt2/result.json",
+          "started_at": "2026-10-05T08:51:42.539545+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-bfb22083ac47-attempt2/result.json",
+          "started_at": "2026-10-05T08:52:01.857511+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.ArgumentImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-2a3c6715c8bb/result.json",
+          "started_at": "2026-10-04T20:30:21.250427+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.option.GroupImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/14/Cli-14-Round1-s101-871b8216ba06/result.json",
+          "started_at": "2026-10-04T20:31:29.331614+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/15/Cli-15-Round1-s101-29587ccf8b7d-attempt2/result.json",
+          "started_at": "2026-10-05T08:52:59.152886+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.Option",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl",
+        "org.apache.commons.cli2.option.OptionImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.Option": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-d373b08c19e5-attempt2/result.json",
+          "started_at": "2026-10-05T08:53:58.661297+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-1d50a07a1305-attempt2/result.json",
+          "started_at": "2026-10-05T08:54:18.128804+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2/result.json",
+          "started_at": "2026-10-05T08:55:15.864656+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli2.option.OptionImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-9e7ee30c563a-attempt2/result.json",
+          "started_at": "2026-10-05T08:56:18.840928+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2/result.json",
+          "started_at": "2026-10-05T08:57:15.383969+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/18/Cli-18-Round1-s101-b18ec1c939ad/result.json",
+          "started_at": "2026-10-04T20:38:10.201908+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/19/Cli-19-Round1-s101-88f7c8c59421/result.json",
+          "started_at": "2026-10-04T20:39:14.624522+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/20/Cli-20-Round1-s101-ceda9c56dea8/result.json",
+          "started_at": "2026-10-04T20:40:18.790105+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "21",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.WriteableCommandLine": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-4bce1cf38c15-attempt2/result.json",
+          "started_at": "2026-10-05T08:58:09.223992+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2/result.json",
+          "started_at": "2026-10-05T08:58:29.346570+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-b870134de580-attempt2/result.json",
+          "started_at": "2026-10-05T08:59:29.800304+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/22/Cli-22-Round1-s101-9f45348254b8-attempt2/result.json",
+          "started_at": "2026-10-05T09:00:31.582229+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/23/Cli-23-Round1-s101-2e154d534f23/result.json",
+          "started_at": "2026-10-04T20:44:53.528454+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/24/Cli-24-Round1-s101-72317e869f66/result.json",
+          "started_at": "2026-10-04T20:46:02.424677+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/25/Cli-25-Round1-s101-4a6366685468/result.json",
+          "started_at": "2026-10-04T20:47:11.363432+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/26/Cli-26-Round1-s101-8a9d69722bba/result.json",
+          "started_at": "2026-10-04T20:48:18.353514+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionGroup"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionGroup": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/27/Cli-27-Round1-s101-4ee1d4f765ad/result.json",
+          "started_at": "2026-10-04T20:48:47.645078+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/28/Cli-28-Round1-s101-0e16b72e8363/result.json",
+          "started_at": "2026-10-04T20:49:16.787873+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Util"
+      ],
+      "units": {
+        "org.apache.commons.cli.Util": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/29/Cli-29-Round1-s101-7f5753db83e6/result.json",
+          "started_at": "2026-10-04T20:50:20.599054+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser",
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/30/Cli-30-Round1-s101-fdecc104b2f4/result.json",
+          "started_at": "2026-10-04T20:50:49.643128+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/30/Cli-30-Round1-s101-7f8d9a1e6715/result.json",
+          "started_at": "2026-10-04T20:51:47.928013+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "31",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter",
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/31/Cli-31-Round1-s101-be5d424f1c4d/result.json",
+          "started_at": "2026-10-04T20:52:54.504826+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Option": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/31/Cli-31-Round1-s101-63fc7fb42447-attempt2/result.json",
+          "started_at": "2026-10-05T09:01:28.953833+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/31/Cli-31-Round1-s101-b6214e68c09b/result.json",
+          "started_at": "2026-10-04T20:54:52.110843+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/32/Cli-32-Round1-s101-8dd2d2da77b5/result.json",
+          "started_at": "2026-10-04T20:55:22.007303+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/33/Cli-33-Round1-s101-a808fa8c2b15/result.json",
+          "started_at": "2026-10-04T20:56:28.456395+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "34",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.Option": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/34/Cli-34-Round1-s101-cf9a9b3501b2-attempt2/result.json",
+          "started_at": "2026-10-05T09:02:22.977332+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/34/Cli-34-Round1-s101-e2cc5f1743e9/result.json",
+          "started_at": "2026-10-04T20:58:30.928954+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Options"
+      ],
+      "units": {
+        "org.apache.commons.cli.Options": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/35/Cli-35-Round1-s101-d59bcd605e57/result.json",
+          "started_at": "2026-10-04T20:59:01.228979+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionGroup",
+        "org.apache.commons.cli.Options"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionGroup": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/36/Cli-36-Round1-s101-3e26156ef4ca/result.json",
+          "started_at": "2026-10-04T20:59:39.657337+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Options": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/36/Cli-36-Round1-s101-2982d9077129/result.json",
+          "started_at": "2026-10-04T21:00:06.189761+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/37/Cli-37-Round1-s101-2fccb266ba0e/result.json",
+          "started_at": "2026-10-04T21:00:43.815858+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/38/Cli-38-Round1-s101-a309328045c3/result.json",
+          "started_at": "2026-10-04T21:01:46.325800+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/39/Cli-39-Round1-s101-9174cf0135ee/result.json",
+          "started_at": "2026-10-04T21:02:48.536766+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Cli/40/Cli-40-Round1-s101-a0fd24b2363c/result.json",
+          "started_at": "2026-10-04T21:03:52.158410+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Caverphone",
+        "org.apache.commons.codec.language.Metaphone",
+        "org.apache.commons.codec.language.SoundexUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Caverphone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/1/Codec-1-Round1-s101-c0be147b115c/result.json",
+          "started_at": "2026-10-04T21:04:52.303365+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.Metaphone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/1/Codec-1-Round1-s101-9eeacd2443b0/result.json",
+          "started_at": "2026-10-04T21:05:15.073138+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.SoundexUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/1/Codec-1-Round1-s101-15876efbe4aa/result.json",
+          "started_at": "2026-10-04T21:06:11.558150+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/2/Codec-2-Round1-s101-37bbc1fdffed/result.json",
+          "started_at": "2026-10-04T21:06:40.408806+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.DoubleMetaphone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/3/Codec-3-Round1-s101-116f8bac306e/result.json",
+          "started_at": "2026-10-04T21:07:42.979340+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/4/Codec-4-Round1-s101-17e7668029d0/result.json",
+          "started_at": "2026-10-04T21:08:48.655843+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/5/Codec-5-Round1-s101-d9b6fb44b539/result.json",
+          "started_at": "2026-10-04T21:09:50.725724+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64InputStream": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/6/Codec-6-Round1-s101-121f34d700af/result.json",
+          "started_at": "2026-10-04T21:10:52.284764+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/7/Codec-7-Round1-s101-b745adf177de/result.json",
+          "started_at": "2026-10-04T21:11:52.349489+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64",
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/8/Codec-8-Round1-s101-9f0477943250/result.json",
+          "started_at": "2026-10-04T21:12:55.673966+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.binary.Base64InputStream": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/8/Codec-8-Round1-s101-0f2e5a2c321d/result.json",
+          "started_at": "2026-10-04T21:14:03.156374+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/9/Codec-9-Round1-s101-c0473bd6b1e4/result.json",
+          "started_at": "2026-10-04T21:15:02.110572+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Caverphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Caverphone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/10/Codec-10-Round1-s101-aec814af5de7/result.json",
+          "started_at": "2026-10-04T21:16:07.313523+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.net.QuotedPrintableCodec"
+      ],
+      "units": {
+        "org.apache.commons.codec.net.QuotedPrintableCodec": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/11/Codec-11-Round1-s101-f6c24374ecfb/result.json",
+          "started_at": "2026-10-04T21:16:34.899694+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.BaseNCodecInputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.BaseNCodecInputStream": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38/result.json",
+          "started_at": "2026-10-04T21:17:36.160251+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.CharSequenceUtils",
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.CharSequenceUtils": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/13/Codec-13-Round1-s101-145f01e14add-attempt2/result.json",
+          "started_at": "2026-10-05T09:03:17.862905+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/13/Codec-13-Round1-s101-b5ab2186826d-attempt2/result.json",
+          "started_at": "2026-10-05T09:04:10.471685+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.codec.language.DoubleMetaphone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/13/Codec-13-Round1-s101-b700ae6942e6/result.json",
+          "started_at": "2026-10-04T21:19:59.850993+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "14",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.language.bm.Lang",
+        "org.apache.commons.codec.language.bm.PhoneticEngine",
+        "org.apache.commons.codec.language.bm.Rule",
+        "src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.bm.Lang": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-bd6a5bb86a10-attempt2/result.json",
+          "started_at": "2026-10-05T09:04:34.045513+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.apache.commons.codec.language.bm.PhoneticEngine": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-57b6fbf41ffb-attempt2/result.json",
+          "started_at": "2026-10-05T09:04:52.697797+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.apache.commons.codec.language.bm.Rule": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-9b03ba41891c-attempt2/result.json",
+          "started_at": "2026-10-05T09:05:45.557763+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt": {
+          "status": "NO_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-4ba7466b18ac-attempt2/result.json",
+          "started_at": "2026-10-05T09:06:05.122735+00:00",
+          "error": "Add generated .java files to /workspace/MOSA_EvoSuite/Test/Codec/14/Codec-14-Round1-s101-4ba7466b18ac-attempt2"
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt": {
+          "status": "NO_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-c55e56f3a3c0-attempt2/result.json",
+          "started_at": "2026-10-05T09:06:09.821067+00:00",
+          "error": "Add generated .java files to /workspace/MOSA_EvoSuite/Test/Codec/14/Codec-14-Round1-s101-c55e56f3a3c0-attempt2"
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt": {
+          "status": "NO_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-72508c9ee592-attempt2/result.json",
+          "started_at": "2026-10-05T09:06:14.672946+00:00",
+          "error": "Add generated .java files to /workspace/MOSA_EvoSuite/Test/Codec/14/Codec-14-Round1-s101-72508c9ee592-attempt2"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Soundex"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Soundex": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/15/Codec-15-Round1-s101-a1956bf409bb/result.json",
+          "started_at": "2026-10-04T21:23:07.078368+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base32"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base32": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/16/Codec-16-Round1-s101-b31ab783798d/result.json",
+          "started_at": "2026-10-04T21:24:08.434622+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/17/Codec-17-Round1-s101-ccc2836332bc/result.json",
+          "started_at": "2026-10-04T21:24:45.227283+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Codec/18/Codec-18-Round1-s101-779d0dfdee86/result.json",
+          "started_at": "2026-10-04T21:25:17.987578+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "1",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.Flat3Map": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/1/Collections-1-Round1-s101-7567c13d957d-attempt2/result.json",
+          "started_at": "2026-10-05T09:06:19.428587+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/2/Collections-2-Round1-s101-984ff1cfb309/result.json",
+          "started_at": "2026-10-04T21:27:24.612270+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.CollectionUtils"
+      ],
+      "units": {
+        "org.apache.commons.collections.CollectionUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/3/Collections-3-Round1-s101-a70ba270407b/result.json",
+          "started_at": "2026-10-04T21:28:46.164922+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/4/Collections-4-Round1-s101-f084d3adef96/result.json",
+          "started_at": "2026-10-04T21:30:16.434190+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "5",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/5/Collections-5-Round1-s101-17ed6f12c96a-attempt2/result.json",
+          "started_at": "2026-10-05T09:07:43.894099+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "6",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.Flat3Map": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/6/Collections-6-Round1-s101-94629bb612d6-attempt2/result.json",
+          "started_at": "2026-10-05T09:08:16.726772+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/7/Collections-7-Round1-s101-bc7b57c5a925-attempt2/result.json",
+          "started_at": "2026-10-05T09:09:30.506354+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer"
+      ],
+      "units": {
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/8/Collections-8-Round1-s101-36a0cccc412c/result.json",
+          "started_at": "2026-10-04T21:35:06.144347+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/9/Collections-9-Round1-s101-781db6af7fb5-attempt2/result.json",
+          "started_at": "2026-10-05T09:10:43.674134+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/10/Collections-10-Round1-s101-539fc1cd0cd8/result.json",
+          "started_at": "2026-10-04T21:37:42.302372+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.keyvalue.MultiKey"
+      ],
+      "units": {
+        "org.apache.commons.collections.keyvalue.MultiKey": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/11/Collections-11-Round1-s101-28711146c4cc-attempt2/result.json",
+          "started_at": "2026-10-05T09:11:55.381214+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/12/Collections-12-Round1-s101-6ebb34a5092f-attempt2/result.json",
+          "started_at": "2026-10-05T09:13:03.781503+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/13/Collections-13-Round1-s101-58fb416e06ad-attempt2/result.json",
+          "started_at": "2026-10-05T09:14:16.695707+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.CaseInsensitiveMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.CaseInsensitiveMap": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/14/Collections-14-Round1-s101-7ff7ad318c57/result.json",
+          "started_at": "2026-10-04T21:42:47.276271+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/15/Collections-15-Round1-s101-9c10fac70e2e/result.json",
+          "started_at": "2026-10-04T21:44:06.653237+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/16/Collections-16-Round1-s101-12dab783c12f-attempt2/result.json",
+          "started_at": "2026-10-05T09:15:28.653320+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.functors.EqualPredicate"
+      ],
+      "units": {
+        "org.apache.commons.collections.functors.EqualPredicate": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/17/Collections-17-Round1-s101-966c093003b3/result.json",
+          "started_at": "2026-10-04T21:45:41.688458+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "18",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.set.ListOrderedSet"
+      ],
+      "units": {
+        "org.apache.commons.collections.set.ListOrderedSet": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/18/Collections-18-Round1-s101-812c36fffded-attempt2/result.json",
+          "started_at": "2026-10-05T09:16:03.727443+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "19",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/19/Collections-19-Round1-s101-42584b488277-attempt2/result.json",
+          "started_at": "2026-10-05T09:17:27.778144+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.list.TreeList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.TreeList": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/20/Collections-20-Round1-s101-0790e9e3be33/result.json",
+          "started_at": "2026-10-04T21:49:00.821133+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "21",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections4.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections4.list.SetUniqueList": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/21/Collections-21-Round1-s101-18a2006c93d4-attempt2/result.json",
+          "started_at": "2026-10-05T09:18:12.237144+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "22",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections4.map.ListOrderedMap"
+      ],
+      "units": {
+        "org.apache.commons.collections4.map.ListOrderedMap": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/22/Collections-22-Round1-s101-4e8132c827a1-attempt2/result.json",
+          "started_at": "2026-10-05T09:18:57.113350+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.trie.UnmodifiableTrie"
+      ],
+      "units": {
+        "org.apache.commons.collections4.trie.UnmodifiableTrie": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/23/Collections-23-Round1-s101-bacd315a544e/result.json",
+          "started_at": "2026-10-04T21:52:29.489073+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection"
+      ],
+      "units": {
+        "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/24/Collections-24-Round1-s101-adec646f04fd/result.json",
+          "started_at": "2026-10-04T21:53:42.509924+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.IteratorUtils"
+      ],
+      "units": {
+        "org.apache.commons.collections4.IteratorUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/25/Collections-25-Round1-s101-d7af5eb134aa/result.json",
+          "started_at": "2026-10-04T21:55:01.055858+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "26",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections4.keyvalue.MultiKey"
+      ],
+      "units": {
+        "org.apache.commons.collections4.keyvalue.MultiKey": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2/result.json",
+          "started_at": "2026-10-05T09:20:05.855202+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections4.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/27/Collections-27-Round1-s101-15278383ea86/result.json",
+          "started_at": "2026-10-04T21:57:12.567159+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.trie.AbstractPatriciaTrie"
+      ],
+      "units": {
+        "org.apache.commons.collections4.trie.AbstractPatriciaTrie": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Collections/28/Collections-28-Round1-s101-aadd266e921c/result.json",
+          "started_at": "2026-10-04T21:58:30.152204+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.ExtendedBufferedReader"
+      ],
+      "units": {
+        "org.apache.commons.csv.ExtendedBufferedReader": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/1/Csv-1-Round1-s101-e97a93b99fec/result.json",
+          "started_at": "2026-10-04T21:59:51.119774+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/2/Csv-2-Round1-s101-b2d18f9a0eb6/result.json",
+          "started_at": "2026-10-04T22:00:47.760378+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.Lexer"
+      ],
+      "units": {
+        "org.apache.commons.csv.Lexer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/3/Csv-3-Round1-s101-0f88d89a05f4/result.json",
+          "started_at": "2026-10-04T22:01:15.552978+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/4/Csv-4-Round1-s101-a0a7715c9884/result.json",
+          "started_at": "2026-10-04T22:02:13.992928+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/5/Csv-5-Round1-s101-5d638781ecc9/result.json",
+          "started_at": "2026-10-04T22:03:17.350252+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/6/Csv-6-Round1-s101-89744fc7aea8/result.json",
+          "started_at": "2026-10-04T22:04:23.446402+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/7/Csv-7-Round1-s101-7bed7379cdc6/result.json",
+          "started_at": "2026-10-04T22:05:24.759509+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/8/Csv-8-Round1-s101-1ffd6d3c4d8a/result.json",
+          "started_at": "2026-10-04T22:06:28.878443+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/9/Csv-9-Round1-s101-e56992fdc38f/result.json",
+          "started_at": "2026-10-04T22:07:33.706535+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/10/Csv-10-Round1-s101-62209d76cf11/result.json",
+          "started_at": "2026-10-04T22:08:36.124244+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/11/Csv-11-Round1-s101-cc4c0112832d-attempt2/result.json",
+          "started_at": "2026-10-05T09:20:40.623964+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/12/Csv-12-Round1-s101-ee8a782969ee-attempt2/result.json",
+          "started_at": "2026-10-05T09:21:43.648360+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat",
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/13/Csv-13-Round1-s101-ee98fd45dffc/result.json",
+          "started_at": "2026-10-04T22:54:24.411344+00:00",
+          "error": null
+        },
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/13/Csv-13-Round1-s101-3e26aae0e9f9/result.json",
+          "started_at": "2026-10-04T22:55:30.757608+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/14/Csv-14-Round1-s101-635b0530e378-attempt2/result.json",
+          "started_at": "2026-10-05T09:22:27.457693+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/15/Csv-15-Round1-s101-0cdc324d288a/result.json",
+          "started_at": "2026-10-04T22:57:47.144448+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Csv/16/Csv-16-Round1-s101-cf180957d4f0-attempt2/result.json",
+          "started_at": "2026-10-05T09:23:33.498795+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.TypeInfoFactory"
+      ],
+      "units": {
+        "com.google.gson.TypeInfoFactory": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/1/Gson-1-Round1-s101-76a8c4f32f00/result.json",
+          "started_at": "2026-10-04T23:00:09.616453+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/2/Gson-2-Round1-s101-128a6a00ecb8/result.json",
+          "started_at": "2026-10-04T23:01:08.653606+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.ConstructorConstructor"
+      ],
+      "units": {
+        "com.google.gson.internal.ConstructorConstructor": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/3/Gson-3-Round1-s101-061b06d40d42/result.json",
+          "started_at": "2026-10-04T23:02:16.859206+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader",
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/4/Gson-4-Round1-s101-a579b879b23c/result.json",
+          "started_at": "2026-10-04T23:03:15.215264+00:00",
+          "error": null
+        },
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/4/Gson-4-Round1-s101-05db0edcd09b/result.json",
+          "started_at": "2026-10-04T23:04:20.433510+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.util.ISO8601Utils"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.util.ISO8601Utils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/5/Gson-5-Round1-s101-97b69ac31ae5/result.json",
+          "started_at": "2026-10-04T23:05:28.353440+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/6/Gson-6-Round1-s101-cbf37c90c262/result.json",
+          "started_at": "2026-10-04T23:06:31.412870+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/7/Gson-7-Round1-s101-c9c9c9c2fe43/result.json",
+          "started_at": "2026-10-04T23:07:40.238662+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.UnsafeAllocator"
+      ],
+      "units": {
+        "com.google.gson.internal.UnsafeAllocator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/8/Gson-8-Round1-s101-b54ed13f68c8/result.json",
+          "started_at": "2026-10-04T23:08:49.916076+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonTreeWriter",
+        "com.google.gson.internal.bind.TypeAdapters",
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonTreeWriter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/9/Gson-9-Round1-s101-09c5b6f4e275/result.json",
+          "started_at": "2026-10-04T23:09:50.258852+00:00",
+          "error": null
+        },
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/9/Gson-9-Round1-s101-1e916ce0d5f6/result.json",
+          "started_at": "2026-10-04T23:10:50.453948+00:00",
+          "error": null
+        },
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/9/Gson-9-Round1-s101-bc30e5bea6fa/result.json",
+          "started_at": "2026-10-04T23:11:55.870885+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/10/Gson-10-Round1-s101-681988f1819d/result.json",
+          "started_at": "2026-10-04T23:13:01.132802+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/11/Gson-11-Round1-s101-0333254c5d3b/result.json",
+          "started_at": "2026-10-04T23:14:06.204471+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonTreeReader"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonTreeReader": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/12/Gson-12-Round1-s101-5fd95ca556ec/result.json",
+          "started_at": "2026-10-04T23:15:15.278406+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/13/Gson-13-Round1-s101-84a607dfe85f/result.json",
+          "started_at": "2026-10-04T23:16:20.234515+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/14/Gson-14-Round1-s101-8601d0622c98/result.json",
+          "started_at": "2026-10-04T23:17:28.516200+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/15/Gson-15-Round1-s101-816b35b1f93f/result.json",
+          "started_at": "2026-10-04T23:18:29.268157+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/16/Gson-16-Round1-s101-806af8d04497/result.json",
+          "started_at": "2026-10-04T23:19:34.974439+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "com.google.gson.DefaultDateTypeAdapter"
+      ],
+      "units": {
+        "com.google.gson.DefaultDateTypeAdapter": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/17/Gson-17-Round1-s101-441ec38bcfe8-attempt2/result.json",
+          "started_at": "2026-10-05T09:24:33.484881+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Gson/18/Gson-18-Round1-s101-97f589569468/result.json",
+          "started_at": "2026-10-04T23:21:39.240122+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.io.NumberInput",
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.io.NumberInput": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-1a131b504d1e/result.json",
+          "started_at": "2026-10-04T23:22:40.040011+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-f97ae3d68c3c/result.json",
+          "started_at": "2026-10-04T23:23:41.789726+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "2",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/2/JacksonCore-2-Round1-s101-9b96f5dc1cce/result.json",
+          "started_at": "2026-10-04T23:24:52.083346+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/2/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2/result.json",
+          "started_at": "2026-10-05T09:25:31.695282+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/3/JacksonCore-3-Round1-s101-a772aabceb13-attempt2/result.json",
+          "started_at": "2026-10-05T09:26:40.394302+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/4/JacksonCore-4-Round1-s101-d6f0cfb0d97d/result.json",
+          "started_at": "2026-10-04T23:28:42.412988+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonPointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41/result.json",
+          "started_at": "2026-10-04T23:29:55.811012+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonPointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/6/JacksonCore-6-Round1-s101-714f9807ba08/result.json",
+          "started_at": "2026-10-04T23:31:04.000942+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.JsonWriteContext"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.JsonWriteContext": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442/result.json",
+          "started_at": "2026-10-04T23:32:12.530080+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/8/JacksonCore-8-Round1-s101-15b07cc61fde-attempt2/result.json",
+          "started_at": "2026-10-05T09:27:57.465975+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.ParserMinimalBase",
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.ParserMinimalBase": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-9e0dca5f81c7/result.json",
+          "started_at": "2026-10-04T23:34:04.066206+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-0c26a482f91b/result.json",
+          "started_at": "2026-10-04T23:35:18.099247+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-348aaee93562-attempt2/result.json",
+          "started_at": "2026-10-05T09:29:00.482925+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/10/JacksonCore-10-Round1-s101-9c82c9830a3f/result.json",
+          "started_at": "2026-10-04T23:38:04.932878+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/11/JacksonCore-11-Round1-s101-60f0029ded86/result.json",
+          "started_at": "2026-10-04T23:39:15.113830+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/12/JacksonCore-12-Round1-s101-0c259d9d2d29/result.json",
+          "started_at": "2026-10-04T23:40:26.341150+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/12/JacksonCore-12-Round1-s101-d3f7aa2b468c/result.json",
+          "started_at": "2026-10-04T23:41:53.337909+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.JsonGeneratorImpl"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.JsonGeneratorImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/13/JacksonCore-13-Round1-s101-fb43f99da6d9/result.json",
+          "started_at": "2026-10-04T23:43:23.954885+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.io.IOContext": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/14/JacksonCore-14-Round1-s101-bd6cba4df509/result.json",
+          "started_at": "2026-10-04T23:44:35.780597+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/15/JacksonCore-15-Round1-s101-dc404110ea31/result.json",
+          "started_at": "2026-10-04T23:45:11.901351+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.JsonParserSequence"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.JsonParserSequence": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/16/JacksonCore-16-Round1-s101-71252c745a6e/result.json",
+          "started_at": "2026-10-04T23:46:29.379627+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/17/JacksonCore-17-Round1-s101-98883d4ba02e/result.json",
+          "started_at": "2026-10-04T23:47:37.249644+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.GeneratorBase",
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator",
+        "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.GeneratorBase": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-fba76665a231/result.json",
+          "started_at": "2026-10-04T23:49:02.943746+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-44cf50f27010/result.json",
+          "started_at": "2026-10-04T23:50:07.983708+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-c8dd66a0357c/result.json",
+          "started_at": "2026-10-04T23:51:26.941974+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-6ee1ad199845/result.json",
+          "started_at": "2026-10-04T23:52:48.408934+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda/result.json",
+          "started_at": "2026-10-04T23:54:15.007755+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/20/JacksonCore-20-Round1-s101-2d2cd07ab3a1/result.json",
+          "started_at": "2026-10-04T23:55:30.004276+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/21/JacksonCore-21-Round1-s101-2f7a67ce8c90/result.json",
+          "started_at": "2026-10-04T23:56:49.113129+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/22/JacksonCore-22-Round1-s101-4e2535532cf2/result.json",
+          "started_at": "2026-10-04T23:58:18.313268+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/23/JacksonCore-23-Round1-s101-0d2e471b68b2/result.json",
+          "started_at": "2026-10-04T23:59:38.155781+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.ParserBase",
+        "com.fasterxml.jackson.core.base.ParserMinimalBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.ParserBase": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/24/JacksonCore-24-Round1-s101-ff39da17045d/result.json",
+          "started_at": "2026-10-05T00:00:53.007290+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.base.ParserMinimalBase": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/24/JacksonCore-24-Round1-s101-608e3a31fe02/result.json",
+          "started_at": "2026-10-05T00:02:08.054670+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/25/JacksonCore-25-Round1-s101-e9da60392c20/result.json",
+          "started_at": "2026-10-05T00:03:29.910404+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.async.NonBlockingJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.async.NonBlockingJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/26/JacksonCore-26-Round1-s101-e290dbb76ebf/result.json",
+          "started_at": "2026-10-05T00:05:21.613473+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s101-250a5d4f26aa/result.json",
+          "started_at": "2026-10-05T00:06:49.387523+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/2/JacksonXml-2-Round1-s101-6019fdac77b3/result.json",
+          "started_at": "2026-10-05T00:07:55.492406+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/3/JacksonXml-3-Round1-s101-8664eec287f4/result.json",
+          "started_at": "2026-10-05T00:08:59.543139+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/4/JacksonXml-4-Round1-s101-195f9fe1b922/result.json",
+          "started_at": "2026-10-05T00:10:06.724763+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20/result.json",
+          "started_at": "2026-10-05T00:11:32.080666+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/6/JacksonXml-6-Round1-s101-18e595f5d2ed/result.json",
+          "started_at": "2026-10-05T00:12:53.185488+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/1/JxPath-1-Round1-s101-9e221031ac76/result.json",
+          "started_at": "2026-10-05T00:15:10.373723+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/1/JxPath-1-Round1-s101-3541460e5ced/result.json",
+          "started_at": "2026-10-05T00:16:30.940485+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.Expression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.Expression": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/2/JxPath-2-Round1-s101-92c554806901/result.json",
+          "started_at": "2026-10-05T00:17:40.514084+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/3/JxPath-3-Round1-s101-8985bd50d37f/result.json",
+          "started_at": "2026-10-05T00:18:45.075718+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "4",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/4/JxPath-4-Round1-s101-45f3e41eb0aa-attempt2/result.json",
+          "started_at": "2026-10-05T09:30:23.950781+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/4/JxPath-4-Round1-s101-a5a410d1e3a5/result.json",
+          "started_at": "2026-10-05T00:21:18.158741+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.NodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.NodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/5/JxPath-5-Round1-s101-211c8d9478d3/result.json",
+          "started_at": "2026-10-05T00:22:28.348765+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/6/JxPath-6-Round1-s101-134dbc54e39f/result.json",
+          "started_at": "2026-10-05T00:23:40.031608+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-8a236234cb52-attempt2/result.json",
+          "started_at": "2026-10-05T09:31:51.100578+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-139f3c2564a7-attempt2/result.json",
+          "started_at": "2026-10-05T09:32:16.022560+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-82f28654289c-attempt2/result.json",
+          "started_at": "2026-10-05T09:32:40.146261+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-837c34adb9cf-attempt2/result.json",
+          "started_at": "2026-10-05T09:33:04.215294+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf/result.json",
+          "started_at": "2026-10-05T00:26:26.535203+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/8/JxPath-8-Round1-s101-2c1a8ca74051/result.json",
+          "started_at": "2026-10-05T00:27:31.041639+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/9/JxPath-9-Round1-s101-17635911b41e/result.json",
+          "started_at": "2026-10-05T00:28:33.841997+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/9/JxPath-9-Round1-s101-21a894cbae40/result.json",
+          "started_at": "2026-10-05T00:29:34.739702+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/9/JxPath-9-Round1-s101-6b647e35ae44/result.json",
+          "started_at": "2026-10-05T00:30:01.224394+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/10/JxPath-10-Round1-s101-92b50c39519c/result.json",
+          "started_at": "2026-10-05T00:30:32.277766+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "11",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/11/JxPath-11-Round1-s101-1637b0b22c7f-attempt2/result.json",
+          "started_at": "2026-10-05T09:33:29.447677+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/11/JxPath-11-Round1-s101-87490a2e311f/result.json",
+          "started_at": "2026-10-05T00:32:38.375442+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "12",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/12/JxPath-12-Round1-s101-854fe40506e3-attempt2/result.json",
+          "started_at": "2026-10-05T09:34:26.631932+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.NamespaceResolver",
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.NamespaceResolver": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/13/JxPath-13-Round1-s101-8880c9f34314-attempt2/result.json",
+          "started_at": "2026-10-05T09:35:54.276926+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/13/JxPath-13-Round1-s101-a898caa08921-attempt2/result.json",
+          "started_at": "2026-10-05T09:36:54.972226+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreFunction"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreFunction": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/14/JxPath-14-Round1-s101-3f71398d828c/result.json",
+          "started_at": "2026-10-05T00:37:53.239831+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.axes.UnionContext"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.axes.UnionContext": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/15/JxPath-15-Round1-s101-6da46e6b6259/result.json",
+          "started_at": "2026-10-05T00:39:19.583397+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/16/JxPath-16-Round1-s101-03973991700d-attempt2/result.json",
+          "started_at": "2026-10-05T09:38:25.216758+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6/result.json",
+          "started_at": "2026-10-05T00:41:21.749034+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/17/JxPath-17-Round1-s101-2323475c3ab6-attempt2/result.json",
+          "started_at": "2026-10-05T09:39:50.288912+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/17/JxPath-17-Round1-s101-e86258c451f6/result.json",
+          "started_at": "2026-10-05T00:43:33.005254+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.axes.AttributeContext"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.axes.AttributeContext": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/18/JxPath-18-Round1-s101-49899b482e8b/result.json",
+          "started_at": "2026-10-05T00:44:38.848285+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "19",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/19/JxPath-19-Round1-s101-36fd9f30b152-attempt2/result.json",
+          "started_at": "2026-10-05T09:40:50.582369+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/19/JxPath-19-Round1-s101-5af9458c5b74/result.json",
+          "started_at": "2026-10-05T00:46:44.213104+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272/result.json",
+          "started_at": "2026-10-05T00:47:55.732124+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.beans.PropertyPointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.beans.PropertyPointer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/21/JxPath-21-Round1-s101-22aedf5e95aa/result.json",
+          "started_at": "2026-10-05T00:48:59.873146+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "22",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd-attempt2/result.json",
+          "started_at": "2026-10-05T09:42:16.351397+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ],
+      "units": {
+        "org.mockito.internal.invocation.InvocationMatcher": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/1/Mockito-1-Round1-s101-f1db743b2ff5/result.json",
+          "started_at": "2026-10-05T00:52:28.040544+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.Timer"
+      ],
+      "units": {
+        "org.mockito.internal.util.Timer": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/2/Mockito-2-Round1-s101-612ba7702d4f/result.json",
+          "started_at": "2026-10-05T00:57:54.788265+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ],
+      "units": {
+        "org.mockito.internal.invocation.InvocationMatcher": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/3/Mockito-3-Round1-s101-76184579f33f/result.json",
+          "started_at": "2026-10-05T01:03:19.643492+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.exceptions.Reporter"
+      ],
+      "units": {
+        "org.mockito.exceptions.Reporter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/4/Mockito-4-Round1-s101-fec175e17ab4/result.json",
+          "started_at": "2026-10-05T01:08:48.290381+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.verification.VerificationOverTimeImpl"
+      ],
+      "units": {
+        "org.mockito.internal.verification.VerificationOverTimeImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/5/Mockito-5-Round1-s101-557177f00410/result.json",
+          "started_at": "2026-10-05T01:14:22.767585+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.Matchers"
+      ],
+      "units": {
+        "org.mockito.Matchers": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/6/Mockito-6-Round1-s101-6bb3c0b1ce3d/result.json",
+          "started_at": "2026-10-05T01:19:51.727237+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport"
+      ],
+      "units": {
+        "org.mockito.internal.util.reflection.GenericMetadataSupport": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/7/Mockito-7-Round1-s101-ebdd8a8207d6/result.json",
+          "started_at": "2026-10-05T01:24:56.164458+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport"
+      ],
+      "units": {
+        "org.mockito.internal.util.reflection.GenericMetadataSupport": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/8/Mockito-8-Round1-s101-66be55365d57/result.json",
+          "started_at": "2026-10-05T01:30:25.242947+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.answers.CallsRealMethods"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.answers.CallsRealMethods": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/9/Mockito-9-Round1-s101-d423118edb0b/result.json",
+          "started_at": "2026-10-05T01:35:57.588153+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/10/Mockito-10-Round1-s101-5b4f8b56f18a/result.json",
+          "started_at": "2026-10-05T01:41:31.622785+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.creation.DelegatingMethod"
+      ],
+      "units": {
+        "org.mockito.internal.creation.DelegatingMethod": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/11/Mockito-11-Round1-s101-06064591d5be/result.json",
+          "started_at": "2026-10-05T01:47:06.665446+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.reflection.GenericMaster"
+      ],
+      "units": {
+        "org.mockito.internal.util.reflection.GenericMaster": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/12/Mockito-12-Round1-s101-d6c2057c0e35/result.json",
+          "started_at": "2026-10-05T01:51:58.827509+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.internal.MockHandler"
+      ],
+      "units": {
+        "org.mockito.internal.MockHandler": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/13/Mockito-13-Round1-s101-46e6a756ac2e-attempt2/result.json",
+          "started_at": "2026-10-05T09:43:39.724925+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "14",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.internal.MockHandler",
+        "org.mockito.internal.MockitoCore"
+      ],
+      "units": {
+        "org.mockito.internal.MockHandler": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/14/Mockito-14-Round1-s101-bb84728618da-attempt2/result.json",
+          "started_at": "2026-10-05T09:45:12.414747+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        },
+        "org.mockito.internal.MockitoCore": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/14/Mockito-14-Round1-s101-5eed155d6a42/result.json",
+          "started_at": "2026-10-05T01:56:51.825800+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.configuration.injection.FinalMockCandidateFilter"
+      ],
+      "units": {
+        "org.mockito.internal.configuration.injection.FinalMockCandidateFilter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/15/Mockito-15-Round1-s101-38579fe971e8/result.json",
+          "started_at": "2026-10-05T01:58:43.246930+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.MockitoCore",
+        "org.mockito.Mockito"
+      ],
+      "units": {
+        "org.mockito.internal.MockitoCore": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/16/Mockito-16-Round1-s101-da3c68673873/result.json",
+          "started_at": "2026-10-05T02:00:27.590312+00:00",
+          "error": null
+        },
+        "org.mockito.Mockito": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/16/Mockito-16-Round1-s101-95b127de4043-attempt2/result.json",
+          "started_at": "2026-10-05T09:46:44.550502+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.creation.MockSettingsImpl",
+        "org.mockito.internal.util.MockUtil"
+      ],
+      "units": {
+        "org.mockito.internal.creation.MockSettingsImpl": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/17/Mockito-17-Round1-s101-b85d86711a83/result.json",
+          "started_at": "2026-10-05T02:03:51.799992+00:00",
+          "error": null
+        },
+        "org.mockito.internal.util.MockUtil": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/17/Mockito-17-Round1-s101-49a020ca5b00/result.json",
+          "started_at": "2026-10-05T02:05:26.196501+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/18/Mockito-18-Round1-s101-7ff582292f7c/result.json",
+          "started_at": "2026-10-05T02:07:51.080313+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "19",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.MockCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter",
+        "org.mockito.internal.configuration.injection.PropertyAndSetterInjection"
+      ],
+      "units": {
+        "org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-74f8ab10e91c-attempt2/result.json",
+          "started_at": "2026-10-05T09:48:42.269911+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.mockito.internal.configuration.injection.filter.MockCandidateFilter": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167-attempt2/result.json",
+          "started_at": "2026-10-05T09:53:06.573564+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-81d5549898be-attempt2/result.json",
+          "started_at": "2026-10-05T09:56:50.470300+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-df5b78e7d4bc-attempt2/result.json",
+          "started_at": "2026-10-05T10:01:16.597958+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.mockito.internal.configuration.injection.PropertyAndSetterInjection": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-b395cce8ae10/result.json",
+          "started_at": "2026-10-05T02:30:42.747224+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker"
+      ],
+      "units": {
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/20/Mockito-20-Round1-s101-da15849b745e/result.json",
+          "started_at": "2026-10-05T02:36:04.441616+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.creation.instance.ConstructorInstantiator"
+      ],
+      "units": {
+        "org.mockito.internal.creation.instance.ConstructorInstantiator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/21/Mockito-21-Round1-s101-2ebce3fee57e/result.json",
+          "started_at": "2026-10-05T02:41:34.924996+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.matchers.Equality"
+      ],
+      "units": {
+        "org.mockito.internal.matchers.Equality": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/22/Mockito-22-Round1-s101-5c63545583cf/result.json",
+          "started_at": "2026-10-05T02:46:36.222686+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/23/Mockito-23-Round1-s101-2489de48509b/result.json",
+          "started_at": "2026-10-05T02:49:26.703016+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/24/Mockito-24-Round1-s101-ee8b992e722d/result.json",
+          "started_at": "2026-10-05T02:52:15.384394+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/25/Mockito-25-Round1-s101-6ec46760ad83/result.json",
+          "started_at": "2026-10-05T02:54:58.196999+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.Primitives"
+      ],
+      "units": {
+        "org.mockito.internal.util.Primitives": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/26/Mockito-26-Round1-s101-14e31d219d88/result.json",
+          "started_at": "2026-10-05T02:57:19.492470+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.util.MockUtil"
+      ],
+      "units": {
+        "org.mockito.internal.util.MockUtil": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/27/Mockito-27-Round1-s101-f576953d7239/result.json",
+          "started_at": "2026-10-05T02:59:04.509244+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.configuration.DefaultInjectionEngine"
+      ],
+      "units": {
+        "org.mockito.internal.configuration.DefaultInjectionEngine": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/28/Mockito-28-Round1-s101-013dbbf45a67/result.json",
+          "started_at": "2026-10-05T03:00:54.926114+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.matchers.Same"
+      ],
+      "units": {
+        "org.mockito.internal.matchers.Same": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/29/Mockito-29-Round1-s101-3104abd2f99b/result.json",
+          "started_at": "2026-10-05T03:02:37.524083+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "30",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.exceptions.Reporter",
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls"
+      ],
+      "units": {
+        "org.mockito.exceptions.Reporter": {
+          "status": "COMPILE_FAIL",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/30/Mockito-30-Round1-s101-ceeb45ca80a1-attempt2/result.json",
+          "started_at": "2026-10-05T10:05:38.433455+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/30/Mockito-30-Round1-s101-b6bc21795d37/result.json",
+          "started_at": "2026-10-05T03:05:35.387405+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "31",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/31/Mockito-31-Round1-s101-26c4014f9a56/result.json",
+          "started_at": "2026-10-05T03:07:20.996668+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.configuration.SpyAnnotationEngine"
+      ],
+      "units": {
+        "org.mockito.internal.configuration.SpyAnnotationEngine": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/32/Mockito-32-Round1-s101-efed3d3222a5/result.json",
+          "started_at": "2026-10-05T03:09:07.787306+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "33",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ],
+      "units": {
+        "org.mockito.internal.invocation.InvocationMatcher": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/33/Mockito-33-Round1-s101-268be9e9ca4e-attempt2/result.json",
+          "started_at": "2026-10-05T10:07:14.917505+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "34",
+      "status": "FAILED",
+      "targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ],
+      "units": {
+        "org.mockito.internal.invocation.InvocationMatcher": {
+          "status": "INVALID_TESTS",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/34/Mockito-34-Round1-s101-be4431d3ccbc-attempt2/result.json",
+          "started_at": "2026-10-05T10:08:45.144169+00:00",
+          "error": "Zero, ignored, or assumption-skipped tests cannot count as passing"
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.Matchers"
+      ],
+      "units": {
+        "org.mockito.Matchers": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/35/Mockito-35-Round1-s101-392308a33d9f/result.json",
+          "started_at": "2026-10-05T03:14:20.673951+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.invocation.Invocation"
+      ],
+      "units": {
+        "org.mockito.internal.invocation.Invocation": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/36/Mockito-36-Round1-s101-a1ba9967438a/result.json",
+          "started_at": "2026-10-05T03:15:41.140933+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.stubbing.answers.AnswersValidator"
+      ],
+      "units": {
+        "org.mockito.internal.stubbing.answers.AnswersValidator": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/37/Mockito-37-Round1-s101-ce3c8dac6354/result.json",
+          "started_at": "2026-10-05T03:17:26.038362+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Mockito",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool"
+      ],
+      "units": {
+        "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Mockito/38/Mockito-38-Round1-s101-f2f155c0e4e7/result.json",
+          "started_at": "2026-10-05T03:19:09.573396+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.field.UnsupportedDurationField",
+        "org.joda.time.Partial"
+      ],
+      "units": {
+        "org.joda.time.field.UnsupportedDurationField": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/1/Time-1-Round1-s101-3bbbeaf19d85/result.json",
+          "started_at": "2026-10-05T03:20:46.119314+00:00",
+          "error": null
+        },
+        "org.joda.time.Partial": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/1/Time-1-Round1-s101-38c7184c084f/result.json",
+          "started_at": "2026-10-05T03:22:16.239267+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.field.UnsupportedDurationField",
+        "org.joda.time.Partial"
+      ],
+      "units": {
+        "org.joda.time.field.UnsupportedDurationField": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/2/Time-2-Round1-s101-b59e8fbf32ce/result.json",
+          "started_at": "2026-10-05T03:24:01.597598+00:00",
+          "error": null
+        },
+        "org.joda.time.Partial": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/2/Time-2-Round1-s101-119a4d5c9423/result.json",
+          "started_at": "2026-10-05T03:25:29.751912+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.MutableDateTime"
+      ],
+      "units": {
+        "org.joda.time.MutableDateTime": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/3/Time-3-Round1-s101-3e1d49c5d6e4/result.json",
+          "started_at": "2026-10-05T03:27:18.911127+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.Partial"
+      ],
+      "units": {
+        "org.joda.time.Partial": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/4/Time-4-Round1-s101-263b79cb446b/result.json",
+          "started_at": "2026-10-05T03:29:19.617171+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.Period"
+      ],
+      "units": {
+        "org.joda.time.Period": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/5/Time-5-Round1-s101-684e32a99797/result.json",
+          "started_at": "2026-10-05T03:30:54.518728+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.chrono.GJChronology"
+      ],
+      "units": {
+        "org.joda.time.chrono.GJChronology": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/6/Time-6-Round1-s101-77656f7c7b8d/result.json",
+          "started_at": "2026-10-05T03:32:39.102790+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.DateTimeFormatter"
+      ],
+      "units": {
+        "org.joda.time.format.DateTimeFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/7/Time-7-Round1-s101-4e67842c276a/result.json",
+          "started_at": "2026-10-05T03:34:27.960520+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/8/Time-8-Round1-s101-8dfd8921d116/result.json",
+          "started_at": "2026-10-05T03:36:21.516406+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/9/Time-9-Round1-s101-cd87c4c61996/result.json",
+          "started_at": "2026-10-05T03:38:16.510604+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.base.BaseSingleFieldPeriod"
+      ],
+      "units": {
+        "org.joda.time.base.BaseSingleFieldPeriod": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/10/Time-10-Round1-s101-793b5b39a915/result.json",
+          "started_at": "2026-10-05T03:40:10.853272+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "11",
+      "status": "FAILED",
+      "targets": [
+        "org.joda.time.tz.ZoneInfoCompiler"
+      ],
+      "units": {
+        "org.joda.time.tz.ZoneInfoCompiler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/11/Time-11-Round1-s101-2bba702b9ec4-attempt2/result.json",
+          "started_at": "2026-10-05T10:10:13.182687+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.LocalDate",
+        "org.joda.time.LocalDateTime"
+      ],
+      "units": {
+        "org.joda.time.LocalDate": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/12/Time-12-Round1-s101-d820ea18bc19/result.json",
+          "started_at": "2026-10-05T03:43:43.331473+00:00",
+          "error": null
+        },
+        "org.joda.time.LocalDateTime": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/12/Time-12-Round1-s101-f03399f2891b/result.json",
+          "started_at": "2026-10-05T03:45:37.881755+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.PeriodFormatterBuilder"
+      ],
+      "units": {
+        "org.joda.time.format.PeriodFormatterBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/13/Time-13-Round1-s101-d1d17f6a8fa1/result.json",
+          "started_at": "2026-10-05T03:47:50.384774+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.chrono.BasicMonthOfYearDateTimeField"
+      ],
+      "units": {
+        "org.joda.time.chrono.BasicMonthOfYearDateTimeField": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/14/Time-14-Round1-s101-0ba6f3fd45a4/result.json",
+          "started_at": "2026-10-05T03:50:02.059331+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.field.FieldUtils"
+      ],
+      "units": {
+        "org.joda.time.field.FieldUtils": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/15/Time-15-Round1-s101-f07ba219a8c7/result.json",
+          "started_at": "2026-10-05T03:51:49.803920+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.DateTimeFormatter"
+      ],
+      "units": {
+        "org.joda.time.format.DateTimeFormatter": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/16/Time-16-Round1-s101-e77d247e36f6/result.json",
+          "started_at": "2026-10-05T03:53:41.363268+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/17/Time-17-Round1-s101-0b34f26e8db7/result.json",
+          "started_at": "2026-10-05T03:55:37.926079+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.chrono.GJChronology"
+      ],
+      "units": {
+        "org.joda.time.chrono.GJChronology": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/18/Time-18-Round1-s101-7d4811476f9f/result.json",
+          "started_at": "2026-10-05T03:57:32.905573+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/19/Time-19-Round1-s101-ceee176fd613-attempt2/result.json",
+          "started_at": "2026-10-05T10:11:45.769516+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.DateTimeFormatterBuilder"
+      ],
+      "units": {
+        "org.joda.time.format.DateTimeFormatterBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/20/Time-20-Round1-s101-7f45eb5378ee-attempt2/result.json",
+          "started_at": "2026-10-05T10:13:23.514989+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.base.BasePeriod"
+      ],
+      "units": {
+        "org.joda.time.base.BasePeriod": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/22/Time-22-Round1-s101-e560758332d3/result.json",
+          "started_at": "2026-10-05T04:03:27.937974+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/23/Time-23-Round1-s101-364b3259aad1/result.json",
+          "started_at": "2026-10-05T04:05:19.344097+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.DateTimeParserBucket"
+      ],
+      "units": {
+        "org.joda.time.format.DateTimeParserBucket": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/24/Time-24-Round1-s101-5325e668dc45/result.json",
+          "started_at": "2026-10-05T04:07:13.219692+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.DateTimeZone"
+      ],
+      "units": {
+        "org.joda.time.DateTimeZone": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/25/Time-25-Round1-s101-a12bb429c305/result.json",
+          "started_at": "2026-10-05T04:09:02.068086+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "26",
+      "status": "FAILED",
+      "targets": [
+        "org.joda.time.chrono.ZonedChronology",
+        "org.joda.time.DateTimeZone",
+        "org.joda.time.field.LenientDateTimeField"
+      ],
+      "units": {
+        "org.joda.time.chrono.ZonedChronology": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/26/Time-26-Round1-s101-9701385bc030/result.json",
+          "started_at": "2026-10-05T04:10:54.941756+00:00",
+          "error": null
+        },
+        "org.joda.time.DateTimeZone": {
+          "status": "INVALID_ORACLE",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/26/Time-26-Round1-s101-702080e1a0f4-attempt2/result.json",
+          "started_at": "2026-10-05T10:15:37.948038+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.joda.time.field.LenientDateTimeField": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/26/Time-26-Round1-s101-8840395ba034/result.json",
+          "started_at": "2026-10-05T04:14:12.295984+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Time",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.joda.time.format.PeriodFormatterBuilder"
+      ],
+      "units": {
+        "org.joda.time.format.PeriodFormatterBuilder": {
+          "status": "EVALUATED",
+          "result_path": "MOSA_EvoSuite/Result_Round1/Time/27/Time-27-Round1-s101-a1d6f7eaff45/result.json",
+          "started_at": "2026-10-05T04:15:23.109172+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

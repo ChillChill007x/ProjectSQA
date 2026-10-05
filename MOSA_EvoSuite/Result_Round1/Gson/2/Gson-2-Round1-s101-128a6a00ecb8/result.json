@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-2-Round1-s101-128a6a00ecb8",
+  "unit": {
+    "project": "Gson",
+    "bug": "2",
+    "target": "com.google.gson.internal.bind.TypeAdapters",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:01:08.653606+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Gson/2/Gson-2-Round1-s101-128a6a00ecb8",
+    "tests": "MOSA_EvoSuite/Test/Gson/2/Gson-2-Round1-s101-128a6a00ecb8",
+    "config": "MOSA_EvoSuite/Configuration/Gson/2/Gson-2-Round1-s101-128a6a00ecb8"
+  },
+  "generation_time_sec": 38.626,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Gson/2/Gson-2-Round1-s101-128a6a00ecb8/com/google/gson/internal/bind/TypeAdapters_ESTest.java": "c5aa69b2e13a72c2d46356d1806f33c99a9683c8429ca0d079001e58d409dc1b",
+    "MOSA_EvoSuite/Test/Gson/2/Gson-2-Round1-s101-128a6a00ecb8/com/google/gson/internal/bind/TypeAdapters_ESTest_scaffolding.java": "41b9efeb77906458866b7507411bb8decdfa9bd690ac02608e684a6d7c6bd5cd"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.functional.DefaultTypeAdaptersTest::testJsonElementTypeMismatch",
+    "available_triggers": [
+      "com.google.gson.functional.DefaultTypeAdaptersTest::testJsonElementTypeMismatch"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 24,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 781,
+      "tests": [
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test20",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test10",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test21",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test00",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test11",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test22",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test01",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test12",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test23",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test02",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test13",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test03",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test14",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test04",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test15",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test05",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test16",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test06",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test17",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test07",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test18",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test08",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test19",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 61,
+      "line_coverage_percent": 96.72131147540983,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 804,
+      "tests": [
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test20",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test10",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test21",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test00",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test11",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test22",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test01",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test12",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test23",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test02",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test13",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test03",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test14",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test04",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test15",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test05",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test16",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test06",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test17",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test07",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test18",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test08",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test19",
+        "com.google.gson.internal.bind.TypeAdapters_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 61,
+      "line_coverage_percent": 96.72131147540983,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Gson/2/Gson-2-Round1-s101-128a6a00ecb8/evaluation-1",
+  "finished_at": "2026-10-04T23:02:12.236760+00:00"
+}

@@ -1,0 +1,1 @@
+{"run_count":4,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":615,"tests":["org.joda.time.field.LenientDateTimeField_ESTest::test1","org.joda.time.field.LenientDateTimeField_ESTest::test0","org.joda.time.field.LenientDateTimeField_ESTest::test3","org.joda.time.field.LenientDateTimeField_ESTest::test2"],"failures":[],"passed":true}

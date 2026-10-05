@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-12-Round1-s101-5fd95ca556ec",
+  "unit": {
+    "project": "Gson",
+    "bug": "12",
+    "target": "com.google.gson.internal.bind.JsonTreeReader",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:15:15.278406+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Gson/12/Gson-12-Round1-s101-5fd95ca556ec",
+    "tests": "MOSA_EvoSuite/Test/Gson/12/Gson-12-Round1-s101-5fd95ca556ec",
+    "config": "MOSA_EvoSuite/Configuration/Gson/12/Gson-12-Round1-s101-5fd95ca556ec"
+  },
+  "generation_time_sec": 36.831,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Gson/12/Gson-12-Round1-s101-5fd95ca556ec/com/google/gson/internal/bind/JsonTreeReader_ESTest.java": "5e41b772560be7a4053a386ae3f6a2a6fe9d3df8509b17bb92e3042f813bf36c",
+    "MOSA_EvoSuite/Test/Gson/12/Gson-12-Round1-s101-5fd95ca556ec/com/google/gson/internal/bind/JsonTreeReader_ESTest_scaffolding.java": "3104bd21fc388ff0930531ed27d5758a637689fe25b0f0b542d9f556f383a50d"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_filledJsonObject",
+    "available_triggers": [
+      "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_filledJsonObject",
+      "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_emptyJsonObject"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 30,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 388,
+      "tests": [
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test10",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test11",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test12",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test13",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test14",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test15",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test16",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test17",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test18",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test19",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test20",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test21",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test00",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test22",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test01",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test23",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test02",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test24",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test03",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test25",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test04",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test26",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test05",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test27",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test06",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test28",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test07",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test29",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test08",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 155,
+      "line_total": 167,
+      "line_coverage_percent": 92.81437125748504,
+      "branch_covered": 85,
+      "branch_total": 90,
+      "branch_coverage_percent": 94.44444444444444
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 416,
+      "tests": [
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test10",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test11",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test12",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test13",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test14",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test15",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test16",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test17",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test18",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test19",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test20",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test21",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test00",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test22",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test01",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test23",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test02",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test24",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test03",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test25",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test04",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test26",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test05",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test27",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test06",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test28",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test07",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test29",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test08",
+        "com.google.gson.internal.bind.JsonTreeReader_ESTest::test09"
+      ],
+      "failures": [
+        {
+          "test": "com.google.gson.internal.bind.JsonTreeReader_ESTest::test21",
+          "exception": "java.lang.ArrayIndexOutOfBoundsException",
+          "message": "Index -1 out of bounds for length 32",
+          "trace": "java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 32\n\tat com.google.gson.internal.bind.JsonTreeReader.skipValue(JsonTreeReader.java:262)\n\tat com.google.gson.internal.bind.JsonTreeReader_ESTest.test21(JsonTreeReader_ESTest.java:878)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 152,
+      "line_total": 165,
+      "line_coverage_percent": 92.12121212121212,
+      "branch_covered": 80,
+      "branch_total": 86,
+      "branch_coverage_percent": 93.02325581395348
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Gson/12/Gson-12-Round1-s101-5fd95ca556ec/evaluation-1",
+  "finished_at": "2026-10-04T23:16:15.514201+00:00"
+}

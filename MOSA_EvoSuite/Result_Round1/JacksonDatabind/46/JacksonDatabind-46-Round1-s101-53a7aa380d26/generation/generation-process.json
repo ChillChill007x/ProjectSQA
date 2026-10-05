@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "com.fasterxml.jackson.databind.type.ReferenceType",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83569/checkouts/JacksonDatabind-46-Round1-s101-53a7aa380d26/generation-fixed/target/classes:/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar:/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/JacksonDatabind/46/JacksonDatabind-46-Round1-s101-53a7aa380d26",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/JacksonDatabind/46/JacksonDatabind-46-Round1-s101-53a7aa380d26/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 25.195,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: com.fasterxml.jackson.databind.type.ReferenceType\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83569/checkouts/JacksonDatabind-46-Round1-s101-53a7aa380d26/generation-fixed/target/classes\n  - /opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar\n  - /opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar\n* Finished analyzing classpath\n* Generating tests for class com.fasterxml.jackson.databind.type.ReferenceType\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 33\n\r[Progress:>                             0%] [Cov:>                                  0%]* Using seed 101\n* Starting evolution\n[MASTER] 16:53:06.482 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Map<K, V> : Type points to itself\n[MASTER] 16:53:06.667 [logback-1] WARN  TestCluster - Failed to check cache for java.util.TreeSet<E> : Type points to itself\n\r[Progress:>                             3%] [Cov:==============================>    87%]\r[Progress:>                             3%] [Cov:==============================>    87%]\r[Progress:=>                            6%] [Cov:==============================>    87%]\r[Progress:=>                            6%] [Cov:===============================>   90%]\r[Progress:=>                            6%] [Cov:===============================>   90%]\r[Progress:===>                          10%] [Cov:================================>  93%]\r[Progress:===>                          10%] [Cov:================================>  93%]\r[Progress:===>                          10%] [Cov:================================>  93%]\r[Progress:===>                          10%] [Cov:=================================> 96%]\r[Progress:===>                          13%] [Cov:=================================> 96%]\r[Progress:===>                          13%] [Cov:===================================100%]\n* Search finished after 4s and 10 generations, 12228 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 33\n* Number of covered goals: 33\n* Generated 25 tests with total length 137\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'ReferenceType_ESTest' to /workspace/MOSA_EvoSuite/Test/JacksonDatabind/46/JacksonDatabind-46-Round1-s101-53a7aa380d26\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

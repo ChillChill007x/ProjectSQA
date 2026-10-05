@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.google.javascript.jscomp.SyntacticScopeCreator,BRANCH,0.35135135135135137,74,26

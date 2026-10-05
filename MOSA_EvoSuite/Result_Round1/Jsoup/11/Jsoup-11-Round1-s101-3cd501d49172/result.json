@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-11-Round1-s101-3cd501d49172",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "11",
+    "target": "org.jsoup.select.Selector",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T01:17:47.091436+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/11/Jsoup-11-Round1-s101-3cd501d49172",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/11/Jsoup-11-Round1-s101-3cd501d49172",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/11/Jsoup-11-Round1-s101-3cd501d49172"
+  },
+  "generation_time_sec": 42.734,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/11/Jsoup-11-Round1-s101-3cd501d49172/org/jsoup/select/Selector_ESTest.java": "7473791b751ee5d5f684d90e2024a60f8095486b819ce81e8775618275121e3b",
+    "MOSA_EvoSuite/Test/Jsoup/11/Jsoup-11-Round1-s101-3cd501d49172/org/jsoup/select/Selector_ESTest_scaffolding.java": "a866f9f9c5ddae5a0ebdf43bc3967a690d21013829e2c04ae293fc2f77bc994e"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.select.SelectorTest::notAll",
+    "available_triggers": [
+      "org.jsoup.select.SelectorTest::notAll",
+      "org.jsoup.select.SelectorTest::testPseudoHas",
+      "org.jsoup.select.SelectorTest::notClass",
+      "org.jsoup.select.SelectorTest::notParas"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T01:19:04.335052+00:00"
+}

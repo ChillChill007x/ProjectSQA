@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonXml-5-Round1-s101-d9787dfe5b20",
+  "unit": {
+    "project": "JacksonXml",
+    "bug": "5",
+    "target": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:11:32.080666+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20",
+    "tests": "MOSA_EvoSuite/Test/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20",
+    "config": "MOSA_EvoSuite/Configuration/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20"
+  },
+  "generation_time_sec": 46.347,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider_ESTest.java": "15bae4ed3a5901c9bf2d5d5d5501862b5847184be113ee97f1d3ac23f6363c06",
+    "MOSA_EvoSuite/Test/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider_ESTest_scaffolding.java": "58fe98f4aa710a32feece3c48ab2c80fe50adde6113dec97f490d2f119573017"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.dataformat.xml.MapperCopyTest::testCopyWith",
+    "available_triggers": [
+      "com.fasterxml.jackson.dataformat.xml.MapperCopyTest::testCopyWith"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1354,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test06",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test07",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test08",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test09",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test10",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test00",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test11",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test01",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test12",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test02",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test13",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test03",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test14",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test04",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test05"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 38,
+      "line_total": 96,
+      "line_coverage_percent": 39.583333333333336,
+      "branch_covered": 22,
+      "branch_total": 48,
+      "branch_coverage_percent": 45.833333333333336
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1280,
+      "tests": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test06",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test07",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test08",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test09",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test10",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test00",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test11",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test01",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test12",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test02",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test13",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test03",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test14",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test04",
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider_ESTest::test05"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 38,
+      "line_total": 96,
+      "line_coverage_percent": 39.583333333333336,
+      "branch_covered": 22,
+      "branch_total": 48,
+      "branch_coverage_percent": 45.833333333333336
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonXml/5/JacksonXml-5-Round1-s101-d9787dfe5b20/evaluation-1",
+  "finished_at": "2026-10-05T00:12:48.610606+00:00"
+}

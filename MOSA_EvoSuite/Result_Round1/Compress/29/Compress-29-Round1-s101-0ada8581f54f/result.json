@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-29-Round1-s101-0ada8581f54f",
+  "unit": {
+    "project": "Compress",
+    "bug": "29",
+    "target": "org.apache.commons.compress.archivers.ArchiveStreamFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T22:57:00.365807+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/29/Compress-29-Round1-s101-0ada8581f54f",
+    "tests": "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-0ada8581f54f",
+    "config": "MOSA_EvoSuite/Configuration/Compress/29/Compress-29-Round1-s101-0ada8581f54f"
+  },
+  "generation_time_sec": 41.942,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-0ada8581f54f/org/apache/commons/compress/archivers/ArchiveStreamFactory_ESTest.java": "75ffa6f5a366c6f05893040c1fd052a3d6bbd55f0961fdeb98f4e32eadf22f3d",
+    "MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-0ada8581f54f/org/apache/commons/compress/archivers/ArchiveStreamFactory_ESTest_scaffolding.java": "db76d0321a97fd718eb150b9b19d7649b901673b62f41a7b1f8261959cbd1c24"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStreamAutodetect",
+      "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingOutputStream"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 35,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 823,
+      "tests": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test02",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test24",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test03",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test25",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test04",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test26",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test05",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test27",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test20",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test21",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test00",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test22",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test01",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test23",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test06",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test28",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test07",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test29",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test08",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test09",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test13",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test14",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test15",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test16",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test31",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test10",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test32",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test11",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test33",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test12",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test34",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test17",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test18",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test19",
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test30"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test24",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NoSuchMethodError",
+          "trace": "java.lang.AssertionError: Expecting exception: NoSuchMethodError\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test24(ArchiveStreamFactory_ESTest.java:664)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test25",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NoSuchMethodError",
+          "trace": "java.lang.AssertionError: Expecting exception: NoSuchMethodError\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test25(ArchiveStreamFactory_ESTest.java:690)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test21",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NoSuchMethodError",
+          "trace": "java.lang.AssertionError: Expecting exception: NoSuchMethodError\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test21(ArchiveStreamFactory_ESTest.java:585)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test06",
+          "exception": "java.lang.ExceptionInInitializerError",
+          "message": null,
+          "trace": "java.lang.ExceptionInInitializerError\n\tat org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.<init>(ZipArchiveOutputStream.java:281)\n\tat org.apache.commons.compress.archivers.jar.JarArchiveOutputStream.<init>(JarArchiveOutputStream.java:52)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory.createArchiveOutputStream(ArchiveStreamFactory.java:298)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test06(ArchiveStreamFactory_ESTest.java:174)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.lang.SecurityException: Security manager blocks (\"java.lang.RuntimePermission\" \"loadLibrary.zip\")\njava.base/java.lang.Thread.getStackTrace(Thread.java:1602)\norg.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:424)\njava.base/java.lang.SecurityManager.checkLink(SecurityManager.java:608)\njava.base/java.lang.Runtime.loadLibrary0(Runtime.java:824)\njava.base/java.lang.System.loadLibrary(System.java:1890)\njava.base/java.util.zip.ZipUtils.lambda$loadLibrary$0(ZipUtils.java:300)\njava.base/java.security.AccessController.doPrivileged(Native Method)\njava.base/java.util.zip.ZipUtils.loadLibrary(ZipUtils.java:301)\njava.base/java.util.zip.Deflater.<clinit>(Deflater.java:193)\norg.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.<init>(ZipArchiveOutputStream.java:281)\norg.apache.commons.compress.archivers.jar.JarArchiveOutputStream.<init>(JarArchiveOutputStream.java:52)\norg.apache.commons.compress.archivers.ArchiveStreamFactory.createArchiveOutputStream(ArchiveStreamFactory.java:298)\norg.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test06(ArchiveStreamFactory_ESTest.java:174)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:566)\norg.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\norg.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\norg.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\norg.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\njava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\njava.base/java.lang.Thread.run(Thread.java:829)\n\n\tat org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:436)\n\tat java.base/java.lang.SecurityManager.checkLink(SecurityManager.java:608)\n\tat java.base/java.lang.Runtime.loadLibrary0(Runtime.java:824)\n\tat java.base/java.lang.System.loadLibrary(System.java:1890)\n\tat java.base/java.util.zip.ZipUtils.lambda$loadLibrary$0(ZipUtils.java:300)\n\tat java.base/java.security.AccessController.doPrivileged(Native Method)\n\tat java.base/java.util.zip.ZipUtils.loadLibrary(ZipUtils.java:301)\n\tat java.base/java.util.zip.Deflater.<clinit>(Deflater.java:193)\n\t... 16 more\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test15",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.zip.Deflater",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.zip.Deflater\n\tat org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.<init>(ZipArchiveOutputStream.java:281)\n\tat org.apache.commons.compress.archivers.jar.JarArchiveOutputStream.<init>(JarArchiveOutputStream.java:41)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory.createArchiveOutputStream(ArchiveStreamFactory.java:300)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test15(ArchiveStreamFactory_ESTest.java:406)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test10",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.zip.Deflater",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.zip.Deflater\n\tat org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.<init>(ZipArchiveOutputStream.java:281)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory.createArchiveOutputStream(ArchiveStreamFactory.java:283)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test10(ArchiveStreamFactory_ESTest.java:266)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest::test11",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.zip.Deflater",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.zip.Deflater\n\tat org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.<init>(ZipArchiveOutputStream.java:281)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory.createArchiveOutputStream(ArchiveStreamFactory.java:283)\n\tat org.apache.commons.compress.archivers.ArchiveStreamFactory_ESTest.test11(ArchiveStreamFactory_ESTest.java:307)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 86,
+      "line_total": 122,
+      "line_coverage_percent": 70.49180327868852,
+      "branch_covered": 66,
+      "branch_total": 90,
+      "branch_coverage_percent": 73.33333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T22:58:21.307314+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-16-Round1-s101-125b6e297b5a-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions\norg.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption\norg.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption\norg.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order\norg.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order\norg.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order\norg.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

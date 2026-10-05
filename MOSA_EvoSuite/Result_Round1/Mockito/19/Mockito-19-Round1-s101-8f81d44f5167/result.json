@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-19-Round1-s101-8f81d44f5167",
+  "unit": {
+    "project": "Mockito",
+    "bug": "19",
+    "target": "org.mockito.internal.configuration.injection.filter.MockCandidateFilter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COVERAGE_ERROR",
+  "started_at": "2026-10-05T02:17:48.689154+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167",
+    "tests": "MOSA_EvoSuite/Test/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167"
+  },
+  "generation_time_sec": 1.871,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167/org/mockito/internal/configuration/injection/filter/MockCandidateFilter_ESTest.java": "7fd4315f1c03f027c3eebff891e85391137c7c287ab12d48bf9d8361904bcc1b",
+    "MOSA_EvoSuite/Test/Mockito/19/Mockito-19-Round1-s101-8f81d44f5167/org/mockito/internal/configuration/injection/filter/MockCandidateFilter_ESTest_scaffolding.java": "f04c39a27929e66409ab59db7562f926126e076a5f2876753803556f9f37d1d8"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.annotation.MockInjectionUsingSetterOrPropertyTest::shouldInsertFieldWithCorrectNameWhenMultipleTypesAvailable",
+    "available_triggers": [
+      "org.mockitousage.annotation.MockInjectionUsingSetterOrPropertyTest::shouldInsertFieldWithCorrectNameWhenMultipleTypesAvailable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Missing LINE counter",
+  "finished_at": "2026-10-05T02:21:37.095688+00:00"
+}

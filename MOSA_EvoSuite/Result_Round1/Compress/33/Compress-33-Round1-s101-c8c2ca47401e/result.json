@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-33-Round1-s101-c8c2ca47401e",
+  "unit": {
+    "project": "Compress",
+    "bug": "33",
+    "target": "org.apache.commons.compress.compressors.CompressorStreamFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T22:59:15.022240+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/33/Compress-33-Round1-s101-c8c2ca47401e",
+    "tests": "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-c8c2ca47401e",
+    "config": "MOSA_EvoSuite/Configuration/Compress/33/Compress-33-Round1-s101-c8c2ca47401e"
+  },
+  "generation_time_sec": 42.754,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-c8c2ca47401e/org/apache/commons/compress/compressors/CompressorStreamFactory_ESTest.java": "3303770ae7ec7415f10e129b6371bd6800ca7d3e842fcc8cc3ebb9e91f433906",
+    "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-c8c2ca47401e/org/apache/commons/compress/compressors/CompressorStreamFactory_ESTest_scaffolding.java": "a63407771c974786e92177fe1ad93eee4f94d872371b4524cc5211e8d721808b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection",
+    "available_triggers": [
+      "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1354,
+      "tests": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test08",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test19",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test09",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test06",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test17",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test07",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test18",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test00",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test11",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test22",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test01",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test12",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test23",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test20",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test10",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test21",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test04",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test15",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test05",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test16",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test02",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test13",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test03",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test14"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test11",
+          "exception": "java.lang.ExceptionInInitializerError",
+          "message": null,
+          "trace": "java.lang.ExceptionInInitializerError\n\tat java.base/java.util.zip.ZipOutputStream.<init>(ZipOutputStream.java:134)\n\tat java.base/java.util.zip.ZipOutputStream.<init>(ZipOutputStream.java:120)\n\tat java.base/java.util.jar.JarOutputStream.<init>(JarOutputStream.java:74)\n\tat org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:142)\n\tat org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:69)\n\tat org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:56)\n\tat org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(CompressorStreamFactory.java:299)\n\tat org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest.test11(CompressorStreamFactory_ESTest.java:279)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.lang.SecurityException: Security manager blocks (\"java.lang.RuntimePermission\" \"loadLibrary.zip\")\njava.base/java.lang.Thread.getStackTrace(Thread.java:1602)\norg.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:424)\njava.base/java.lang.SecurityManager.checkLink(SecurityManager.java:608)\njava.base/java.lang.Runtime.loadLibrary0(Runtime.java:824)\njava.base/java.lang.System.loadLibrary(System.java:1890)\njava.base/java.util.zip.ZipUtils.lambda$loadLibrary$0(ZipUtils.java:300)\njava.base/java.security.AccessController.doPrivileged(Native Method)\njava.base/java.util.zip.ZipUtils.loadLibrary(ZipUtils.java:301)\njava.base/java.util.zip.Deflater.<clinit>(Deflater.java:193)\njava.base/java.util.zip.ZipOutputStream.<init>(ZipOutputStream.java:134)\njava.base/java.util.zip.ZipOutputStream.<init>(ZipOutputStream.java:120)\njava.base/java.util.jar.JarOutputStream.<init>(JarOutputStream.java:74)\norg.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:142)\norg.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:69)\norg.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.<init>(Pack200CompressorInputStream.java:56)\norg.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(CompressorStreamFactory.java:299)\norg.apache.commons.compress.compressors.CompressorStreamFactory_ESTest.test11(CompressorStreamFactory_ESTest.java:279)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:566)\norg.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\norg.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\norg.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\norg.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\norg.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\njava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\njava.base/java.lang.Thread.run(Thread.java:829)\n\n\tat org.evosuite.runtime.sandbox.MSecurityManager.checkPermission(MSecurityManager.java:436)\n\tat java.base/java.lang.SecurityManager.checkLink(SecurityManager.java:608)\n\tat java.base/java.lang.Runtime.loadLibrary0(Runtime.java:824)\n\tat java.base/java.lang.System.loadLibrary(System.java:1890)\n\tat java.base/java.util.zip.ZipUtils.lambda$loadLibrary$0(ZipUtils.java:300)\n\tat java.base/java.security.AccessController.doPrivileged(Native Method)\n\tat java.base/java.util.zip.ZipUtils.loadLibrary(ZipUtils.java:301)\n\tat java.base/java.util.zip.Deflater.<clinit>(Deflater.java:193)\n\t... 20 more\n"
+        },
+        {
+          "test": "org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest::test01",
+          "exception": "java.lang.NoClassDefFoundError",
+          "message": "Could not initialize class java.util.zip.Deflater",
+          "trace": "java.lang.NoClassDefFoundError: Could not initialize class java.util.zip.Deflater\n\tat org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.<init>(DeflateCompressorOutputStream.java:47)\n\tat org.apache.commons.compress.compressors.deflate.DeflateCompressorOutputStream.<init>(DeflateCompressorOutputStream.java:39)\n\tat org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorOutputStream(CompressorStreamFactory.java:363)\n\tat org.apache.commons.compress.compressors.CompressorStreamFactory_ESTest.test01(CompressorStreamFactory_ESTest.java:79)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 83,
+      "line_coverage_percent": 73.49397590361446,
+      "branch_covered": 49,
+      "branch_total": 62,
+      "branch_coverage_percent": 79.03225806451613
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T23:00:39.764926+00:00"
+}

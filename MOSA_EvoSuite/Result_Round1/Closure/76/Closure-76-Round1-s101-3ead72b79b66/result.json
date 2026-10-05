@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-76-Round1-s101-3ead72b79b66",
+  "unit": {
+    "project": "Closure",
+    "bug": "76",
+    "target": "com.google.javascript.jscomp.DeadAssignmentsElimination",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:37:10.204763+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/76/Closure-76-Round1-s101-3ead72b79b66",
+    "tests": "MOSA_EvoSuite/Test/Closure/76/Closure-76-Round1-s101-3ead72b79b66",
+    "config": "MOSA_EvoSuite/Configuration/Closure/76/Closure-76-Round1-s101-3ead72b79b66"
+  },
+  "generation_time_sec": 41.211,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/76/Closure-76-Round1-s101-3ead72b79b66/com/google/javascript/jscomp/DeadAssignmentsElimination_ESTest.java": "0bc7ed45ca43c860c3bd308ce29ecd772c531c73cc69915adf8dcc6a1c48f1eb",
+    "MOSA_EvoSuite/Test/Closure/76/Closure-76-Round1-s101-3ead72b79b66/com/google/javascript/jscomp/DeadAssignmentsElimination_ESTest_scaffolding.java": "0fbd45b34ff74f708a4e8ea8d5febdb10cda37ee5dc1a6da80d8616b6ba1d6b1"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testInExpression2",
+    "available_triggers": [
+      "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testInExpression2",
+      "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384b",
+      "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384c",
+      "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384d"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2088,
+      "tests": [
+        "com.google.javascript.jscomp.DeadAssignmentsElimination_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 165,
+      "line_coverage_percent": 11.515151515151516,
+      "branch_covered": 5,
+      "branch_total": 124,
+      "branch_coverage_percent": 4.032258064516129
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3324,
+      "tests": [
+        "com.google.javascript.jscomp.DeadAssignmentsElimination_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 142,
+      "line_coverage_percent": 13.380281690140846,
+      "branch_covered": 5,
+      "branch_total": 106,
+      "branch_coverage_percent": 4.716981132075472
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/76/Closure-76-Round1-s101-3ead72b79b66/evaluation-1",
+  "finished_at": "2026-10-04T20:39:15.755650+00:00"
+}

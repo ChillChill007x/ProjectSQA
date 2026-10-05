@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-21-Round1-s101-2a01ffd45c08",
+  "unit": {
+    "project": "Chart",
+    "bug": "21",
+    "target": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T20:08:56.232654+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/21/Chart-21-Round1-s101-2a01ffd45c08",
+    "tests": "MOSA_EvoSuite/Test/Chart/21/Chart-21-Round1-s101-2a01ffd45c08",
+    "config": "MOSA_EvoSuite/Configuration/Chart/21/Chart-21-Round1-s101-2a01ffd45c08"
+  },
+  "generation_time_sec": 43.461,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/21/Chart-21-Round1-s101-2a01ffd45c08/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset_ESTest.java": "c6256a98a5eeeaff601f623580f5759e8d0a875c76698556b03bb6a4772e8563",
+    "MOSA_EvoSuite/Test/Chart/21/Chart-21-Round1-s101-2a01ffd45c08/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset_ESTest_scaffolding.java": "869fd5c09e27f2ae231e426ca1aff3b316b16d37ebcf7f9de570bbea7622f350"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds",
+    "available_triggers": [
+      "org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 53,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 857,
+      "tests": [
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test10",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test12",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test11",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test14",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test13",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test16",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test15",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test18",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test17",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test19",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test50",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test52",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test51",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test43",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test42",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test01",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test45",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test00",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test44",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test03",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test47",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test02",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test46",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test05",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test49",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test04",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test48",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test07",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test06",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test09",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test08",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test41",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test40",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test32",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test31",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test34",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test33",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test36",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test35",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test38",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test37",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test39",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test30",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test21",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test20",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test23",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test22",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test25",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test24",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test27",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test26",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test29",
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test28"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test50",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 780 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 780 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest.test50(DefaultBoxAndWhiskerCategoryDataset_ESTest.java:2134)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test43",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest.test43(DefaultBoxAndWhiskerCategoryDataset_ESTest.java:2004)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest::test45",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset_ESTest.test45(DefaultBoxAndWhiskerCategoryDataset_ESTest.java:2041)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 181,
+      "line_total": 187,
+      "line_coverage_percent": 96.79144385026738,
+      "branch_covered": 74,
+      "branch_total": 82,
+      "branch_coverage_percent": 90.2439024390244
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T20:10:24.684610+00:00"
+}

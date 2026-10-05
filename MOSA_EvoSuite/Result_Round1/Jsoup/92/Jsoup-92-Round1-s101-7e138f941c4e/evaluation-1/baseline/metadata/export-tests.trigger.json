@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Jsoup-92-Round1-s101-7e138f941c4e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.38,
+  "stdout": "org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive\norg.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes\norg.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

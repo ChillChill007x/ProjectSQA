@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-32-Round1-s101-f336bdc1e764",
+  "unit": {
+    "project": "Math",
+    "bug": "32",
+    "target": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:33:05.391990+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/32/Math-32-Round1-s101-f336bdc1e764",
+    "tests": "MOSA_EvoSuite/Test/Math/32/Math-32-Round1-s101-f336bdc1e764",
+    "config": "MOSA_EvoSuite/Configuration/Math/32/Math-32-Round1-s101-f336bdc1e764"
+  },
+  "generation_time_sec": 39.34,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/32/Math-32-Round1-s101-f336bdc1e764/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet_ESTest.java": "cbbc3200d25aa892f08fb9dd7646103687a778f0924e600397cfef4dbc27f5be",
+    "MOSA_EvoSuite/Test/Math/32/Math-32-Round1-s101-f336bdc1e764/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet_ESTest_scaffolding.java": "ea2d10cdfdb7b72a3c3eea17d0307f0207da037513e1cccfc347565d4208a3dd"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest::testIssue780",
+    "available_triggers": [
+      "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest::testIssue780"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1049,
+      "tests": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test0",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test1",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test6",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test7",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test4",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test5",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test2",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test3"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 123,
+      "line_total": 126,
+      "line_coverage_percent": 97.61904761904762,
+      "branch_covered": 57,
+      "branch_total": 62,
+      "branch_coverage_percent": 91.93548387096774
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1002,
+      "tests": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test0",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test1",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test6",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test7",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test4",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test5",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test2",
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test3"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest::test5",
+          "exception": "java.lang.ClassCastException",
+          "message": "class org.apache.commons.math3.geometry.partitioning.BoundaryAttribute cannot be cast to class java.lang.Boolean (org.apache.commons.math3.geometry.partitioning.BoundaryAttribute is in unnamed module of loader org.evosuite.runtime.instrumentation.EvoClassLoader @61a52fbd; java.lang.Boolean is in module java.base of loader 'bootstrap')",
+          "trace": "java.lang.ClassCastException: class org.apache.commons.math3.geometry.partitioning.BoundaryAttribute cannot be cast to class java.lang.Boolean (org.apache.commons.math3.geometry.partitioning.BoundaryAttribute is in unnamed module of loader org.evosuite.runtime.instrumentation.EvoClassLoader @61a52fbd; java.lang.Boolean is in module java.base of loader 'bootstrap')\n\tat org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties(PolygonsSet.java:136)\n\tat org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet_ESTest.test5(PolygonsSet_ESTest.java:152)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 121,
+      "line_total": 126,
+      "line_coverage_percent": 96.03174603174604,
+      "branch_covered": 55,
+      "branch_total": 60,
+      "branch_coverage_percent": 91.66666666666667
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/32/Math-32-Round1-s101-f336bdc1e764/evaluation-1",
+  "finished_at": "2026-10-05T03:35:19.885070+00:00"
+}

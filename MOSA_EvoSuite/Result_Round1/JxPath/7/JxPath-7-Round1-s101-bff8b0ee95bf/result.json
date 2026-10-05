@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-7-Round1-s101-bff8b0ee95bf",
+  "unit": {
+    "project": "JxPath",
+    "bug": "7",
+    "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:26:26.535203+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf",
+    "tests": "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf"
+  },
+  "generation_time_sec": 35.674,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression_ESTest.java": "a99ce60257c811b55a34b2b40e04441a8e5167b8e72bd6404e53e19484e7d038",
+    "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression_ESTest_scaffolding.java": "cbd1b8b53e3321131d1e08101a15d3798718b5a7c4470439811a36ef08194ef3"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 582,
+      "tests": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test0",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test1",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test2",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test3",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test4",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 38,
+      "line_total": 40,
+      "line_coverage_percent": 95.0,
+      "branch_covered": 30,
+      "branch_total": 32,
+      "branch_coverage_percent": 93.75
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 628,
+      "tests": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test0",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test1",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test2",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test3",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test4",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test5"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test2",
+          "exception": "org.apache.commons.jxpath.JXPathException",
+          "message": "Undefined variable:  (",
+          "trace": "org.apache.commons.jxpath.JXPathException: Undefined variable:  (\n\tat org.apache.commons.jxpath.ri.model.VariablePointer$1.getImmediateNode(VariablePointer.java:122)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getNode(NodePointer.java:300)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getValue(NodePointer.java:220)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getValue(NodePointer.java:217)\n\tat org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue(InfoSetUtil.java:116)\n\tat org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue(InfoSetUtil.java:121)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan.computeValue(CoreOperationLessThan.java:32)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest.test2(CoreOperationRelationalExpression_ESTest.java:247)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test3",
+          "exception": "org.apache.commons.jxpath.JXPathException",
+          "message": "Undefined variable:  (: (",
+          "trace": "org.apache.commons.jxpath.JXPathException: Undefined variable:  (: (\n\tat org.apache.commons.jxpath.ri.model.VariablePointer$1.getImmediateNode(VariablePointer.java:122)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getNode(NodePointer.java:300)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getValue(NodePointer.java:220)\n\tat org.apache.commons.jxpath.ri.model.NodePointer.getValue(NodePointer.java:217)\n\tat org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue(InfoSetUtil.java:116)\n\tat org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue(InfoSetUtil.java:121)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan.computeValue(CoreOperationLessThan.java:32)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual.computeValue(CoreOperationGreaterThanOrEqual.java:33)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest.test3(CoreOperationRelationalExpression_ESTest.java:326)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test4",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest.test4(CoreOperationRelationalExpression_ESTest.java:448)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 4,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-bff8b0ee95bf/evaluation-1",
+  "finished_at": "2026-10-05T00:27:26.516500+00:00"
+}

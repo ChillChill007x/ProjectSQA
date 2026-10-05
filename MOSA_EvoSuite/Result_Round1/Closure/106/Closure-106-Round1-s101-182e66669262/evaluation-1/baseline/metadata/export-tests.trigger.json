@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-106-Round1-s101-182e66669262/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.97,
+  "stdout": "com.google.javascript.jscomp.CheckSideEffectsTest::testJSDocComments\ncom.google.javascript.jscomp.CollapsePropertiesTest::testTwinReferenceCancelsChildCollapsing\ncom.google.javascript.jscomp.CollapsePropertiesTest::testCrashInNestedAssign\ncom.google.javascript.jscomp.CollapsePropertiesTest::testCrashInCommaOperator",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

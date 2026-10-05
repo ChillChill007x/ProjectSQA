@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-68-Round1-s101-f2d97b6b6c66",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "68",
+    "target": "com.fasterxml.jackson.databind.deser.BeanDeserializerBase",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:15:34.762717+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66"
+  },
+  "generation_time_sec": 37.896,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66/com/fasterxml/jackson/databind/deser/BeanDeserializerBase_ESTest.java": "e238b39e1df79f36828ce02f31701169331d333d0f5cfb7ecbfbc334c2970909",
+    "MOSA_EvoSuite/Test/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66/com/fasterxml/jackson/databind/deser/BeanDeserializerBase_ESTest_scaffolding.java": "23401c6ca3db7648cc8bafebb0b1201e5afd3e3fefbaecc3f526a29db6652c35"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testSuccessfulDeserializationOfObjectWithChainedArrayCreators",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testSuccessfulDeserializationOfObjectWithChainedArrayCreators",
+      "com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testWithSingleString"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 34,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase_ESTest::notGeneratedAnyTest"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 592,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 369,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 23,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase_ESTest::notGeneratedAnyTest"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 591,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 369,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-f2d97b6b6c66/evaluation-1",
+  "finished_at": "2026-10-05T00:17:34.832645+00:00"
+}

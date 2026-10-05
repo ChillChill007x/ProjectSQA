@@ -1,0 +1,1 @@
+{"run_count":3,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":1674,"tests":["com.google.javascript.jscomp.CollapseProperties_ESTest::test0","com.google.javascript.jscomp.CollapseProperties_ESTest::test1","com.google.javascript.jscomp.CollapseProperties_ESTest::test2"],"failures":[],"passed":true}

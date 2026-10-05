@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-76-Round1-s101-3ead72b79b66/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testInExpression2"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.954,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

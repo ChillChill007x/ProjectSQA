@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-11-Round1-s101-28711146c4cc",
+  "unit": {
+    "project": "Collections",
+    "bug": "11",
+    "target": "org.apache.commons.collections.keyvalue.MultiKey",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "NO_TESTS",
+  "started_at": "2026-10-04T21:38:59.219682+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/11/Collections-11-Round1-s101-28711146c4cc",
+    "tests": "MOSA_EvoSuite/Test/Collections/11/Collections-11-Round1-s101-28711146c4cc",
+    "config": "MOSA_EvoSuite/Configuration/Collections/11/Collections-11-Round1-s101-28711146c4cc"
+  },
+  "generation_time_sec": 53.362,
+  "error": "Add generated .java files to /workspace/MOSA_EvoSuite/Test/Collections/11/Collections-11-Round1-s101-28711146c4cc",
+  "finished_at": "2026-10-04T21:40:00.722274+00:00"
+}

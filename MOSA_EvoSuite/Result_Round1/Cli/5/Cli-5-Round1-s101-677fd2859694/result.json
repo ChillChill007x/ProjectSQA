@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-5-Round1-s101-677fd2859694",
+  "unit": {
+    "project": "Cli",
+    "bug": "5",
+    "target": "org.apache.commons.cli.Util",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:22:07.737488+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/5/Cli-5-Round1-s101-677fd2859694",
+    "tests": "MOSA_EvoSuite/Test/Cli/5/Cli-5-Round1-s101-677fd2859694",
+    "config": "MOSA_EvoSuite/Configuration/Cli/5/Cli-5-Round1-s101-677fd2859694"
+  },
+  "generation_time_sec": 3.176,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/5/Cli-5-Round1-s101-677fd2859694/org/apache/commons/cli/Util_ESTest.java": "5bf72ec9d2d8c9fbc7c4cbb94abdd70ea04adea5a518de01c6e0b6e3ac68e5b0",
+    "MOSA_EvoSuite/Test/Cli/5/Cli-5-Round1-s101-677fd2859694/org/apache/commons/cli/Util_ESTest_scaffolding.java": "33e24c2260bbcfc264e12e7065764205665098e43c01998c34041529c218b74f"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.UtilTest::testStripLeadingHyphens",
+    "available_triggers": [
+      "org.apache.commons.cli.UtilTest::testStripLeadingHyphens",
+      "org.apache.commons.cli.bug.BugCLI133Test::testOrder"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 280,
+      "tests": [
+        "org.apache.commons.cli.Util_ESTest::test0",
+        "org.apache.commons.cli.Util_ESTest::test1",
+        "org.apache.commons.cli.Util_ESTest::test6",
+        "org.apache.commons.cli.Util_ESTest::test2",
+        "org.apache.commons.cli.Util_ESTest::test3",
+        "org.apache.commons.cli.Util_ESTest::test4",
+        "org.apache.commons.cli.Util_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 13,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 10,
+      "branch_total": 10,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 283,
+      "tests": [
+        "org.apache.commons.cli.Util_ESTest::test0",
+        "org.apache.commons.cli.Util_ESTest::test1",
+        "org.apache.commons.cli.Util_ESTest::test6",
+        "org.apache.commons.cli.Util_ESTest::test2",
+        "org.apache.commons.cli.Util_ESTest::test3",
+        "org.apache.commons.cli.Util_ESTest::test4",
+        "org.apache.commons.cli.Util_ESTest::test5"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.Util_ESTest::test4",
+          "exception": "java.lang.NullPointerException",
+          "message": null,
+          "trace": "java.lang.NullPointerException\n\tat org.apache.commons.cli.Util.stripLeadingHyphens(Util.java:36)\n\tat org.apache.commons.cli.Util_ESTest.test4(Util_ESTest.java:48)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 11,
+      "line_total": 11,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 8,
+      "branch_total": 8,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/5/Cli-5-Round1-s101-677fd2859694/evaluation-1",
+  "finished_at": "2026-10-04T20:22:34.173726+00:00"
+}

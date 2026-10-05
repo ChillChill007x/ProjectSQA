@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Compress-9-Round1-s101-40919fa4cc36/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testCount"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.123,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

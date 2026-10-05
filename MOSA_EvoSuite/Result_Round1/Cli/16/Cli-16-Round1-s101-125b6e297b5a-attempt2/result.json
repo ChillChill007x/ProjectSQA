@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-16-Round1-s101-125b6e297b5a-attempt2",
+  "unit": {
+    "project": "Cli",
+    "bug": "16",
+    "target": "org.apache.commons.cli2.option.GroupImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T08:55:15.864656+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2"
+  },
+  "generation_time_sec": 38.048,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2/org/apache/commons/cli2/option/GroupImpl_ESTest.java": "460b1042a6e334b0e9d60c561f43c0bfcad4d8af0e96c4152b8b4ba6b9c36e30",
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2/org/apache/commons/cli2/option/GroupImpl_ESTest_scaffolding.java": "eeef2f618d960b9a1d1956b94dad09f29a99dc950be98deba23d2e0ff1c52a9c"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption",
+      "org.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 27,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 27,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 733,
+      "tests": [
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test06",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test07",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test08",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test09",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test02",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test24",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test03",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test25",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test04",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test26",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test05",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test20",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test21",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test00",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test22",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test01",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test23",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test17",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test18",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test19",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test13",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test14",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test15",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test16",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test10",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test11",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 158,
+      "line_total": 190,
+      "line_coverage_percent": 83.15789473684211,
+      "branch_covered": 109,
+      "branch_total": 128,
+      "branch_coverage_percent": 85.15625
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 27,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 729,
+      "tests": [
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test06",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test07",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test08",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test09",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test02",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test24",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test03",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test25",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test04",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test26",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test05",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test20",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test21",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test00",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test22",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test01",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test23",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test17",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test18",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test19",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test13",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test14",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test15",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test16",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test10",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test11",
+        "org.apache.commons.cli2.option.GroupImpl_ESTest::test12"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 157,
+      "line_total": 189,
+      "line_coverage_percent": 83.06878306878306,
+      "branch_covered": 109,
+      "branch_total": 128,
+      "branch_coverage_percent": 85.15625
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-125b6e297b5a-attempt2/evaluation-1",
+  "finished_at": "2026-10-05T08:56:18.830041+00:00"
+}

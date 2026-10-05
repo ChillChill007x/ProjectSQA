@@ -1,0 +1,190 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-24-Round1-s101-72317e869f66",
+  "unit": {
+    "project": "Cli",
+    "bug": "24",
+    "target": "org.apache.commons.cli.HelpFormatter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:46:02.424677+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/24/Cli-24-Round1-s101-72317e869f66",
+    "tests": "MOSA_EvoSuite/Test/Cli/24/Cli-24-Round1-s101-72317e869f66",
+    "config": "MOSA_EvoSuite/Configuration/Cli/24/Cli-24-Round1-s101-72317e869f66"
+  },
+  "generation_time_sec": 37.189,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/24/Cli-24-Round1-s101-72317e869f66/org/apache/commons/cli/HelpFormatter_ESTest.java": "edfe0b9bac5fae1849f322ac1d84686e44aceabfb6c80acbaf28da7899815f4f",
+    "MOSA_EvoSuite/Test/Cli/24/Cli-24-Round1-s101-72317e869f66/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java": "66be07d136ae2a93e6f671427219ade4b8bda29c6f3eb4929d4de2f8547e2329"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored",
+    "available_triggers": [
+      "org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 36,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 36,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 705,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test34",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test33",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test35",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 190,
+      "line_total": 194,
+      "line_coverage_percent": 97.9381443298969,
+      "branch_covered": 102,
+      "branch_total": 112,
+      "branch_coverage_percent": 91.07142857142857
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 36,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 678,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test34",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test33",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test35",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException",
+          "message": "Total width is less than the width of the argument and indent - no room for the description",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException: Total width is less than the width of the argument and indent - no room for the description\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:825)\n\tat org.apache.commons.cli.HelpFormatter.renderOptions(HelpFormatter.java:787)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test07(HelpFormatter_ESTest.java:356)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException",
+          "message": "Total width is less than the width of the argument and indent - no room for the description",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException: Total width is less than the width of the argument and indent - no room for the description\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:825)\n\tat org.apache.commons.cli.HelpFormatter.printWrapped(HelpFormatter.java:694)\n\tat org.apache.commons.cli.HelpFormatter.printUsage(HelpFormatter.java:560)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test03(HelpFormatter_ESTest.java:185)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException",
+          "message": "Total width is less than the width of the argument and indent - no room for the description",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException: Total width is less than the width of the argument and indent - no room for the description\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:825)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test02(HelpFormatter_ESTest.java:136)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException",
+          "message": "Total width is less than the width of the argument and indent - no room for the description",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException: Total width is less than the width of the argument and indent - no room for the description\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:825)\n\tat org.apache.commons.cli.HelpFormatter.printWrapped(HelpFormatter.java:694)\n\tat org.apache.commons.cli.HelpFormatter.printUsage(HelpFormatter.java:560)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test05(HelpFormatter_ESTest.java:260)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException",
+          "message": "Total width is less than the width of the argument and indent - no room for the description",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalStateException: Total width is less than the width of the argument and indent - no room for the description\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:825)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test04(HelpFormatter_ESTest.java:228)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 187,
+      "line_total": 194,
+      "line_coverage_percent": 96.3917525773196,
+      "branch_covered": 98,
+      "branch_total": 112,
+      "branch_coverage_percent": 87.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/24/Cli-24-Round1-s101-72317e869f66/evaluation-1",
+  "finished_at": "2026-10-04T20:47:06.189184+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Time",
+    "-v",
+    "7b",
+    "-w",
+    "/workspace/work/checkouts/Time-7-Round1-s101-4e67842c276a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.591,
+  "stdout": "",
+  "stderr": "Checking out 1adb1e69 to /workspace/work/checkouts/Time-7-Round1-s101-4e678 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Time-7-Round1-s101-4e67842 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 1adb1e69:6bf5bba0..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Time-7b......................................... OK\n"
+}

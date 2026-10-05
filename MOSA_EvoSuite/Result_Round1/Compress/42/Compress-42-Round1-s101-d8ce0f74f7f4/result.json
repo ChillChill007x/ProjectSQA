@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-42-Round1-s101-d8ce0f74f7f4",
+  "unit": {
+    "project": "Compress",
+    "bug": "42",
+    "target": "org.apache.commons.compress.archivers.zip.UnixStat",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COVERAGE_ERROR",
+  "started_at": "2026-10-04T23:06:25.986710+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/42/Compress-42-Round1-s101-d8ce0f74f7f4",
+    "tests": "MOSA_EvoSuite/Test/Compress/42/Compress-42-Round1-s101-d8ce0f74f7f4",
+    "config": "MOSA_EvoSuite/Configuration/Compress/42/Compress-42-Round1-s101-d8ce0f74f7f4"
+  },
+  "generation_time_sec": 2.74,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/42/Compress-42-Round1-s101-d8ce0f74f7f4/org/apache/commons/compress/archivers/zip/UnixStat_ESTest.java": "e5ef5223fdb98f13505f4bd1fb1d209ee036ba2e44ad946115accb8106b39be0",
+    "MOSA_EvoSuite/Test/Compress/42/Compress-42-Round1-s101-d8ce0f74f7f4/org/apache/commons/compress/archivers/zip/UnixStat_ESTest_scaffolding.java": "1c93231375ba82f2468215895bc0eb5cdef340d69f911c4bdcbc0109aa196f7e"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest::isUnixSymlinkIsFalseIfMoreThanOneFlagIsSet",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest::isUnixSymlinkIsFalseIfMoreThanOneFlagIsSet"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Missing LINE counter",
+  "finished_at": "2026-10-04T23:07:07.785530+00:00"
+}

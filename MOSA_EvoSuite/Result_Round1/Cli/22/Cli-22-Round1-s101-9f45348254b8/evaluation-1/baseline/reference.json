@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.cli.ApplicationTest::testGroovy",
+  "available_triggers": [
+    "org.apache.commons.cli.ApplicationTest::testGroovy",
+    "org.apache.commons.cli.PosixParserTest::testStopAtExpectedArg"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

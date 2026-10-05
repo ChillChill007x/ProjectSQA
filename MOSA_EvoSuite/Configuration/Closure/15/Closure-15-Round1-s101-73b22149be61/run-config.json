@@ -1,0 +1,16 @@
+{
+  "project": "Closure",
+  "bug": "15",
+  "target": "com.google.javascript.jscomp.FlowSensitiveInlineVariables",
+  "tool": "evosuite",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 30,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null,
+  "campaign": "round1-full854-30s-s101-v1"
+}

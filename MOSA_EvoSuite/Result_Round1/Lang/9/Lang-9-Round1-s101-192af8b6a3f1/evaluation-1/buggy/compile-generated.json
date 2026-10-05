@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-9-Round1-s101-192af8b6a3f1/evaluation-1/buggy/target/classes:/workspace/work/parallel/evosuite/83569/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/parallel/evosuite/83569/checkouts/Lang-9-Round1-s101-192af8b6a3f1/evaluation-1/buggy/target/classes:/workspace/work/parallel/evosuite/83569/checkouts/Lang-9-Round1-s101-192af8b6a3f1/evaluation-1/buggy/target/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/opt/defects4j/framework/projects/Lang/lib/easymock.jar:/opt/defects4j/framework/projects/Lang/lib/commons-io.jar:/opt/defects4j/framework/projects/Lang/lib/cglib.jar:/opt/defects4j/framework/projects/Lang/lib/asm.jar",
+    "-d",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/9/Lang-9-Round1-s101-192af8b6a3f1/evaluation-1/buggy/classes",
+    "@/workspace/MOSA_EvoSuite/Result_Round1/Lang/9/Lang-9-Round1-s101-192af8b6a3f1/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.596,
+  "stdout": "",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

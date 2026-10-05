@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.271,
+  "stdout": "/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/build/classes:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/ant_deploy.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/args4j_deploy.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/google_common_deploy.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/hamcrest-core-1.1.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/junit.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/parallel/evosuite/83568/checkouts/Closure-140-Round1-s101-9be7f231a122/generation-fixed/lib/protobuf_deploy.jar",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.compile)............................................ OK\n\n"
+}

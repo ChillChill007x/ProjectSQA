@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.math3.geometry.euclidean.threed.SubLineTest::testIntersectionNotIntersecting",
+  "available_triggers": [
+    "org.apache.commons.math3.geometry.euclidean.threed.SubLineTest::testIntersectionNotIntersecting",
+    "org.apache.commons.math3.geometry.euclidean.twod.SubLineTest::testIntersectionParallel"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

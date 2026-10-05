@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-59-Round1-s101-0cafec0c47f7/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.parser.HtmlParserTest::handlesControlCodeInAttributeName"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.151,
+  "stdout": "Failing tests: 1\n  - org.jsoup.parser.HtmlParserTest::handlesControlCodeInAttributeName\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

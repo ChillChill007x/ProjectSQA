@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-71-Round1-s101-6f35151fc67f",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "71",
+    "target": "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:18:15.465293+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f"
+  },
+  "generation_time_sec": 57.832,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f/com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer_ESTest.java": "c88810f14f3d68107bb575574dd061bc0ff4f261027769686333d12818b36dc6",
+    "MOSA_EvoSuite/Test/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f/com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer_ESTest_scaffolding.java": "b16286fcc400666b2441ac787fed171af5256edc08e74f5a7ba60b7a1752493d"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.deser.TestMapDeserialization::testcharSequenceKeyMap",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.deser.TestMapDeserialization::testcharSequenceKeyMap"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 32,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3910,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test31",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test10",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test11",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test12",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test13",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test14",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test15",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test16",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test17",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test18",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test19",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test30",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test20",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test21",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test00",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test22",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test01",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test23",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test02",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test24",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test03",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test25",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test04",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test26",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test05",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test27",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test06",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test28",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test07",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test29",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test08",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 97,
+      "line_coverage_percent": 60.824742268041234,
+      "branch_covered": 46,
+      "branch_total": 79,
+      "branch_coverage_percent": 58.22784810126582
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2876,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test31",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test10",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test11",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test12",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test13",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test14",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test15",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test16",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test17",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test18",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test19",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test30",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test20",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test21",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test00",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test22",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test01",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test23",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test02",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test24",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test03",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test25",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test04",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test26",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test05",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test27",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test06",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test28",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test07",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test29",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test08",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 97,
+      "line_coverage_percent": 60.824742268041234,
+      "branch_covered": 45,
+      "branch_total": 77,
+      "branch_coverage_percent": 58.44155844155844
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-6f35151fc67f/evaluation-1",
+  "finished_at": "2026-10-05T00:20:54.389211+00:00"
+}

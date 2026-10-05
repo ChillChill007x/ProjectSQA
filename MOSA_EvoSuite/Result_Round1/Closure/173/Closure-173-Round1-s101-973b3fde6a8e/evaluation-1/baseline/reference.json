@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.CodePrinterTest::testPrint",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CodePrinterTest::testPrint",
+    "com.google.javascript.jscomp.CodePrinterTest::testIssue1062",
+    "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testAssocitivity"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-1-Round1-s101-250a5d4f26aa/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "/workspace/work/checkouts/JacksonXml-1-Round1-s101-250a5d4f26aa/generation-fixed/target/classes:/opt/defects4j/framework/projects/JacksonXml/lib/com/fasterxml/jackson/core/jackson-core/2.7.0-rc3/jackson-core-2.7.0-rc3.jar:/opt/defects4j/framework/projects/JacksonXml/lib/com/fasterxml/jackson/core/jackson-annotations/2.7.0-rc3/jackson-annotations-2.7.0-rc3.jar:/opt/defects4j/framework/projects/JacksonXml/lib/com/fasterxml/jackson/core/jackson-databind/2.7.0-rc3/jackson-databind-2.7.0-rc3.jar:/opt/defects4j/framework/projects/JacksonXml/lib/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.7.0-rc3/jackson-module-jaxb-annotations-2.7.0-rc3.jar:/opt/defects4j/framework/projects/JacksonXml/lib/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/opt/defects4j/framework/projects/JacksonXml/lib/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

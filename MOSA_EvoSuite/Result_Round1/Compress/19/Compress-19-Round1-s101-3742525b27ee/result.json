@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-19-Round1-s101-3742525b27ee",
+  "unit": {
+    "project": "Compress",
+    "bug": "19",
+    "target": "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:52:33.165424+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/19/Compress-19-Round1-s101-3742525b27ee",
+    "tests": "MOSA_EvoSuite/Test/Compress/19/Compress-19-Round1-s101-3742525b27ee",
+    "config": "MOSA_EvoSuite/Configuration/Compress/19/Compress-19-Round1-s101-3742525b27ee"
+  },
+  "generation_time_sec": 17.295,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/19/Compress-19-Round1-s101-3742525b27ee/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField_ESTest.java": "c708db498367174443b58738f4487bb0a6340a046e22720f6c06a6d73ece813b",
+    "MOSA_EvoSuite/Test/Compress/19/Compress-19-Round1-s101-3742525b27ee/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField_ESTest_scaffolding.java": "887dbf1a5dd73dcd590d65e85ec8c813ba9dfbb698ad23929e5d4aed33451b94"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.zip.ZipFileTest::testExcessDataInZip64ExtraField",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.zip.ZipFileTest::testExcessDataInZip64ExtraField"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 28,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 28,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 478,
+      "tests": [
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test06",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test07",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test08",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test09",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test20",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test21",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test00",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test22",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test01",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test23",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test02",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test24",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test03",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test25",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test04",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test26",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test05",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test27",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test17",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test18",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test19",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test10",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test11",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test12",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test13",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test14",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test15",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 105,
+      "line_total": 105,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 60,
+      "branch_total": 60,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 28,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 599,
+      "tests": [
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test06",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test07",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test08",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test09",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test20",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test21",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test00",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test22",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test01",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test23",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test02",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test24",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test03",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test25",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test04",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test26",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test05",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test27",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test17",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test18",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test19",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test10",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test11",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test12",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test13",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test14",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test15",
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test16"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest::test01",
+          "exception": "java.util.zip.ZipException",
+          "message": "central directory zip64 extended information extra field's length doesn't match central directory data.  Expected length 4 but is 8",
+          "trace": "java.util.zip.ZipException: central directory zip64 extended information extra field's length doesn't match central directory data.  Expected length 4 but is 8\n\tat org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData(Zip64ExtendedInformationExtraField.java:260)\n\tat org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField_ESTest.test01(Zip64ExtendedInformationExtraField_ESTest.java:55)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 103,
+      "line_total": 105,
+      "line_coverage_percent": 98.0952380952381,
+      "branch_covered": 59,
+      "branch_total": 60,
+      "branch_coverage_percent": 98.33333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/19/Compress-19-Round1-s101-3742525b27ee/evaluation-1",
+  "finished_at": "2026-10-04T22:53:27.693755+00:00"
+}

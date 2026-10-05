@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.apache.commons.codec.binary.CharSequenceUtils,BRANCH,0.8666666666666667,15,13

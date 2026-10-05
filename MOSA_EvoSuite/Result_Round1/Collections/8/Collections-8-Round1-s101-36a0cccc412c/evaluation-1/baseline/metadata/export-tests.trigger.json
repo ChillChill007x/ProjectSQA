@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-8-Round1-s101-36a0cccc412c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.apache.commons.collections.buffer.TestUnboundedFifoBuffer::testCollections220",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

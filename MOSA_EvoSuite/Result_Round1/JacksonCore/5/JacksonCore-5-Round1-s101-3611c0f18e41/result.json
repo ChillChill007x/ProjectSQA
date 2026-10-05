@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-5-Round1-s101-3611c0f18e41",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "5",
+    "target": "com.fasterxml.jackson.core.JsonPointer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:29:55.811012+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41"
+  },
+  "generation_time_sec": 35.284,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41/com/fasterxml/jackson/core/JsonPointer_ESTest.java": "31dc99f0d4908f963afd30fe8ae05bbb39f9996de1cf1974b189f5397b909fd1",
+    "MOSA_EvoSuite/Test/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41/com/fasterxml/jackson/core/JsonPointer_ESTest_scaffolding.java": "c913c1b98358408bdd6b1c81aae5f135042229b69a4a3dd2e96d6b335274e7b2"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.TestJsonPointer::testWonkyNumber173",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.TestJsonPointer::testWonkyNumber173"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 31,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 31,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 351,
+      "tests": [
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test30",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test14",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test13",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test16",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test15",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test10",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test12",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test11",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test18",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test17",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test19",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test03",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test25",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test02",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test24",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test05",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test27",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test04",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test26",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test21",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test20",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test01",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test23",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test00",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test22",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test07",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test29",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test06",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test28",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test09",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 84,
+      "line_total": 84,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 60,
+      "branch_total": 62,
+      "branch_coverage_percent": 96.7741935483871
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 31,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 333,
+      "tests": [
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test30",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test14",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test13",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test16",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test15",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test10",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test12",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test11",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test18",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test17",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test19",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test03",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test25",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test02",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test24",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test05",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test27",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test04",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test26",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test21",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test20",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test01",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test23",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test00",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test22",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test07",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test29",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test06",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test28",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test09",
+        "com.fasterxml.jackson.core.JsonPointer_ESTest::test08"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.core.JsonPointer_ESTest::test24",
+          "exception": "java.lang.NumberFormatException",
+          "message": "For input string: \"4F\"",
+          "trace": "java.lang.NumberFormatException: For input string: \"4F\"\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\n\tat java.base/java.lang.Integer.parseInt(Integer.java:770)\n\tat com.fasterxml.jackson.core.io.NumberInput.parseInt(NumberInput.java:91)\n\tat com.fasterxml.jackson.core.JsonPointer._parseIndex(JsonPointer.java:204)\n\tat com.fasterxml.jackson.core.JsonPointer.<init>(JsonPointer.java:70)\n\tat com.fasterxml.jackson.core.JsonPointer._parseTail(JsonPointer.java:225)\n\tat com.fasterxml.jackson.core.JsonPointer.compile(JsonPointer.java:98)\n\tat com.fasterxml.jackson.core.JsonPointer_ESTest.test24(JsonPointer_ESTest.java:514)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 83,
+      "line_total": 84,
+      "line_coverage_percent": 98.80952380952381,
+      "branch_covered": 59,
+      "branch_total": 62,
+      "branch_coverage_percent": 95.16129032258064
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/5/JacksonCore-5-Round1-s101-3611c0f18e41/evaluation-1",
+  "finished_at": "2026-10-04T23:30:58.478152+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Cli-29-Round1-s101-7f5753db83e6/evaluation-1/buggy/target/classes",
+    "/opt/defects4j/framework/projects/Cli/lib/junit/junit/3.8.2/junit-3.8.2.jar",
+    "/opt/defects4j/framework/projects/Cli/lib/junit-addons/junit-addons/1.4/junit-addons-1.4.jar",
+    "/workspace/work/checkouts/Cli-29-Round1-s101-7f5753db83e6/evaluation-1/buggy/target/test-classes"
+  ],
+  "missing_entries": []
+}

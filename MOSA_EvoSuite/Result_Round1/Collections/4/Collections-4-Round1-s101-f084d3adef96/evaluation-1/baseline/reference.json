@@ -1,0 +1,10 @@
+{
+  "trigger": "org.apache.commons.collections.map.TestMultiValueMap::testPutWithList",
+  "available_triggers": [
+    "org.apache.commons.collections.map.TestMultiValueMap::testPutWithList",
+    "org.apache.commons.collections.map.TestMultiValueMap::testPutAll_KeyCollection",
+    "org.apache.commons.collections.map.TestMultiValueMap::testPutWithSet"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,1 @@
+{"run_count":3,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":2374,"tests":["com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test1","com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test0","com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator_ESTest::test2"],"failures":[],"passed":true}

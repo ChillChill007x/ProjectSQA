@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-19-Round1-s101-ceee176fd613-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.516,
+  "stdout": "org.joda.time.TestDateTimeZoneCutover::testDateTimeCreation_london",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

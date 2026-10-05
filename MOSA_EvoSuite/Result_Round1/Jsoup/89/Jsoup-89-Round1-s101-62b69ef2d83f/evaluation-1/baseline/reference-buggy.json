@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-89-Round1-s101-62b69ef2d83f/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.AttributeTest::settersOnOrphanAttribute"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.42,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.AttributeTest::settersOnOrphanAttribute\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

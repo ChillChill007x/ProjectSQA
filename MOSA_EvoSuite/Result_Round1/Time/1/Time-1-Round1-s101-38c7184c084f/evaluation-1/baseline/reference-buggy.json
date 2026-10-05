@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-1-Round1-s101-38c7184c084f/evaluation-1/buggy",
+    "-t",
+    "org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.273,
+  "stdout": "Failing tests: 1\n  - org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

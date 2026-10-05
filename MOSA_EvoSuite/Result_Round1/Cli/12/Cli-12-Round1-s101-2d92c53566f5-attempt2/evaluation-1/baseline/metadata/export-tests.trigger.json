@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-12-Round1-s101-2d92c53566f5-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.cli.GnuParserTest::testShortWithEqual\norg.apache.commons.cli.GnuParserTest::testLongWithEqualSingleDash\norg.apache.commons.cli.GnuParserTest::testLongWithEqual",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

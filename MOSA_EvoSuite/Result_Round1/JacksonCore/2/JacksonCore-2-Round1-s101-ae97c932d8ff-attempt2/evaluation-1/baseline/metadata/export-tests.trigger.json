@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersBytes\ncom.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersChars",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

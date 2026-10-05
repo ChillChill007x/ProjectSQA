@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-22-Round1-s101-19804b258b45",
+  "unit": {
+    "project": "Chart",
+    "bug": "22",
+    "target": "org.jfree.data.KeyedObjects2D",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-04T20:10:36.580726+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/22/Chart-22-Round1-s101-19804b258b45",
+    "tests": "MOSA_EvoSuite/Test/Chart/22/Chart-22-Round1-s101-19804b258b45",
+    "config": "MOSA_EvoSuite/Configuration/Chart/22/Chart-22-Round1-s101-19804b258b45"
+  },
+  "generation_time_sec": 35.982,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/22/Chart-22-Round1-s101-19804b258b45/org/jfree/data/KeyedObjects2D_ESTest.java": "7e6cd62c413ef4c1bc09e384990bf58864f6ff7227a3df2d1a5ac15acacd2db7",
+    "MOSA_EvoSuite/Test/Chart/22/Chart-22-Round1-s101-19804b258b45/org/jfree/data/KeyedObjects2D_ESTest_scaffolding.java": "27bfebb42f569f66a86a5d60d1b320d2ee2cda68ab9dd14685e001cbd96a42f1"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByKey",
+    "available_triggers": [
+      "org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByKey",
+      "org.jfree.data.junit.KeyedObjects2DTests::testRemoveValue",
+      "org.jfree.data.junit.KeyedObjects2DTests::testGetValueByKey",
+      "org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByIndex",
+      "org.jfree.data.junit.KeyedObjects2DTests::testSetObject",
+      "org.jfree.data.junit.KeyedObjects2DTests::testRemoveRowByKey"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 587,
+      "tests": [
+        "org.jfree.data.KeyedObjects2D_ESTest::test18",
+        "org.jfree.data.KeyedObjects2D_ESTest::test17",
+        "org.jfree.data.KeyedObjects2D_ESTest::test19",
+        "org.jfree.data.KeyedObjects2D_ESTest::test10",
+        "org.jfree.data.KeyedObjects2D_ESTest::test12",
+        "org.jfree.data.KeyedObjects2D_ESTest::test11",
+        "org.jfree.data.KeyedObjects2D_ESTest::test14",
+        "org.jfree.data.KeyedObjects2D_ESTest::test13",
+        "org.jfree.data.KeyedObjects2D_ESTest::test16",
+        "org.jfree.data.KeyedObjects2D_ESTest::test15",
+        "org.jfree.data.KeyedObjects2D_ESTest::test07",
+        "org.jfree.data.KeyedObjects2D_ESTest::test06",
+        "org.jfree.data.KeyedObjects2D_ESTest::test09",
+        "org.jfree.data.KeyedObjects2D_ESTest::test08",
+        "org.jfree.data.KeyedObjects2D_ESTest::test21",
+        "org.jfree.data.KeyedObjects2D_ESTest::test20",
+        "org.jfree.data.KeyedObjects2D_ESTest::test01",
+        "org.jfree.data.KeyedObjects2D_ESTest::test23",
+        "org.jfree.data.KeyedObjects2D_ESTest::test00",
+        "org.jfree.data.KeyedObjects2D_ESTest::test22",
+        "org.jfree.data.KeyedObjects2D_ESTest::test03",
+        "org.jfree.data.KeyedObjects2D_ESTest::test02",
+        "org.jfree.data.KeyedObjects2D_ESTest::test24",
+        "org.jfree.data.KeyedObjects2D_ESTest::test05",
+        "org.jfree.data.KeyedObjects2D_ESTest::test04"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.data.KeyedObjects2D_ESTest::test22",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.KeyedObjects2D_ESTest.test22(KeyedObjects2D_ESTest.java:544)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.KeyedObjects2D_ESTest::test24",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.KeyedObjects2D_ESTest.test24(KeyedObjects2D_ESTest.java:584)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 138,
+      "line_total": 145,
+      "line_coverage_percent": 95.17241379310344,
+      "branch_covered": 70,
+      "branch_total": 74,
+      "branch_coverage_percent": 94.5945945945946
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-04T20:11:56.347718+00:00"
+}

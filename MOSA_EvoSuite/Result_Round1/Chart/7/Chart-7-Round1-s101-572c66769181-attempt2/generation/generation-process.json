@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.jfree.data.time.TimePeriodValues",
+    "-projectCP",
+    "/workspace/work/checkouts/Chart-7-Round1-s101-572c66769181-attempt2/generation-fixed/build:/workspace/work/checkouts/Chart-7-Round1-s101-572c66769181-attempt2/generation-fixed/lib/servlet.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Chart/7/Chart-7-Round1-s101-572c66769181-attempt2",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Chart/7/Chart-7-Round1-s101-572c66769181-attempt2/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 100.281,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.jfree.data.time.TimePeriodValues\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Chart-7-Round1-s101-572c66769181-attempt2/generation-fixed/build\n  - /workspace/work/checkouts/Chart-7-Round1-s101-572c66769181-attempt2/generation-fixed/lib/servlet.jar\n* Finished analyzing classpath\n* Generating tests for class org.jfree.data.time.TimePeriodValues\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 74\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:=========>                         27%]\r[Progress:>                             3%] [Cov:============>                      37%]\r[Progress:>                             3%] [Cov:========================>          70%]\r[Progress:>                             3%] [Cov:============================>      81%]\r[Progress:>                             3%] [Cov:=============================>     85%]\r[Progress:=>                            6%] [Cov:==============================>    86%]\r[Progress:=>                            6%] [Cov:===============================>   90%]\r[Progress:=>                            6%] [Cov:===============================>   91%]\r[Progress:=>                            6%] [Cov:===============================>   91%]\r[Progress:=>                            6%] [Cov:===============================>   91%]\r[Progress:===>                          10%] [Cov:================================>  93%]\r[Progress:===>                          10%] [Cov:================================>  94%]\r[Progress:===>                          10%] [Cov:================================>  94%]\r[Progress:===>                          10%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 95%]\r[Progress:===>                          13%] [Cov:=================================> 97%]\r[Progress:===>                          13%] [Cov:=================================> 97%]\r[Progress:===>                          13%] [Cov:=================================> 97%]\r[Progress:===>                          13%] [Cov:=================================> 97%]\r[Progress:===>                          13%] [Cov:===================================100%]\n* Search finished after 5s and 22 generations, 16794 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 74\n* Number of covered goals: 74\n* Generated 24 tests with total length 104\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'TimePeriodValues_ESTest' to /workspace/MOSA_EvoSuite/Test/Chart/7/Chart-7-Round1-s101-572c66769181-attempt2\n* Done!\n\n* Computation finished\n",
+  "stderr": "[MASTER] 11:29:07.589 [logback-2] ERROR JUnitAnalyzer - Ran out of time while checking tests\n"
+}

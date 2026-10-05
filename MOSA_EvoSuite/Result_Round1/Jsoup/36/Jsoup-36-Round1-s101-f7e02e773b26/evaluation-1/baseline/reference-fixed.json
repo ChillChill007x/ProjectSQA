@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-36-Round1-s101-f7e02e773b26/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.27,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

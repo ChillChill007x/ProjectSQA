@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Lang-39-Round1-s101-5a5c2dea1fcc/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang3.StringUtilsTest::testReplace_StringStringArrayStringArray"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.377,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang3.StringUtilsTest::testReplace_StringStringArrayStringArray\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

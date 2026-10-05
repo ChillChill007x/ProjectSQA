@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-123-Round1-s101-dcc7b1712f37",
+  "unit": {
+    "project": "Closure",
+    "bug": "123",
+    "target": "com.google.javascript.jscomp.CodeGenerator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:23:31.067075+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/123/Closure-123-Round1-s101-dcc7b1712f37",
+    "tests": "MOSA_EvoSuite/Test/Closure/123/Closure-123-Round1-s101-dcc7b1712f37",
+    "config": "MOSA_EvoSuite/Configuration/Closure/123/Closure-123-Round1-s101-dcc7b1712f37"
+  },
+  "generation_time_sec": 67.073,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/123/Closure-123-Round1-s101-dcc7b1712f37/com/google/javascript/jscomp/CodeGenerator_ESTest.java": "10018ec511a7afa3248298fd7bde1901570a5ab95ab84d22b3c5173c891cacc0",
+    "MOSA_EvoSuite/Test/Closure/123/Closure-123-Round1-s101-dcc7b1712f37/com/google/javascript/jscomp/CodeGenerator_ESTest_scaffolding.java": "1ea6bb68f39dda516dfcd7f52848698b26e6c9c6ac28c55f3ca60b7ac8a6848c"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CodePrinterTest::testPrintInOperatorInForLoop",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CodePrinterTest::testPrintInOperatorInForLoop"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 29,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2862,
+      "tests": [
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test19",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test18",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test17",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test12",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test11",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test10",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test16",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test15",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test14",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test13",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test09",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test08",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test07",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test06",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test28",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test01",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test23",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test00",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test22",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test21",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test20",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test05",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test27",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test04",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test26",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test03",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test25",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test02",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test24"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 112,
+      "line_total": 643,
+      "line_coverage_percent": 17.418351477449455,
+      "branch_covered": 78,
+      "branch_total": 485,
+      "branch_coverage_percent": 16.082474226804123
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3408,
+      "tests": [
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test19",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test18",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test17",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test12",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test11",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test10",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test16",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test15",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test14",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test13",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test09",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test08",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test07",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test06",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test28",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test01",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test23",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test00",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test22",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test21",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test20",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test05",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test27",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test04",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test26",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test03",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test25",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test02",
+        "com.google.javascript.jscomp.CodeGenerator_ESTest::test24"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 112,
+      "line_total": 643,
+      "line_coverage_percent": 17.418351477449455,
+      "branch_covered": 78,
+      "branch_total": 485,
+      "branch_coverage_percent": 16.082474226804123
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/123/Closure-123-Round1-s101-dcc7b1712f37/evaluation-1",
+  "finished_at": "2026-10-04T21:26:46.361954+00:00"
+}

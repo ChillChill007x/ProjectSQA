@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-31-Round1-s101-6adfadd275aa",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "31",
+    "target": "com.fasterxml.jackson.databind.util.TokenBuffer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "TIMEOUT",
+  "started_at": "2026-10-04T23:37:33.657455+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/31/JacksonDatabind-31-Round1-s101-6adfadd275aa",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/31/JacksonDatabind-31-Round1-s101-6adfadd275aa",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/31/JacksonDatabind-31-Round1-s101-6adfadd275aa"
+  },
+  "error": "Command failed; see /workspace/MOSA_EvoSuite/Result_Round1/JacksonDatabind/31/JacksonDatabind-31-Round1-s101-6adfadd275aa/generation/generation-process.json\nPicked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n",
+  "finished_at": "2026-10-04T23:40:24.865846+00:00"
+}

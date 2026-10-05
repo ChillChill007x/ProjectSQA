@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Math-52-Round1-s101-1b77c289be9a/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.geometry.euclidean.threed.RotationTest::testIssue639"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.708,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.geometry.euclidean.threed.RotationTest::testIssue639\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

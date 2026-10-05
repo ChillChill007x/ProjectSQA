@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/743/checkouts/Closure-31-Round1-s101-f226bda5eef4/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testDependencySortingWhitespaceMode"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.633,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CommandLineRunnerTest::testDependencySortingWhitespaceMode\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

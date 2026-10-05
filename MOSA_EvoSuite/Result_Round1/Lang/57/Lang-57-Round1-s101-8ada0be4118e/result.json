@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-57-Round1-s101-8ada0be4118e",
+  "unit": {
+    "project": "Lang",
+    "bug": "57",
+    "target": "org.apache.commons.lang.LocaleUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T02:53:39.446009+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/57/Lang-57-Round1-s101-8ada0be4118e",
+    "tests": "MOSA_EvoSuite/Test/Lang/57/Lang-57-Round1-s101-8ada0be4118e",
+    "config": "MOSA_EvoSuite/Configuration/Lang/57/Lang-57-Round1-s101-8ada0be4118e"
+  },
+  "generation_time_sec": 38.346,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/57/Lang-57-Round1-s101-8ada0be4118e/org/apache/commons/lang/LocaleUtils_ESTest.java": "461f23c717efc11af2de25d5386fcd3999d50845fe3032a4ac36351de753d738",
+    "MOSA_EvoSuite/Test/Lang/57/Lang-57-Round1-s101-8ada0be4118e/org/apache/commons/lang/LocaleUtils_ESTest_scaffolding.java": "a5c6e870f472db14b13b860489e3269858b0332ba133082a6f8d0a196a3afadb"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet",
+    "available_triggers": [
+      "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet",
+      "org.apache.commons.lang.LocaleUtilsTest::testIsAvailableLocale",
+      "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleList",
+      "org.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage",
+      "org.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_LocaleLocale",
+      "org.apache.commons.lang.LocaleUtilsTest::testLanguagesByCountry",
+      "org.apache.commons.lang.LocaleUtilsTest::testToLocale_1Part",
+      "org.apache.commons.lang.LocaleUtilsTest::testToLocale_2Part",
+      "org.apache.commons.lang.LocaleUtilsTest::testToLocale_3Part",
+      "org.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_Locale",
+      "org.apache.commons.lang.LocaleUtilsTest::testConstructor"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 547,
+      "tests": [
+        "org.apache.commons.lang.LocaleUtils_ESTest::test09",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test08",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test07",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test06",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test05",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test04",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test03",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test02",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test24",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test01",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test23",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test00",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test22",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test21",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test20",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test19",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test18",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test17",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test16",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test15",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test14",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test13",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test12",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test11",
+        "org.apache.commons.lang.LocaleUtils_ESTest::test10"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang.LocaleUtils_ESTest::test04",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<160> but was:<748>",
+          "trace": "java.lang.AssertionError: expected:<160> but was:<748>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang.LocaleUtils_ESTest.test04(LocaleUtils_ESTest.java:85)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 78,
+      "line_total": 79,
+      "line_coverage_percent": 98.73417721518987,
+      "branch_covered": 60,
+      "branch_total": 64,
+      "branch_coverage_percent": 93.75
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T02:55:09.158836+00:00"
+}
