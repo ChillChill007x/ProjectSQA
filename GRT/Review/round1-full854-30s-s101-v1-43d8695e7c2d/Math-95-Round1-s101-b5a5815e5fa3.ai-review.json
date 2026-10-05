@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.930376+00:00",
+  "run_id": "Math-95-Round1-s101-b5a5815e5fa3",
+  "project": "Math",
+  "bug": "95",
+  "target": "org.apache.commons.math.distribution.FDistributionImpl",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "FDistributionImpl.getInitialDomain returns -1 rather than 1 for denominator degrees of freedom 1, matching the added d>2 guard. The generated call passes probability 60.45 to an internal helper, so valid-use relevance needs review.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test19"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/95/Math-95-Round1-s101-b5a5815e5fa3/org/apache/commons/math/distribution/SqaGeneratedTest.java": "2743d7c5914ac1399d4b1bb063558d291c24da07b940d9ca48c6bafe7cc5044e"
+  },
+  "result_sha256": "ceca53ad2fb70577d997957dc230ea9dcb9c17cce1c86c43a30df6ce37f4f0bb",
+  "result_path": "GRT/Result_Round1/Math/95/Math-95-Round1-s101-b5a5815e5fa3/result.json",
+  "tests_path": "GRT/Test/Math/95/Math-95-Round1-s101-b5a5815e5fa3",
+  "evaluation_path": "GRT/Result_Round1/Math/95/Math-95-Round1-s101-b5a5815e5fa3/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/95.src.patch",
+  "patch_sha256": "f8ed1c69192b8908d6f197d6960b08e6d4aa138a5a9fe38da47b20805ba1bd40",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

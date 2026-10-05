@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.914338+00:00",
+  "run_id": "Math-54-Round1-s101-abef7cfc7915",
+  "project": "Math",
+  "bug": "54",
+  "target": "org.apache.commons.math.dfp.Dfp",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Dfp.toDouble returns -Infinity where fixed returns zero, matching the patch's explicit zero conversion branch. The construction sequence includes invalid decimal text and zero precision, so confirm normal-state reachability before counting the candidate.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test74"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/54/Math-54-Round1-s101-abef7cfc7915/org/apache/commons/math/dfp/SqaGeneratedTest.java": "88795a0e9a9b1e524a2d5699af302ae51658e1919b6fdf0449bc021e203368b5"
+  },
+  "result_sha256": "5f54bc5129455c429d33a09c67f04f7674a9b651e77d2de60bdfa3cea3ab0a87",
+  "result_path": "GRT/Result_Round1/Math/54/Math-54-Round1-s101-abef7cfc7915/result.json",
+  "tests_path": "GRT/Test/Math/54/Math-54-Round1-s101-abef7cfc7915",
+  "evaluation_path": "GRT/Result_Round1/Math/54/Math-54-Round1-s101-abef7cfc7915/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/54.src.patch",
+  "patch_sha256": "9ed6d7655b85363f844339e3139395f158efcc3cea83cddc9091072b37040d89",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

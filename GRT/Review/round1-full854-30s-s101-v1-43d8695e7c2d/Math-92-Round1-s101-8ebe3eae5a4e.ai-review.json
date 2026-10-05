@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.928376+00:00",
+  "run_id": "Math-92-Round1-s101-8ebe3eae5a4e",
+  "project": "Math",
+  "bug": "92",
+  "target": "org.apache.commons.math.util.MathUtils",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "MathUtils.binomialCoefficient(1,-29) differs between revisions. Negative k is outside the usual combinatorial domain; the algorithm patch explains divergence but the representative does not establish a valid-domain binomial computation failure.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test41"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/92/Math-92-Round1-s101-8ebe3eae5a4e/org/apache/commons/math/util/SqaGeneratedTest.java": "047df8c459dbaa8f70276189050467dde87e05808c4f8ae36cc219ba297f7822"
+  },
+  "result_sha256": "653c17f64c8886eee199bf7644b4feff8dec50a096310499bb0b2f7b42d69c9e",
+  "result_path": "GRT/Result_Round1/Math/92/Math-92-Round1-s101-8ebe3eae5a4e/result.json",
+  "tests_path": "GRT/Test/Math/92/Math-92-Round1-s101-8ebe3eae5a4e",
+  "evaluation_path": "GRT/Result_Round1/Math/92/Math-92-Round1-s101-8ebe3eae5a4e/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/92.src.patch",
+  "patch_sha256": "8fcf7b63a8636e7d07b749f11c42a7f9ae7db470cc242951b0eca713fd1d73b6",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

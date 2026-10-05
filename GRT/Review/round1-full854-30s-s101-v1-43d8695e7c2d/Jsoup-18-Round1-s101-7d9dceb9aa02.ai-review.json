@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.831306+00:00",
+  "run_id": "Jsoup-18-Round1-s101-7d9dceb9aa02",
+  "project": "Jsoup",
+  "bug": "18",
+  "target": "org.jsoup.parser.CharacterReader",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "CharacterReader.consumeTo on 'nam' with absent delimiter 'td' loses the final character on buggy. The patch changes consumeToEnd substring end from length-1 to length; direct boundary defect evidence.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 11,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02/org/jsoup/parser/SqaGeneratedTest.java": "34f42de30092d440c9549a695c0b0052af12af161f43010cbf89ae74d24f5104"
+  },
+  "result_sha256": "f0c7932a71700c25f4622665a1b28ccacd4f2003ac776830ac11569fea4c1ed1",
+  "result_path": "GRT/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02/result.json",
+  "tests_path": "GRT/Test/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/18.src.patch",
+  "patch_sha256": "a807d70de701af23b673d7c5b088ba37c8e0ee03634a9ce8005ff4356c32e459",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

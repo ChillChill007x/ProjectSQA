@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.903133+00:00",
+  "run_id": "Math-13-Round1-s101-7567da43aa28",
+  "project": "Math",
+  "bug": "13",
+  "target": "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The diagonal-matrix square-root patch changes the exception encountered by optimization. The representative has zero evaluation budget, a null underlying function, negative weights and an empty start point; exception precedence on this combination does not establish the intended numerical defect.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 3,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test56"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/13/Math-13-Round1-s101-7567da43aa28/org/apache/commons/math3/optimization/general/SqaGeneratedTest.java": "dcbce55567edddbfc310f3a57e2554c30a7df059641cae9e5fdffca182bd58b5"
+  },
+  "result_sha256": "ba819ae0911e038beb66f4b97a57941f67c31136ff92b9a627d03233e71d74b2",
+  "result_path": "GRT/Result_Round1/Math/13/Math-13-Round1-s101-7567da43aa28/result.json",
+  "tests_path": "GRT/Test/Math/13/Math-13-Round1-s101-7567da43aa28",
+  "evaluation_path": "GRT/Result_Round1/Math/13/Math-13-Round1-s101-7567da43aa28/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/13.src.patch",
+  "patch_sha256": "c919f2c7a804379cd365e22438dbc6cf36dd44f06aac268e3ffbf9822ebb435a",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

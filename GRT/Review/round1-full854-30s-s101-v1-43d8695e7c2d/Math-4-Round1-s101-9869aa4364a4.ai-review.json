@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.883244+00:00",
+  "run_id": "Math-4-Round1-s101-9869aa4364a4",
+  "project": "Math",
+  "bug": "4",
+  "target": "org.apache.commons.math3.geometry.euclidean.twod.SubLine",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "SubLine.intersection throws NPE on buggy and returns null on fixed, matching the patch's no-intersection guard. The representative constructs zero-length segments with coincident endpoints, so admissibility of that geometry needs contract review.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 12,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test36"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/4/Math-4-Round1-s101-9869aa4364a4/org/apache/commons/math3/geometry/euclidean/twod/SqaGeneratedTest.java": "1ea76db12f294009333218bc225424a721e5bd880427aa4c44d26f1686494dcd"
+  },
+  "result_sha256": "f8d1315430308cdf68f18a3abc5cccaaa6881de31d8917e3ea7534fb564917cc",
+  "result_path": "GRT/Result_Round1/Math/4/Math-4-Round1-s101-9869aa4364a4/result.json",
+  "tests_path": "GRT/Test/Math/4/Math-4-Round1-s101-9869aa4364a4",
+  "evaluation_path": "GRT/Result_Round1/Math/4/Math-4-Round1-s101-9869aa4364a4/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/4.src.patch",
+  "patch_sha256": "ea02644d99618e86d5714ea07f17025230b3ba1e08920a232075cee4d6a260cd",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

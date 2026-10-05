@@ -33,6 +33,6 @@ All 854 distinct active project/bug pairs have terminal records: 685 EVALUATED, 
 
 - Imported only selected run folders and original campaign metadata; unrelated historical results from GRT.zip and its code were not imported.
 - Archive SHA-256 and per-archive checks are in member3/archive-audit.json. Imported EVALUATED Java checksums: 335, all match.
-- Across selected results: 98 candidate runs / 85 distinct bugs. Existing 49 member2 AI reviews remain; the 49 imported candidate runs have not been AI-reviewed here. None are promoted to human-confirmed faults.
+- Across selected results: 98 candidate runs / 85 distinct bugs. All 98 candidate runs now have explicit AI reviews: 53 patch-link-supported, 44 requiring contract/defect review, 1 unconfirmed timeout. See ../Review/COMBINED-AI-REVIEW.md. None are promoted to human-confirmed faults.
 - Preserve failures; no benchmark reruns or assertion changes were performed. Empty evidence directories receive .gitkeep for Git transport.
 - Use combined-854-inventory.json to select results, not an unfiltered collect_results export.

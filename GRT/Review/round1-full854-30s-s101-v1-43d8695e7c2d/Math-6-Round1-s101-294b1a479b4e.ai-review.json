@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.888243+00:00",
+  "run_id": "Math-6-Round1-s101-294b1a479b4e",
+  "project": "Math",
+  "bug": "6",
+  "target": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "PowellOptimizer.getMaxIterations reports 0 on buggy instead of Integer.MAX_VALUE. This directly observes the patched BaseOptimizer initialization, without running optimization. It is evidence for the default counter, not full optimization behavior.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test24"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/6/Math-6-Round1-s101-294b1a479b4e/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SqaGeneratedTest.java": "8fe083737a6f8e194f8f226cb6e8f16da0ed0ab29eb926ea700c3f32e60db2a6"
+  },
+  "result_sha256": "f2a8934fe419e07885602a462986640412c7277bdf44d97fbd00000975c027bb",
+  "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-294b1a479b4e/result.json",
+  "tests_path": "GRT/Test/Math/6/Math-6-Round1-s101-294b1a479b4e",
+  "evaluation_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-294b1a479b4e/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/6.src.patch",
+  "patch_sha256": "9744bb2aa58774fcb1e6e89e4c80a0002abae0af542a6ce458650f79659ab26e",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

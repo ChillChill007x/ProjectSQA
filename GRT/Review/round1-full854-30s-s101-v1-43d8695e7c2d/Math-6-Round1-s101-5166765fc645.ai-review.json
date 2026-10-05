@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.891242+00:00",
+  "run_id": "Math-6-Round1-s101-5166765fc645",
+  "project": "Math",
+  "bug": "6",
+  "target": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "SimplexOptimizer.getMaxIterations reports 0 on buggy instead of Integer.MAX_VALUE. This directly observes the patched BaseOptimizer default iteration counter; it does not exercise convergence or optimization iteration accounting.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test13"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/6/Math-6-Round1-s101-5166765fc645/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SqaGeneratedTest.java": "2e7c83b119d75223175e7b5fd10b95616cc00388b693d3ecf64f5c5afc959bd2"
+  },
+  "result_sha256": "e74681f42afd0afad4a6c0f7661c994e7e3d4a1b723eb7d278036fc98570c36d",
+  "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-5166765fc645/result.json",
+  "tests_path": "GRT/Test/Math/6/Math-6-Round1-s101-5166765fc645",
+  "evaluation_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-5166765fc645/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/6.src.patch",
+  "patch_sha256": "9744bb2aa58774fcb1e6e89e4c80a0002abae0af542a6ce458650f79659ab26e",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.917338+00:00",
+  "run_id": "Math-66-Round1-s101-880b692c2a7d",
+  "project": "Math",
+  "bug": "66",
+  "target": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "BrentOptimizer tests compare exact floating-point results across changes to accuracy defaults and iteration logic. The representative start value is outside its interval. A tiny numerical difference is not sufficient defect evidence without interval-contract and tolerance analysis.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 32,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test12"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/66/Math-66-Round1-s101-880b692c2a7d/org/apache/commons/math/optimization/univariate/SqaGeneratedTest.java": "7f5d641a04c7c2a6c7ee09dc475e22fa107f8a1e6491940574958adc69a54dfb"
+  },
+  "result_sha256": "93716646aedf333e7769ce4e044a92d4900a258e083490348c9377a733930b1b",
+  "result_path": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d/result.json",
+  "tests_path": "GRT/Test/Math/66/Math-66-Round1-s101-880b692c2a7d",
+  "evaluation_path": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/66.src.patch",
+  "patch_sha256": "b1573ae6e47de7a4e393c91384b85ae9cdfc53cb7c2fdf20ec5afa1a0d17fe02",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

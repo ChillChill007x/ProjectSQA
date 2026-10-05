@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.932377+00:00",
+  "run_id": "Math-103-Round1-s101-3f151280e5ec",
+  "project": "Math",
+  "bug": "103",
+  "target": "org.apache.commons.math.distribution.NormalDistributionImpl",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "NormalDistribution cumulativeProbability for an extreme tail throws MaxIterationsExceededException on buggy. The patch explicitly catches that exception and returns tail probabilities beyond 20 standard deviations; the representative is a direct extreme-tail call. Exact later floating assertions are not relied on for this assessment.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 4,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/103/Math-103-Round1-s101-3f151280e5ec/org/apache/commons/math/distribution/SqaGeneratedTest.java": "ada4f60a17b6eaa63c0f704daa56080ffa5719a8a2ef331aecda045ba8aade3c"
+  },
+  "result_sha256": "df4fa2ac31194f2bb6adf3657df5dca37557a88555de4ecddb5f65d7f7bb1c5c",
+  "result_path": "GRT/Result_Round1/Math/103/Math-103-Round1-s101-3f151280e5ec/result.json",
+  "tests_path": "GRT/Test/Math/103/Math-103-Round1-s101-3f151280e5ec",
+  "evaluation_path": "GRT/Result_Round1/Math/103/Math-103-Round1-s101-3f151280e5ec/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/103.src.patch",
+  "patch_sha256": "ddd1a18e48a7981a6937c8711069aea056d9a84151ab602bed891ae3f540e232",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

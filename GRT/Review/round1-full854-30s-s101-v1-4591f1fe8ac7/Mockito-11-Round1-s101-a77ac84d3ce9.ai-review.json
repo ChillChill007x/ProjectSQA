@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.936678+00:00",
+  "run_id": "Mockito-11-Round1-s101-a77ac84d3ce9",
+  "project": "Mockito",
+  "bug": "11",
+  "target": "org.mockito.internal.creation.DelegatingMethod",
+  "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "DelegatingMethod is constructed with a null reflection Method, and the test expects hashCode to throw on fixed. The equals/hashCode patch explains the change, but a null-internal-state exception difference is not proof of the intended equality/hash defect.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test8"
+  ],
+  "test_sha256": {
+    "GRT/Test/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/org/mockito/internal/creation/SqaGeneratedTest.java": "d70c1efd96ee43be6b2e5a89d2c94b60c71a973a0a04ee2bb5a16c5cd625cc13"
+  },
+  "result_sha256": "ff76b1e2cd33a1178549fd9be69d6843880c2490379cd4a1f622e6f24a1e6e1d",
+  "result_path": "GRT/Result_Round1/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/result.json",
+  "tests_path": "GRT/Test/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9",
+  "evaluation_path": "GRT/Result_Round1/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Mockito/patches/11.src.patch",
+  "patch_sha256": "9d3d0960eed74a3a99d9c756d0caddb7e02df2161a471bc5886c215a1c64dbe1",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

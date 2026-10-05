@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.856928+00:00",
+  "run_id": "JxPath-9-Round1-s101-9b5237421caa",
+  "project": "JxPath",
+  "bug": "9",
+  "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Internal CoreOperationCompare.equal returns true rather than false on a CoreOperationNotEqual instance. The patch moves inversion into comparison logic, but the generated test calls an internal helper on synthetic empty expressions rather than evaluating XPath; public-contract relevance needs review.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 32,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15"
+  ],
+  "test_sha256": {
+    "GRT/Test/JxPath/9/JxPath-9-Round1-s101-9b5237421caa/org/apache/commons/jxpath/ri/compiler/SqaGeneratedTest.java": "7169a8177a0ad980a127a92ea25f97c2cd80172d65d735bd1ad1ace276337946"
+  },
+  "result_sha256": "5b83e2795a6da36d9af5f094c059bd74fcc7a501814dbf92ba406efa9c471b10",
+  "result_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-9b5237421caa/result.json",
+  "tests_path": "GRT/Test/JxPath/9/JxPath-9-Round1-s101-9b5237421caa",
+  "evaluation_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-9b5237421caa/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JxPath/patches/9.src.patch",
+  "patch_sha256": "db5a1ab1adfa6e8903401f62533381f7b6a9672c1dc65ace378901f25e4700be",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

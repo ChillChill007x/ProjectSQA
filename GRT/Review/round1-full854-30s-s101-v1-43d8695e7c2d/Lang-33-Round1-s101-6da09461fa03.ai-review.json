@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.869032+00:00",
+  "run_id": "Lang-33-Round1-s101-6da09461fa03",
+  "project": "Lang",
+  "bug": "33",
+  "target": "org.apache.commons.lang3.ClassUtils",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "ClassUtils.toClass([null]) throws NPE on buggy. The patch explicitly maps a null array element to a null class entry; the representative exercises that case.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test30"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/33/Lang-33-Round1-s101-6da09461fa03/org/apache/commons/lang3/SqaGeneratedTest.java": "f17a729f646c46cc8dd588a70bb4dd80594768e52b9020cea5a905faa96bd508"
+  },
+  "result_sha256": "6e43c632111e54bffee793fb96df9c273ac088b8238774d8d7da103be5050d49",
+  "result_path": "GRT/Result_Round1/Lang/33/Lang-33-Round1-s101-6da09461fa03/result.json",
+  "tests_path": "GRT/Test/Lang/33/Lang-33-Round1-s101-6da09461fa03",
+  "evaluation_path": "GRT/Result_Round1/Lang/33/Lang-33-Round1-s101-6da09461fa03/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/33.src.patch",
+  "patch_sha256": "5866b8dddfe118a08fe30e4ce3c65321e7adddfa6040430472b0cc4713c0f767",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

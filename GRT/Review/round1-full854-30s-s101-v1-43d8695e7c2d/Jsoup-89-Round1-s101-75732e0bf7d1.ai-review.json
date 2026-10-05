@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.853928+00:00",
+  "run_id": "Jsoup-89-Round1-s101-75732e0bf7d1",
+  "project": "Jsoup",
+  "bug": "89",
+  "target": "org.jsoup.nodes.Attribute",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Attribute.setValue on a standalone attribute throws NPE on buggy. The patch reads the local value before consulting an optional parent, matching the test expecting the previous value.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 9,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test23"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1/org/jsoup/nodes/SqaGeneratedTest.java": "9c10f19339e945baa2cc62344b3eeb49d426c2685e5a62796164082b8e203826"
+  },
+  "result_sha256": "f6d8df5034a1a0d79985243c0ddccf8b65904caefd020a8503bf46bcdaa76da3",
+  "result_path": "GRT/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1/result.json",
+  "tests_path": "GRT/Test/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/89.src.patch",
+  "patch_sha256": "b522c8062a4210ed22a005665feeee1c33663ef8c930fd95cec89fc18f0cfe90",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

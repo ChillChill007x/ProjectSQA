@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.900625+00:00",
+  "run_id": "Math-6-Round1-s101-feccdf8866ed",
+  "project": "Math",
+  "bug": "6",
+  "target": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "LevenbergMarquardt getMaxIterations differs exactly as BaseOptimizer initialization changes. The representative uses negative or zero optimizer tuning values, so parameter-contract validity remains to be checked.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test43"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/6/Math-6-Round1-s101-feccdf8866ed/org/apache/commons/math3/optim/nonlinear/vector/jacobian/SqaGeneratedTest.java": "f788199160faadb1b65fe71f300dc1248d5d0bacf23a61e647540803816f34a9"
+  },
+  "result_sha256": "fbea1dd7616c672e40538751fd424e4347f95df7861a7a1ba1dbde54bf0c5c8e",
+  "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-feccdf8866ed/result.json",
+  "tests_path": "GRT/Test/Math/6/Math-6-Round1-s101-feccdf8866ed",
+  "evaluation_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-feccdf8866ed/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/6.src.patch",
+  "patch_sha256": "9744bb2aa58774fcb1e6e89e4c80a0002abae0af542a6ce458650f79659ab26e",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

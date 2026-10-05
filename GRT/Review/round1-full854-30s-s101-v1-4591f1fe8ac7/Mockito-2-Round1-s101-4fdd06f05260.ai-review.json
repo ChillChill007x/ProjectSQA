@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.934678+00:00",
+  "run_id": "Mockito-2-Round1-s101-4fdd06f05260",
+  "project": "Mockito",
+  "bug": "2",
+  "target": "org.mockito.internal.util.Timer",
+  "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Timer(-2 milliseconds) is accepted on buggy but fixed throws FriendlyReminderException. The patch adds explicit negative-duration validation, directly supporting this input rejection test.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 12,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test20"
+  ],
+  "test_sha256": {
+    "GRT/Test/Mockito/2/Mockito-2-Round1-s101-4fdd06f05260/org/mockito/internal/util/SqaGeneratedTest.java": "04a33ba0da89bc600c587bf5e54c1c9de6b3535d9f3e9d4dfb6a26dfc466cd51"
+  },
+  "result_sha256": "7b2ded452a3d45b05232c9a3e1b0e318eb129435c479e15349df1e0265dbb71c",
+  "result_path": "GRT/Result_Round1/Mockito/2/Mockito-2-Round1-s101-4fdd06f05260/result.json",
+  "tests_path": "GRT/Test/Mockito/2/Mockito-2-Round1-s101-4fdd06f05260",
+  "evaluation_path": "GRT/Result_Round1/Mockito/2/Mockito-2-Round1-s101-4fdd06f05260/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Mockito/patches/2.src.patch",
+  "patch_sha256": "d2c70a964946f3768d10fa87a1941cacdbf1e83099db1ab88de65504d4beef15",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.876225+00:00",
+  "run_id": "Lang-57-Round1-s101-8e96231a5f92",
+  "project": "Lang",
+  "bug": "57",
+  "target": "org.apache.commons.lang.LocaleUtils",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "LocaleUtils.isAvailableLocale throws NPE for an unknown Locale. The patch accesses availableLocaleList() instead of the potentially uninitialized cached set; the false result is consistent with an unavailable locale.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test61"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/57/Lang-57-Round1-s101-8e96231a5f92/org/apache/commons/lang/SqaGeneratedTest.java": "3959a8f29e5326b518b447ea8a3b10ab939e64104b334650b9626d481def47dc"
+  },
+  "result_sha256": "31bfbff411654de9ba70d2f129cf7431ad84211fa82ed013a97d09518f078c9e",
+  "result_path": "GRT/Result_Round1/Lang/57/Lang-57-Round1-s101-8e96231a5f92/result.json",
+  "tests_path": "GRT/Test/Lang/57/Lang-57-Round1-s101-8e96231a5f92",
+  "evaluation_path": "GRT/Result_Round1/Lang/57/Lang-57-Round1-s101-8e96231a5f92/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/57.src.patch",
+  "patch_sha256": "9b14e3627726d20bb08cb8985b1fcd0dcaf1c2ec659b825c39484103e400aa39",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

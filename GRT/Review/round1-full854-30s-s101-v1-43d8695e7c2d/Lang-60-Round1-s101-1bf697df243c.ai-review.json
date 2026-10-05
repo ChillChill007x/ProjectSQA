@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.878729+00:00",
+  "run_id": "Lang-60-Round1-s101-1bf697df243c",
+  "project": "Lang",
+  "bug": "60",
+  "target": "org.apache.commons.lang.text.StrBuilder",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "StrBuilder.contains(NUL) incorrectly reports true on an empty builder. The patch limits scanning to logical size rather than backing-array capacity; this is direct unused-buffer evidence.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test14"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/60/Lang-60-Round1-s101-1bf697df243c/org/apache/commons/lang/text/SqaGeneratedTest.java": "9531e7cd9ae5fe8eeb68749790850d89c44b57c535da5d6a1bb3e8bf1c36c15a"
+  },
+  "result_sha256": "6735e95c4d99a5ef4596882c45a47ed2caec34cfc36926e9b7be9172791d4290",
+  "result_path": "GRT/Result_Round1/Lang/60/Lang-60-Round1-s101-1bf697df243c/result.json",
+  "tests_path": "GRT/Test/Lang/60/Lang-60-Round1-s101-1bf697df243c",
+  "evaluation_path": "GRT/Result_Round1/Lang/60/Lang-60-Round1-s101-1bf697df243c/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/60.src.patch",
+  "patch_sha256": "a93601a6ed0b86ece4bffb4ca083737f7fe30f66f312a1914ef97a70bce21d71",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

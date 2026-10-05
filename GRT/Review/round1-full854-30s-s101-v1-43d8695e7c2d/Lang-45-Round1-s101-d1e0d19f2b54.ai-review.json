@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.874224+00:00",
+  "run_id": "Lang-45-Round1-s101-d1e0d19f2b54",
+  "project": "Lang",
+  "bug": "45",
+  "target": "org.apache.commons.lang.WordUtils",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "WordUtils.abbreviate with lower bound beyond string length throws on buggy; the patch clamps lower to length. The representative also has upper=0 below lower=2, so the combined bound contract needs review before treating this as valid-use detection.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 8,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test30"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54/org/apache/commons/lang/SqaGeneratedTest.java": "7a850fd374486917674f521d0431e4de86e39b920bb2ba1a56be2eab27980183"
+  },
+  "result_sha256": "ffafbd16e24190da8ffc19fb7d7d06ea0a22ba4f886baf5b3c968ce8297c95ff",
+  "result_path": "GRT/Result_Round1/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54/result.json",
+  "tests_path": "GRT/Test/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54",
+  "evaluation_path": "GRT/Result_Round1/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/45.src.patch",
+  "patch_sha256": "103ab2b6775499385b77438e6cdd12bea292a742f596992515d9ec97800e1930",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

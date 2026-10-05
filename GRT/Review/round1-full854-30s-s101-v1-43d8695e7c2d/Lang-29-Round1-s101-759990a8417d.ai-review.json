@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.867032+00:00",
+  "run_id": "Lang-29-Round1-s101-759990a8417d",
+  "project": "Lang",
+  "bug": "29",
+  "target": "org.apache.commons.lang3.SystemUtils",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "SystemUtils.toJavaVersionInt returns boxed Float rather than Integer on buggy. The patch changes its declared return type from float to int; the test detects the type mismatch even when numeric values are both zero. The representative uses an unrecognized version string.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test22"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/29/Lang-29-Round1-s101-759990a8417d/org/apache/commons/lang3/SqaGeneratedTest.java": "05a5f51def4681c9e0d715153b114fd722033494f730bfc4af187ccbe0967478"
+  },
+  "result_sha256": "86d85b137833cc0ba4e8609c2ec77af6426af88eef5ccb113c1945446af2fa92",
+  "result_path": "GRT/Result_Round1/Lang/29/Lang-29-Round1-s101-759990a8417d/result.json",
+  "tests_path": "GRT/Test/Lang/29/Lang-29-Round1-s101-759990a8417d",
+  "evaluation_path": "GRT/Result_Round1/Lang/29/Lang-29-Round1-s101-759990a8417d/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/29.src.patch",
+  "patch_sha256": "2b4458a34f4b4758249919862e97eed28b1c57ae616b2a63ce1e607de0455f38",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

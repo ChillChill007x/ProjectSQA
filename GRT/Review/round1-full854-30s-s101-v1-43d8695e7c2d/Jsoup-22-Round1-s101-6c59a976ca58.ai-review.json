@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.834403+00:00",
+  "run_id": "Jsoup-22-Round1-s101-6c59a976ca58",
+  "project": "Jsoup",
+  "bug": "22",
+  "target": "org.jsoup.nodes.Node",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Calling siblingNodes on a root Document throws NPE on buggy. The patch explicitly returns an empty list for a parentless node, matching the documented behavior in the patch context.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 8,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test42"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58/org/jsoup/nodes/SqaGeneratedTest.java": "df9aba2f195b1a29b1b98f3427ebf826cb1a9b3a8f43e337e1dfcd123cc4f6d3"
+  },
+  "result_sha256": "b40667d8eb848c3a69fc5e3640ddf73abf9f30df451ed20f68a179ebc0c4e17f",
+  "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58/result.json",
+  "tests_path": "GRT/Test/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/22.src.patch",
+  "patch_sha256": "93d3ace0c15f781304c9408b1e7a9fde5663e336ba56b25236d0072ef8c03cb8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

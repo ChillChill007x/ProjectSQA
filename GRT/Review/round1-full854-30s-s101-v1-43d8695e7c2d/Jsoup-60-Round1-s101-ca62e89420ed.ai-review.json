@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.848420+00:00",
+  "run_id": "Jsoup-60-Round1-s101-ca62e89420ed",
+  "project": "Jsoup",
+  "bug": "60",
+  "target": "org.jsoup.select.QueryParser",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "QueryParser.parse('.') yields IllegalArgumentException on buggy rather than SelectorParseException. The patch specifically wraps IllegalArgumentException in SelectorParseException, supporting this invalid-selector error-contract test.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test58"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed/org/jsoup/select/SqaGeneratedTest.java": "8b2cbfebfd92dc4bc73e6d998c5b40c4ead402528be954c2794248dfc274cebf"
+  },
+  "result_sha256": "45cc38aedd35d01e763d40a768c80a4a1114697d387207628df38345c4cd8401",
+  "result_path": "GRT/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed/result.json",
+  "tests_path": "GRT/Test/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/60.src.patch",
+  "patch_sha256": "9c4725b0d1701cb8a74a9fd2d01b8019302fbc337d8a4b9f58a7a100aa5a09ef",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

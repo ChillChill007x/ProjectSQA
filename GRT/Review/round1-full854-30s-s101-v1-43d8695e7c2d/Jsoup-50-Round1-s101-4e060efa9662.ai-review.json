@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.842911+00:00",
+  "run_id": "Jsoup-50-Round1-s101-4e060efa9662",
+  "project": "Jsoup",
+  "bug": "50",
+  "target": "org.jsoup.helper.DataUtil",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The representative passes an empty ByteBuffer and unsupported charset, expecting BufferUnderflowException only on fixed. The BOM-reading patch explains changed exception ordering, but this does not demonstrate correct BOM decoding or a valid-input defect. Check other assertions and input contract before counting.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 26,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test13"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662/org/jsoup/helper/SqaGeneratedTest.java": "b5b2d4a432a4c2a7832df0b62011e1c6b58b70c8ac8464a5170c9046bb1b9b5e"
+  },
+  "result_sha256": "e0fe6731f6f8f6d360518d86493b5057ec03449014b5592612f6f08b42b5d4dd",
+  "result_path": "GRT/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662/result.json",
+  "tests_path": "GRT/Test/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/50.src.patch",
+  "patch_sha256": "1788325b5c41ca7c23ccf396fa06b3702285e98d9f1126c7e2fbd131fa1a9fee",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.919338+00:00",
+  "run_id": "Math-67-Round1-s101-f5784e3f32df",
+  "project": "Math",
+  "bug": "67",
+  "target": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "MultiStartUnivariateRealOptimizer.getResult is called before optimize, expecting a fixed-side NPE. The patch switches from the delegate to the best stored optimum; this pre-optimization exception difference does not demonstrate selection of the wrong optimized result.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 5,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test21"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/67/Math-67-Round1-s101-f5784e3f32df/org/apache/commons/math/optimization/SqaGeneratedTest.java": "420e3e6fa65438a1e6efa8a204fc1b18d28e4bd2779c6fd1ab2af501be8d3371"
+  },
+  "result_sha256": "5f78135ec45cf0e0343820bfeaa85b712acbc99cbc3a0edf154289dd954411e7",
+  "result_path": "GRT/Result_Round1/Math/67/Math-67-Round1-s101-f5784e3f32df/result.json",
+  "tests_path": "GRT/Test/Math/67/Math-67-Round1-s101-f5784e3f32df",
+  "evaluation_path": "GRT/Result_Round1/Math/67/Math-67-Round1-s101-f5784e3f32df/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/67.src.patch",
+  "patch_sha256": "a6247f539871a52a556a07b0495c848ad41dd1d6c060ff3eb5569a0d146eff05",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

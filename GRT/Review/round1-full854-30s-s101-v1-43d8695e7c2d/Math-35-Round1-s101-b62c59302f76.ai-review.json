@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.912334+00:00",
+  "run_id": "Math-35-Round1-s101-b62c59302f76",
+  "project": "Math",
+  "bug": "35",
+  "target": "org.apache.commons.math3.genetics.ElitisticListPopulation",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The patch routes ElitisticListPopulation constructors through setElitismRate validation; the representative expects rejection of rate 21.48. Its chromosome list also contains another List rather than Chromosomes, so isolate the invalid-rate contract from the malformed list before counting.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test97"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/35/Math-35-Round1-s101-b62c59302f76/org/apache/commons/math3/genetics/SqaGeneratedTest.java": "fd62975cb9fc010d1b23bf25f3ddda07ef600dce6355ad38355e23c394b37c90"
+  },
+  "result_sha256": "f18f5f4bd1e1311cb654b44171c4e3dee67992ad43c1602332035839999b9bd9",
+  "result_path": "GRT/Result_Round1/Math/35/Math-35-Round1-s101-b62c59302f76/result.json",
+  "tests_path": "GRT/Test/Math/35/Math-35-Round1-s101-b62c59302f76",
+  "evaluation_path": "GRT/Result_Round1/Math/35/Math-35-Round1-s101-b62c59302f76/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/35.src.patch",
+  "patch_sha256": "5a716a04e058a880d08e1816c64749e4f39c31dce6a45573025612b3eaa25b5f",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}
