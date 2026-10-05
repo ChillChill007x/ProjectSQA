@@ -22,3 +22,5 @@
 3. ผลล้มเหลวของเพื่อน 7 รายการ (JacksonDatabind 2/7/30/31 = TIMEOUT; Jsoup 50/52, Math 98 = NO_TESTS) ไม่มีเทสต์ถูกสร้าง จึงสร้างโฟลเดอร์ Test ว่างพร้อม .gitkeep เพื่อให้โครงสร้างครบ ไม่เปลี่ยนผล
 4. ผลล้มเหลวทุกชนิด (INVALID_ORACLE, COMPILE_FAIL, TIMEOUT, NO_TESTS, INVALID_TESTS, COVERAGE_ERROR, FLAKY) ถูกเก็บไว้ตามจริง ไม่มีการลบเทสต์หรือแก้ assertion
 5. seed เดียว (101) จึงไม่รายงาน mean/SD ข้าม seed
+
+6. retry ไม่เท่ากัน: ชุดคนที่ 1 (263 บัค) รัน --retry-failed หนึ่ง pass ส่วนชุดเพื่อน (591 บัค) ไม่ได้รัน retry เพราะเวลาไม่พอ จึงเปรียบเทียบอัตราสำเร็จของสองชุดโดยตรงไม่ได้
