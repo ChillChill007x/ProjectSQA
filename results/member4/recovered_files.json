@@ -1,0 +1,47 @@
+{
+  "source": "AI_API\\ExistingSuites\\implementation.zip",
+  "archive_sha256": "d90ec23e64d1d86dc491d024669b9802439f4279ceca91109a5c2aa7a6c67d0b",
+  "note": "Only missing files restored byte-for-byte; existing implementation files preserved; no API requests.",
+  "files": [
+    {
+      "path": "scripts/ai_api.py",
+      "sha256": "cf2a7f9aec824323e6d066a3a250bcb9cb6d5cb6a969cfceb902a8a364eb0525"
+    },
+    {
+      "path": "scripts/ai_api_campaign.py",
+      "sha256": "27a63b6ebf2549d55770babac89ec7e887bfab6d870a80ae356cafb17f18ad7b"
+    },
+    {
+      "path": "scripts/ai_workspace.py",
+      "sha256": "47e8413143fda9b0a6c8c41895ffb26b33e9772df202b9fd3735c2e72cce0261"
+    },
+    {
+      "path": "scripts/codex_bug_campaign.py",
+      "sha256": "28b3d0cde44e1661337dfd78e7a0eb85cfa505d7005a8d3005045e583642fec1"
+    },
+    {
+      "path": "scripts/codex_campaign.py",
+      "sha256": "f21b6abcb463b7c8646bc4afe841b1c2aea28c1a23a0781e778859b42a893eea"
+    },
+    {
+      "path": "scripts/evaluate_existing_suites.py",
+      "sha256": "dbe9664c8ba9e40768826cf3bed3c6ff36ea08f78b3917b888e024f73efceb16"
+    },
+    {
+      "path": "config/ai-api.json",
+      "sha256": "190f41756c47bca667b52c409728f9ec3c8a321bd6e4d9de37d2bac6d4fed332"
+    },
+    {
+      "path": "config/ai-control.json",
+      "sha256": "bce4f06b43ec97b60019b3d4817605e70f75f48833af6ac2c8087cb0ea9cd60b"
+    },
+    {
+      "path": "prompts/ai-api-system.txt",
+      "sha256": "0136d0d558148eebd32015159b5a7bacbedba3382ce89b31b1992613bf6939dc"
+    },
+    {
+      "path": "prompts/ai-test-generation-prompt.md",
+      "sha256": "fa020f66449915f4c2470a1055b1eb874e1b34796fe150f0e1c76fefd5e06a98"
+    }
+  ]
+}

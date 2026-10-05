@@ -1,0 +1,170 @@
+{
+  "project": "Chart",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.jfree.data.general.DatasetUtilities"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.jfree.data.time.TimeSeries"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.jfree.chart.plot.XYPlot"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.jfree.data.xy.XYSeries"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.jfree.chart.util.ShapeList"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.jfree.data.time.TimePeriodValues"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.jfree.data.time.Week"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.jfree.data.time.TimeSeries"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.jfree.chart.util.ShapeUtilities"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.jfree.chart.plot.MultiplePiePlot"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.jfree.chart.block.BorderArrangement"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.jfree.chart.plot.CategoryPlot",
+        "org.jfree.chart.plot.XYPlot"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.jfree.chart.plot.PiePlot"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.jfree.data.category.DefaultIntervalCategoryDataset"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.jfree.data.time.TimeSeries"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.jfree.data.DefaultKeyedValues",
+        "org.jfree.data.DefaultKeyedValues2D"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.jfree.chart.plot.CategoryPlot"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.jfree.chart.plot.ValueMarker"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.jfree.data.KeyedObjects2D"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.jfree.chart.renderer.GrayPaintScale"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.jfree.chart.axis.Axis"
+      ]
+    }
+  ]
+}

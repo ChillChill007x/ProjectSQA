@@ -1,5 +1,5 @@
 {
-  "audited_at": "2026-10-04T05:55:56.064476+00:00",
+  "audited_at": "2026-10-05T14:55:45.036318+00:00",
   "basis": "Supplied results files; this audit runs no API, compiler or tests.",
   "meaning_of_100_percent": "CSV status coverage of the expected bug list, not successful tests or verified new API generation.",
   "providers": {
@@ -71,7 +71,7 @@
         "NOT_RUN": 1708
       },
       "result_files": [],
-      "manifest_sha256": "2091ce2d64b6fd8cf1bae5b4d93763f81b6b1038c852448a7ba5910500cda342"
+      "manifest_sha256": "ce82a6631d09515395c8e7e409ef73d69510c1cbefcb926564cdf43b85e269fd"
     },
     "existing": {
       "status_counts": {
@@ -79,10 +79,10 @@
         "INVALID_ORACLE": 2
       },
       "result_files": [
-        "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json",
-        "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+        "Deepseek-v4_flash/Result/Lang/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json",
+        "gpt-5.6-terra/Result/Lang/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
       ],
-      "manifest_sha256": "efde0ddfb32d0a3449f6f9bac0e1da4ca8ad689f255af9ab99bff309b4c5a66d"
+      "manifest_sha256": "1e82d92c7d908504dcaf7a5ad0e04a198a9c7815146d26390db5cd681066c942"
     }
   },
   "coverage_conflicts": [
@@ -96,7 +96,7 @@
       "native_fixed_line": 67.63157894736842,
       "csv_branch": "60.31",
       "native_fixed_branch": 52.857142857142854,
-      "native_result": "Deepseek-v4_flash/Result/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json"
+      "native_result": "Deepseek-v4_flash/Result/Lang/Lang_1b/Lang-1-Reevaluation-s0-87f11725d7a0/result.json"
     },
     {
       "project": "Lang",
@@ -108,15 +108,15 @@
       "native_fixed_line": 92.36842105263158,
       "csv_branch": "80.1",
       "native_fixed_branch": 74.85714285714286,
-      "native_result": "gpt-5.6-terra/Result/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
+      "native_result": "gpt-5.6-terra/Result/Lang/Lang_1b/Lang-1-Reevaluation-s0-b6cd12c8a406/result.json"
     }
   ],
   "parse_errors": [],
-  "source_file_count": 4789,
+  "source_file_count": 2395,
   "delivery_logs": {
     "files": 29,
     "identical_in_new_folder": 0,
-    "zip_files": 29,
+    "zip_files": 0,
     "zip_matching_files": 0
   },
   "suite_hash_method": "For current flat Java files: sorted filename UTF-8 + NUL + file bytes, with raw/LF/CRLF variants; matches do not establish model origin.",

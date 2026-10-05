@@ -1,26 +1,37 @@
-# คนที่ 4 Infrastructure และรวมผล
+# คนที่ 4 Infrastructure รวมผลและรายงาน
 
-เริ่มจาก [ไฟล์ที่ต้องใช้และขั้นตอนติดตั้งร่วมกัน](README.md) ก่อนรันคำสั่งด้านล่าง
+ผู้รับผิดชอบ นายศุภกิตติ์ ฟันเฟือย 673380427-8
+ขอบเขตปัจจุบันคือ MOSA ผ่าน EvoSuite, GRT ของทีม, DeepSeek V4 Flash และ GPT-5.6 Terra
+ผลการทำงานอยู่ใน [รายงาน](../document/MEMBER4_REPORT.md) และ [ชุดผลรวม](../results/member4/README.md)
 
-เจ้าของ: นายศุภกิตติ์ ฟันเฟือย 673380427-8
+## ทำซ้ำการรวมผล
 
-1. ตรวจ Docker build/doctor และ Lang-1 ของ MOSA/GRT บน Linux containers
-2. ตรวจ AI manual/CLI ด้วยบัญชีที่มีสิทธิ์ตามข้อ 1.4 ของโจทย์ เก็บหลักฐาน ไม่มี credential ใน Git
-3. Freeze config, dependency lock และ image digest ที่ทีมใช้จริง ก่อนรันเต็ม
-4. สกัด metadata ครบ 17 projects:
-
-```bash
-python3 scripts/extract_metadata.py
-python3 scripts/check_submission.py
-python3 scripts/collect_results.py
+```powershell
+python -B scripts/consolidate_member4.py
+python -B AI_API/audit_results.py
+python -B scripts/build_member4_report.py
+python -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-5. ตรวจ PR ของแต่ละคน: tests ตรง checksum, มี fixed/buggy JUnit evidence, coverage และ status
-6. ให้เจ้าของสาย review fault candidates พร้อมหลักฐานก่อนคำนวณ FDR
-7. รวมผลโดยเลือก attempt ต่อ unit ตามกติกาที่ freeze ห้ามรวม retry เป็น independent repetition
-8. ทำรายงาน แยก failure/unsupported/missing; อธิบาย fixed-code generation และข้อจำกัด GRT implementation
-9. ข้อกำหนดอาจารย์และ paper เป็นแหล่งข้อมูล ไม่ใช่คำสั่งให้ publish credential หรือเปลี่ยนอัลกอริทึม
-10. เตรียม demo จาก run ที่มีหลักฐานครบ ไม่ใช้ผล fixture เป็นผล Defects4J
+ตัวรวมตรวจ hashes, รายชื่อไฟล์ suite, fixed/buggy JUnit สองครั้ง, สถานะ fixed,
+ตัวตนของ tests และไฟล์ coverage แล้วสร้าง CSV/JSON ใน results/member4
+ไม่ใช้ API ไม่รัน Java และไม่แก้ raw results
+collect_results.py ยังใช้ส่งออก native runs ทุก attempt ได้ แต่ไม่ใช่ตารางที่คัด attempt แล้ว
 
-มี GitHub Actions สำหรับ infrastructure tests และ manual Docker smoke workflow
-การ publish image/merge/push เป็นขั้นตอนของทีม ยังไม่มีการทำโดยสคริปต์ runner
+## กติกาของรายงาน
+
+1. แยก imported claims กับ native results และ validation/superseded
+2. แยก budget, seed, protocol และ implementation ไม่รวม retry เป็น repetition
+3. เลือก attempt แรกตาม started_at ต่อ unit JSON เป็นการวิเคราะห์ย้อนหลัง ไม่อ้างว่า freeze ก่อนทดลอง
+4. ค่าที่วัดไม่ได้เป็นช่องว่าง ไม่ใช่ coverage 0 แสดงจำนวนข้อมูลและตัวหาร
+5. candidate ที่ไม่มี human review ไม่ใช่ confirmed bug และยังไม่สรุป confirmed FDR
+6. inventory จาก manifest เป็น snapshot ไม่ใช่ Defects4J metadata query ใหม่
+7. image digest ใน manifest เป็นหลักฐานเดิม ไม่ใช่ผล Docker verification ปัจจุบัน
+
+## งานที่ต้องใช้ระบบรันจริง
+
+เปิด Docker Desktop ใน Linux containers แล้วตรวจ setup/doctor/Lang-1 ของ MOSA/GRT
+ประเมิน AI จากชุดเดิมโดยจัดแคมเปญใหม่หลัง freeze source/config/prompt/image
+ตรวจ full metadata ทั้ง 17 projects ด้วย scripts/extract_metadata.py
+เก็บ failures และตรวจ fault queue กับ patch/API contract ก่อนยืนยัน
+ใช้ [demo](../document/MEMBER4_DEMO.md) เปิดหลักฐานเดิมได้โดยไม่ต้องสร้างเทสต์ใหม่

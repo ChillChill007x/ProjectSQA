@@ -1,0 +1,248 @@
+{
+  "project": "Mockito",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.mockito.internal.util.Timer"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.mockito.exceptions.Reporter"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.mockito.internal.verification.VerificationOverTimeImpl"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.mockito.Matchers"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.mockito.internal.util.reflection.GenericMetadataSupport"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.answers.CallsRealMethods"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.mockito.internal.creation.DelegatingMethod"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.mockito.internal.util.reflection.GenericMaster"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.mockito.internal.MockHandler"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.mockito.internal.MockHandler",
+        "org.mockito.internal.MockitoCore"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.mockito.internal.configuration.injection.FinalMockCandidateFilter"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.mockito.Mockito",
+        "org.mockito.internal.MockitoCore"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.mockito.internal.creation.MockSettingsImpl",
+        "org.mockito.internal.util.MockUtil"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.mockito.internal.configuration.injection.PropertyAndSetterInjection",
+        "org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.MockCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter",
+        "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.mockito.internal.creation.instance.ConstructorInstantiator"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.mockito.internal.matchers.Equality"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.mockito.internal.util.Primitives"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.mockito.internal.util.MockUtil"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.mockito.internal.configuration.DefaultInjectionEngine"
+      ]
+    },
+    {
+      "bug": "29",
+      "metadata_targets": [
+        "org.mockito.internal.matchers.Same"
+      ]
+    },
+    {
+      "bug": "30",
+      "metadata_targets": [
+        "org.mockito.exceptions.Reporter",
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls"
+      ]
+    },
+    {
+      "bug": "31",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls"
+      ]
+    },
+    {
+      "bug": "32",
+      "metadata_targets": [
+        "org.mockito.internal.configuration.SpyAnnotationEngine"
+      ]
+    },
+    {
+      "bug": "33",
+      "metadata_targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ]
+    },
+    {
+      "bug": "34",
+      "metadata_targets": [
+        "org.mockito.internal.invocation.InvocationMatcher"
+      ]
+    },
+    {
+      "bug": "35",
+      "metadata_targets": [
+        "org.mockito.Matchers"
+      ]
+    },
+    {
+      "bug": "36",
+      "metadata_targets": [
+        "org.mockito.internal.invocation.Invocation"
+      ]
+    },
+    {
+      "bug": "37",
+      "metadata_targets": [
+        "org.mockito.internal.stubbing.answers.AnswersValidator"
+      ]
+    },
+    {
+      "bug": "38",
+      "metadata_targets": [
+        "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool"
+      ]
+    }
+  ]
+}

@@ -45,7 +45,7 @@
 
 2.4 GRT: Constant Mining, Impurity, Elephant Brain, Detective, Orienteering, Bloodhound
 
-2.5 Claude Code/Codex: เครื่องมือกับ model เป็นคนละส่วน; อธิบายรูปแบบที่ทีมทดลองจริง
+2.5 DeepSeek V4 Flash/GPT-5.6 Terra: เครื่องมือกับ model เป็นคนละส่วน; อธิบายรูปแบบที่ทีมทดลองจริง
 
 2.6 งานวิจัยที่เกี่ยวข้องและตารางเปรียบเทียบหลักการ; ไม่ใส่ผลคาดเดาว่าเครื่องมือใดชนะ
 

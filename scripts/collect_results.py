@@ -5,8 +5,11 @@ import json
 from pathlib import Path
 from common import ROOT, FOLDERS, dump
 
+# Keep historical CLI records readable while including the current member-3 models.
+RESULT_FOLDERS = dict(FOLDERS, deepseek="Deepseek-v4_flash", openai="gpt-5.6-terra")
+
 def records():
-    for folder in FOLDERS.values():
+    for folder in RESULT_FOLDERS.values():
         for name in ("Result", "Result_Round1", "Result_Round2"):
             for path in sorted((ROOT / folder / name).rglob("result.json")):
                 data = json.loads(path.read_text(encoding="utf-8"))

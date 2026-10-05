@@ -1,0 +1,157 @@
+{
+  "project": "JxPath",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.Expression"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.NodePointer"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.NamespaceResolver",
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreFunction"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.axes.UnionContext"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.axes.AttributeContext"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.beans.PropertyPointer"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ]
+    }
+  ]
+}

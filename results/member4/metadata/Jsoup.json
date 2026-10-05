@@ -1,0 +1,603 @@
+{
+  "project": "Jsoup",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.jsoup.nodes.Document"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.jsoup.parser.Parser"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.parser.Tag"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.jsoup.parser.Parser"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.jsoup.nodes.Document"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.jsoup.nodes.Node"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.jsoup.nodes.Node"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.jsoup.select.Selector"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.jsoup.select.Selector"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.jsoup.nodes.Node"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.jsoup.parser.Tokeniser",
+        "org.jsoup.parser.TokeniserState"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.jsoup.parser.TreeBuilderState"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.jsoup.nodes.DocumentType"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.jsoup.parser.TreeBuilderState"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.jsoup.safety.Whitelist"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.jsoup.select.CombiningEvaluator",
+        "org.jsoup.select.QueryParser"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node",
+        "org.jsoup.select.Elements"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader",
+        "org.jsoup.parser.Tokeniser"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.jsoup.parser.TokeniserState"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.jsoup.parser.Tag"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.jsoup.safety.Cleaner"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.parser.Tokeniser"
+      ]
+    },
+    {
+      "bug": "29",
+      "metadata_targets": [
+        "org.jsoup.nodes.Document"
+      ]
+    },
+    {
+      "bug": "30",
+      "metadata_targets": [
+        "org.jsoup.safety.Cleaner"
+      ]
+    },
+    {
+      "bug": "31",
+      "metadata_targets": [
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.TokeniserState",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "32",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "33",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "34",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader"
+      ]
+    },
+    {
+      "bug": "35",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "36",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "37",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "38",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "39",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "40",
+      "metadata_targets": [
+        "org.jsoup.nodes.DocumentType"
+      ]
+    },
+    {
+      "bug": "41",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "42",
+      "metadata_targets": [
+        "org.jsoup.nodes.FormElement"
+      ]
+    },
+    {
+      "bug": "43",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "44",
+      "metadata_targets": [
+        "org.jsoup.parser.TreeBuilder"
+      ]
+    },
+    {
+      "bug": "45",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "46",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities"
+      ]
+    },
+    {
+      "bug": "47",
+      "metadata_targets": [
+        "org.jsoup.nodes.Entities"
+      ]
+    },
+    {
+      "bug": "48",
+      "metadata_targets": [
+        "org.jsoup.helper.HttpConnection"
+      ]
+    },
+    {
+      "bug": "49",
+      "metadata_targets": [
+        "org.jsoup.nodes.Node"
+      ]
+    },
+    {
+      "bug": "50",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "51",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader"
+      ]
+    },
+    {
+      "bug": "52",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil",
+        "org.jsoup.nodes.XmlDeclaration",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "53",
+      "metadata_targets": [
+        "org.jsoup.parser.TokenQueue"
+      ]
+    },
+    {
+      "bug": "54",
+      "metadata_targets": [
+        "org.jsoup.helper.W3CDom"
+      ]
+    },
+    {
+      "bug": "55",
+      "metadata_targets": [
+        "org.jsoup.parser.TokeniserState"
+      ]
+    },
+    {
+      "bug": "56",
+      "metadata_targets": [
+        "org.jsoup.nodes.DocumentType",
+        "org.jsoup.parser.HtmlTreeBuilderState",
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.TokeniserState",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "57",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attributes"
+      ]
+    },
+    {
+      "bug": "58",
+      "metadata_targets": [
+        "org.jsoup.Jsoup",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.safety.Cleaner"
+      ]
+    },
+    {
+      "bug": "59",
+      "metadata_targets": [
+        "org.jsoup.parser.Token"
+      ]
+    },
+    {
+      "bug": "60",
+      "metadata_targets": [
+        "org.jsoup.parser.TokenQueue",
+        "org.jsoup.select.QueryParser"
+      ]
+    },
+    {
+      "bug": "61",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "62",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "63",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.Tokeniser"
+      ]
+    },
+    {
+      "bug": "64",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "65",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "66",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "67",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "68",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "69",
+      "metadata_targets": [
+        "org.jsoup.nodes.FormElement"
+      ]
+    },
+    {
+      "bug": "70",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element"
+      ]
+    },
+    {
+      "bug": "71",
+      "metadata_targets": [
+        "org.jsoup.nodes.PseudoTextElement",
+        "org.jsoup.select.Evaluator",
+        "org.jsoup.select.QueryParser"
+      ]
+    },
+    {
+      "bug": "72",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader"
+      ]
+    },
+    {
+      "bug": "73",
+      "metadata_targets": [
+        "org.jsoup.helper.W3CDom"
+      ]
+    },
+    {
+      "bug": "74",
+      "metadata_targets": [
+        "org.jsoup.helper.StringUtil"
+      ]
+    },
+    {
+      "bug": "75",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attributes"
+      ]
+    },
+    {
+      "bug": "76",
+      "metadata_targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ]
+    },
+    {
+      "bug": "77",
+      "metadata_targets": [
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "78",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "79",
+      "metadata_targets": [
+        "org.jsoup.nodes.LeafNode"
+      ]
+    },
+    {
+      "bug": "80",
+      "metadata_targets": [
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "81",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "82",
+      "metadata_targets": [
+        "org.jsoup.helper.DataUtil"
+      ]
+    },
+    {
+      "bug": "83",
+      "metadata_targets": [
+        "org.jsoup.parser.CharacterReader",
+        "org.jsoup.parser.TokeniserState"
+      ]
+    },
+    {
+      "bug": "84",
+      "metadata_targets": [
+        "org.jsoup.helper.W3CDom"
+      ]
+    },
+    {
+      "bug": "85",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attribute"
+      ]
+    },
+    {
+      "bug": "86",
+      "metadata_targets": [
+        "org.jsoup.nodes.Comment"
+      ]
+    },
+    {
+      "bug": "87",
+      "metadata_targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.HtmlTreeBuilderState",
+        "org.jsoup.parser.Tag"
+      ]
+    },
+    {
+      "bug": "88",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attribute"
+      ]
+    },
+    {
+      "bug": "89",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attribute"
+      ]
+    },
+    {
+      "bug": "90",
+      "metadata_targets": [
+        "org.jsoup.helper.HttpConnection"
+      ]
+    },
+    {
+      "bug": "91",
+      "metadata_targets": [
+        "org.jsoup.UncheckedIOException",
+        "org.jsoup.parser.CharacterReader"
+      ]
+    },
+    {
+      "bug": "92",
+      "metadata_targets": [
+        "org.jsoup.nodes.Attributes",
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.ParseSettings",
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ]
+    },
+    {
+      "bug": "93",
+      "metadata_targets": [
+        "org.jsoup.nodes.FormElement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "project": "Time",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.joda.time.Partial",
+        "org.joda.time.field.UnsupportedDurationField"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.joda.time.Partial",
+        "org.joda.time.field.UnsupportedDurationField"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.joda.time.MutableDateTime"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.joda.time.Partial"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.joda.time.Period"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.joda.time.chrono.GJChronology"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.joda.time.format.DateTimeFormatter"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.joda.time.base.BaseSingleFieldPeriod"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.joda.time.tz.ZoneInfoCompiler"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.joda.time.LocalDate",
+        "org.joda.time.LocalDateTime"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.joda.time.format.PeriodFormatterBuilder"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.joda.time.chrono.BasicMonthOfYearDateTimeField"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.joda.time.field.FieldUtils"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.joda.time.format.DateTimeFormatter"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.joda.time.chrono.GJChronology"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.joda.time.format.DateTimeFormatterBuilder"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.joda.time.base.BasePeriod"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.joda.time.format.DateTimeParserBucket"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.joda.time.DateTimeZone",
+        "org.joda.time.chrono.ZonedChronology",
+        "org.joda.time.field.LenientDateTimeField"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.joda.time.format.PeriodFormatterBuilder"
+      ]
+    }
+  ]
+}

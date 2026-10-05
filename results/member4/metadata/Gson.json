@@ -1,0 +1,123 @@
+{
+  "project": "Gson",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "com.google.gson.TypeInfoFactory"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "com.google.gson.internal.ConstructorConstructor"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "com.google.gson.stream.JsonReader",
+        "com.google.gson.stream.JsonWriter"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.util.ISO8601Utils"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "com.google.gson.stream.JsonReader"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "com.google.gson.internal.UnsafeAllocator"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.JsonTreeWriter",
+        "com.google.gson.internal.bind.TypeAdapters",
+        "com.google.gson.stream.JsonWriter"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "com.google.gson.internal.bind.JsonTreeReader"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "com.google.gson.stream.JsonReader"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "com.google.gson.stream.JsonWriter"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "com.google.gson.DefaultDateTypeAdapter"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # AI: DeepSeek V4 Flash และ GPT-5.6 Terra ผ่าน KKU
 
+> สถานะ checkout วันที่ 5 ตุลาคม 2026: สคริปต์ที่หายกู้จาก implementation.zip แล้ว
+> แต่ยังขาด active-bugs-17.json และบางพาธของแคมเปญเดิมเป็นโครงสร้างก่อนย้าย
+> อ่าน [เงื่อนไขติดตั้งและเริ่มแคมเปญใน README หลัก](../README.md#ai) ก่อนใช้ plan/run
+> การรวมข้อมูลนำเข้าปัจจุบันใช้ `python -B scripts/consolidate_member4.py` และ `python -B AI_API/audit_results.py`
+> อย่าใช้ collect workflow existing ทับ results/ai_existing_summary.csv ที่เป็นข้อมูลนำเข้า
+> คำสั่งทดลองใหม่ด้านล่างต้องใช้แคมเปญและ inventory ที่ตรวจพร้อมแล้ว
+
 คู่มือหลักของทีมสำหรับ Windows PowerShell (รันที่ root ของ repo)
 ระบบใช้ Direct API ไม่ต้องติดตั้งหรือ login Claude Code/Codex CLI
 

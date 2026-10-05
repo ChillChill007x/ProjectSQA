@@ -11,6 +11,9 @@ import json
 import sys
 import zipfile
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+from consolidate_member4 import resolve_saved
+
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'AI_API/ImportedResults'
 LABELS={'DeepSeek V4 Flash':'deepseek','gpt-5.6-terra':'openai'}
@@ -41,14 +44,16 @@ def native_records():
         manifest=ROOT/'AI_API'/folder/'manifest.json';states=collections.Counter();found=[]
         for u in read(manifest)['units']:
             p=ROOT/FOLDERS[u['tool']]/'Result'/f"{u['project']}_{u['bug']}b"/rid(u)/'result.json'
-            if not p.exists():states['NOT_RUN']+=1;continue
+            p = resolve_saved(rel(p))
+            if p is None:states['NOT_RUN']+=1;continue
             r=read(p);states[r.get('status','UNKNOWN')]+=1;found.append(rel(p))
             if workflow=='existing':out[key(u['project'],u['bug'],u['tool'])]=(p,r)
         stats[workflow]={'status_counts':dict(states),'result_files':found,'manifest_sha256':sha(manifest)}
     return out,stats
 
 def suite_hashes(provider,project,bug):
-    files=sorted((ROOT/FOLDERS[provider]/'TestCode'/f'{project}_{bug}b').glob('*.java'))
+    folder=resolve_saved(f'{FOLDERS[provider]}/TestCode/{project}_{bug}b')
+    files=sorted(folder.glob('*.java')) if folder else []
     modes={}
     for mode in ['raw','LF','CRLF']:
         digest=hashlib.sha256()
@@ -67,13 +72,16 @@ def number_diff(a,b):
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
-    source_csv=ROOT/'results/benchmark_results.csv';rows=csv_rows(source_csv)
+    source_csv=ROOT/'results/benchmark.csv'
+    if not source_csv.exists():source_csv=ROOT/'results/benchmark_results.csv'
+    rows=csv_rows(source_csv)
     ai=[r for r in rows if r['Technique'] in LABELS]
     supplied=csv_rows(ROOT/'results/ai_existing_summary.csv')
     summary_index=collections.defaultdict(list)
     for r in supplied:summary_index[key(r['project'],r['bug'],r['provider'])].append(r)
-    inventory=read(ROOT/'dataset/defects4j/active-bugs-17.json')
-    expected={(str(b['project']),str(b['bug'])) for b in inventory['bugs']}
+    inventory_path=ROOT/'dataset/defects4j/active-bugs-17.json'
+    inventory=read(inventory_path)['bugs'] if inventory_path.exists() else read(ROOT/'AI_API/Campaign/manifest.json')['units']
+    expected={(str(b['project']),str(b['bug'])) for b in inventory}
     logs=collections.defaultdict(list);parse_errors=[]
     for path in sorted((ROOT/'results/run_logs').glob('*.json')):
         try:
@@ -136,7 +144,7 @@ def main():
                 compile_error=counts['COMPILE_ERROR'],flaky_or_regression=counts['FLAKY_OR_REGRESSION'],not_detected=counts['NOT_DETECTED'],bug_detected=counts['BUG_DETECTED'],no_suite=counts['NO_SUITE'],native_results=sum(bool(u['native_result']) for u in part)))
     source_files=[]
     for p in sorted((ROOT/'results').rglob('*')):
-        if p.is_file():source_files.append({'path':rel(p),'sha256':sha(p),'bytes':p.stat().st_size})
+        if p.is_file() and 'member4' not in p.parts:source_files.append({'path':rel(p),'sha256':sha(p),'bytes':p.stat().st_size})
     delivery=list((ROOT/'results/member3_delivery_logs').glob('*.log'))
     duplicate_folder=ROOT/'results/New folder/member3_delivery_logs'
     duplicates=sum((duplicate_folder/p.name).exists() and sha(p)==sha(duplicate_folder/p.name) for p in delivery)
@@ -170,7 +178,7 @@ def main():
         '- [รายละเอียดรายบั๊กและ flags](progress.csv) / [แยกโปรเจกต์](projects.csv)',
         '- [สรุปพร้อมตัวหาร](progress.json) / [รายการแหล่งข้อมูลและ SHA256](source_manifest.json)',
         '- [ค่าที่ขัดแย้งกับ native fixed coverage](coverage_conflicts.json)',
-        '- [CSV ต้นทาง](../../results/benchmark_results.csv) / [summary ที่นำเข้า](../../results/ai_existing_summary.csv)',
+        f'- [CSV ต้นทาง](../../{rel(source_csv)}) / [summary ที่นำเข้า](../../results/ai_existing_summary.csv)',
         '- CSV และ run logs ที่ run-id ต่างกันไม่ถูกนำมารวมเป็นหลักฐานของการรันเดียวกันโดยอัตโนมัติ',
         '- ช่อง model/time/token ที่ไม่มี raw API evidence ยังคงไม่ยืนยัน ไม่คัดลอกค่าประมาณเป็นหลักฐานใหม่',
         '- Math-13 รายงาน NO_SUITE ทั้งสองชุด แต่ขณะตรวจมี Java แล้ว จึงต้องตรวจหรือประเมินใหม่',

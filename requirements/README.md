@@ -1,42 +1,17 @@
-# เริ่มต้นสำหรับสมาชิกทุกคน
+# คู่มือสมาชิกโครงการ
 
-Clone ทั้ง repository ไม่ต้องคัดลอกเฉพาะไฟล์ requirements เพราะ runner ใช้ scripts,
-config, Docker และ Java support ร่วมกัน คู่มือเฉพาะคนอยู่ด้านล่าง
+ขอบเขต AI เปลี่ยนจาก Claude/Codex เป็น DeepSeek V4 Flash และ GPT-5.6 Terra
 
-| คน | คู่มือ | โฟลเดอร์งานที่ต้องส่ง |
+| คน | คู่มือ | โฟลเดอร์งาน |
 |---|---|---|
-| 1 | [MOSA / EvoSuite](sqa-01-mosa-evosuite.md) | MOSA_EvoSuite/Configuration, Result_Round1, Result_Round2, Test และ Code ถ้าแก้ |
-| 2 | [GRT](sqa-02-grt.md) | GRT/Configuration, Result_Round1, Result_Round2, Test และ Code ถ้าแก้ |
-| 3 | [Claude Code / Codex](sqa-03-claude-code-codex.md) | Claude-sonnet_4_6 และ Codex: Prompt, Result, TestCode |
-| 4 | [Infrastructure / รวมผล](sqa-04-consolidation-report-deploy.md) | config, scripts, docker, metadata และเอกสารที่แก้ |
+| 1 | [MOSA 854](sqa-01-mosa-full854-round1.md) | MOSA_EvoSuite |
+| 2 | [GRT 854](sqa-02-grt-full854-round1.md) | GRT |
+| 3 | [DeepSeek และ GPT](sqa-03-deepseek-gpt.md) | Deepseek-v4_flash, gpt-5.6-terra |
+| 4 | [Infrastructure รวมผลและรายงาน](sqa-04-consolidation-report-deploy.md) | scripts, config, results/member4, document |
 
-## ทำตามลำดับนี้
-
-1. ติดตั้ง Git และ Docker Desktop เปิด Docker ในโหมด Linux containers
-2. Clone repository ทั้งชุด แล้วสร้าง branch ของตัวเองตาม [คู่มือ Git](../GIT-SETUP.md)
-   งานที่ยังไม่ push จะยังไม่อยู่ใน clone ของเพื่อน ต้องส่งชุดเตรียมระบบขึ้น repository ก่อนให้เพื่อนเริ่ม
-3. เปิด PowerShell ในโฟลเดอร์ repository แล้วรัน:
-
-   ```powershell
-   powershell -ExecutionPolicy Bypass -File scripts/start.ps1
-   ```
-
-   สำหรับ AI แบบ CLI ใช้ `scripts/start.ps1 -AI` และ login ตาม
-   [คู่มือ Docker/AI](../docker/README-docker-desktop.md)
-   Linux/macOS ใช้ `bash scripts/start.sh` ดูตัวเลือกในคู่มือ Docker
-4. เมื่อ build และ doctor ผ่าน จะเข้า shell ของ container ให้รันคำสั่ง Python
-   ใน requirements ของตัวเองจาก shell นี้ ไม่ต้องลง Java/Python/EvoSuite บนเครื่องเพิ่ม
-5. คนที่ 1/2 ใช้คู่มือใหม่ [MOSA 854](sqa-01-mosa-full854-round1.md) / [GRT 854](sqa-02-grt-full854-round1.md)
-   ตรวจ prepare และ Lang-1 smoke ก่อนเริ่มครบ 854 บัค เฉพาะ Round1, seed 101, 30 วินาทีต่อ target
-   ตาม [ขั้นตอนกลาง](../STEP-BY-STEP.md) และ [protocol](../BENCHMARK_PROTOCOL.md)
-6. ตรวจผลด้วย `python3 scripts/check_submission.py` แล้ว commit/push โฟลเดอร์ของตัวเอง
-   ตามคู่มือ Git เก็บ logs, configuration, generated tests และ AI prompts ให้ครบ
-   ไม่ส่ง `work/` หรือข้อมูล login
-
-ไฟล์ส่วนกลางที่ทุกคนใช้: `config/benchmark.json`, `config/dependencies.lock.json`,
-`scripts/run_benchmark.py`, `scripts/check_submission.py` และ `docker/docker-compose.yml`
-ไม่ต้องแก้ไฟล์เหล่านี้แยกคน ถ้าจะเปลี่ยนค่าทดลองให้ตกลงร่วมกันก่อน
-
-สถานะ: Docker build และ MOSA/GRT บน Defects4J Lang-1 ผ่านแล้ว รวม coverage หลังแก้ตัวประเมิน
-สมาชิกยังต้องตรวจบนเครื่องตัวเองก่อนเริ่มชุดเต็ม ส่วน AI จริงยังไม่ได้ตรวจ
-ดู [หลักฐาน validation](../VALIDATION.md) ก่อนเริ่มเก็บผลเต็มชุด
+Clone ทั้ง repository อ่าน [รายงานตรวจและรวมผล](../document/MEMBER4_REPORT.md) ก่อนใช้ตารางเดิม
+MOSA/GRT ชุดหลักเป็น Round1, seed 101, budget 30 วินาทีต่อ target
+ผล 60/180 วินาทีเป็นอีกชุดหนึ่ง ไม่รวมกับชุดหลัก
+การรวมผล offline ใช้ `python -B scripts/consolidate_member4.py`
+การเริ่ม Docker ใช้ [คู่มือระบบ](../docker/README-docker-desktop.md)
+และ AI ใช้ [คู่มือเฉพาะ](../AI_API/README.md) โดยต้องตรวจแคมเปญที่ freeze ไว้ก่อนรัน

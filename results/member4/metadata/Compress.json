@@ -1,0 +1,305 @@
+{
+  "project": "Compress",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream",
+        "org.apache.commons.compress.changes.ChangeSetPerformer"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipFile"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.sevenz.SevenZOutputFile"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.sevenz.Coders"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.apache.commons.compress.utils.IOUtils"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "29",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "30",
+      "metadata_targets": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream"
+      ]
+    },
+    {
+      "bug": "31",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "32",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "33",
+      "metadata_targets": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory",
+        "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream"
+      ]
+    },
+    {
+      "bug": "34",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.X7875_NewUnix"
+      ]
+    },
+    {
+      "bug": "35",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "36",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile"
+      ]
+    },
+    {
+      "bug": "37",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "38",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry"
+      ]
+    },
+    {
+      "bug": "39",
+      "metadata_targets": [
+        "org.apache.commons.compress.utils.ArchiveUtils"
+      ]
+    },
+    {
+      "bug": "40",
+      "metadata_targets": [
+        "org.apache.commons.compress.utils.BitInputStream"
+      ]
+    },
+    {
+      "bug": "41",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ]
+    },
+    {
+      "bug": "42",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.UnixStat",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ]
+    },
+    {
+      "bug": "43",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream"
+      ]
+    },
+    {
+      "bug": "44",
+      "metadata_targets": [
+        "org.apache.commons.compress.utils.ChecksumCalculatingInputStream"
+      ]
+    },
+    {
+      "bug": "45",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ]
+    },
+    {
+      "bug": "46",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp"
+      ]
+    },
+    {
+      "bug": "47",
+      "metadata_targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ]
+    }
+  ]
+}

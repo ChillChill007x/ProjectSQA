@@ -1,0 +1,177 @@
+{
+  "project": "JacksonCore",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.io.NumberInput",
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.JsonWriteContext"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.base.ParserMinimalBase",
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.JsonGeneratorImpl"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.io.IOContext"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.util.JsonParserSequence"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.base.GeneratorBase",
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator",
+        "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.JsonGenerator"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.base.ParserBase",
+        "com.fasterxml.jackson.core.base.ParserMinimalBase"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "com.fasterxml.jackson.core.json.async.NonBlockingJsonParser"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "project": "JacksonXml",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator"
+      ]
+    }
+  ]
+}

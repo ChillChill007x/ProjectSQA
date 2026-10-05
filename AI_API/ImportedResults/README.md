@@ -1,6 +1,6 @@
 # ความคืบหน้าจากไฟล์ results
 
-ตรวจเมื่อ 2026-10-04T05:55:56.064476+00:00 (UTC)
+ตรวจเมื่อ 2026-10-05T14:55:45.036318+00:00 (UTC)
 
 รายงานนี้อ่านไฟล์ที่ผู้ใช้นำมาใส่ใน results ไม่ได้รัน AI/Defects4J เพิ่ม และไม่สร้าง logs ย้อนหลัง
 **100% ในหน้านี้หมายถึงมีสถานะใน CSV ครบรายการบั๊ก ไม่ได้หมายถึงเทสผ่านครบ หรือยืนยันว่าเป็น generation ใหม่**
@@ -32,11 +32,11 @@
 - [รายละเอียดรายบั๊กและ flags](progress.csv) / [แยกโปรเจกต์](projects.csv)
 - [สรุปพร้อมตัวหาร](progress.json) / [รายการแหล่งข้อมูลและ SHA256](source_manifest.json)
 - [ค่าที่ขัดแย้งกับ native fixed coverage](coverage_conflicts.json)
-- [CSV ต้นทาง](../../results/benchmark_results.csv) / [summary ที่นำเข้า](../../results/ai_existing_summary.csv)
+- [CSV ต้นทาง](../../results/benchmark.csv) / [summary ที่นำเข้า](../../results/ai_existing_summary.csv)
 - CSV และ run logs ที่ run-id ต่างกันไม่ถูกนำมารวมเป็นหลักฐานของการรันเดียวกันโดยอัตโนมัติ
 - ช่อง model/time/token ที่ไม่มี raw API evidence ยังคงไม่ยืนยัน ไม่คัดลอกค่าประมาณเป็นหลักฐานใหม่
 - Math-13 รายงาน NO_SUITE ทั้งสองชุด แต่ขณะตรวจมี Java แล้ว จึงต้องตรวจหรือประเมินใหม่
-- delivery logs 29 ไฟล์; สำเนาใน New folder ตรง 0 ไฟล์ และ ZIP ตรง 0/29 ไฟล์ ไม่นับสำเนาเป็นงานเพิ่ม
+- delivery logs 29 ไฟล์; สำเนาใน New folder ตรง 0 ไฟล์ และ ZIP ตรง 0/0 ไฟล์ ไม่นับสำเนาเป็นงานเพิ่ม
 
 ## Coverage ที่ต้องตรวจแหล่งที่มา
 

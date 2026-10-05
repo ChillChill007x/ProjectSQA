@@ -1,0 +1,109 @@
+{
+  "project": "Csv",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.csv.ExtendedBufferedReader"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.csv.Lexer"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVParser"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVParser"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVParser"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVFormat",
+        "org.apache.commons.csv.CSVPrinter"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.csv.CSVParser"
+      ]
+    }
+  ]
+}

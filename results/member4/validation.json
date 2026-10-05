@@ -1,0 +1,29 @@
+{
+  "audit_date_local": "2026-10-05",
+  "timezone": "Asia/Bangkok",
+  "python_tests": {
+    "passed": 28,
+    "failed": 0,
+    "log": "results/member4/python-tests.txt"
+  },
+  "cli_help": [
+    "scripts/ai_workspace.py",
+    "scripts/run_full_round1.py"
+  ],
+  "native_ai_checks": {
+    "deepseek": "passed 1 native run; relocated path notice",
+    "openai": "passed 1 native run; relocated path notice"
+  },
+  "readme_validation": {
+    "local_links_missing": [],
+    "visual_preview": "Chromium headless; top/structure inspected; all images loaded; no horizontal body overflow",
+    "details_sections": 1
+  },
+  "docker": "NOT_VERIFIED: Docker Linux engine pipe unavailable; no build/doctor/Defects4J rerun",
+  "api_calls": 0,
+  "limitations": [
+    "Native coverage.xml existence checked; coverage not recomputed",
+    "No human fault confirmations created",
+    "Recovered AI workflow requires inventory/path reconciliation and fresh campaign before execution"
+  ]
+}

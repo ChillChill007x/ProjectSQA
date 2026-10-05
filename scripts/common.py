@@ -12,7 +12,8 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 WORK = Path(os.environ.get("SQA_WORK", ROOT / "work")).resolve()
 TOOLS = Path(os.environ.get("SQA_TOOLS", "/opt/sqa/lib" if os.name != "nt" else WORK / "vendor"))
-FOLDERS = {"evosuite": "MOSA_EvoSuite", "grt": "GRT", "claude_code": "Claude-sonnet_4_6", "codex": "Codex"}
+FOLDERS = {"evosuite": "MOSA_EvoSuite", "grt": "GRT", "claude_code": "Claude-sonnet_4_6", "codex": "Codex",
+           "deepseek": "Deepseek-v4_flash", "openai": "gpt-5.6-terra"}
 
 def config():
     return json.loads((ROOT / "config/benchmark.json").read_text(encoding="utf-8"))

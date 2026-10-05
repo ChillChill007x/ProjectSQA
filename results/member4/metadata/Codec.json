@@ -1,0 +1,130 @@
+{
+  "project": "Codec",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.codec.language.Caverphone",
+        "org.apache.commons.codec.language.Metaphone",
+        "org.apache.commons.codec.language.SoundexUtils"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64",
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.codec.language.Caverphone"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.codec.net.QuotedPrintableCodec"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.BaseNCodecInputStream"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.CharSequenceUtils",
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.codec.language.bm.Lang",
+        "org.apache.commons.codec.language.bm.PhoneticEngine",
+        "org.apache.commons.codec.language.bm.Rule",
+        "src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.codec.language.Soundex"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.Base32"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ]
+    }
+  ]
+}

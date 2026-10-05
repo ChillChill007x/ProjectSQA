@@ -1,0 +1,27 @@
+{
+  "protocol_version": "api-3",
+  "transport": "kku",
+  "workers": 2,
+  "docker_workers": 2,
+  "max_repairs": 2,
+  "request_timeout_seconds": 180,
+  "max_output_tokens": 4096,
+  "max_source_bytes": 120000,
+  "max_request_bytes": 180000,
+  "core_image": "project-sqa:core-v2",
+  "providers": {
+    "deepseek": {
+      "model": "deepseek-v4-flash",
+      "base_url": "https://gen.ai.kku.ac.th/api/v1",
+      "key_env": "KKU_API_KEY",
+      "thinking_disabled": true
+    },
+    "openai": {
+      "model": "gpt-5.6-terra",
+      "base_url": "https://gen.ai.kku.ac.th/api/v1",
+      "key_env": "KKU_API_KEY",
+      "reasoning_effort": "none"
+    }
+  },
+  "campaign_version": "api-3"
+}

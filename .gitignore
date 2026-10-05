@@ -1,5 +1,6 @@
 # Local checkouts, downloaded binaries, compiled classes and authentication.
 /work/
+/tmp/
 *.checkout/
 __pycache__/
 *.pyc

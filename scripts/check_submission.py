@@ -3,19 +3,27 @@
 import argparse
 import json
 from common import ROOT, FOLDERS, sha
-from collect_results import records
+from collect_results import records, RESULT_FOLDERS
+from consolidate_member4 import audit_native
 
 def suite_hashes(folder):
     return {p.resolve().relative_to(ROOT).as_posix(): sha(p) for p in sorted(folder.rglob("*.java"))}
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--tool",choices=FOLDERS)
+    ap.add_argument("--tool",choices=RESULT_FOLDERS)
     args=ap.parse_args()
     failures=[];count=0
     for path,data in records():
         if args.tool and data["unit"]["tool"]!=args.tool:continue
         count+=1
+        if data['unit']['tool'] in ('deepseek', 'openai'):
+            audited = audit_native(path, data)
+            if not audited['integrity_ok']:
+                failures.append(f"{path}: {audited['flags']}")
+            elif audited['flags']:
+                print(f"NOTICE: {path}: {audited['flags']}")
+            continue
         for key in ("tests","result","config"):
             dest=(ROOT/data["paths"][key]).resolve()
             if ROOT not in dest.parents or not dest.is_dir():failures.append(f"{path}: missing/invalid {key}")

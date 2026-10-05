@@ -1,0 +1,180 @@
+{
+  "project": "Collections",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.collections.CollectionUtils"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.collections.keyvalue.MultiKey"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.collections.map.CaseInsensitiveMap"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.collections.functors.EqualPredicate"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.apache.commons.collections.set.ListOrderedSet"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.apache.commons.collections.list.TreeList"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.apache.commons.collections4.list.SetUniqueList"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.apache.commons.collections4.map.ListOrderedMap"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.apache.commons.collections4.trie.UnmodifiableTrie"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.apache.commons.collections4.IteratorUtils"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.apache.commons.collections4.keyvalue.MultiKey"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.apache.commons.collections4.map.MultiValueMap"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.apache.commons.collections4.trie.AbstractPatriciaTrie"
+      ]
+    }
+  ]
+}

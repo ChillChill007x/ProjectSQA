@@ -1,0 +1,35 @@
+test_all_targets_required_for_bug_success (test_full_round1.FullRound1Tests.test_all_targets_required_for_bug_success) ... ok
+test_classpath_drops_missing_entries_and_logs_them (test_full_round1.FullRound1Tests.test_classpath_drops_missing_entries_and_logs_them) ... ok
+test_default_pass_leaves_terminal_failure_for_explicit_retry (test_full_round1.FullRound1Tests.test_default_pass_leaves_terminal_failure_for_explicit_retry) ... ok
+test_exact_854_active_ids_and_deprecated_exclusions (test_full_round1.FullRound1Tests.test_exact_854_active_ids_and_deprecated_exclusions) ... ok
+test_execute_project_manifest_does_not_run_other_projects (test_full_round1.FullRound1Tests.test_execute_project_manifest_does_not_run_other_projects) ... ok
+test_failed_fixed_suite_does_not_spend_time_evaluating_buggy (test_full_round1.FullRound1Tests.test_failed_fixed_suite_does_not_spend_time_evaluating_buggy) ... ok
+test_generation_failure_continues_to_other_targets_and_bugs (test_full_round1.FullRound1Tests.test_generation_failure_continues_to_other_targets_and_bugs) ... ok
+test_interrupted_unit_is_resumed_and_completed_unit_skipped (test_full_round1.FullRound1Tests.test_interrupted_unit_is_resumed_and_completed_unit_skipped) ... ok
+test_metadata_failure_does_not_skip_later_bug (test_full_round1.FullRound1Tests.test_metadata_failure_does_not_skip_later_bug) ... ok
+test_prepare_writes_all_ids_without_starting_generation (test_full_round1.FullRound1Tests.test_prepare_writes_all_ids_without_starting_generation) ... ok
+test_profile_keeps_round_seed_budget_and_feedback (test_full_round1.FullRound1Tests.test_profile_keeps_round_seed_budget_and_feedback) ... ok
+grt: {'NOT_RUN': 110} / 110 bugs; E:\Project\ProjectSQA\work\member4-temp\tmppaj11uvu\selected
+test_project_scope_keeps_full_inventory_and_unit_identity (test_full_round1.FullRound1Tests.test_project_scope_keeps_full_inventory_and_unit_identity) ... ok
+test_retry_metadata_runs_newly_discovered_targets (test_full_round1.FullRound1Tests.test_retry_metadata_runs_newly_discovered_targets) ... ok
+test_same_count_wrong_ids_stops_before_generation (test_full_round1.FullRound1Tests.test_same_count_wrong_ids_stops_before_generation) ... ok
+test_success_with_changed_tests_is_invalid (test_full_round1.FullRound1Tests.test_success_with_changed_tests_is_invalid) ... ok
+test_cohorts_separate_implementation_and_budget (test_member4.ConsolidationTests.test_cohorts_separate_implementation_and_budget) ... ok
+test_excluded_validation_and_distinct_units (test_member4.ConsolidationTests.test_excluded_validation_and_distinct_units) ... ok
+test_first_attempt_does_not_cherry_pick_success (test_member4.ConsolidationTests.test_first_attempt_does_not_cherry_pick_success) ... ok
+test_missing_coverage_is_not_zero (test_member4.ConsolidationTests.test_missing_coverage_is_not_zero) ... ok
+test_relocation_only_resolves_known_ai_move (test_member4.ConsolidationTests.test_relocation_only_resolves_known_ai_move) ... ok
+test_actual_java_file_must_be_compiled (test_pipeline.PipelineTests.test_actual_java_file_must_be_compiled) ... ok
+test_fault_is_candidate_not_confirmed (test_pipeline.PipelineTests.test_fault_is_candidate_not_confirmed) ... ok
+test_identity_includes_config_bug_and_seed (test_pipeline.PipelineTests.test_identity_includes_config_bug_and_seed) ... ok
+test_resume_does_not_skip_failed (test_pipeline.PipelineTests.test_resume_does_not_skip_failed) ... TOOL_ERROR Lang-1-Round1-s101-dc39a472a7d6-attempt2: fixture
+ok
+test_smoke_evidence_is_not_labeled_experiment (test_pipeline.PipelineTests.test_smoke_evidence_is_not_labeled_experiment) ... ok
+test_submission_detects_added_tests (test_pipeline.PipelineTests.test_submission_detects_added_tests) ... ok
+test_target_coverage_and_zero_denominator (test_pipeline.PipelineTests.test_target_coverage_and_zero_denominator) ... ok
+test_timeout_preserves_output_and_status (test_pipeline.PipelineTests.test_timeout_preserves_output_and_status) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.520s
+
+OK

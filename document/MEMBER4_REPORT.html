@@ -1,0 +1,139 @@
+<!doctype html><html lang="th"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>รายงานคนที่ 4 ProjectSQA</title><style>body{font-family:"Leelawadee UI",Tahoma,sans-serif;color:#172b3a;max-width:1120px;margin:40px auto;padding:0 28px;line-height:1.85;font-size:16px}h1{font-size:32px;line-height:1.4}h1,h2,h3{color:#142b42}h2{margin-top:2.5em;padding-top:1em;border-top:1px solid #cad4dd}h3{margin-top:1.8em}p{margin:1em 0}a{color:#086c8d;text-decoration:none}a:hover{text-decoration:underline}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.6;margin:20px 0}th,td{padding:10px 12px;border:1px solid #d5dee5;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#e9f0f5;color:#142b42}tr:nth-child(even){background:#f7fafb}pre{padding:18px;background:#f1f4f7;white-space:pre-wrap;overflow-wrap:anywhere}code{font-size:.92em;overflow-wrap:anywhere}.tablewrap{overflow-x:auto}svg{width:100%;margin-top:20px}button{font:inherit;padding:8px 16px;border:1px solid #afbecb;background:white;cursor:pointer}@media print{body{font-size:11pt;max-width:none;margin:0;padding:0;color:black}h2{break-before:page;border:0;margin-top:0}h2:first-of-type{break-before:auto}h3{break-after:avoid}tr{break-inside:avoid}thead{display:table-header-group}table{font-size:9pt}button{display:none}a{color:black}pre{font-size:9pt}@page{size:A4;margin:18mm}</style><body><button onclick="window.print()">พิมพ์รายงาน / Save as PDF</button><h1>รายงานการเปรียบเทียบและตรวจหลักฐานการสร้างกรณีทดสอบ</h1>
+<h2>MOSA GRT DeepSeek V4 Flash และ GPT 5.6 Terra บน Defects4J</h2>
+<p>รายวิชา CP353201 Software Quality Assurance ภาคเรียน 1 ปีการศึกษา 2569 มหาวิทยาลัยขอนแก่น จัดทำส่วนรวมผลและรายงานตามหน้าที่คนที่ 4 ตรวจข้อมูลวันที่ 5 ตุลาคม 2026 ตามเวลาประเทศไทย</p>
+<p>รายงานฉบับนี้สรุปผลที่มีอยู่จริงพร้อมข้อจำกัด ยังไม่ใช่การรับรอง confirmed fault detection หรือการรับรองว่า Docker และการเรียก API ทำงานครบวงจรบนเครื่องปัจจุบัน หน้าที่คนที่ 3 ใช้ DeepSeek V4 Flash และ GPT-5.6 Terra ตามการเปลี่ยนขอบเขตล่าสุด</p>
+<div class="tablewrap"><table><thead><tr><th>สมาชิก</th><th>รหัสนักศึกษา</th><th>ความรับผิดชอบ</th></tr></thead><tbody>
+<tr><td>นายคมชาญ น้อยเนียม</td><td>673380395-5</td><td>MOSA ผ่าน EvoSuite</td></tr>
+<tr><td>นายปฏิภาณ มะนิลทิพย์</td><td>673380589-2</td><td>GRT</td></tr>
+<tr><td>นายภีมเดช กลั่นกิ่ง</td><td>673380420-2</td><td>DeepSeek V4 Flash และ GPT-5.6 Terra</td></tr>
+<tr><td>นายศุภกิตติ์ ฟันเฟือย</td><td>673380427-8</td><td>Infrastructure metadata รวมผลและรายงาน</td></tr>
+</tbody></table></div>
+<h2>บทคัดย่อ</h2>
+<p>โครงงานศึกษาการสร้างกรณีทดสอบ Java บน Defects4J โดยแยกความสำเร็จในการประเมิน ความครอบคลุมของโค้ด และความสามารถในการตรวจพบข้อบกพร่อง การตรวจครั้งนี้รวบรวม native result.json 2,562 รายการจากสี่โฟลเดอร์ และตาราง AI นำเข้า 1,708 แถวสำหรับ 854 บั๊กใน 17 โปรเจกต์ต่อโมเดล ผล MOSA/GRT รอบ 30 วินาทีครอบคลุมรายชื่อบั๊กทั้งหมด แต่มีหลายเวอร์ชัน implementation และหลาย attempt จึงแยกกลุ่มก่อนคำนวณ ไม่รวมผลที่เลือกจากเงื่อนไขต่างกันเป็นการแข่งขันชุดเดียว</p>
+<p>ตาราง AI รายงานชุดที่ผ่าน fixed จำนวน 15 ชุดสำหรับ DeepSeek และ 116 ชุดสำหรับ GPT โดยมีสถานะตรวจพบบั๊ก 11 และ 107 บั๊กตามลำดับ ค่านี้เป็น candidate ที่รายงานในชุดนำเข้า ยังไม่ใช่ confirmed FDR เพราะยังไม่มีหลักฐาน human fault review ที่เชื่อมกับชุดทดสอบครบ และ run-id ของ CSV ไม่ตรงกับ run logs ที่จัดเก็บ การตรวจ native suites พบ hash และ JUnit evidence ผ่านเกณฑ์ของตัวตรวจในรายการ EVALUATED แต่การตรงกันของไฟล์ไม่ได้ยืนยันความสัมพันธ์กับบั๊กเป้าหมาย ผลจึงสนับสนุนการรายงานหลายตัวชี้วัดร่วมกับระดับหลักฐาน มากกว่าการจัดอันดับผู้ชนะจาก coverage เพียงค่าเดียว</p>
+<h2>บทที่ 1 บทนำ</h2>
+<h3>1.1 ความเป็นมา</h3>
+<p>การสร้าง unit tests อัตโนมัติช่วยลดงานเขียนชุดทดสอบ แต่โค้ดที่สร้างขึ้นอาจ compile ไม่ผ่าน ใช้ oracle ผิด หรือเข้าถึงบรรทัดจำนวนมากโดยไม่มี assertion ที่ตรวจบั๊กได้ งานนี้จึงพิจารณาตั้งแต่ความครบของข้อมูลจนถึงหลักฐาน fixed/buggy ของชุดทดสอบเดียวกัน การมีไฟล์ Java หรือมีแถวใน CSV ไม่เท่ากับการมีผลประเมินที่ใช้เปรียบเทียบได้</p>
+<h3>1.2 วัตถุประสงค์และคำถามวิจัย</h3>
+<p class="item">• RQ1 แต่ละเทคนิคมีผลประเมินที่ใช้ได้และ coverage เท่าใดภายใต้เงื่อนไขที่บันทึกจริง</p>
+<p class="item">• RQ2 มี differential failures กี่รายการ และมีรายการใดผ่านการยืนยันความสัมพันธ์กับบั๊กแล้ว</p>
+<p class="item">• RQ3 ข้อมูลเวลาและ token รองรับการเปรียบเทียบต้นทุนได้มากน้อยเพียงใด</p>
+<p class="item">• RQ4 ความล้มเหลวและช่องว่างหลักฐานใดกระทบความน่าเชื่อถือและการทำซ้ำ</p>
+<h3>1.3 ขอบเขตและสิ่งส่งมอบ</h3>
+<p>ขอบเขตคือ MOSA ผ่าน EvoSuite, GRT ที่ทีมพัฒนา, Deepseek-v4_flash และ gpt-5.6-terra ข้อมูลหลักมาจาก Configuration, Test/TestCode, Prompt, Result และ results สิ่งส่งมอบประกอบด้วยตัวรวมผลที่รันซ้ำได้ ตารางราย run/ราย project, inventory 17 โปรเจกต์, รายการ fault ที่รอตรวจ, รายงาน Markdown/HTML และ demo เปิดหลักฐานเดิม รายงานตัวอย่างและ evaluation.zip ใช้ศึกษารูปแบบเท่านั้น ไม่ใช้ตัวเลขหรือผลของทีมอื่น</p>
+<h2>บทที่ 2 หลักการและงานที่เกี่ยวข้อง</h2>
+<h3>2.1 การประเมินกรณีทดสอบ</h3>
+<p>Line coverage คือสัดส่วนบรรทัดที่ถูกเรียกใช้ต่อบรรทัดที่วัดได้ ส่วน branch coverage คือสัดส่วนแขนงที่ถูกเรียกใช้ต่อแขนงทั้งหมดที่ตัววัดนับได้ Coverage สูงไม่ได้รับรองว่า assertions ถูกต้อง ใน protocol นี้ suite ต้องผ่าน fixed ก่อนจึงใช้ differential failure บน buggy เป็น candidate ผลที่ fixed ล้มเป็น invalid oracle ไม่ใช่ความสำเร็จในการตรวจบั๊ก</p>
+<h3>2.2 Defects4J</h3>
+<p>Defects4J จัดเตรียม faulty/fixed revisions และเครื่องมือสำหรับการทดลองกับข้อบกพร่องจริงใน Java ที่มาของแนวทางอ้างอิงงานของ Just, Jalali และ Ernst (2014) <a href="https://homes.cs.washington.edu/~mernst/pubs/bug-database-issta2014-abstract.html">ต้นฉบับจากผู้วิจัย</a> จำนวน 854 บั๊กในรายงานนี้ตรวจจาก manifest ของทีมและ profile ที่ตรึงไว้ ไม่อ้างว่าจำนวนนี้มาจากงานปี 2014</p>
+<h3>2.3 MOSA และ GRT</h3>
+<p>MOSA เป็นแนวทาง many-objective search ใน EvoSuite ซึ่งรองรับการสร้าง individual tests ตาม <a href="https://www.evosuite.org/documentation/tutorial-part-4/">คู่มือ EvoSuite</a> รายงานนี้ใช้ชื่อ MOSA ตาม configuration ของโครงการ ไม่เปลี่ยนเป็น DynaMOSA ตามรายงานตัวอย่าง</p>
+<p>GRT ของทีมเป็น implementation ที่อธิบายกลไก Constant Mining, Impurity, Elephant Brain, Detective, Orienteering และ Bloodhound ใน <a href="../GRT/README.md">เอกสารของทีม</a> ข้อจำกัดที่ทีมบันทึกไว้รวมถึงการวิเคราะห์ constant แบบ straight-line, purity แบบ conservative, ขอบเขตการค้น constructor/factory และขนาด object pool ที่จำกัด ผลนี้จึงไม่ใช่ผลของ binary ต้นฉบับใน paper และไม่รับรองว่าเทียบเท่า implementation ของผู้เขียนงานวิจัย</p>
+<h3>2.4 AI และที่มาของโมเดล</h3>
+<p>แผนใหม่ร้องขอ deepseek-v4-flash และ gpt-5.6-terra ผ่าน KKU Direct API คำว่า openai เป็น provider ภายในระบบ ไม่ได้ยืนยันการติดต่อ endpoint ของ OpenAI โดยตรง ต้องแยกชื่อที่ประกาศ ชื่อที่ร้องขอ และชื่อที่ response รายงาน สำหรับชุดนำเข้าที่ตรวจครั้งนี้ native provenance ระบุว่าไม่มี original API logs จึงไม่ใช้ชื่อโฟลเดอร์เป็นหลักฐานยืนยันรุ่นหรือปริมาณ token จริงจากบริการ</p>
+<h2>บทที่ 3 วิธีดำเนินงาน</h2>
+<h3>3.1 แหล่งข้อมูลและ inventory</h3>
+<p>ตรวจความตรงกันของรายการ project/bug จาก AI_API/Campaign/manifest.json กับ config/round1-full854.json ได้ 854 บั๊กใน 17 โปรเจกต์ ส่งออก <a href="../results/member4/inventory.csv">inventory</a> และ metadata snapshot รายโปรเจกต์ใน results/member4/metadata snapshot นี้มีรายชื่อบั๊กและ target classes จาก manifest แต่ไม่มี revision IDs และ triggering-test metadata ครบ จึงไม่ใช้แทนผล query ใหม่จาก Defects4J</p>
+<div class="tablewrap"><table><thead><tr><th>Project</th><th>บั๊กใน manifest</th></tr></thead><tbody>
+<tr><td>Chart</td><td>26</td></tr>
+<tr><td>Cli</td><td>39</td></tr>
+<tr><td>Closure</td><td>174</td></tr>
+<tr><td>Codec</td><td>18</td></tr>
+<tr><td>Collections</td><td>28</td></tr>
+<tr><td>Compress</td><td>47</td></tr>
+<tr><td>Csv</td><td>16</td></tr>
+<tr><td>Gson</td><td>18</td></tr>
+<tr><td>JacksonCore</td><td>26</td></tr>
+<tr><td>JacksonDatabind</td><td>110</td></tr>
+<tr><td>JacksonXml</td><td>6</td></tr>
+<tr><td>Jsoup</td><td>93</td></tr>
+<tr><td>JxPath</td><td>22</td></tr>
+<tr><td>Lang</td><td>61</td></tr>
+<tr><td>Math</td><td>106</td></tr>
+<tr><td>Mockito</td><td>38</td></tr>
+<tr><td>Time</td><td>26</td></tr>
+</tbody></table></div>
+<h3>3.2 สภาพแวดล้อมและการตรวจซ้ำ</h3>
+<p>dependency lock ระบุ Defects4J 3.0.1 commit 6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09, EvoSuite 1.2.0 และ JaCoCo 0.8.13 ส่วน AI campaign ระบุ image digest sha256:472b9cb8336865c9825e792b3c36291df0a6103ec256ce9c36930ee037f39bed ค่าเหล่านี้เป็นหลักฐาน configuration เดิม ไม่ใช่การตรวจว่า engine ปัจจุบันใช้ image นี้จริง ขณะตรวจ Docker Linux engine ไม่พร้อม จึงยังไม่รัน build/doctor/Lang-1 ใหม่ ไม่มีข้อมูล CPU/RAM ของทุกเครื่องที่ทดลองเพียงพอสำหรับสรุป hardware equivalence</p>
+<p>ตรวจพบสคริปต์ AI/config/prompt ที่คู่มืออ้างถึงหายจาก checkout จึงกู้เฉพาะ 10 ไฟล์ที่ไม่มี จาก AI_API/ExistingSuites/implementation.zip โดยไม่เขียนทับ implementation ที่มีอยู่ มี SHA256 และรายการไฟล์ใน <a href="../results/member4/recovered_files.json">recovery provenance</a> ตรวจ CLI --help ผ่านแล้ว แต่ยังไม่รับรองการทำงานครบวงจรของชุดที่กู้กับโค้ดปัจจุบัน ต้องใช้แคมเปญใหม่เมื่อ source fingerprint หรือพาธเปลี่ยน ไม่แก้ manifest เดิมเพื่อข้ามการตรวจ</p>
+<h3>3.3 การตรวจหลักฐาน native</h3>
+<p>ตัวรวมอ่าน schema_version 2 ตรวจ SHA256 ของ Java ทุกไฟล์ที่บันทึกไว้และตรวจไฟล์ที่เพิ่ม/หายจาก suite สำหรับ EVALUATED ตรวจ JUnit สองครั้งต่อ revision, test identities, failure signatures, ความตรงกันระหว่างสรุปกับ JUnit ครั้งแรก, fixed pass และการมี coverage.xml การตรวจนี้ไม่ได้รัน JVM ใหม่ ไม่ได้คำนวณ coverage.xml ใหม่ และไม่ได้ตรวจทุก assertion กับข้อกำหนดทางธุรกิจ native AI Lang-1 สองรายการมีพาธก่อนย้าย ตัวตรวจ resolve ไปยังชั้น project โดยไม่แก้ JSON เดิม</p>
+<h3>3.4 กติกาเลือก attempt และแยกกลุ่ม</h3>
+<p>อ่าน native 2,562 รายการ ตัด validation/superseded 10 รายการ แล้วเลือก attempt แรกตาม started_at, run_id และ path ต่อ unit JSON ได้ 2,434 หน่วย กติกานี้เป็นการวิเคราะห์ย้อนหลังเพื่อหลีกเลี่ยงเลือกแต่ผลสำเร็จ ไม่อ้างว่า preregistered ก่อนทดลอง แยก tool, campaign, protocol, round, seed, budget, implementation และ generation revision ผล 60/180 วินาทีเก็บใน native_cohorts.csv แยกจากชุดหลัก 30 วินาที ความล้มเหลวของ attempt แรกยังอยู่ในตัวหาร แม้ attempt หลังจะสำเร็จ</p>
+<h3>3.5 นิยามตัวชี้วัด</h3>
+<p class="item">• Planned bugs คือจำนวนรายชื่อบั๊กเป้าหมาย ไม่ใช่จำนวนไฟล์หรือ target classes</p>
+<p class="item">• EVALUATED ของ native คือสถานะที่ผ่าน protocol และ evidence checks ของตัวรวม ไม่ใช่ human-confirmed fault</p>
+<p class="item">• AI fixed valid reported คือ BUG_DETECTED รวม NOT_DETECTED ตาม CSV นำเข้า</p>
+<p class="item">• Candidate rate ต่อ planned คือ unique reported candidate bugs หาร 854 คูณ 100</p>
+<p class="item">• Confirmed FDR ต้องใช้ unique bugs ที่ human review ยืนยันกับ suite hash เดียวกัน ขณะนี้ยังสรุปไม่ได้</p>
+<p class="item">• Mean coverage เป็นค่าเฉลี่ยแบบไม่ถ่วงน้ำหนักในรายการที่วัดได้ โดย native ใช้ target unit และ AI ใช้ suite ต่อบั๊ก</p>
+<p class="item">• N/A ไม่ถูกแทนด้วย 0 ขณะที่ coverage 0 ที่วัดได้จริงยังรวมในค่าเฉลี่ย</p>
+<p>หน่วยของค่าเฉลี่ย native กับ AI และขอบเขต project ของ implementation ต่างกัน จึงไม่ใช้ตารางนี้จัดอันดับเชิงสาเหตุว่าเทคนิคใดดีกว่าโดยปราศจาก matched comparison</p>
+<h2>บทที่ 4 ผลการทดลองและอภิปรายผล</h2>
+<h3>4.1 ความครบของผลอัลกอริทึม</h3>
+<p>ในชุด 30 วินาที ทั้ง MOSA และ GRT มีผลครอบคลุม 854 บั๊กและ 1,073 metadata targets นี่คือความครบของรายการที่มีสถานะ ไม่ใช่จำนวนบั๊กที่ทุก target ประเมินสำเร็จ ตารางต่อไปใช้ seed 101 และ attempt แรกต่อ unit แยก implementation EVALUATED เป็นจำนวน target units; Candidate bugs นับ unique project/bug ภายในแถวนั้น ห้ามบวกจำนวนบั๊กข้ามแถว เพราะ implementation อาจทดลองบั๊กเดียวกัน</p>
+<div class="tablewrap"><table><thead><tr><th>เครื่องมือ</th><th>Implementation 12 ตัวแรก</th><th>บั๊กที่มีผล</th><th>Target units</th><th>EVALUATED</th><th>Candidate bugs</th><th>Line %</th><th>Branch %</th></tr></thead><tbody>
+<tr><td>MOSA</td><td>23ed78b73f64</td><td>559</td><td>714</td><td>515</td><td>122</td><td>64.11</td><td>58.29</td></tr>
+<tr><td>MOSA</td><td>3daf9d8187ea</td><td>263</td><td>326</td><td>240</td><td>79</td><td>73.87</td><td>70.59</td></tr>
+<tr><td>MOSA</td><td>8e4d591b349e</td><td>32</td><td>33</td><td>24</td><td>4</td><td>46.04</td><td>34.63</td></tr>
+<tr><td>GRT</td><td>2095c4d4de9e</td><td>790</td><td>996</td><td>791</td><td>81</td><td>44.11</td><td>29.73</td></tr>
+<tr><td>GRT</td><td>23ed78b73f64</td><td>64</td><td>77</td><td>61</td><td>4</td><td>50.15</td><td>33.45</td></tr>
+<tr><td>GRT</td><td>3daf9d8187ea</td><td>1</td><td>1</td><td>0</td><td>0</td><td>N/A</td><td>N/A</td></tr>
+</tbody></table></div>
+<p>Line/Branch ของแต่ละแถวคำนวณเฉพาะ EVALUATED ที่ผ่าน integrity checks จำนวน n ของแต่ละ metric อยู่ใน <a href="../results/member4/native_cohorts.csv">native_cohorts.csv</a> ตัวอย่าง MOSA implementation 23ed78b73f64 มีผล 714 target units ใน 559 บั๊กและประเมินได้ 515 targets ขณะที่ GRT 2095c4d4de9e มี 996 target units ใน 790 บั๊กและประเมินได้ 791 targets ขอบเขตต่างกันจึงยังไม่ใช่คู่เทียบที่ควบคุมทุกตัวแปรเท่ากัน รายละเอียดแยกโปรเจกต์อยู่ใน <a href="../results/member4/native_projects.csv">native_projects.csv</a></p>
+<h3>4.2 ความครบและสถานะ AI</h3><svg viewBox="0 0 900 230" role="img" aria-label="AI imported status counts per 854 bugs" xmlns="http://www.w3.org/2000/svg"><rect width="900" height="230" fill="white"/><text x="10" y="25" font-size="18">AI imported statuses — 854 bugs per model</text><text x="10" y="77" font-size="15">DeepSeek V4 Flash</text><rect x="190" y="55" width="526.3231850117096" height="35" fill="#486581"/><text x="453.1615925058548" y="78" text-anchor="middle" fill="white" font-size="15">661</text><rect x="716.3231850117096" y="55" width="140.9367681498829" height="35" fill="#f2b24c"/><text x="786.7915690866511" y="78" text-anchor="middle" fill="white" font-size="15">177</text><rect x="857.2599531615925" y="55" width="11.943793911007026" height="35" fill="#197d78"/><rect x="869.2037470725995" y="55" width="0.7962529274004684" height="35" fill="#acb9c6"/><text x="10" y="142" font-size="15">GPT-5.6 Terra</text><rect x="190" y="120" width="341.59250585480095" height="35" fill="#486581"/><text x="360.7962529274005" y="143" text-anchor="middle" fill="white" font-size="15">429</text><rect x="531.592505854801" y="120" width="245.24590163934428" height="35" fill="#f2b24c"/><text x="654.2154566744731" y="143" text-anchor="middle" fill="white" font-size="15">308</text><rect x="776.8384074941453" y="120" width="92.36533957845434" height="35" fill="#197d78"/><text x="823.0210772833724" y="143" text-anchor="middle" fill="white" font-size="15">116</text><rect x="869.2037470725996" y="120" width="0.7962529274004684" height="35" fill="#acb9c6"/><rect x="10" y="195" width="14" height="14" fill="#486581"/><text x="30" y="207" font-size="14">Compile error</text><rect x="235" y="195" width="14" height="14" fill="#f2b24c"/><text x="255" y="207" font-size="14">Invalid oracle</text><rect x="460" y="195" width="14" height="14" fill="#197d78"/><text x="480" y="207" font-size="14">Fixed valid reported</text><rect x="685" y="195" width="14" height="14" fill="#acb9c6"/><text x="705" y="207" font-size="14">No suite</text></svg>
+<div class="tablewrap"><table><thead><tr><th>สถานะต่อ 854 บั๊ก</th><th>DeepSeek</th><th>GPT</th></tr></thead><tbody>
+<tr><td>มีสถานะใน CSV</td><td>854</td><td>854</td></tr>
+<tr><td>ไม่มี suite</td><td>1</td><td>1</td></tr>
+<tr><td>Compile ไม่ผ่าน</td><td>661</td><td>429</td></tr>
+<tr><td>Invalid oracle / regression</td><td>177</td><td>308</td></tr>
+<tr><td>Fixed ผ่านตามตาราง</td><td>15</td><td>116</td></tr>
+<tr><td>Candidate ตามตาราง</td><td>11</td><td>107</td></tr>
+<tr><td>Candidate / planned (%)</td><td>1.29</td><td>12.53</td></tr>
+</tbody></table></div>
+<p>ตัวหาร 854 รวม NO_SUITE หากรายงานอัตราต่อ suite ที่มีอยู่ ตัวหารเป็น 853 DeepSeek จึงเป็น 11/853 = 1.29% และ GPT เป็น 107/853 = 12.54% แต่ตารางหลักใช้ planned denominator เดียวกันคือ 854 และยังเรียกว่า reported candidate rate ไม่ใช้คำว่า confirmed FDR DeepSeek fixed valid reported = 11 BUG_DETECTED + 4 NOT_DETECTED ส่วน GPT = 107 BUG_DETECTED + 9 NOT_DETECTED</p>
+<h3>4.3 Coverage ของ AI</h3>
+<div class="tablewrap"><table><thead><tr><th>โมเดล</th><th>ชุดที่วัดได้ n</th><th>Line %</th><th>Branch %</th><th>Fixed valid n</th><th>Line % fixed valid</th><th>Branch % fixed valid</th></tr></thead><tbody>
+<tr><td>DeepSeek V4 Flash</td><td>192</td><td>80.87</td><td>73.45</td><td>15</td><td>88.74</td><td>85.67</td></tr>
+<tr><td>GPT-5.6 Terra</td><td>424</td><td>88.34</td><td>82.55</td><td>116</td><td>97.43</td><td>93.50</td></tr>
+</tbody></table></div>
+<p>กลุ่มที่วัดได้รวม invalid oracle ด้วย: DeepSeek n=192 = 177+15 และ GPT n=424 = 308+116 ค่าเฉลี่ยเฉพาะ fixed valid สูงขึ้น แต่เป็นคนละ subset และมี selection bias ไม่อนุมานว่าค่า coverage สูงหมายถึงเทสต์ทั้งหมดถูกต้องหรือใช้กับบั๊กที่ compile ไม่ผ่านได้ ผล compile error ไม่มี coverage ที่ใช้ได้ แม้ CSV เดิมเก็บ 0.0 ตัวรวมจะแสดงเป็น N/A</p>
+<h3>4.4 ความตรงกันของหลักฐาน AI</h3>
+<p>ตารางนำเข้ามี 854 แถวต่อโมเดลและมี run logs ของ project/bug ทั้งหมด แต่ไม่มี run-id ใน logs ตรงกับ CSV เลยทั้ง 1,708 แถว จึงไม่ย้าย logs ของคนละ run มาใช้รับรองแถวนั้น JSON รายบั๊กมี 193 ไฟล์สำหรับ DeepSeek และ 433 ไฟล์สำหรับ GPT suite hash ตรงตาม raw/LF/CRLF diagnostic modes 846 ชุดสำหรับ DeepSeek และ 0 ชุดสำหรับ GPT การไม่ตรงไม่ได้พิสูจน์ว่าผลปลอม แต่อาจเกิดจากไฟล์เปลี่ยนหรือวิธี hash ต่างกัน ต้องหาต้นฉบับมาจับคู่ให้ได้ การตรงแบบปรับ line endings เป็นเพียงข้อมูลช่วยวิเคราะห์ ไม่เทียบเท่า strict raw hash ของ native</p>
+<p>Native Lang-1 ประเมินเป็น INVALID_ORACLE ทั้งสองโมเดล ค่า fixed coverage ของ DeepSeek 67.63/52.86 ต่างจาก CSV 74.08/60.31 และ GPT 92.37/74.86 ต่างจาก CSV 94.09/80.10 เนื่องจากหลักฐานไม่รองรับว่าเป็นตัววัด/revision เดียวกัน จึงเก็บทั้งสองค่าแยกกัน ไม่เลือกค่าที่สูงกว่าและไม่เขียนทับผลต้นฉบับ รายละเอียดอยู่ใน <a href="../AI_API/ImportedResults/README.md">รายงานตรวจ AI</a></p>
+<h3>4.5 เวลาและ token</h3>
+<div class="tablewrap"><table><thead><tr><th>โมเดล</th><th>Records</th><th>Mean tokens ตามไฟล์</th><th>Mean seconds ตามไฟล์</th></tr></thead><tbody>
+<tr><td>DeepSeek V4 Flash</td><td>1066</td><td>21,062.72</td><td>293.20</td></tr>
+<tr><td>GPT-5.6 Terra</td><td>1066</td><td>20,860.32</td><td>89.81</td></tr>
+</tbody></table></div>
+<p>ตัวเลขนี้อ่านจาก generation_metrics รายคลาสที่นำเข้า จึงมีหน่วยเป็น record ไม่ใช่ต้นทุนต่อบั๊กที่ตรวจพบ ไม่มี run-id join ที่ยืนยันกับตาราง detection และไม่มี raw API evidence เพียงพอให้ถือเป็นต้นทุนที่รับรองแล้ว จึงไม่คำนวณ bugs per million tokens หรือสรุปโมเดลที่คุ้มค่ากว่า ค่า generation_time_sec ของ native ถูกเก็บใน native_runs.csv แต่ไม่เทียบกับเวลาการประเมินของ CSV budget 30 วินาทีต่อ target ก็ไม่จำเป็นต้องเท่ากับ wall-clock time ของ checkout/compile/evaluation ทั้งกระบวนการ</p>
+<h3>4.6 กรณีศึกษาและ fault review</h3>
+<p>เลือก GRT Chart-10 run <code>Chart-10-Round1-s101-43074e484fc3</code> เป็นตัวอย่างเปิดหลักฐาน พบ fixed pass และ buggy failure ตาม result.json พร้อม test hashes และ JUnit repetitions สถานะนี้เป็น candidate ดู <a href="../GRT/Result_Round1/Chart/10/Chart-10-Round1-s101-43074e484fc3/result.json">result.json</a> และ demo สำหรับพาธไฟล์ทั้งหมด บันทึก AI review เดิมของทีมอธิบายประเด็น HTML escaping แต่ระบุชัดว่าไม่ใช่ human confirmation จึงยังไม่สร้าง fault-review.json ในนามสมาชิกหรือเปลี่ยน candidate เป็น confirmed</p>
+<p>อีกกรณีคือ AI Lang-1 ซึ่งมี coverage แต่ fixed ล้ม สะท้อนว่า coverage ไม่ได้แทน oracle validity รายการ Math-13 ใน CSV เป็น NO_SUITE แม้มี Java อยู่ในโฟลเดอร์ปัจจุบัน จึงเป็นสถานะของ snapshot เดิม ไม่แก้เป็นผ่านเพียงเพราะพบไฟล์ภายหลัง <a href="../results/member4/fault_review_queue.csv">fault_review_queue.csv</a> เก็บ candidates ทุก attempt พร้อม selected flag สำหรับให้ทีมตรวจ ไม่ให้รายการที่ไม่ได้เลือกปนกับตัวเลขรายงาน</p>
+<h3>4.7 คำตอบต่อคำถามวิจัย</h3>
+<p>RQ1 มีผล coverage และอัตราประเมินได้ตามตาราง แต่ต้องอ่านควบคู่ n, หน่วยวิเคราะห์ และ cohort RQ2 มี candidates ตามหลักฐานหลายระดับ แต่ยังไม่มี confirmed review ที่ใช้คำนวณ FDR ได้ RQ3 มี generation metrics ที่รายงานไว้ แต่ยังเชื่อมกับ detection อย่างรับรองไม่ได้ RQ4 ปัญหาหลักคือ compile/invalid oracle, run-id/hash ที่ไม่ตรง, implementation หลายรุ่น และสภาพแวดล้อมปัจจุบันที่ยังไม่พร้อมสำหรับการตรวจซ้ำ</p>
+<h2>บทที่ 5 สรุปและข้อเสนอแนะ</h2>
+<h3>5.1 ผลงานที่ดำเนินการแล้ว</h3>
+<p>รวมข้อมูลของทั้งสี่เทคนิคพร้อมการเปลี่ยนชื่อ AI ให้ตรงกับงานคนที่ 3 สร้างตัวรวมที่ไม่แก้ raw evidence ตรวจ native integrity และแยก attempt/implementation สร้าง inventory snapshot ครบ 17 โปรเจกต์ ตารางสรุปและ fault queue พร้อมแหล่งอ้างอิงราย run แก้ตัวตรวจ/ตัวรวมเดิมให้มองเห็น DeepSeek/GPT และพาธหลังย้าย กู้สคริปต์ที่หายจาก archive ของทีม ตรวจ Python regression tests ผ่าน 28 รายการ และตรวจ native submission ของ AI ทั้งสองโมเดลผ่านโดยแจ้งพาธที่ย้าย</p>
+<h3>5.2 ข้อจำกัดต่อการตีความ</h3>
+<p>ผลชุดนำเข้าไม่รับรอง model identity และ raw token usage; provenance บางส่วนอ้างรุ่น buggy หรือ saved prompts ที่มีข้อมูลบั๊ก จึงไม่เหมารวมว่าเป็น fixed-source generation ตามแผนใหม่ทั้งหมด ต้องแยก fixed-code generation, imported-suite evaluation และแผน API ที่ยังไม่ได้รัน ผลอัลกอริทึมมีหลาย implementation และ stochastic seed เดียวในชุดหลัก การเลือก attempt แรกเป็นการตัดสินใจย้อนหลัง ไม่ใช่หลักฐานว่าออกแบบการทดลองเช่นนี้ตั้งแต่เริ่ม GRT เป็น implementation ของทีม และยังไม่มี human-reviewed confirmed FDR ตัวตรวจ offline ตรวจหลักฐานที่บันทึกไว้ ไม่พิสูจน์สภาพแวดล้อมในวันที่ทดลองหรือทำซ้ำ JVM วันนี้</p>
+<h3>5.3 งานคงเหลือก่อนรับรองฉบับส่ง</h3>
+<p class="item">• เปิด Docker Linux engine ตรวจ doctor และ Lang-1 smoke จากโค้ด/config ที่จะใช้จริง</p>
+<p class="item">• สกัด metadata query ครบ 17 โปรเจกต์พร้อม revision IDs และ triggering tests</p>
+<p class="item">• จัดแคมเปญใหม่หลังตรวจพาธและ freeze source/config/prompt/image โดยเก็บ manifest เดิมเป็นประวัติ</p>
+<p class="item">• จับคู่ CSV, exact run-id, suites และ logs ของ AI หรือประเมินชุดเดิมใหม่โดยเก็บผลเป็นคนละ campaign</p>
+<p class="item">• ตรวจ candidate กับ patch และ API contract โดยผู้รับผิดชอบ ก่อนบันทึก human confirmation</p>
+<p class="item">• ทำ matched comparison ในบั๊ก/target/เงื่อนไขเดียวกัน และเพิ่ม independent repetitions หากต้องการสถิติอนุมาน</p>
+<p>ส่วนที่ยังไม่เสร็จข้างต้นไม่ถูกแทนด้วยผลสมมติหรือข้อความรับรอง การรวมผล offline และรายงานที่ส่งมอบครั้งนี้ทำซ้ำได้จากไฟล์ใน repository</p>
+<h2>เอกสารอ้างอิง</h2>
+<p class="item">• Just, R., Jalali, D., and Ernst, M. D. (2014). Defects4J A database of existing faults to enable controlled testing studies for Java programs. <a href="https://homes.cs.washington.edu/~mernst/pubs/bug-database-issta2014-abstract.html">หน้าบทความของผู้วิจัย</a></p>
+<p class="item">• EvoSuite. Tutorial Part 4 Extending EvoSuite. <a href="https://www.evosuite.org/documentation/tutorial-part-4/">เอกสารผู้พัฒนา</a></p>
+<p class="item">• ทีม ProjectSQA. <a href="../GRT/README.md">GRT implementation และ deviations</a>, <a href="../BENCHMARK_PROTOCOL.md">Benchmark protocol</a>, <a href="BENCHMARK_PROTOCOL.md">AI protocol</a></p>
+<p class="item">• ทีม ProjectSQA. <a href="../config/dependencies.lock.json">dependency lock</a>, <a href="../AI_API/Campaign/manifest.json">campaign manifest</a>, <a href="../results/member4/source_manifest.json">แหล่งข้อมูลและ SHA256</a></p>
+<p class="item">• รายงานตัวอย่าง AI-Assisted Testing vs. Automatic Test Case Generation Algorithms A Benchmark and Test Coverage Evaluation และ ตัวอย่างevaluation.zip ที่ผู้ใช้ให้ ใช้ดูโครงสร้างรายงานและการแบ่งผลราย test เท่านั้น ไม่มีการนำผลทดลองมาแทนผลโครงการนี้</p>
+<h2>ภาคผนวก การทำซ้ำและไฟล์ส่งมอบ</h2>
+<pre>python -B scripts/consolidate_member4.py
+python -B AI_API/audit_results.py
+python -B scripts/build_member4_report.py
+python -B -m unittest discover -s tests -p &quot;test_*.py&quot; -v</pre>
+<p>คำสั่งเหล่านี้ไม่เรียก API และไม่รัน Defects4J เพิ่ม หาก Windows จำกัด temp directory ให้ตั้ง TEMP/TMP เป็น work/member4-temp ที่เขียนได้ก่อนรัน tests อ่าน <a href="../results/member4/README.md">คำอธิบายตารางทั้งหมด</a> และ <a href="MEMBER4_DEMO.md">demo</a> ต้นฉบับรายงานคือ MEMBER4_REPORT.md ส่วน HTML ใช้อ่านและพิมพ์จากเบราว์เซอร์</p></body></html>

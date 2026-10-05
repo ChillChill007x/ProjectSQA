@@ -1,0 +1,378 @@
+{
+  "project": "Lang",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.translate.LookupTranslator"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.lang3.LocaleUtils"
+      ]
+    },
+    {
+      "bug": "6",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.FastDatePrinter"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.lang3.SerializationUtils"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.lang3.reflect.TypeUtils"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.DateUtils"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.Fraction"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.ExtendedMessageFormat"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ]
+    },
+    {
+      "bug": "29",
+      "metadata_targets": [
+        "org.apache.commons.lang3.SystemUtils"
+      ]
+    },
+    {
+      "bug": "30",
+      "metadata_targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ]
+    },
+    {
+      "bug": "31",
+      "metadata_targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ]
+    },
+    {
+      "bug": "32",
+      "metadata_targets": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder"
+      ]
+    },
+    {
+      "bug": "33",
+      "metadata_targets": [
+        "org.apache.commons.lang3.ClassUtils"
+      ]
+    },
+    {
+      "bug": "34",
+      "metadata_targets": [
+        "org.apache.commons.lang3.builder.ToStringStyle"
+      ]
+    },
+    {
+      "bug": "35",
+      "metadata_targets": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ]
+    },
+    {
+      "bug": "36",
+      "metadata_targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "37",
+      "metadata_targets": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ]
+    },
+    {
+      "bug": "38",
+      "metadata_targets": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ]
+    },
+    {
+      "bug": "39",
+      "metadata_targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ]
+    },
+    {
+      "bug": "40",
+      "metadata_targets": [
+        "org.apache.commons.lang.StringUtils"
+      ]
+    },
+    {
+      "bug": "41",
+      "metadata_targets": [
+        "org.apache.commons.lang.ClassUtils"
+      ]
+    },
+    {
+      "bug": "42",
+      "metadata_targets": [
+        "org.apache.commons.lang.Entities"
+      ]
+    },
+    {
+      "bug": "43",
+      "metadata_targets": [
+        "org.apache.commons.lang.text.ExtendedMessageFormat"
+      ]
+    },
+    {
+      "bug": "44",
+      "metadata_targets": [
+        "org.apache.commons.lang.NumberUtils"
+      ]
+    },
+    {
+      "bug": "45",
+      "metadata_targets": [
+        "org.apache.commons.lang.WordUtils"
+      ]
+    },
+    {
+      "bug": "46",
+      "metadata_targets": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ]
+    },
+    {
+      "bug": "47",
+      "metadata_targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ]
+    },
+    {
+      "bug": "49",
+      "metadata_targets": [
+        "org.apache.commons.lang.math.Fraction"
+      ]
+    },
+    {
+      "bug": "50",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.FastDateFormat"
+      ]
+    },
+    {
+      "bug": "51",
+      "metadata_targets": [
+        "org.apache.commons.lang.BooleanUtils"
+      ]
+    },
+    {
+      "bug": "52",
+      "metadata_targets": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ]
+    },
+    {
+      "bug": "53",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.DateUtils"
+      ]
+    },
+    {
+      "bug": "54",
+      "metadata_targets": [
+        "org.apache.commons.lang.LocaleUtils"
+      ]
+    },
+    {
+      "bug": "55",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.StopWatch"
+      ]
+    },
+    {
+      "bug": "56",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.FastDateFormat"
+      ]
+    },
+    {
+      "bug": "57",
+      "metadata_targets": [
+        "org.apache.commons.lang.LocaleUtils"
+      ]
+    },
+    {
+      "bug": "58",
+      "metadata_targets": [
+        "org.apache.commons.lang.math.NumberUtils"
+      ]
+    },
+    {
+      "bug": "59",
+      "metadata_targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ]
+    },
+    {
+      "bug": "60",
+      "metadata_targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ]
+    },
+    {
+      "bug": "61",
+      "metadata_targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ]
+    },
+    {
+      "bug": "62",
+      "metadata_targets": [
+        "org.apache.commons.lang.Entities"
+      ]
+    },
+    {
+      "bug": "63",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.DurationFormatUtils"
+      ]
+    },
+    {
+      "bug": "64",
+      "metadata_targets": [
+        "org.apache.commons.lang.enums.ValuedEnum"
+      ]
+    },
+    {
+      "bug": "65",
+      "metadata_targets": [
+        "org.apache.commons.lang.time.DateUtils"
+      ]
+    }
+  ]
+}

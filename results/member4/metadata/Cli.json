@@ -1,0 +1,258 @@
+{
+  "project": "Cli",
+  "provenance": "Saved AI campaign manifest, cross-checked against config/round1-full854.json; not a fresh Defects4J query",
+  "unavailable_fields": [
+    "revision.id.buggy",
+    "revision.id.fixed",
+    "tests.trigger",
+    "tests.trigger.cause"
+  ],
+  "bugs": [
+    {
+      "bug": "1",
+      "metadata_targets": [
+        "org.apache.commons.cli.CommandLine"
+      ]
+    },
+    {
+      "bug": "2",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "3",
+      "metadata_targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ]
+    },
+    {
+      "bug": "4",
+      "metadata_targets": [
+        "org.apache.commons.cli.Parser"
+      ]
+    },
+    {
+      "bug": "5",
+      "metadata_targets": [
+        "org.apache.commons.cli.Util"
+      ]
+    },
+    {
+      "bug": "7",
+      "metadata_targets": [
+        "org.apache.commons.cli2.builder.PatternBuilder"
+      ]
+    },
+    {
+      "bug": "8",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "9",
+      "metadata_targets": [
+        "org.apache.commons.cli.Parser"
+      ]
+    },
+    {
+      "bug": "10",
+      "metadata_targets": [
+        "org.apache.commons.cli.Parser"
+      ]
+    },
+    {
+      "bug": "11",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "12",
+      "metadata_targets": [
+        "org.apache.commons.cli.GnuParser"
+      ]
+    },
+    {
+      "bug": "13",
+      "metadata_targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.ArgumentImpl"
+      ]
+    },
+    {
+      "bug": "14",
+      "metadata_targets": [
+        "org.apache.commons.cli2.option.GroupImpl"
+      ]
+    },
+    {
+      "bug": "15",
+      "metadata_targets": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl"
+      ]
+    },
+    {
+      "bug": "16",
+      "metadata_targets": [
+        "org.apache.commons.cli2.Option",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl",
+        "org.apache.commons.cli2.option.OptionImpl"
+      ]
+    },
+    {
+      "bug": "17",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "18",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "19",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "20",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "21",
+      "metadata_targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl"
+      ]
+    },
+    {
+      "bug": "22",
+      "metadata_targets": [
+        "org.apache.commons.cli.PosixParser"
+      ]
+    },
+    {
+      "bug": "23",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "24",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "25",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "26",
+      "metadata_targets": [
+        "org.apache.commons.cli.OptionBuilder"
+      ]
+    },
+    {
+      "bug": "27",
+      "metadata_targets": [
+        "org.apache.commons.cli.OptionGroup"
+      ]
+    },
+    {
+      "bug": "28",
+      "metadata_targets": [
+        "org.apache.commons.cli.Parser"
+      ]
+    },
+    {
+      "bug": "29",
+      "metadata_targets": [
+        "org.apache.commons.cli.Util"
+      ]
+    },
+    {
+      "bug": "30",
+      "metadata_targets": [
+        "org.apache.commons.cli.DefaultParser",
+        "org.apache.commons.cli.Parser"
+      ]
+    },
+    {
+      "bug": "31",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter",
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ]
+    },
+    {
+      "bug": "32",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "33",
+      "metadata_targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ]
+    },
+    {
+      "bug": "34",
+      "metadata_targets": [
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ]
+    },
+    {
+      "bug": "35",
+      "metadata_targets": [
+        "org.apache.commons.cli.Options"
+      ]
+    },
+    {
+      "bug": "36",
+      "metadata_targets": [
+        "org.apache.commons.cli.OptionGroup",
+        "org.apache.commons.cli.Options"
+      ]
+    },
+    {
+      "bug": "37",
+      "metadata_targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ]
+    },
+    {
+      "bug": "38",
+      "metadata_targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ]
+    },
+    {
+      "bug": "39",
+      "metadata_targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ]
+    },
+    {
+      "bug": "40",
+      "metadata_targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ]
+    }
+  ]
+}
