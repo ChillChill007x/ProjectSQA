@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-13-Round1-s101-68b36fb886bd",
+  "unit": {
+    "project": "Chart",
+    "bug": "13",
+    "target": "org.jfree.chart.block.BorderArrangement",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:48:28.707814+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/13/Chart-13-Round1-s101-68b36fb886bd",
+    "tests": "MOSA_EvoSuite/Test/Chart/13/Chart-13-Round1-s101-68b36fb886bd",
+    "config": "MOSA_EvoSuite/Configuration/Chart/13/Chart-13-Round1-s101-68b36fb886bd"
+  },
+  "generation_time_sec": 41.312,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/13/Chart-13-Round1-s101-68b36fb886bd/org/jfree/chart/block/BorderArrangement_ESTest.java": "2c9f112f910c443e02bfbdad779aff0b70d2254a4858cb8c2c42802ee1c420d5",
+    "MOSA_EvoSuite/Test/Chart/13/Chart-13-Round1-s101-68b36fb886bd/org/jfree/chart/block/BorderArrangement_ESTest_scaffolding.java": "3d19344e81f751b30389c5c7ed0631d83e57d4b85c8fc5207ad66e717c93ea7f"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint",
+    "available_triggers": [
+      "org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 14,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 701,
+      "tests": [
+        "org.jfree.chart.block.BorderArrangement_ESTest::test09",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test08",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test07",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test06",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test01",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test12",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test00",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test11",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test10",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test05",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test04",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test03",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test02",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test13"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 140,
+      "line_total": 229,
+      "line_coverage_percent": 61.1353711790393,
+      "branch_covered": 71,
+      "branch_total": 120,
+      "branch_coverage_percent": 59.166666666666664
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 714,
+      "tests": [
+        "org.jfree.chart.block.BorderArrangement_ESTest::test09",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test08",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test07",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test06",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test01",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test12",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test00",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test11",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test10",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test05",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test04",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test03",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test02",
+        "org.jfree.chart.block.BorderArrangement_ESTest::test13"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 140,
+      "line_total": 229,
+      "line_coverage_percent": 61.1353711790393,
+      "branch_covered": 71,
+      "branch_total": 120,
+      "branch_coverage_percent": 59.166666666666664
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Chart/13/Chart-13-Round1-s101-68b36fb886bd/evaluation-1",
+  "finished_at": "2026-10-04T19:49:58.518382+00:00"
+}

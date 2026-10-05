@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-23-Round1-s101-364b3259aad1/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.TestDateTimeZone::testForID_String_old",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-50-Round1-s101-1d262f4837db",
+  "unit": {
+    "project": "Closure",
+    "bug": "50",
+    "target": "com.google.javascript.jscomp.PeepholeReplaceKnownMethods",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:08:58.223532+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/50/Closure-50-Round1-s101-1d262f4837db",
+    "tests": "MOSA_EvoSuite/Test/Closure/50/Closure-50-Round1-s101-1d262f4837db",
+    "config": "MOSA_EvoSuite/Configuration/Closure/50/Closure-50-Round1-s101-1d262f4837db"
+  },
+  "generation_time_sec": 40.088,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/50/Closure-50-Round1-s101-1d262f4837db/com/google/javascript/jscomp/PeepholeReplaceKnownMethods_ESTest.java": "197a48d0d2506ff4f52a88824847335b919d24698d0a6168ca17d59051dda5fe",
+    "MOSA_EvoSuite/Test/Closure/50/Closure-50-Round1-s101-1d262f4837db/com/google/javascript/jscomp/PeepholeReplaceKnownMethods_ESTest_scaffolding.java": "ef2a0aa8d875ffe58ed849acdfb870739db19069d3af1cd28e924256db57b03b"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd",
+    "available_triggers": [
+      "com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd",
+      "com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2424,
+      "tests": [
+        "com.google.javascript.jscomp.PeepholeReplaceKnownMethods_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 312,
+      "line_coverage_percent": 1.2820512820512822,
+      "branch_covered": 1,
+      "branch_total": 253,
+      "branch_coverage_percent": 0.3952569169960474
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2879,
+      "tests": [
+        "com.google.javascript.jscomp.PeepholeReplaceKnownMethods_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 308,
+      "line_coverage_percent": 1.2987012987012987,
+      "branch_covered": 1,
+      "branch_total": 245,
+      "branch_coverage_percent": 0.40816326530612246
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/50/Closure-50-Round1-s101-1d262f4837db/evaluation-1",
+  "finished_at": "2026-10-04T20:11:42.111857+00:00"
+}

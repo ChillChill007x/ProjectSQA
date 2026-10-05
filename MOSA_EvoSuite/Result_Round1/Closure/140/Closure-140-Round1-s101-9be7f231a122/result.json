@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-140-Round1-s101-9be7f231a122",
+  "unit": {
+    "project": "Closure",
+    "bug": "140",
+    "target": "com.google.javascript.jscomp.Compiler",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-04T21:41:45.310523+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/140/Closure-140-Round1-s101-9be7f231a122",
+    "tests": "MOSA_EvoSuite/Test/Closure/140/Closure-140-Round1-s101-9be7f231a122",
+    "config": "MOSA_EvoSuite/Configuration/Closure/140/Closure-140-Round1-s101-9be7f231a122"
+  },
+  "generation_time_sec": 105.199,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/140/Closure-140-Round1-s101-9be7f231a122/com/google/javascript/jscomp/Compiler_ESTest.java": "9b9c19465016a9717eadf86b9032e005cbf31be35715e25ea6b0d68be4c74697",
+    "MOSA_EvoSuite/Test/Closure/140/Closure-140-Round1-s101-9be7f231a122/com/google/javascript/jscomp/Compiler_ESTest_scaffolding.java": "7d670d928546b8a2c6a603a44a01e4f97e00b165f470b4a2db577f99dbf8872d"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CrossModuleCodeMotionTest::testEmptyModule",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CrossModuleCodeMotionTest::testEmptyModule"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-04T21:44:25.673008+00:00"
+}

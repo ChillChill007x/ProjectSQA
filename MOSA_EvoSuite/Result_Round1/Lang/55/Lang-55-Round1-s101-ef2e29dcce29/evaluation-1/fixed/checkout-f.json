@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "55f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-55-Round1-s101-ef2e29dcce29/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.961,
+  "stdout": "",
+  "stderr": "Checking out b16235ad to /workspace/work/parallel/evosuite/83569/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nRename enum package in src................................................. OK\nMove enum package in src................................................... OK\nRename enum package in test................................................ OK\nMove enum package in test.................................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/evosuite/83569/checkouts/La OK\nBacking up build file: /workspace/work/parallel/evosuite/83569/checkouts/La OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff b16235ad:de4952be..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Lang-55f........................................ OK\n"
+}

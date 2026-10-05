@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Jsoup",
+    "-v",
+    "63b",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-63-Round1-s101-a965df3cc33a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.45,
+  "stdout": "",
+  "stderr": "Checking out 35bceca3 to /workspace/work/parallel/evosuite/83568/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/evosuite/83568/checkouts/Js OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 35bceca3:d51f6539..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Jsoup-63b....................................... OK\n"
+}

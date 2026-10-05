@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Csv-10-Round1-s101-62209d76cf11/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.csv.CSVPrinterTest::testHeader",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

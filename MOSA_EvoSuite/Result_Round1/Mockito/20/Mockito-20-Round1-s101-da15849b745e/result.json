@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-20-Round1-s101-da15849b745e",
+  "unit": {
+    "project": "Mockito",
+    "bug": "20",
+    "target": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:36:04.441616+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/20/Mockito-20-Round1-s101-da15849b745e",
+    "tests": "MOSA_EvoSuite/Test/Mockito/20/Mockito-20-Round1-s101-da15849b745e",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/20/Mockito-20-Round1-s101-da15849b745e"
+  },
+  "generation_time_sec": 36.251,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/20/Mockito-20-Round1-s101-da15849b745e/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker_ESTest.java": "79b6476541f4c6fd15ab164fc3b8542e9d60b54ec4918a9f19df202a312b09e2",
+    "MOSA_EvoSuite/Test/Mockito/20/Mockito-20-Round1-s101-da15849b745e/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker_ESTest_scaffolding.java": "a04cc355be7e8b80e9341f864202dc580aafa20c088584d03f87021eeba60992"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.annotation.SpyAnnotationTest::should_spy_inner_class",
+    "available_triggers": [
+      "org.mockitousage.annotation.SpyAnnotationTest::should_spy_inner_class",
+      "org.mockitousage.annotation.SpyAnnotationTest::should_report_when_constructor_is_explosive",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::can_spy_abstract_classes",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::exception_message_when_constructor_not_found",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::can_create_mock_with_constructor",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::can_mock_inner_classes",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::mocking_inner_classes_with_wrong_outer_instance",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::can_mock_abstract_classes"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 866,
+      "tests": [
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test0",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test1",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test2",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test3"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 20,
+      "line_total": 41,
+      "line_coverage_percent": 48.78048780487805,
+      "branch_covered": 4,
+      "branch_total": 10,
+      "branch_coverage_percent": 40.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 879,
+      "tests": [
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test0",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test1",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test2",
+        "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker_ESTest::test3"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 40,
+      "line_coverage_percent": 47.5,
+      "branch_covered": 4,
+      "branch_total": 10,
+      "branch_coverage_percent": 40.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Mockito/20/Mockito-20-Round1-s101-da15849b745e/evaluation-1",
+  "finished_at": "2026-10-05T02:40:44.033042+00:00"
+}

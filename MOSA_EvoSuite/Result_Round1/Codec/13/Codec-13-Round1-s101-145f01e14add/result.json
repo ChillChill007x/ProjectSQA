@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-13-Round1-s101-145f01e14add",
+  "unit": {
+    "project": "Codec",
+    "bug": "13",
+    "target": "org.apache.commons.codec.binary.CharSequenceUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T21:18:39.145490+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/13/Codec-13-Round1-s101-145f01e14add",
+    "tests": "MOSA_EvoSuite/Test/Codec/13/Codec-13-Round1-s101-145f01e14add",
+    "config": "MOSA_EvoSuite/Configuration/Codec/13/Codec-13-Round1-s101-145f01e14add"
+  },
+  "generation_time_sec": 33.977,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/13/Codec-13-Round1-s101-145f01e14add/org/apache/commons/codec/binary/CharSequenceUtils_ESTest.java": "93eca3fb7bbdf89d3b10f350d1a945f52cdf41d2a098be1ca9fa5929cb00c42b",
+    "MOSA_EvoSuite/Test/Codec/13/Codec-13-Round1-s101-145f01e14add/org/apache/commons/codec/binary/CharSequenceUtils_ESTest_scaffolding.java": "3d85cfc583505cce84cdf57762105e6313cc5418164e3650fe1f003bf53d1e40"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.language.DoubleMetaphoneTest::testIsDoubleMetaphoneEqualBasic",
+    "available_triggers": [
+      "org.apache.commons.codec.language.DoubleMetaphoneTest::testIsDoubleMetaphoneEqualBasic",
+      "org.apache.commons.codec.language.DoubleMetaphoneTest::testCodec184"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T21:19:33.960114+00:00"
+}

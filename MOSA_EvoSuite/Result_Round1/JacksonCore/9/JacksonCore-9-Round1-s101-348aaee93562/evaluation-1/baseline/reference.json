@@ -1,0 +1,9 @@
+{
+  "trigger": "com.fasterxml.jackson.core.json.TestJsonParser::testGetValueAsTextBytes",
+  "available_triggers": [
+    "com.fasterxml.jackson.core.json.TestJsonParser::testGetValueAsTextBytes",
+    "com.fasterxml.jackson.core.json.TestJsonParser::testGetValueAsTextChars"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

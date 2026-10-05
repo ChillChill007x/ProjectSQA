@@ -1,0 +1,126 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-73-Round1-s101-f81f7ed6096d",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "73",
+    "target": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:22:36.614226+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d"
+  },
+  "generation_time_sec": 50.155,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder_ESTest.java": "a22cbdd2b4a7b86f64d091b69e0a518d85846ef46aa3db29ec59ab043355a14f",
+    "MOSA_EvoSuite/Test/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d/com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder_ESTest_scaffolding.java": "12a12f7616d294646c73b5f885d3678836d33dc1f92091b3306eedb76cb54295"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly",
+      "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnly935"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 19,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1622,
+      "tests": [
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test06",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test17",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test07",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test18",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test08",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test09",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test10",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test00",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test11",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test01",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test12",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test02",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test13",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test03",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test14",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test04",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test15",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test05",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 400,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 318,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2028,
+      "tests": [
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test06",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test17",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test07",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test18",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test08",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test09",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test10",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test00",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test11",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test01",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test12",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test02",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test13",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test03",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test14",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test04",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test15",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test05",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 400,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 318,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-f81f7ed6096d/evaluation-1",
+  "finished_at": "2026-10-05T00:24:58.701632+00:00"
+}

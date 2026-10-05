@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Cli-36-Round1-s101-3e26156ef4ca/evaluation-1/buggy/target/classes",
+    "/opt/defects4j/framework/projects/Cli/lib/junit/junit/4.12/junit-4.12.jar",
+    "/opt/defects4j/framework/projects/Cli/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+    "/workspace/work/checkouts/Cli-36-Round1-s101-3e26156ef4ca/evaluation-1/buggy/target/test-classes"
+  ],
+  "missing_entries": []
+}

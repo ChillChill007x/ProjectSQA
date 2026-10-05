@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.codec.language.bm.Lang",
+    "-projectCP",
+    "/workspace/work/checkouts/Codec-14-Round1-s101-bd6a5bb86a10-attempt2/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Codec/14/Codec-14-Round1-s101-bd6a5bb86a10-attempt2",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Codec/14/Codec-14-Round1-s101-bd6a5bb86a10-attempt2/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.62,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.codec.language.bm.Lang\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Codec-14-Round1-s101-bd6a5bb86a10-attempt2/generation-fixed/target/classes\n* Writing JUnit test case 'Lang_ESTest' to /workspace/MOSA_EvoSuite/Test/Codec/14/Codec-14-Round1-s101-bd6a5bb86a10-attempt2\n* Error while initializing target class: java.lang.ExceptionInInitializerError\n* Computation finished\n",
+  "stderr": "[MASTER] 02:04:39.780 [logback-2] ERROR TestSuiteGenerator - Problem for org.apache.commons.codec.language.bm.Lang. Full stack:\njava.lang.ExceptionInInitializerError: null\n\tat org.apache.commons.codec.language.bm.Lang.<clinit>(Lang.java)\n\tat java.lang.Class.forName0(Native Method)\n\tat java.lang.Class.forName(Class.java:348)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:256)\n\tat org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:165)\n\tat org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:219)\n\tat org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:286)\n\tat org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:192)\n\tat org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:49)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:750)\nCaused by: org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Unable to resolve required resource: org/apache/commons/codec/language/bm/ash_languages.txt\n\tat org.apache.commons.codec.language.bm.Languages.getInstance(Languages.java:175)\n\tat <evosuite>.<evosuite>(<evosuite>)\n\tat <evosuite>.<evosuite>(<evosuite>)\n[MASTER] 02:04:39.892 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case\n[MASTER] 02:04:39.994 [main] ERROR TestGeneration - failed to write statistics data\n"
+}

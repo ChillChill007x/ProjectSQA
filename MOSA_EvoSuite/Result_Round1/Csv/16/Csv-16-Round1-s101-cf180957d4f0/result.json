@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-16-Round1-s101-cf180957d4f0",
+  "unit": {
+    "project": "Csv",
+    "bug": "16",
+    "target": "org.apache.commons.csv.CSVParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T22:59:03.240788+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/16/Csv-16-Round1-s101-cf180957d4f0",
+    "tests": "MOSA_EvoSuite/Test/Csv/16/Csv-16-Round1-s101-cf180957d4f0",
+    "config": "MOSA_EvoSuite/Configuration/Csv/16/Csv-16-Round1-s101-cf180957d4f0"
+  },
+  "generation_time_sec": 38.304,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/16/Csv-16-Round1-s101-cf180957d4f0/org/apache/commons/csv/CSVParser_ESTest.java": "2e3b32c37c4b3f219f5b3d17b4773a541d09c2c508b9806e565640b9f2c365e0",
+    "MOSA_EvoSuite/Test/Csv/16/Csv-16-Round1-s101-cf180957d4f0/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java": "091058ba87fd9025c592748864f70753b43d564497a230b9e21ea5657b555e17"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVParserTest::testIteratorSequenceBreaking",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVParserTest::testIteratorSequenceBreaking"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T23:00:05.594522+00:00"
+}

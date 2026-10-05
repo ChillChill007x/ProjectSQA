@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-70-Round1-s101-393c8044b91c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.172,
+  "stdout": "com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl\ncom.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13\ncom.google.javascript.jscomp.TypeCheckTest::testScoping12\ncom.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl\ncom.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

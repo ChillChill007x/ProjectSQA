@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "com.fasterxml.jackson.core.json.UTF8StreamJsonParser",
+    "-projectCP",
+    "/workspace/work/checkouts/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/JacksonCore/2/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/JacksonCore/2/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 47.184,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: com.fasterxml.jackson.core.json.UTF8StreamJsonParser\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class com.fasterxml.jackson.core.json.UTF8StreamJsonParser\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 1255\n* Using seed 101\n* Starting evolution\n\r[Progress:====>                         16%] [Cov:=>                                 4%]\r[Progress:===============>              53%] [Cov:==>                                8%]\r[Progress:===============>              53%] [Cov:===>                               9%]\r[Progress:===============>              53%] [Cov:===>                               10%]\r[Progress:================>             56%] [Cov:====>                              13%]\r[Progress:=====================>        73%] [Cov:=====>                             15%]\r[Progress:===========================>  90%] [Cov:=====>                             16%]\r[Progress:===========================>  93%] [Cov:=====>                             17%]\r[Progress:===========================>  93%] [Cov:======>                            19%]\r[Progress:===========================>  93%] [Cov:======>                            19%]\r[Progress:==============================100%] [Cov:=======>                           20%]\n* Search finished after 33s and 10 generations, 10594 statements, best individual has fitness: 993.0\n[MASTER] 02:26:12.876 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 3 seconds more than allowed.\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 21%\n* Total number of goals: 1255\n* Number of covered goals: 261\n* Generated 54 tests with total length 452\n* Resulting test suite's coverage: 21%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'UTF8StreamJsonParser_ESTest' to /workspace/MOSA_EvoSuite/Test/JacksonCore/2/JacksonCore-2-Round1-s101-ae97c932d8ff-attempt2\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

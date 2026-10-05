@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Math-69-Round1-s101-3e0795fdcfdb/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.158,
+  "stdout": "org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero\norg.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest::testPValueNearZero",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

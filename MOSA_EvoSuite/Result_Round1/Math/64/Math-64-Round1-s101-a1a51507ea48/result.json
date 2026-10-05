@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-64-Round1-s101-a1a51507ea48",
+  "unit": {
+    "project": "Math",
+    "bug": "64",
+    "target": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:00:12.349359+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/64/Math-64-Round1-s101-a1a51507ea48",
+    "tests": "MOSA_EvoSuite/Test/Math/64/Math-64-Round1-s101-a1a51507ea48",
+    "config": "MOSA_EvoSuite/Configuration/Math/64/Math-64-Round1-s101-a1a51507ea48"
+  },
+  "generation_time_sec": 41.401,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/64/Math-64-Round1-s101-a1a51507ea48/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer_ESTest.java": "9a509cd857782cf8dbbc525ef24ec580ea0ea1bd91a2148975e353dc75aca656",
+    "MOSA_EvoSuite/Test/Math/64/Math-64-Round1-s101-a1a51507ea48/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer_ESTest_scaffolding.java": "ee9c511c1ad06900ba3cf0761273c322ddd3d8f9b5e2083bfa0b91cc356c3a18"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson",
+      "org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 5,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1839,
+      "tests": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test4",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test3",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test2",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test1",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 270,
+      "line_total": 355,
+      "line_coverage_percent": 76.05633802816901,
+      "branch_covered": 122,
+      "branch_total": 204,
+      "branch_coverage_percent": 59.80392156862745
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1905,
+      "tests": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test4",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test3",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test2",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test1",
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test3",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: Exception",
+          "trace": "java.lang.AssertionError: Expecting exception: Exception\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest.test3(LevenbergMarquardtOptimizer_ESTest.java:196)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: Exception",
+          "trace": "java.lang.AssertionError: Expecting exception: Exception\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest.test0(LevenbergMarquardtOptimizer_ESTest.java:52)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 264,
+      "line_total": 342,
+      "line_coverage_percent": 77.19298245614036,
+      "branch_covered": 120,
+      "branch_total": 200,
+      "branch_coverage_percent": 60.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/64/Math-64-Round1-s101-a1a51507ea48/evaluation-1",
+  "finished_at": "2026-10-05T04:02:31.981540+00:00"
+}

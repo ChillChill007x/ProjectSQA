@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JxPath",
+    "-v",
+    "22b",
+    "-w",
+    "/workspace/work/checkouts/JxPath-22-Round1-s101-07f5adad74cd-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.416,
+  "stdout": "",
+  "stderr": "Checking out afa2deca to /workspace/work/checkouts/JxPath-22-Round1-s101-07 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff afa2deca:5c538c4e..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JxPath-22b...................................... OK\n"
+}

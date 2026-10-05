@@ -1,0 +1,9 @@
+{
+  "trigger": "org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains",
+  "available_triggers": [
+    "org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains",
+    "org.jsoup.select.QueryParserTest::exceptionOnUncloseAttribute"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-89-Round1-s101-62b69ef2d83f",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "89",
+    "target": "org.jsoup.nodes.Attribute",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:12:12.976587+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f"
+  },
+  "generation_time_sec": 46.53,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f/org/jsoup/nodes/Attribute_ESTest.java": "b0ecf7db50be9162600d9f012afb18e5ee6ba6ee030f63b9b5914c51069edcd3",
+    "MOSA_EvoSuite/Test/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f/org/jsoup/nodes/Attribute_ESTest_scaffolding.java": "731b45d1f5c2f848af4335b3bdf6c61a5d806a1ad259fbf23ef1b645437dcbbf"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.nodes.AttributeTest::settersOnOrphanAttribute",
+    "available_triggers": [
+      "org.jsoup.nodes.AttributeTest::settersOnOrphanAttribute"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 25,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1212,
+      "tests": [
+        "org.jsoup.nodes.Attribute_ESTest::test15",
+        "org.jsoup.nodes.Attribute_ESTest::test16",
+        "org.jsoup.nodes.Attribute_ESTest::test13",
+        "org.jsoup.nodes.Attribute_ESTest::test14",
+        "org.jsoup.nodes.Attribute_ESTest::test11",
+        "org.jsoup.nodes.Attribute_ESTest::test12",
+        "org.jsoup.nodes.Attribute_ESTest::test10",
+        "org.jsoup.nodes.Attribute_ESTest::test19",
+        "org.jsoup.nodes.Attribute_ESTest::test17",
+        "org.jsoup.nodes.Attribute_ESTest::test18",
+        "org.jsoup.nodes.Attribute_ESTest::test04",
+        "org.jsoup.nodes.Attribute_ESTest::test05",
+        "org.jsoup.nodes.Attribute_ESTest::test02",
+        "org.jsoup.nodes.Attribute_ESTest::test24",
+        "org.jsoup.nodes.Attribute_ESTest::test03",
+        "org.jsoup.nodes.Attribute_ESTest::test00",
+        "org.jsoup.nodes.Attribute_ESTest::test22",
+        "org.jsoup.nodes.Attribute_ESTest::test01",
+        "org.jsoup.nodes.Attribute_ESTest::test23",
+        "org.jsoup.nodes.Attribute_ESTest::test20",
+        "org.jsoup.nodes.Attribute_ESTest::test21",
+        "org.jsoup.nodes.Attribute_ESTest::test08",
+        "org.jsoup.nodes.Attribute_ESTest::test09",
+        "org.jsoup.nodes.Attribute_ESTest::test06",
+        "org.jsoup.nodes.Attribute_ESTest::test07"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 62,
+      "line_total": 66,
+      "line_coverage_percent": 93.93939393939394,
+      "branch_covered": 46,
+      "branch_total": 50,
+      "branch_coverage_percent": 92.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 25,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1737,
+      "tests": [
+        "org.jsoup.nodes.Attribute_ESTest::test15",
+        "org.jsoup.nodes.Attribute_ESTest::test16",
+        "org.jsoup.nodes.Attribute_ESTest::test13",
+        "org.jsoup.nodes.Attribute_ESTest::test14",
+        "org.jsoup.nodes.Attribute_ESTest::test11",
+        "org.jsoup.nodes.Attribute_ESTest::test12",
+        "org.jsoup.nodes.Attribute_ESTest::test10",
+        "org.jsoup.nodes.Attribute_ESTest::test19",
+        "org.jsoup.nodes.Attribute_ESTest::test17",
+        "org.jsoup.nodes.Attribute_ESTest::test18",
+        "org.jsoup.nodes.Attribute_ESTest::test04",
+        "org.jsoup.nodes.Attribute_ESTest::test05",
+        "org.jsoup.nodes.Attribute_ESTest::test02",
+        "org.jsoup.nodes.Attribute_ESTest::test24",
+        "org.jsoup.nodes.Attribute_ESTest::test03",
+        "org.jsoup.nodes.Attribute_ESTest::test00",
+        "org.jsoup.nodes.Attribute_ESTest::test22",
+        "org.jsoup.nodes.Attribute_ESTest::test01",
+        "org.jsoup.nodes.Attribute_ESTest::test23",
+        "org.jsoup.nodes.Attribute_ESTest::test20",
+        "org.jsoup.nodes.Attribute_ESTest::test21",
+        "org.jsoup.nodes.Attribute_ESTest::test08",
+        "org.jsoup.nodes.Attribute_ESTest::test09",
+        "org.jsoup.nodes.Attribute_ESTest::test06",
+        "org.jsoup.nodes.Attribute_ESTest::test07"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.nodes.Attribute_ESTest::test17",
+          "exception": "java.lang.NullPointerException",
+          "message": null,
+          "trace": "java.lang.NullPointerException\n\tat org.jsoup.nodes.Attribute.setValue(Attribute.java:88)\n\tat org.jsoup.nodes.Attribute_ESTest.test17(Attribute_ESTest.java:356)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 65,
+      "line_coverage_percent": 93.84615384615384,
+      "branch_covered": 44,
+      "branch_total": 50,
+      "branch_coverage_percent": 88.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-62b69ef2d83f/evaluation-1",
+  "finished_at": "2026-10-05T02:13:52.488646+00:00"
+}

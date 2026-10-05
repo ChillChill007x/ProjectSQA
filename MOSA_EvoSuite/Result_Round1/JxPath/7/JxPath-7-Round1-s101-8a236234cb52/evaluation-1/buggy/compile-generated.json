@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/classes:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/src/java:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/commons-beanutils-1.4.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/commons-collections-2.0.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/commons-logging-1.0.4.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/jdom-1.0.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/junit-3.8.1.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/junit-3.8.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/mockrunner-0.4.1.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/servletapi-2.2.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/xerces-2.4.0.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/lib/xml-apis-2.0.2.jar:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/src/test:/workspace/work/checkouts/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/target/test-classes:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+    "-d",
+    "/workspace/MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/classes",
+    "@/workspace/MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-8a236234cb52/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "",
+  "stderr": "/workspace/MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-8a236234cb52/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan_ESTest.java:36: error: cannot find symbol\n      boolean boolean0 = coreOperationGreaterThan0.evaluateCompare(20);\n                                                  ^\n  symbol:   method evaluateCompare(int)\n  location: variable coreOperationGreaterThan0 of type CoreOperationGreaterThan\n/workspace/MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-8a236234cb52/org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan_ESTest.java:54: error: cannot find symbol\n      boolean boolean0 = coreOperationGreaterThan0.evaluateCompare((-963));\n                                                  ^\n  symbol:   method evaluateCompare(int)\n  location: variable coreOperationGreaterThan0 of type CoreOperationGreaterThan\n2 errors\n"
+}

@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/build/classes",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/ant_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/args4j_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/guava-r06.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/hamcrest-core-1.1.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/json.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/jsr305.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/junit.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/libtrunk_rhino_parser_jarjared.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/lib/protobuf-java-2.3.0.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-91-Round1-s101-e3dcbfecae87/evaluation-1/buggy/build/test"
+  ],
+  "missing_entries": []
+}

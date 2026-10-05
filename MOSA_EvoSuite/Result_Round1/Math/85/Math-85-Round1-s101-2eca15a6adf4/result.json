@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-85-Round1-s101-2eca15a6adf4",
+  "unit": {
+    "project": "Math",
+    "bug": "85",
+    "target": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:18:20.071289+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/85/Math-85-Round1-s101-2eca15a6adf4",
+    "tests": "MOSA_EvoSuite/Test/Math/85/Math-85-Round1-s101-2eca15a6adf4",
+    "config": "MOSA_EvoSuite/Configuration/Math/85/Math-85-Round1-s101-2eca15a6adf4"
+  },
+  "generation_time_sec": 10.114,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/85/Math-85-Round1-s101-2eca15a6adf4/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils_ESTest.java": "bdb53f5fa4fce9f50555151723a6f7c1134f5c17247f25a845ea032a5b276f89",
+    "MOSA_EvoSuite/Test/Math/85/Math-85-Round1-s101-2eca15a6adf4/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils_ESTest_scaffolding.java": "242e29b6c0c840d4416d86ba9786995925df0f82f95422c23ac4b2e0167d84fe"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.distribution.NormalDistributionTest::testMath280",
+    "available_triggers": [
+      "org.apache.commons.math.distribution.NormalDistributionTest::testMath280"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 12,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 624,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test06",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test07",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test08",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test09",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test02",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test03",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test04",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test05",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test10",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test00",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test11",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test01"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 28,
+      "line_total": 33,
+      "line_coverage_percent": 84.84848484848484,
+      "branch_covered": 22,
+      "branch_total": 22,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 587,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test06",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test07",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test08",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test09",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test02",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test03",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test04",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test05",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test10",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test00",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test11",
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test01"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest::test11",
+          "exception": "org.apache.commons.math.ConvergenceException",
+          "message": "number of iterations=1, maximum iterations=2,147,483,647, initial=1,626.375, lower bound=1,626.375, upper bound=2,259,641,369,143,596,700,000,000,000,000,000, final a value=1,626.375, final b value=1,627.375, f(a)=0, f(b)=0",
+          "trace": "org.apache.commons.math.ConvergenceException: number of iterations=1, maximum iterations=2,147,483,647, initial=1,626.375, lower bound=1,626.375, upper bound=2,259,641,369,143,596,700,000,000,000,000,000, final a value=1,626.375, final b value=1,627.375, f(a)=0, f(b)=0\n\tat org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:204)\n\tat org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:127)\n\tat org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils_ESTest.test11(UnivariateRealSolverUtils_ESTest.java:238)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 33,
+      "line_coverage_percent": 78.78787878787878,
+      "branch_covered": 21,
+      "branch_total": 22,
+      "branch_coverage_percent": 95.45454545454545
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/85/Math-85-Round1-s101-2eca15a6adf4/evaluation-1",
+  "finished_at": "2026-10-05T04:19:55.281831+00:00"
+}

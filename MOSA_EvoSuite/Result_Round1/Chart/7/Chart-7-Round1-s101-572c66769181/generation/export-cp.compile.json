@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Chart-7-Round1-s101-572c66769181/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.288,
+  "stdout": "/workspace/work/checkouts/Chart-7-Round1-s101-572c66769181/generation-fixed/build:/workspace/work/checkouts/Chart-7-Round1-s101-572c66769181/generation-fixed/lib/servlet.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

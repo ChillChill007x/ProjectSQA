@@ -1,0 +1,154 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-56-Round1-s101-1e203b60cc2f",
+  "unit": {
+    "project": "Closure",
+    "bug": "56",
+    "target": "com.google.javascript.jscomp.SourceFile",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:15:11.357588+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/56/Closure-56-Round1-s101-1e203b60cc2f",
+    "tests": "MOSA_EvoSuite/Test/Closure/56/Closure-56-Round1-s101-1e203b60cc2f",
+    "config": "MOSA_EvoSuite/Configuration/Closure/56/Closure-56-Round1-s101-1e203b60cc2f"
+  },
+  "generation_time_sec": 44.849,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/56/Closure-56-Round1-s101-1e203b60cc2f/com/google/javascript/jscomp/SourceFile_ESTest.java": "9bf501e807c4e648f524153663e9ad8bcc8d6584dc4f223a5fd47ef906e3c1c9",
+    "MOSA_EvoSuite/Test/Closure/56/Closure-56-Round1-s101-1e203b60cc2f/com/google/javascript/jscomp/SourceFile_ESTest_scaffolding.java": "d853800f80d22485cf5ebe7db8cb2d8f44b9947d498c8be5cce810119330a680"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine",
+    "available_triggers": [
+      "com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine",
+      "com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError1",
+      "com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 29,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2136,
+      "tests": [
+        "com.google.javascript.jscomp.SourceFile_ESTest::test01",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test23",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test00",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test22",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test21",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test20",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test05",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test27",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test04",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test26",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test03",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test25",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test02",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test24",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test09",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test08",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test07",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test06",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test28",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test12",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test11",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test10",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test16",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test15",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test14",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test13",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test19",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test18",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test17"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 91,
+      "line_total": 106,
+      "line_coverage_percent": 85.84905660377359,
+      "branch_covered": 39,
+      "branch_total": 42,
+      "branch_coverage_percent": 92.85714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2394,
+      "tests": [
+        "com.google.javascript.jscomp.SourceFile_ESTest::test01",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test23",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test00",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test22",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test21",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test20",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test05",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test27",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test04",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test26",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test03",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test25",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test02",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test24",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test09",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test08",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test07",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test06",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test28",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test12",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test11",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test10",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test16",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test15",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test14",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test13",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test19",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test18",
+        "com.google.javascript.jscomp.SourceFile_ESTest::test17"
+      ],
+      "failures": [
+        {
+          "test": "com.google.javascript.jscomp.SourceFile_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<h,:]> but was:<null>",
+          "trace": "java.lang.AssertionError: expected:<h,:]> but was:<null>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.google.javascript.jscomp.SourceFile_ESTest.test06(SourceFile_ESTest.java:163)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 89,
+      "line_total": 104,
+      "line_coverage_percent": 85.57692307692308,
+      "branch_covered": 37,
+      "branch_total": 40,
+      "branch_coverage_percent": 92.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/56/Closure-56-Round1-s101-1e203b60cc2f/evaluation-1",
+  "finished_at": "2026-10-04T20:18:13.797229+00:00"
+}

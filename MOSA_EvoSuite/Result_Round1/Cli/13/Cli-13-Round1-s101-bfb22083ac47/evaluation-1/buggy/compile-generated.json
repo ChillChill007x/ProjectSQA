@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/checkouts/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/target/classes:/workspace/work/checkouts/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/target/lib/commons-lang/jars/commons-lang-2.1.jar:/workspace/work/checkouts/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/target/lib/jdepend/jars/jdepend-2.5.jar:/workspace/work/checkouts/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/target/test-classes",
+    "-d",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/classes",
+    "@/workspace/MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-bfb22083ac47/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 1,
+  "timed_out": false,
+  "elapsed_sec": 0.767,
+  "stdout": "",
+  "stderr": "/workspace/MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java:449: error: cannot find symbol\n      List list0 = writeableCommandLineImpl0.getUndefaultedValues(argumentImpl0);\n                                            ^\n  symbol:   method getUndefaultedValues(ArgumentImpl)\n  location: variable writeableCommandLineImpl0 of type WriteableCommandLineImpl\n/workspace/MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java:849: error: cannot find symbol\n      List list0 = writeableCommandLineImpl0.getUndefaultedValues(propertyOption0);\n                                            ^\n  symbol:   method getUndefaultedValues(PropertyOption)\n  location: variable writeableCommandLineImpl0 of type WriteableCommandLineImpl\nNote: /workspace/MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n2 errors\n"
+}

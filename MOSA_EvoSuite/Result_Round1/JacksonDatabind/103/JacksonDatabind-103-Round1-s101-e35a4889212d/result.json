@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-103-Round1-s101-e35a4889212d",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "103",
+    "target": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-05T01:04:37.676589+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-e35a4889212d",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-e35a4889212d",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-e35a4889212d"
+  },
+  "generation_time_sec": 60.035,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-e35a4889212d/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory_ESTest.java": "8f0d02b94d0c12021b7380d74080247ebfaf1c5ceb9572c83859bf45d8556685",
+    "MOSA_EvoSuite/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-e35a4889212d/com/fasterxml/jackson/databind/deser/BeanDeserializerFactory_ESTest_scaffolding.java": "be284bbb7c2d3d37d413fa8ef75f5ec9f56655fa154f4750b2655cfb9cba3c65"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-05T01:07:02.713716+00:00"
+}

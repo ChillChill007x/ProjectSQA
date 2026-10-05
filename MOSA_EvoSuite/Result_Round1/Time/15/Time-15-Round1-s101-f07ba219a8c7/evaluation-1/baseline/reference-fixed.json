@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-15-Round1-s101-f07ba219a8c7/evaluation-1/fixed",
+    "-t",
+    "org.joda.time.field.TestFieldUtils::testSafeMultiplyLongInt"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.222,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonCore",
+    "-v",
+    "9f",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-9-Round1-s101-348aaee93562-attempt2/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.068,
+  "stdout": "",
+  "stderr": "Checking out 698f3a73 to /workspace/work/checkouts/JacksonCore-9-Round1-s10 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nBacking up build file: /workspace/work/checkouts/JacksonCore-9-Round1-s101- OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 698f3a73:4b041e97..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JacksonCore-9f.................................. OK\n"
+}

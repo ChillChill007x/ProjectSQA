@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-22-Round1-s101-07f5adad74cd",
+  "unit": {
+    "project": "JxPath",
+    "bug": "22",
+    "target": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:50:06.570655+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd",
+    "tests": "MOSA_EvoSuite/Test/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd"
+  },
+  "generation_time_sec": 70.485,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer_ESTest.java": "2e998e9b2cdb0de273e5db4535a2bf4d839908e79ad45912a4b606793b93b582",
+    "MOSA_EvoSuite/Test/JxPath/22/JxPath-22-Round1-s101-07f5adad74cd/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer_ESTest_scaffolding.java": "e4cdd7df05aa7301bd20e0c3a348c04fb31035942c19aaf8892a8a6c38ec4109"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.JXPath154Test::testInnerEmptyNamespaceDOM",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.JXPath154Test::testInnerEmptyNamespaceDOM"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:51:36.446724+00:00"
+}

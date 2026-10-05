@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-90-Round1-s101-c8c872447870",
+  "unit": {
+    "project": "Math",
+    "bug": "90",
+    "target": "org.apache.commons.math.stat.Frequency",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:22:04.459706+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/90/Math-90-Round1-s101-c8c872447870",
+    "tests": "MOSA_EvoSuite/Test/Math/90/Math-90-Round1-s101-c8c872447870",
+    "config": "MOSA_EvoSuite/Configuration/Math/90/Math-90-Round1-s101-c8c872447870"
+  },
+  "generation_time_sec": 13.95,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/90/Math-90-Round1-s101-c8c872447870/org/apache/commons/math/stat/Frequency_ESTest.java": "e862a770f5bc96de8fcb0d345b5a861aaecaa99aae75a66e54ada1795121f389",
+    "MOSA_EvoSuite/Test/Math/90/Math-90-Round1-s101-c8c872447870/org/apache/commons/math/stat/Frequency_ESTest_scaffolding.java": "7594f85a558f3b44d20d729e59db06e21014c1dc809846fb64d148db72bea227"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.stat.FrequencyTest::testAddNonComparable",
+    "available_triggers": [
+      "org.apache.commons.math.stat.FrequencyTest::testAddNonComparable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 19,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1541,
+      "tests": [
+        "org.apache.commons.math.stat.Frequency_ESTest::test01",
+        "org.apache.commons.math.stat.Frequency_ESTest::test12",
+        "org.apache.commons.math.stat.Frequency_ESTest::test00",
+        "org.apache.commons.math.stat.Frequency_ESTest::test11",
+        "org.apache.commons.math.stat.Frequency_ESTest::test10",
+        "org.apache.commons.math.stat.Frequency_ESTest::test05",
+        "org.apache.commons.math.stat.Frequency_ESTest::test16",
+        "org.apache.commons.math.stat.Frequency_ESTest::test04",
+        "org.apache.commons.math.stat.Frequency_ESTest::test15",
+        "org.apache.commons.math.stat.Frequency_ESTest::test03",
+        "org.apache.commons.math.stat.Frequency_ESTest::test14",
+        "org.apache.commons.math.stat.Frequency_ESTest::test02",
+        "org.apache.commons.math.stat.Frequency_ESTest::test13",
+        "org.apache.commons.math.stat.Frequency_ESTest::test09",
+        "org.apache.commons.math.stat.Frequency_ESTest::test08",
+        "org.apache.commons.math.stat.Frequency_ESTest::test07",
+        "org.apache.commons.math.stat.Frequency_ESTest::test18",
+        "org.apache.commons.math.stat.Frequency_ESTest::test06",
+        "org.apache.commons.math.stat.Frequency_ESTest::test17"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 101,
+      "line_total": 106,
+      "line_coverage_percent": 95.28301886792453,
+      "branch_covered": 32,
+      "branch_total": 32,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1275,
+      "tests": [
+        "org.apache.commons.math.stat.Frequency_ESTest::test01",
+        "org.apache.commons.math.stat.Frequency_ESTest::test12",
+        "org.apache.commons.math.stat.Frequency_ESTest::test00",
+        "org.apache.commons.math.stat.Frequency_ESTest::test11",
+        "org.apache.commons.math.stat.Frequency_ESTest::test10",
+        "org.apache.commons.math.stat.Frequency_ESTest::test05",
+        "org.apache.commons.math.stat.Frequency_ESTest::test16",
+        "org.apache.commons.math.stat.Frequency_ESTest::test04",
+        "org.apache.commons.math.stat.Frequency_ESTest::test15",
+        "org.apache.commons.math.stat.Frequency_ESTest::test03",
+        "org.apache.commons.math.stat.Frequency_ESTest::test14",
+        "org.apache.commons.math.stat.Frequency_ESTest::test02",
+        "org.apache.commons.math.stat.Frequency_ESTest::test13",
+        "org.apache.commons.math.stat.Frequency_ESTest::test09",
+        "org.apache.commons.math.stat.Frequency_ESTest::test08",
+        "org.apache.commons.math.stat.Frequency_ESTest::test07",
+        "org.apache.commons.math.stat.Frequency_ESTest::test18",
+        "org.apache.commons.math.stat.Frequency_ESTest::test06",
+        "org.apache.commons.math.stat.Frequency_ESTest::test17"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 99,
+      "line_total": 104,
+      "line_coverage_percent": 95.1923076923077,
+      "branch_covered": 32,
+      "branch_total": 32,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/90/Math-90-Round1-s101-c8c872447870/evaluation-1",
+  "finished_at": "2026-10-05T04:23:41.764365+00:00"
+}

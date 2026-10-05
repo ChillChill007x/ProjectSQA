@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "56f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-56-Round1-s101-1e203b60cc2f/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.85,
+  "stdout": "",
+  "stderr": "Checking out 9e921fa9 to /workspace/work/parallel/evosuite/83569/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-56-Round1-s101-1e203b60cc2f/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-56-Round1-s101-1e203b60cc2f/generation-fixed/lib/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 9e921fa9:f791e3a7..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-56f..................................... OK\n"
+}

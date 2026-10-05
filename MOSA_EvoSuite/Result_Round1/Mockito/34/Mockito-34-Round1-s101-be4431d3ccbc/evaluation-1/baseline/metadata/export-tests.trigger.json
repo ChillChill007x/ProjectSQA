@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-34-Round1-s101-be4431d3ccbc/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.mockito.internal.invocation.InvocationMatcherTest::shouldMatchCaptureArgumentsWhenArgsCountDoesNOTMatch\norg.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

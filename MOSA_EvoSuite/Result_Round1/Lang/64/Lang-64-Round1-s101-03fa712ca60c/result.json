@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-64-Round1-s101-03fa712ca60c",
+  "unit": {
+    "project": "Lang",
+    "bug": "64",
+    "target": "org.apache.commons.lang.enums.ValuedEnum",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:58:26.697914+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/64/Lang-64-Round1-s101-03fa712ca60c",
+    "tests": "MOSA_EvoSuite/Test/Lang/64/Lang-64-Round1-s101-03fa712ca60c",
+    "config": "MOSA_EvoSuite/Configuration/Lang/64/Lang-64-Round1-s101-03fa712ca60c"
+  },
+  "generation_time_sec": 35.089,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/64/Lang-64-Round1-s101-03fa712ca60c/org/apache/commons/lang/enums/ValuedEnum_ESTest.java": "75e79b77793ed5f1ec0e45b7ec17e1cde1edb0781385f71bfdd52a5b717920eb",
+    "MOSA_EvoSuite/Test/Lang/64/Lang-64-Round1-s101-03fa712ca60c/org/apache/commons/lang/enums/ValuedEnum_ESTest_scaffolding.java": "0287a205622e42ea040d82e582af6e60476fd2444932eb3b75f5210d66ae9726"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.enums.ValuedEnumTest::testCompareTo_otherEnumType",
+    "available_triggers": [
+      "org.apache.commons.lang.enums.ValuedEnumTest::testCompareTo_otherEnumType"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 443,
+      "tests": [
+        "org.apache.commons.lang.enums.ValuedEnum_ESTest::test0",
+        "org.apache.commons.lang.enums.ValuedEnum_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 2,
+      "line_total": 33,
+      "line_coverage_percent": 6.0606060606060606,
+      "branch_covered": 1,
+      "branch_total": 14,
+      "branch_coverage_percent": 7.142857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 722,
+      "tests": [
+        "org.apache.commons.lang.enums.ValuedEnum_ESTest::test0",
+        "org.apache.commons.lang.enums.ValuedEnum_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 2,
+      "line_total": 18,
+      "line_coverage_percent": 11.11111111111111,
+      "branch_covered": 1,
+      "branch_total": 8,
+      "branch_coverage_percent": 12.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/64/Lang-64-Round1-s101-03fa712ca60c/evaluation-1",
+  "finished_at": "2026-10-05T03:00:00.641847+00:00"
+}

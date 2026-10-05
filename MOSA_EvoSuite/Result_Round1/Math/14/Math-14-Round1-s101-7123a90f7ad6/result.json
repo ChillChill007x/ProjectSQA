@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-14-Round1-s101-7123a90f7ad6",
+  "unit": {
+    "project": "Math",
+    "bug": "14",
+    "target": "org.apache.commons.math3.optim.nonlinear.vector.Weight",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:16:17.791564+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/14/Math-14-Round1-s101-7123a90f7ad6",
+    "tests": "MOSA_EvoSuite/Test/Math/14/Math-14-Round1-s101-7123a90f7ad6",
+    "config": "MOSA_EvoSuite/Configuration/Math/14/Math-14-Round1-s101-7123a90f7ad6"
+  },
+  "generation_time_sec": 7.274,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/14/Math-14-Round1-s101-7123a90f7ad6/org/apache/commons/math3/optim/nonlinear/vector/Weight_ESTest.java": "f85cbb223a721a6fe5e470446a9751e0c3476333290dd726be0a95009ed489ef",
+    "MOSA_EvoSuite/Test/Math/14/Math-14-Round1-s101-7123a90f7ad6/org/apache/commons/math3/optim/nonlinear/vector/Weight_ESTest_scaffolding.java": "310304eda3adc6150571c22a94ffe90733687d4a83e35b2e86682e786143127d"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.fitting.PolynomialFitterTest::testLargeSample",
+    "available_triggers": [
+      "org.apache.commons.math3.fitting.PolynomialFitterTest::testLargeSample"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1078,
+      "tests": [
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test2",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test0",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 11,
+      "line_total": 11,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 2,
+      "branch_total": 2,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1059,
+      "tests": [
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test2",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test0",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 13,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 4,
+      "branch_total": 4,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/14/Math-14-Round1-s101-7123a90f7ad6/evaluation-1",
+  "finished_at": "2026-10-05T03:18:14.044319+00:00"
+}

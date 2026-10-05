@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-2-Round1-s101-114130b2e142",
+  "unit": {
+    "project": "Math",
+    "bug": "2",
+    "target": "org.apache.commons.math3.distribution.HypergeometricDistribution",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:00:07.565850+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/2/Math-2-Round1-s101-114130b2e142",
+    "tests": "MOSA_EvoSuite/Test/Math/2/Math-2-Round1-s101-114130b2e142",
+    "config": "MOSA_EvoSuite/Configuration/Math/2/Math-2-Round1-s101-114130b2e142"
+  },
+  "generation_time_sec": 12.973,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/2/Math-2-Round1-s101-114130b2e142/org/apache/commons/math3/distribution/HypergeometricDistribution_ESTest.java": "78552f0992b686ea4e0edaea3a0dfaaeae217b8ec85d9b398866237fdf1f10a4",
+    "MOSA_EvoSuite/Test/Math/2/Math-2-Round1-s101-114130b2e142/org/apache/commons/math3/distribution/HypergeometricDistribution_ESTest_scaffolding.java": "9610dba4572bfc2032ad344e8808eaa592731e27adfd5f5e63b2575318ac47d1"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.distribution.HypergeometricDistributionTest::testMath1021",
+    "available_triggers": [
+      "org.apache.commons.math3.distribution.HypergeometricDistributionTest::testMath1021"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1181,
+      "tests": [
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test09",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test08",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test07",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test06",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test05",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test04",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test03",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test14",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test02",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test13",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test01",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test12",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test00",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test11",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 74,
+      "line_total": 74,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 26,
+      "branch_total": 26,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 771,
+      "tests": [
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test09",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test08",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test07",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test06",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test05",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test04",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test03",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test14",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test02",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test13",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test01",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test12",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test00",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test11",
+        "org.apache.commons.math3.distribution.HypergeometricDistribution_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 74,
+      "line_total": 74,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 26,
+      "branch_total": 26,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/2/Math-2-Round1-s101-114130b2e142/evaluation-1",
+  "finished_at": "2026-10-05T03:02:02.128298+00:00"
+}

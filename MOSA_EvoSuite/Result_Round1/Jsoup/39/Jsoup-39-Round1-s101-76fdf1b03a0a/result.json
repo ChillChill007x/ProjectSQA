@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-39-Round1-s101-76fdf1b03a0a",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "39",
+    "target": "org.jsoup.helper.DataUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T01:40:09.999806+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/39/Jsoup-39-Round1-s101-76fdf1b03a0a",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/39/Jsoup-39-Round1-s101-76fdf1b03a0a",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/39/Jsoup-39-Round1-s101-76fdf1b03a0a"
+  },
+  "generation_time_sec": 47.405,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/39/Jsoup-39-Round1-s101-76fdf1b03a0a/org/jsoup/helper/DataUtil_ESTest.java": "1d9acd128c5df650ea8ccc4a41407f961370b067a33fb24d5b3748c5c8fa2797",
+    "MOSA_EvoSuite/Test/Jsoup/39/Jsoup-39-Round1-s101-76fdf1b03a0a/org/jsoup/helper/DataUtil_ESTest_scaffolding.java": "d64af39699956cdd48b513d7c01e1a2ff0331463079cbebda333de6714271ef1"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMarkWhenNoCharsetSet",
+    "available_triggers": [
+      "org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMarkWhenNoCharsetSet"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 917,
+      "tests": [
+        "org.jsoup.helper.DataUtil_ESTest::test10",
+        "org.jsoup.helper.DataUtil_ESTest::test01",
+        "org.jsoup.helper.DataUtil_ESTest::test00",
+        "org.jsoup.helper.DataUtil_ESTest::test11",
+        "org.jsoup.helper.DataUtil_ESTest::test03",
+        "org.jsoup.helper.DataUtil_ESTest::test02",
+        "org.jsoup.helper.DataUtil_ESTest::test05",
+        "org.jsoup.helper.DataUtil_ESTest::test04",
+        "org.jsoup.helper.DataUtil_ESTest::test07",
+        "org.jsoup.helper.DataUtil_ESTest::test06",
+        "org.jsoup.helper.DataUtil_ESTest::test09",
+        "org.jsoup.helper.DataUtil_ESTest::test08"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.helper.DataUtil_ESTest::test08",
+          "exception": "java.io.FileNotFoundException",
+          "message": null,
+          "trace": "java.io.FileNotFoundException\n\tat org.evosuite.runtime.mock.java.io.MockFileInputStream.<init>(MockFileInputStream.java:86)\n\tat org.jsoup.helper.DataUtil.load(DataUtil.java:37)\n\tat org.jsoup.helper.DataUtil_ESTest.test08(DataUtil_ESTest.java:253)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 44,
+      "line_total": 74,
+      "line_coverage_percent": 59.45945945945946,
+      "branch_covered": 24,
+      "branch_total": 46,
+      "branch_coverage_percent": 52.17391304347826
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T01:41:30.846373+00:00"
+}

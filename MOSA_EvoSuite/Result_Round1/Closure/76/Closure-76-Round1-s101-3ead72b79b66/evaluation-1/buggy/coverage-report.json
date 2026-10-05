@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Closure/76/Closure-76-Round1-s101-3ead72b79b66/evaluation-1/buggy/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-76-Round1-s101-3ead72b79b66/evaluation-1/buggy/build/classes/com/google/javascript/jscomp/DeadAssignmentsElimination.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Closure/76/Closure-76-Round1-s101-3ead72b79b66/evaluation-1/buggy/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.475,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round1/Closure/76/Closure-76-Round1-s101-3ead72b79b66/evaluation-1/buggy/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

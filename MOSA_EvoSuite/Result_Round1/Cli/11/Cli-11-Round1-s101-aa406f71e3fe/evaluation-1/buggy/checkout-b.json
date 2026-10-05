@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "11b",
+    "-w",
+    "/workspace/work/checkouts/Cli-11-Round1-s101-aa406f71e3fe/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.269,
+  "stdout": "",
+  "stderr": "Checking out d36adebd to /workspace/work/checkouts/Cli-11-Round1-s101-aa406 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff d36adebd:33abc034..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-11b......................................... OK\n"
+}

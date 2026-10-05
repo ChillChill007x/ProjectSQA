@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-6-Round1-s101-cbf37c90c262/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugDeserialize\ncom.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugSerialize",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

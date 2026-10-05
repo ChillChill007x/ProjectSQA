@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-11-Round1-s101-06064591d5be/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_equal\norg.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_self",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

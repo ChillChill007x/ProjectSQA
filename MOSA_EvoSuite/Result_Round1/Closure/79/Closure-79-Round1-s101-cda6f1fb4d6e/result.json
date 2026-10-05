@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-79-Round1-s101-cda6f1fb4d6e",
+  "unit": {
+    "project": "Closure",
+    "bug": "79",
+    "target": "com.google.javascript.jscomp.Normalize",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:39:53.584278+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e",
+    "tests": "MOSA_EvoSuite/Test/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e",
+    "config": "MOSA_EvoSuite/Configuration/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e"
+  },
+  "generation_time_sec": 51.297,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e/com/google/javascript/jscomp/Normalize_ESTest.java": "bb99bf32b61a0515b30767d2782fc1aec73761195aaa96cc7e07a90573b2e1b1",
+    "MOSA_EvoSuite/Test/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e/com/google/javascript/jscomp/Normalize_ESTest_scaffolding.java": "0ac70a5cd0d67a13df0937142c380ce9e186fb887ded0b87fd97bc666b991b54"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.NormalizeTest::testIssue",
+    "available_triggers": [
+      "com.google.javascript.jscomp.NormalizeTest::testIssue",
+      "com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns1",
+      "com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns3",
+      "com.google.javascript.jscomp.VarCheckTest::testVarReferenceInExterns",
+      "com.google.javascript.jscomp.VarCheckTest::testCallInExterns"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2685,
+      "tests": [
+        "com.google.javascript.jscomp.Normalize_ESTest::test6",
+        "com.google.javascript.jscomp.Normalize_ESTest::test7",
+        "com.google.javascript.jscomp.Normalize_ESTest::test4",
+        "com.google.javascript.jscomp.Normalize_ESTest::test5",
+        "com.google.javascript.jscomp.Normalize_ESTest::test2",
+        "com.google.javascript.jscomp.Normalize_ESTest::test3",
+        "com.google.javascript.jscomp.Normalize_ESTest::test0",
+        "com.google.javascript.jscomp.Normalize_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 35,
+      "line_coverage_percent": 74.28571428571429,
+      "branch_covered": 2,
+      "branch_total": 4,
+      "branch_coverage_percent": 50.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2433,
+      "tests": [
+        "com.google.javascript.jscomp.Normalize_ESTest::test6",
+        "com.google.javascript.jscomp.Normalize_ESTest::test7",
+        "com.google.javascript.jscomp.Normalize_ESTest::test4",
+        "com.google.javascript.jscomp.Normalize_ESTest::test5",
+        "com.google.javascript.jscomp.Normalize_ESTest::test2",
+        "com.google.javascript.jscomp.Normalize_ESTest::test3",
+        "com.google.javascript.jscomp.Normalize_ESTest::test0",
+        "com.google.javascript.jscomp.Normalize_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 35,
+      "line_coverage_percent": 74.28571428571429,
+      "branch_covered": 2,
+      "branch_total": 4,
+      "branch_coverage_percent": 50.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/79/Closure-79-Round1-s101-cda6f1fb4d6e/evaluation-1",
+  "finished_at": "2026-10-04T20:42:08.568734+00:00"
+}

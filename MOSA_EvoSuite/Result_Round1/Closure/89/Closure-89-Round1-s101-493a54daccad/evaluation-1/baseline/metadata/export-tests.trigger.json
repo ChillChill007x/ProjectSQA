@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-89-Round1-s101-493a54daccad/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.275,
+  "stdout": "com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToChildOfUncollapsibleFunctionInLocalScope\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_2\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_3\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleNamedCtorInLocalScopeDepth1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth2\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth2",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

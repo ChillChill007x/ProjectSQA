@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Math",
+    "-v",
+    "101b",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Math-101-Round1-s101-2489df904111/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.132,
+  "stdout": "",
+  "stderr": "Checking out cd5f65c4 to /workspace/work/parallel/evosuite/83569/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/evosuite/83569/checkouts/Ma OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff cd5f65c4:07b329c5..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Math-101b....................................... OK\n"
+}

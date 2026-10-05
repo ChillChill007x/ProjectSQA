@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-6-Round1-s101-6143912d2a4c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "org.jfree.chart.util.junit.ShapeListTests::testSerialization\norg.jfree.chart.util.junit.ShapeListTests::testEquals",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

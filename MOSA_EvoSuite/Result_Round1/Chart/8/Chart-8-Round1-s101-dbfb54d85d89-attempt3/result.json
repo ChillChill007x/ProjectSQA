@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-8-Round1-s101-dbfb54d85d89-attempt3",
+  "unit": {
+    "project": "Chart",
+    "bug": "8",
+    "target": "org.jfree.data.time.Week",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T08:36:35.533437+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3",
+    "tests": "MOSA_EvoSuite/Test/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3",
+    "config": "MOSA_EvoSuite/Configuration/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3"
+  },
+  "generation_time_sec": 36.227,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3/org/jfree/data/time/Week_ESTest.java": "881868bf538b1ab54d003c0b40961e7fca277f871efef296daab7c24b9d73ae6",
+    "MOSA_EvoSuite/Test/Chart/8/Chart-8-Round1-s101-dbfb54d85d89-attempt3/org/jfree/data/time/Week_ESTest_scaffolding.java": "576d1851947c937934afbff990d6557c54b1e07ec60f32e8c4d4b43b0ca29658"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.data.time.junit.WeekTests::testConstructor",
+    "available_triggers": [
+      "org.jfree.data.time.junit.WeekTests::testConstructor"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T08:37:49.154008+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Collections-13-Round1-s101-58fb416e06ad-attempt2/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.collections.TestExtendedProperties::testCollections299"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.917,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-33-Round1-s101-1adc1a482016",
+  "unit": {
+    "project": "Compress",
+    "bug": "33",
+    "target": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T23:00:39.771823+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/33/Compress-33-Round1-s101-1adc1a482016",
+    "tests": "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-1adc1a482016",
+    "config": "MOSA_EvoSuite/Configuration/Compress/33/Compress-33-Round1-s101-1adc1a482016"
+  },
+  "generation_time_sec": 37.238,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-1adc1a482016/org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStream_ESTest.java": "c75a79738c3a591130034396f824a2ab4f59c654bdc2ba34b2e32abbfab23650",
+    "MOSA_EvoSuite/Test/Compress/33/Compress-33-Round1-s101-1adc1a482016/org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStream_ESTest_scaffolding.java": "1a22e761f6736ff48f21bded0155f21cfd588530378f723e0d4ecc80005eb3b9"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection",
+    "available_triggers": [
+      "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T23:01:57.593085+00:00"
+}

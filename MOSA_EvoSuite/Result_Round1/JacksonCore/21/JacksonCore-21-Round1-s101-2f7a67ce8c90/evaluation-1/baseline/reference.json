@@ -1,0 +1,10 @@
+{
+  "trigger": "com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testTokensSingleMatchWithPath",
+  "available_triggers": [
+    "com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testTokensSingleMatchWithPath",
+    "com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testBasicSingleMatchFilteringWithPath",
+    "com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testSkippingForSingleWithPath"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

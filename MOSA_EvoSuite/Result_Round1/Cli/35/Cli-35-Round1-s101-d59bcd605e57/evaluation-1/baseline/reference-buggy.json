@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Cli-35-Round1-s101-d59bcd605e57/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.cli.bug.BugCLI252Test::testExactOptionNameMatch"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.018,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.cli.bug.BugCLI252Test::testExactOptionNameMatch\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

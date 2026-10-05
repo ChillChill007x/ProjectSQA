@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Compress-30-Round1-s101-5db9fad35762/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamTest::readOfLength0ShouldReturn0"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.679,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,1 @@
+{"run_count":2,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":806,"tests":["org.apache.commons.math.dfp.Dfp_ESTest::test1","org.apache.commons.math.dfp.Dfp_ESTest::test0"],"failures":[],"passed":true}

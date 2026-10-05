@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-71-Round1-s101-5222a772f65f",
+  "unit": {
+    "project": "Closure",
+    "bug": "71",
+    "target": "com.google.javascript.jscomp.CheckAccessControls",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:31:38.366335+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/71/Closure-71-Round1-s101-5222a772f65f",
+    "tests": "MOSA_EvoSuite/Test/Closure/71/Closure-71-Round1-s101-5222a772f65f",
+    "config": "MOSA_EvoSuite/Configuration/Closure/71/Closure-71-Round1-s101-5222a772f65f"
+  },
+  "generation_time_sec": 49.72,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/71/Closure-71-Round1-s101-5222a772f65f/com/google/javascript/jscomp/CheckAccessControls_ESTest.java": "6a8d2911e287f386d2c43daa6f34f42da4144146a413460d6a23908ee92d4e27",
+    "MOSA_EvoSuite/Test/Closure/71/Closure-71-Round1-s101-5222a772f65f/com/google/javascript/jscomp/CheckAccessControls_ESTest_scaffolding.java": "3b76bcdef733d4560af66203e6e521966258c3e214482b7b7cd1272572d1b438"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6",
+      "com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3106,
+      "tests": [
+        "com.google.javascript.jscomp.CheckAccessControls_ESTest::test1",
+        "com.google.javascript.jscomp.CheckAccessControls_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 267,
+      "line_coverage_percent": 25.84269662921348,
+      "branch_covered": 18,
+      "branch_total": 222,
+      "branch_coverage_percent": 8.108108108108109
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2883,
+      "tests": [
+        "com.google.javascript.jscomp.CheckAccessControls_ESTest::test1",
+        "com.google.javascript.jscomp.CheckAccessControls_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 267,
+      "line_coverage_percent": 25.84269662921348,
+      "branch_covered": 18,
+      "branch_total": 222,
+      "branch_coverage_percent": 8.108108108108109
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/71/Closure-71-Round1-s101-5222a772f65f/evaluation-1",
+  "finished_at": "2026-10-04T20:34:05.759906+00:00"
+}

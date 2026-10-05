@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-17-Round1-s101-7caa89043910-attempt2",
+  "unit": {
+    "project": "Cli",
+    "bug": "17",
+    "target": "org.apache.commons.cli.PosixParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T08:57:15.383969+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2"
+  },
+  "generation_time_sec": 34.375,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2/org/apache/commons/cli/PosixParser_ESTest.java": "8f23fe01521d73bf3f1ea3e57de503a9cb5dc76a2153a5bf5400be1212ac50ce",
+    "MOSA_EvoSuite/Test/Cli/17/Cli-17-Round1-s101-7caa89043910-attempt2/org/apache/commons/cli/PosixParser_ESTest_scaffolding.java": "0347d5afc6171e2191596abf711b9d0fe06366cf7d84ea719a2a5b168e979111"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.PosixParserTest::testStopBursting",
+    "available_triggers": [
+      "org.apache.commons.cli.PosixParserTest::testStopBursting"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 319,
+      "tests": [
+        "org.apache.commons.cli.PosixParser_ESTest::test6",
+        "org.apache.commons.cli.PosixParser_ESTest::test2",
+        "org.apache.commons.cli.PosixParser_ESTest::test3",
+        "org.apache.commons.cli.PosixParser_ESTest::test4",
+        "org.apache.commons.cli.PosixParser_ESTest::test5",
+        "org.apache.commons.cli.PosixParser_ESTest::test0",
+        "org.apache.commons.cli.PosixParser_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.PosixParser_ESTest::test1",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<250> but was:<249>",
+          "trace": "java.lang.AssertionError: expected:<250> but was:<249>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.cli.PosixParser_ESTest.test1(PosixParser_ESTest.java:90)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 65,
+      "line_total": 68,
+      "line_coverage_percent": 95.58823529411765,
+      "branch_covered": 36,
+      "branch_total": 42,
+      "branch_coverage_percent": 85.71428571428571
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T08:58:09.209425+00:00"
+}

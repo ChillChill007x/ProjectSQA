@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-57-Round1-s101-a7255684803b",
+  "unit": {
+    "project": "Math",
+    "bug": "57",
+    "target": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:54:11.346727+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/57/Math-57-Round1-s101-a7255684803b",
+    "tests": "MOSA_EvoSuite/Test/Math/57/Math-57-Round1-s101-a7255684803b",
+    "config": "MOSA_EvoSuite/Configuration/Math/57/Math-57-Round1-s101-a7255684803b"
+  },
+  "generation_time_sec": 48.961,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/57/Math-57-Round1-s101-a7255684803b/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer_ESTest.java": "b7bff67a1749a3ecf39ffa8c141667d6e5bbbf5a057bae0084a16a2ed81dfbb1",
+    "MOSA_EvoSuite/Test/Math/57/Math-57-Round1-s101-a7255684803b/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer_ESTest_scaffolding.java": "ddb149164eb6a67b054664db936eb276645ae20b30e5ae926b313d3751f2623f"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testSmallDistances",
+    "available_triggers": [
+      "org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testSmallDistances"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1424,
+      "tests": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test6",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test4",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test5",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test2",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test3",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test0",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 111,
+      "line_total": 114,
+      "line_coverage_percent": 97.36842105263158,
+      "branch_covered": 49,
+      "branch_total": 54,
+      "branch_coverage_percent": 90.74074074074075
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1305,
+      "tests": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test6",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test4",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test5",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test2",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test3",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test0",
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 111,
+      "line_total": 114,
+      "line_coverage_percent": 97.36842105263158,
+      "branch_covered": 49,
+      "branch_total": 54,
+      "branch_coverage_percent": 90.74074074074075
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/57/Math-57-Round1-s101-a7255684803b/evaluation-1",
+  "finished_at": "2026-10-05T03:56:32.451686+00:00"
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-47-Round1-s101-8e65e38bca8c",
+  "unit": {
+    "project": "Closure",
+    "bug": "47",
+    "target": "com.google.debugging.sourcemap.SourceMapConsumerV3",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:05:01.638929+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/47/Closure-47-Round1-s101-8e65e38bca8c",
+    "tests": "MOSA_EvoSuite/Test/Closure/47/Closure-47-Round1-s101-8e65e38bca8c",
+    "config": "MOSA_EvoSuite/Configuration/Closure/47/Closure-47-Round1-s101-8e65e38bca8c"
+  },
+  "generation_time_sec": 46.288,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/47/Closure-47-Round1-s101-8e65e38bca8c/com/google/debugging/sourcemap/SourceMapConsumerV3_ESTest.java": "b8630030bb8e2f466066736a12da834fc9fd8102d468429f8977f1f3b336a146",
+    "MOSA_EvoSuite/Test/Closure/47/Closure-47-Round1-s101-8e65e38bca8c/com/google/debugging/sourcemap/SourceMapConsumerV3_ESTest_scaffolding.java": "39e6cc173841ee25cd402ea789d1075271ebe32c5808527e3f8aecfea2360592"
+  },
+  "reference_validation": {
+    "trigger": "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testParseSourceMetaMap",
+    "available_triggers": [
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testParseSourceMetaMap",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput0a",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultilineMapping",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultiFunctionMapping",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testLiteralMappingsGoldenOutput",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultilineMapping2",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMappingGoldenOutput",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testSourceMapMerging",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testLiteralMappings",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMapping1",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMapping2",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput1",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput2",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput3",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput4",
+      "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput5"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1458,
+      "tests": [
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test1",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test0",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test5",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test4",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test3",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test2",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 184,
+      "line_coverage_percent": 6.521739130434782,
+      "branch_covered": 2,
+      "branch_total": 98,
+      "branch_coverage_percent": 2.0408163265306123
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1612,
+      "tests": [
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test1",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test0",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test5",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test4",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test3",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test2",
+        "com.google.debugging.sourcemap.SourceMapConsumerV3_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 184,
+      "line_coverage_percent": 6.521739130434782,
+      "branch_covered": 2,
+      "branch_total": 98,
+      "branch_coverage_percent": 2.0408163265306123
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/47/Closure-47-Round1-s101-8e65e38bca8c/evaluation-1",
+  "finished_at": "2026-10-04T20:07:49.867232+00:00"
+}

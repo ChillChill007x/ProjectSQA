@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-82-Round1-s101-d775fed3eacd/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.766,
+  "stdout": "com.google.javascript.jscomp.TypeCheckTest::testIssue301\ncom.google.javascript.rhino.jstype.FunctionTypeTest::testEmptyFunctionTypes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

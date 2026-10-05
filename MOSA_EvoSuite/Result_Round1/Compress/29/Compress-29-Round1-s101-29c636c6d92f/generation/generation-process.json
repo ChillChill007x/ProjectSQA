@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Compress-29-Round1-s101-29c636c6d92f/generation-fixed/target/classes:/opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-29c636c6d92f",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Compress/29/Compress-29-Round1-s101-29c636c6d92f/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 39.671,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream\n* Starting Client-0\n* Connecting to master process on port 19619\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83570/checkouts/Compress-29-Round1-s101-29c636c6d92f/generation-fixed/target/classes\n  - /opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 118\n* Using seed 101\n* Starting evolution\n[MASTER] 15:58:33.011 [logback-1] WARN  TestCluster - Failed to check cache for java.util.Enumeration<E> : Type points to itself\n\r[Progress:=========>                    33%] [Cov:=======>                           22%]\r[Progress:=========>                    33%] [Cov:========>                          25%]\r[Progress:=========>                    33%] [Cov:=========>                         26%]\r[Progress:==========>                   36%] [Cov:=========>                         27%]\r[Progress:==========>                   36%] [Cov:=========>                         27%]\r[Progress:==========>                   36%] [Cov:=========>                         27%]\r[Progress:==========>                   36%] [Cov:=========>                         27%]\r[Progress:===============>              53%] [Cov:=========>                         27%]\r[Progress:=====================>        73%] [Cov:=========>                         27%]\r[Progress:===========================>  90%] [Cov:=========>                         27%]\r[Progress:===========================>  93%] [Cov:=========>                         27%]\r[Progress:==============================100%] [Cov:===========>                       33%]\n* Search finished after 34s and 11 generations, 6694 statements, best individual has fitness: 78.0\n[MASTER] 15:59:06.294 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 3 seconds more than allowed.\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 34%\n* Total number of goals: 118\n* Number of covered goals: 40\n* Generated 17 tests with total length 57\n* Resulting test suite's coverage: 34%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'CpioArchiveInputStream_ESTest' to /workspace/MOSA_EvoSuite/Test/Compress/29/Compress-29-Round1-s101-29c636c6d92f\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

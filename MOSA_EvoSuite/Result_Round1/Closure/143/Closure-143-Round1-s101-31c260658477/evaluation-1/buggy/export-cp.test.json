@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.128,
+  "stdout": "/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/build/classes:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/ant_deploy.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/args4j_deploy.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/google_common_deploy.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/hamcrest-core-1.1.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/junit.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/lib/protobuf_deploy.jar:/workspace/work/parallel/evosuite/83569/checkouts/Closure-143-Round1-s101-31c260658477/evaluation-1/buggy/build/test",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.test)............................................... OK\n\n"
+}

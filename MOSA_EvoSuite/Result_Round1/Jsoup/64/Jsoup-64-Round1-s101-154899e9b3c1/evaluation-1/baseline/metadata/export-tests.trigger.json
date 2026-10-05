@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-64-Round1-s101-154899e9b3c1/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.724,
+  "stdout": "org.jsoup.parser.HtmlParserTest::handlesKnownEmptyStyle\norg.jsoup.parser.HtmlParserTest::handlesKnownEmptyNoFrames",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

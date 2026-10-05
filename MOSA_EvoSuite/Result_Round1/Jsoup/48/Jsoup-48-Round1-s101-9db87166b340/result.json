@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-48-Round1-s101-9db87166b340",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "48",
+    "target": "org.jsoup.helper.HttpConnection",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T01:45:06.994718+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/48/Jsoup-48-Round1-s101-9db87166b340",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/48/Jsoup-48-Round1-s101-9db87166b340",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/48/Jsoup-48-Round1-s101-9db87166b340"
+  },
+  "generation_time_sec": 56.065,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/48/Jsoup-48-Round1-s101-9db87166b340/org/jsoup/helper/HttpConnection_ESTest.java": "68d4ed932d6f87f37dd1ab48462cae8dd928c46d0167041398b56abfa019a768",
+    "MOSA_EvoSuite/Test/Jsoup/48/Jsoup-48-Round1-s101-9db87166b340/org/jsoup/helper/HttpConnection_ESTest_scaffolding.java": "19d3706c1363e0645507b95e79d32e38d647f64a04fb69c732b14babb202ae40"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.helper.HttpConnectionTest::sameHeadersCombineWithComma",
+    "available_triggers": [
+      "org.jsoup.helper.HttpConnectionTest::sameHeadersCombineWithComma"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 46,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1310,
+      "tests": [
+        "org.jsoup.helper.HttpConnection_ESTest::test30",
+        "org.jsoup.helper.HttpConnection_ESTest::test19",
+        "org.jsoup.helper.HttpConnection_ESTest::test18",
+        "org.jsoup.helper.HttpConnection_ESTest::test17",
+        "org.jsoup.helper.HttpConnection_ESTest::test39",
+        "org.jsoup.helper.HttpConnection_ESTest::test12",
+        "org.jsoup.helper.HttpConnection_ESTest::test34",
+        "org.jsoup.helper.HttpConnection_ESTest::test11",
+        "org.jsoup.helper.HttpConnection_ESTest::test33",
+        "org.jsoup.helper.HttpConnection_ESTest::test10",
+        "org.jsoup.helper.HttpConnection_ESTest::test32",
+        "org.jsoup.helper.HttpConnection_ESTest::test31",
+        "org.jsoup.helper.HttpConnection_ESTest::test16",
+        "org.jsoup.helper.HttpConnection_ESTest::test38",
+        "org.jsoup.helper.HttpConnection_ESTest::test15",
+        "org.jsoup.helper.HttpConnection_ESTest::test37",
+        "org.jsoup.helper.HttpConnection_ESTest::test14",
+        "org.jsoup.helper.HttpConnection_ESTest::test36",
+        "org.jsoup.helper.HttpConnection_ESTest::test13",
+        "org.jsoup.helper.HttpConnection_ESTest::test35",
+        "org.jsoup.helper.HttpConnection_ESTest::test41",
+        "org.jsoup.helper.HttpConnection_ESTest::test40",
+        "org.jsoup.helper.HttpConnection_ESTest::test09",
+        "org.jsoup.helper.HttpConnection_ESTest::test08",
+        "org.jsoup.helper.HttpConnection_ESTest::test07",
+        "org.jsoup.helper.HttpConnection_ESTest::test29",
+        "org.jsoup.helper.HttpConnection_ESTest::test06",
+        "org.jsoup.helper.HttpConnection_ESTest::test28",
+        "org.jsoup.helper.HttpConnection_ESTest::test01",
+        "org.jsoup.helper.HttpConnection_ESTest::test23",
+        "org.jsoup.helper.HttpConnection_ESTest::test45",
+        "org.jsoup.helper.HttpConnection_ESTest::test00",
+        "org.jsoup.helper.HttpConnection_ESTest::test22",
+        "org.jsoup.helper.HttpConnection_ESTest::test44",
+        "org.jsoup.helper.HttpConnection_ESTest::test21",
+        "org.jsoup.helper.HttpConnection_ESTest::test43",
+        "org.jsoup.helper.HttpConnection_ESTest::test20",
+        "org.jsoup.helper.HttpConnection_ESTest::test42",
+        "org.jsoup.helper.HttpConnection_ESTest::test05",
+        "org.jsoup.helper.HttpConnection_ESTest::test27",
+        "org.jsoup.helper.HttpConnection_ESTest::test04",
+        "org.jsoup.helper.HttpConnection_ESTest::test26",
+        "org.jsoup.helper.HttpConnection_ESTest::test03",
+        "org.jsoup.helper.HttpConnection_ESTest::test25",
+        "org.jsoup.helper.HttpConnection_ESTest::test02",
+        "org.jsoup.helper.HttpConnection_ESTest::test24"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.helper.HttpConnection_ESTest::test09",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NoSuchMethodError",
+          "trace": "java.lang.AssertionError: Expecting exception: NoSuchMethodError\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.helper.HttpConnection_ESTest.test09(HttpConnection_ESTest.java:519)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.helper.HttpConnection_ESTest::test43",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: NoSuchMethodError",
+          "trace": "java.lang.AssertionError: Expecting exception: NoSuchMethodError\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.helper.HttpConnection_ESTest.test43(HttpConnection_ESTest.java:1962)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 81,
+      "line_total": 94,
+      "line_coverage_percent": 86.17021276595744,
+      "branch_covered": 11,
+      "branch_total": 14,
+      "branch_coverage_percent": 78.57142857142857
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T01:46:40.603973+00:00"
+}

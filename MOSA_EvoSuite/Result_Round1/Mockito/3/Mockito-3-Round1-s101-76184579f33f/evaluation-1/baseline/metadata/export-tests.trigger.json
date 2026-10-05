@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-3-Round1-s101-76184579f33f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.mockito.internal.invocation.InvocationMatcherTest::should_capture_varargs_as_vararg\norg.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyNumberOfInvocationsWithVarargs\norg.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest::shouldMatchAnyVararg\norg.mockitousage.matchers.CapturingArgumentsTest::should_capture_all_vararg\norg.mockitousage.matchers.CapturingArgumentsTest::captures_correctly_when_captor_used_multiple_times\norg.mockitousage.matchers.CapturingArgumentsTest::should_capture_vararg\norg.mockitousage.matchers.CapturingArgumentsTest::captures_correctly_when_captor_used_on_pure_vararg_method\norg.mockitousage.matchers.CapturingArgumentsTest::should_capture_byte_vararg_by_creating_captor_with_primitive_wrapper\norg.mockitousage.matchers.CapturingArgumentsTest::should_capture_byte_vararg_by_creating_captor_with_primitive",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

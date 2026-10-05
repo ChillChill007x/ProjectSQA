@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/build/classes",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/ant_deploy.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/google_common_deploy.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/hamcrest-core-1.1.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/junit4-core.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/junit4-legacy.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-135-Round1-s101-8f9351988d2e/generation-fixed/lib/protobuf_deploy.jar"
+  ],
+  "missing_entries": []
+}

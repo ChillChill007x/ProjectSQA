@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-20-Round1-s101-ee7ea49c6272",
+  "unit": {
+    "project": "JxPath",
+    "bug": "20",
+    "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:47:55.732124+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272",
+    "tests": "MOSA_EvoSuite/Test/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272"
+  },
+  "generation_time_sec": 35.243,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression_ESTest.java": "071a3b9f60bd7f39b896a535e1e0056a7d4ffaacaf537e595b09ba6aa16b74ea",
+    "MOSA_EvoSuite/Test/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression_ESTest_scaffolding.java": "044336f8b05622c01970bff995733b658c0d2e7a3c391a3b0fd028f6a5f34672"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.compiler.JXPath149Test::testComplexOperationWithVariables",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.compiler.JXPath149Test::testComplexOperationWithVariables"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 513,
+      "tests": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test0",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test1",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test2",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test3",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test4",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 23,
+      "line_total": 49,
+      "line_coverage_percent": 46.93877551020408,
+      "branch_covered": 17,
+      "branch_total": 40,
+      "branch_coverage_percent": 42.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 519,
+      "tests": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test0",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test1",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test2",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test3",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test4",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 23,
+      "line_total": 43,
+      "line_coverage_percent": 53.48837209302326,
+      "branch_covered": 17,
+      "branch_total": 36,
+      "branch_coverage_percent": 47.22222222222222
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JxPath/20/JxPath-20-Round1-s101-ee7ea49c6272/evaluation-1",
+  "finished_at": "2026-10-05T00:48:55.296193+00:00"
+}

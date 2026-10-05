@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-6-Round1-s101-77656f7c7b8d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.chrono.TestGJDate::test_cutoverPreZero\norg.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToNegative_crossCutover\norg.joda.time.chrono.TestGJDate::test_plusYears_positiveToZero_crossCutover\norg.joda.time.chrono.TestGJDate::test_plusYears_positiveToNegative_crossCutover\norg.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToZero_crossCutover",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

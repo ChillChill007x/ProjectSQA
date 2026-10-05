@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-8-Round1-s101-66be55365d57/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

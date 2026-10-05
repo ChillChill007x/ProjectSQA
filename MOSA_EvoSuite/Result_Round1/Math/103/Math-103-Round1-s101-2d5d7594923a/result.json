@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-103-Round1-s101-2d5d7594923a",
+  "unit": {
+    "project": "Math",
+    "bug": "103",
+    "target": "org.apache.commons.math.distribution.NormalDistributionImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:30:25.342803+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/103/Math-103-Round1-s101-2d5d7594923a",
+    "tests": "MOSA_EvoSuite/Test/Math/103/Math-103-Round1-s101-2d5d7594923a",
+    "config": "MOSA_EvoSuite/Configuration/Math/103/Math-103-Round1-s101-2d5d7594923a"
+  },
+  "generation_time_sec": 36.99,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/103/Math-103-Round1-s101-2d5d7594923a/org/apache/commons/math/distribution/NormalDistributionImpl_ESTest.java": "b83b442972cc043ca292fc2b0ae86085c4be5101eeb4f973ffe521e8d528ae01",
+    "MOSA_EvoSuite/Test/Math/103/Math-103-Round1-s101-2d5d7594923a/org/apache/commons/math/distribution/NormalDistributionImpl_ESTest_scaffolding.java": "fffeeb34c4814c26d3cd2c1e680b4fbd9325d3e264657688903043c01a1bcb31"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues",
+    "available_triggers": [
+      "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 771,
+      "tests": [
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test0",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test1",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test2",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test3",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test4",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 37,
+      "line_total": 43,
+      "line_coverage_percent": 86.04651162790698,
+      "branch_covered": 14,
+      "branch_total": 18,
+      "branch_coverage_percent": 77.77777777777777
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 654,
+      "tests": [
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test0",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test1",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test2",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test3",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test4",
+        "org.apache.commons.math.distribution.NormalDistributionImpl_ESTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 37,
+      "line_total": 37,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 14,
+      "branch_total": 14,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/103/Math-103-Round1-s101-2d5d7594923a/evaluation-1",
+  "finished_at": "2026-10-05T04:32:26.269556+00:00"
+}

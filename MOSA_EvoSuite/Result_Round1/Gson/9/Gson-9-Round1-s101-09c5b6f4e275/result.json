@@ -1,0 +1,154 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-9-Round1-s101-09c5b6f4e275",
+  "unit": {
+    "project": "Gson",
+    "bug": "9",
+    "target": "com.google.gson.internal.bind.JsonTreeWriter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:09:50.258852+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Gson/9/Gson-9-Round1-s101-09c5b6f4e275",
+    "tests": "MOSA_EvoSuite/Test/Gson/9/Gson-9-Round1-s101-09c5b6f4e275",
+    "config": "MOSA_EvoSuite/Configuration/Gson/9/Gson-9-Round1-s101-09c5b6f4e275"
+  },
+  "generation_time_sec": 36.878,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Gson/9/Gson-9-Round1-s101-09c5b6f4e275/com/google/gson/internal/bind/JsonTreeWriter_ESTest.java": "ff650b2a105d9961fac21d2d89a881e59016d3464be56c5bdda8568beded9da4",
+    "MOSA_EvoSuite/Test/Gson/9/Gson-9-Round1-s101-09c5b6f4e275/com/google/gson/internal/bind/JsonTreeWriter_ESTest_scaffolding.java": "b9d49c5075ae8b969eea527dd8922ec53ddf4e23679134b8b111e3a8c35d831b"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.stream.JsonWriterTest::testBoxedBooleans",
+    "available_triggers": [
+      "com.google.gson.stream.JsonWriterTest::testBoxedBooleans"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 30,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 518,
+      "tests": [
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test11",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test12",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test10",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test15",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test16",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test13",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test14",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test19",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test17",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test18",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test00",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test22",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test01",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test23",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test20",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test21",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test04",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test26",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test05",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test27",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test02",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test24",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test03",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test25",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test08",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test09",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test06",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test28",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test07",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test29"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 80,
+      "line_total": 82,
+      "line_coverage_percent": 97.5609756097561,
+      "branch_covered": 46,
+      "branch_total": 50,
+      "branch_coverage_percent": 92.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 30,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 511,
+      "tests": [
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test11",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test12",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test10",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test15",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test16",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test13",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test14",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test19",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test17",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test18",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test00",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test22",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test01",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test23",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test20",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test21",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test04",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test26",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test05",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test27",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test02",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test24",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test03",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test25",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test08",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test09",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test06",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test28",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test07",
+        "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test29"
+      ],
+      "failures": [
+        {
+          "test": "com.google.gson.internal.bind.JsonTreeWriter_ESTest::test06",
+          "exception": "java.lang.NullPointerException",
+          "message": null,
+          "trace": "java.lang.NullPointerException\n\tat com.google.gson.internal.bind.JsonTreeWriter_ESTest.test06(JsonTreeWriter_ESTest.java:173)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 76,
+      "line_total": 78,
+      "line_coverage_percent": 97.43589743589743,
+      "branch_covered": 44,
+      "branch_total": 48,
+      "branch_coverage_percent": 91.66666666666667
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Gson/9/Gson-9-Round1-s101-09c5b6f4e275/evaluation-1",
+  "finished_at": "2026-10-04T23:10:50.440872+00:00"
+}

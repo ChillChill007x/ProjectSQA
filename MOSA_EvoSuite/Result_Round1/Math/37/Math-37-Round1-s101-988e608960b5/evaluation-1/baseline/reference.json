@@ -1,0 +1,11 @@
+{
+  "trigger": "org.apache.commons.math.complex.ComplexTest::testTanhInf",
+  "available_triggers": [
+    "org.apache.commons.math.complex.ComplexTest::testTanhInf",
+    "org.apache.commons.math.complex.ComplexTest::testTan",
+    "org.apache.commons.math.complex.ComplexTest::testTanh",
+    "org.apache.commons.math.complex.ComplexTest::testTanInf"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

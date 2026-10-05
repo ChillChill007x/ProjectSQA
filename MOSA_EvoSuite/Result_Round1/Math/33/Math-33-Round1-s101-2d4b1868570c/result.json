@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-33-Round1-s101-2d4b1868570c",
+  "unit": {
+    "project": "Math",
+    "bug": "33",
+    "target": "org.apache.commons.math3.optimization.linear.SimplexTableau",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:33:35.838940+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/33/Math-33-Round1-s101-2d4b1868570c",
+    "tests": "MOSA_EvoSuite/Test/Math/33/Math-33-Round1-s101-2d4b1868570c",
+    "config": "MOSA_EvoSuite/Configuration/Math/33/Math-33-Round1-s101-2d4b1868570c"
+  },
+  "generation_time_sec": 50.204,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/33/Math-33-Round1-s101-2d4b1868570c/org/apache/commons/math3/optimization/linear/SimplexTableau_ESTest.java": "ec52932f3972f4a6a6693bdd7b0cdda257c7322935b1db6011a4b4c3cd5b1ee4",
+    "MOSA_EvoSuite/Test/Math/33/Math-33-Round1-s101-2d4b1868570c/org/apache/commons/math3/optimization/linear/SimplexTableau_ESTest_scaffolding.java": "4bb2d4d50ca8512a52a9a466ce0ce53b2783691fba3c5f3abf44c00aaea11d5a"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath781",
+    "available_triggers": [
+      "org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath781"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 26,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1333,
+      "tests": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test02",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test24",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test03",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test25",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test04",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test05",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test20",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test21",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test00",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test22",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test01",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test23",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test06",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test07",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test08",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test09",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test13",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test14",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test15",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test16",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test10",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test11",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test12",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test17",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test18",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test19"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 172,
+      "line_total": 185,
+      "line_coverage_percent": 92.97297297297297,
+      "branch_covered": 122,
+      "branch_total": 124,
+      "branch_coverage_percent": 98.38709677419355
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1197,
+      "tests": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test02",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test24",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test03",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test25",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test04",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test05",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test20",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test21",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test00",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test22",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test01",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test23",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test06",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test07",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test08",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test09",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test13",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test14",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test15",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test16",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test10",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test11",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test12",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test17",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test18",
+        "org.apache.commons.math3.optimization.linear.SimplexTableau_ESTest::test19"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 172,
+      "line_total": 185,
+      "line_coverage_percent": 92.97297297297297,
+      "branch_covered": 122,
+      "branch_total": 124,
+      "branch_coverage_percent": 98.38709677419355
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/33/Math-33-Round1-s101-2d4b1868570c/evaluation-1",
+  "finished_at": "2026-10-05T03:36:09.182119+00:00"
+}

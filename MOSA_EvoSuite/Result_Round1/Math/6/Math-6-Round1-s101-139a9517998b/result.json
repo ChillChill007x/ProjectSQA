@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-6-Round1-s101-139a9517998b",
+  "unit": {
+    "project": "Math",
+    "bug": "6",
+    "target": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:16:59.718139+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/6/Math-6-Round1-s101-139a9517998b",
+    "tests": "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-139a9517998b",
+    "config": "MOSA_EvoSuite/Configuration/Math/6/Math-6-Round1-s101-139a9517998b"
+  },
+  "generation_time_sec": 37.045,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-139a9517998b/org/apache/commons/math3/optim/nonlinear/vector/jacobian/GaussNewtonOptimizer_ESTest.java": "e86bea5efc3fac2aedd00d9e9a5b5cafa15e91e3160346646e067c97198e292a",
+    "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-139a9517998b/org/apache/commons/math3/optim/nonlinear/vector/jacobian/GaussNewtonOptimizer_ESTest_scaffolding.java": "80691ae51a241bed8eaa813550f3dd0cd880ea405011a8ac5c3bac00a579ef41"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest::testTrivial",
+    "available_triggers": [
+      "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest::testTrivial",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testConstrainedRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testElliRotated",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testEllipse",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTwoAxes",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigar",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRastrigin",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiagonalRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSsDiffPow",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testMaximize",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testAckley",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigTab",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiffPow",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSphere",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTablet",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigarWithBoundaries",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest::testSumSinc",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize2",
+      "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest::testGetIterations",
+      "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest::testGetIterations"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 599,
+      "tests": [
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 61,
+      "line_coverage_percent": 21.311475409836067,
+      "branch_covered": 3,
+      "branch_total": 26,
+      "branch_coverage_percent": 11.538461538461538
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 638,
+      "tests": [
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 62,
+      "line_coverage_percent": 20.967741935483872,
+      "branch_covered": 3,
+      "branch_total": 26,
+      "branch_coverage_percent": 11.538461538461538
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/6/Math-6-Round1-s101-139a9517998b/evaluation-1",
+  "finished_at": "2026-10-05T03:19:19.569698+00:00"
+}

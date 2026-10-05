@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-3-Round1-s101-c8b16b74cd16/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.nodes.ElementTest::testAppendRowToTable"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.545,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

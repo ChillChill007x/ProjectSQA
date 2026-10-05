@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-26-Round1-s101-8a9d69722bba",
+  "unit": {
+    "project": "Cli",
+    "bug": "26",
+    "target": "org.apache.commons.cli.OptionBuilder",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:48:18.353514+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/26/Cli-26-Round1-s101-8a9d69722bba",
+    "tests": "MOSA_EvoSuite/Test/Cli/26/Cli-26-Round1-s101-8a9d69722bba",
+    "config": "MOSA_EvoSuite/Configuration/Cli/26/Cli-26-Round1-s101-8a9d69722bba"
+  },
+  "generation_time_sec": 4.482,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/26/Cli-26-Round1-s101-8a9d69722bba/org/apache/commons/cli/OptionBuilder_ESTest.java": "a27546690d8bfb43e3ce89686af466a820e52c11983a75054d4721ebb33fd890",
+    "MOSA_EvoSuite/Test/Cli/26/Cli-26-Round1-s101-8a9d69722bba/org/apache/commons/cli/OptionBuilder_ESTest_scaffolding.java": "76cd5f13facc40c65e7ee250a8f4dd3bcfd3f1ddff03edad1396bacad916d0bb"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.OptionBuilderTest::testBuilderIsResettedAlways",
+    "available_triggers": [
+      "org.apache.commons.cli.OptionBuilderTest::testBuilderIsResettedAlways"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 322,
+      "tests": [
+        "org.apache.commons.cli.OptionBuilder_ESTest::test09",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test08",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test07",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test06",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test17",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test05",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test16",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test04",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test15",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test03",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test14",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test02",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test13",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test01",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test12",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test00",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test11",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 60,
+      "line_total": 60,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 4,
+      "branch_total": 4,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 315,
+      "tests": [
+        "org.apache.commons.cli.OptionBuilder_ESTest::test09",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test08",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test07",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test06",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test17",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test05",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test16",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test04",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test15",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test03",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test14",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test02",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test13",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test01",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test12",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test00",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test11",
+        "org.apache.commons.cli.OptionBuilder_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 59,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 4,
+      "branch_total": 4,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/26/Cli-26-Round1-s101-8a9d69722bba/evaluation-1",
+  "finished_at": "2026-10-04T20:48:43.376688+00:00"
+}

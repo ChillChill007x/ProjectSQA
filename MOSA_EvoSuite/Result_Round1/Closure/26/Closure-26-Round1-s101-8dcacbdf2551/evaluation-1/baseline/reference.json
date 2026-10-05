@@ -1,0 +1,14 @@
+{
+  "trigger": "com.google.javascript.jscomp.CommandLineRunnerTest::testTransformAMDAndProcessCJS",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testTransformAMDAndProcessCJS",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testProcessCJS",
+    "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testExports",
+    "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testModuleName",
+    "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testDash",
+    "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testVarRenaming",
+    "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testWithoutExports"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

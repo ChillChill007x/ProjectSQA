@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-40-Round1-s101-a0fd24b2363c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.apache.commons.cli.TypeHandlerTest::testCreateValueInteger_failure",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

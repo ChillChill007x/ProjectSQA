@@ -1,0 +1,8 @@
+{
+  "trigger": "org.jsoup.parser.AttributeParseTest::dropsSlashFromAttributeName",
+  "available_triggers": [
+    "org.jsoup.parser.AttributeParseTest::dropsSlashFromAttributeName"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

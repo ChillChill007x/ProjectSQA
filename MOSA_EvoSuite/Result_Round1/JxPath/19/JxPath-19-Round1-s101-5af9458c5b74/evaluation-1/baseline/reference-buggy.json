@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JxPath-19-Round1-s101-5af9458c5b74/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateJDOM"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.068,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateJDOM\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

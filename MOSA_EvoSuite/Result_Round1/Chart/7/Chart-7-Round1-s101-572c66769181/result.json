@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-7-Round1-s101-572c66769181",
+  "unit": {
+    "project": "Chart",
+    "bug": "7",
+    "target": "org.jfree.data.time.TimePeriodValues",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "RUNNING",
+  "started_at": "2026-10-04T17:55:09.470508+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/7/Chart-7-Round1-s101-572c66769181",
+    "tests": "MOSA_EvoSuite/Test/Chart/7/Chart-7-Round1-s101-572c66769181",
+    "config": "MOSA_EvoSuite/Configuration/Chart/7/Chart-7-Round1-s101-572c66769181"
+  }
+}

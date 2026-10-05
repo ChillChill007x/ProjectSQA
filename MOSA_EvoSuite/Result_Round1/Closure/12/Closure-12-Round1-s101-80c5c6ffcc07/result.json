@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-12-Round1-s101-80c5c6ffcc07",
+  "unit": {
+    "project": "Closure",
+    "bug": "12",
+    "target": "com.google.javascript.jscomp.MaybeReachingVariableUse",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:15:14.366825+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07",
+    "tests": "MOSA_EvoSuite/Test/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07",
+    "config": "MOSA_EvoSuite/Configuration/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07"
+  },
+  "generation_time_sec": 57.668,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07/com/google/javascript/jscomp/MaybeReachingVariableUse_ESTest.java": "e128f437d984f165c721c2163e9479c0debdc51894c87c5ee0787ea736657e6b",
+    "MOSA_EvoSuite/Test/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07/com/google/javascript/jscomp/MaybeReachingVariableUse_ESTest_scaffolding.java": "8700872f6dbaa99e7ce1364baa1372e499c2addd125345013ae478eb53c5a393"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testIssue794b",
+    "available_triggers": [
+      "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testIssue794b"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2989,
+      "tests": [
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test6",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test4",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test5",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test2",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test3",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test0",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 31,
+      "line_total": 77,
+      "line_coverage_percent": 40.25974025974026,
+      "branch_covered": 10,
+      "branch_total": 46,
+      "branch_coverage_percent": 21.73913043478261
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2416,
+      "tests": [
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test6",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test4",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test5",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test2",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test3",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test0",
+        "com.google.javascript.jscomp.MaybeReachingVariableUse_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 26,
+      "line_total": 72,
+      "line_coverage_percent": 36.111111111111114,
+      "branch_covered": 6,
+      "branch_total": 42,
+      "branch_coverage_percent": 14.285714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/12/Closure-12-Round1-s101-80c5c6ffcc07/evaluation-1",
+  "finished_at": "2026-10-04T19:18:12.429953+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "45f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Lang-45-Round1-s101-871757228284/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.995,
+  "stdout": "",
+  "stderr": "Checking out 4342bd5d to /workspace/work/parallel/evosuite/83568/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nRename enum package in src................................................. OK\nMove enum package in src................................................... OK\nRename enum package in test................................................ OK\nMove enum package in test.................................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/evosuite/83568/checkouts/La OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 4342bd5d:04f767b3..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Lang-45f........................................ OK\n"
+}

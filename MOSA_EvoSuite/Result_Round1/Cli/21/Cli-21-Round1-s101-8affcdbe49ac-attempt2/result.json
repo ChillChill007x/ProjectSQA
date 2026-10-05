@@ -1,0 +1,151 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-21-Round1-s101-8affcdbe49ac-attempt2",
+  "unit": {
+    "project": "Cli",
+    "bug": "21",
+    "target": "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T08:58:29.346570+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2"
+  },
+  "generation_time_sec": 37.035,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java": "3e9569b0789c7fb421beb31315dd53be9e95f7c95e2543a209f0520fcad8263a",
+    "MOSA_EvoSuite/Test/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest_scaffolding.java": "76e40d0560a9fd8f16aacaf4f4e410d4831ebac7b40b08529945898f3465d1a7"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 32,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 404,
+      "tests": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test08",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test09",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test06",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test28",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test07",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test29",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test04",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test26",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test05",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test27",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test02",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test24",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test03",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test25",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test00",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test22",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test01",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test23",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test20",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test21",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test19",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test17",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test18",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test15",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test16",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test13",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test14",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test11",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test12",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test31",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test10",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test30"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 110,
+      "line_total": 112,
+      "line_coverage_percent": 98.21428571428571,
+      "branch_covered": 63,
+      "branch_total": 66,
+      "branch_coverage_percent": 95.45454545454545
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 418,
+      "tests": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test08",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test09",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test06",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test28",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test07",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test29",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test04",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test26",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test05",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test27",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test02",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test24",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test03",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test25",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test00",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test22",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test01",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test23",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test20",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test21",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test19",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test17",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test18",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test15",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test16",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test13",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test14",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test11",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test12",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test31",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test10",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl_ESTest::test30"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 100,
+      "line_total": 102,
+      "line_coverage_percent": 98.03921568627452,
+      "branch_covered": 56,
+      "branch_total": 58,
+      "branch_coverage_percent": 96.55172413793103
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/21/Cli-21-Round1-s101-8affcdbe49ac-attempt2/evaluation-1",
+  "finished_at": "2026-10-05T08:59:29.789842+00:00"
+}

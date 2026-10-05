@@ -1,0 +1,114 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-18-Round1-s101-86484b1f2bea-attempt2",
+  "unit": {
+    "project": "Chart",
+    "bug": "18",
+    "target": "org.jfree.data.DefaultKeyedValues2D",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T08:42:46.197197+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2"
+  },
+  "generation_time_sec": 35.632,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2/org/jfree/data/DefaultKeyedValues2D_ESTest.java": "2d3f0cd5b55cab770bbd8c564f6e5e91b7a3b1d2d32aef0ae223c91508b46da6",
+    "MOSA_EvoSuite/Test/Chart/18/Chart-18-Round1-s101-86484b1f2bea-attempt2/org/jfree/data/DefaultKeyedValues2D_ESTest_scaffolding.java": "fb53fc81699047eb7d2e8fa39ff9ef108076835c5aa2ec284f24d416072f7123"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955",
+    "available_triggers": [
+      "org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955",
+      "org.jfree.data.junit.DefaultKeyedValues2DTests::testRemoveColumnByKey",
+      "org.jfree.data.junit.DefaultKeyedValuesTests::testRemoveValue",
+      "org.jfree.data.junit.DefaultKeyedValuesTests::testGetIndex2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 337,
+      "tests": [
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test08",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test09",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test06",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test28",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test07",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test00",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test22",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test01",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test23",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test20",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test21",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test04",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test26",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test05",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test27",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test02",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test24",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test03",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test25",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test19",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test17",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test18",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test11",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test12",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test10",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test15",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test16",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test13",
+        "org.jfree.data.DefaultKeyedValues2D_ESTest::test14"
+      ],
+      "failures": [
+        {
+          "test": "org.jfree.data.DefaultKeyedValues2D_ESTest::test23",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.DefaultKeyedValues2D_ESTest.test23(DefaultKeyedValues2D_ESTest.java:636)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.DefaultKeyedValues2D_ESTest::test26",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 353 out of bounds for length 0",
+          "trace": "java.lang.AssertionError: Exception was not thrown in java.util.ArrayList but in java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64): java.lang.IndexOutOfBoundsException: Index 353 out of bounds for length 0\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.jfree.data.DefaultKeyedValues2D_ESTest.test26(DefaultKeyedValues2D_ESTest.java:697)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jfree.data.DefaultKeyedValues2D_ESTest::test27",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": "Index -2146348012 out of bounds for length 0",
+          "trace": "java.lang.IndexOutOfBoundsException: Index -2146348012 out of bounds for length 0\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\n\tat java.base/java.util.Objects.checkIndex(Objects.java:374)\n\tat java.base/java.util.ArrayList.get(ArrayList.java:459)\n\tat org.jfree.data.DefaultKeyedValues2D.getColumnKey(DefaultKeyedValues2D.java:216)\n\tat org.jfree.data.DefaultKeyedValues2D.removeColumn(DefaultKeyedValues2D.java:437)\n\tat org.jfree.data.DefaultKeyedValues2D_ESTest.test27(DefaultKeyedValues2D_ESTest.java:710)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 138,
+      "line_total": 150,
+      "line_coverage_percent": 92.0,
+      "branch_covered": 73,
+      "branch_total": 76,
+      "branch_coverage_percent": 96.05263157894737
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T08:44:00.447543+00:00"
+}

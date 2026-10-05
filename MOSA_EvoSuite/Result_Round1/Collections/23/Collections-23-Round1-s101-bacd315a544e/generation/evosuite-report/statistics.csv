@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.apache.commons.collections4.trie.UnmodifiableTrie,BRANCH,0.06896551724137931,29,2

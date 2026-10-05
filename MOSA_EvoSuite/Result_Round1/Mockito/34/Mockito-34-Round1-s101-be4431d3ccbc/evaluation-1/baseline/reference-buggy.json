@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-34-Round1-s101-be4431d3ccbc/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.invocation.InvocationMatcherTest::shouldMatchCaptureArgumentsWhenArgsCountDoesNOTMatch"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.993,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.invocation.InvocationMatcherTest::shouldMatchCaptureArgumentsWhenArgsCountDoesNOTMatch\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

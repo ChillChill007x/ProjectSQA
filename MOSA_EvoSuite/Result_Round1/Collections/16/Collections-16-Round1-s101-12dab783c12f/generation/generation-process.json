@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.collections.list.SetUniqueList",
+    "-projectCP",
+    "/workspace/work/checkouts/Collections-16-Round1-s101-12dab783c12f/generation-fixed/build/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Collections/16/Collections-16-Round1-s101-12dab783c12f",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Collections/16/Collections-16-Round1-s101-12dab783c12f/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.091,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.collections.list.SetUniqueList\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Collections-16-Round1-s101-12dab783c12f/generation-fixed/build/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.collections.list.SetUniqueList\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 53\n* Using seed 101\n* Starting evolution\n[MASTER] 14:45:05.344 [logback-1] WARN  TestCluster - Failed to check cache for java.util.LinkedHashSet<E> : Type points to itself\n[MASTER] 14:45:05.872 [logback-1] WARN  TestCluster - Failed to check cache for java.util.ListIterator<E> : Type points to itself\n\r[Progress:>                             0%] [Cov:============================>      81%]\r[Progress:>                             0%] [Cov:============================>      81%]\r[Progress:>                             3%] [Cov:================================>  92%]\r[Progress:>                             3%] [Cov:==================================>98%]\r[Progress:>                             3%] [Cov:==================================>98%]\r[Progress:>                             3%] [Cov:==================================>98%]\r[Progress:>                             3%] [Cov:===================================100%]\n* Search finished after 2s and 6 generations, 4879 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 53\n* Number of covered goals: 53\n* Generated 26 tests with total length 133\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'SetUniqueList_ESTest' to /workspace/MOSA_EvoSuite/Test/Collections/16/Collections-16-Round1-s101-12dab783c12f\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

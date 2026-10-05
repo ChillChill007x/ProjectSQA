@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.codec.binary.BaseNCodecInputStream",
+    "-projectCP",
+    "/workspace/work/checkouts/Codec-12-Round1-s101-9eb1c17cfa38/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 36.405,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.codec.binary.BaseNCodecInputStream\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/Codec-12-Round1-s101-9eb1c17cfa38/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.codec.binary.BaseNCodecInputStream\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 38\n* Using seed 101\n* Starting evolution\n\r[Progress:=========>                    33%] [Cov:======================>            65%]\r[Progress:=========>                    33%] [Cov:============================>      81%]\r[Progress:=========>                    33%] [Cov:==============================>    86%]\r[Progress:=========>                    33%] [Cov:================================>  94%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:===============>              53%] [Cov:=================================> 97%]\r[Progress:=====================>        70%] [Cov:=================================> 97%]\r[Progress:=========================>    86%] [Cov:=================================> 97%]\r[Progress:=========================>    86%] [Cov:=================================> 97%]\r[Progress:=========================>    86%] [Cov:=================================> 97%]\r[Progress:==============================100%] [Cov:=================================> 97%]\n* Search finished after 32s and 15 generations, 12841 statements, best individual has fitness: 1.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 97%\n* Total number of goals: 38\n* Number of covered goals: 37\n* Generated 14 tests with total length 79\n* Resulting test suite's coverage: 97%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'BaseNCodecInputStream_ESTest' to /workspace/MOSA_EvoSuite/Test/Codec/12/Codec-12-Round1-s101-9eb1c17cfa38\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

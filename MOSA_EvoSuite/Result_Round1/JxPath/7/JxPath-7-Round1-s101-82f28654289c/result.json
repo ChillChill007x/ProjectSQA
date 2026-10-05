@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-7-Round1-s101-82f28654289c",
+  "unit": {
+    "project": "JxPath",
+    "bug": "7",
+    "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:25:36.492804+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/7/JxPath-7-Round1-s101-82f28654289c",
+    "tests": "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-82f28654289c",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/7/JxPath-7-Round1-s101-82f28654289c"
+  },
+  "generation_time_sec": 3.776,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-82f28654289c/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThan_ESTest.java": "8336fb40789a13c9ff44605b884d4bf0c356512a16aac3bbf0d537772655ba42",
+    "MOSA_EvoSuite/Test/JxPath/7/JxPath-7-Round1-s101-82f28654289c/org/apache/commons/jxpath/ri/compiler/CoreOperationLessThan_ESTest_scaffolding.java": "a9b9a13c85ac97aeead9327997967f336c3428288ba270355c9e1ac22ad1ca2b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:26:01.603132+00:00"
+}

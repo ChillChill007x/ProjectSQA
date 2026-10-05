@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-24-Round1-s101-36eb2a3766db",
+  "unit": {
+    "project": "Closure",
+    "bug": "24",
+    "target": "com.google.javascript.jscomp.ScopedAliases",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:30:18.928577+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/24/Closure-24-Round1-s101-36eb2a3766db",
+    "tests": "MOSA_EvoSuite/Test/Closure/24/Closure-24-Round1-s101-36eb2a3766db",
+    "config": "MOSA_EvoSuite/Configuration/Closure/24/Closure-24-Round1-s101-36eb2a3766db"
+  },
+  "generation_time_sec": 46.182,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/24/Closure-24-Round1-s101-36eb2a3766db/com/google/javascript/jscomp/ScopedAliases_ESTest.java": "23e6267b6ee9ade59ba2c7aa83c0bbd9da765c13f74d62060a2fe6726457f51e",
+    "MOSA_EvoSuite/Test/Closure/24/Closure-24-Round1-s101-36eb2a3766db/com/google/javascript/jscomp/ScopedAliases_ESTest_scaffolding.java": "05674acdf736077ee9ddbb8bedec095229ac6f872f8939746c9338abfc103d93"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.ScopedAliasesTest::testNonAliasLocal",
+    "available_triggers": [
+      "com.google.javascript.jscomp.ScopedAliasesTest::testNonAliasLocal"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2882,
+      "tests": [
+        "com.google.javascript.jscomp.ScopedAliases_ESTest::test0",
+        "com.google.javascript.jscomp.ScopedAliases_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 25,
+      "line_total": 39,
+      "line_coverage_percent": 64.1025641025641,
+      "branch_covered": 7,
+      "branch_total": 18,
+      "branch_coverage_percent": 38.888888888888886
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2515,
+      "tests": [
+        "com.google.javascript.jscomp.ScopedAliases_ESTest::test0",
+        "com.google.javascript.jscomp.ScopedAliases_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 25,
+      "line_total": 39,
+      "line_coverage_percent": 64.1025641025641,
+      "branch_covered": 7,
+      "branch_total": 18,
+      "branch_coverage_percent": 38.888888888888886
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/24/Closure-24-Round1-s101-36eb2a3766db/evaluation-1",
+  "finished_at": "2026-10-04T19:33:07.213757+00:00"
+}

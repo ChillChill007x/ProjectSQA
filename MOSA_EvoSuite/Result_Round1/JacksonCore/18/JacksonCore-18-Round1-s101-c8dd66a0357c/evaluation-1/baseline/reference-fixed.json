@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-18-Round1-s101-c8dd66a0357c/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.core.json.TestJsonGeneratorFeatures::testTooBigBigDecimal"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.867,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

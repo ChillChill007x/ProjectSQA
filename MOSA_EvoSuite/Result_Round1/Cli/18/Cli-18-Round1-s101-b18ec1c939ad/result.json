@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-18-Round1-s101-b18ec1c939ad",
+  "unit": {
+    "project": "Cli",
+    "bug": "18",
+    "target": "org.apache.commons.cli.PosixParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:38:10.201908+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/18/Cli-18-Round1-s101-b18ec1c939ad",
+    "tests": "MOSA_EvoSuite/Test/Cli/18/Cli-18-Round1-s101-b18ec1c939ad",
+    "config": "MOSA_EvoSuite/Configuration/Cli/18/Cli-18-Round1-s101-b18ec1c939ad"
+  },
+  "generation_time_sec": 35.531,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/18/Cli-18-Round1-s101-b18ec1c939ad/org/apache/commons/cli/PosixParser_ESTest.java": "9fa90878a417a1f76fbaa25bd5b9a86f637b4a3fa1c896b63e26ca4b7ff6a7cd",
+    "MOSA_EvoSuite/Test/Cli/18/Cli-18-Round1-s101-b18ec1c939ad/org/apache/commons/cli/PosixParser_ESTest_scaffolding.java": "3ce4f18671a47ce4b68a9a9008b0ce7b1563a4b5ab901220290be5ec914815e8"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.PosixParserTest::testStop2",
+    "available_triggers": [
+      "org.apache.commons.cli.PosixParserTest::testStop2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 363,
+      "tests": [
+        "org.apache.commons.cli.PosixParser_ESTest::test6",
+        "org.apache.commons.cli.PosixParser_ESTest::test7",
+        "org.apache.commons.cli.PosixParser_ESTest::test2",
+        "org.apache.commons.cli.PosixParser_ESTest::test3",
+        "org.apache.commons.cli.PosixParser_ESTest::test4",
+        "org.apache.commons.cli.PosixParser_ESTest::test5",
+        "org.apache.commons.cli.PosixParser_ESTest::test0",
+        "org.apache.commons.cli.PosixParser_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 61,
+      "line_total": 65,
+      "line_coverage_percent": 93.84615384615384,
+      "branch_covered": 38,
+      "branch_total": 42,
+      "branch_coverage_percent": 90.47619047619048
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 329,
+      "tests": [
+        "org.apache.commons.cli.PosixParser_ESTest::test6",
+        "org.apache.commons.cli.PosixParser_ESTest::test7",
+        "org.apache.commons.cli.PosixParser_ESTest::test2",
+        "org.apache.commons.cli.PosixParser_ESTest::test3",
+        "org.apache.commons.cli.PosixParser_ESTest::test4",
+        "org.apache.commons.cli.PosixParser_ESTest::test5",
+        "org.apache.commons.cli.PosixParser_ESTest::test0",
+        "org.apache.commons.cli.PosixParser_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.PosixParser_ESTest::test2",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<7> but was:<6>",
+          "trace": "java.lang.AssertionError: expected:<7> but was:<6>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.cli.PosixParser_ESTest.test2(PosixParser_ESTest.java:132)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 59,
+      "line_total": 66,
+      "line_coverage_percent": 89.39393939393939,
+      "branch_covered": 35,
+      "branch_total": 42,
+      "branch_coverage_percent": 83.33333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/18/Cli-18-Round1-s101-b18ec1c939ad/evaluation-1",
+  "finished_at": "2026-10-04T20:39:09.551437+00:00"
+}

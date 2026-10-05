@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-11-Round1-s101-2812d5c60e91",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "11",
+    "target": "com.fasterxml.jackson.databind.type.TypeFactory",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T23:16:39.717628+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-2812d5c60e91",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-2812d5c60e91",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-2812d5c60e91"
+  },
+  "generation_time_sec": 74.838,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-2812d5c60e91/com/fasterxml/jackson/databind/type/TypeFactory_ESTest.java": "2fb2902e670754ce14c29f393f42e838799860e9ff52d3bc0fe315dbbbaab3a6",
+    "MOSA_EvoSuite/Test/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-2812d5c60e91/com/fasterxml/jackson/databind/type/TypeFactory_ESTest_scaffolding.java": "cb4bb5d01944ae443688bed0f71f0d994c8123f24df7a58fabc503c6aeada4fe"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.type.TestJavaType::testLocalType728",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.type.TestJavaType::testLocalType728",
+      "com.fasterxml.jackson.databind.type.TestLocalType609::testLocalPartialType609"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T23:18:57.001891+00:00"
+}

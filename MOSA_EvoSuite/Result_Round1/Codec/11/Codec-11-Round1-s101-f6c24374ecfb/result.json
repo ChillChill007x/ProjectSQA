@@ -1,0 +1,164 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-11-Round1-s101-f6c24374ecfb",
+  "unit": {
+    "project": "Codec",
+    "bug": "11",
+    "target": "org.apache.commons.codec.net.QuotedPrintableCodec",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:16:34.899694+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/11/Codec-11-Round1-s101-f6c24374ecfb",
+    "tests": "MOSA_EvoSuite/Test/Codec/11/Codec-11-Round1-s101-f6c24374ecfb",
+    "config": "MOSA_EvoSuite/Configuration/Codec/11/Codec-11-Round1-s101-f6c24374ecfb"
+  },
+  "generation_time_sec": 35.284,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/11/Codec-11-Round1-s101-f6c24374ecfb/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest.java": "ef80d02f89fd009f0abedbf358fd724ae617e33379a2753110b7ac96651bf101",
+    "MOSA_EvoSuite/Test/Codec/11/Codec-11-Round1-s101-f6c24374ecfb/org/apache/commons/codec/net/QuotedPrintableCodec_ESTest_scaffolding.java": "0202aa01658013370d8455f62fcb29bc286193c97f34721898a5416f513f0f16"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF",
+    "available_triggers": [
+      "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF",
+      "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakDecode",
+      "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakEncode",
+      "org.apache.commons.codec.net.QuotedPrintableCodecTest::testUltimateSoftBreak",
+      "org.apache.commons.codec.net.QuotedPrintableCodecTest::testTrailingSpecial"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 18,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 333,
+      "tests": [
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test03",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test14",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test02",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test13",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test05",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test16",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test04",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test15",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test10",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test01",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test12",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test00",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test11",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test07",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test06",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test17",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test09",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 96,
+      "line_total": 107,
+      "line_coverage_percent": 89.7196261682243,
+      "branch_covered": 70,
+      "branch_total": 74,
+      "branch_coverage_percent": 94.5945945945946
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 18,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 339,
+      "tests": [
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test03",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test14",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test02",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test13",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test05",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test16",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test04",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test15",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test10",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test01",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test12",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test00",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test11",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test07",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test06",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test17",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test09",
+        "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test08"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test13",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: ArrayIndexOutOfBoundsException",
+          "trace": "java.lang.AssertionError: Expecting exception: ArrayIndexOutOfBoundsException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test13(QuotedPrintableCodec_ESTest.java:382)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<78> but was:<73>",
+          "trace": "java.lang.AssertionError: expected:<78> but was:<73>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test10(QuotedPrintableCodec_ESTest.java:300)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test12",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<88> but was:<85>",
+          "trace": "java.lang.AssertionError: expected:<88> but was:<85>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test12(QuotedPrintableCodec_ESTest.java:368)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test11",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<Objects of type[=20]> but was:<Objects of type[ ]>",
+          "trace": "org.junit.ComparisonFailure: expected:<Objects of type[=20]> but was:<Objects of type[ ]>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test11(QuotedPrintableCodec_ESTest.java:338)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test17",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<87> but was:<84>",
+          "trace": "java.lang.AssertionError: expected:<87> but was:<84>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test17(QuotedPrintableCodec_ESTest.java:452)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.codec.net.QuotedPrintableCodec_ESTest::test08",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<3> but was:<4>",
+          "trace": "java.lang.AssertionError: expected:<3> but was:<4>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.codec.net.QuotedPrintableCodec_ESTest.test08(QuotedPrintableCodec_ESTest.java:130)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 66,
+      "line_total": 81,
+      "line_coverage_percent": 81.48148148148148,
+      "branch_covered": 37,
+      "branch_total": 40,
+      "branch_coverage_percent": 92.5
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/11/Codec-11-Round1-s101-f6c24374ecfb/evaluation-1",
+  "finished_at": "2026-10-04T21:17:32.039807+00:00"
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-19-Round1-s101-2c7cd0a05eda",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "19",
+    "target": "com.fasterxml.jackson.core.json.UTF8StreamJsonParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:54:15.007755+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda"
+  },
+  "generation_time_sec": 40.413,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda/com/fasterxml/jackson/core/json/UTF8StreamJsonParser_ESTest.java": "1b9c557b1795e50707040588c6b0739608c33e9e5639d22b15d5f90c131437a1",
+    "MOSA_EvoSuite/Test/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda/com/fasterxml/jackson/core/json/UTF8StreamJsonParser_ESTest_scaffolding.java": "6c39689c957b19bc444b65ab8e68164601bef190e2b3ccab4697427796bd007c"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.json.TestNumericValues::testLongerFloatingPoint",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.json.TestNumericValues::testLongerFloatingPoint"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 26,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 826,
+      "tests": [
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test19",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test18",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test17",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test12",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test11",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test10",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test16",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test15",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test14",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test13",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test09",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test08",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test07",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test06",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test01",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test23",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test00",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test22",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test21",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test20",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test05",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test04",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test03",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test25",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test02",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test24"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 191,
+      "line_total": 1820,
+      "line_coverage_percent": 10.494505494505495,
+      "branch_covered": 95,
+      "branch_total": 1231,
+      "branch_coverage_percent": 7.717303005686434
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 871,
+      "tests": [
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test19",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test18",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test17",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test12",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test11",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test10",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test16",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test15",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test14",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test13",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test09",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test08",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test07",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test06",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test01",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test23",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test00",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test22",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test21",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test20",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test05",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test04",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test03",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test25",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test02",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser_ESTest::test24"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 191,
+      "line_total": 1817,
+      "line_coverage_percent": 10.511832691249312,
+      "branch_covered": 95,
+      "branch_total": 1229,
+      "branch_coverage_percent": 7.729861676159479
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda/evaluation-1",
+  "finished_at": "2026-10-04T23:55:23.873477+00:00"
+}

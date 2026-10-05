@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-50-Round1-s101-6315495eba33",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "50",
+    "target": "org.jsoup.helper.DataUtil",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "NO_TESTS",
+  "started_at": "2026-10-05T01:45:49.019411+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33"
+  },
+  "generation_time_sec": 1.834,
+  "error": "Add generated .java files to /workspace/MOSA_EvoSuite/Test/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33",
+  "finished_at": "2026-10-05T01:45:59.451250+00:00"
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-45-Round1-s101-7d1a4c2a9c07",
+  "unit": {
+    "project": "Compress",
+    "bug": "45",
+    "target": "org.apache.commons.compress.archivers.tar.TarUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:08:14.956515+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07",
+    "tests": "MOSA_EvoSuite/Test/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07",
+    "config": "MOSA_EvoSuite/Configuration/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07"
+  },
+  "generation_time_sec": 37.895,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07/org/apache/commons/compress/archivers/tar/TarUtils_ESTest.java": "b1d8b337cc7dfc12e64d3cae80f4510a01eccb2f4f8400da84f743df2504c4d6",
+    "MOSA_EvoSuite/Test/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07/org/apache/commons/compress/archivers/tar/TarUtils_ESTest_scaffolding.java": "ffde7e435104fe22758d54c320ce7c5819e89a463b9a31852e78e2ae20995a99"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.tar.TarUtilsTest::testRoundTripOctalOrBinary8",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.tar.TarUtilsTest::testRoundTripOctalOrBinary8"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 26,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 638,
+      "tests": [
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test17",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test18",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test19",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test13",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test14",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test15",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test16",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test10",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test11",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test12",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test06",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test07",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test08",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test09",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test02",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test24",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test03",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test25",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test04",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test05",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test20",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test21",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test00",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test22",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test01",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test23"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 114,
+      "line_total": 155,
+      "line_coverage_percent": 73.54838709677419,
+      "branch_covered": 77,
+      "branch_total": 102,
+      "branch_coverage_percent": 75.49019607843137
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 26,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 417,
+      "tests": [
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test17",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test18",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test19",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test13",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test14",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test15",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test16",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test10",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test11",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test12",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test06",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test07",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test08",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test09",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test02",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test24",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test03",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test25",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test04",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test05",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test20",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test21",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test00",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test22",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test01",
+        "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test23"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.compress.archivers.tar.TarUtils_ESTest::test05",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException",
+          "message": "Value 1099511627791 is too large for -1 byte field.",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockIllegalArgumentException: Value 1099511627791 is too large for -1 byte field.\n\tat org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary(TarUtils.java:523)\n\tat org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes(TarUtils.java:488)\n\tat org.apache.commons.compress.archivers.tar.TarUtils_ESTest.test05(TarUtils_ESTest.java:82)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 115,
+      "line_total": 155,
+      "line_coverage_percent": 74.19354838709677,
+      "branch_covered": 78,
+      "branch_total": 102,
+      "branch_coverage_percent": 76.47058823529412
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/45/Compress-45-Round1-s101-7d1a4c2a9c07/evaluation-1",
+  "finished_at": "2026-10-04T23:09:36.755228+00:00"
+}

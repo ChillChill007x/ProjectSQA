@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Closure-72-Round1-s101-5a91c6e8d014/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions31"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.891,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

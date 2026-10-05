@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Jsoup-3-Round1-s101-9e9a441b7662/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.132,
+  "stdout": "org.jsoup.nodes.ElementTest::testAppendRowToTable\norg.jsoup.nodes.ElementTest::testPrependRowToTable\norg.jsoup.parser.ParserTest::handlesNestedImplicitTable",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

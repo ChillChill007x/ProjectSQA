@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Math/8/Math-8-Round1-s101-d41d8a8337e4/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Math-8-Round1-s101-d41d8a8337e4/evaluation-1/fixed/target/classes/org/apache/commons/math3/distribution/DiscreteDistribution.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Math/8/Math-8-Round1-s101-d41d8a8337e4/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.424,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round1/Math/8/Math-8-Round1-s101-d41d8a8337e4/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

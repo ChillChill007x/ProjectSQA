@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-4-Round1-s101-6872af6b479d-attempt2/evaluation-1/buggy",
+    "-t",
+    "org.jfree.chart.axis.junit.LogAxisTests::testXYAutoRange1"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.018,
+  "stdout": "Failing tests: 1\n  - org.jfree.chart.axis.junit.LogAxisTests::testXYAutoRange1\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-15-Round1-s101-8b9310f5df21-attempt2/evaluation-1/fixed",
+    "-t",
+    "org.jfree.chart.plot.junit.PiePlot3DTests::testDrawWithNullDataset"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.067,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

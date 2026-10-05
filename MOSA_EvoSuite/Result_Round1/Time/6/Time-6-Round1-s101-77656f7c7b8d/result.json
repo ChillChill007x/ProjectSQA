@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-6-Round1-s101-77656f7c7b8d",
+  "unit": {
+    "project": "Time",
+    "bug": "6",
+    "target": "org.joda.time.chrono.GJChronology",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:32:39.102790+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/6/Time-6-Round1-s101-77656f7c7b8d",
+    "tests": "MOSA_EvoSuite/Test/Time/6/Time-6-Round1-s101-77656f7c7b8d",
+    "config": "MOSA_EvoSuite/Configuration/Time/6/Time-6-Round1-s101-77656f7c7b8d"
+  },
+  "generation_time_sec": 43.419,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/6/Time-6-Round1-s101-77656f7c7b8d/org/joda/time/chrono/GJChronology_ESTest.java": "780a63e63cfc6b10d188914553a4369636d54ffdb1955f1a25438f09537eb6c6",
+    "MOSA_EvoSuite/Test/Time/6/Time-6-Round1-s101-77656f7c7b8d/org/joda/time/chrono/GJChronology_ESTest_scaffolding.java": "4de3e219f56e7734698ad9f76b80e02bc0c4e70cc04e2a437f08f64e7384ec90"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.chrono.TestGJDate::test_cutoverPreZero",
+    "available_triggers": [
+      "org.joda.time.chrono.TestGJDate::test_cutoverPreZero",
+      "org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToNegative_crossCutover",
+      "org.joda.time.chrono.TestGJDate::test_plusYears_positiveToZero_crossCutover",
+      "org.joda.time.chrono.TestGJDate::test_plusYears_positiveToNegative_crossCutover",
+      "org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToZero_crossCutover"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 34,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 34,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 908,
+      "tests": [
+        "org.joda.time.chrono.GJChronology_ESTest::test06",
+        "org.joda.time.chrono.GJChronology_ESTest::test28",
+        "org.joda.time.chrono.GJChronology_ESTest::test07",
+        "org.joda.time.chrono.GJChronology_ESTest::test29",
+        "org.joda.time.chrono.GJChronology_ESTest::test08",
+        "org.joda.time.chrono.GJChronology_ESTest::test09",
+        "org.joda.time.chrono.GJChronology_ESTest::test20",
+        "org.joda.time.chrono.GJChronology_ESTest::test21",
+        "org.joda.time.chrono.GJChronology_ESTest::test00",
+        "org.joda.time.chrono.GJChronology_ESTest::test22",
+        "org.joda.time.chrono.GJChronology_ESTest::test01",
+        "org.joda.time.chrono.GJChronology_ESTest::test23",
+        "org.joda.time.chrono.GJChronology_ESTest::test02",
+        "org.joda.time.chrono.GJChronology_ESTest::test24",
+        "org.joda.time.chrono.GJChronology_ESTest::test03",
+        "org.joda.time.chrono.GJChronology_ESTest::test25",
+        "org.joda.time.chrono.GJChronology_ESTest::test04",
+        "org.joda.time.chrono.GJChronology_ESTest::test26",
+        "org.joda.time.chrono.GJChronology_ESTest::test05",
+        "org.joda.time.chrono.GJChronology_ESTest::test27",
+        "org.joda.time.chrono.GJChronology_ESTest::test30",
+        "org.joda.time.chrono.GJChronology_ESTest::test17",
+        "org.joda.time.chrono.GJChronology_ESTest::test18",
+        "org.joda.time.chrono.GJChronology_ESTest::test19",
+        "org.joda.time.chrono.GJChronology_ESTest::test31",
+        "org.joda.time.chrono.GJChronology_ESTest::test10",
+        "org.joda.time.chrono.GJChronology_ESTest::test32",
+        "org.joda.time.chrono.GJChronology_ESTest::test11",
+        "org.joda.time.chrono.GJChronology_ESTest::test33",
+        "org.joda.time.chrono.GJChronology_ESTest::test12",
+        "org.joda.time.chrono.GJChronology_ESTest::test13",
+        "org.joda.time.chrono.GJChronology_ESTest::test14",
+        "org.joda.time.chrono.GJChronology_ESTest::test15",
+        "org.joda.time.chrono.GJChronology_ESTest::test16"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 169,
+      "line_total": 177,
+      "line_coverage_percent": 95.48022598870057,
+      "branch_covered": 53,
+      "branch_total": 62,
+      "branch_coverage_percent": 85.48387096774194
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 34,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 944,
+      "tests": [
+        "org.joda.time.chrono.GJChronology_ESTest::test06",
+        "org.joda.time.chrono.GJChronology_ESTest::test28",
+        "org.joda.time.chrono.GJChronology_ESTest::test07",
+        "org.joda.time.chrono.GJChronology_ESTest::test29",
+        "org.joda.time.chrono.GJChronology_ESTest::test08",
+        "org.joda.time.chrono.GJChronology_ESTest::test09",
+        "org.joda.time.chrono.GJChronology_ESTest::test20",
+        "org.joda.time.chrono.GJChronology_ESTest::test21",
+        "org.joda.time.chrono.GJChronology_ESTest::test00",
+        "org.joda.time.chrono.GJChronology_ESTest::test22",
+        "org.joda.time.chrono.GJChronology_ESTest::test01",
+        "org.joda.time.chrono.GJChronology_ESTest::test23",
+        "org.joda.time.chrono.GJChronology_ESTest::test02",
+        "org.joda.time.chrono.GJChronology_ESTest::test24",
+        "org.joda.time.chrono.GJChronology_ESTest::test03",
+        "org.joda.time.chrono.GJChronology_ESTest::test25",
+        "org.joda.time.chrono.GJChronology_ESTest::test04",
+        "org.joda.time.chrono.GJChronology_ESTest::test26",
+        "org.joda.time.chrono.GJChronology_ESTest::test05",
+        "org.joda.time.chrono.GJChronology_ESTest::test27",
+        "org.joda.time.chrono.GJChronology_ESTest::test30",
+        "org.joda.time.chrono.GJChronology_ESTest::test17",
+        "org.joda.time.chrono.GJChronology_ESTest::test18",
+        "org.joda.time.chrono.GJChronology_ESTest::test19",
+        "org.joda.time.chrono.GJChronology_ESTest::test31",
+        "org.joda.time.chrono.GJChronology_ESTest::test10",
+        "org.joda.time.chrono.GJChronology_ESTest::test32",
+        "org.joda.time.chrono.GJChronology_ESTest::test11",
+        "org.joda.time.chrono.GJChronology_ESTest::test33",
+        "org.joda.time.chrono.GJChronology_ESTest::test12",
+        "org.joda.time.chrono.GJChronology_ESTest::test13",
+        "org.joda.time.chrono.GJChronology_ESTest::test14",
+        "org.joda.time.chrono.GJChronology_ESTest::test15",
+        "org.joda.time.chrono.GJChronology_ESTest::test16"
+      ],
+      "failures": [
+        {
+          "test": "org.joda.time.chrono.GJChronology_ESTest::test28",
+          "exception": "org.joda.time.IllegalFieldValueException",
+          "message": "Value 0 for year is not supported",
+          "trace": "org.joda.time.IllegalFieldValueException: Value 0 for year is not supported\n\tat org.joda.time.chrono.JulianChronology.adjustYearForSet(JulianChronology.java:81)\n\tat org.joda.time.chrono.JulianChronology.getDateMidnightMillis(JulianChronology.java:207)\n\tat org.joda.time.chrono.BasicChronology.getDateTimeMillis(BasicChronology.java:159)\n\tat org.joda.time.chrono.JulianChronology.getDateTimeMillis(JulianChronology.java:50)\n\tat org.joda.time.chrono.GJChronology.convertByYear(GJChronology.java:85)\n\tat org.joda.time.chrono.GJChronology.gregorianToJulianByYear(GJChronology.java:588)\n\tat org.joda.time.chrono.GJChronology$CutoverField.gregorianToJulian(GJChronology.java:924)\n\tat org.joda.time.chrono.GJChronology$ImpreciseCutoverField.add(GJChronology.java:1001)\n\tat org.joda.time.field.LenientDateTimeField.set(LenientDateTimeField.java:74)\n\tat org.joda.time.chrono.BaseChronology.getDateTimeMillis(BaseChronology.java:132)\n\tat org.joda.time.chrono.AssembledChronology.getDateTimeMillis(AssembledChronology.java:136)\n\tat org.joda.time.base.BaseDateTime.<init>(BaseDateTime.java:254)\n\tat org.joda.time.DateTime.<init>(DateTime.java:435)\n\tat org.joda.time.chrono.GJChronology_ESTest.test28(GJChronology_ESTest.java:768)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.joda.time.chrono.GJChronology_ESTest::test22",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in org.joda.time.chrono.GJChronology but in org.joda.time.chrono.JulianChronology.getInstance(JulianChronology.java:138): org.evosuite.runtime.mock.java.lang.MockThrowable: Invalid min days in first week: 65535",
+          "trace": "java.lang.AssertionError: Exception was not thrown in org.joda.time.chrono.GJChronology but in org.joda.time.chrono.JulianChronology.getInstance(JulianChronology.java:138): org.evosuite.runtime.mock.java.lang.MockThrowable: Invalid min days in first week: 65535\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.joda.time.chrono.GJChronology_ESTest.test22(GJChronology_ESTest.java:613)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.joda.time.chrono.GJChronology_ESTest::test23",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-79271564339000> but was:<-79240028339000>",
+          "trace": "java.lang.AssertionError: expected:<-79271564339000> but was:<-79240028339000>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.joda.time.chrono.GJChronology_ESTest.test23(GJChronology_ESTest.java:629)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 166,
+      "line_total": 174,
+      "line_coverage_percent": 95.40229885057471,
+      "branch_covered": 51,
+      "branch_total": 60,
+      "branch_coverage_percent": 85.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Time/6/Time-6-Round1-s101-77656f7c7b8d/evaluation-1",
+  "finished_at": "2026-10-05T03:34:15.989105+00:00"
+}

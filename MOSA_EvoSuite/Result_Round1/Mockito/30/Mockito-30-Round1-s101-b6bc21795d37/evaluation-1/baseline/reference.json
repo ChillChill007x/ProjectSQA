@@ -1,0 +1,8 @@
+{
+  "trigger": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage",
+  "available_triggers": [
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

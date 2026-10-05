@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-17-Round1-s101-b85d86711a83",
+  "unit": {
+    "project": "Mockito",
+    "bug": "17",
+    "target": "org.mockito.internal.creation.MockSettingsImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:03:51.799992+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/17/Mockito-17-Round1-s101-b85d86711a83",
+    "tests": "MOSA_EvoSuite/Test/Mockito/17/Mockito-17-Round1-s101-b85d86711a83",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/17/Mockito-17-Round1-s101-b85d86711a83"
+  },
+  "generation_time_sec": 35.189,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/17/Mockito-17-Round1-s101-b85d86711a83/org/mockito/internal/creation/MockSettingsImpl_ESTest.java": "7c800b74c8d886647301fba3d4c8813a2bbd03245f89c82468bb25bd7a11439c",
+    "MOSA_EvoSuite/Test/Mockito/17/Mockito-17-Round1-s101-b85d86711a83/org/mockito/internal/creation/MockSettingsImpl_ESTest_scaffolding.java": "ee1ef50a8d0dd295c16fc1316b41bd7e33d7f86a2f6410070de3819b56cf2cfc"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces",
+    "available_triggers": [
+      "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 14,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 449,
+      "tests": [
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test10",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test01",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test12",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test00",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test11",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test03",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test02",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test13",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test05",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test04",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test07",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test06",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test09",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 20,
+      "line_total": 25,
+      "line_coverage_percent": 80.0,
+      "branch_covered": 8,
+      "branch_total": 10,
+      "branch_coverage_percent": 80.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 14,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 444,
+      "tests": [
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test10",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test01",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test12",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test00",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test11",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test03",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test02",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test13",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test05",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test04",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test07",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test06",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test09",
+        "org.mockito.internal.creation.MockSettingsImpl_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 24,
+      "line_coverage_percent": 87.5,
+      "branch_covered": 13,
+      "branch_total": 14,
+      "branch_coverage_percent": 92.85714285714286
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Mockito/17/Mockito-17-Round1-s101-b85d86711a83/evaluation-1",
+  "finished_at": "2026-10-05T02:05:26.187714+00:00"
+}

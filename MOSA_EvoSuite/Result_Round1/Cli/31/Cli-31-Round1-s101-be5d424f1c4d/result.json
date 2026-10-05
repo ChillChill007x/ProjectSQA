@@ -1,0 +1,188 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-31-Round1-s101-be5d424f1c4d",
+  "unit": {
+    "project": "Cli",
+    "bug": "31",
+    "target": "org.apache.commons.cli.HelpFormatter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:52:54.504826+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/31/Cli-31-Round1-s101-be5d424f1c4d",
+    "tests": "MOSA_EvoSuite/Test/Cli/31/Cli-31-Round1-s101-be5d424f1c4d",
+    "config": "MOSA_EvoSuite/Configuration/Cli/31/Cli-31-Round1-s101-be5d424f1c4d"
+  },
+  "generation_time_sec": 38.809,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/31/Cli-31-Round1-s101-be5d424f1c4d/org/apache/commons/cli/HelpFormatter_ESTest.java": "206818cf2a2a513129e57ca2bf15389e27e4115c5ac1cc39460a7eaaa3b124c9",
+    "MOSA_EvoSuite/Test/Cli/31/Cli-31-Round1-s101-be5d424f1c4d/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java": "7830f320545e835a82b0ebc634a2e93670164fcbd3a38488aa6baecd188ac851"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.HelpFormatterTest::testDefaultArgName",
+    "available_triggers": [
+      "org.apache.commons.cli.HelpFormatterTest::testDefaultArgName"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 38,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 712,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test34",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test33",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test36",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test35",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test37",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 198,
+      "line_total": 201,
+      "line_coverage_percent": 98.50746268656717,
+      "branch_covered": 106,
+      "branch_total": 124,
+      "branch_coverage_percent": 85.48387096774194
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 680,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test34",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test33",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test36",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test35",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test37",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": "expected null, but was:<arg>",
+          "trace": "java.lang.AssertionError: expected null, but was:<arg>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotNull(Assert.java:756)\n\tat org.junit.Assert.assertNull(Assert.java:738)\n\tat org.junit.Assert.assertNull(Assert.java:748)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test10(HelpFormatter_ESTest.java:581)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test11(HelpFormatter_ESTest.java:751)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+          "exception": "java.lang.AssertionError",
+          "message": "expected null, but was:<arg>",
+          "trace": "java.lang.AssertionError: expected null, but was:<arg>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotNull(Assert.java:756)\n\tat org.junit.Assert.assertNull(Assert.java:738)\n\tat org.junit.Assert.assertNull(Assert.java:748)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test16(HelpFormatter_ESTest.java:1066)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test06(HelpFormatter_ESTest.java:325)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 182,
+      "line_total": 201,
+      "line_coverage_percent": 90.54726368159204,
+      "branch_covered": 90,
+      "branch_total": 120,
+      "branch_coverage_percent": 75.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/31/Cli-31-Round1-s101-be5d424f1c4d/evaluation-1",
+  "finished_at": "2026-10-04T20:53:56.874684+00:00"
+}

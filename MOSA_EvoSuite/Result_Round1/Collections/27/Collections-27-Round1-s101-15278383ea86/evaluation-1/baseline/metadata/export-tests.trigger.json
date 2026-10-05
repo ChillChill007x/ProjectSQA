@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-27-Round1-s101-15278383ea86/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.collections4.map.MultiValueMapTest::testUnsafeDeSerialization",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Math",
+    "-v",
+    "79f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Math-79-Round1-s101-19db3a0e2108/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.031,
+  "stdout": "",
+  "stderr": "Checking out ef9b639a to /workspace/work/parallel/evosuite/83570/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff ef9b639a:9e6576e7..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Math-79f........................................ OK\n"
+}

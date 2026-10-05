@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Compress-1-Round1-s101-cd6b77863875/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.381,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.CpioTestCase::testCpioUnarchive\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

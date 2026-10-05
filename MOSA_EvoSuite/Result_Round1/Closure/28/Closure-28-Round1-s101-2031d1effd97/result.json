@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-28-Round1-s101-2031d1effd97",
+  "unit": {
+    "project": "Closure",
+    "bug": "28",
+    "target": "com.google.javascript.jscomp.InlineCostEstimator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "8e4d591b349ec3ed3474856a09f18c43d5907d424aa8dbbe821506fd498696bf",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:36:37.784470+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/28/Closure-28-Round1-s101-2031d1effd97",
+    "tests": "MOSA_EvoSuite/Test/Closure/28/Closure-28-Round1-s101-2031d1effd97",
+    "config": "MOSA_EvoSuite/Configuration/Closure/28/Closure-28-Round1-s101-2031d1effd97"
+  },
+  "generation_time_sec": 39.458,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/28/Closure-28-Round1-s101-2031d1effd97/com/google/javascript/jscomp/InlineCostEstimator_ESTest.java": "084a58c63baeab4cf1d98fe23a8a87562f8ae30a9407e44440f7ab290b5dbb86",
+    "MOSA_EvoSuite/Test/Closure/28/Closure-28-Round1-s101-2031d1effd97/com/google/javascript/jscomp/InlineCostEstimator_ESTest_scaffolding.java": "30da89b0da65c818a86c3142e4108758ef61f2bd180687c71aca569ec042fa71"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.InlineCostEstimatorTest::testCost",
+    "available_triggers": [
+      "com.google.javascript.jscomp.InlineCostEstimatorTest::testCost",
+      "com.google.javascript.jscomp.InlineFunctionsTest::testIssue728"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1463,
+      "tests": [
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test0",
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test1",
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 5,
+      "line_coverage_percent": 80.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1115,
+      "tests": [
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test0",
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test1",
+        "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test2"
+      ],
+      "failures": [
+        {
+          "test": "com.google.javascript.jscomp.InlineCostEstimator_ESTest::test2",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<17>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<17>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat com.google.javascript.jscomp.InlineCostEstimator_ESTest.test2(InlineCostEstimator_ESTest.java:522)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 4,
+      "line_total": 5,
+      "line_coverage_percent": 80.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/28/Closure-28-Round1-s101-2031d1effd97/evaluation-1",
+  "finished_at": "2026-10-04T19:39:17.456241+00:00"
+}

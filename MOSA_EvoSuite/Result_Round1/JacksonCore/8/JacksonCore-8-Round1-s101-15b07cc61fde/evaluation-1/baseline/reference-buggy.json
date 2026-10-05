@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-8-Round1-s101-15b07cc61fde/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.core.util.TestTextBuffer::testEmpty"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.918,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.core.util.TestTextBuffer::testEmpty\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "90f",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-90-Round1-s101-01ceed7f9610/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.429,
+  "stdout": "",
+  "stderr": "Checking out c5e143f7 to /workspace/work/parallel/evosuite/83569/checkouts/ OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-90-Round1-s101-01ceed7f9610/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-90-Round1-s101-01ceed7f9610/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-90-Round1-s101-01ceed7f9610/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/parallel/evosuite/83569/checkouts/Closure-90-Round1-s101-01ceed7f9610/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff c5e143f7:97485ec6..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-90f..................................... OK\n"
+}

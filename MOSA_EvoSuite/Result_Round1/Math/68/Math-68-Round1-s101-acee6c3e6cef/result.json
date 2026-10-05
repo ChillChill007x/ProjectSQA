@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-68-Round1-s101-acee6c3e6cef",
+  "unit": {
+    "project": "Math",
+    "bug": "68",
+    "target": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:03:37.108782+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/68/Math-68-Round1-s101-acee6c3e6cef",
+    "tests": "MOSA_EvoSuite/Test/Math/68/Math-68-Round1-s101-acee6c3e6cef",
+    "config": "MOSA_EvoSuite/Configuration/Math/68/Math-68-Round1-s101-acee6c3e6cef"
+  },
+  "generation_time_sec": 36.633,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/68/Math-68-Round1-s101-acee6c3e6cef/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer_ESTest.java": "b1c64480e5374341e4211d3bef4438b788527e2c440cc64c263ca9de0dfae48a",
+    "MOSA_EvoSuite/Test/Math/68/Math-68-Round1-s101-acee6c3e6cef/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer_ESTest_scaffolding.java": "f71908969dd9ab6a7f5cc0c9606a3c4a9a8329d10488b9653ec919f9a388f47c"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson",
+      "org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 446,
+      "tests": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 16,
+      "line_total": 339,
+      "line_coverage_percent": 4.71976401179941,
+      "branch_covered": 0,
+      "branch_total": 200,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 909,
+      "tests": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 15,
+      "line_total": 332,
+      "line_coverage_percent": 4.518072289156627,
+      "branch_covered": 0,
+      "branch_total": 196,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/68/Math-68-Round1-s101-acee6c3e6cef/evaluation-1",
+  "finished_at": "2026-10-05T04:05:43.488390+00:00"
+}

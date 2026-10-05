@@ -1,0 +1,1 @@
+{"run_count":1,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":469,"tests":["org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer_ESTest::test0"],"failures":[],"passed":true}

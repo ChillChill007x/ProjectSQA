@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-7-Round1-s101-7bed7379cdc6",
+  "unit": {
+    "project": "Csv",
+    "bug": "7",
+    "target": "org.apache.commons.csv.CSVParser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:05:24.759509+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/7/Csv-7-Round1-s101-7bed7379cdc6",
+    "tests": "MOSA_EvoSuite/Test/Csv/7/Csv-7-Round1-s101-7bed7379cdc6",
+    "config": "MOSA_EvoSuite/Configuration/Csv/7/Csv-7-Round1-s101-7bed7379cdc6"
+  },
+  "generation_time_sec": 35.631,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/7/Csv-7-Round1-s101-7bed7379cdc6/org/apache/commons/csv/CSVParser_ESTest.java": "9b9356a2c4649b89f19dc6b63685185c27985488a053a6b36a5bec1655f86119",
+    "MOSA_EvoSuite/Test/Csv/7/Csv-7-Round1-s101-7bed7379cdc6/org/apache/commons/csv/CSVParser_ESTest_scaffolding.java": "b237502c14d125595f488cc25956273b175763c3af296b1e51541ebf8852cb33"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVParserTest::testDuplicateHeaderEntries",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVParserTest::testDuplicateHeaderEntries"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 616,
+      "tests": [
+        "org.apache.commons.csv.CSVParser_ESTest::test03",
+        "org.apache.commons.csv.CSVParser_ESTest::test14",
+        "org.apache.commons.csv.CSVParser_ESTest::test02",
+        "org.apache.commons.csv.CSVParser_ESTest::test13",
+        "org.apache.commons.csv.CSVParser_ESTest::test05",
+        "org.apache.commons.csv.CSVParser_ESTest::test04",
+        "org.apache.commons.csv.CSVParser_ESTest::test10",
+        "org.apache.commons.csv.CSVParser_ESTest::test01",
+        "org.apache.commons.csv.CSVParser_ESTest::test12",
+        "org.apache.commons.csv.CSVParser_ESTest::test00",
+        "org.apache.commons.csv.CSVParser_ESTest::test11",
+        "org.apache.commons.csv.CSVParser_ESTest::test07",
+        "org.apache.commons.csv.CSVParser_ESTest::test06",
+        "org.apache.commons.csv.CSVParser_ESTest::test09",
+        "org.apache.commons.csv.CSVParser_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 70,
+      "line_total": 83,
+      "line_coverage_percent": 84.33734939759036,
+      "branch_covered": 32,
+      "branch_total": 40,
+      "branch_coverage_percent": 80.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 632,
+      "tests": [
+        "org.apache.commons.csv.CSVParser_ESTest::test03",
+        "org.apache.commons.csv.CSVParser_ESTest::test14",
+        "org.apache.commons.csv.CSVParser_ESTest::test02",
+        "org.apache.commons.csv.CSVParser_ESTest::test13",
+        "org.apache.commons.csv.CSVParser_ESTest::test05",
+        "org.apache.commons.csv.CSVParser_ESTest::test04",
+        "org.apache.commons.csv.CSVParser_ESTest::test10",
+        "org.apache.commons.csv.CSVParser_ESTest::test01",
+        "org.apache.commons.csv.CSVParser_ESTest::test12",
+        "org.apache.commons.csv.CSVParser_ESTest::test00",
+        "org.apache.commons.csv.CSVParser_ESTest::test11",
+        "org.apache.commons.csv.CSVParser_ESTest::test07",
+        "org.apache.commons.csv.CSVParser_ESTest::test06",
+        "org.apache.commons.csv.CSVParser_ESTest::test09",
+        "org.apache.commons.csv.CSVParser_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 81,
+      "line_coverage_percent": 85.18518518518519,
+      "branch_covered": 31,
+      "branch_total": 38,
+      "branch_coverage_percent": 81.57894736842105
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Csv/7/Csv-7-Round1-s101-7bed7379cdc6/evaluation-1",
+  "finished_at": "2026-10-04T22:06:24.556318+00:00"
+}

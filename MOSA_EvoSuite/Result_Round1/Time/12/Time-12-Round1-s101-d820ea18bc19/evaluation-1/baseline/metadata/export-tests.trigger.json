@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-12-Round1-s101-d820ea18bc19/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero1\norg.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero3\norg.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero1\norg.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero3\norg.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero1\norg.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero3\norg.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero1\norg.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero3",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

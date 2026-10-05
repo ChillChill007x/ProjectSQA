@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Time-2-Round1-s101-119a4d5c9423/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.319,
+  "stdout": "/opt/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar:/opt/defects4j/framework/projects/Time/lib/junit/junit/3.8.2/junit-3.8.2.jar:/workspace/work/checkouts/Time-2-Round1-s101-119a4d5c9423/evaluation-1/buggy/target/classes:/workspace/work/checkouts/Time-2-Round1-s101-119a4d5c9423/evaluation-1/buggy/target/test-classes",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

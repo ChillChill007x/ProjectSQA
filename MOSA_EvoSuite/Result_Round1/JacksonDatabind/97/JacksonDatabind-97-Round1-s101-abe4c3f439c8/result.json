@@ -1,0 +1,142 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-97-Round1-s101-abe4c3f439c8",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "97",
+    "target": "com.fasterxml.jackson.databind.node.POJONode",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:42:27.620925+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8"
+  },
+  "generation_time_sec": 56.525,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8/com/fasterxml/jackson/databind/node/POJONode_ESTest.java": "9393f5e0bc4ffdebe9fcbde0169af1795566b0ee14508b575d77cdadebdc1d9a",
+    "MOSA_EvoSuite/Test/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8/com/fasterxml/jackson/databind/node/POJONode_ESTest_scaffolding.java": "cb8b0e7a4ca85437662e698829d8e5b787fdb11cb5dac846f4c4af0b2dd9972c"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.node.POJONodeTest::testPOJONodeCustomSer",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.node.POJONodeTest::testPOJONodeCustomSer"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 24,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3892,
+      "tests": [
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test10",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test21",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test20",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test01",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test12",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test23",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test00",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test11",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test22",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test03",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test14",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test02",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test13",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test05",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test16",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test04",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test15",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test07",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test18",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test06",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test17",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test09",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test08",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test19"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 33,
+      "line_total": 41,
+      "line_coverage_percent": 80.48780487804878,
+      "branch_covered": 27,
+      "branch_total": 34,
+      "branch_coverage_percent": 79.41176470588235
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 24,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3822,
+      "tests": [
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test10",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test21",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test20",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test01",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test12",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test23",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test00",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test11",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test22",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test03",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test14",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test02",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test13",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test05",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test16",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test04",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test15",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test07",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test18",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test06",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test17",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test09",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test08",
+        "com.fasterxml.jackson.databind.node.POJONode_ESTest::test19"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.databind.node.POJONode_ESTest::test08",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in com.fasterxml.jackson.databind.SerializerProvider but in com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:114): java.lang.NullPointerException",
+          "trace": "java.lang.AssertionError: Exception was not thrown in com.fasterxml.jackson.databind.SerializerProvider but in com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:114): java.lang.NullPointerException\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat com.fasterxml.jackson.databind.node.POJONode_ESTest.test08(POJONode_ESTest.java:830)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 33,
+      "line_total": 41,
+      "line_coverage_percent": 80.48780487804878,
+      "branch_covered": 27,
+      "branch_total": 34,
+      "branch_coverage_percent": 79.41176470588235
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-abe4c3f439c8/evaluation-1",
+  "finished_at": "2026-10-05T00:45:05.431175+00:00"
+}

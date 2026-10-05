@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-16-Round1-s101-125b6e297b5a",
+  "unit": {
+    "project": "Cli",
+    "bug": "16",
+    "target": "org.apache.commons.cli2.option.GroupImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-04T20:35:06.519829+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/16/Cli-16-Round1-s101-125b6e297b5a",
+    "tests": "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a",
+    "config": "MOSA_EvoSuite/Configuration/Cli/16/Cli-16-Round1-s101-125b6e297b5a"
+  },
+  "generation_time_sec": 38.894,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a/org/apache/commons/cli2/option/GroupImpl_ESTest.java": "385d3097d005ecf3428c4dc8d315e34f2b623e712fb45edbe8f9a3726f7e39a3",
+    "MOSA_EvoSuite/Test/Cli/16/Cli-16-Round1-s101-125b6e297b5a/org/apache/commons/cli2/option/GroupImpl_ESTest_scaffolding.java": "279c144f4f86ec702e676c30f02263e81ad78c9b153bcd8ff3638ad05237ee5b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption",
+      "org.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-04T20:36:06.541233+00:00"
+}

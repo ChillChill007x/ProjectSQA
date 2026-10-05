@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-169-Round1-s101-b6c942898fd4/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.TypeCheckTest::testIssue791"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 6.004,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

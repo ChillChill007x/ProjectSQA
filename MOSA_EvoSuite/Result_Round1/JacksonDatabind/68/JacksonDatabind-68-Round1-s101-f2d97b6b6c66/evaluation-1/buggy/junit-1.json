@@ -1,0 +1,1 @@
+{"run_count":1,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":23,"tests":["com.fasterxml.jackson.databind.deser.BeanDeserializerBase_ESTest::notGeneratedAnyTest"],"failures":[],"passed":true}

@@ -1,0 +1,8 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.deser.TestDateDeserialization::testDateUtilISO8601NoTimezoneNonDefault",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.deser.TestDateDeserialization::testDateUtilISO8601NoTimezoneNonDefault"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

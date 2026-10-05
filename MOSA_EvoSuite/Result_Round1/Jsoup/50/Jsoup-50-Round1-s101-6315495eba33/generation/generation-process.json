@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.jsoup.helper.DataUtil",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Jsoup-50-Round1-s101-6315495eba33/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-6315495eba33/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.834,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.jsoup.helper.DataUtil\n* Starting Client-0\n* Connecting to master process on port 19619\n* Analyzing classpath: \n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n[MASTER] 18:45:58.712 [logback-2] ERROR ClientNodeImpl - Error when connecting to master via RMI\njava.lang.SecurityException: Unprivileged thread \"main\" cannot add a privileged thread: failed to add \"Statistics sender in client process\"\nCurrent privileged threads are: \n\"pool-3-thread-1\"\n\tat org.evosuite.runtime.sandbox.MSecurityManager.addPrivilegedThread(MSecurityManager.java:386)\n\tat org.evosuite.runtime.sandbox.Sandbox.addPrivilegedThread(Sandbox.java:90)\n\tat org.evosuite.rmi.service.ClientNodeImpl.init(ClientNodeImpl.java:384)\n\tat org.evosuite.rmi.ClientServices.registerServices(ClientServices.java:69)\n\tat org.evosuite.ClientProcess.run(ClientProcess.java:83)\n\tat org.evosuite.ClientProcess.main(ClientProcess.java:190)\n[MASTER] 18:45:58.745 [logback-2] ERROR ClientProcess - Error when generating tests for: org.jsoup.helper.DataUtil with seed 101. Configuration id : null\njava.lang.RuntimeException: Could not connect to master process on port 19619\n\tat org.evosuite.ClientProcess.run(ClientProcess.java:88)\n\tat org.evosuite.ClientProcess.main(ClientProcess.java:190)\n[MASTER] 18:45:59.300 [main] ERROR SearchStatistics - No statistics has been saved because EvoSuite failed to generate any test case\n[MASTER] 18:45:59.401 [main] ERROR TestGeneration - failed to write statistics data\n"
+}

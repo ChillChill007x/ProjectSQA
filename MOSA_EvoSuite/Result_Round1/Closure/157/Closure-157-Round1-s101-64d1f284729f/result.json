@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-157-Round1-s101-64d1f284729f",
+  "unit": {
+    "project": "Closure",
+    "bug": "157",
+    "target": "com.google.javascript.jscomp.CodeGenerator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T22:05:08.895860+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/157/Closure-157-Round1-s101-64d1f284729f",
+    "tests": "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-64d1f284729f",
+    "config": "MOSA_EvoSuite/Configuration/Closure/157/Closure-157-Round1-s101-64d1f284729f"
+  },
+  "generation_time_sec": 53.847,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-64d1f284729f/com/google/javascript/jscomp/CodeGenerator_ESTest.java": "9c5baaee0a036ec485efe0f14a97ec5312c2c8539c7c4f59878e09d303620dbc",
+    "MOSA_EvoSuite/Test/Closure/157/Closure-157-Round1-s101-64d1f284729f/com/google/javascript/jscomp/CodeGenerator_ESTest_scaffolding.java": "6f31eb832c710cfbe3f292b0354a369eb9626f80e7baaa5d5d0e1cd5e51a0869"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CodePrinterTest::testObjectLit2",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CodePrinterTest::testObjectLit2",
+      "com.google.javascript.jscomp.CodePrinterTest::testObjectLit3",
+      "com.google.javascript.jscomp.CodePrinterTest::testGetter",
+      "com.google.javascript.jscomp.CodePrinterTest::testSetter",
+      "com.google.javascript.jscomp.FunctionNamesTest::testFunctionsNamesAndIds",
+      "com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys2",
+      "com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys3",
+      "com.google.javascript.jscomp.SimpleDefinitionFinderTest::testDefineNumber",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral6",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral7",
+      "com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral8",
+      "com.google.javascript.jscomp.parsing.ParserTest::testObjectLiteralDoc1"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T22:07:23.614471+00:00"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-65-Round1-s101-d8d87ea771a5",
+  "unit": {
+    "project": "Math",
+    "bug": "65",
+    "target": "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:01:12.478294+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/65/Math-65-Round1-s101-d8d87ea771a5",
+    "tests": "MOSA_EvoSuite/Test/Math/65/Math-65-Round1-s101-d8d87ea771a5",
+    "config": "MOSA_EvoSuite/Configuration/Math/65/Math-65-Round1-s101-d8d87ea771a5"
+  },
+  "generation_time_sec": 42.513,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/65/Math-65-Round1-s101-d8d87ea771a5/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer_ESTest.java": "331f67f3309d62cde33fb4c8f772cbc2b911c05146d426387464931839cadc78",
+    "MOSA_EvoSuite/Test/Math/65/Math-65-Round1-s101-d8d87ea771a5/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer_ESTest_scaffolding.java": "c3734b555e8dd60c57a70cdf0b5de0bfde33db2003ae825a964f414d4611cb16"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest::testCircleFitting",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest::testCircleFitting"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 13,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 13,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1188,
+      "tests": [
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test01",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test12",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test00",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test11",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test10",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test05",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test04",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test03",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test02",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test09",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test08",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test07",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 92,
+      "line_coverage_percent": 75.0,
+      "branch_covered": 18,
+      "branch_total": 28,
+      "branch_coverage_percent": 64.28571428571429
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 13,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1865,
+      "tests": [
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test01",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test12",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test00",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test11",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test10",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test05",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test04",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test03",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test02",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test09",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test08",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test07",
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer_ESTest::test06"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 71,
+      "line_total": 96,
+      "line_coverage_percent": 73.95833333333333,
+      "branch_covered": 19,
+      "branch_total": 30,
+      "branch_coverage_percent": 63.333333333333336
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/65/Math-65-Round1-s101-d8d87ea771a5/evaluation-1",
+  "finished_at": "2026-10-05T04:03:31.522948+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Chart-6-Round1-s101-6143912d2a4c",
+  "unit": {
+    "project": "Chart",
+    "bug": "6",
+    "target": "org.jfree.chart.util.ShapeList",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T17:41:02.840206+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Chart/6/Chart-6-Round1-s101-6143912d2a4c",
+    "tests": "MOSA_EvoSuite/Test/Chart/6/Chart-6-Round1-s101-6143912d2a4c",
+    "config": "MOSA_EvoSuite/Configuration/Chart/6/Chart-6-Round1-s101-6143912d2a4c"
+  },
+  "generation_time_sec": 66.066,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Chart/6/Chart-6-Round1-s101-6143912d2a4c/org/jfree/chart/util/ShapeList_ESTest.java": "f09318e5de2095d3ce23f1548f08c17084772b2a886db429209821a56e698e84",
+    "MOSA_EvoSuite/Test/Chart/6/Chart-6-Round1-s101-6143912d2a4c/org/jfree/chart/util/ShapeList_ESTest_scaffolding.java": "bda10bb45068633659efa988c8645927e748ba817a3740f9fa2f85b3e32d67f4"
+  },
+  "reference_validation": {
+    "trigger": "org.jfree.chart.util.junit.ShapeListTests::testSerialization",
+    "available_triggers": [
+      "org.jfree.chart.util.junit.ShapeListTests::testSerialization",
+      "org.jfree.chart.util.junit.ShapeListTests::testEquals"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1037,
+      "tests": [
+        "org.jfree.chart.util.ShapeList_ESTest::test1",
+        "org.jfree.chart.util.ShapeList_ESTest::test0",
+        "org.jfree.chart.util.ShapeList_ESTest::test6",
+        "org.jfree.chart.util.ShapeList_ESTest::test5",
+        "org.jfree.chart.util.ShapeList_ESTest::test4",
+        "org.jfree.chart.util.ShapeList_ESTest::test3",
+        "org.jfree.chart.util.ShapeList_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 17,
+      "line_total": 34,
+      "line_coverage_percent": 50.0,
+      "branch_covered": 8,
+      "branch_total": 16,
+      "branch_coverage_percent": 50.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 963,
+      "tests": [
+        "org.jfree.chart.util.ShapeList_ESTest::test1",
+        "org.jfree.chart.util.ShapeList_ESTest::test0",
+        "org.jfree.chart.util.ShapeList_ESTest::test6",
+        "org.jfree.chart.util.ShapeList_ESTest::test5",
+        "org.jfree.chart.util.ShapeList_ESTest::test4",
+        "org.jfree.chart.util.ShapeList_ESTest::test3",
+        "org.jfree.chart.util.ShapeList_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 29,
+      "line_coverage_percent": 41.37931034482759,
+      "branch_covered": 4,
+      "branch_total": 12,
+      "branch_coverage_percent": 33.333333333333336
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Chart/6/Chart-6-Round1-s101-6143912d2a4c/evaluation-1",
+  "finished_at": "2026-10-04T17:52:24.147813+00:00"
+}

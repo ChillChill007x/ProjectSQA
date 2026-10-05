@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.jsoup.helper.DataUtil",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-52-Round1-s101-e6f0148fd6af/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Jsoup/52/Jsoup-52-Round1-s101-e6f0148fd6af",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Jsoup/52/Jsoup-52-Round1-s101-e6f0148fd6af/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 44.388,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.jsoup.helper.DataUtil\n* Starting Client-0\n* Connecting to master process on port 19617\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83568/checkouts/Jsoup-52-Round1-s101-e6f0148fd6af/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.jsoup.helper.DataUtil\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 89\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:>                                  0%]\r[Progress:======>                       20%] [Cov:=======>                           20%]\r[Progress:======>                       20%] [Cov:=======>                           21%]\r[Progress:======>                       23%] [Cov:=======>                           22%]\r[Progress:======>                       23%] [Cov:========>                          24%]\r[Progress:======>                       23%] [Cov:========>                          24%]\r[Progress:======>                       23%] [Cov:========>                          24%]\r[Progress:============>                 43%] [Cov:========>                          24%]\r[Progress:============>                 43%] [Cov:========>                          24%]\r[Progress:============>                 43%] [Cov:========>                          24%]\r[Progress:==================>           60%] [Cov:========>                          24%]\r[Progress:==================>           60%] [Cov:========>                          24%]\r[Progress:==================>           63%] [Cov:========>                          24%]\r[Progress:========================>     80%] [Cov:========>                          24%]\r[Progress:========================>     80%] [Cov:========>                          24%]\r[Progress:========================>     80%] [Cov:=========>                         26%]\r[Progress:========================>     80%] [Cov:=========>                         26%]\r[Progress:========================>     80%] [Cov:=========>                         26%]\r[Progress:========================>     80%] [Cov:=========>                         26%]\r[Progress:========================>     83%] [Cov:=========>                         28%]\r[Progress:========================>     83%] [Cov:=========>                         28%]\r[Progress:========================>     83%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\r[Progress:==============================100%] [Cov:=========>                         28%]\n* Search finished after 36s and 26 generations, 7848 statements, best individual has fitness: 64.0\n[MASTER] 18:47:32.177 [logback-1] WARN  TimeController - Phase SEARCH lasted too long, 6 seconds more than allowed.\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 28%\n* Total number of goals: 89\n* Number of covered goals: 25\n* Generated 14 tests with total length 35\n* Resulting test suite's coverage: 28%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'DataUtil_ESTest' to /workspace/MOSA_EvoSuite/Test/Jsoup/52/Jsoup-52-Round1-s101-e6f0148fd6af\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

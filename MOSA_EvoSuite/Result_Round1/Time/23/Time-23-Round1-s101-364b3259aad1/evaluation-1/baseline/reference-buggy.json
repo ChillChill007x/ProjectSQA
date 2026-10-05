@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Time-23-Round1-s101-364b3259aad1/evaluation-1/buggy",
+    "-t",
+    "org.joda.time.TestDateTimeZone::testForID_String_old"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.222,
+  "stdout": "Failing tests: 1\n  - org.joda.time.TestDateTimeZone::testForID_String_old\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

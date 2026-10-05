@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-24-Round1-s101-4bd306a6f723/evaluation-1/buggy",
+    "-t",
+    "org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.017,
+  "stdout": "Failing tests: 1\n  - org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

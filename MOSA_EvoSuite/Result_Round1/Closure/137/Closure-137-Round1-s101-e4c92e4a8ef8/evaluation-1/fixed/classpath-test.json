@@ -1,0 +1,14 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/build/classes",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/ant_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/args4j_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/google_common_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/hamcrest-core-1.1.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/junit.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/libtrunk_rhino_parser_jarjared.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/lib/protobuf_deploy.jar",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Closure-137-Round1-s101-e4c92e4a8ef8/evaluation-1/fixed/build/test"
+  ],
+  "missing_entries": []
+}

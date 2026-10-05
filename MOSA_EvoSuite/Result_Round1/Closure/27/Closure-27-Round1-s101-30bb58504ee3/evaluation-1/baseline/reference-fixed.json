@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-27-Round1-s101-30bb58504ee3/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.rhino.IRTest::testIssue727_1"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.923,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-16-Round1-s101-2a0a5c9086e3/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetCategoryIndex\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testSetCategoryKeys\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetSeriesIndex\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowCount\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetRowIndex\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnCount\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testGetColumnIndex\norg.jfree.data.category.junit.DefaultIntervalCategoryDatasetTests::testCloning2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Compress-28-Round1-s101-70b0feeb9b4c/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldThrowAnExceptionOnTruncatedEntries"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.221,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldThrowAnExceptionOnTruncatedEntries\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

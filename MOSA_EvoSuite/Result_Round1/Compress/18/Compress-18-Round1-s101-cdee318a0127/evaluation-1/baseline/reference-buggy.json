@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Compress-18-Round1-s101-cdee318a0127/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.173,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

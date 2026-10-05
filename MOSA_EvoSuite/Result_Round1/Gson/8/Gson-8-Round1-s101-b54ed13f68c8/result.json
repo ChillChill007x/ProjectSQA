@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-8-Round1-s101-b54ed13f68c8",
+  "unit": {
+    "project": "Gson",
+    "bug": "8",
+    "target": "com.google.gson.internal.UnsafeAllocator",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:08:49.916076+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Gson/8/Gson-8-Round1-s101-b54ed13f68c8",
+    "tests": "MOSA_EvoSuite/Test/Gson/8/Gson-8-Round1-s101-b54ed13f68c8",
+    "config": "MOSA_EvoSuite/Configuration/Gson/8/Gson-8-Round1-s101-b54ed13f68c8"
+  },
+  "generation_time_sec": 33.468,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Gson/8/Gson-8-Round1-s101-b54ed13f68c8/com/google/gson/internal/UnsafeAllocator_ESTest.java": "115d7bae6607cb342314e86c9efe24dd5e86dc3dff16987eee9752297bf4d99a",
+    "MOSA_EvoSuite/Test/Gson/8/Gson-8-Round1-s101-b54ed13f68c8/com/google/gson/internal/UnsafeAllocator_ESTest_scaffolding.java": "4c5efacea691494081cb7302049bb1734bdb9142d93f37e0789b3996e4e0dced"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation",
+    "available_triggers": [
+      "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation",
+      "com.google.gson.internal.UnsafeAllocatorInstantiationTest::testAbstractClassInstantiation"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 279,
+      "tests": [
+        "com.google.gson.internal.UnsafeAllocator_ESTest::test1",
+        "com.google.gson.internal.UnsafeAllocator_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 29,
+      "line_coverage_percent": 41.37931034482759,
+      "branch_covered": 3,
+      "branch_total": 4,
+      "branch_coverage_percent": 75.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 280,
+      "tests": [
+        "com.google.gson.internal.UnsafeAllocator_ESTest::test1",
+        "com.google.gson.internal.UnsafeAllocator_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "com.google.gson.internal.UnsafeAllocator_ESTest::test1",
+          "exception": "java.lang.reflect.InvocationTargetException",
+          "message": null,
+          "trace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat com.google.gson.internal.UnsafeAllocator$1.newInstance(UnsafeAllocator.java:48)\n\tat com.google.gson.internal.UnsafeAllocator_ESTest.test1(UnsafeAllocator_ESTest.java:47)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: java.lang.InstantiationException\n\tat java.base/jdk.internal.misc.Unsafe.allocateInstance(Native Method)\n\tat jdk.unsupported/sun.misc.Unsafe.allocateInstance(Unsafe.java:840)\n\t... 18 more\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 7,
+      "line_total": 23,
+      "line_coverage_percent": 30.434782608695652,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Gson/8/Gson-8-Round1-s101-b54ed13f68c8/evaluation-1",
+  "finished_at": "2026-10-04T23:09:45.584716+00:00"
+}

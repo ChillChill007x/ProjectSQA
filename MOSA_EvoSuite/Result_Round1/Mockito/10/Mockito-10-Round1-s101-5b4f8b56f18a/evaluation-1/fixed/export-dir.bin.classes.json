@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/checkouts/Mockito-10-Round1-s101-5b4f8b56f18a/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "build/classes/java/main",
+  "stderr": "Running ant (export.dir.bin.classes)....................................... OK\n\n"
+}

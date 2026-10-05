@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testCascadedRemovalOfUnlessUnconditonalJumps",
+  "available_triggers": [
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testCascadedRemovalOfUnlessUnconditonalJumps",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue311"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

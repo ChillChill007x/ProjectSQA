@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Time-5-Round1-s101-684e32a99797/evaluation-1/buggy/target/classes",
+    "/opt/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar",
+    "/opt/defects4j/framework/projects/Time/lib/junit/junit/3.8.2/junit-3.8.2.jar",
+    "/workspace/work/checkouts/Time-5-Round1-s101-684e32a99797/evaluation-1/buggy/target/test-classes"
+  ],
+  "missing_entries": []
+}

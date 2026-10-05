@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-24-Round1-s101-ff39da17045d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToLongFailing\ncom.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToIntFailing\ncom.fasterxml.jackson.core.read.NumberCoercionTest::testToLongFailing\ncom.fasterxml.jackson.core.read.NumberCoercionTest::testToIntFailing\ncom.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousLongOverflow\ncom.fasterxml.jackson.core.read.NumberOverflowTest::testSimpleLongOverflow\ncom.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousIntOverflow\ncom.fasterxml.jackson.core.read.NumberParsingTest::testSimpleLong",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

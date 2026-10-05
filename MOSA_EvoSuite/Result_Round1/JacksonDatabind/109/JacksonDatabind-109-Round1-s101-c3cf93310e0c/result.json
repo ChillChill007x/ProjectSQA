@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-109-Round1-s101-c3cf93310e0c",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "109",
+    "target": "com.fasterxml.jackson.databind.ser.std.NumberSerializers",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:57:35.441735+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c"
+  },
+  "generation_time_sec": 59.222,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c/com/fasterxml/jackson/databind/ser/std/NumberSerializers_ESTest.java": "8bbeb9080b2fd31b0735c83b4909f398a410db7284e687ba852443db9c91aac9",
+    "MOSA_EvoSuite/Test/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c/com/fasterxml/jackson/databind/ser/std/NumberSerializers_ESTest_scaffolding.java": "06aad53f8ee8c5fccfe0b831ea3bf8fba184c74af60c7a450b921793fd8bfa28"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.ser.jdk.BigDecimalPlain2230Test::testBigIntegerAsPlainTest",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.ser.jdk.BigDecimalPlain2230Test::testBigIntegerAsPlainTest"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 12,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2271,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test06",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test09",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 14,
+      "line_total": 14,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 12,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1946,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test01",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test00",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test03",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test02",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test05",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test04",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test07",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test06",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test09",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers_ESTest::test08"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 14,
+      "line_total": 14,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-c3cf93310e0c/evaluation-1",
+  "finished_at": "2026-10-05T01:00:05.592801+00:00"
+}

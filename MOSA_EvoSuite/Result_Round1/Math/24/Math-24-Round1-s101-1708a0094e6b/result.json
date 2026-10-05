@@ -1,0 +1,114 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-24-Round1-s101-1708a0094e6b",
+  "unit": {
+    "project": "Math",
+    "bug": "24",
+    "target": "org.apache.commons.math3.optimization.univariate.BrentOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:26:21.062810+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/24/Math-24-Round1-s101-1708a0094e6b",
+    "tests": "MOSA_EvoSuite/Test/Math/24/Math-24-Round1-s101-1708a0094e6b",
+    "config": "MOSA_EvoSuite/Configuration/Math/24/Math-24-Round1-s101-1708a0094e6b"
+  },
+  "generation_time_sec": 42.466,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/24/Math-24-Round1-s101-1708a0094e6b/org/apache/commons/math3/optimization/univariate/BrentOptimizer_ESTest.java": "b5042602091a68867d3cc71470377524ed2f23fad5fce52cf08d1fff0d85d065",
+    "MOSA_EvoSuite/Test/Math/24/Math-24-Round1-s101-1708a0094e6b/org/apache/commons/math3/optimization/univariate/BrentOptimizer_ESTest_scaffolding.java": "6cf0b1fa9394f9aa56ea810acded303ce355958554231e2769daab07c5dd66cc"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.optimization.univariate.BrentOptimizerTest::testMath855",
+    "available_triggers": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizerTest::testMath855"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 10,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 805,
+      "tests": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test5",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test4",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test3",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test2",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test9",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test8",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test7",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test6",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 117,
+      "line_total": 120,
+      "line_coverage_percent": 97.5,
+      "branch_covered": 70,
+      "branch_total": 74,
+      "branch_coverage_percent": 94.5945945945946
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1185,
+      "tests": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test5",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test4",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test3",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test2",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test9",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test8",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test7",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test6",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest::test2",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<8.845603192065523> but was:<3.6012486125418937>",
+          "trace": "java.lang.AssertionError: expected:<8.845603192065523> but was:<3.6012486125418937>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:555)\n\tat org.junit.Assert.assertEquals(Assert.java:685)\n\tat org.apache.commons.math3.optimization.univariate.BrentOptimizer_ESTest.test2(BrentOptimizer_ESTest.java:92)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 111,
+      "line_total": 120,
+      "line_coverage_percent": 92.5,
+      "branch_covered": 61,
+      "branch_total": 74,
+      "branch_coverage_percent": 82.43243243243244
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/24/Math-24-Round1-s101-1708a0094e6b/evaluation-1",
+  "finished_at": "2026-10-05T03:28:39.543442+00:00"
+}

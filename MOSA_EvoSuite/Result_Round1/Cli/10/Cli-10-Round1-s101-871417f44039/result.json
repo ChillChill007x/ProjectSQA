@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-10-Round1-s101-871417f44039",
+  "unit": {
+    "project": "Cli",
+    "bug": "10",
+    "target": "org.apache.commons.cli.Parser",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:25:47.281001+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/10/Cli-10-Round1-s101-871417f44039",
+    "tests": "MOSA_EvoSuite/Test/Cli/10/Cli-10-Round1-s101-871417f44039",
+    "config": "MOSA_EvoSuite/Configuration/Cli/10/Cli-10-Round1-s101-871417f44039"
+  },
+  "generation_time_sec": 37.652,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/10/Cli-10-Round1-s101-871417f44039/org/apache/commons/cli/Parser_ESTest.java": "bda1899e20be4c029ac12f0feb94ce9d1089502d7c557f64f5847358bfa8bd95",
+    "MOSA_EvoSuite/Test/Cli/10/Cli-10-Round1-s101-871417f44039/org/apache/commons/cli/Parser_ESTest_scaffolding.java": "e953a16bc7a5cc4f5a69c03d42973c8ce56990e22816d7e16e762fb33f70faa4"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.ParseRequiredTest::testReuseOptionsTwice",
+    "available_triggers": [
+      "org.apache.commons.cli.ParseRequiredTest::testReuseOptionsTwice"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 16,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 16,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 372,
+      "tests": [
+        "org.apache.commons.cli.Parser_ESTest::test09",
+        "org.apache.commons.cli.Parser_ESTest::test08",
+        "org.apache.commons.cli.Parser_ESTest::test07",
+        "org.apache.commons.cli.Parser_ESTest::test06",
+        "org.apache.commons.cli.Parser_ESTest::test05",
+        "org.apache.commons.cli.Parser_ESTest::test04",
+        "org.apache.commons.cli.Parser_ESTest::test15",
+        "org.apache.commons.cli.Parser_ESTest::test03",
+        "org.apache.commons.cli.Parser_ESTest::test14",
+        "org.apache.commons.cli.Parser_ESTest::test02",
+        "org.apache.commons.cli.Parser_ESTest::test13",
+        "org.apache.commons.cli.Parser_ESTest::test01",
+        "org.apache.commons.cli.Parser_ESTest::test12",
+        "org.apache.commons.cli.Parser_ESTest::test00",
+        "org.apache.commons.cli.Parser_ESTest::test11",
+        "org.apache.commons.cli.Parser_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 81,
+      "line_total": 106,
+      "line_coverage_percent": 76.41509433962264,
+      "branch_covered": 50,
+      "branch_total": 70,
+      "branch_coverage_percent": 71.42857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 16,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 351,
+      "tests": [
+        "org.apache.commons.cli.Parser_ESTest::test09",
+        "org.apache.commons.cli.Parser_ESTest::test08",
+        "org.apache.commons.cli.Parser_ESTest::test07",
+        "org.apache.commons.cli.Parser_ESTest::test06",
+        "org.apache.commons.cli.Parser_ESTest::test05",
+        "org.apache.commons.cli.Parser_ESTest::test04",
+        "org.apache.commons.cli.Parser_ESTest::test15",
+        "org.apache.commons.cli.Parser_ESTest::test03",
+        "org.apache.commons.cli.Parser_ESTest::test14",
+        "org.apache.commons.cli.Parser_ESTest::test02",
+        "org.apache.commons.cli.Parser_ESTest::test13",
+        "org.apache.commons.cli.Parser_ESTest::test01",
+        "org.apache.commons.cli.Parser_ESTest::test12",
+        "org.apache.commons.cli.Parser_ESTest::test00",
+        "org.apache.commons.cli.Parser_ESTest::test11",
+        "org.apache.commons.cli.Parser_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 81,
+      "line_total": 106,
+      "line_coverage_percent": 76.41509433962264,
+      "branch_covered": 50,
+      "branch_total": 70,
+      "branch_coverage_percent": 71.42857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/10/Cli-10-Round1-s101-871417f44039/evaluation-1",
+  "finished_at": "2026-10-04T20:26:46.284015+00:00"
+}

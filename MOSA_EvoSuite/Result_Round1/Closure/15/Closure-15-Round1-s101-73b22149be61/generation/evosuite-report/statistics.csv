@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+com.google.javascript.jscomp.FlowSensitiveInlineVariables,BRANCH,0.03355704697986577,149,5

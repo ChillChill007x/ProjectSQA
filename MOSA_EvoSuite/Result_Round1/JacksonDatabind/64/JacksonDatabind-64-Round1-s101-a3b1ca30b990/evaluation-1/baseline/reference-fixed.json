@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/JacksonDatabind-64-Round1-s101-a3b1ca30b990/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.databind.filter.JsonIncludeTest::testIssue1351"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.886,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

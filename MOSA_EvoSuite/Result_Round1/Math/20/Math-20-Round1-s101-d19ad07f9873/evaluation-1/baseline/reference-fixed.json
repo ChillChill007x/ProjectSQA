@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Math-20-Round1-s101-d19ad07f9873/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.1,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

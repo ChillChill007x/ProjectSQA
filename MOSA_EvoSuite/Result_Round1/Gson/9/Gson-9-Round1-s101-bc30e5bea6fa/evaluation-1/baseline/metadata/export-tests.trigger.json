@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-9-Round1-s101-bc30e5bea6fa/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "com.google.gson.stream.JsonWriterTest::testBoxedBooleans",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

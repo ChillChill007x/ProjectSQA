@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Collections",
+    "-v",
+    "18f",
+    "-w",
+    "/workspace/work/checkouts/Collections-18-Round1-s101-812c36fffded/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.575,
+  "stdout": "",
+  "stderr": "Checking out b10fa43d to /workspace/work/checkouts/Collections-18-Round1-s1 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff b10fa43d:38bb9b4a..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Collections-18f................................. OK\n"
+}

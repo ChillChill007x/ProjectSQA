@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-8-Round1-s101-36a0cccc412c",
+  "unit": {
+    "project": "Collections",
+    "bug": "8",
+    "target": "org.apache.commons.collections.buffer.UnboundedFifoBuffer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:35:06.144347+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/8/Collections-8-Round1-s101-36a0cccc412c",
+    "tests": "MOSA_EvoSuite/Test/Collections/8/Collections-8-Round1-s101-36a0cccc412c",
+    "config": "MOSA_EvoSuite/Configuration/Collections/8/Collections-8-Round1-s101-36a0cccc412c"
+  },
+  "generation_time_sec": 35.037,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/8/Collections-8-Round1-s101-36a0cccc412c/org/apache/commons/collections/buffer/UnboundedFifoBuffer_ESTest.java": "54775aa80aca66bc94e9e9d568d62a1f416624f419f6e0c341121a3b820b6d33",
+    "MOSA_EvoSuite/Test/Collections/8/Collections-8-Round1-s101-36a0cccc412c/org/apache/commons/collections/buffer/UnboundedFifoBuffer_ESTest_scaffolding.java": "e93ed982bf56f3cd6d73fc4073af2ccf977b8cd58b805bfbde2699a26037f2fc"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections.buffer.TestUnboundedFifoBuffer::testCollections220",
+    "available_triggers": [
+      "org.apache.commons.collections.buffer.TestUnboundedFifoBuffer::testCollections220"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 9,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 242,
+      "tests": [
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test5",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test4",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test3",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test2",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test8",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test7",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test6",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test1",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 65,
+      "line_coverage_percent": 76.92307692307692,
+      "branch_covered": 22,
+      "branch_total": 26,
+      "branch_coverage_percent": 84.61538461538461
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 226,
+      "tests": [
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test5",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test4",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test3",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test2",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test8",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test7",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test6",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test1",
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 63,
+      "line_coverage_percent": 79.36507936507937,
+      "branch_covered": 22,
+      "branch_total": 26,
+      "branch_coverage_percent": 84.61538461538461
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Collections/8/Collections-8-Round1-s101-36a0cccc412c/evaluation-1",
+  "finished_at": "2026-10-04T21:36:13.829536+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-50-Round1-s101-1d262f4837db/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.445,
+  "stdout": "com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd\ncom.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

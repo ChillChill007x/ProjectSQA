@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/JacksonDatabind-90-Round1-s101-7789021c45db/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.485,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

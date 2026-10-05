@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Lang-46-Round1-s101-d5cc96c91264/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang.StringEscapeUtilsTest::testEscapeJavaWithSlash"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.272,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang.StringEscapeUtilsTest::testEscapeJavaWithSlash\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

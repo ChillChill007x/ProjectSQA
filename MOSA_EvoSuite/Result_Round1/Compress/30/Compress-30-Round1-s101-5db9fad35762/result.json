@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-30-Round1-s101-5db9fad35762",
+  "unit": {
+    "project": "Compress",
+    "bug": "30",
+    "target": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:57:45.776693+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/30/Compress-30-Round1-s101-5db9fad35762",
+    "tests": "MOSA_EvoSuite/Test/Compress/30/Compress-30-Round1-s101-5db9fad35762",
+    "config": "MOSA_EvoSuite/Configuration/Compress/30/Compress-30-Round1-s101-5db9fad35762"
+  },
+  "generation_time_sec": 43.926,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/30/Compress-30-Round1-s101-5db9fad35762/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream_ESTest.java": "8f8c8f3fe939e632e056149d37d2e80f376cc488a7a4e120430cc3cd2ef46ea7",
+    "MOSA_EvoSuite/Test/Compress/30/Compress-30-Round1-s101-5db9fad35762/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream_ESTest_scaffolding.java": "8a6af523719dfffcc29a5acd8fb25109d56586e8d1e381a9dc3a15734a889e60"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamTest::readOfLength0ShouldReturn0",
+    "available_triggers": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStreamTest::readOfLength0ShouldReturn0"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 5,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 398,
+      "tests": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test4",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test3",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test2",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test1",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 471,
+      "line_coverage_percent": 4.033970276008493,
+      "branch_covered": 10,
+      "branch_total": 263,
+      "branch_coverage_percent": 3.802281368821293
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 569,
+      "tests": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test4",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test3",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test2",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test1",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 19,
+      "line_total": 469,
+      "line_coverage_percent": 4.051172707889126,
+      "branch_covered": 10,
+      "branch_total": 261,
+      "branch_coverage_percent": 3.8314176245210727
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/30/Compress-30-Round1-s101-5db9fad35762/evaluation-1",
+  "finished_at": "2026-10-04T22:59:10.030117+00:00"
+}

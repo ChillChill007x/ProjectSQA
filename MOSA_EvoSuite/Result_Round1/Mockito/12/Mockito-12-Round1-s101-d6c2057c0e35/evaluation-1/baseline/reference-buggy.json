@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-12-Round1-s101-d6c2057c0e35/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.442,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

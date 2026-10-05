@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/build/classes",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/args4j.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/guava.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/json.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/jsr305.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/protobuf-java.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/build/lib/rhino.jar",
+    "/workspace/work/parallel/evosuite/744/checkouts/Closure-30-Round1-s101-e341dfa3f55c/generation-fixed/lib/ant.jar"
+  ],
+  "missing_entries": []
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-136-Round1-s101-bb2dd2a48e5d",
+  "unit": {
+    "project": "Closure",
+    "bug": "136",
+    "target": "com.google.javascript.jscomp.RenameVars",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:37:36.271896+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d",
+    "tests": "MOSA_EvoSuite/Test/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d",
+    "config": "MOSA_EvoSuite/Configuration/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d"
+  },
+  "generation_time_sec": 54.717,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d/com/google/javascript/jscomp/RenameVars_ESTest.java": "8799446dc6604d7542c4e927a84eebdc46470121f706f53bc1ae9c0047e55eff",
+    "MOSA_EvoSuite/Test/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d/com/google/javascript/jscomp/RenameVars_ESTest_scaffolding.java": "2ac18ff156409004b9f9c5a5c1bc742bc0904d82f8b5f8ff64e908fa1c258ad3"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_1",
+    "available_triggers": [
+      "com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_1",
+      "com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_3",
+      "com.google.javascript.jscomp.MethodCheckTest::testSeparateMethods",
+      "com.google.javascript.jscomp.RenameVarsTest::testDollarSignSuperExport2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 10,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2388,
+      "tests": [
+        "com.google.javascript.jscomp.RenameVars_ESTest::test1",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test0",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test5",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test4",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test3",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test2",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test9",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test8",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test7",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 81,
+      "line_total": 117,
+      "line_coverage_percent": 69.23076923076923,
+      "branch_covered": 29,
+      "branch_total": 58,
+      "branch_coverage_percent": 50.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 10,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 3185,
+      "tests": [
+        "com.google.javascript.jscomp.RenameVars_ESTest::test1",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test0",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test5",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test4",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test3",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test2",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test9",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test8",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test7",
+        "com.google.javascript.jscomp.RenameVars_ESTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 81,
+      "line_total": 117,
+      "line_coverage_percent": 69.23076923076923,
+      "branch_covered": 29,
+      "branch_total": 58,
+      "branch_coverage_percent": 50.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Closure/136/Closure-136-Round1-s101-bb2dd2a48e5d/evaluation-1",
+  "finished_at": "2026-10-04T21:39:43.491798+00:00"
+}

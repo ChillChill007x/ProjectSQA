@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Mockito",
+    "-v",
+    "33f",
+    "-w",
+    "/workspace/work/checkouts/Mockito-33-Round1-s101-268be9e9ca4e/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.943,
+  "stdout": "",
+  "stderr": "Checking out 5cb37751 to /workspace/work/checkouts/Mockito-33-Round1-s101-2 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: -e expression #1, char 84: unterminated `s' command\nsed: can't read /workspace/work/checkouts/Mockito-33-Round1-s101-268be9e9ca4e/generation-fixed/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Mockito-33-Round1-s101-268be9e9ca4e/generation-fixed/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Mockito-33-Round1-s101-268be9e9ca4e/generation-fixed/buildSrc/build.gradle: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Mockito-33-Round1-s101-268 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 5cb37751:57bafd2c..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Mockito-33f..................................... OK\n"
+}

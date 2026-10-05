@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-5-Round1-s101-ab7cd845c572",
+  "unit": {
+    "project": "Compress",
+    "bug": "5",
+    "target": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:45:17.454163+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Compress/5/Compress-5-Round1-s101-ab7cd845c572",
+    "tests": "MOSA_EvoSuite/Test/Compress/5/Compress-5-Round1-s101-ab7cd845c572",
+    "config": "MOSA_EvoSuite/Configuration/Compress/5/Compress-5-Round1-s101-ab7cd845c572"
+  },
+  "generation_time_sec": 38.262,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Compress/5/Compress-5-Round1-s101-ab7cd845c572/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream_ESTest.java": "3389ebf8c862904e1f03c18b0048ae1230f94d81e4ef2caadfb2021cbd5e9f04",
+    "MOSA_EvoSuite/Test/Compress/5/Compress-5-Round1-s101-ab7cd845c572/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream_ESTest_scaffolding.java": "07448398d5918499ddbcb8b4c79b90e5d55d28c6646903077288a83ebd423c1d"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.archivers.zip.Maven221MultiVolumeTest::testRead7ZipMultiVolumeArchiveForStream",
+    "available_triggers": [
+      "org.apache.commons.compress.archivers.zip.Maven221MultiVolumeTest::testRead7ZipMultiVolumeArchiveForStream"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 9,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 592,
+      "tests": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test8",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test6",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test7",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test4",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test5",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test2",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test3",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test0",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 54,
+      "line_total": 164,
+      "line_coverage_percent": 32.926829268292686,
+      "branch_covered": 27,
+      "branch_total": 96,
+      "branch_coverage_percent": 28.125
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 364,
+      "tests": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test8",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test6",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test7",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test4",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test5",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test2",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test3",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test0",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 54,
+      "line_total": 161,
+      "line_coverage_percent": 33.54037267080745,
+      "branch_covered": 27,
+      "branch_total": 94,
+      "branch_coverage_percent": 28.72340425531915
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Compress/5/Compress-5-Round1-s101-ab7cd845c572/evaluation-1",
+  "finished_at": "2026-10-04T22:46:36.449710+00:00"
+}

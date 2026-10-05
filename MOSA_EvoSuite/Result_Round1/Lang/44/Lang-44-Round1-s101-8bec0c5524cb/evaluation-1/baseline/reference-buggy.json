@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-44-Round1-s101-8bec0c5524cb/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.lang.NumberUtilsTest::testLang457"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.582,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.lang.NumberUtilsTest::testLang457\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Mockito-12-Round1-s101-d6c2057c0e35/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics\norg.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseAnnotatedCaptor\norg.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseCaptorInOrdinaryWay\norg.mockitousage.annotation.CaptorAnnotationBasicTest::shouldCaptureGenericList\norg.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseGenericlessAnnotatedCaptor\norg.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenWrongTypeForCaptor\norg.mockitousage.annotation.CaptorAnnotationTest::testNormalUsage\norg.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenMoreThanOneMockitoAnnotaton\norg.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenInitializingCaptorsForNullClass\norg.mockitousage.annotation.CaptorAnnotationTest::shouldLookForAnnotatedCaptorsInSuperClasses",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

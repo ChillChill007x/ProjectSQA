@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-11-Round1-s101-2bba702b9ec4",
+  "unit": {
+    "project": "Time",
+    "bug": "11",
+    "target": "org.joda.time.tz.ZoneInfoCompiler",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T03:41:59.115200+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/11/Time-11-Round1-s101-2bba702b9ec4",
+    "tests": "MOSA_EvoSuite/Test/Time/11/Time-11-Round1-s101-2bba702b9ec4",
+    "config": "MOSA_EvoSuite/Configuration/Time/11/Time-11-Round1-s101-2bba702b9ec4"
+  },
+  "generation_time_sec": 43.048,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/11/Time-11-Round1-s101-2bba702b9ec4/org/joda/time/tz/ZoneInfoCompiler_ESTest.java": "38005c50bf292073ea96ef4781582b1aa4934c5b0a372830855a723d752807c0",
+    "MOSA_EvoSuite/Test/Time/11/Time-11-Round1-s101-2bba702b9ec4/org/joda/time/tz/ZoneInfoCompiler_ESTest_scaffolding.java": "80eb3f65eef3ad8838b33f93edcd3f6835a00dfdbd1b0838d0a8555fca97daa5"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.tz.TestCompiler::testDateTimeZoneBuilder",
+    "available_triggers": [
+      "org.joda.time.tz.TestCompiler::testDateTimeZoneBuilder"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 33,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 813,
+      "tests": [
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test30",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test10",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test32",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test31",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test12",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test11",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test14",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test13",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test16",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test15",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test18",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test17",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test19",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test21",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test20",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test01",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test23",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test00",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test22",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test03",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test25",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test02",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test24",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test05",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test27",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test04",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test26",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test07",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test29",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test06",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test28",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test09",
+        "org.joda.time.tz.ZoneInfoCompiler_ESTest::test08"
+      ],
+      "failures": [
+        {
+          "test": "org.joda.time.tz.ZoneInfoCompiler_ESTest::test22",
+          "exception": "org.evosuite.runtime.mock.java.io.MockIOException",
+          "message": "Destination is not a directory: JG",
+          "trace": "org.evosuite.runtime.mock.java.io.MockIOException: Destination is not a directory: JG\n\tat org.joda.time.tz.ZoneInfoCompiler.compile(ZoneInfoCompiler.java:383)\n\tat org.joda.time.tz.ZoneInfoCompiler_ESTest.test22(ZoneInfoCompiler_ESTest.java:345)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.joda.time.tz.ZoneInfoCompiler_ESTest::test05",
+          "exception": "org.evosuite.runtime.mock.java.io.MockIOException",
+          "message": "Destination is not a directory: C59XuA\"\"``nElfG3k",
+          "trace": "org.evosuite.runtime.mock.java.io.MockIOException: Destination is not a directory: C59XuA\"\"``nElfG3k\n\tat org.joda.time.tz.ZoneInfoCompiler.compile(ZoneInfoCompiler.java:383)\n\tat org.joda.time.tz.ZoneInfoCompiler_ESTest.test05(ZoneInfoCompiler_ESTest.java:147)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 130,
+      "line_total": 241,
+      "line_coverage_percent": 53.941908713692946,
+      "branch_covered": 68,
+      "branch_total": 145,
+      "branch_coverage_percent": 46.89655172413793
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T03:43:30.553818+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-9-Round1-s101-eb56f2a92c31/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.apache.commons.cli.OptionsTest::testMissingOptionsException\norg.apache.commons.cli.ParseRequiredTest::testMissingRequiredOptions",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

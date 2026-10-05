@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-14-Round1-s101-7ff7ad318c57",
+  "unit": {
+    "project": "Collections",
+    "bug": "14",
+    "target": "org.apache.commons.collections.map.CaseInsensitiveMap",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:42:47.276271+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/14/Collections-14-Round1-s101-7ff7ad318c57",
+    "tests": "MOSA_EvoSuite/Test/Collections/14/Collections-14-Round1-s101-7ff7ad318c57",
+    "config": "MOSA_EvoSuite/Configuration/Collections/14/Collections-14-Round1-s101-7ff7ad318c57"
+  },
+  "generation_time_sec": 38.246,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/14/Collections-14-Round1-s101-7ff7ad318c57/org/apache/commons/collections/map/CaseInsensitiveMap_ESTest.java": "b6d5157e6a6a5edbd889bcdd0cfdd2cd7d8371d36f5b0c5bce09d21650d412be",
+    "MOSA_EvoSuite/Test/Collections/14/Collections-14-Round1-s101-7ff7ad318c57/org/apache/commons/collections/map/CaseInsensitiveMap_ESTest_scaffolding.java": "852f8ecbaa26244f839f8b1aed6187772bad691964ee03cac6c7c569762c537c"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections.map.TestCaseInsensitiveMap::testLocaleIndependence",
+    "available_triggers": [
+      "org.apache.commons.collections.map.TestCaseInsensitiveMap::testLocaleIndependence"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 341,
+      "tests": [
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test5",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test4",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test3",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test2",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test1",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 15,
+      "line_total": 21,
+      "line_coverage_percent": 71.42857142857143,
+      "branch_covered": 4,
+      "branch_total": 4,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 347,
+      "tests": [
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test5",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test4",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test3",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test2",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test1",
+        "org.apache.commons.collections.map.CaseInsensitiveMap_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 12,
+      "line_total": 18,
+      "line_coverage_percent": 66.66666666666667,
+      "branch_covered": 2,
+      "branch_total": 2,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Collections/14/Collections-14-Round1-s101-7ff7ad318c57/evaluation-1",
+  "finished_at": "2026-10-04T21:43:58.763824+00:00"
+}

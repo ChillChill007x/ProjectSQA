@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-32-Round1-s101-0cbf303e7dad",
+  "unit": {
+    "project": "Lang",
+    "bug": "32",
+    "target": "org.apache.commons.lang3.builder.HashCodeBuilder",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_ORACLE",
+  "started_at": "2026-10-05T02:36:25.912614+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/32/Lang-32-Round1-s101-0cbf303e7dad",
+    "tests": "MOSA_EvoSuite/Test/Lang/32/Lang-32-Round1-s101-0cbf303e7dad",
+    "config": "MOSA_EvoSuite/Configuration/Lang/32/Lang-32-Round1-s101-0cbf303e7dad"
+  },
+  "generation_time_sec": 40.999,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/32/Lang-32-Round1-s101-0cbf303e7dad/org/apache/commons/lang3/builder/HashCodeBuilder_ESTest.java": "59a5b8b0bd6fcab9a855c356a9def5db0e3871e56a7d2388419dd0b3bc7cd430",
+    "MOSA_EvoSuite/Test/Lang/32/Lang-32-Round1-s101-0cbf303e7dad/org/apache/commons/lang3/builder/HashCodeBuilder_ESTest_scaffolding.java": "69d8c11ee837eee5d02dc305c300b0359279ef277c8ab48893e4bf6105e129a2"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.builder.HashCodeBuilderTest::testReflectionObjectCycle",
+    "available_triggers": [
+      "org.apache.commons.lang3.builder.HashCodeBuilderTest::testReflectionObjectCycle"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "fixed": {
+    "junit": {
+      "run_count": 32,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1407,
+      "tests": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test30",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test11",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test12",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test31",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test10",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test15",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test16",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test13",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test14",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test19",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test17",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test18",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test00",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test22",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test01",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test23",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test20",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test21",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test04",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test26",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test05",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test27",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test02",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test24",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test03",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test25",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test08",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test09",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test06",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test28",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test07",
+        "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test29"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.builder.HashCodeBuilder_ESTest::test19",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<208720879> but was:<148223896>",
+          "trace": "java.lang.AssertionError: expected:<208720879> but was:<148223896>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.lang3.builder.HashCodeBuilder_ESTest.test19(HashCodeBuilder_ESTest.java:308)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 135,
+      "line_total": 154,
+      "line_coverage_percent": 87.66233766233766,
+      "branch_covered": 74,
+      "branch_total": 96,
+      "branch_coverage_percent": 77.08333333333333
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "error": "Suite must pass on fixed revision before fault evaluation",
+  "finished_at": "2026-10-05T02:38:00.665729+00:00"
+}

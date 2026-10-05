@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-14-Round1-s101-0ba6f3fd45a4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.joda.time.TestMonthDay_Basics::testPlusMonths_int_negativeFromLeap\norg.joda.time.TestMonthDay_Basics::testMinusDays_int_negativeFromLeap\norg.joda.time.TestMonthDay_Basics::testPlusMonths_int_fromLeap\norg.joda.time.TestMonthDay_Basics::testPlusMonths_int_negativeEndOfMonthAdjust\norg.joda.time.TestMonthDay_Basics::testMinusMonths_int_endOfMonthAdjust\norg.joda.time.TestMonthDay_Basics::testMinusMonths_int_negativeFromLeap\norg.joda.time.TestMonthDay_Basics::testMinusMonths_int_fromLeap\norg.joda.time.TestMonthDay_Basics::testPlusDays_int_fromLeap",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Compress-40-Round1-s101-9c1f3fc13b37/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.compress.utils.BitInputStreamTest::littleEndianWithOverflow"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.737,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

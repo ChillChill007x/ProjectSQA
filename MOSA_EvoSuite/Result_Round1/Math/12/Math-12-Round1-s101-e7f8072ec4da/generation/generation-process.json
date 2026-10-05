@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.math3.random.BitsStreamGenerator",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83570/checkouts/Math-12-Round1-s101-e7f8072ec4da/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Math/12/Math-12-Round1-s101-e7f8072ec4da",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Math/12/Math-12-Round1-s101-e7f8072ec4da/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 12.017,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.math3.random.BitsStreamGenerator\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83570/checkouts/Math-12-Round1-s101-e7f8072ec4da/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.math3.random.BitsStreamGenerator\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 20\n* Using seed 101\n* Starting evolution\n\r[Progress:>                             0%] [Cov:>                                  0%]\r[Progress:>                             0%] [Cov:===============================>   90%]\r[Progress:>                             3%] [Cov:=================================> 95%]\r[Progress:>                             3%] [Cov:===================================100%]\n* Search finished after 2s and 2 generations, 3452 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 20\n* Number of covered goals: 20\n* Generated 11 tests with total length 27\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'BitsStreamGenerator_ESTest' to /workspace/MOSA_EvoSuite/Test/Math/12/Math-12-Round1-s101-e7f8072ec4da\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

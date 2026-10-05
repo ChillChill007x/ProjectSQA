@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-36-Round1-s101-f7e02e773b26/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.871,
+  "stdout": "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString\norg.jsoup.helper.DataUtilTest::shouldNotThrowExceptionOnEmptyCharset\norg.jsoup.helper.DataUtilTest::testQuotedCharset\norg.jsoup.helper.DataUtilTest::shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags\norg.jsoup.helper.DataUtilTest::shouldReturnNullForIllegalCharsetNames\norg.jsoup.integration.ParseTest::testBrokenHtml5CharsetWithASingleDoubleQuote",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

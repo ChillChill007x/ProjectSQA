@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-20-Round1-s101-51aad2d35920/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.jfree.chart.plot.junit.ValueMarkerTests::test1808376",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

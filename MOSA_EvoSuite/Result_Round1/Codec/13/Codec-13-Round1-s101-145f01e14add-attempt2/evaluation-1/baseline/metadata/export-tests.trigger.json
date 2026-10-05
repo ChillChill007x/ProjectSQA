@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Codec-13-Round1-s101-145f01e14add-attempt2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.apache.commons.codec.language.DoubleMetaphoneTest::testIsDoubleMetaphoneEqualBasic\norg.apache.commons.codec.language.DoubleMetaphoneTest::testCodec184",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

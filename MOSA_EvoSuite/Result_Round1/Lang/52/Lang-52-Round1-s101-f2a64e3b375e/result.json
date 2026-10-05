@@ -1,0 +1,170 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-52-Round1-s101-f2a64e3b375e",
+  "unit": {
+    "project": "Lang",
+    "bug": "52",
+    "target": "org.apache.commons.lang.StringEscapeUtils",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:50:28.047608+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/52/Lang-52-Round1-s101-f2a64e3b375e",
+    "tests": "MOSA_EvoSuite/Test/Lang/52/Lang-52-Round1-s101-f2a64e3b375e",
+    "config": "MOSA_EvoSuite/Configuration/Lang/52/Lang-52-Round1-s101-f2a64e3b375e"
+  },
+  "generation_time_sec": 42.059,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/52/Lang-52-Round1-s101-f2a64e3b375e/org/apache/commons/lang/StringEscapeUtils_ESTest.java": "edc34ac4518657b8d3c38ddd8c65b2535db574f9868cee3d421a528c72f57457",
+    "MOSA_EvoSuite/Test/Lang/52/Lang-52-Round1-s101-f2a64e3b375e/org/apache/commons/lang/StringEscapeUtils_ESTest_scaffolding.java": "5302a4cf3a8bb31394b021f8a9f904efc1c7383ad2b50c82b3bb085f2c363ce8"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.StringEscapeUtilsTest::testEscapeJavaScript",
+    "available_triggers": [
+      "org.apache.commons.lang.StringEscapeUtilsTest::testEscapeJavaScript"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 38,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 661,
+      "tests": [
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test02",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test24",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test03",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test25",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test04",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test26",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test05",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test27",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test20",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test21",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test00",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test22",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test01",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test23",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test06",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test28",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test07",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test29",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test08",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test09",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test13",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test35",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test14",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test36",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test15",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test37",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test16",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test31",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test10",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test32",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test11",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test33",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test12",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test34",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test17",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test18",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test19",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test30"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 129,
+      "line_total": 178,
+      "line_coverage_percent": 72.47191011235955,
+      "branch_covered": 68,
+      "branch_total": 85,
+      "branch_coverage_percent": 80.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 517,
+      "tests": [
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test02",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test24",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test03",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test25",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test04",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test26",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test05",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test27",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test20",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test21",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test00",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test22",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test01",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test23",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test06",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test28",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test07",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test29",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test08",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test09",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test13",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test35",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test14",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test36",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test15",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test37",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test16",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test31",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test10",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test32",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test11",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test33",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test12",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test34",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test17",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test18",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test19",
+        "org.apache.commons.lang.StringEscapeUtils_ESTest::test30"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang.StringEscapeUtils_ESTest::test27",
+          "exception": "org.junit.ComparisonFailure",
+          "message": "expected:<Mr`15H*!K[\\]/TPV> but was:<Mr`15H*!K[]/TPV>",
+          "trace": "org.junit.ComparisonFailure: expected:<Mr`15H*!K[\\]/TPV> but was:<Mr`15H*!K[]/TPV>\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.lang.StringEscapeUtils_ESTest.test27(StringEscapeUtils_ESTest.java:282)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 126,
+      "line_total": 175,
+      "line_coverage_percent": 72.0,
+      "branch_covered": 67,
+      "branch_total": 84,
+      "branch_coverage_percent": 79.76190476190476
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/52/Lang-52-Round1-s101-f2a64e3b375e/evaluation-1",
+  "finished_at": "2026-10-05T02:52:09.080204+00:00"
+}

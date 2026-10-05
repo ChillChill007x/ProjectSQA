@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-92-Round1-s101-78b7c47de375",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "92",
+    "target": "org.jsoup.parser.ParseSettings",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T02:19:15.750517+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-78b7c47de375",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/92/Jsoup-92-Round1-s101-78b7c47de375",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/92/Jsoup-92-Round1-s101-78b7c47de375"
+  },
+  "generation_time_sec": 13.897,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/92/Jsoup-92-Round1-s101-78b7c47de375/org/jsoup/parser/ParseSettings_ESTest.java": "3152853c86f9299b29b207a768851dda20fae2f041b9b8b53df06dc5acb79fcd",
+    "MOSA_EvoSuite/Test/Jsoup/92/Jsoup-92-Round1-s101-78b7c47de375/org/jsoup/parser/ParseSettings_ESTest_scaffolding.java": "4d3016bd11c522863f1ddad7e0102aa03179defd4b4e5afd6f7afd1449b036f4"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive",
+    "available_triggers": [
+      "org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive",
+      "org.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes",
+      "org.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T02:20:09.839748+00:00"
+}

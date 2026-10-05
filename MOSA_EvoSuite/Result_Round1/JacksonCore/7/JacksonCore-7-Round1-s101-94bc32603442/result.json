@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-7-Round1-s101-94bc32603442",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "7",
+    "target": "com.fasterxml.jackson.core.json.JsonWriteContext",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:32:12.530080+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442",
+    "tests": "MOSA_EvoSuite/Test/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442",
+    "config": "MOSA_EvoSuite/Configuration/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442"
+  },
+  "generation_time_sec": 7.742,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442/com/fasterxml/jackson/core/json/JsonWriteContext_ESTest.java": "3679303c01d169e2c329def27c3c96835e3853f9a2f3331e014579a4b73897fc",
+    "MOSA_EvoSuite/Test/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442/com/fasterxml/jackson/core/json/JsonWriteContext_ESTest_scaffolding.java": "2e63cf64de901076221b607dbdca68c8eca9bf670660bc8bc67e6b7a2e2dc773"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
+      "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 22,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 596,
+      "tests": [
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test00",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test11",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test01",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test12",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test20",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test10",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test21",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test04",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test15",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test05",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test16",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test02",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test13",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test03",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test14",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test08",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test19",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test09",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test06",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test17",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test07",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test18"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 71,
+      "line_total": 71,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 34,
+      "branch_total": 34,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 576,
+      "tests": [
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test00",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test11",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test01",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test12",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test20",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test10",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test21",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test04",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test15",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test05",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test16",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test02",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test13",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test03",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test14",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test08",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test19",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test09",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test06",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test17",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test07",
+        "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test18"
+      ],
+      "failures": [
+        {
+          "test": "com.fasterxml.jackson.core.json.JsonWriteContext_ESTest::test05",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<0> but was:<1>",
+          "trace": "java.lang.AssertionError: expected:<0> but was:<1>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat com.fasterxml.jackson.core.json.JsonWriteContext_ESTest.test05(JsonWriteContext_ESTest.java:539)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 69,
+      "line_total": 69,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 32,
+      "branch_total": 32,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonCore/7/JacksonCore-7-Round1-s101-94bc32603442/evaluation-1",
+  "finished_at": "2026-10-04T23:32:48.698816+00:00"
+}

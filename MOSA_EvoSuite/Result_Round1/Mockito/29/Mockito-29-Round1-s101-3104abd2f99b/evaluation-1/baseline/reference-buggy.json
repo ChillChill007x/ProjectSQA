@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-29-Round1-s101-3104abd2f99b/evaluation-1/buggy",
+    "-t",
+    "org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenNullPassedToSame"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.389,
+  "stdout": "Failing tests: 1\n  - org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenNullPassedToSame\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

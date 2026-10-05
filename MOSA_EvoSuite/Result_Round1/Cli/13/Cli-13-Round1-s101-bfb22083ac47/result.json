@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-13-Round1-s101-bfb22083ac47",
+  "unit": {
+    "project": "Cli",
+    "bug": "13",
+    "target": "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T20:29:20.959149+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/13/Cli-13-Round1-s101-bfb22083ac47",
+    "tests": "MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47",
+    "config": "MOSA_EvoSuite/Configuration/Cli/13/Cli-13-Round1-s101-bfb22083ac47"
+  },
+  "generation_time_sec": 37.891,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest.java": "76141a5a90e8bcb0c1e14ba649929ebb84d7f49fcb493d20947da3eb2da00e70",
+    "MOSA_EvoSuite/Test/Cli/13/Cli-13-Round1-s101-bfb22083ac47/org/apache/commons/cli2/commandline/WriteableCommandLineImpl_ESTest_scaffolding.java": "6830c93f4dd1b9bb7950bcb8ecf3a8b6e1fd619d7d2229157b5bc9e3662ae0dd"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugLoopingOptionLookAlikeTest::testLoopingOptionLookAlike2",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugLoopingOptionLookAlikeTest::testLoopingOptionLookAlike2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T20:30:21.246228+00:00"
+}

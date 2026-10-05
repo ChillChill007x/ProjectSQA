@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Jsoup-25-Round1-s101-4a87ace6e120/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.parser.HtmlParserTest::preservesSpaceInTextArea"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.953,
+  "stdout": "Failing tests: 1\n  - org.jsoup.parser.HtmlParserTest::preservesSpaceInTextArea\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-6-Round1-s101-ae7318f7779d",
+  "unit": {
+    "project": "Math",
+    "bug": "6",
+    "target": "org.apache.commons.math3.optim.BaseOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:04:50.062202+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/6/Math-6-Round1-s101-ae7318f7779d",
+    "tests": "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-ae7318f7779d",
+    "config": "MOSA_EvoSuite/Configuration/Math/6/Math-6-Round1-s101-ae7318f7779d"
+  },
+  "generation_time_sec": 37.095,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-ae7318f7779d/org/apache/commons/math3/optim/BaseOptimizer_ESTest.java": "6932fa460b7d393c6afe54e7fa72f7bb66c572954fa5c617ed1201e0f1ed8266",
+    "MOSA_EvoSuite/Test/Math/6/Math-6-Round1-s101-ae7318f7779d/org/apache/commons/math3/optim/BaseOptimizer_ESTest_scaffolding.java": "0052b86d2003cfbb774fc85e69ab2640ea780ee7e369ecabee088174e46d575f"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest::testTrivial",
+    "available_triggers": [
+      "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest::testTrivial",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testConstrainedRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testElliRotated",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testEllipse",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTwoAxes",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigar",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testRastrigin",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiagonalRosen",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSsDiffPow",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testMaximize",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testAckley",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigTab",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testDiffPow",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testSphere",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testTablet",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest::testCigarWithBoundaries",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest::testSumSinc",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMaximize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest::testMinimize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMaximize2",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize1",
+      "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest::testMinimize2",
+      "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest::testGetIterations",
+      "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest::testGetIterations"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 652,
+      "tests": [
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test5",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test4",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test3",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test2",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test6",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 26,
+      "line_coverage_percent": 80.76923076923077,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 884,
+      "tests": [
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test5",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test4",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test3",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test2",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test6",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test1",
+        "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test0"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math3.optim.BaseOptimizer_ESTest::test4",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<2147483647> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<2147483647> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.math3.optim.BaseOptimizer_ESTest.test4(BaseOptimizer_ESTest.java:140)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 26,
+      "line_coverage_percent": 80.76923076923077,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/6/Math-6-Round1-s101-ae7318f7779d/evaluation-1",
+  "finished_at": "2026-10-05T03:07:13.141661+00:00"
+}

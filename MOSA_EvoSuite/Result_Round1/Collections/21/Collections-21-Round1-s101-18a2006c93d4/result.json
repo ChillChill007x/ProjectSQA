@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-21-Round1-s101-18a2006c93d4",
+  "unit": {
+    "project": "Collections",
+    "bug": "21",
+    "target": "org.apache.commons.collections4.list.SetUniqueList",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-04T21:50:23.019221+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/21/Collections-21-Round1-s101-18a2006c93d4",
+    "tests": "MOSA_EvoSuite/Test/Collections/21/Collections-21-Round1-s101-18a2006c93d4",
+    "config": "MOSA_EvoSuite/Configuration/Collections/21/Collections-21-Round1-s101-18a2006c93d4"
+  },
+  "generation_time_sec": 13.313,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/21/Collections-21-Round1-s101-18a2006c93d4/org/apache/commons/collections4/list/SetUniqueList_ESTest.java": "a1247cd74d2ea0c6fbb597ade8f905b6b537317faac5bb4fdf3485d51202a947",
+    "MOSA_EvoSuite/Test/Collections/21/Collections-21-Round1-s101-18a2006c93d4/org/apache/commons/collections4/list/SetUniqueList_ESTest_scaffolding.java": "2cc3d94f848a44167fbf4e48a85f62ba00cdcd172cb40ac84b8b30d059c32ecd"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections4.list.SetUniqueListTest::testSubListIsUnmodifiable",
+    "available_triggers": [
+      "org.apache.commons.collections4.list.SetUniqueListTest::testSubListIsUnmodifiable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-04T21:51:06.887751+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-19-Round1-s101-bfa543d154d4",
+  "unit": {
+    "project": "Lang",
+    "bug": "19",
+    "target": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:29:26.955144+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/19/Lang-19-Round1-s101-bfa543d154d4",
+    "tests": "MOSA_EvoSuite/Test/Lang/19/Lang-19-Round1-s101-bfa543d154d4",
+    "config": "MOSA_EvoSuite/Configuration/Lang/19/Lang-19-Round1-s101-bfa543d154d4"
+  },
+  "generation_time_sec": 36.477,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/19/Lang-19-Round1-s101-bfa543d154d4/org/apache/commons/lang3/text/translate/NumericEntityUnescaper_ESTest.java": "1d9001dbb029eb1c565548c0a47431257c25bd5fd08a0183849f582785e21d48",
+    "MOSA_EvoSuite/Test/Lang/19/Lang-19-Round1-s101-bfa543d154d4/org/apache/commons/lang3/text/translate/NumericEntityUnescaper_ESTest_scaffolding.java": "f7d8a3ac077683cd7403b4a5d7161ccac103a799de68c3a2c734bcbab487ec6c"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity",
+    "available_triggers": [
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity",
+      "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 8,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 490,
+      "tests": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test6",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test7",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test4",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test5",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test2",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test3",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test0",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 27,
+      "line_total": 32,
+      "line_coverage_percent": 84.375,
+      "branch_covered": 32,
+      "branch_total": 38,
+      "branch_coverage_percent": 84.21052631578948
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 8,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 492,
+      "tests": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test6",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test7",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test4",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test5",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test2",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test3",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test0",
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test4",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test4(NumericEntityUnescaper_ESTest.java:232)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test5",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test5(NumericEntityUnescaper_ESTest.java:278)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test2",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test2(NumericEntityUnescaper_ESTest.java:140)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test3",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test3(NumericEntityUnescaper_ESTest.java:186)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test0",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test0(NumericEntityUnescaper_ESTest.java:49)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest::test1",
+          "exception": "java.lang.IndexOutOfBoundsException",
+          "message": null,
+          "trace": "java.lang.IndexOutOfBoundsException\n\tat java.base/java.nio.Buffer.checkIndex(Buffer.java:693)\n\tat java.base/java.nio.CharBuffer.charAt(CharBuffer.java:1465)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate(NumericEntityUnescaper.java:54)\n\tat org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(CharSequenceTranslator.java:86)\n\tat org.apache.commons.lang3.text.translate.NumericEntityUnescaper_ESTest.test1(NumericEntityUnescaper_ESTest.java:94)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 13,
+      "line_total": 27,
+      "line_coverage_percent": 48.148148148148145,
+      "branch_covered": 10,
+      "branch_total": 18,
+      "branch_coverage_percent": 55.55555555555556
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/19/Lang-19-Round1-s101-bfa543d154d4/evaluation-1",
+  "finished_at": "2026-10-05T02:30:59.940708+00:00"
+}

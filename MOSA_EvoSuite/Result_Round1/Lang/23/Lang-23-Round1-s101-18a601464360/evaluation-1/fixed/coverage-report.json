@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/23/Lang-23-Round1-s101-18a601464360/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Lang-23-Round1-s101-18a601464360/evaluation-1/fixed/target/classes/org/apache/commons/lang3/text/ExtendedMessageFormat.class",
+    "--xml",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Lang/23/Lang-23-Round1-s101-18a601464360/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.323,
+  "stdout": "[INFO] Loading execution data file /workspace/MOSA_EvoSuite/Result_Round1/Lang/23/Lang-23-Round1-s101-18a601464360/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

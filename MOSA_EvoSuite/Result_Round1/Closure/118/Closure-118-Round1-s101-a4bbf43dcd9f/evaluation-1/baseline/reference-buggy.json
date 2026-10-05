@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83569/checkouts/Closure-118-Round1-s101-a4bbf43dcd9f/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.039,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

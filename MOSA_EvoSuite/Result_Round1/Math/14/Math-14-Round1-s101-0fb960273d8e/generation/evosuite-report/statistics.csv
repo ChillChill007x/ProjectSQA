@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer,BRANCH,0.7391304347826086,23,17

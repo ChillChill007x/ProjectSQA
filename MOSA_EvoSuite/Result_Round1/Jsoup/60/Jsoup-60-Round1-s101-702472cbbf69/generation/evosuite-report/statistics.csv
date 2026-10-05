@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.jsoup.parser.TokenQueue,BRANCH,0.9923664122137404,131,127

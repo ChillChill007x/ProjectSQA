@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JxPath",
+    "-v",
+    "20b",
+    "-w",
+    "/workspace/work/checkouts/JxPath-20-Round1-s101-ee7ea49c6272/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.416,
+  "stdout": "",
+  "stderr": "Checking out 820a69d8 to /workspace/work/checkouts/JxPath-20-Round1-s101-ee OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 820a69d8:a48b10d2..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JxPath-20b...................................... OK\n"
+}

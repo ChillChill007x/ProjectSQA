@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-26-Round1-s101-702080e1a0f4",
+  "unit": {
+    "project": "Time",
+    "bug": "26",
+    "target": "org.joda.time.DateTimeZone",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T04:12:36.816215+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Time/26/Time-26-Round1-s101-702080e1a0f4",
+    "tests": "MOSA_EvoSuite/Test/Time/26/Time-26-Round1-s101-702080e1a0f4",
+    "config": "MOSA_EvoSuite/Configuration/Time/26/Time-26-Round1-s101-702080e1a0f4"
+  },
+  "generation_time_sec": 43.975,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Time/26/Time-26-Round1-s101-702080e1a0f4/org/joda/time/DateTimeZone_ESTest.java": "e944fdef7ba30be1fad18b7d324e800c5407cf472851b297c038033075013f64",
+    "MOSA_EvoSuite/Test/Time/26/Time-26-Round1-s101-702080e1a0f4/org/joda/time/DateTimeZone_ESTest_scaffolding.java": "cfa2697822b94aefe284f2aeb1655cfde520297956d5afc4e88e9591047b7cf7"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.TestDateTimeZoneCutover::testWithSecondOfMinuteInDstChange",
+    "available_triggers": [
+      "org.joda.time.TestDateTimeZoneCutover::testWithSecondOfMinuteInDstChange",
+      "org.joda.time.TestDateTimeZoneCutover::testWithMinuteOfHourInDstChange",
+      "org.joda.time.TestDateTimeZoneCutover::testWithMinuteOfHourInDstChange_mockZone",
+      "org.joda.time.TestDateTimeZoneCutover::testBug2182444_usCentral",
+      "org.joda.time.TestDateTimeZoneCutover::testWithMillisOfSecondInDstChange_Paris_summer",
+      "org.joda.time.TestDateTimeZoneCutover::testWithHourOfDayInDstChange",
+      "org.joda.time.TestDateTimeZoneCutover::testWithMillisOfSecondInDstChange_NewYork_winter",
+      "org.joda.time.TestDateTimeZoneCutover::testBug2182444_ausNSW"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T04:14:12.285642+00:00"
+}

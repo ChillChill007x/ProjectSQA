@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-162-Round1-s101-850f955205e3",
+  "unit": {
+    "project": "Closure",
+    "bug": "162",
+    "target": "com.google.javascript.jscomp.Scope",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-04T22:13:24.838657+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Closure/162/Closure-162-Round1-s101-850f955205e3",
+    "tests": "MOSA_EvoSuite/Test/Closure/162/Closure-162-Round1-s101-850f955205e3",
+    "config": "MOSA_EvoSuite/Configuration/Closure/162/Closure-162-Round1-s101-850f955205e3"
+  },
+  "generation_time_sec": 99.174,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Closure/162/Closure-162-Round1-s101-850f955205e3/com/google/javascript/jscomp/Scope_ESTest.java": "196541736f01d2f7d0e6dcc3150f1522411dbc97589119406110ba306c35c2c1",
+    "MOSA_EvoSuite/Test/Closure/162/Closure-162-Round1-s101-850f955205e3/com/google/javascript/jscomp/Scope_ESTest_scaffolding.java": "374483da39b5080d85b9292524f51aa49d568a2e557920be95d5123981ee5a83"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.ScopedAliasesTest::testForwardJsDoc",
+    "available_triggers": [
+      "com.google.javascript.jscomp.ScopedAliasesTest::testForwardJsDoc"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-04T22:16:45.096108+00:00"
+}

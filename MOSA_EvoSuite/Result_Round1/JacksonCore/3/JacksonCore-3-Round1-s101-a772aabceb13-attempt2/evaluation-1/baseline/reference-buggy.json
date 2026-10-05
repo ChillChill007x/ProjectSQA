@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-3-Round1-s101-a772aabceb13-attempt2/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.core.json.TestLocation::testOffsetWithInputOffset"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.867,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.core.json.TestLocation::testOffsetWithInputOffset\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

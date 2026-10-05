@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-23-Round1-s101-2489de48509b",
+  "unit": {
+    "project": "Mockito",
+    "bug": "23",
+    "target": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:49:26.703016+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Mockito/23/Mockito-23-Round1-s101-2489de48509b",
+    "tests": "MOSA_EvoSuite/Test/Mockito/23/Mockito-23-Round1-s101-2489de48509b",
+    "config": "MOSA_EvoSuite/Configuration/Mockito/23/Mockito-23-Round1-s101-2489de48509b"
+  },
+  "generation_time_sec": 34.135,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Mockito/23/Mockito-23-Round1-s101-2489de48509b/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs_ESTest.java": "86c93454147ed966ea7416172d0faf3796a8654f9f8d908c74e0476c30599941",
+    "MOSA_EvoSuite/Test/Mockito/23/Mockito-23-Round1-s101-2489de48509b/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs_ESTest_scaffolding.java": "7e798dd2e7bef34ca12f0fa327fdb6c05d9146d635cffae57be0fce4e5bb3429"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.stubbing.DeepStubsSerializableTest::should_serialize_and_deserialize_mock_created_by_deep_stubs",
+    "available_triggers": [
+      "org.mockitousage.stubbing.DeepStubsSerializableTest::should_serialize_and_deserialize_mock_created_by_deep_stubs"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 569,
+      "tests": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 36,
+      "line_coverage_percent": 2.7777777777777777,
+      "branch_covered": 0,
+      "branch_total": 12,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 640,
+      "tests": [
+        "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs_ESTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 3,
+      "line_total": 29,
+      "line_coverage_percent": 10.344827586206897,
+      "branch_covered": 0,
+      "branch_total": 8,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Mockito/23/Mockito-23-Round1-s101-2489de48509b/evaluation-1",
+  "finished_at": "2026-10-05T02:51:54.430105+00:00"
+}

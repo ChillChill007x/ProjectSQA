@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-18-Round1-s101-86484b1f2bea/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.617,
+  "stdout": "org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955\norg.jfree.data.junit.DefaultKeyedValues2DTests::testRemoveColumnByKey\norg.jfree.data.junit.DefaultKeyedValuesTests::testRemoveValue\norg.jfree.data.junit.DefaultKeyedValuesTests::testGetIndex2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

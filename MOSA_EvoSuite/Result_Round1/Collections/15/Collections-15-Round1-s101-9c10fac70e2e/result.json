@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-15-Round1-s101-9c10fac70e2e",
+  "unit": {
+    "project": "Collections",
+    "bug": "15",
+    "target": "org.apache.commons.collections.list.SetUniqueList",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:44:06.653237+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/15/Collections-15-Round1-s101-9c10fac70e2e",
+    "tests": "MOSA_EvoSuite/Test/Collections/15/Collections-15-Round1-s101-9c10fac70e2e",
+    "config": "MOSA_EvoSuite/Configuration/Collections/15/Collections-15-Round1-s101-9c10fac70e2e"
+  },
+  "generation_time_sec": 7.791,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/15/Collections-15-Round1-s101-9c10fac70e2e/org/apache/commons/collections/list/SetUniqueList_ESTest.java": "b713c7badc9f4d6b2a0e34610fbde70d5e3597a23560b3946377ef28a27b74e7",
+    "MOSA_EvoSuite/Test/Collections/15/Collections-15-Round1-s101-9c10fac70e2e/org/apache/commons/collections/list/SetUniqueList_ESTest_scaffolding.java": "a82ef87876c191a4180363e65fca80269dc6747e4c9d7b86bb8581a8c1c82be1"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections.list.TestSetUniqueList::testCollections304",
+    "available_triggers": [
+      "org.apache.commons.collections.list.TestSetUniqueList::testCollections304"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 23,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 23,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 358,
+      "tests": [
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test07",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test18",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test06",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test17",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test09",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test08",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test19",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test03",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test14",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test02",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test13",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test05",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test16",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test04",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test15",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test10",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test21",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test20",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test01",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test12",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test00",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test11",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test22"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 55,
+      "line_total": 59,
+      "line_coverage_percent": 93.22033898305085,
+      "branch_covered": 20,
+      "branch_total": 20,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 23,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 352,
+      "tests": [
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test07",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test18",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test06",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test17",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test09",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test08",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test19",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test03",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test14",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test02",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test13",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test05",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test16",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test04",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test15",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test10",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test21",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test20",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test01",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test12",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test00",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test11",
+        "org.apache.commons.collections.list.SetUniqueList_ESTest::test22"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.collections.list.SetUniqueList_ESTest::test07",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat org.apache.commons.collections.list.SetUniqueList_ESTest.test07(SetUniqueList_ESTest.java:358)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.collections.list.SetUniqueList_ESTest::test00",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1> but was:<0>",
+          "trace": "java.lang.AssertionError: expected:<1> but was:<0>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat org.junit.Assert.assertEquals(Assert.java:633)\n\tat org.apache.commons.collections.list.SetUniqueList_ESTest.test00(SetUniqueList_ESTest.java:54)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 55,
+      "line_total": 59,
+      "line_coverage_percent": 93.22033898305085,
+      "branch_covered": 20,
+      "branch_total": 20,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Collections/15/Collections-15-Round1-s101-9c10fac70e2e/evaluation-1",
+  "finished_at": "2026-10-04T21:44:48.148103+00:00"
+}

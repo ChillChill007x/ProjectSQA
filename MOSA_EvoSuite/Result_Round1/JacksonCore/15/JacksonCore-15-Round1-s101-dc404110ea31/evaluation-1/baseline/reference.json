@@ -1,0 +1,8 @@
+{
+  "trigger": "com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testNotAllowMultipleMatches",
+  "available_triggers": [
+    "com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testNotAllowMultipleMatches"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

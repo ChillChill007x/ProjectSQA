@@ -1,0 +1,167 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-23-Round1-s101-2e154d534f23",
+  "unit": {
+    "project": "Cli",
+    "bug": "23",
+    "target": "org.apache.commons.cli.HelpFormatter",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:44:53.528454+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/23/Cli-23-Round1-s101-2e154d534f23",
+    "tests": "MOSA_EvoSuite/Test/Cli/23/Cli-23-Round1-s101-2e154d534f23",
+    "config": "MOSA_EvoSuite/Configuration/Cli/23/Cli-23-Round1-s101-2e154d534f23"
+  },
+  "generation_time_sec": 37.659,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/23/Cli-23-Round1-s101-2e154d534f23/org/apache/commons/cli/HelpFormatter_ESTest.java": "93ab0b3a9b0058b477925d74bcdab3cf3bc5e9b3941763fc82c10b560737fe62",
+    "MOSA_EvoSuite/Test/Cli/23/Cli-23-Round1-s101-2e154d534f23/org/apache/commons/cli/HelpFormatter_ESTest_scaffolding.java": "b8b3be7d2ac7d9c9b33729f5240ad5352778be419622466182bcbfb71279ee08"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop",
+    "available_triggers": [
+      "org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop",
+      "org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 33,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 33,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 675,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 190,
+      "line_total": 193,
+      "line_coverage_percent": 98.44559585492227,
+      "branch_covered": 97,
+      "branch_total": 110,
+      "branch_coverage_percent": 88.18181818181819
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 33,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 658,
+      "tests": [
+        "org.apache.commons.cli.HelpFormatter_ESTest::test30",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test18",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test17",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test19",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test10",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test32",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test31",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test12",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test11",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test14",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test13",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test16",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test15",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test07",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test29",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test06",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test28",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test09",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test08",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test21",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test20",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test01",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test23",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test00",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test22",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test03",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test25",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test02",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test24",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test27",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+        "org.apache.commons.cli.HelpFormatter_ESTest::test26"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test05",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockRuntimeException",
+          "message": "Text too long for line - throwing exception to avoid infinite loop [CLI-162]:        l\"}![DSMDs90",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockRuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:        l\"}![DSMDs90\n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:836)\n\tat org.apache.commons.cli.HelpFormatter.printWrapped(HelpFormatter.java:690)\n\tat org.apache.commons.cli.HelpFormatter.printUsage(HelpFormatter.java:642)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:477)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:418)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:397)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test05(HelpFormatter_ESTest.java:428)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.cli.HelpFormatter_ESTest::test04",
+          "exception": "org.evosuite.runtime.mock.java.lang.MockRuntimeException",
+          "message": "Text too long for line - throwing exception to avoid infinite loop [CLI-162]:                                                                    ",
+          "trace": "org.evosuite.runtime.mock.java.lang.MockRuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:                                                                    \n\tat org.apache.commons.cli.HelpFormatter.renderWrappedText(HelpFormatter.java:836)\n\tat org.apache.commons.cli.HelpFormatter.renderOptions(HelpFormatter.java:783)\n\tat org.apache.commons.cli.HelpFormatter.printOptions(HelpFormatter.java:662)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:485)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:418)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:397)\n\tat org.apache.commons.cli.HelpFormatter_ESTest.test04(HelpFormatter_ESTest.java:345)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 190,
+      "line_total": 194,
+      "line_coverage_percent": 97.9381443298969,
+      "branch_covered": 95,
+      "branch_total": 108,
+      "branch_coverage_percent": 87.96296296296296
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/23/Cli-23-Round1-s101-2e154d534f23/evaluation-1",
+  "finished_at": "2026-10-04T20:45:57.304335+00:00"
+}

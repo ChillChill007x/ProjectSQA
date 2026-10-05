@@ -1,0 +1,9 @@
+{
+  "trigger": "org.jsoup.nodes.DocumentTypeTest::constructorValidationOkWithBlankName",
+  "available_triggers": [
+    "org.jsoup.nodes.DocumentTypeTest::constructorValidationOkWithBlankName",
+    "org.jsoup.parser.HtmlParserTest::handlesInvalidDoctypes"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

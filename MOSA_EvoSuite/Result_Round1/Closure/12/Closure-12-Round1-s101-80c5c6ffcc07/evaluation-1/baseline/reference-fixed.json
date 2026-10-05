@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/742/checkouts/Closure-12-Round1-s101-80c5c6ffcc07/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testIssue794b"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.211,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

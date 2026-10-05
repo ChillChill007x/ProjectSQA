@@ -1,0 +1,173 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-16-Round1-s101-4d99e85138c6",
+  "unit": {
+    "project": "JxPath",
+    "bug": "16",
+    "target": "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T00:41:21.749034+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6",
+    "tests": "MOSA_EvoSuite/Test/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6",
+    "config": "MOSA_EvoSuite/Configuration/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6"
+  },
+  "generation_time_sec": 41.421,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer_ESTest.java": "d31b64c3344dea0daf9c9831b45a5d4866921ac8fa4232a31ce22607e697072f",
+    "MOSA_EvoSuite/Test/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer_ESTest_scaffolding.java": "d6a8b4778b3c837579a13e6f29151b93da82c44a0d53d6050650945598c667f3"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing",
+      "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisPreceding",
+      "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisFollowing",
+      "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisPreceding"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 38,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 650,
+      "tests": [
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test03",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test25",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test02",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test24",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test05",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test27",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test04",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test26",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test21",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test20",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test01",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test23",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test00",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test22",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test07",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test29",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test06",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test28",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test09",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test08",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test14",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test36",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test13",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test35",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test16",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test15",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test37",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test10",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test32",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test31",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test12",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test34",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test11",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test33",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test18",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test17",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test19",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test30"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 130,
+      "line_total": 393,
+      "line_coverage_percent": 33.07888040712468,
+      "branch_covered": 76,
+      "branch_total": 299,
+      "branch_coverage_percent": 25.418060200668897
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 622,
+      "tests": [
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test03",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test25",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test02",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test24",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test05",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test27",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test04",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test26",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test21",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test20",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test01",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test23",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test00",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test22",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test07",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test29",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test06",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test28",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test09",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test08",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test14",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test36",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test13",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test35",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test16",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test15",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test37",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test10",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test32",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test31",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test12",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test34",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test11",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test33",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test18",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test17",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test19",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test30"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest::test16",
+          "exception": "java.lang.AssertionError",
+          "message": null,
+          "trace": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertTrue(Assert.java:53)\n\tat org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer_ESTest.test16(JDOMNodePointer_ESTest.java:733)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 130,
+      "line_total": 393,
+      "line_coverage_percent": 33.07888040712468,
+      "branch_covered": 78,
+      "branch_total": 303,
+      "branch_coverage_percent": 25.742574257425744
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JxPath/16/JxPath-16-Round1-s101-4d99e85138c6/evaluation-1",
+  "finished_at": "2026-10-05T00:42:28.816450+00:00"
+}

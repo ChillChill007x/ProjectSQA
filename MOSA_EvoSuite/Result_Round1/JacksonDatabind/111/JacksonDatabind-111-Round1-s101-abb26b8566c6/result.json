@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-111-Round1-s101-abb26b8566c6",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "111",
+    "target": "com.fasterxml.jackson.databind.deser.impl.ObjectIdReferenceProperty",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-05T01:07:37.732407+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-abb26b8566c6",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-abb26b8566c6",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-abb26b8566c6"
+  },
+  "generation_time_sec": 55.885,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-abb26b8566c6/com/fasterxml/jackson/databind/deser/impl/ObjectIdReferenceProperty_ESTest.java": "e836febb59f38ff3968fff48df3e622cbababd0a8380f26e859718080ec93bc6",
+    "MOSA_EvoSuite/Test/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-abb26b8566c6/com/fasterxml/jackson/databind/deser/impl/ObjectIdReferenceProperty_ESTest_scaffolding.java": "6b637f6e79fe0461518f2c6903eae6084314a1b0397a62b2faa24bcc19a6113e"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.deser.jdk.JDKAtomicTypesDeserTest::testNullWithinNested",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.deser.jdk.JDKAtomicTypesDeserTest::testNullWithinNested"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-05T01:09:55.152298+00:00"
+}

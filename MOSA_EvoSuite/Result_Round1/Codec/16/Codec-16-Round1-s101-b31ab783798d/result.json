@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-16-Round1-s101-b31ab783798d",
+  "unit": {
+    "project": "Codec",
+    "bug": "16",
+    "target": "org.apache.commons.codec.binary.Base32",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T21:24:08.434622+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Codec/16/Codec-16-Round1-s101-b31ab783798d",
+    "tests": "MOSA_EvoSuite/Test/Codec/16/Codec-16-Round1-s101-b31ab783798d",
+    "config": "MOSA_EvoSuite/Configuration/Codec/16/Codec-16-Round1-s101-b31ab783798d"
+  },
+  "generation_time_sec": 9.358,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Codec/16/Codec-16-Round1-s101-b31ab783798d/org/apache/commons/codec/binary/Base32_ESTest.java": "240e22b7767908269c1d63f3abbfbd98170a83a648579369c24c212aef68f7dc",
+    "MOSA_EvoSuite/Test/Codec/16/Codec-16-Round1-s101-b31ab783798d/org/apache/commons/codec/binary/Base32_ESTest_scaffolding.java": "c25c2aee58ed5e6a0aaff78b54bacc6e04f1ef887e6f35f53862f6cc5bba185b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.codec.binary.Base32Test::testCodec200",
+    "available_triggers": [
+      "org.apache.commons.codec.binary.Base32Test::testCodec200"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 22,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 362,
+      "tests": [
+        "org.apache.commons.codec.binary.Base32_ESTest::test02",
+        "org.apache.commons.codec.binary.Base32_ESTest::test13",
+        "org.apache.commons.codec.binary.Base32_ESTest::test03",
+        "org.apache.commons.codec.binary.Base32_ESTest::test14",
+        "org.apache.commons.codec.binary.Base32_ESTest::test04",
+        "org.apache.commons.codec.binary.Base32_ESTest::test15",
+        "org.apache.commons.codec.binary.Base32_ESTest::test05",
+        "org.apache.commons.codec.binary.Base32_ESTest::test16",
+        "org.apache.commons.codec.binary.Base32_ESTest::test20",
+        "org.apache.commons.codec.binary.Base32_ESTest::test10",
+        "org.apache.commons.codec.binary.Base32_ESTest::test21",
+        "org.apache.commons.codec.binary.Base32_ESTest::test00",
+        "org.apache.commons.codec.binary.Base32_ESTest::test11",
+        "org.apache.commons.codec.binary.Base32_ESTest::test01",
+        "org.apache.commons.codec.binary.Base32_ESTest::test12",
+        "org.apache.commons.codec.binary.Base32_ESTest::test06",
+        "org.apache.commons.codec.binary.Base32_ESTest::test17",
+        "org.apache.commons.codec.binary.Base32_ESTest::test07",
+        "org.apache.commons.codec.binary.Base32_ESTest::test18",
+        "org.apache.commons.codec.binary.Base32_ESTest::test08",
+        "org.apache.commons.codec.binary.Base32_ESTest::test19",
+        "org.apache.commons.codec.binary.Base32_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 164,
+      "line_total": 166,
+      "line_coverage_percent": 98.79518072289157,
+      "branch_covered": 75,
+      "branch_total": 75,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 22,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 365,
+      "tests": [
+        "org.apache.commons.codec.binary.Base32_ESTest::test02",
+        "org.apache.commons.codec.binary.Base32_ESTest::test13",
+        "org.apache.commons.codec.binary.Base32_ESTest::test03",
+        "org.apache.commons.codec.binary.Base32_ESTest::test14",
+        "org.apache.commons.codec.binary.Base32_ESTest::test04",
+        "org.apache.commons.codec.binary.Base32_ESTest::test15",
+        "org.apache.commons.codec.binary.Base32_ESTest::test05",
+        "org.apache.commons.codec.binary.Base32_ESTest::test16",
+        "org.apache.commons.codec.binary.Base32_ESTest::test20",
+        "org.apache.commons.codec.binary.Base32_ESTest::test10",
+        "org.apache.commons.codec.binary.Base32_ESTest::test21",
+        "org.apache.commons.codec.binary.Base32_ESTest::test00",
+        "org.apache.commons.codec.binary.Base32_ESTest::test11",
+        "org.apache.commons.codec.binary.Base32_ESTest::test01",
+        "org.apache.commons.codec.binary.Base32_ESTest::test12",
+        "org.apache.commons.codec.binary.Base32_ESTest::test06",
+        "org.apache.commons.codec.binary.Base32_ESTest::test17",
+        "org.apache.commons.codec.binary.Base32_ESTest::test07",
+        "org.apache.commons.codec.binary.Base32_ESTest::test18",
+        "org.apache.commons.codec.binary.Base32_ESTest::test08",
+        "org.apache.commons.codec.binary.Base32_ESTest::test19",
+        "org.apache.commons.codec.binary.Base32_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 164,
+      "line_total": 166,
+      "line_coverage_percent": 98.79518072289157,
+      "branch_covered": 75,
+      "branch_total": 75,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Codec/16/Codec-16-Round1-s101-b31ab783798d/evaluation-1",
+  "finished_at": "2026-10-04T21:24:40.606687+00:00"
+}

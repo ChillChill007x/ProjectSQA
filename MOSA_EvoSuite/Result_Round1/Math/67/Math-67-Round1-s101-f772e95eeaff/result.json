@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-67-Round1-s101-f772e95eeaff",
+  "unit": {
+    "project": "Math",
+    "bug": "67",
+    "target": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-05T04:02:51.973438+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/67/Math-67-Round1-s101-f772e95eeaff",
+    "tests": "MOSA_EvoSuite/Test/Math/67/Math-67-Round1-s101-f772e95eeaff",
+    "config": "MOSA_EvoSuite/Configuration/Math/67/Math-67-Round1-s101-f772e95eeaff"
+  },
+  "generation_time_sec": 69.64,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/67/Math-67-Round1-s101-f772e95eeaff/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer_ESTest.java": "3aeed362595ef72e0577414a899e54bfd1b3eaee68c447096b0692303a5ac4cd",
+    "MOSA_EvoSuite/Test/Math/67/Math-67-Round1-s101-f772e95eeaff/org/apache/commons/math/optimization/MultiStartUnivariateRealOptimizer_ESTest_scaffolding.java": "f2e843fc3194ef471e15159dfea1d322416114071e108e23cf839ba68259e8d8"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-05T04:05:24.762673+00:00"
+}

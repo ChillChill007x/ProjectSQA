@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Mockito-23-Round1-s101-2489de48509b/evaluation-1/buggy",
+    "-t",
+    "org.mockitousage.stubbing.DeepStubsSerializableTest::should_serialize_and_deserialize_mock_created_by_deep_stubs"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 14.369,
+  "stdout": "Failing tests: 1\n  - org.mockitousage.stubbing.DeepStubsSerializableTest::should_serialize_and_deserialize_mock_created_by_deep_stubs\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

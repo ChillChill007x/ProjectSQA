@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "7f",
+    "-w",
+    "/workspace/work/checkouts/Cli-7-Round1-s101-a4665d03626b/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.32,
+  "stdout": "",
+  "stderr": "Checking out 4ee0d6c4 to /workspace/work/checkouts/Cli-7-Round1-s101-a4665d OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 4ee0d6c4:73276486..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-7f.......................................... OK\n"
+}

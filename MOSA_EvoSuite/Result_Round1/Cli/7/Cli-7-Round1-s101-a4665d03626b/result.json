@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-7-Round1-s101-a4665d03626b",
+  "unit": {
+    "project": "Cli",
+    "bug": "7",
+    "target": "org.apache.commons.cli2.builder.PatternBuilder",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:22:38.893400+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Cli/7/Cli-7-Round1-s101-a4665d03626b",
+    "tests": "MOSA_EvoSuite/Test/Cli/7/Cli-7-Round1-s101-a4665d03626b",
+    "config": "MOSA_EvoSuite/Configuration/Cli/7/Cli-7-Round1-s101-a4665d03626b"
+  },
+  "generation_time_sec": 35.989,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Cli/7/Cli-7-Round1-s101-a4665d03626b/org/apache/commons/cli2/builder/PatternBuilder_ESTest.java": "a4f8d5a9b40c739ab3e18965c978cce8d9729860c0807b5683fc6bcfe04ca46c",
+    "MOSA_EvoSuite/Test/Cli/7/Cli-7-Round1-s101-a4665d03626b/org/apache/commons/cli2/builder/PatternBuilder_ESTest_scaffolding.java": "5892f97210050d458e020a315e7eea1a45949f5c60163919f1f762fa39c52a3c"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.Bug27575Test::testRequiredOptions",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.Bug27575Test::testRequiredOptions"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 481,
+      "tests": [
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test10",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test00",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test11",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test01",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test12",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test02",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test13",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test03",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test14",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test04",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test05",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test06",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test07",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test08",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 68,
+      "line_total": 68,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 27,
+      "branch_total": 27,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 462,
+      "tests": [
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test10",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test00",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test11",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test01",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test12",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test02",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test13",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test03",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test14",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test04",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test05",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test06",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test07",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test08",
+        "org.apache.commons.cli2.builder.PatternBuilder_ESTest::test09"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 68,
+      "line_total": 68,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 27,
+      "branch_total": 27,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Cli/7/Cli-7-Round1-s101-a4665d03626b/evaluation-1",
+  "finished_at": "2026-10-04T20:23:38.543720+00:00"
+}

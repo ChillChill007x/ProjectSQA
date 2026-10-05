@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-15-Round1-s101-30d37db24a8f",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "15",
+    "target": "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "INVALID_TESTS",
+  "started_at": "2026-10-04T23:26:23.943430+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-30d37db24a8f",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-30d37db24a8f",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-30d37db24a8f"
+  },
+  "generation_time_sec": 55.867,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-30d37db24a8f/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer_ESTest.java": "3743a6c01a4e88a043fd24ab2d90fe3d30411d52ba5a6c720a26833703a8f12b",
+    "MOSA_EvoSuite/Test/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-30d37db24a8f/com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer_ESTest_scaffolding.java": "c70d0b826a79b1a7ce79c288614a013dab8c31714a74802b94f8df210f68720c"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.convert.TestConvertingSerializer::testIssue731",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.convert.TestConvertingSerializer::testIssue731"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Zero, ignored, or assumption-skipped tests cannot count as passing",
+  "finished_at": "2026-10-04T23:28:26.547794+00:00"
+}

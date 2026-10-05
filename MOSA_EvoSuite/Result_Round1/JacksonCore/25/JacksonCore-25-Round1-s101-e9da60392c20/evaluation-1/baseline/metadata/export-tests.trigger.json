@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-25-Round1-s101-e9da60392c20/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.567,
+  "stdout": "com.fasterxml.jackson.core.read.NonStandardUnquotedNamesTest::testUnquotedIssue510",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

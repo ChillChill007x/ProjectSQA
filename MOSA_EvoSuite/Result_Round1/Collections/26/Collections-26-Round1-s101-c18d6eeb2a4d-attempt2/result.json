@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-26-Round1-s101-c18d6eeb2a4d-attempt2",
+  "unit": {
+    "project": "Collections",
+    "bug": "26",
+    "target": "org.apache.commons.collections4.keyvalue.MultiKey",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T09:20:05.855202+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2",
+    "tests": "MOSA_EvoSuite/Test/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2",
+    "config": "MOSA_EvoSuite/Configuration/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2"
+  },
+  "generation_time_sec": 3.725,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2/org/apache/commons/collections4/keyvalue/MultiKey_ESTest.java": "768cd7acd94f4d9b0c97759e1bafddea428d4d98584015e71916fda04ce61e15",
+    "MOSA_EvoSuite/Test/Collections/26/Collections-26-Round1-s101-c18d6eeb2a4d-attempt2/org/apache/commons/collections4/keyvalue/MultiKey_ESTest_scaffolding.java": "af53b4cf9153efe68a4e98a70a7b03b791b899767ba2900e919299267319b3c0"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass",
+    "available_triggers": [
+      "org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T09:20:40.604073+00:00"
+}

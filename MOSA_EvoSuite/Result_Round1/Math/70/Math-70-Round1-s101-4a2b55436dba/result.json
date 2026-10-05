@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-70-Round1-s101-4a2b55436dba",
+  "unit": {
+    "project": "Math",
+    "bug": "70",
+    "target": "org.apache.commons.math.analysis.solvers.BisectionSolver",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:05:30.908852+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Math/70/Math-70-Round1-s101-4a2b55436dba",
+    "tests": "MOSA_EvoSuite/Test/Math/70/Math-70-Round1-s101-4a2b55436dba",
+    "config": "MOSA_EvoSuite/Configuration/Math/70/Math-70-Round1-s101-4a2b55436dba"
+  },
+  "generation_time_sec": 7.033,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Math/70/Math-70-Round1-s101-4a2b55436dba/org/apache/commons/math/analysis/solvers/BisectionSolver_ESTest.java": "12637074af80e4fa0ccc050650bb4a3415953951aee4d94e7cf6ccd8e007dafb",
+    "MOSA_EvoSuite/Test/Math/70/Math-70-Round1-s101-4a2b55436dba/org/apache/commons/math/analysis/solvers/BisectionSolver_ESTest_scaffolding.java": "ebaa0afa2f6f53920588c6a62cd21ff00ff091df81fed88eed8242fa643a54c1"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.analysis.solvers.BisectionSolverTest::testMath369",
+    "available_triggers": [
+      "org.apache.commons.math.analysis.solvers.BisectionSolverTest::testMath369"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 551,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test2",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test3",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test0",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 23,
+      "line_coverage_percent": 91.30434782608695,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 457,
+      "tests": [
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test2",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test3",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test0",
+        "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test1"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest::test2",
+          "exception": "java.lang.AssertionError",
+          "message": "Exception was not thrown in org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm but in org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:88): java.lang.NullPointerException",
+          "trace": "java.lang.AssertionError: Exception was not thrown in org.apache.commons.math.analysis.polynomials.PolynomialFunctionLagrangeForm but in org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:88): java.lang.NullPointerException\n\tat org.evosuite.runtime.EvoAssertions.assertThrownBy(EvoAssertions.java:111)\n\tat org.evosuite.runtime.EvoAssertions.verifyException(EvoAssertions.java:48)\n\tat org.apache.commons.math.analysis.solvers.BisectionSolver_ESTest.test2(BisectionSolver_ESTest.java:105)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 21,
+      "line_total": 23,
+      "line_coverage_percent": 91.30434782608695,
+      "branch_covered": 6,
+      "branch_total": 6,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Math/70/Math-70-Round1-s101-4a2b55436dba/evaluation-1",
+  "finished_at": "2026-10-05T04:07:03.837251+00:00"
+}

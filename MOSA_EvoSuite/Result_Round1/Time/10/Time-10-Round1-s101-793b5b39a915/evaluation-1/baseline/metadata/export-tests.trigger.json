@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-10-Round1-s101-793b5b39a915/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay\norg.joda.time.TestMonths::testFactory_monthsBetween_RPartial_MonthDay",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

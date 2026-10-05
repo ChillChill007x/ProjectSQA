@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Mockito-21-Round1-s101-2ebce3fee57e/evaluation-1/buggy/build/classes/java/main",
+    "--dest",
+    "/workspace/MOSA_EvoSuite/Result_Round1/Mockito/21/Mockito-21-Round1-s101-2ebce3fee57e/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.316,
+  "stdout": "[INFO] 375 classes instrumented to /workspace/MOSA_EvoSuite/Result_Round1/Mockito/21/Mockito-21-Round1-s101-2ebce3fee57e/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

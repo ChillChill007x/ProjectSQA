@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-3-Round1-s101-5d2828ebab4a",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "3",
+    "target": "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T23:10:17.606601+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a",
+    "tests": "MOSA_EvoSuite/Test/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a",
+    "config": "MOSA_EvoSuite/Configuration/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a"
+  },
+  "generation_time_sec": 43.23,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a/com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer_ESTest.java": "752b34fc2091f7c23ed624f2352b12e972f790597336316fd34431c36c86fe75",
+    "MOSA_EvoSuite/Test/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a/com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer_ESTest_scaffolding.java": "8fd1090bc66c8bcbee92e46005e63ec051def10e00d95b6a5df7bcc830d50fb4"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.deser.TestArrayDeserialization::testStringArray",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.deser.TestArrayDeserialization::testStringArray"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1949,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test2",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test3",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test0",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 29,
+      "line_total": 61,
+      "line_coverage_percent": 47.540983606557376,
+      "branch_covered": 10,
+      "branch_total": 36,
+      "branch_coverage_percent": 27.77777777777778
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2575,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test2",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test3",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test0",
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer_ESTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 29,
+      "line_total": 61,
+      "line_coverage_percent": 47.540983606557376,
+      "branch_covered": 10,
+      "branch_total": 36,
+      "branch_coverage_percent": 27.77777777777778
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-5d2828ebab4a/evaluation-1",
+  "finished_at": "2026-10-04T23:12:13.503740+00:00"
+}

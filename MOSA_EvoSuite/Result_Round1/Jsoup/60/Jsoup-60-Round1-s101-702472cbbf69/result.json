@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-60-Round1-s101-702472cbbf69",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "60",
+    "target": "org.jsoup.parser.TokenQueue",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:52:37.139335+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69"
+  },
+  "generation_time_sec": 40.292,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69/org/jsoup/parser/TokenQueue_ESTest.java": "d5f741c48987e0cd1c42a56afe2602bd80507418c7d6c67f1f469ace36a777ce",
+    "MOSA_EvoSuite/Test/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69/org/jsoup/parser/TokenQueue_ESTest_scaffolding.java": "10bfc62634cbbf129d74412ad9d32fc848e27e22e69694797126ed362a29a599"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains",
+    "available_triggers": [
+      "org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains",
+      "org.jsoup.select.QueryParserTest::exceptionOnUncloseAttribute"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 38,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 920,
+      "tests": [
+        "org.jsoup.parser.TokenQueue_ESTest::test04",
+        "org.jsoup.parser.TokenQueue_ESTest::test26",
+        "org.jsoup.parser.TokenQueue_ESTest::test05",
+        "org.jsoup.parser.TokenQueue_ESTest::test27",
+        "org.jsoup.parser.TokenQueue_ESTest::test02",
+        "org.jsoup.parser.TokenQueue_ESTest::test24",
+        "org.jsoup.parser.TokenQueue_ESTest::test03",
+        "org.jsoup.parser.TokenQueue_ESTest::test25",
+        "org.jsoup.parser.TokenQueue_ESTest::test00",
+        "org.jsoup.parser.TokenQueue_ESTest::test22",
+        "org.jsoup.parser.TokenQueue_ESTest::test01",
+        "org.jsoup.parser.TokenQueue_ESTest::test23",
+        "org.jsoup.parser.TokenQueue_ESTest::test20",
+        "org.jsoup.parser.TokenQueue_ESTest::test21",
+        "org.jsoup.parser.TokenQueue_ESTest::test08",
+        "org.jsoup.parser.TokenQueue_ESTest::test09",
+        "org.jsoup.parser.TokenQueue_ESTest::test06",
+        "org.jsoup.parser.TokenQueue_ESTest::test28",
+        "org.jsoup.parser.TokenQueue_ESTest::test07",
+        "org.jsoup.parser.TokenQueue_ESTest::test29",
+        "org.jsoup.parser.TokenQueue_ESTest::test15",
+        "org.jsoup.parser.TokenQueue_ESTest::test37",
+        "org.jsoup.parser.TokenQueue_ESTest::test16",
+        "org.jsoup.parser.TokenQueue_ESTest::test13",
+        "org.jsoup.parser.TokenQueue_ESTest::test35",
+        "org.jsoup.parser.TokenQueue_ESTest::test14",
+        "org.jsoup.parser.TokenQueue_ESTest::test36",
+        "org.jsoup.parser.TokenQueue_ESTest::test11",
+        "org.jsoup.parser.TokenQueue_ESTest::test33",
+        "org.jsoup.parser.TokenQueue_ESTest::test12",
+        "org.jsoup.parser.TokenQueue_ESTest::test34",
+        "org.jsoup.parser.TokenQueue_ESTest::test31",
+        "org.jsoup.parser.TokenQueue_ESTest::test10",
+        "org.jsoup.parser.TokenQueue_ESTest::test32",
+        "org.jsoup.parser.TokenQueue_ESTest::test19",
+        "org.jsoup.parser.TokenQueue_ESTest::test17",
+        "org.jsoup.parser.TokenQueue_ESTest::test18",
+        "org.jsoup.parser.TokenQueue_ESTest::test30"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 133,
+      "line_total": 138,
+      "line_coverage_percent": 96.3768115942029,
+      "branch_covered": 116,
+      "branch_total": 120,
+      "branch_coverage_percent": 96.66666666666667
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 38,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1247,
+      "tests": [
+        "org.jsoup.parser.TokenQueue_ESTest::test04",
+        "org.jsoup.parser.TokenQueue_ESTest::test26",
+        "org.jsoup.parser.TokenQueue_ESTest::test05",
+        "org.jsoup.parser.TokenQueue_ESTest::test27",
+        "org.jsoup.parser.TokenQueue_ESTest::test02",
+        "org.jsoup.parser.TokenQueue_ESTest::test24",
+        "org.jsoup.parser.TokenQueue_ESTest::test03",
+        "org.jsoup.parser.TokenQueue_ESTest::test25",
+        "org.jsoup.parser.TokenQueue_ESTest::test00",
+        "org.jsoup.parser.TokenQueue_ESTest::test22",
+        "org.jsoup.parser.TokenQueue_ESTest::test01",
+        "org.jsoup.parser.TokenQueue_ESTest::test23",
+        "org.jsoup.parser.TokenQueue_ESTest::test20",
+        "org.jsoup.parser.TokenQueue_ESTest::test21",
+        "org.jsoup.parser.TokenQueue_ESTest::test08",
+        "org.jsoup.parser.TokenQueue_ESTest::test09",
+        "org.jsoup.parser.TokenQueue_ESTest::test06",
+        "org.jsoup.parser.TokenQueue_ESTest::test28",
+        "org.jsoup.parser.TokenQueue_ESTest::test07",
+        "org.jsoup.parser.TokenQueue_ESTest::test29",
+        "org.jsoup.parser.TokenQueue_ESTest::test15",
+        "org.jsoup.parser.TokenQueue_ESTest::test37",
+        "org.jsoup.parser.TokenQueue_ESTest::test16",
+        "org.jsoup.parser.TokenQueue_ESTest::test13",
+        "org.jsoup.parser.TokenQueue_ESTest::test35",
+        "org.jsoup.parser.TokenQueue_ESTest::test14",
+        "org.jsoup.parser.TokenQueue_ESTest::test36",
+        "org.jsoup.parser.TokenQueue_ESTest::test11",
+        "org.jsoup.parser.TokenQueue_ESTest::test33",
+        "org.jsoup.parser.TokenQueue_ESTest::test12",
+        "org.jsoup.parser.TokenQueue_ESTest::test34",
+        "org.jsoup.parser.TokenQueue_ESTest::test31",
+        "org.jsoup.parser.TokenQueue_ESTest::test10",
+        "org.jsoup.parser.TokenQueue_ESTest::test32",
+        "org.jsoup.parser.TokenQueue_ESTest::test19",
+        "org.jsoup.parser.TokenQueue_ESTest::test17",
+        "org.jsoup.parser.TokenQueue_ESTest::test18",
+        "org.jsoup.parser.TokenQueue_ESTest::test30"
+      ],
+      "failures": [
+        {
+          "test": "org.jsoup.parser.TokenQueue_ESTest::test13",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: IllegalArgumentException",
+          "trace": "java.lang.AssertionError: Expecting exception: IllegalArgumentException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.parser.TokenQueue_ESTest.test13(TokenQueue_ESTest.java:281)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.TokenQueue_ESTest::test11",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: IllegalArgumentException",
+          "trace": "java.lang.AssertionError: Expecting exception: IllegalArgumentException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.parser.TokenQueue_ESTest.test11(TokenQueue_ESTest.java:229)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.TokenQueue_ESTest::test12",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: IllegalArgumentException",
+          "trace": "java.lang.AssertionError: Expecting exception: IllegalArgumentException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.parser.TokenQueue_ESTest.test12(TokenQueue_ESTest.java:252)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.jsoup.parser.TokenQueue_ESTest::test10",
+          "exception": "java.lang.AssertionError",
+          "message": "Expecting exception: IllegalArgumentException",
+          "trace": "java.lang.AssertionError: Expecting exception: IllegalArgumentException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.jsoup.parser.TokenQueue_ESTest.test10(TokenQueue_ESTest.java:206)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 132,
+      "line_total": 136,
+      "line_coverage_percent": 97.05882352941177,
+      "branch_covered": 114,
+      "branch_total": 118,
+      "branch_coverage_percent": 96.61016949152543
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-702472cbbf69/evaluation-1",
+  "finished_at": "2026-10-05T01:54:08.377022+00:00"
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-43-Round1-s101-2bb90425afd0",
+  "unit": {
+    "project": "Lang",
+    "bug": "43",
+    "target": "org.apache.commons.lang.text.ExtendedMessageFormat",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:45:32.405402+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Lang/43/Lang-43-Round1-s101-2bb90425afd0",
+    "tests": "MOSA_EvoSuite/Test/Lang/43/Lang-43-Round1-s101-2bb90425afd0",
+    "config": "MOSA_EvoSuite/Configuration/Lang/43/Lang-43-Round1-s101-2bb90425afd0"
+  },
+  "generation_time_sec": 37.925,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Lang/43/Lang-43-Round1-s101-2bb90425afd0/org/apache/commons/lang/text/ExtendedMessageFormat_ESTest.java": "85c1779c7940b75f381f3f160a1bfcfa1e061efc7763f5b95fa6e5ae980114c4",
+    "MOSA_EvoSuite/Test/Lang/43/Lang-43-Round1-s101-2bb90425afd0/org/apache/commons/lang/text/ExtendedMessageFormat_ESTest_scaffolding.java": "85ea9b9e6509c805d2be557c8c653b954aad5d017b11715705c1e541d9233e87"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477",
+    "available_triggers": [
+      "org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 9,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 709,
+      "tests": [
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test1",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test0",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test8",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test7",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test6",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test5",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test4",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test3",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 70,
+      "line_total": 167,
+      "line_coverage_percent": 41.91616766467066,
+      "branch_covered": 31,
+      "branch_total": 99,
+      "branch_coverage_percent": 31.31313131313131
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 9,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 662,
+      "tests": [
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test1",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test0",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test8",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test7",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test6",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test5",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test4",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test3",
+        "org.apache.commons.lang.text.ExtendedMessageFormat_ESTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 68,
+      "line_total": 166,
+      "line_coverage_percent": 40.963855421686745,
+      "branch_covered": 31,
+      "branch_total": 99,
+      "branch_coverage_percent": 31.31313131313131
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Lang/43/Lang-43-Round1-s101-2bb90425afd0/evaluation-1",
+  "finished_at": "2026-10-05T02:47:18.931912+00:00"
+}

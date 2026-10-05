@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Time-15-Round1-s101-f07ba219a8c7/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.618,
+  "stdout": "org.joda.time.field.TestFieldUtils::testSafeMultiplyLongInt",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,16 @@
+{
+  "project": "Closure",
+  "bug": "166",
+  "target": "com.google.javascript.rhino.jstype.PrototypeObjectType",
+  "tool": "evosuite",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 30,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null,
+  "campaign": "round1-full854-30s-s101-v1"
+}

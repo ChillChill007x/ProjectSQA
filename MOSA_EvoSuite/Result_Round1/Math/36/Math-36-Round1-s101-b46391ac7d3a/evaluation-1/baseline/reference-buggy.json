@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Math-36-Round1-s101-b46391ac7d3a/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.fraction.BigFractionTest::testFloatValueForLargeNumeratorAndDenominator"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.816,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.fraction.BigFractionTest::testFloatValueForLargeNumeratorAndDenominator\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

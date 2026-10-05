@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.compress.utils.ChecksumCalculatingInputStream",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Compress-44-Round1-s101-a96fb0d52990/generation-fixed/target/classes:/opt/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar:/opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Compress/44/Compress-44-Round1-s101-a96fb0d52990",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Compress/44/Compress-44-Round1-s101-a96fb0d52990/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 10.988,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.compress.utils.ChecksumCalculatingInputStream\n* Starting Client-0\n* Connecting to master process on port 19619\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83568/checkouts/Compress-44-Round1-s101-a96fb0d52990/generation-fixed/target/classes\n  - /opt/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar\n  - /opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.compress.utils.ChecksumCalculatingInputStream\n* Test criterion:\n  - Branch Coverage\n* Total number of test goals for MOSA: 12\n\r[Progress:>                             0%] [Cov:>                                  0%]* Using seed 101\n* Starting evolution\n\r[Progress:====>                         16%] [Cov:=============================>     83%]\r[Progress:======>                       20%] [Cov:===================================100%]\n* Search finished after 6s and 1 generations, 1140 statements, best individual has fitness: 0.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 100%\n* Total number of goals: 12\n* Number of covered goals: 12\n* Generated 5 tests with total length 24\n* Resulting test suite's coverage: 100%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'ChecksumCalculatingInputStream_ESTest' to /workspace/MOSA_EvoSuite/Test/Compress/44/Compress-44-Round1-s101-a96fb0d52990\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

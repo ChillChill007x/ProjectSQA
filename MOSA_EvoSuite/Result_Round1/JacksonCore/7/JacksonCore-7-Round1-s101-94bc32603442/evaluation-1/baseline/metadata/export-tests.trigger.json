@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-7-Round1-s101-94bc32603442/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes\ncom.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Chart",
+    "-v",
+    "26b",
+    "-w",
+    "/workspace/work/checkouts/Chart-26-Round1-s101-d33e3835375b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.578,
+  "stdout": "",
+  "stderr": "Checking out 103 to /workspace/work/checkouts/Chart-26-Round1-s101-d33e3835 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 103:102............................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Chart-26b....................................... OK\n"
+}

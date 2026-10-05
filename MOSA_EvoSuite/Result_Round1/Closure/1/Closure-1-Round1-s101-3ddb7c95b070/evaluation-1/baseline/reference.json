@@ -1,0 +1,15 @@
+{
+  "trigger": "com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1",
+    "com.google.javascript.jscomp.IntegrationTest::testIssue787",
+    "com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1",
+    "com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2",
+    "com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal3",
+    "com.google.javascript.jscomp.RemoveUnusedVarsTest::testIssue168b"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

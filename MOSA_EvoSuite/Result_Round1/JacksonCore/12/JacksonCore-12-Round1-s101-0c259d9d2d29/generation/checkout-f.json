@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonCore",
+    "-v",
+    "12f",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-12-Round1-s101-0c259d9d2d29/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.118,
+  "stdout": "",
+  "stderr": "Checking out fede6c9d to /workspace/work/checkouts/JacksonCore-12-Round1-s1 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nBacking up build file: /workspace/work/checkouts/JacksonCore-12-Round1-s101 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff fede6c9d:8d200d4a..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JacksonCore-12f................................. OK\n"
+}

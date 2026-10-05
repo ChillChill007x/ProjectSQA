@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "com.fasterxml.jackson.core.json.UTF8StreamJsonParser",
+    "-projectCP",
+    "/workspace/work/checkouts/JacksonCore-19-Round1-s101-2c7cd0a05eda/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 40.413,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: com.fasterxml.jackson.core.json.UTF8StreamJsonParser\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/checkouts/JacksonCore-19-Round1-s101-2c7cd0a05eda/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class com.fasterxml.jackson.core.json.UTF8StreamJsonParser\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 1456\n* Using seed 101\n* Starting evolution\n\r[Progress:====>                         16%] [Cov:=>                                 3%]\r[Progress:=====================>        70%] [Cov:==>                                8%]\r[Progress:==============================100%] [Cov:===>                               9%]\n* Search finished after 31s and 2 generations, 2245 statements, best individual has fitness: 1315.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 10%\n* Total number of goals: 1456\n* Number of covered goals: 143\n* Generated 26 tests with total length 205\n* Resulting test suite's coverage: 10%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'UTF8StreamJsonParser_ESTest' to /workspace/MOSA_EvoSuite/Test/JacksonCore/19/JacksonCore-19-Round1-s101-2c7cd0a05eda\n* Done!\n\n* Computation finished\n",
+  "stderr": ""
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/opt/java8/bin/java",
+    "-jar",
+    "/opt/sqa/lib/evosuite-1.2.0.jar",
+    "-generateMOSuite",
+    "-Dalgorithm=MOSA",
+    "-criterion",
+    "BRANCH",
+    "-class",
+    "org.apache.commons.math.fraction.BigFraction",
+    "-projectCP",
+    "/workspace/work/parallel/evosuite/83568/checkouts/Math-36-Round1-s101-b46391ac7d3a/generation-fixed/target/classes",
+    "-seed",
+    "101",
+    "-Dsearch_budget=30",
+    "-Dtest_dir=/workspace/MOSA_EvoSuite/Test/Math/36/Math-36-Round1-s101-b46391ac7d3a",
+    "-Dreport_dir=/workspace/MOSA_EvoSuite/Result_Round1/Math/36/Math-36-Round1-s101-b46391ac7d3a/generation/evosuite-report",
+    "-Dassertion_strategy=ALL",
+    "-Djunit_check=true"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 52.62,
+  "stdout": "* EvoSuite 1.2.0\n* Going to generate test cases for class: org.apache.commons.math.fraction.BigFraction\n* Starting Client-0\n* Connecting to master process on port 19615\n* Analyzing classpath: \n  - /workspace/work/parallel/evosuite/83568/checkouts/Math-36-Round1-s101-b46391ac7d3a/generation-fixed/target/classes\n* Finished analyzing classpath\n* Generating tests for class org.apache.commons.math.fraction.BigFraction\n* Test criterion:\n  - Branch Coverage\n\r[Progress:>                             0%] [Cov:>                                  0%]* Total number of test goals for MOSA: 131\n* Using seed 101\n* Starting evolution\n\r[Progress:==========>                   36%] [Cov:===========================>       79%]\r[Progress:============>                 40%] [Cov:=============================>     83%]\r[Progress:================>             56%] [Cov:==============================>    87%]\r[Progress:===========================>  93%] [Cov:==============================>    88%]\r[Progress:==============================100%] [Cov:===============================>   90%]\n* Search finished after 32s and 4 generations, 2415 statements, best individual has fitness: 12.0\n* Minimizing test suite\n* Going to analyze the coverage criteria\n* Coverage analysis for criterion BRANCH\n* Coverage of criterion BRANCH: 91%\n* Total number of goals: 131\n* Number of covered goals: 119\n* Generated 55 tests with total length 125\n* Resulting test suite's coverage: 91%\n* Generating assertions\n* Compiling and checking tests\n* Writing tests to file\n* Writing JUnit test case 'BigFraction_ESTest' to /workspace/MOSA_EvoSuite/Test/Math/36/Math-36-Round1-s101-b46391ac7d3a\n* Done!\n\n* Computation finished\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

@@ -1,0 +1,2 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.apache.commons.compress.compressors.CompressorStreamFactory,BRANCH,0.8,65,52

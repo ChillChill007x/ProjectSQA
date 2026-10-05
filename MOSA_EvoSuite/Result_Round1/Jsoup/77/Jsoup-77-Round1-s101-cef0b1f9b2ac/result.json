@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-77-Round1-s101-cef0b1f9b2ac",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "77",
+    "target": "org.jsoup.parser.XmlTreeBuilder",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T02:06:07.675442+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac",
+    "tests": "MOSA_EvoSuite/Test/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac",
+    "config": "MOSA_EvoSuite/Configuration/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac"
+  },
+  "generation_time_sec": 41.729,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac/org/jsoup/parser/XmlTreeBuilder_ESTest.java": "a70904c40df26869d94dc2b426a5bb4bb27560e84550c9b19f5fe13d8eed87e0",
+    "MOSA_EvoSuite/Test/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac/org/jsoup/parser/XmlTreeBuilder_ESTest_scaffolding.java": "c726f34438441bb4ef0b4b48782d848d2bc7e3e107691723598ed613cf98ab54"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.XmlTreeBuilderTest::normalizesDiscordantTags",
+    "available_triggers": [
+      "org.jsoup.parser.XmlTreeBuilderTest::normalizesDiscordantTags"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 11,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1222,
+      "tests": [
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test09",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test08",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test07",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test06",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test05",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test04",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test03",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test02",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test01",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test00",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 68,
+      "line_coverage_percent": 73.52941176470588,
+      "branch_covered": 19,
+      "branch_total": 31,
+      "branch_coverage_percent": 61.29032258064516
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 11,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 1137,
+      "tests": [
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test09",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test08",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test07",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test06",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test05",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test04",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test03",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test02",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test01",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test00",
+        "org.jsoup.parser.XmlTreeBuilder_ESTest::test10"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 50,
+      "line_total": 68,
+      "line_coverage_percent": 73.52941176470588,
+      "branch_covered": 19,
+      "branch_total": 31,
+      "branch_coverage_percent": 61.29032258064516
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Jsoup/77/Jsoup-77-Round1-s101-cef0b1f9b2ac/evaluation-1",
+  "finished_at": "2026-10-05T02:07:36.239981+00:00"
+}

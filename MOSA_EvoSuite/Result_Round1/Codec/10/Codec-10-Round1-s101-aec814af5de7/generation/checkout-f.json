@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Codec",
+    "-v",
+    "10f",
+    "-w",
+    "/workspace/work/checkouts/Codec-10-Round1-s101-aec814af5de7/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.365,
+  "stdout": "",
+  "stderr": "Checking out 41c68e9e to /workspace/work/checkouts/Codec-10-Round1-s101-aec OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 41c68e9e:2a8fd84f..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Codec-10f....................................... OK\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonXml",
+    "-v",
+    "3b",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-3-Round1-s101-8664eec287f4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.867,
+  "stdout": "",
+  "stderr": "Checking out 79a4b57f to /workspace/work/checkouts/JacksonXml-3-Round1-s101 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nBacking up build file: /workspace/work/checkouts/JacksonXml-3-Round1-s101-8 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 79a4b57f:23ab583c..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JacksonXml-3b................................... OK\n"
+}

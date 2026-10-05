@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "run_id": "Csv-6-Round1-s101-89744fc7aea8",
+  "unit": {
+    "project": "Csv",
+    "bug": "6",
+    "target": "org.apache.commons.csv.CSVRecord",
+    "tool": "evosuite",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "3daf9d8187ea05305e0ffea92c0fef6bebd4d9df0cafb25cc960f60859be4fe0",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1"
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T22:04:23.446402+00:00",
+  "paths": {
+    "result": "MOSA_EvoSuite/Result_Round1/Csv/6/Csv-6-Round1-s101-89744fc7aea8",
+    "tests": "MOSA_EvoSuite/Test/Csv/6/Csv-6-Round1-s101-89744fc7aea8",
+    "config": "MOSA_EvoSuite/Configuration/Csv/6/Csv-6-Round1-s101-89744fc7aea8"
+  },
+  "generation_time_sec": 34.88,
+  "test_sha256": {
+    "MOSA_EvoSuite/Test/Csv/6/Csv-6-Round1-s101-89744fc7aea8/org/apache/commons/csv/CSVRecord_ESTest.java": "6668dca01435d60811dd9ac759758d35963a5a58a44afedeaec1c6d0199695fe",
+    "MOSA_EvoSuite/Test/Csv/6/Csv-6-Round1-s101-89744fc7aea8/org/apache/commons/csv/CSVRecord_ESTest_scaffolding.java": "1f9ddea86496fc9329728c62747208b6faf00d607f888574d1b000f46ca9bb6f"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord",
+    "available_triggers": [
+      "org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 19,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 282,
+      "tests": [
+        "org.apache.commons.csv.CSVRecord_ESTest::test07",
+        "org.apache.commons.csv.CSVRecord_ESTest::test18",
+        "org.apache.commons.csv.CSVRecord_ESTest::test06",
+        "org.apache.commons.csv.CSVRecord_ESTest::test17",
+        "org.apache.commons.csv.CSVRecord_ESTest::test09",
+        "org.apache.commons.csv.CSVRecord_ESTest::test08",
+        "org.apache.commons.csv.CSVRecord_ESTest::test03",
+        "org.apache.commons.csv.CSVRecord_ESTest::test14",
+        "org.apache.commons.csv.CSVRecord_ESTest::test02",
+        "org.apache.commons.csv.CSVRecord_ESTest::test13",
+        "org.apache.commons.csv.CSVRecord_ESTest::test05",
+        "org.apache.commons.csv.CSVRecord_ESTest::test16",
+        "org.apache.commons.csv.CSVRecord_ESTest::test04",
+        "org.apache.commons.csv.CSVRecord_ESTest::test15",
+        "org.apache.commons.csv.CSVRecord_ESTest::test10",
+        "org.apache.commons.csv.CSVRecord_ESTest::test01",
+        "org.apache.commons.csv.CSVRecord_ESTest::test12",
+        "org.apache.commons.csv.CSVRecord_ESTest::test00",
+        "org.apache.commons.csv.CSVRecord_ESTest::test11"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 32,
+      "line_total": 36,
+      "line_coverage_percent": 88.88888888888889,
+      "branch_covered": 20,
+      "branch_total": 20,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 19,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 289,
+      "tests": [
+        "org.apache.commons.csv.CSVRecord_ESTest::test07",
+        "org.apache.commons.csv.CSVRecord_ESTest::test18",
+        "org.apache.commons.csv.CSVRecord_ESTest::test06",
+        "org.apache.commons.csv.CSVRecord_ESTest::test17",
+        "org.apache.commons.csv.CSVRecord_ESTest::test09",
+        "org.apache.commons.csv.CSVRecord_ESTest::test08",
+        "org.apache.commons.csv.CSVRecord_ESTest::test03",
+        "org.apache.commons.csv.CSVRecord_ESTest::test14",
+        "org.apache.commons.csv.CSVRecord_ESTest::test02",
+        "org.apache.commons.csv.CSVRecord_ESTest::test13",
+        "org.apache.commons.csv.CSVRecord_ESTest::test05",
+        "org.apache.commons.csv.CSVRecord_ESTest::test16",
+        "org.apache.commons.csv.CSVRecord_ESTest::test04",
+        "org.apache.commons.csv.CSVRecord_ESTest::test15",
+        "org.apache.commons.csv.CSVRecord_ESTest::test10",
+        "org.apache.commons.csv.CSVRecord_ESTest::test01",
+        "org.apache.commons.csv.CSVRecord_ESTest::test12",
+        "org.apache.commons.csv.CSVRecord_ESTest::test00",
+        "org.apache.commons.csv.CSVRecord_ESTest::test11"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.csv.CSVRecord_ESTest::test01",
+          "exception": "java.lang.ArrayIndexOutOfBoundsException",
+          "message": "Index 662 out of bounds for length 0",
+          "trace": "java.lang.ArrayIndexOutOfBoundsException: Index 662 out of bounds for length 0\n\tat org.apache.commons.csv.CSVRecord.putIn(CSVRecord.java:182)\n\tat org.apache.commons.csv.CSVRecord.toMap(CSVRecord.java:212)\n\tat org.apache.commons.csv.CSVRecord_ESTest.test01(CSVRecord_ESTest.java:87)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 28,
+      "line_total": 35,
+      "line_coverage_percent": 80.0,
+      "branch_covered": 17,
+      "branch_total": 18,
+      "branch_coverage_percent": 94.44444444444444
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "MOSA_EvoSuite/Result_Round1/Csv/6/Csv-6-Round1-s101-89744fc7aea8/evaluation-1",
+  "finished_at": "2026-10-04T22:05:20.233954+00:00"
+}
