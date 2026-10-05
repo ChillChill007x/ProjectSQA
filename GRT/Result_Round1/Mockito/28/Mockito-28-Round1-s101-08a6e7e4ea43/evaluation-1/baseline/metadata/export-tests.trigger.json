@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-28-Round1-s101-08a6e7e4ea43/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.777,
+  "stdout": "org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest::mock_should_be_injected_once_and_in_the_best_matching_type",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.108066+00:00",
+  "run_id": "JacksonDatabind-55-Round1-s101-1da2ab9cf169",
+  "project": "JacksonDatabind",
+  "bug": "55",
+  "target": "com.fasterxml.jackson.databind.ser.std.StdKeySerializers",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Enum fallback key serializer is given a partially null SerializationConfig and expects NPE only on fixed; patch changes enum serializer construction. Invalid configuration may cause an incidental patch difference.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 46,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test12",
+    "test13",
+    "test15"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-1da2ab9cf169/com/fasterxml/jackson/databind/ser/std/SqaGeneratedTest.java": "3f1869ab2c0b0481de9be21c8a7ff566069245d43c543c5421aab1ba4cea1877"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonDatabind\\55\\JacksonDatabind-55-Round1-s101-1da2ab9cf169\\result.json",
+  "tests_path": "GRT/Test/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-1da2ab9cf169",
+  "evaluation_path": "GRT/Result_Round1/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-1da2ab9cf169/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonDatabind/patches/55.src.patch",
+  "patch_sha256": "ef62cf32d388796e9d84aa2ecac7f0440bc60ffce2821d7148ee8385eac8c3c8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

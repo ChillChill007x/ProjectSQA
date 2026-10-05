@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "82f",
+    "-w",
+    "/workspace/work/checkouts/Closure-82-Round1-s101-c66fab2e54d6/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.32,
+  "stdout": "",
+  "stderr": "Checking out a857aec2 to /workspace/work/checkouts/Closure-82-Round1-s101-c OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: can't read /workspace/work/checkouts/Closure-82-Round1-s101-c66fab2e54d6/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-82-Round1-s101-c66fab2e54d6/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-82-Round1-s101-c66fab2e54d6/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-82-Round1-s101-c66fab2e54d6/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff a857aec2:1a7fbd18..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-82f..................................... OK\n"
+}

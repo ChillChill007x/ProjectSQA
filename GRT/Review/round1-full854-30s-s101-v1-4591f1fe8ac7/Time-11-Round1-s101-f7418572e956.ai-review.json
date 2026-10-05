@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.940677+00:00",
+  "run_id": "Time-11-Round1-s101-f7418572e956",
+  "project": "Time",
+  "bug": "11",
+  "target": "org.joda.time.tz.ZoneInfoCompiler",
+  "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "ZoneInfoCompiler.verbose throws NPE on a JUnit worker thread. The patch replaces a one-thread static set with ThreadLocal.initialValue=false; this directly explains why a fresh test thread must get false rather than null.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test8"
+  ],
+  "test_sha256": {
+    "GRT/Test/Time/11/Time-11-Round1-s101-f7418572e956/org/joda/time/tz/SqaGeneratedTest.java": "47a64539016a116f529db4fa9243cbdef5240487a6b16691f1307537c140c451"
+  },
+  "result_sha256": "4747f72a91542dbce46972b3d279e832629266eda91276f08d59601104cf6567",
+  "result_path": "GRT/Result_Round1/Time/11/Time-11-Round1-s101-f7418572e956/result.json",
+  "tests_path": "GRT/Test/Time/11/Time-11-Round1-s101-f7418572e956",
+  "evaluation_path": "GRT/Result_Round1/Time/11/Time-11-Round1-s101-f7418572e956/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Time/patches/11.src.patch",
+  "patch_sha256": "33bb567e2427f5afe5cdeb841373b05f57440608516c9ff69cced67243846272",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

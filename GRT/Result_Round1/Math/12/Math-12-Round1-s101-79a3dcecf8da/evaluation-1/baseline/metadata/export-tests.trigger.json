@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-12-Round1-s101-79a3dcecf8da/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.25,
+  "stdout": "org.apache.commons.math3.distribution.GammaDistributionTest::testDistributionClone\norg.apache.commons.math3.distribution.LogNormalDistributionTest::testDistributionClone\norg.apache.commons.math3.distribution.NormalDistributionTest::testDistributionClone",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

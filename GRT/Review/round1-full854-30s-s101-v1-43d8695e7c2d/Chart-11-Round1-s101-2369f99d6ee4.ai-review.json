@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.855655+00:00",
+  "run_id": "Chart-11-Round1-s101-2369f99d6ee4",
+  "project": "Chart",
+  "bug": "11",
+  "target": "org.jfree.chart.util.ShapeUtilities",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Shape equality compares a triangle with an empty GeneralPath; patch corrects the second iterator from p1 to p2.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 7,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test42",
+    "test45",
+    "test51"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/11/Chart-11-Round1-s101-2369f99d6ee4/org/jfree/chart/util/SqaGeneratedTest.java": "0ff72587ca678fb416ba394a3dc9eb92e5fb5fd25fab319d9c2b8b29d610f82b"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\11\\Chart-11-Round1-s101-2369f99d6ee4\\result.json",
+  "tests_path": "GRT/Test/Chart/11/Chart-11-Round1-s101-2369f99d6ee4",
+  "evaluation_path": "GRT/Result_Round1/Chart/11/Chart-11-Round1-s101-2369f99d6ee4/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/11.src.patch",
+  "patch_sha256": "a5fe8c154c0c2ea231aa04cba3e75327dd4165ee6243973d6779b2429d8cc4b6",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

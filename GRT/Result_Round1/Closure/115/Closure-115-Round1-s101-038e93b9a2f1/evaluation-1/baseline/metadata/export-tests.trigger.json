@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-115-Round1-s101-038e93b9a2f1/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818\ncom.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1\ncom.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8\ncom.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9\ncom.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

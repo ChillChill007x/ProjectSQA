@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.983005+00:00",
+  "run_id": "Codec-12-Round1-s101-f1424d8b6ed5",
+  "project": "Codec",
+  "bug": "12",
+  "target": "org.apache.commons.codec.binary.BaseNCodecInputStream",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "BaseNCodecInputStream.available() differs at end-of-input; patch adds available/skip implementations. Check all failure causes separately from this representative.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 6,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test13",
+    "test25",
+    "test34"
+  ],
+  "test_sha256": {
+    "GRT/Test/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/org/apache/commons/codec/binary/SqaGeneratedTest.java": "7c0ebbbad64b6f8a71b8f0564bce7a7831da3738856977e7f8ecba876c49f3ff"
+  },
+  "result_path": "GRT\\Result_Round1\\Codec\\12\\Codec-12-Round1-s101-f1424d8b6ed5\\result.json",
+  "tests_path": "GRT/Test/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5",
+  "evaluation_path": "GRT/Result_Round1/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Codec/patches/12.src.patch",
+  "patch_sha256": "36b5f9259e5f8472132df352ae218aed17017da35fb9c5fe51dbd8a589e837e7",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

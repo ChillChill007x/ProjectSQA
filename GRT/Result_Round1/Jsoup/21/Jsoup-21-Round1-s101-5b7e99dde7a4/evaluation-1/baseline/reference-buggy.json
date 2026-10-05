@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-21-Round1-s101-5b7e99dde7a4/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.select.SelectorTest::handlesCommasInSelector"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.296,
+  "stdout": "Failing tests: 1\n  - org.jsoup.select.SelectorTest::handlesCommasInSelector\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

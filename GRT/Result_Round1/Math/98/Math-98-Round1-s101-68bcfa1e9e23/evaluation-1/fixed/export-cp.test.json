@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.128,
+  "stdout": "/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/target/test-classes:/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/target/classes:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-20-Round1-s101-2d56c6d9b68c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.285,
+  "stdout": "org.mockitousage.annotation.SpyAnnotationTest::should_spy_inner_class\norg.mockitousage.annotation.SpyAnnotationTest::should_report_when_constructor_is_explosive\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::can_spy_abstract_classes\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::exception_message_when_constructor_not_found\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::can_create_mock_with_constructor\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::can_mock_inner_classes\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::mocking_inner_classes_with_wrong_outer_instance\norg.mockitousage.constructor.CreatingMocksWithConstructorTest::can_mock_abstract_classes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

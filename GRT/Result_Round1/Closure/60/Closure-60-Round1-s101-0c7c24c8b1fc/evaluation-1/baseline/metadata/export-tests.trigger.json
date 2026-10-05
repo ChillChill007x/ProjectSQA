@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-60-Round1-s101-0c7c24c8b1fc/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.626,
+  "stdout": "com.google.javascript.jscomp.CommandLineRunnerTest::testIssue504\ncom.google.javascript.jscomp.NodeUtilTest::testGetBooleanValue",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

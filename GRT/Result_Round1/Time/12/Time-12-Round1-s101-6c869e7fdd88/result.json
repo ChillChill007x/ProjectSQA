@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-12-Round1-s101-6c869e7fdd88",
+  "unit": {
+    "project": "Time",
+    "bug": "12",
+    "target": "org.joda.time.LocalDateTime",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T12:18:14.593490+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Time/12/Time-12-Round1-s101-6c869e7fdd88",
+    "tests": "GRT/Test/Time/12/Time-12-Round1-s101-6c869e7fdd88",
+    "config": "GRT/Configuration/Time/12/Time-12-Round1-s101-6c869e7fdd88"
+  },
+  "generation_time_sec": 2.221,
+  "test_sha256": {
+    "GRT/Test/Time/12/Time-12-Round1-s101-6c869e7fdd88/org/joda/time/SqaGeneratedTest.java": "21a25bb1df0058573c1efe1d4c02e807ca9d1c30e66f0a8f2b8ea9fd45d19a3c"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero1",
+    "available_triggers": [
+      "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero1",
+      "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromDateFields_beforeYearZero3",
+      "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero1",
+      "org.joda.time.TestLocalDateTime_Constructors::testFactory_fromCalendarFields_beforeYearZero3",
+      "org.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero1",
+      "org.joda.time.TestLocalDate_Constructors::testFactory_fromDateFields_beforeYearZero3",
+      "org.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero1",
+      "org.joda.time.TestLocalDate_Constructors::testFactory_fromCalendarFields_beforeYearZero3"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T12:20:10.742956+00:00"
+}

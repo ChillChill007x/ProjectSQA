@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.005,
+  "stdout": "org.apache.commons.math.linear.BigMatrixImplTest::testMath209\norg.apache.commons.math.linear.RealMatrixImplTest::testMath209",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

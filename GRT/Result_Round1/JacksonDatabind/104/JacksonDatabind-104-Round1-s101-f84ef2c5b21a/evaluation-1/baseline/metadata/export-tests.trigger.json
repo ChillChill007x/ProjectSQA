@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-104-Round1-s101-f84ef2c5b21a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k\ncom.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_BCE",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

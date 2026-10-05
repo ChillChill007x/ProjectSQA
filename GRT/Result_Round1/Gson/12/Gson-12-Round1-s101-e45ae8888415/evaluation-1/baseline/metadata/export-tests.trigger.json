@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-12-Round1-s101-e45ae8888415/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_filledJsonObject\ncom.google.gson.internal.bind.JsonTreeReaderTest::testSkipValue_emptyJsonObject",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

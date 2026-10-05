@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Chart-11-Round1-s101-2369f99d6ee4/evaluation-1/fixed/build",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Chart/11/Chart-11-Round1-s101-2369f99d6ee4/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.129,
+  "stdout": "[INFO] 608 classes instrumented to /workspace/GRT/Result_Round1/Chart/11/Chart-11-Round1-s101-2369f99d6ee4/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

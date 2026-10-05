@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.865031+00:00",
+  "run_id": "Lang-23-Round1-s101-566df58da5bb",
+  "project": "Lang",
+  "bug": "23",
+  "target": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The representative checks a literal ExtendedMessageFormat.hashCode value. The patch adds equals/hashCode overrides, but a different hash integer alone does not establish a broken equality/hash contract. Review equality-based assertions before counting.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test4"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/23/Lang-23-Round1-s101-566df58da5bb/org/apache/commons/lang3/text/SqaGeneratedTest.java": "91f9b4df7e8233c0487bcd7d97e6dab657a27315a899b94b42def80a8f252e63"
+  },
+  "result_sha256": "3306799094526ee5c80a0d839a7a97434d62da1d832445da858aed1bb3dc113d",
+  "result_path": "GRT/Result_Round1/Lang/23/Lang-23-Round1-s101-566df58da5bb/result.json",
+  "tests_path": "GRT/Test/Lang/23/Lang-23-Round1-s101-566df58da5bb",
+  "evaluation_path": "GRT/Result_Round1/Lang/23/Lang-23-Round1-s101-566df58da5bb/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/23.src.patch",
+  "patch_sha256": "020866f6eb350867e89def3f0d28fc2a3d4abaeae1e6dbb0604f6a729f2d980c",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

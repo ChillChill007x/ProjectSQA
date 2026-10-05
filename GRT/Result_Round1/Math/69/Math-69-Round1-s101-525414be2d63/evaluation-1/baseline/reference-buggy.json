@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-69-Round1-s101-525414be2d63/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.723,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

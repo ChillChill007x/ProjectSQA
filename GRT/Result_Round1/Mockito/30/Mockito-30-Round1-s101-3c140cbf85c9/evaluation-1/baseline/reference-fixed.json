@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-30-Round1-s101-3c140cbf85c9/evaluation-1/fixed",
+    "-t",
+    "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 15.926,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

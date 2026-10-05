@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Gson-3-Round1-s101-4d4b99549308/evaluation-1/fixed",
+    "-t",
+    "com.google.gson.functional.MapTest::testConcurrentMap"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.816,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

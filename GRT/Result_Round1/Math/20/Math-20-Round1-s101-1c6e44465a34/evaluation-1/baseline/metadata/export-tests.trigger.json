@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-20-Round1-s101-1c6e44465a34/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.559,
+  "stdout": "org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

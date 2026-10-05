@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Codec-3-Round1-s101-e6bb364c5071/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.codec.language.DoubleMetaphone2Test::testDoubleMetaphoneAlternate"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.765,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.codec.language.DoubleMetaphone2Test::testDoubleMetaphoneAlternate\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

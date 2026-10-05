@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "11f",
+    "-w",
+    "/workspace/work/checkouts/Lang-11-Round1-s101-5ba9d5651d4f/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.71,
+  "stdout": "",
+  "stderr": "Checking out 4a65cb8d to /workspace/work/checkouts/Lang-11-Round1-s101-5ba9 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Lang-11-Round1-s101-5ba9d5 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 4a65cb8d:27bcbcc7..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Lang-11f........................................ OK\n"
+}

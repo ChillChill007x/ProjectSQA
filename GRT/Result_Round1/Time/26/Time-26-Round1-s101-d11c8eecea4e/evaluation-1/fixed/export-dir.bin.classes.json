@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Time-26-Round1-s101-d11c8eecea4e/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.869,
+  "stdout": "build/classes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.dir.bin.classes)....................................... OK\n\n"
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.015392+00:00",
+  "run_id": "Compress-14-Round1-s101-1eefa8a84461",
+  "project": "Compress",
+  "bug": "14",
+  "target": "org.apache.commons.compress.archivers.tar.TarUtils",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "parseOctalOrBinary receives a range beyond a two-byte buffer; patch changes scanning behavior. Difference on out-of-bounds input is not sufficient for valid-input defect confirmation.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 3,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test27",
+    "test75",
+    "test96"
+  ],
+  "test_sha256": {
+    "GRT/Test/Compress/14/Compress-14-Round1-s101-1eefa8a84461/org/apache/commons/compress/archivers/tar/SqaGeneratedTest.java": "073d18806d17035de00e5163c271bef407cf5edb362d8f7bee3be719df5a83d2"
+  },
+  "result_path": "GRT\\Result_Round1\\Compress\\14\\Compress-14-Round1-s101-1eefa8a84461\\result.json",
+  "tests_path": "GRT/Test/Compress/14/Compress-14-Round1-s101-1eefa8a84461",
+  "evaluation_path": "GRT/Result_Round1/Compress/14/Compress-14-Round1-s101-1eefa8a84461/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Compress/patches/14.src.patch",
+  "patch_sha256": "663d06ec8f7c21b3086917c9ee516cfff2d323c1fd27961ce84cb8e733e295be",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

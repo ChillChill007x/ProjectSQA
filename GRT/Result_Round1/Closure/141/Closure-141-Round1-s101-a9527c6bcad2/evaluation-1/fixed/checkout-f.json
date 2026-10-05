@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "141f",
+    "-w",
+    "/workspace/work/checkouts/Closure-141-Round1-s101-a9527c6bcad2/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.27,
+  "stdout": "",
+  "stderr": "Checking out 3ce47168 to /workspace/work/checkouts/Closure-141-Round1-s101- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: can't read /workspace/work/checkouts/Closure-141-Round1-s101-a9527c6bcad2/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-141-Round1-s101-a9527c6bcad2/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-141-Round1-s101-a9527c6bcad2/evaluation-1/fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-141-Round1-s101-a9527c6bcad2/evaluation-1/fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 3ce47168:8ff053c7..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-141f.................................... OK\n"
+}

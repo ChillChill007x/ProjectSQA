@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Jsoup/48/Jsoup-48-Round1-s101-215e79a11a2c/evaluation-1/buggy/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Jsoup-48-Round1-s101-215e79a11a2c/evaluation-1/buggy/target/classes/org/jsoup/helper/HttpConnection.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Jsoup/48/Jsoup-48-Round1-s101-215e79a11a2c/evaluation-1/buggy/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.736,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Jsoup/48/Jsoup-48-Round1-s101-215e79a11a2c/evaluation-1/buggy/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

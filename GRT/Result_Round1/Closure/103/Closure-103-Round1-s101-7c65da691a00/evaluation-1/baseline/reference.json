@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException",
+    "com.google.javascript.jscomp.ControlFlowAnalysisTest::testInstanceOf",
+    "com.google.javascript.jscomp.DisambiguatePropertiesTest::testSupertypeReferenceOfSubtypeProperty"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "38f",
+    "-w",
+    "/workspace/work/checkouts/Lang-38-Round1-s101-a4a1a9dd383d/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.355,
+  "stdout": "",
+  "stderr": "Checking out 825481f0 to /workspace/work/checkouts/Lang-38-Round1-s101-a4a1 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Lang-38-Round1-s101-a4a1a9 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 825481f0:91ac16e0..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Lang-38f........................................ OK\n"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-47-Round1-s101-d178aff28750",
+  "unit": {
+    "project": "Math",
+    "bug": "47",
+    "target": "org.apache.commons.math.complex.Complex",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "NO_TESTS",
+  "started_at": "2026-10-05T07:35:40.705910+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/47/Math-47-Round1-s101-d178aff28750",
+    "tests": "GRT/Test/Math/47/Math-47-Round1-s101-d178aff28750",
+    "config": "GRT/Configuration/Math/47/Math-47-Round1-s101-d178aff28750"
+  },
+  "generation_time_sec": 3.689,
+  "test_sha256": {
+    "GRT/Test/Math/47/Math-47-Round1-s101-d178aff28750/org/apache/commons/math/complex/SqaGeneratedTest.java": "b6fe57aa12548c3be2b596357c62da86e89da47240cfcc71bafd15cafd8b8efc"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.complex.ComplexTest::testAtanI",
+    "available_triggers": [
+      "org.apache.commons.math.complex.ComplexTest::testAtanI",
+      "org.apache.commons.math.complex.ComplexTest::testDivideZero"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "No generated JUnit 4 test classes were found",
+  "finished_at": "2026-10-05T07:38:57.355723+00:00"
+}

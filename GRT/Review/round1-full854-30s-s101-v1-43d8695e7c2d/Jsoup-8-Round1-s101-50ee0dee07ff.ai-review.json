@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.828306+00:00",
+  "run_id": "Jsoup-8-Round1-s101-50ee0dee07ff",
+  "project": "Jsoup",
+  "bug": "8",
+  "target": "org.jsoup.nodes.Node",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Detached Element serialization throws NPE in Node.outerHtml on buggy. The patch supplies default output settings when ownerDocument is null; the representative detached-element test directly exercises that guard.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 8,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test28"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff/org/jsoup/nodes/SqaGeneratedTest.java": "07a1bdaba6c61902b034f20550e37680f5a69f0a1f50cf7eca0735795fb96f52"
+  },
+  "result_sha256": "e1d2c04ea12d8d681e40031ca3dd529500a3e683060c714cd5c36333b2409d35",
+  "result_path": "GRT/Result_Round1/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff/result.json",
+  "tests_path": "GRT/Test/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/8.src.patch",
+  "patch_sha256": "03c3729a91230d4e9b983f7b0509770be36f9292b95965a7e91383b9590fdda0",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

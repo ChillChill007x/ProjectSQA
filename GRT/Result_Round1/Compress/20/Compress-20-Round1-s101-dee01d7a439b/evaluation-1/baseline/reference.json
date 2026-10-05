@@ -1,0 +1,8 @@
+{
+  "trigger": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamTest::testCpioUnarchiveCreatedByRedlineRpm",
+  "available_triggers": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStreamTest::testCpioUnarchiveCreatedByRedlineRpm"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

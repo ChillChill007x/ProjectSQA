@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "125f",
+    "-w",
+    "/workspace/work/checkouts/Closure-125-Round1-s101-40abe9f527fc/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.42,
+  "stdout": "",
+  "stderr": "Checking out 8cef0018 to /workspace/work/checkouts/Closure-125-Round1-s101- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: can't read /workspace/work/checkouts/Closure-125-Round1-s101-40abe9f527fc/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-125-Round1-s101-40abe9f527fc/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 8cef0018:ddc12998..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-125f.................................... OK\n"
+}

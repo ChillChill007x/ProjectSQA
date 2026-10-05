@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.883850+00:00",
+  "run_id": "Chart-18-Round1-s101-0a47abeda400",
+  "project": "Chart",
+  "bug": "18",
+  "target": "org.jfree.data.DefaultKeyedValues2D",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Removing an unknown column differs between revisions; patch explicitly checks column-key membership and throws UnknownKeyException.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 9,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test16",
+    "test19",
+    "test23"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/18/Chart-18-Round1-s101-0a47abeda400/org/jfree/data/SqaGeneratedTest.java": "93cae028f15c9d74116aee51aad97cf0fb037d1916569c4d2d38e5007d04aa3c"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\18\\Chart-18-Round1-s101-0a47abeda400\\result.json",
+  "tests_path": "GRT/Test/Chart/18/Chart-18-Round1-s101-0a47abeda400",
+  "evaluation_path": "GRT/Result_Round1/Chart/18/Chart-18-Round1-s101-0a47abeda400/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/18.src.patch",
+  "patch_sha256": "f3834ae2e81f7e1c412058b66468eb3756fd68d561088b83953d3f78f87c8598",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-20-Round1-s101-2d56c6d9b68c/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.19,
+  "stdout": "build/classes/java/main",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.dir.bin.classes)....................................... OK\n\n"
+}

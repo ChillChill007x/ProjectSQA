@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-58-Round1-s101-df6ea88782f4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.344,
+  "stdout": "org.jsoup.safety.CleanerTest::testIsValidBodyHtml\norg.jsoup.safety.CleanerTest::testIsValidDocument",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-21-Round1-s101-cb21dfe08ea6/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.541,
+  "stdout": "org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

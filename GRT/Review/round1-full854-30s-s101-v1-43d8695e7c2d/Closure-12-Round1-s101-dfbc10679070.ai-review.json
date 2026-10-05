@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.946428+00:00",
+  "run_id": "Closure-12-Round1-s101-dfbc10679070",
+  "project": "Closure",
+  "bug": "12",
+  "target": "com.google.javascript.jscomp.MaybeReachingVariableUse",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Artificial CFG/node/scope sequence expects IllegalArgumentException only on fixed. Patch adds CFG edge inspection; invalid internal graph structure may explain an incidental difference.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 23,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test16",
+    "test19",
+    "test26"
+  ],
+  "test_sha256": {
+    "GRT/Test/Closure/12/Closure-12-Round1-s101-dfbc10679070/com/google/javascript/jscomp/SqaGeneratedTest.java": "980e332c43015444a0c6060dc4ecbedb8485596a1ca6033fb0b20fa328ea5065"
+  },
+  "result_path": "GRT\\Result_Round1\\Closure\\12\\Closure-12-Round1-s101-dfbc10679070\\result.json",
+  "tests_path": "GRT/Test/Closure/12/Closure-12-Round1-s101-dfbc10679070",
+  "evaluation_path": "GRT/Result_Round1/Closure/12/Closure-12-Round1-s101-dfbc10679070/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Closure/patches/12.src.patch",
+  "patch_sha256": "44cb6ec38da417086af73412a48f2a8170143975fd2a965f6878bd6a69b01df3",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-103-Round1-s101-3f151280e5ec/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.756,
+  "stdout": "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

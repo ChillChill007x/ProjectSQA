@@ -1,0 +1,841 @@
+{
+  "updated_at": "2026-10-05T03:22:19.040078+00:00",
+  "expected_bugs": 47,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 44,
+    "FAILED": 3
+  },
+  "bugs": [
+    {
+      "project": "Compress",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/1/Compress-1-Round1-s101-7fb6d18ea4de/result.json",
+          "started_at": "2026-10-05T02:38:27.837914+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/2/Compress-2-Round1-s101-dfec3403616e/result.json",
+          "started_at": "2026-10-05T02:39:03.043429+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/3/Compress-3-Round1-s101-af933f659e6d/result.json",
+          "started_at": "2026-10-05T02:39:40.296574+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream",
+        "org.apache.commons.compress.changes.ChangeSetPerformer"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/4/Compress-4-Round1-s101-734f18199192/result.json",
+          "started_at": "2026-10-05T02:40:16.269066+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/4/Compress-4-Round1-s101-073f683c3529/result.json",
+          "started_at": "2026-10-05T02:40:48.078161+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/4/Compress-4-Round1-s101-14bc3ac6378f/result.json",
+          "started_at": "2026-10-05T02:41:19.188396+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.changes.ChangeSetPerformer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/4/Compress-4-Round1-s101-def1ef5b7a83/result.json",
+          "started_at": "2026-10-05T02:41:52.840798+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/5/Compress-5-Round1-s101-90369f2b1ad1/result.json",
+          "started_at": "2026-10-05T02:42:33.290583+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/6/Compress-6-Round1-s101-6928c52760bc/result.json",
+          "started_at": "2026-10-05T02:43:08.497364+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/7/Compress-7-Round1-s101-2a752fa7e636/result.json",
+          "started_at": "2026-10-05T02:43:44.759227+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/8/Compress-8-Round1-s101-0691966664bf/result.json",
+          "started_at": "2026-10-05T02:44:19.619920+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/9/Compress-9-Round1-s101-e13780df814e/result.json",
+          "started_at": "2026-10-05T02:44:54.829735+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "10",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipFile"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipFile": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Compress/10/Compress-10-Round1-s101-c4531cc809b3/result.json",
+          "started_at": "2026-10-05T02:45:33.933291+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/11/Compress-11-Round1-s101-2ecfff17149e/result.json",
+          "started_at": "2026-10-05T02:46:06.318573+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/12/Compress-12-Round1-s101-e427bf85ab0d/result.json",
+          "started_at": "2026-10-05T02:46:57.703908+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/13/Compress-13-Round1-s101-d2003bf37d24/result.json",
+          "started_at": "2026-10-05T02:47:38.270195+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/14/Compress-14-Round1-s101-1eefa8a84461/result.json",
+          "started_at": "2026-10-05T02:48:18.242143+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/15/Compress-15-Round1-s101-3fa9530bf714/result.json",
+          "started_at": "2026-10-05T02:48:57.113722+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/16/Compress-16-Round1-s101-b93da23ac4b8/result.json",
+          "started_at": "2026-10-05T02:49:39.137000+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/17/Compress-17-Round1-s101-85e534c284bd/result.json",
+          "started_at": "2026-10-05T02:50:21.890912+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/18/Compress-18-Round1-s101-327e90d7c50a/result.json",
+          "started_at": "2026-10-05T02:51:01.216233+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/19/Compress-19-Round1-s101-56e27bcd7330/result.json",
+          "started_at": "2026-10-05T02:51:42.586723+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/20/Compress-20-Round1-s101-dee01d7a439b/result.json",
+          "started_at": "2026-10-05T02:52:28.213700+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.sevenz.SevenZOutputFile"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.sevenz.SevenZOutputFile": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/21/Compress-21-Round1-s101-f7ce4faaab09/result.json",
+          "started_at": "2026-10-05T02:53:18.177189+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/22/Compress-22-Round1-s101-ada6451399ed/result.json",
+          "started_at": "2026-10-05T02:54:07.769739+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.sevenz.Coders"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.sevenz.Coders": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/23/Compress-23-Round1-s101-7ee20c143b80/result.json",
+          "started_at": "2026-10-05T02:55:02.203234+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/24/Compress-24-Round1-s101-ed7d825d39e5/result.json",
+          "started_at": "2026-10-05T02:55:54.943684+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/25/Compress-25-Round1-s101-09e3f10f289b/result.json",
+          "started_at": "2026-10-05T02:56:42.178057+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.utils.IOUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.utils.IOUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/26/Compress-26-Round1-s101-e6ab9fa5c504/result.json",
+          "started_at": "2026-10-05T02:57:37.819707+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/27/Compress-27-Round1-s101-527d8133b62f/result.json",
+          "started_at": "2026-10-05T02:58:33.521043+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/28/Compress-28-Round1-s101-8162dcda6ed8/result.json",
+          "started_at": "2026-10-05T02:59:23.415182+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream",
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.ArchiveStreamFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-4495c5f1597c/result.json",
+          "started_at": "2026-10-05T03:00:11.870388+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-ff098b616a53/result.json",
+          "started_at": "2026-10-05T03:00:55.740844+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-a76d9b5ee3c5/result.json",
+          "started_at": "2026-10-05T03:01:38.719340+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-cb9f230de6ca/result.json",
+          "started_at": "2026-10-05T03:02:27.876496+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-3d39e9231c5f/result.json",
+          "started_at": "2026-10-05T03:03:13.190385+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-b27d112cfdc6/result.json",
+          "started_at": "2026-10-05T03:04:01.276217+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-dc696d875880/result.json",
+          "started_at": "2026-10-05T03:04:44.444050+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/30/Compress-30-Round1-s101-43133e36112a/result.json",
+          "started_at": "2026-10-05T03:05:34.561628+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "31",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/31/Compress-31-Round1-s101-13ce4619af13/result.json",
+          "started_at": "2026-10-05T03:06:29.641046+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/32/Compress-32-Round1-s101-1f4a6fc0f0b3/result.json",
+          "started_at": "2026-10-05T03:07:19.643802+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "33",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory",
+        "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/33/Compress-33-Round1-s101-580d9424df01/result.json",
+          "started_at": "2026-10-05T03:08:08.745130+00:00",
+          "error": null
+        },
+        "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Compress/33/Compress-33-Round1-s101-f5ff08582122/result.json",
+          "started_at": "2026-10-05T03:08:51.505916+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "34",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.X7875_NewUnix"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.X7875_NewUnix": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/34/Compress-34-Round1-s101-0484f92590e4/result.json",
+          "started_at": "2026-10-05T03:09:32.813618+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/35/Compress-35-Round1-s101-6cca599dff81/result.json",
+          "started_at": "2026-10-05T03:10:25.999359+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.sevenz.SevenZFile": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/36/Compress-36-Round1-s101-78fc89fe6282/result.json",
+          "started_at": "2026-10-05T03:11:33.111851+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/37/Compress-37-Round1-s101-07d93abfb3e9/result.json",
+          "started_at": "2026-10-05T03:12:21.594883+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/38/Compress-38-Round1-s101-0a8b3cf1b9b3/result.json",
+          "started_at": "2026-10-05T03:13:11.728415+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.utils.ArchiveUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.utils.ArchiveUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/39/Compress-39-Round1-s101-d7cd3271bfd9/result.json",
+          "started_at": "2026-10-05T03:14:02.447030+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.utils.BitInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.utils.BitInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/40/Compress-40-Round1-s101-a4629d2cd68f/result.json",
+          "started_at": "2026-10-05T03:14:52.155260+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "41",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/41/Compress-41-Round1-s101-ccf229958911/result.json",
+          "started_at": "2026-10-05T03:15:43.704679+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "42",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.UnixStat",
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.UnixStat": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Compress/42/Compress-42-Round1-s101-8c682cff4d1d/result.json",
+          "started_at": "2026-10-05T03:16:37.858970+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Compress/42/Compress-42-Round1-s101-8c682cff4d1d/generation/generation-process.json\nException in thread \"main\" java.lang.IllegalArgumentException: No supported methods or constructors accessible from test package\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:78)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:435)\n"
+        },
+        "org.apache.commons.compress.archivers.zip.ZipArchiveEntry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/42/Compress-42-Round1-s101-7e633ff38d1d/result.json",
+          "started_at": "2026-10-05T03:16:45.973198+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "43",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/43/Compress-43-Round1-s101-fdd4964c8589/result.json",
+          "started_at": "2026-10-05T03:17:37.265344+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "44",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.utils.ChecksumCalculatingInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.utils.ChecksumCalculatingInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/44/Compress-44-Round1-s101-10ac86e74cdd/result.json",
+          "started_at": "2026-10-05T03:18:33.676205+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.tar.TarUtils"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.tar.TarUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/45/Compress-45-Round1-s101-78e7ae8fccdc/result.json",
+          "started_at": "2026-10-05T03:19:36.279257+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "46",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/46/Compress-46-Round1-s101-ec7de3a3d0d1/result.json",
+          "started_at": "2026-10-05T03:20:29.328090+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Compress",
+      "bug": "47",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream"
+      ],
+      "units": {
+        "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Compress/47/Compress-47-Round1-s101-e56a3389c218/result.json",
+          "started_at": "2026-10-05T03:21:22.806122+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

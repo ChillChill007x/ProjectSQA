@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Compress-36-Round1-s101-78fc89fe6282/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "org.apache.commons.compress.archivers.sevenz.SevenZFileTest::readEntriesOfSize0",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

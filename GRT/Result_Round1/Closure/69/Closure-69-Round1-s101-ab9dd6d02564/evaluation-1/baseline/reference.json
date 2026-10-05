@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2",
+  "available_triggers": [
+    "com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2",
+    "com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3",
+    "com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

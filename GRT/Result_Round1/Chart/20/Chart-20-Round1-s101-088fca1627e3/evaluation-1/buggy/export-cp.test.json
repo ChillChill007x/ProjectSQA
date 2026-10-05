@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Chart-20-Round1-s101-088fca1627e3/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "/workspace/work/checkouts/Chart-20-Round1-s101-088fca1627e3/evaluation-1/buggy/lib/servlet.jar:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/workspace/work/checkouts/Chart-20-Round1-s101-088fca1627e3/evaluation-1/buggy/build:/workspace/work/checkouts/Chart-20-Round1-s101-088fca1627e3/evaluation-1/buggy/build-tests",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

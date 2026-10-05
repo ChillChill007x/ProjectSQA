@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-21-Round1-s101-6632f38f1b6f",
+  "unit": {
+    "project": "Lang",
+    "bug": "21",
+    "target": "org.apache.commons.lang3.time.DateUtils",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T01:29:16.161352+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Lang/21/Lang-21-Round1-s101-6632f38f1b6f",
+    "tests": "GRT/Test/Lang/21/Lang-21-Round1-s101-6632f38f1b6f",
+    "config": "GRT/Configuration/Lang/21/Lang-21-Round1-s101-6632f38f1b6f"
+  },
+  "generation_time_sec": 3.233,
+  "test_sha256": {
+    "GRT/Test/Lang/21/Lang-21-Round1-s101-6632f38f1b6f/org/apache/commons/lang3/time/SqaGeneratedTest.java": "4f89fc8d1f70693d4f9439cacfaa87b42e3b52f9abaf76312e174043ae7c4538"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal",
+    "available_triggers": [
+      "org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T01:31:30.909570+00:00"
+}

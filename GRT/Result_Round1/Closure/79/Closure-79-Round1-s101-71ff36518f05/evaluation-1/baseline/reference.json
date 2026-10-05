@@ -1,0 +1,12 @@
+{
+  "trigger": "com.google.javascript.jscomp.NormalizeTest::testIssue",
+  "available_triggers": [
+    "com.google.javascript.jscomp.NormalizeTest::testIssue",
+    "com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns1",
+    "com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns3",
+    "com.google.javascript.jscomp.VarCheckTest::testVarReferenceInExterns",
+    "com.google.javascript.jscomp.VarCheckTest::testCallInExterns"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Gson",
+    "-v",
+    "4f",
+    "-w",
+    "/workspace/work/checkouts/Gson-4-Round1-s101-0db09630706f/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.415,
+  "stdout": "",
+  "stderr": "Checking out af68d70c to /workspace/work/checkouts/Gson-4-Round1-s101-0db09 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nBacking up build file: /workspace/work/checkouts/Gson-4-Round1-s101-0db0963 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff af68d70c:2ab776b5..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Gson-4f......................................... OK\n"
+}

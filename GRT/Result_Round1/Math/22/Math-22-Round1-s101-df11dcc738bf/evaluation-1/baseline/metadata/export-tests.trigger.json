@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-22-Round1-s101-df11dcc738bf/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.276,
+  "stdout": "org.apache.commons.math3.distribution.FDistributionTest::testIsSupportLowerBoundInclusive\norg.apache.commons.math3.distribution.UniformRealDistributionTest::testIsSupportUpperBoundInclusive",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-65-Round1-s101-7a3af895cf5c",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "65",
+    "target": "org.jsoup.parser.HtmlTreeBuilderState",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-04T22:19:01.136093+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/65/Jsoup-65-Round1-s101-7a3af895cf5c",
+    "tests": "GRT/Test/Jsoup/65/Jsoup-65-Round1-s101-7a3af895cf5c",
+    "config": "GRT/Configuration/Jsoup/65/Jsoup-65-Round1-s101-7a3af895cf5c"
+  },
+  "generation_time_sec": 2.649,
+  "test_sha256": {
+    "GRT/Test/Jsoup/65/Jsoup-65-Round1-s101-7a3af895cf5c/org/jsoup/parser/SqaGeneratedTest.java": "52ff610c60aedf3af1abf01d578c5053fc37e8ff6e80d5303e106bc7b0b90ed4"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.HtmlParserTest::testTemplateInsideTable",
+    "available_triggers": [
+      "org.jsoup.parser.HtmlParserTest::testTemplateInsideTable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-04T22:20:22.651408+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-92-Round1-s101-67bdb1f65688/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1737"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.066,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

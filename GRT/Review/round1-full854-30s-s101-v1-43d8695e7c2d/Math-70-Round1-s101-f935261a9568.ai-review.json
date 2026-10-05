@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.922338+00:00",
+  "run_id": "Math-70-Round1-s101-f935261a9568",
+  "project": "Math",
+  "bug": "70",
+  "target": "org.apache.commons.math.analysis.solvers.BisectionSolver",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "BisectionSolver's overload with an initial value fails with NPE on buggy. The patch forwards the supplied function to solve(f,min,max) rather than the deprecated solve(min,max); the representative supplies a concrete polynomial and an in-range initial value.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 4,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test20"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/70/Math-70-Round1-s101-f935261a9568/org/apache/commons/math/analysis/solvers/SqaGeneratedTest.java": "674a68640038526c9242c41df37d3b4c7961619d0b9484079fd8a6a7a0607e51"
+  },
+  "result_sha256": "bf19bfee845f547701a1fae14caa25d90fa446ed588ca86e8d1eb7130337b59e",
+  "result_path": "GRT/Result_Round1/Math/70/Math-70-Round1-s101-f935261a9568/result.json",
+  "tests_path": "GRT/Test/Math/70/Math-70-Round1-s101-f935261a9568",
+  "evaluation_path": "GRT/Result_Round1/Math/70/Math-70-Round1-s101-f935261a9568/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/70.src.patch",
+  "patch_sha256": "db8ec4e5fa8b23d3647f85545b560717fc8cba70f34742e4470b315d714f8a25",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4",
+  "available_triggers": [
+    "com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4",
+    "com.google.javascript.jscomp.DisambiguatePropertiesTest::testTwoTypes4"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

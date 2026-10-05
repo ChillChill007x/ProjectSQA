@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Codec",
+    "-v",
+    "13f",
+    "-w",
+    "/workspace/work/checkouts/Codec-13-Round1-s101-adb25b34379e/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.365,
+  "stdout": "",
+  "stderr": "Checking out 37ba197e to /workspace/work/checkouts/Codec-13-Round1-s101-adb OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 37ba197e:8c145775..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Codec-13f....................................... OK\n"
+}

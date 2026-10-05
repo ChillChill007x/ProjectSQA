@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-4-Round1-s101-01f20564da2f",
+  "unit": {
+    "project": "JxPath",
+    "bug": "4",
+    "target": "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T23:42:56.813838+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JxPath/4/JxPath-4-Round1-s101-01f20564da2f",
+    "tests": "GRT/Test/JxPath/4/JxPath-4-Round1-s101-01f20564da2f",
+    "config": "GRT/Configuration/JxPath/4/JxPath-4-Round1-s101-01f20564da2f"
+  },
+  "generation_time_sec": 2.444,
+  "test_sha256": {
+    "GRT/Test/JxPath/4/JxPath-4-Round1-s101-01f20564da2f/org/apache/commons/jxpath/ri/model/jdom/SqaGeneratedTest.java": "ec85515ddc0c28df6b91de4d905ae5922e543ca26fd1f2e51ad6f0a9de76188b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveDOM",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveDOM",
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedJDOM",
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsJDOM",
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveJDOM",
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedDOM",
+      "org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsDOM"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T23:44:27.849285+00:00"
+}

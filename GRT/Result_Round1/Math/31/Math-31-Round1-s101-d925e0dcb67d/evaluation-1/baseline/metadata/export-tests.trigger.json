@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-31-Round1-s101-d925e0dcb67d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.427,
+  "stdout": "org.apache.commons.math3.distribution.BinomialDistributionTest::testMath718\norg.apache.commons.math3.distribution.FDistributionTest::testMath785",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-89-Round1-s101-ce8c6eb1e8cf/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.715,
+  "stdout": "com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToChildOfUncollapsibleFunctionInLocalScope\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_2\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_3\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleNamedCtorInLocalScopeDepth1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth1\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth2\ncom.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

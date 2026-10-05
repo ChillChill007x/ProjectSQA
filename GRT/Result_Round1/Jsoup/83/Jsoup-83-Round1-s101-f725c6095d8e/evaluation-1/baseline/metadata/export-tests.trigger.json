@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-83-Round1-s101-f725c6095d8e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.292,
+  "stdout": "org.jsoup.parser.HtmlParserTest::parsesQuiteRoughAttributes\norg.jsoup.parser.TokeniserStateTest::handlesLessInTagThanAsNewTag",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

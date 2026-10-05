@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-17-Round1-s101-14feba66d0ac",
+  "unit": {
+    "project": "Mockito",
+    "bug": "17",
+    "target": "org.mockito.internal.creation.MockSettingsImpl",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T11:18:58.009417+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/17/Mockito-17-Round1-s101-14feba66d0ac",
+    "tests": "GRT/Test/Mockito/17/Mockito-17-Round1-s101-14feba66d0ac",
+    "config": "GRT/Configuration/Mockito/17/Mockito-17-Round1-s101-14feba66d0ac"
+  },
+  "generation_time_sec": 0.99,
+  "test_sha256": {
+    "GRT/Test/Mockito/17/Mockito-17-Round1-s101-14feba66d0ac/org/mockito/internal/creation/SqaGeneratedTest.java": "4082773a92a392b0d690a098064ac1ef1144f95825861bc49c21a20a5fe50456"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces",
+    "available_triggers": [
+      "org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T11:21:09.870926+00:00"
+}

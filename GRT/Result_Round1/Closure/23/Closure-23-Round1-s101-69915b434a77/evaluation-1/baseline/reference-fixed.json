@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-23-Round1-s101-69915b434a77/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldGetElem"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.971,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.jscomp.IntegrationTest::testIssue772",
+  "available_triggers": [
+    "com.google.javascript.jscomp.IntegrationTest::testIssue772",
+    "com.google.javascript.jscomp.ScopedAliasesTest::testIssue772"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

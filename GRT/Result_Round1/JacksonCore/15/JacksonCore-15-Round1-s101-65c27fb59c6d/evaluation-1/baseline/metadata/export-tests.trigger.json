@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-15-Round1-s101-65c27fb59c6d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testNotAllowMultipleMatches",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

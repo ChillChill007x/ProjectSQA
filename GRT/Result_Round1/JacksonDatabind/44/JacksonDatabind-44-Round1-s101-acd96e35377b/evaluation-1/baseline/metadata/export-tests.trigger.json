@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-44-Round1-s101-acd96e35377b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.databind.jsontype.TestSubtypes::testIssue1125WithDefault",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

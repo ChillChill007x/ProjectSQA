@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonDatabind",
+    "-v",
+    "109f",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-109-Round1-s101-e1758f453f22/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.326,
+  "stdout": "",
+  "stderr": "Checking out e287a62c to /workspace/work/checkouts/JacksonDatabind-109-Roun OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nCorrect Module ambiguity 2................................................. OK\nCorrect Module ambiguity 3................................................. OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/JacksonDatabind-109-Round1 OK\nBacking up build file: /workspace/work/checkouts/JacksonDatabind-109-Round1 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff e287a62c:a475c0d5..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JacksonDatabind-109f............................ OK\n"
+}

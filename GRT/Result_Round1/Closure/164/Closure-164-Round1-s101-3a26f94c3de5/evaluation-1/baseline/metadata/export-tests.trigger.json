@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-164-Round1-s101-3a26f94c3de5/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.LooseTypeCheckTest::testMethodInference7\ncom.google.javascript.jscomp.TypeCheckTest::testMethodInference7\ncom.google.javascript.rhino.jstype.FunctionTypeTest::testSupAndInfOfReturnTypesWithNumOfParams",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

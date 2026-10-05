@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.884845+00:00",
+  "run_id": "Chart-22-Round1-s101-ba153d4119d5",
+  "project": "Chart",
+  "bug": "22",
+  "target": "org.jfree.data.KeyedObjects2D",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Removing an absent row produces IndexOutOfBoundsException instead of UnknownKeyException; patch changes index and missing-key handling.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15",
+    "test37",
+    "test43"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/22/Chart-22-Round1-s101-ba153d4119d5/org/jfree/data/SqaGeneratedTest.java": "cb0c2a6b7a5b53b653d3544b53bd51249d79462c9c6fd201d836ab016ea3e63d"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\22\\Chart-22-Round1-s101-ba153d4119d5\\result.json",
+  "tests_path": "GRT/Test/Chart/22/Chart-22-Round1-s101-ba153d4119d5",
+  "evaluation_path": "GRT/Result_Round1/Chart/22/Chart-22-Round1-s101-ba153d4119d5/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/22.src.patch",
+  "patch_sha256": "283676827f77d8c6647b418eac8dac9c4ef189e20626f2037b3324de57274c22",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

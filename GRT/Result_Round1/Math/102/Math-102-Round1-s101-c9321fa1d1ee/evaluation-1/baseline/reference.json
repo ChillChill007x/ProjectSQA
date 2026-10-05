@@ -1,0 +1,13 @@
+{
+  "trigger": "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquareLargeTestStatistic",
+  "available_triggers": [
+    "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquareLargeTestStatistic",
+    "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquare",
+    "org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquareLargeTestStatistic",
+    "org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquare",
+    "org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquareLargeTestStatistic",
+    "org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquare"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

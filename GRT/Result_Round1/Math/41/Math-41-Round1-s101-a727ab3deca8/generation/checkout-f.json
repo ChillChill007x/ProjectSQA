@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Math",
+    "-v",
+    "41f",
+    "-w",
+    "/workspace/work/checkouts/Math-41-Round1-s101-a727ab3deca8/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 10.082,
+  "stdout": "",
+  "stderr": "Checking out 3f645310 to /workspace/work/checkouts/Math-41-Round1-s101-a727 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 3f645310:d099c7c3..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Math-41f........................................ OK\n"
+}

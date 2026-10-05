@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-82-Round1-s101-6a4e9603ee3e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.99,
+  "stdout": "org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

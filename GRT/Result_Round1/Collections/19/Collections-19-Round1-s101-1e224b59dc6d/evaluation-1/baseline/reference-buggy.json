@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Collections-19-Round1-s101-1e224b59dc6d/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.collections.list.SetUniqueListTest::testSetCollections444"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.866,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.collections.list.SetUniqueListTest::testSetCollections444\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

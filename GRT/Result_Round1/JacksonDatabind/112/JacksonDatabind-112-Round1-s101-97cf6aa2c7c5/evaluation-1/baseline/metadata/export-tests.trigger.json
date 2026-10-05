@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-112-Round1-s101-97cf6aa2c7c5/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "com.fasterxml.jackson.databind.deser.creators.DelegatingArrayCreator2324Test::testDeserializeBagOfStrings",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

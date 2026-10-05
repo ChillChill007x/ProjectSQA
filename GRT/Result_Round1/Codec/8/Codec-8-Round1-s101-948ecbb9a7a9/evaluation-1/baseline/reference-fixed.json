@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Codec-8-Round1-s101-948ecbb9a7a9/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.codec.binary.Base64InputStreamTest::testCodec105"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.765,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

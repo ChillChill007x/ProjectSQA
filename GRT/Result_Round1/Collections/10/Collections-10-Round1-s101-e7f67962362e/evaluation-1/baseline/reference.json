@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.collections.map.TestMultiValueMap::testEmptyMapCompatibility",
+  "available_triggers": [
+    "org.apache.commons.collections.map.TestMultiValueMap::testEmptyMapCompatibility",
+    "org.apache.commons.collections.map.TestMultiValueMap::testFullMapCompatibility"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

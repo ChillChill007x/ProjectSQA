@@ -1,0 +1,93 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonCore-17-Round1-s101-8f10ef30ecc3",
+  "unit": {
+    "project": "JacksonCore",
+    "bug": "17",
+    "target": "com.fasterxml.jackson.core.json.UTF8JsonGenerator",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:58:14.711956+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3",
+    "tests": "GRT/Test/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3",
+    "config": "GRT/Configuration/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3"
+  },
+  "generation_time_sec": 2.519,
+  "test_sha256": {
+    "GRT/Test/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3/com/fasterxml/jackson/core/json/SqaGeneratedTest.java": "b200c357a38bef6578c119ceaeca8d28d951a975844500016fa28b65876f14de"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.core.json.RawValueWithSurrogatesTest::testRawWithSurrogatesString",
+    "available_triggers": [
+      "com.fasterxml.jackson.core.json.RawValueWithSurrogatesTest::testRawWithSurrogatesString"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 296,
+      "tests": [
+        "com.fasterxml.jackson.core.json.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.core.json.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 1018,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 541,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 296,
+      "tests": [
+        "com.fasterxml.jackson.core.json.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.core.json.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 0,
+      "line_total": 990,
+      "line_coverage_percent": 0.0,
+      "branch_covered": 0,
+      "branch_total": 523,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3/evaluation-1",
+  "finished_at": "2026-10-05T03:58:46.589017+00:00"
+}

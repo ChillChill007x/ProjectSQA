@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.043460+00:00",
+  "run_id": "Gson-14-Round1-s101-a761ead3199e",
+  "project": "Gson",
+  "bug": "14",
+  "target": "com.google.gson.internal.$Gson$Types",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Nested wildcard types derived from arrayOf(null) behave differently; patch unwraps wildcard bounds. Null type preconditions need review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 7,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test45",
+    "test51",
+    "test66"
+  ],
+  "test_sha256": {
+    "GRT/Test/Gson/14/Gson-14-Round1-s101-a761ead3199e/com/google/gson/internal/SqaGeneratedTest.java": "f683fe775ee6fac3921681e44396853d409e9189ed36725c94ea5882554cf1ab"
+  },
+  "result_path": "GRT\\Result_Round1\\Gson\\14\\Gson-14-Round1-s101-a761ead3199e\\result.json",
+  "tests_path": "GRT/Test/Gson/14/Gson-14-Round1-s101-a761ead3199e",
+  "evaluation_path": "GRT/Result_Round1/Gson/14/Gson-14-Round1-s101-a761ead3199e/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Gson/patches/14.src.patch",
+  "patch_sha256": "24d71ddeb003b05d65a9cf091342c0c49c7b577e820d5680dc7208bacb14c763",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

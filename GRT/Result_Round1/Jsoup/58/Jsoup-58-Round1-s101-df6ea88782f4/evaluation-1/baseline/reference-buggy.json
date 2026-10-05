@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-58-Round1-s101-df6ea88782f4/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.safety.CleanerTest::testIsValidBodyHtml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.507,
+  "stdout": "Failing tests: 1\n  - org.jsoup.safety.CleanerTest::testIsValidBodyHtml\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

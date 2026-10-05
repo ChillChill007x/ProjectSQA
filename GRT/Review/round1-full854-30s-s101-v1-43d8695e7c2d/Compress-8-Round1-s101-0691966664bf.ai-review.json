@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.008392+00:00",
+  "run_id": "Compress-8-Round1-s101-0691966664bf",
+  "project": "Compress",
+  "bug": "8",
+  "target": "org.apache.commons.compress.archivers.tar.TarUtils",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "parseOctal receives a negative length; fixed rejects it while buggy accepts it. Patch adds length validation, but malformed input must be identified explicitly.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test29",
+    "test45",
+    "test74"
+  ],
+  "test_sha256": {
+    "GRT/Test/Compress/8/Compress-8-Round1-s101-0691966664bf/org/apache/commons/compress/archivers/tar/SqaGeneratedTest.java": "5b8b587683b66bfbd838fc84b249c03eea9fd3e8e77b470cc5d13d98f197c752"
+  },
+  "result_path": "GRT\\Result_Round1\\Compress\\8\\Compress-8-Round1-s101-0691966664bf\\result.json",
+  "tests_path": "GRT/Test/Compress/8/Compress-8-Round1-s101-0691966664bf",
+  "evaluation_path": "GRT/Result_Round1/Compress/8/Compress-8-Round1-s101-0691966664bf/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Compress/patches/8.src.patch",
+  "patch_sha256": "c15fa7a7d6fe3c2a51df467a57e46405154762ad55edd6b791f1f452d4d9c381",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

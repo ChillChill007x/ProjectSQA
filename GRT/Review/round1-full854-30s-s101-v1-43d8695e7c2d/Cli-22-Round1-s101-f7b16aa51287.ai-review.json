@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.899633+00:00",
+  "run_id": "Cli-22-Round1-s101-f7b16aa51287",
+  "project": "Cli",
+  "bug": "22",
+  "target": "org.apache.commons.cli.PosixParser",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Parser handling of a non-option followed by an unknown option differs; patch changes stopAtNonOption/currentOption token processing.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test65"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/22/Cli-22-Round1-s101-f7b16aa51287/org/apache/commons/cli/SqaGeneratedTest.java": "6b8f717e21e0d551f2fcf14ec60f64ebb89fa425aef199605dcd68804cee6031"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\22\\Cli-22-Round1-s101-f7b16aa51287\\result.json",
+  "tests_path": "GRT/Test/Cli/22/Cli-22-Round1-s101-f7b16aa51287",
+  "evaluation_path": "GRT/Result_Round1/Cli/22/Cli-22-Round1-s101-f7b16aa51287/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/22.src.patch",
+  "patch_sha256": "b6b43839d5bda81fe9aa9b555b5b3d68b6c9b4c16a7f9235d19ef6463060fbe1",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-21-Round1-s101-6e70ea210744/evaluation-1/buggy",
+    "-t",
+    "org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.866,
+  "stdout": "Failing tests: 1\n  - org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Math-104-Round1-s101-ad4d0db3864d/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Math/104/Math-104-Round1-s101-ad4d0db3864d/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.736,
+  "stdout": "[INFO] 227 classes instrumented to /workspace/GRT/Result_Round1/Math/104/Math-104-Round1-s101-ad4d0db3864d/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

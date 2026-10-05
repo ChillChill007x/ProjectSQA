@@ -1,0 +1,460 @@
+{
+  "updated_at": "2026-10-05T02:38:22.080712+00:00",
+  "expected_bugs": 28,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 25,
+    "FAILED": 3
+  },
+  "bugs": [
+    {
+      "project": "Collections",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.Flat3Map": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/1/Collections-1-Round1-s101-00aa7ab7143c/result.json",
+          "started_at": "2026-10-05T02:14:19.836649+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/2/Collections-2-Round1-s101-eb51397bfd06/result.json",
+          "started_at": "2026-10-05T02:15:10.218766+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.CollectionUtils"
+      ],
+      "units": {
+        "org.apache.commons.collections.CollectionUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/3/Collections-3-Round1-s101-dcd437fde9e3/result.json",
+          "started_at": "2026-10-05T02:15:59.785024+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/4/Collections-4-Round1-s101-81d3a6746faa/result.json",
+          "started_at": "2026-10-05T02:16:51.409977+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/5/Collections-5-Round1-s101-cbf5409630a6/result.json",
+          "started_at": "2026-10-05T02:17:42.594824+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.Flat3Map"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.Flat3Map": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/6/Collections-6-Round1-s101-23127f83d5fe/result.json",
+          "started_at": "2026-10-05T02:18:35.722644+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/7/Collections-7-Round1-s101-f10c95547092/result.json",
+          "started_at": "2026-10-05T02:19:25.343645+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer"
+      ],
+      "units": {
+        "org.apache.commons.collections.buffer.UnboundedFifoBuffer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/8/Collections-8-Round1-s101-88a78f04e5cc/result.json",
+          "started_at": "2026-10-05T02:20:14.796208+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/9/Collections-9-Round1-s101-1b6f1b4cc74b/result.json",
+          "started_at": "2026-10-05T02:21:03.589470+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/10/Collections-10-Round1-s101-e7f67962362e/result.json",
+          "started_at": "2026-10-05T02:21:52.798531+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.keyvalue.MultiKey"
+      ],
+      "units": {
+        "org.apache.commons.collections.keyvalue.MultiKey": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/11/Collections-11-Round1-s101-69c3b87c3fd0/result.json",
+          "started_at": "2026-10-05T02:22:43.427719+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/12/Collections-12-Round1-s101-450cec53a990/result.json",
+          "started_at": "2026-10-05T02:23:35.401106+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.ExtendedProperties"
+      ],
+      "units": {
+        "org.apache.commons.collections.ExtendedProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/13/Collections-13-Round1-s101-b56cfda6dc67/result.json",
+          "started_at": "2026-10-05T02:24:26.087309+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.map.CaseInsensitiveMap"
+      ],
+      "units": {
+        "org.apache.commons.collections.map.CaseInsensitiveMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/14/Collections-14-Round1-s101-99225660ac23/result.json",
+          "started_at": "2026-10-05T02:25:15.356808+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/15/Collections-15-Round1-s101-ad1a2af3dac8/result.json",
+          "started_at": "2026-10-05T02:26:05.735891+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Collections/16/Collections-16-Round1-s101-e34645901def/result.json",
+          "started_at": "2026-10-05T02:26:57.363868+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.functors.EqualPredicate"
+      ],
+      "units": {
+        "org.apache.commons.collections.functors.EqualPredicate": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/17/Collections-17-Round1-s101-935fc4fbc968/result.json",
+          "started_at": "2026-10-05T02:27:38.696737+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.set.ListOrderedSet"
+      ],
+      "units": {
+        "org.apache.commons.collections.set.ListOrderedSet": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/18/Collections-18-Round1-s101-8a07a33a23bf/result.json",
+          "started_at": "2026-10-05T02:28:33.980638+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.SetUniqueList": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/19/Collections-19-Round1-s101-1e224b59dc6d/result.json",
+          "started_at": "2026-10-05T02:29:49.597358+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "20",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections.list.TreeList"
+      ],
+      "units": {
+        "org.apache.commons.collections.list.TreeList": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Collections/20/Collections-20-Round1-s101-fdb2ddd3d57f/result.json",
+          "started_at": "2026-10-05T02:30:46.488759+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.list.SetUniqueList"
+      ],
+      "units": {
+        "org.apache.commons.collections4.list.SetUniqueList": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/21/Collections-21-Round1-s101-7541098759ce/result.json",
+          "started_at": "2026-10-05T02:31:19.997738+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.map.ListOrderedMap"
+      ],
+      "units": {
+        "org.apache.commons.collections4.map.ListOrderedMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/22/Collections-22-Round1-s101-00f6a4736563/result.json",
+          "started_at": "2026-10-05T02:32:15.838036+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.trie.UnmodifiableTrie"
+      ],
+      "units": {
+        "org.apache.commons.collections4.trie.UnmodifiableTrie": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/23/Collections-23-Round1-s101-8c321bd89159/result.json",
+          "started_at": "2026-10-05T02:33:08.171373+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection"
+      ],
+      "units": {
+        "org.apache.commons.collections4.collection.UnmodifiableBoundedCollection": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/24/Collections-24-Round1-s101-f8a0fc95f56c/result.json",
+          "started_at": "2026-10-05T02:34:00.297035+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.IteratorUtils"
+      ],
+      "units": {
+        "org.apache.commons.collections4.IteratorUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/25/Collections-25-Round1-s101-48704e2fde37/result.json",
+          "started_at": "2026-10-05T02:34:51.477977+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "26",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.collections4.keyvalue.MultiKey"
+      ],
+      "units": {
+        "org.apache.commons.collections4.keyvalue.MultiKey": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Collections/26/Collections-26-Round1-s101-1c2ce3dd85e1/result.json",
+          "started_at": "2026-10-05T02:35:49.872192+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.map.MultiValueMap"
+      ],
+      "units": {
+        "org.apache.commons.collections4.map.MultiValueMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/27/Collections-27-Round1-s101-2bf89085f30c/result.json",
+          "started_at": "2026-10-05T02:36:33.196364+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Collections",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.collections4.trie.AbstractPatriciaTrie"
+      ],
+      "units": {
+        "org.apache.commons.collections4.trie.AbstractPatriciaTrie": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Collections/28/Collections-28-Round1-s101-b9b0ef32b2bf/result.json",
+          "started_at": "2026-10-05T02:37:29.237457+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

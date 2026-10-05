@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.896625+00:00",
+  "run_id": "Math-6-Round1-s101-ecb8fcc1cf1a",
+  "project": "Math",
+  "bug": "6",
+  "target": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The getMaxIterations mismatch maps to BaseOptimizer's patched default. The representative uses a NaN convergence threshold and a vector checker with a scalar optimizer, so contract validity and target-specific meaning need review.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 3,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test27"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a/org/apache/commons/math3/optim/nonlinear/scalar/gradient/SqaGeneratedTest.java": "1b9952f9c5858373110cc977938acd36ae80cac3ee677e58496688a8dc08f0fb"
+  },
+  "result_sha256": "fcb1207d95014bd57850233ef40a9081cb8e9d9e50bc8e8a890d0161cbfe4865",
+  "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a/result.json",
+  "tests_path": "GRT/Test/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a",
+  "evaluation_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/6.src.patch",
+  "patch_sha256": "9744bb2aa58774fcb1e6e89e4c80a0002abae0af542a6ce458650f79659ab26e",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

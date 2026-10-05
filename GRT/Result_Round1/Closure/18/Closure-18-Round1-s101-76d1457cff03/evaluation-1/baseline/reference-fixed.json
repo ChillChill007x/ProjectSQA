@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-18-Round1-s101-76d1457cff03/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.IntegrationTest::testDependencySorting"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.921,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Chart",
+    "-v",
+    "23f",
+    "-w",
+    "/workspace/work/checkouts/Chart-23-Round1-s101-45840cc78e2c/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.572,
+  "stdout": "",
+  "stderr": "Checking out 210 to /workspace/work/checkouts/Chart-23-Round1-s101-45840cc7 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 210:209............................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Chart-23f....................................... OK\n"
+}

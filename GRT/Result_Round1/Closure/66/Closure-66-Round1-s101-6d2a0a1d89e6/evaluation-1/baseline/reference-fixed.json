@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-66-Round1-s101-6d2a0a1d89e6/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent5"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.918,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

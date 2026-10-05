@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JacksonDatabind",
+    "-v",
+    "53b",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-53-Round1-s101-56351a5ec59e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 5.124,
+  "stdout": "",
+  "stderr": "Checking out 75a0953b to /workspace/work/checkouts/JacksonDatabind-53-Round OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nCorrect Module ambiguity 1................................................. OK\nCorrect Module ambiguity 2................................................. OK\nCorrect Module ambiguity 3................................................. OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/JacksonDatabind-53-Round1- OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 75a0953b:4929735b..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JacksonDatabind-53b............................. OK\n"
+}

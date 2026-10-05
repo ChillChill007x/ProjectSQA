@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-22-Round1-s101-6c59a976ca58/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.406,
+  "stdout": "org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself\norg.jsoup.nodes.NodeTest::nodeIsNotASiblingOfItself\norg.jsoup.nodes.NodeTest::orphanNodeReturnsNullForSiblingElements",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

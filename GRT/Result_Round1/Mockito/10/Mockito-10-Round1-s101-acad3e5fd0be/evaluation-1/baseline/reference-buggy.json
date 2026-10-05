@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/725/checkouts/Mockito-10-Round1-s101-acad3e5fd0be/evaluation-1/buggy",
+    "-t",
+    "org.mockitousage.bugs.DeepStubsWronglyReportsSerializationProblemsTest::should_not_raise_a_mockito_exception_about_serialization_when_accessing_deep_stub"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 59.441,
+  "stdout": "Failing tests: 1\n  - org.mockitousage.bugs.DeepStubsWronglyReportsSerializationProblemsTest::should_not_raise_a_mockito_exception_about_serialization_when_accessing_deep_stub\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.025909+00:00",
+  "run_id": "Compress-46-Round1-s101-ec7de3a3d0d1",
+  "project": "Compress",
+  "bug": "46",
+  "target": "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "ExtendedTimestamp receives a date before the signed 32-bit timestamp range; patch changes the representable-time bounds check, matching the exception difference.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 6,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15",
+    "test18",
+    "test67"
+  ],
+  "test_sha256": {
+    "GRT/Test/Compress/46/Compress-46-Round1-s101-ec7de3a3d0d1/org/apache/commons/compress/archivers/zip/SqaGeneratedTest.java": "cade778c84a02e6f6aa010c95ff6f74601661ad22b57eb4b8365d0cc46145cd9"
+  },
+  "result_path": "GRT\\Result_Round1\\Compress\\46\\Compress-46-Round1-s101-ec7de3a3d0d1\\result.json",
+  "tests_path": "GRT/Test/Compress/46/Compress-46-Round1-s101-ec7de3a3d0d1",
+  "evaluation_path": "GRT/Result_Round1/Compress/46/Compress-46-Round1-s101-ec7de3a3d0d1/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Compress/patches/46.src.patch",
+  "patch_sha256": "57247699e5f80fcc4ec6218f81fd187b2a569bb6679c49daf94557bae7e3e482",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

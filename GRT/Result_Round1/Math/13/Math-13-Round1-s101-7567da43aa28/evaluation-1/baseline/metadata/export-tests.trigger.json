@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-13-Round1-s101-7567da43aa28/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.309,
+  "stdout": "org.apache.commons.math3.optimization.fitting.PolynomialFitterTest::testLargeSample",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

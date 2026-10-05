@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.938678+00:00",
+  "run_id": "Mockito-35-Round1-s101-578b6626b8f9",
+  "project": "Mockito",
+  "bug": "35",
+  "target": "org.mockito.Matchers",
+  "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Matchers.eq on a boxed Long returns null rather than a primitive-wrapper default, matching the returnFor patch. The representative invokes matchers outside a mock stubbing/verification expression, so confirm API usage and unboxing behavior before counting a real Mockito failure.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 5,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test49"
+  ],
+  "test_sha256": {
+    "GRT/Test/Mockito/35/Mockito-35-Round1-s101-578b6626b8f9/org/mockito/SqaGeneratedTest.java": "f1f12d9662f2f198ed6e3106a6c49f03e147731f3c47f02495559dec047b5df3"
+  },
+  "result_sha256": "bb2a5b06c276b632b3a9790bd55c7daad5065e703fcd8a7c2d9258534a1af7f3",
+  "result_path": "GRT/Result_Round1/Mockito/35/Mockito-35-Round1-s101-578b6626b8f9/result.json",
+  "tests_path": "GRT/Test/Mockito/35/Mockito-35-Round1-s101-578b6626b8f9",
+  "evaluation_path": "GRT/Result_Round1/Mockito/35/Mockito-35-Round1-s101-578b6626b8f9/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Mockito/patches/35.src.patch",
+  "patch_sha256": "6ce61f663b572937c8051a10f3d9c042ed49ec0aad997d8529c93e16a7d14088",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

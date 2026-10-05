@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Math",
+    "-v",
+    "18f",
+    "-w",
+    "/workspace/work/checkouts/Math-18-Round1-s101-c0ecbb42d50e/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 10.21,
+  "stdout": "",
+  "stderr": "Checking out 329cf9e8 to /workspace/work/checkouts/Math-18-Round1-s101-c0ec OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 329cf9e8:678377a1..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Math-18f........................................ OK\n"
+}

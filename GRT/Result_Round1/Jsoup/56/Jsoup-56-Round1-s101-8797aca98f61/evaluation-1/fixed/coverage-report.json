@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Jsoup-56-Round1-s101-8797aca98f61/evaluation-1/fixed/target/classes/org/jsoup/nodes/DocumentType.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.571,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

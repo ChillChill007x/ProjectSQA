@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-74-Round1-s101-823b3392a276/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.284,
+  "stdout": "org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest::polynomial",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

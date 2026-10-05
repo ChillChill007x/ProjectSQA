@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "21f",
+    "-w",
+    "/workspace/work/checkouts/Cli-21-Round1-s101-1d12dfc3d8c9/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.317,
+  "stdout": "",
+  "stderr": "Checking out 9cd78b4c to /workspace/work/checkouts/Cli-21-Round1-s101-1d12d OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 9cd78b4c:028893da..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-21f......................................... OK\n"
+}

@@ -1,0 +1,8 @@
+{
+  "trigger": "org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint",
+  "available_triggers": [
+    "org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

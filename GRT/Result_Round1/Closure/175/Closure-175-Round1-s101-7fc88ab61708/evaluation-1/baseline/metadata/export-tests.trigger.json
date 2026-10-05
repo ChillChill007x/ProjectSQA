@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-175-Round1-s101-7fc88ab61708/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101a\ncom.google.javascript.jscomp.FunctionInjectorTest::testIssue1101b\ncom.google.javascript.jscomp.InlineFunctionsTest::testCostBasedInlining10\ncom.google.javascript.jscomp.InlineFunctionsTest::testIssue1101\ncom.google.javascript.jscomp.InlineFunctionsTest::testInlineMutableArgsReferencedOnce",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

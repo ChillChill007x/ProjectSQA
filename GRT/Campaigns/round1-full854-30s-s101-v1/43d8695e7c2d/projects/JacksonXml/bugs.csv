@@ -1,0 +1,7 @@
+project,bug,status,targets,evaluated_targets,error
+JacksonXml,1,EVALUATED,1,1,
+JacksonXml,2,FAILED,1,0,
+JacksonXml,3,EVALUATED,1,1,
+JacksonXml,4,EVALUATED,1,1,
+JacksonXml,5,EVALUATED,1,1,
+JacksonXml,6,EVALUATED,1,1,

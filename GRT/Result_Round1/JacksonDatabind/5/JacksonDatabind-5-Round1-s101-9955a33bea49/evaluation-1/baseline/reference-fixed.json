@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-5-Round1-s101-9955a33bea49/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.databind.introspect.TestMixinMerging::testDisappearingMixins515"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.966,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

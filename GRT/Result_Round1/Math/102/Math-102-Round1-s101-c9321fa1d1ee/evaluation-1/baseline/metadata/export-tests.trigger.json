@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-102-Round1-s101-c9321fa1d1ee/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.837,
+  "stdout": "org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquareLargeTestStatistic\norg.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquare\norg.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquareLargeTestStatistic\norg.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquare\norg.apache.commons.math.stat.inference.TestUtilsTest::testChiSquareLargeTestStatistic\norg.apache.commons.math.stat.inference.TestUtilsTest::testChiSquare",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

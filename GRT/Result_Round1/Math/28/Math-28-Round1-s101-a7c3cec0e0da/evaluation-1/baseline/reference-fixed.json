@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-28-Round1-s101-a7c3cec0e0da/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath828Cycle"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.978,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

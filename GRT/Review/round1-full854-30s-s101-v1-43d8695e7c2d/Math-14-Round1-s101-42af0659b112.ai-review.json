@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.905134+00:00",
+  "run_id": "Math-14-Round1-s101-42af0659b112",
+  "project": "Math",
+  "bug": "14",
+  "target": "org.apache.commons.math3.optim.nonlinear.vector.Weight",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Weight constructed from an empty array succeeds on fixed but fails on buggy. The patch switches dense construction to DiagonalMatrix. Empty-dimensional behavior alone does not establish the intended diagonal-weight numerical/performance defect; review the accepted input domain.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 6,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/14/Math-14-Round1-s101-42af0659b112/org/apache/commons/math3/optim/nonlinear/vector/SqaGeneratedTest.java": "9f22e888ebb6ed387c677f09f54b076dc6d0ac346daab436f34560369a0d6494"
+  },
+  "result_sha256": "30a1f715e805076c141bc48af04fc1dcedf7d5cd7575f5b696011ff67d4da72b",
+  "result_path": "GRT/Result_Round1/Math/14/Math-14-Round1-s101-42af0659b112/result.json",
+  "tests_path": "GRT/Test/Math/14/Math-14-Round1-s101-42af0659b112",
+  "evaluation_path": "GRT/Result_Round1/Math/14/Math-14-Round1-s101-42af0659b112/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/14.src.patch",
+  "patch_sha256": "8a628b985429898971c4d6b012d3ecedd12a8f238ad57e6c4b3556dcad3a725f",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

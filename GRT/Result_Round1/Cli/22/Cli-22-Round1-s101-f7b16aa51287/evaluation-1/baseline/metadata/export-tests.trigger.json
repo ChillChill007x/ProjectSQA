@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-22-Round1-s101-f7b16aa51287/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.apache.commons.cli.ApplicationTest::testGroovy\norg.apache.commons.cli.PosixParserTest::testStopAtExpectedArg",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

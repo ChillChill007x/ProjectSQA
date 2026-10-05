@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.898625+00:00",
+  "run_id": "Math-6-Round1-s101-efeb8f5b6925",
+  "project": "Math",
+  "bug": "6",
+  "target": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "The getMaxIterations mismatch maps to the patched BaseOptimizer default. The representative uses negative CMAES/checker settings and a mismatched checker type; do not infer valid optimizer behavior solely from this getter snapshot.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test23"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/6/Math-6-Round1-s101-efeb8f5b6925/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/SqaGeneratedTest.java": "1d0af553baaa9ab7bc2018044268e714f11137e3974494bc468c3a21bdf5b422"
+  },
+  "result_sha256": "58b0ad4ac6cc775010835f00f42e9065309529eda08839c2b9b1d345b1610547",
+  "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-efeb8f5b6925/result.json",
+  "tests_path": "GRT/Test/Math/6/Math-6-Round1-s101-efeb8f5b6925",
+  "evaluation_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-efeb8f5b6925/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/6.src.patch",
+  "patch_sha256": "9744bb2aa58774fcb1e6e89e4c80a0002abae0af542a6ce458650f79659ab26e",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

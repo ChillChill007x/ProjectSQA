@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 10,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 101,
+  "target": "com.google.javascript.jscomp.MakeDeclaredNamesUnique",
+  "output": "/workspace/GRT/Test/Closure/49/Closure-49-Round1-s101-23fa4bc84fcd",
+  "class_root": "/workspace/work/checkouts/Closure-49-Round1-s101-23fa4bc84fcd/generation-fixed/build/classes",
+  "budget_seconds": 30
+}

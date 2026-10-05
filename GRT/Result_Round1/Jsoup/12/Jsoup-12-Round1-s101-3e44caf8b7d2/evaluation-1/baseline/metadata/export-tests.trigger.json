@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-12-Round1-s101-3e44caf8b7d2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.454,
+  "stdout": "org.jsoup.select.SelectorTest::testByAttributeRegexCombined",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

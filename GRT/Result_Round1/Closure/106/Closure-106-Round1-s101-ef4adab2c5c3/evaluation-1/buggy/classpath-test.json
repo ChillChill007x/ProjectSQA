@@ -1,0 +1,11 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/build/classes",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/lib/google_common_deploy.jar",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/lib/google_compiled_protos_deploy.jar",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/lib/junit.jar",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/lib/libtrunk_rhino_parser_jarjared.jar",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-ef4adab2c5c3/evaluation-1/buggy/build/test"
+  ],
+  "missing_entries": []
+}

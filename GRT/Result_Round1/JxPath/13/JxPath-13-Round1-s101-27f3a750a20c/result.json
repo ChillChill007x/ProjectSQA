@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-13-Round1-s101-27f3a750a20c",
+  "unit": {
+    "project": "JxPath",
+    "bug": "13",
+    "target": "org.apache.commons.jxpath.ri.NamespaceResolver",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:10:59.253117+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c",
+    "tests": "GRT/Test/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c",
+    "config": "GRT/Configuration/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c"
+  },
+  "generation_time_sec": 1.835,
+  "test_sha256": {
+    "GRT/Test/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c/org/apache/commons/jxpath/ri/SqaGeneratedTest.java": "9a333bc372f01424916e8d2c52eca0563dc9506e09b03056cb6b224b31609b81"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:12:25.970582+00:00"
+}

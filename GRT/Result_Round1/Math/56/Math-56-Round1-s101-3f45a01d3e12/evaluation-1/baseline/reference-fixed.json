@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-56-Round1-s101-3f45a01d3e12/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math.util.MultidimensionalCounterTest::testIterationConsistency"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 18.54,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

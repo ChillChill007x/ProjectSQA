@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-16-Round1-s101-4a11a3f025f4/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.nodes.DocumentTypeTest::outerHtmlGeneration"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.369,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

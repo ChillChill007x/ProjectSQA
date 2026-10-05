@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.069003+00:00",
+  "run_id": "JacksonCore-8-Round1-s101-17e3a4dd2ad4",
+  "project": "JacksonCore",
+  "bug": "8",
+  "target": "com.fasterxml.jackson.core.util.TextBuffer",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Empty TextBuffer.getTextBuffer returns null on buggy; patch checks currentSegment before returning and can allocate an empty buffer.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test36"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/8/JacksonCore-8-Round1-s101-17e3a4dd2ad4/com/fasterxml/jackson/core/util/SqaGeneratedTest.java": "d80bf01b13ef371c1d037ed0ef4f2ea495d961454528125b62bf57f7b69afa22"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\8\\JacksonCore-8-Round1-s101-17e3a4dd2ad4\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/8/JacksonCore-8-Round1-s101-17e3a4dd2ad4",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/8/JacksonCore-8-Round1-s101-17e3a4dd2ad4/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/8.src.patch",
+  "patch_sha256": "a81b9010e53492ec2baa0d7c3c9c7389a1152f989de5eb4312cd14ba96f692d5",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

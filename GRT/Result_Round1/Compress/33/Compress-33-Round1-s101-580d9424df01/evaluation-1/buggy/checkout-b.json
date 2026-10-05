@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Compress",
+    "-v",
+    "33b",
+    "-w",
+    "/workspace/work/checkouts/Compress-33-Round1-s101-580d9424df01/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.97,
+  "stdout": "",
+  "stderr": "Checking out b72b5c71 to /workspace/work/checkouts/Compress-33-Round1-s101- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Compress-33-Round1-s101-58 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff b72b5c71:9b3e389f..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Compress-33b.................................... OK\n"
+}

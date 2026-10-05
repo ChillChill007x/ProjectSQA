@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Math",
+    "-v",
+    "16b",
+    "-w",
+    "/workspace/work/checkouts/Math-16-Round1-s101-08d83882805d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.91,
+  "stdout": "",
+  "stderr": "Checking out 46ed0af1 to /workspace/work/checkouts/Math-16-Round1-s101-08d8 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 46ed0af1:9e75d6fa..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Math-16b........................................ OK\n"
+}

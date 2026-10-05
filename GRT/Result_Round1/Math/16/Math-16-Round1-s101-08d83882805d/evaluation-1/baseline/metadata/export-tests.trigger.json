@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-16-Round1-s101-08d83882805d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.197,
+  "stdout": "org.apache.commons.math3.util.FastMathTest::testMath905LargePositive\norg.apache.commons.math3.util.FastMathTest::testMath905LargeNegative",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

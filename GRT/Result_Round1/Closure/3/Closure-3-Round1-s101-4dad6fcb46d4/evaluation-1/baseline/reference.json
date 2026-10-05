@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression1a",
+  "available_triggers": [
+    "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression1a",
+    "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression1",
+    "com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression3"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Cli-18-Round1-s101-b84fa22c2153/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Cli/18/Cli-18-Round1-s101-b84fa22c2153/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.715,
+  "stdout": "[INFO] 22 classes instrumented to /workspace/GRT/Result_Round1/Cli/18/Cli-18-Round1-s101-b84fa22c2153/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

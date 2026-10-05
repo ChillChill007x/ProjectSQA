@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.880734+00:00",
+  "run_id": "Math-3-Round1-s101-1ca29a3781c8",
+  "project": "Math",
+  "bug": "3",
+  "target": "org.apache.commons.math3.util.MathArrays",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "MathArrays.linearCombination with one-element arrays throws AIOOBE on buggy. The fixed patch has an explicit length-one multiplication path; the representative exactly exercises it.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test58"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/3/Math-3-Round1-s101-1ca29a3781c8/org/apache/commons/math3/util/SqaGeneratedTest.java": "1d899bfdc89f27800af10def1b9a48b34245bda6b46b87ce11ad0142da5b7557"
+  },
+  "result_sha256": "969f0b385385a7ff13333749501dfdb167750c2ead1825ad9a8ec3c59e901d66",
+  "result_path": "GRT/Result_Round1/Math/3/Math-3-Round1-s101-1ca29a3781c8/result.json",
+  "tests_path": "GRT/Test/Math/3/Math-3-Round1-s101-1ca29a3781c8",
+  "evaluation_path": "GRT/Result_Round1/Math/3/Math-3-Round1-s101-1ca29a3781c8/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/3.src.patch",
+  "patch_sha256": "1f49e976e505b2c0d4d2d1d8158d6cd2e7c94ac3190b669a9ecbd4542e973842",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

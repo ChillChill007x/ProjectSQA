@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-20-Round1-s101-fdb2ddd3d57f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.apache.commons.collections.list.TreeListTest::testBugCollections447",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

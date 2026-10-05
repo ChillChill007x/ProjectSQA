@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.838403+00:00",
+  "run_id": "Jsoup-26-Round1-s101-d5e9e3f2c2fc",
+  "project": "Jsoup",
+  "bug": "26",
+  "target": "org.jsoup.safety.Cleaner",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Cleaner.clean fails on a Document whose children were emptied. The patch guards a missing body before copySafeNodes; this is a direct reproduction of the missing-body branch, although it constructs it by mutation rather than a frameset.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test87"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc/org/jsoup/safety/SqaGeneratedTest.java": "95ed5e2634a8c2b53bf144622f686d1bf19e3512d7153be168864c54ab780e6b"
+  },
+  "result_sha256": "87be23f7c266d0cc9a3526cae12451549f04ce76d95e4797d6e36525ce2b904e",
+  "result_path": "GRT/Result_Round1/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc/result.json",
+  "tests_path": "GRT/Test/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/26.src.patch",
+  "patch_sha256": "acd4a96449cbb6c128b6fd98cdbfb95f3e390360203ce9c64176728d9151d959",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

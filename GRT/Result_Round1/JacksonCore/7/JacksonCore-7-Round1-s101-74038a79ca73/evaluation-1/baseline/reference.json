@@ -1,0 +1,9 @@
+{
+  "trigger": "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
+  "available_triggers": [
+    "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes",
+    "com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

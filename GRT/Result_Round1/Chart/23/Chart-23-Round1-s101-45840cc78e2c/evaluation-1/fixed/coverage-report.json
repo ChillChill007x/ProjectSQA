@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Chart/23/Chart-23-Round1-s101-45840cc78e2c/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Chart-23-Round1-s101-45840cc78e2c/evaluation-1/fixed/build/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Chart/23/Chart-23-Round1-s101-45840cc78e2c/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.164,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Chart/23/Chart-23-Round1-s101-45840cc78e2c/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Csv",
+    "-v",
+    "6b",
+    "-w",
+    "/workspace/work/checkouts/Csv-6-Round1-s101-3956107912d4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.868,
+  "stdout": "",
+  "stderr": "Checking out 9f03b06a to /workspace/work/checkouts/Csv-6-Round1-s101-395610 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Csv-6-Round1-s101-39561079 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 9f03b06a:a84668e0..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Csv-6b.......................................... OK\n"
+}

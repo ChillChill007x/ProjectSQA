@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/target/classes/org/apache/commons/jxpath/ri/model/NodePointer.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.738,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Math-5-Round1-s101-70aa3eb127a4/evaluation-1/buggy/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Math/5/Math-5-Round1-s101-70aa3eb127a4/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.91,
+  "stdout": "[INFO] 1044 classes instrumented to /workspace/GRT/Result_Round1/Math/5/Math-5-Round1-s101-70aa3eb127a4/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

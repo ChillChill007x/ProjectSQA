@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.840404+00:00",
+  "run_id": "Jsoup-34-Round1-s101-d8ebb1bd8f03",
+  "project": "Jsoup",
+  "bug": "34",
+  "target": "org.jsoup.parser.CharacterReader",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "CharacterReader.consumeTo('tml') on 'htm' reads beyond the array. The patch checks that the candidate delimiter end stays within input length; direct short-tail boundary evidence.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test56"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03/org/jsoup/parser/SqaGeneratedTest.java": "6d8969f52aec21de14810b2ec9105a46eb38f5762ca806c1a5ee648b792969b8"
+  },
+  "result_sha256": "cc3d520688f0cc1ac82439f8e0fa713828a36ad1e0c76d91be8b31d19b03dde3",
+  "result_path": "GRT/Result_Round1/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03/result.json",
+  "tests_path": "GRT/Test/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/34.src.patch",
+  "patch_sha256": "5e518699e4cb21ee824f147dc73d0e17dbe7726e9a2c50d72c72fded9b6ac314",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

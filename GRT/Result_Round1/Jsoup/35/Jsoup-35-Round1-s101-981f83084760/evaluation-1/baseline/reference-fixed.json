@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-35-Round1-s101-981f83084760/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.parser.HtmlParserTest::handlesUnclosedAnchors"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.333,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

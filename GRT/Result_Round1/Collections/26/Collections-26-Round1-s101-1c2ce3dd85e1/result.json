@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Collections-26-Round1-s101-1c2ce3dd85e1",
+  "unit": {
+    "project": "Collections",
+    "bug": "26",
+    "target": "org.apache.commons.collections4.keyvalue.MultiKey",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T02:35:49.872192+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Collections/26/Collections-26-Round1-s101-1c2ce3dd85e1",
+    "tests": "GRT/Test/Collections/26/Collections-26-Round1-s101-1c2ce3dd85e1",
+    "config": "GRT/Configuration/Collections/26/Collections-26-Round1-s101-1c2ce3dd85e1"
+  },
+  "generation_time_sec": 0.565,
+  "test_sha256": {
+    "GRT/Test/Collections/26/Collections-26-Round1-s101-1c2ce3dd85e1/org/apache/commons/collections4/keyvalue/SqaGeneratedTest.java": "2ec259f47f375a0c8a42b637aafcbae7805a1ca919e8232dece95a263b3da1ed"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass",
+    "available_triggers": [
+      "org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T02:36:26.905356+00:00"
+}

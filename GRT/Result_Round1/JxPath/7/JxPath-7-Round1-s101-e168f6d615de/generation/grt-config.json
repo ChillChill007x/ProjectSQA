@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 10,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 101,
+  "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan",
+  "output": "/workspace/GRT/Test/JxPath/7/JxPath-7-Round1-s101-e168f6d615de",
+  "class_root": "/workspace/work/checkouts/JxPath-7-Round1-s101-e168f6d615de/generation-fixed/target/classes",
+  "budget_seconds": 30
+}

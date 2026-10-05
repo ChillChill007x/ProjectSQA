@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-10-05T12:38:19.358209+00:00",
+  "copied_attempts_this_cycle": 0,
+  "copied_attempts_this_session": 77,
+  "elapsed_seconds": 0.007,
+  "errors": [],
+  "note": "Only completed experiment attempts are copied. Counts are attempts, not unique bugs. Progress may include active Linux jobs."
+}

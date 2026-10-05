@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-103-Round1-s101-52c4810a1b6a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException\ncom.google.javascript.jscomp.ControlFlowAnalysisTest::testInstanceOf\ncom.google.javascript.jscomp.DisambiguatePropertiesTest::testSupertypeReferenceOfSubtypeProperty",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

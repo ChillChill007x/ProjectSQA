@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-27-Round1-s101-669a8ab4a058/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.helper.DataUtilTest::testCharset"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.305,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

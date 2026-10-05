@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/parallel/grt/725/checkouts/Time-22-Round1-s101-cd739402f81c/evaluation-1/fixed/build/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Time/22/Time-22-Round1-s101-cd739402f81c/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.097,
+  "stdout": "[INFO] 226 classes instrumented to /workspace/GRT/Result_Round1/Time/22/Time-22-Round1-s101-cd739402f81c/evaluation-1/fixed/instrumented.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.859930+00:00",
+  "run_id": "JxPath-13-Round1-s101-34d7870c2e23",
+  "project": "JxPath",
+  "bug": "13",
+  "target": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "DOMNodePointer.getNamespaceResolver is null on buggy and non-null on fixed, matching the added lazy resolver. The generated pointer wraps a null DOM Node, so valid-state and namespace-resolution relevance remain unestablished.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 4,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15"
+  ],
+  "test_sha256": {
+    "GRT/Test/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23/org/apache/commons/jxpath/ri/model/dom/SqaGeneratedTest.java": "5248dae8c513ef9c01084d2855cfa0e2e7fbb34ed725137047b5fd7bfd178a17"
+  },
+  "result_sha256": "4af361c54eb3f6a147167c10a94fef640b0106d0a670fad2d96f24f89d06f755",
+  "result_path": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23/result.json",
+  "tests_path": "GRT/Test/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23",
+  "evaluation_path": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JxPath/patches/13.src.patch",
+  "patch_sha256": "14b3cd576bc54dc4fa8df58f31f88f140490bf30244572a67a30114d14900e39",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

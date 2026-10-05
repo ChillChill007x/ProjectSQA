@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-18-Round1-s101-f9d7bfcc96ec",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "18",
+    "target": "com.fasterxml.jackson.databind.MappingIterator",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T04:36:53.325049+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/18/JacksonDatabind-18-Round1-s101-f9d7bfcc96ec",
+    "tests": "GRT/Test/JacksonDatabind/18/JacksonDatabind-18-Round1-s101-f9d7bfcc96ec",
+    "config": "GRT/Configuration/JacksonDatabind/18/JacksonDatabind-18-Round1-s101-f9d7bfcc96ec"
+  },
+  "generation_time_sec": 0.866,
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/18/JacksonDatabind-18-Round1-s101-f9d7bfcc96ec/com/fasterxml/jackson/databind/SqaGeneratedTest.java": "6b0851f9990e267200ed7c49245e382fbc2e63244a44ce20fd54b918bbe46e41"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleRootRecovery",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleRootRecovery",
+      "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testRootBeans",
+      "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleArrayRecovery"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T04:37:59.539302+00:00"
+}

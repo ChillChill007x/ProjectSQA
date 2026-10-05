@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Lang",
+    "-v",
+    "6b",
+    "-w",
+    "/workspace/work/checkouts/Lang-6-Round1-s101-cc7900b8cf81/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.625,
+  "stdout": "",
+  "stderr": "Checking out 52bcd9b8 to /workspace/work/checkouts/Lang-6-Round1-s101-cc790 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nApply patch................................................................ OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Lang-6-Round1-s101-cc7900b OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 52bcd9b8:f5a83bb9..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Lang-6b......................................... OK\n"
+}

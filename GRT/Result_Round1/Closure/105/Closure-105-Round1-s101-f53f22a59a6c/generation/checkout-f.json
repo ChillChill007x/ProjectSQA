@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "105f",
+    "-w",
+    "/workspace/work/checkouts/Closure-105-Round1-s101-f53f22a59a6c/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.471,
+  "stdout": "",
+  "stderr": "Checking out 113a08f5 to /workspace/work/checkouts/Closure-105-Round1-s101- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: can't read /workspace/work/checkouts/Closure-105-Round1-s101-f53f22a59a6c/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-105-Round1-s101-f53f22a59a6c/generation-fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-105-Round1-s101-f53f22a59a6c/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-105-Round1-s101-f53f22a59a6c/generation-fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 113a08f5:8e121a1f..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-105f.................................... OK\n"
+}

@@ -1,0 +1,1731 @@
+{
+  "updated_at": "2026-10-04T23:33:26.313614+00:00",
+  "expected_bugs": 93,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 68,
+    "FAILED": 25
+  },
+  "bugs": [
+    {
+      "project": "Jsoup",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Document"
+      ],
+      "units": {
+        "org.jsoup.nodes.Document": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/1/Jsoup-1-Round1-s101-2f3eb3f9a6df/result.json",
+          "started_at": "2026-10-04T17:16:56.102042+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.Parser"
+      ],
+      "units": {
+        "org.jsoup.parser.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/2/Jsoup-2-Round1-s101-5d7dd54fdf75/result.json",
+          "started_at": "2026-10-04T17:19:51.046662+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "3",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.parser.Tag"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/3/Jsoup-3-Round1-s101-7053f346a8fa-attempt2/result.json",
+          "started_at": "2026-10-04T18:36:27.932819+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.Parser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/3/Jsoup-3-Round1-s101-2d9062b87243/result.json",
+          "started_at": "2026-10-04T18:37:35.700836+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.Tag": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/3/Jsoup-3-Round1-s101-244f48865640/result.json",
+          "started_at": "2026-10-04T18:38:38.876075+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Entities"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/4/Jsoup-4-Round1-s101-0e87aef34dd9/result.json",
+          "started_at": "2026-10-04T18:40:03.215298+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.Parser"
+      ],
+      "units": {
+        "org.jsoup.parser.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/5/Jsoup-5-Round1-s101-09b0dc23fd61/result.json",
+          "started_at": "2026-10-04T18:41:37.202039+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Entities"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/6/Jsoup-6-Round1-s101-efacbb2a14ce/result.json",
+          "started_at": "2026-10-04T18:43:08.859931+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Document"
+      ],
+      "units": {
+        "org.jsoup.nodes.Document": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/7/Jsoup-7-Round1-s101-44fd0ea7d9ee/result.json",
+          "started_at": "2026-10-04T18:44:49.490491+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Node"
+      ],
+      "units": {
+        "org.jsoup.nodes.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff/result.json",
+          "started_at": "2026-10-04T18:46:26.935438+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Entities"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/9/Jsoup-9-Round1-s101-7de0a64c6f12/result.json",
+          "started_at": "2026-10-04T18:48:03.899585+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Node"
+      ],
+      "units": {
+        "org.jsoup.nodes.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/10/Jsoup-10-Round1-s101-e19084aea615/result.json",
+          "started_at": "2026-10-04T18:49:39.774495+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "11",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.select.Selector"
+      ],
+      "units": {
+        "org.jsoup.select.Selector": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/11/Jsoup-11-Round1-s101-e7bfc26777dc/result.json",
+          "started_at": "2026-10-04T18:51:16.711890+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.select.Selector"
+      ],
+      "units": {
+        "org.jsoup.select.Selector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/12/Jsoup-12-Round1-s101-3e44caf8b7d2/result.json",
+          "started_at": "2026-10-04T18:52:51.408863+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Node"
+      ],
+      "units": {
+        "org.jsoup.nodes.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/13/Jsoup-13-Round1-s101-1c80ed66b03f/result.json",
+          "started_at": "2026-10-04T18:54:32.918504+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "14",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.Tokeniser",
+        "org.jsoup.parser.TokeniserState"
+      ],
+      "units": {
+        "org.jsoup.parser.Tokeniser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/14/Jsoup-14-Round1-s101-cac08a4506e8/result.json",
+          "started_at": "2026-10-04T18:56:22.141285+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.TokeniserState": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Jsoup/14/Jsoup-14-Round1-s101-dcb97159163b/result.json",
+          "started_at": "2026-10-04T18:57:44.758030+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "15",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.TreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.TreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/15/Jsoup-15-Round1-s101-5b5843709c59/result.json",
+          "started_at": "2026-10-04T18:59:17.643443+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.DocumentType"
+      ],
+      "units": {
+        "org.jsoup.nodes.DocumentType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/16/Jsoup-16-Round1-s101-4a11a3f025f4/result.json",
+          "started_at": "2026-10-04T19:00:49.245620+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.TreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.TreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/17/Jsoup-17-Round1-s101-790c9680a989/result.json",
+          "started_at": "2026-10-04T19:02:36.161912+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02/result.json",
+          "started_at": "2026-10-04T19:04:08.675460+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.safety.Whitelist"
+      ],
+      "units": {
+        "org.jsoup.safety.Whitelist": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/19/Jsoup-19-Round1-s101-e7556fe6571a/result.json",
+          "started_at": "2026-10-04T19:05:58.142014+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/20/Jsoup-20-Round1-s101-cf99dce4f03c/result.json",
+          "started_at": "2026-10-04T19:07:45.755096+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.select.CombiningEvaluator",
+        "org.jsoup.select.QueryParser"
+      ],
+      "units": {
+        "org.jsoup.select.CombiningEvaluator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/21/Jsoup-21-Round1-s101-25d05572144f/result.json",
+          "started_at": "2026-10-04T19:09:33.666066+00:00",
+          "error": null
+        },
+        "org.jsoup.select.QueryParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/21/Jsoup-21-Round1-s101-5b7e99dde7a4/result.json",
+          "started_at": "2026-10-04T19:11:04.244164+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "22",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node",
+        "org.jsoup.select.Elements"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-903a3aea4bec/result.json",
+          "started_at": "2026-10-04T19:12:49.543375+00:00",
+          "error": null
+        },
+        "org.jsoup.nodes.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58/result.json",
+          "started_at": "2026-10-04T19:14:20.153776+00:00",
+          "error": null
+        },
+        "org.jsoup.select.Elements": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-ec50dad2f4fd/result.json",
+          "started_at": "2026-10-04T19:15:48.537234+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "23",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader",
+        "org.jsoup.parser.Tokeniser"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/23/Jsoup-23-Round1-s101-da6cdd2a6b85/result.json",
+          "started_at": "2026-10-04T19:17:30.937300+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.Tokeniser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/23/Jsoup-23-Round1-s101-9de562d31007/result.json",
+          "started_at": "2026-10-04T19:18:54.805924+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "24",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.TokeniserState"
+      ],
+      "units": {
+        "org.jsoup.parser.TokeniserState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/24/Jsoup-24-Round1-s101-d6d245aba6d8/result.json",
+          "started_at": "2026-10-04T19:20:42.688293+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.Tag"
+      ],
+      "units": {
+        "org.jsoup.parser.Tag": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/25/Jsoup-25-Round1-s101-7dca7767c887/result.json",
+          "started_at": "2026-10-04T19:22:24.811436+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.safety.Cleaner"
+      ],
+      "units": {
+        "org.jsoup.safety.Cleaner": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc/result.json",
+          "started_at": "2026-10-04T19:24:13.156986+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/27/Jsoup-27-Round1-s101-669a8ab4a058/result.json",
+          "started_at": "2026-10-04T19:26:00.025895+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "28",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.Entities",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.parser.Tokeniser"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/28/Jsoup-28-Round1-s101-d3eb7f0a7c7f/result.json",
+          "started_at": "2026-10-04T19:27:45.059027+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.Parser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/28/Jsoup-28-Round1-s101-70d3b79ff795/result.json",
+          "started_at": "2026-10-04T19:29:07.898395+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.Tokeniser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/28/Jsoup-28-Round1-s101-e0748e813d50/result.json",
+          "started_at": "2026-10-04T19:30:29.817069+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Document"
+      ],
+      "units": {
+        "org.jsoup.nodes.Document": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/29/Jsoup-29-Round1-s101-62219253c02b/result.json",
+          "started_at": "2026-10-04T19:32:12.710988+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.safety.Cleaner"
+      ],
+      "units": {
+        "org.jsoup.safety.Cleaner": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/30/Jsoup-30-Round1-s101-b58ac4ced69b/result.json",
+          "started_at": "2026-10-04T19:34:01.924565+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "31",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.TokeniserState",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.Token": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/31/Jsoup-31-Round1-s101-e515e1b972d9/result.json",
+          "started_at": "2026-10-04T19:35:49.880119+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.TokeniserState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/31/Jsoup-31-Round1-s101-91b530920826/result.json",
+          "started_at": "2026-10-04T19:37:22.566145+00:00",
+          "error": "Repeated executions have different outcomes"
+        },
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/31/Jsoup-31-Round1-s101-10fd67e08202/result.json",
+          "started_at": "2026-10-04T19:38:39.896653+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/32/Jsoup-32-Round1-s101-7bda91df4374/result.json",
+          "started_at": "2026-10-04T19:40:25.049018+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/33/Jsoup-33-Round1-s101-4009fe58f677/result.json",
+          "started_at": "2026-10-04T19:42:11.028755+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "34",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03/result.json",
+          "started_at": "2026-10-04T19:43:58.404142+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "35",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/35/Jsoup-35-Round1-s101-981f83084760/result.json",
+          "started_at": "2026-10-04T19:45:48.877267+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/36/Jsoup-36-Round1-s101-494a572d2fb1/result.json",
+          "started_at": "2026-10-04T19:47:26.805557+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/37/Jsoup-37-Round1-s101-b25fadef4c6d/result.json",
+          "started_at": "2026-10-04T19:49:14.842978+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "38",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/38/Jsoup-38-Round1-s101-2f58f8cc63da/result.json",
+          "started_at": "2026-10-04T19:51:02.187241+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/39/Jsoup-39-Round1-s101-0e1167163255/result.json",
+          "started_at": "2026-10-04T19:52:35.377459+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.DocumentType"
+      ],
+      "units": {
+        "org.jsoup.nodes.DocumentType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/40/Jsoup-40-Round1-s101-0dfdb7febac0/result.json",
+          "started_at": "2026-10-04T19:54:23.909232+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "41",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/41/Jsoup-41-Round1-s101-2e52e58753b2/result.json",
+          "started_at": "2026-10-04T19:56:14.731204+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "42",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.FormElement"
+      ],
+      "units": {
+        "org.jsoup.nodes.FormElement": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/42/Jsoup-42-Round1-s101-dfe5e1bfacc1/result.json",
+          "started_at": "2026-10-04T19:58:08.359723+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "43",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/43/Jsoup-43-Round1-s101-edcf0acbfaaa/result.json",
+          "started_at": "2026-10-04T20:00:01.432933+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "44",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.TreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.TreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/44/Jsoup-44-Round1-s101-4adec8e908a9/result.json",
+          "started_at": "2026-10-04T20:01:55.093115+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/45/Jsoup-45-Round1-s101-9f71c0483e7a/result.json",
+          "started_at": "2026-10-04T20:03:50.598825+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "46",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Entities"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/46/Jsoup-46-Round1-s101-a5f4481c8b03/result.json",
+          "started_at": "2026-10-04T20:05:45.470289+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "47",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Entities"
+      ],
+      "units": {
+        "org.jsoup.nodes.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/47/Jsoup-47-Round1-s101-877d1e7f92a3/result.json",
+          "started_at": "2026-10-04T20:07:41.990501+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "48",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.HttpConnection"
+      ],
+      "units": {
+        "org.jsoup.helper.HttpConnection": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/48/Jsoup-48-Round1-s101-215e79a11a2c/result.json",
+          "started_at": "2026-10-04T20:09:38.307134+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "49",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Node"
+      ],
+      "units": {
+        "org.jsoup.nodes.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/49/Jsoup-49-Round1-s101-091e332115ab/result.json",
+          "started_at": "2026-10-04T20:11:32.815885+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "50",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662/result.json",
+          "started_at": "2026-10-04T20:13:29.314582+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "51",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/51/Jsoup-51-Round1-s101-40f26cc1be52-attempt2/result.json",
+          "started_at": "2026-10-04T21:12:34.552231+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "52",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil",
+        "org.jsoup.nodes.XmlDeclaration",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/52/Jsoup-52-Round1-s101-4a88e0603fa0/result.json",
+          "started_at": "2026-10-04T21:14:18.232934+00:00",
+          "error": null
+        },
+        "org.jsoup.nodes.XmlDeclaration": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/52/Jsoup-52-Round1-s101-f82428a03de9/result.json",
+          "started_at": "2026-10-04T21:16:00.325469+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/52/Jsoup-52-Round1-s101-039755fc93ee/result.json",
+          "started_at": "2026-10-04T21:17:35.840488+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "53",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.TokenQueue"
+      ],
+      "units": {
+        "org.jsoup.parser.TokenQueue": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/53/Jsoup-53-Round1-s101-2bf0e8f23317/result.json",
+          "started_at": "2026-10-04T21:19:30.899453+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "54",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.W3CDom"
+      ],
+      "units": {
+        "org.jsoup.helper.W3CDom": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/54/Jsoup-54-Round1-s101-804a56fcb173/result.json",
+          "started_at": "2026-10-04T21:28:31.049593+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "55",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.TokeniserState"
+      ],
+      "units": {
+        "org.jsoup.parser.TokeniserState": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Jsoup/55/Jsoup-55-Round1-s101-29cc43f47757/result.json",
+          "started_at": "2026-10-04T21:36:52.683318+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "56",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.DocumentType",
+        "org.jsoup.parser.HtmlTreeBuilderState",
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.TokeniserState",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.nodes.DocumentType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61/result.json",
+          "started_at": "2026-10-04T21:47:16.409415+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-804817b6092a/result.json",
+          "started_at": "2026-10-04T21:48:38.940028+00:00",
+          "error": "Repeated executions have different outcomes"
+        },
+        "org.jsoup.parser.Token": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-c44505d74cd8/result.json",
+          "started_at": "2026-10-04T21:50:07.852583+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.TokeniserState": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-a8404bf25421/result.json",
+          "started_at": "2026-10-04T21:51:53.085537+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-0d9e5d1e212a/result.json",
+          "started_at": "2026-10-04T21:53:21.529847+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "57",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Attributes"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attributes": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/57/Jsoup-57-Round1-s101-234e69598f77/result.json",
+          "started_at": "2026-10-04T21:55:28.845586+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "58",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.Jsoup",
+        "org.jsoup.parser.Parser",
+        "org.jsoup.safety.Cleaner"
+      ],
+      "units": {
+        "org.jsoup.Jsoup": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/58/Jsoup-58-Round1-s101-6689d5172a7e/result.json",
+          "started_at": "2026-10-04T21:57:26.838514+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.Parser": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/58/Jsoup-58-Round1-s101-df6ea88782f4/result.json",
+          "started_at": "2026-10-04T21:59:04.011655+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.safety.Cleaner": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/58/Jsoup-58-Round1-s101-8bb417b63cb5/result.json",
+          "started_at": "2026-10-04T22:00:36.900352+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "59",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.Token"
+      ],
+      "units": {
+        "org.jsoup.parser.Token": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/59/Jsoup-59-Round1-s101-d238b146cfdc/result.json",
+          "started_at": "2026-10-04T22:02:33.323857+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "60",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.TokenQueue",
+        "org.jsoup.select.QueryParser"
+      ],
+      "units": {
+        "org.jsoup.parser.TokenQueue": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-9b8a92748483/result.json",
+          "started_at": "2026-10-04T22:04:30.708103+00:00",
+          "error": null
+        },
+        "org.jsoup.select.QueryParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed/result.json",
+          "started_at": "2026-10-04T22:06:07.042905+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "61",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/61/Jsoup-61-Round1-s101-d53a49d957f0/result.json",
+          "started_at": "2026-10-04T22:08:03.584997+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "62",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/62/Jsoup-62-Round1-s101-444a9637c380/result.json",
+          "started_at": "2026-10-04T22:10:06.142972+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "63",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.Tokeniser"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/63/Jsoup-63-Round1-s101-c0476d1db92b/result.json",
+          "started_at": "2026-10-04T22:11:50.384789+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.Tokeniser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/63/Jsoup-63-Round1-s101-03bffe186de4/result.json",
+          "started_at": "2026-10-04T22:13:28.903948+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "64",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Jsoup/64/Jsoup-64-Round1-s101-fa23820b2ffc/result.json",
+          "started_at": "2026-10-04T22:15:34.181202+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "65",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/65/Jsoup-65-Round1-s101-98220eee0f48/result.json",
+          "started_at": "2026-10-04T22:17:22.321468+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/65/Jsoup-65-Round1-s101-7a3af895cf5c/result.json",
+          "started_at": "2026-10-04T22:19:01.136093+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "66",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/66/Jsoup-66-Round1-s101-b897dc0710c4/result.json",
+          "started_at": "2026-10-04T22:20:43.954220+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "67",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/67/Jsoup-67-Round1-s101-19f62a92d9c9/result.json",
+          "started_at": "2026-10-04T22:22:43.985815+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "68",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/68/Jsoup-68-Round1-s101-553a7e9de181/result.json",
+          "started_at": "2026-10-04T22:24:59.983357+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "69",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.FormElement"
+      ],
+      "units": {
+        "org.jsoup.nodes.FormElement": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/69/Jsoup-69-Round1-s101-4d2c79788aa2/result.json",
+          "started_at": "2026-10-04T22:27:00.139565+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "70",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Element"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/70/Jsoup-70-Round1-s101-a1c3c645900f/result.json",
+          "started_at": "2026-10-04T22:29:00.208277+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "71",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.PseudoTextElement",
+        "org.jsoup.select.Evaluator",
+        "org.jsoup.select.QueryParser"
+      ],
+      "units": {
+        "org.jsoup.nodes.PseudoTextElement": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "GRT/Result_Round1/Jsoup/71/Jsoup-71-Round1-s101-346a816b5e71/result.json",
+          "started_at": "2026-10-04T22:31:02.639875+00:00",
+          "error": "Compiled target missing: /workspace/work/checkouts/Jsoup-71-Round1-s101-346a816b5e71/evaluation-1/buggy/target/classes/org/jsoup/nodes/PseudoTextElement.class"
+        },
+        "org.jsoup.select.Evaluator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/71/Jsoup-71-Round1-s101-3b01ec3d6c94/result.json",
+          "started_at": "2026-10-04T22:32:42.738110+00:00",
+          "error": null
+        },
+        "org.jsoup.select.QueryParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/71/Jsoup-71-Round1-s101-00cf0bfc88bc/result.json",
+          "started_at": "2026-10-04T22:34:25.746590+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "72",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8/result.json",
+          "started_at": "2026-10-04T22:36:23.009983+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "73",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.W3CDom"
+      ],
+      "units": {
+        "org.jsoup.helper.W3CDom": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/73/Jsoup-73-Round1-s101-f101ec8fa9a2/result.json",
+          "started_at": "2026-10-04T22:38:22.767115+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "74",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.helper.StringUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.StringUtil": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/74/Jsoup-74-Round1-s101-d76386692d5b/result.json",
+          "started_at": "2026-10-04T22:40:30.153697+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "75",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Attributes"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attributes": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/75/Jsoup-75-Round1-s101-74564d12b3ba/result.json",
+          "started_at": "2026-10-04T22:42:21.768319+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "76",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.HtmlTreeBuilderState"
+      ],
+      "units": {
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/76/Jsoup-76-Round1-s101-28eb0bc4fbdb/result.json",
+          "started_at": "2026-10-04T22:44:18.948066+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "77",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/77/Jsoup-77-Round1-s101-26a691b8baa6/result.json",
+          "started_at": "2026-10-04T22:46:02.258339+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "78",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/78/Jsoup-78-Round1-s101-fd6fe787d430/result.json",
+          "started_at": "2026-10-04T22:48:01.099551+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "79",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.LeafNode"
+      ],
+      "units": {
+        "org.jsoup.nodes.LeafNode": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f/result.json",
+          "started_at": "2026-10-04T22:50:02.502510+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "80",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/80/Jsoup-80-Round1-s101-45c5b701edf3/result.json",
+          "started_at": "2026-10-04T22:52:00.510706+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "81",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/81/Jsoup-81-Round1-s101-597ff65cebaf/result.json",
+          "started_at": "2026-10-04T22:53:58.652679+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "82",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.DataUtil"
+      ],
+      "units": {
+        "org.jsoup.helper.DataUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/82/Jsoup-82-Round1-s101-b912316b809a/result.json",
+          "started_at": "2026-10-04T22:55:59.753500+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "83",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.parser.CharacterReader",
+        "org.jsoup.parser.TokeniserState"
+      ],
+      "units": {
+        "org.jsoup.parser.CharacterReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/83/Jsoup-83-Round1-s101-21bc5c2d4f3f/result.json",
+          "started_at": "2026-10-04T22:57:57.801313+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.TokeniserState": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Jsoup/83/Jsoup-83-Round1-s101-f725c6095d8e/result.json",
+          "started_at": "2026-10-04T22:59:41.265563+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "84",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.W3CDom"
+      ],
+      "units": {
+        "org.jsoup.helper.W3CDom": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/84/Jsoup-84-Round1-s101-c4b437453a21/result.json",
+          "started_at": "2026-10-04T23:01:32.292101+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "85",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Attribute"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attribute": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/85/Jsoup-85-Round1-s101-e7cfa5689d38/result.json",
+          "started_at": "2026-10-04T23:03:33.545049+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "86",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Comment"
+      ],
+      "units": {
+        "org.jsoup.nodes.Comment": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/86/Jsoup-86-Round1-s101-44b881df10c1/result.json",
+          "started_at": "2026-10-04T23:05:30.716000+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "87",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.HtmlTreeBuilderState",
+        "org.jsoup.parser.Tag"
+      ],
+      "units": {
+        "org.jsoup.nodes.Element": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/87/Jsoup-87-Round1-s101-6e8433b28935/result.json",
+          "started_at": "2026-10-04T23:07:26.514113+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/87/Jsoup-87-Round1-s101-8e342c93d3b5/result.json",
+          "started_at": "2026-10-04T23:09:04.678413+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.HtmlTreeBuilderState": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Jsoup/87/Jsoup-87-Round1-s101-cc6dca56743a/result.json",
+          "started_at": "2026-10-04T23:10:42.034903+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.jsoup.parser.Tag": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/87/Jsoup-87-Round1-s101-03417ecf772c/result.json",
+          "started_at": "2026-10-04T23:12:07.415585+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "88",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Attribute"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attribute": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/88/Jsoup-88-Round1-s101-9da790fbf7f8/result.json",
+          "started_at": "2026-10-04T23:13:58.719298+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "89",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.Attribute"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attribute": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1/result.json",
+          "started_at": "2026-10-04T23:15:55.278883+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "90",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.helper.HttpConnection"
+      ],
+      "units": {
+        "org.jsoup.helper.HttpConnection": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/90/Jsoup-90-Round1-s101-9382a0beb470/result.json",
+          "started_at": "2026-10-04T23:17:53.318583+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "91",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.UncheckedIOException",
+        "org.jsoup.parser.CharacterReader"
+      ],
+      "units": {
+        "org.jsoup.UncheckedIOException": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/91/Jsoup-91-Round1-s101-2d02ec911c2b/result.json",
+          "started_at": "2026-10-04T23:19:51.649683+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.CharacterReader": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/91/Jsoup-91-Round1-s101-31b8ae490a74/result.json",
+          "started_at": "2026-10-04T23:21:23.537155+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "92",
+      "status": "FAILED",
+      "targets": [
+        "org.jsoup.nodes.Attributes",
+        "org.jsoup.parser.HtmlTreeBuilder",
+        "org.jsoup.parser.ParseSettings",
+        "org.jsoup.parser.Token",
+        "org.jsoup.parser.XmlTreeBuilder"
+      ],
+      "units": {
+        "org.jsoup.nodes.Attributes": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-869757bc37d9/result.json",
+          "started_at": "2026-10-04T23:23:19.471381+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.HtmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-7d8e0112e72c/result.json",
+          "started_at": "2026-10-04T23:24:53.189456+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.ParseSettings": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-99d288347d39/result.json",
+          "started_at": "2026-10-04T23:26:33.098671+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.jsoup.parser.Token": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-0f0bc1151cd6/result.json",
+          "started_at": "2026-10-04T23:28:04.625082+00:00",
+          "error": null
+        },
+        "org.jsoup.parser.XmlTreeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/92/Jsoup-92-Round1-s101-1a8fdb54e397/result.json",
+          "started_at": "2026-10-04T23:29:43.614474+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Jsoup",
+      "bug": "93",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jsoup.nodes.FormElement"
+      ],
+      "units": {
+        "org.jsoup.nodes.FormElement": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Jsoup/93/Jsoup-93-Round1-s101-d14ed9fd9514/result.json",
+          "started_at": "2026-10-04T23:31:45.091435+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

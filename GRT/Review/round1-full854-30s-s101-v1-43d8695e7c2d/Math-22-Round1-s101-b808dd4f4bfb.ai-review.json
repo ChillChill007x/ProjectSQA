@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.907306+00:00",
+  "run_id": "Math-22-Round1-s101-b808dd4f4bfb",
+  "project": "Math",
+  "bug": "22",
+  "target": "org.apache.commons.math3.distribution.UniformRealDistribution",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "UniformRealDistribution.isSupportUpperBoundInclusive is false on buggy and true on fixed, exactly matching the patched return value for the representative distribution.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test22"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/22/Math-22-Round1-s101-b808dd4f4bfb/org/apache/commons/math3/distribution/SqaGeneratedTest.java": "baba8f0dbd7c2f7f9d808a6e8c2f3ecce7cf0e5f0fbbb24f78b835e4e5941792"
+  },
+  "result_sha256": "61bc5c74d3142fca8b23ec29efc6cd35b3359e37024477e2f3c0129e71d56f90",
+  "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-b808dd4f4bfb/result.json",
+  "tests_path": "GRT/Test/Math/22/Math-22-Round1-s101-b808dd4f4bfb",
+  "evaluation_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-b808dd4f4bfb/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/22.src.patch",
+  "patch_sha256": "93250a6dc5877bf9c5143560a3b2499af4db218a47c14a6eb5d33cbf605f7af0",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

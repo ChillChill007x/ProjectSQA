@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-20-Round1-s101-2d56c6d9b68c/evaluation-1/buggy/build/classes/java/main",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Mockito/20/Mockito-20-Round1-s101-2d56c6d9b68c/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.483,
+  "stdout": "[INFO] 410 classes instrumented to /workspace/GRT/Result_Round1/Mockito/20/Mockito-20-Round1-s101-2d56c6d9b68c/evaluation-1/buggy/instrumented.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

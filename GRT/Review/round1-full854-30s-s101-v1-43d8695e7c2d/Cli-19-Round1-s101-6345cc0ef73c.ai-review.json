@@ -1,0 +1,32 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.894359+00:00",
+  "run_id": "Cli-19-Round1-s101-6345cc0ef73c",
+  "project": "Cli",
+  "bug": "19",
+  "target": "org.apache.commons.cli.PosixParser",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Parsing an unrecognized option token differs; patch changes when the original token is retained by PosixParser.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test46",
+    "test66"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/19/Cli-19-Round1-s101-6345cc0ef73c/org/apache/commons/cli/SqaGeneratedTest.java": "351d318d7b8295757e81defd6ca4a00f103d539cea591c43e49da777eaddc00c"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\19\\Cli-19-Round1-s101-6345cc0ef73c\\result.json",
+  "tests_path": "GRT/Test/Cli/19/Cli-19-Round1-s101-6345cc0ef73c",
+  "evaluation_path": "GRT/Result_Round1/Cli/19/Cli-19-Round1-s101-6345cc0ef73c/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/19.src.patch",
+  "patch_sha256": "b72e181eaf351cb0070c449217fd5169405585b2e029db08bbcf6ffba1f26996",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

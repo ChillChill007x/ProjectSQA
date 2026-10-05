@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-32-Round1-s101-320103b53eed/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.848,
+  "stdout": "org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest::testIssue780",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

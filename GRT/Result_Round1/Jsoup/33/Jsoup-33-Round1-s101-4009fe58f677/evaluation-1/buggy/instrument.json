@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Jsoup-33-Round1-s101-4009fe58f677/evaluation-1/buggy/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Jsoup/33/Jsoup-33-Round1-s101-4009fe58f677/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.328,
+  "stdout": "[INFO] 231 classes instrumented to /workspace/GRT/Result_Round1/Jsoup/33/Jsoup-33-Round1-s101-4009fe58f677/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

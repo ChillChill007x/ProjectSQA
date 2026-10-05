@@ -1,0 +1,14 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/build/classes",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/ant_deploy.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/args4j_deploy.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/google_common_deploy.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/hamcrest-core-1.1.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/junit.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/libtrunk_rhino_parser_jarjared.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/lib/protobuf_deploy.jar",
+    "/workspace/work/checkouts/Closure-136-Round1-s101-bc96d338aaac/evaluation-1/buggy/build/test"
+  ],
+  "missing_entries": []
+}

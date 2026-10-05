@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-60-Round1-s101-f95196ea8731",
+  "unit": {
+    "project": "Math",
+    "bug": "60",
+    "target": "org.apache.commons.math.distribution.NormalDistributionImpl",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "NO_TESTS",
+  "started_at": "2026-10-05T08:26:55.874145+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/60/Math-60-Round1-s101-f95196ea8731",
+    "tests": "GRT/Test/Math/60/Math-60-Round1-s101-f95196ea8731",
+    "config": "GRT/Configuration/Math/60/Math-60-Round1-s101-f95196ea8731"
+  },
+  "generation_time_sec": 3.282,
+  "test_sha256": {
+    "GRT/Test/Math/60/Math-60-Round1-s101-f95196ea8731/org/apache/commons/math/distribution/SqaGeneratedTest.java": "fd12692592dcab788af265dfc36d138fa7de725eb2d72c1dfa0c8848c55ef420"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues",
+    "available_triggers": [
+      "org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "No generated JUnit 4 test classes were found",
+  "finished_at": "2026-10-05T08:29:54.552189+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Compress-10-Round1-s101-c4531cc809b3/evaluation-1/fixed/target/classes",
+    "/opt/defects4j/framework/projects/Compress/lib/junit/junit/4.10/junit-4.10.jar",
+    "/opt/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar",
+    "/opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.0/xz-1.0.jar",
+    "/workspace/work/checkouts/Compress-10-Round1-s101-c4531cc809b3/evaluation-1/fixed/target/test-classes"
+  ],
+  "missing_entries": []
+}

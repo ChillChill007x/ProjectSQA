@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Csv-12-Round1-s101-4033bff2b126/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Csv/12/Csv-12-Round1-s101-4033bff2b126/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "[INFO] 15 classes instrumented to /workspace/GRT/Result_Round1/Csv/12/Csv-12-Round1-s101-4033bff2b126/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

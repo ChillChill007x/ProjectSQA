@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-30-Round1-s101-2f084c1048a6",
+  "unit": {
+    "project": "Mockito",
+    "bug": "30",
+    "target": "org.mockito.exceptions.Reporter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T11:53:36.411823+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/30/Mockito-30-Round1-s101-2f084c1048a6",
+    "tests": "GRT/Test/Mockito/30/Mockito-30-Round1-s101-2f084c1048a6",
+    "config": "GRT/Configuration/Mockito/30/Mockito-30-Round1-s101-2f084c1048a6"
+  },
+  "generation_time_sec": 3.232,
+  "test_sha256": {
+    "GRT/Test/Mockito/30/Mockito-30-Round1-s101-2f084c1048a6/org/mockito/exceptions/SqaGeneratedTest.java": "7269131f6a970730cd520144a02b3c612ee05764bb8ac0947180f2351870d814"
+  },
+  "reference_validation": {
+    "trigger": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage",
+    "available_triggers": [
+      "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::shouldPrintTheParametersOnSmartNullPointerExceptionMessage"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T11:55:50.899057+00:00"
+}

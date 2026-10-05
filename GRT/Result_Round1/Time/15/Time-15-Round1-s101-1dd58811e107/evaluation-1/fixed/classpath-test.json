@@ -1,0 +1,10 @@
+{
+  "entries": [
+    "/workspace/work/parallel/grt/725/checkouts/Time-15-Round1-s101-1dd58811e107/evaluation-1/fixed/build/classes",
+    "/opt/defects4j/framework/projects/Time/lib/joda-convert-1.2.jar",
+    "/workspace/work/parallel/grt/725/checkouts/Time-15-Round1-s101-1dd58811e107/evaluation-1/fixed/build/tests",
+    "/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+    "/workspace/work/parallel/grt/725/checkouts/Time-15-Round1-s101-1dd58811e107/evaluation-1/fixed/src/test/java"
+  ],
+  "missing_entries": []
+}

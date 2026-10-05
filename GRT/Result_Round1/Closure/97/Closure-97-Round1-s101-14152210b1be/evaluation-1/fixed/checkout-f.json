@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "97f",
+    "-w",
+    "/workspace/work/checkouts/Closure-97-Round1-s101-14152210b1be/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.325,
+  "stdout": "",
+  "stderr": "Checking out ee749e28 to /workspace/work/checkouts/Closure-97-Round1-s101-1 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: can't read /workspace/work/checkouts/Closure-97-Round1-s101-14152210b1be/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-97-Round1-s101-14152210b1be/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-97-Round1-s101-14152210b1be/evaluation-1/fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-97-Round1-s101-14152210b1be/evaluation-1/fixed/lib/rhino/src/mozilla/js/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff ee749e28:4cf197f6..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-97f..................................... OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/725/checkouts/Time-25-Round1-s101-2b0fc5d9d900/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.667,
+  "stdout": "org.joda.time.TestDateTimeZoneCutover::test_DateTime_constructor_Moscow_Autumn\norg.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn_overlap_mins\norg.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

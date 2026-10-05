@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/checkouts/Closure-34-Round1-s101-b32d7e79d1f3/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "build/classes",
+  "stderr": "Running ant (export.dir.bin.classes)....................................... OK\n\n"
+}

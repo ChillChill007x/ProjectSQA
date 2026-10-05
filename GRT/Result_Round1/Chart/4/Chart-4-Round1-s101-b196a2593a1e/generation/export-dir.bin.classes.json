@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "dir.bin.classes",
+    "-w",
+    "/workspace/work/checkouts/Chart-4-Round1-s101-b196a2593a1e/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "build",
+  "stderr": "Running ant (export.dir.bin.classes)....................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-50-Round1-s101-6d34ac0f7a21/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.904,
+  "stdout": "org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

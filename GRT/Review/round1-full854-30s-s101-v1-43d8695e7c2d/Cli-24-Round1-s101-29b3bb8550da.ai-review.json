@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.904148+00:00",
+  "run_id": "Cli-24-Round1-s101-29b3bb8550da",
+  "project": "Cli",
+  "bug": "24",
+  "target": "org.apache.commons.cli.HelpFormatter",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Width zero causes different exceptions in HelpFormatter; patch changes width/indent handling. Invalid width means the representative is insufficient for a valid-input defect claim.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 13,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10",
+    "test12",
+    "test28"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/24/Cli-24-Round1-s101-29b3bb8550da/org/apache/commons/cli/SqaGeneratedTest.java": "e981c7b027e4a30f03abb7ffe837ff82de0e7631381ce543ed6bd05623e1bcc5"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\24\\Cli-24-Round1-s101-29b3bb8550da\\result.json",
+  "tests_path": "GRT/Test/Cli/24/Cli-24-Round1-s101-29b3bb8550da",
+  "evaluation_path": "GRT/Result_Round1/Cli/24/Cli-24-Round1-s101-29b3bb8550da/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/24.src.patch",
+  "patch_sha256": "cc085a984b157dd6c299eb05277a243ff39cacea976058aa434f9ef0c9d12495",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

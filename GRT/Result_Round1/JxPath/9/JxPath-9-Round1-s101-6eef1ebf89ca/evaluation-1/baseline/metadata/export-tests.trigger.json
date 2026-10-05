@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JxPath-9-Round1-s101-6eef1ebf89ca/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.336,
+  "stdout": "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNan",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

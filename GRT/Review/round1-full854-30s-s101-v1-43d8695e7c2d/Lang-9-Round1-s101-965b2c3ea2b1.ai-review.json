@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.861929+00:00",
+  "run_id": "Lang-9-Round1-s101-965b2c3ea2b1",
+  "project": "Lang",
+  "bug": "9",
+  "target": "org.apache.commons.lang3.time.FastDateParser",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "FastDateParser accepts an incompletely parsed pattern '&radic;' on buggy. The fixed patch explicitly rejects unconsumed pattern text with IllegalArgumentException; the representative matches that validation change.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test52"
+  ],
+  "test_sha256": {
+    "GRT/Test/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1/org/apache/commons/lang3/time/SqaGeneratedTest.java": "3b54ebe4fb262dd48bdb7cc587cb86e248d2bd47e5c3d8ec83ac0988af8a424d"
+  },
+  "result_sha256": "4349d5f36f9150329c67ccaf118e22f2614fb9e1518540fb1c23050abb7dcc2f",
+  "result_path": "GRT/Result_Round1/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1/result.json",
+  "tests_path": "GRT/Test/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1",
+  "evaluation_path": "GRT/Result_Round1/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Lang/patches/9.src.patch",
+  "patch_sha256": "c6550c3bad7e4b55452da688531821a45f2f838148fc1d5d9a1200b27ef60b51",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

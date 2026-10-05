@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.007387+00:00",
+  "run_id": "Compress-4-Round1-s101-073f683c3529",
+  "project": "Compress",
+  "bug": "4",
+  "target": "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "TAR output uses an unusual 16-byte block size and close fails on buggy; patch changes finalization, but validate block-size preconditions before claiming the defect.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 8,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test44",
+    "test54",
+    "test61"
+  ],
+  "test_sha256": {
+    "GRT/Test/Compress/4/Compress-4-Round1-s101-073f683c3529/org/apache/commons/compress/archivers/tar/SqaGeneratedTest.java": "de3ec00614ac0c8bb64b137e25ee11014e80a80073eee6d3a0568b042c01e802"
+  },
+  "result_path": "GRT\\Result_Round1\\Compress\\4\\Compress-4-Round1-s101-073f683c3529\\result.json",
+  "tests_path": "GRT/Test/Compress/4/Compress-4-Round1-s101-073f683c3529",
+  "evaluation_path": "GRT/Result_Round1/Compress/4/Compress-4-Round1-s101-073f683c3529/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Compress/patches/4.src.patch",
+  "patch_sha256": "17a9a37aefe338bd07cd586034d4a430cad9ac5b3ccd8d0c509a05081db3c92c",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

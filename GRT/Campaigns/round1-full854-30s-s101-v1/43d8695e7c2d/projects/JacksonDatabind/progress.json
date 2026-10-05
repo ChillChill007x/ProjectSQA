@@ -1,0 +1,2101 @@
+{
+  "updated_at": "2026-10-05T07:55:11.941397+00:00",
+  "expected_bugs": 110,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "FAILED": 38,
+    "EVALUATED": 72
+  },
+  "bugs": [
+    {
+      "project": "JacksonDatabind",
+      "bug": "1",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.BeanPropertyWriter"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.BeanPropertyWriter": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/1/JacksonDatabind-1-Round1-s101-ccac38e7221e/result.json",
+          "started_at": "2026-10-05T04:07:42.903478+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "2",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.TokenBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.TokenBuffer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/2/JacksonDatabind-2-Round1-s101-39b7d2aee94a/result.json",
+          "started_at": "2026-10-05T04:08:23.528748+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/3/JacksonDatabind-3-Round1-s101-c030d3bf597f/result.json",
+          "started_at": "2026-10-05T04:09:31.937840+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/4/JacksonDatabind-4-Round1-s101-0a221be8ef42/result.json",
+          "started_at": "2026-10-05T04:10:52.432676+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.AnnotatedClass": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/5/JacksonDatabind-5-Round1-s101-9955a33bea49/result.json",
+          "started_at": "2026-10-05T04:12:17.589052+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.StdDateFormat"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.StdDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/6/JacksonDatabind-6-Round1-s101-d77bc80b3ea3/result.json",
+          "started_at": "2026-10-05T04:13:35.900089+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.TokenBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.TokenBuffer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/7/JacksonDatabind-7-Round1-s101-1e65cb3a3c72/result.json",
+          "started_at": "2026-10-05T04:14:45.778110+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.CreatorCollector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.CreatorCollector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/8/JacksonDatabind-8-Round1-s101-9f0aa230add4/result.json",
+          "started_at": "2026-10-05T04:15:55.573632+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/9/JacksonDatabind-9-Round1-s101-16c3cdec7ca1/result.json",
+          "started_at": "2026-10-05T04:17:32.473375+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "10",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.AnyGetterWriter",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.AnyGetterWriter": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-ee7c561b5208/result.json",
+          "started_at": "2026-10-05T04:19:05.906251+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/10/JacksonDatabind-10-Round1-s101-bb629634d01b/result.json",
+          "started_at": "2026-10-05T04:20:03.283634+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/11/JacksonDatabind-11-Round1-s101-b2f34fdbfed9/result.json",
+          "started_at": "2026-10-05T04:21:37.452672+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.MapDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.MapDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/12/JacksonDatabind-12-Round1-s101-dcd672fb8b98/result.json",
+          "started_at": "2026-10-05T04:22:52.625205+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.DefaultDeserializationContext",
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.DefaultDeserializationContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/13/JacksonDatabind-13-Round1-s101-10860feed585/result.json",
+          "started_at": "2026-10-05T04:24:23.309078+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/13/JacksonDatabind-13-Round1-s101-670e5ac75c5c/result.json",
+          "started_at": "2026-10-05T04:25:46.002133+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "14",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectReader"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectReader": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/14/JacksonDatabind-14-Round1-s101-c4acd35f413d/result.json",
+          "started_at": "2026-10-05T04:27:04.597885+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "15",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory",
+        "com.fasterxml.jackson.databind.ser.std.BeanSerializerBase",
+        "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer",
+        "com.fasterxml.jackson.databind.ser.std.StdSerializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.JavaType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-1d56caee7976/result.json",
+          "started_at": "2026-10-05T04:28:18.728152+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-0eda4230993a/result.json",
+          "started_at": "2026-10-05T04:29:08.037313+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.ser.std.BeanSerializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-53096025fc71/result.json",
+          "started_at": "2026-10-05T04:30:30.993094+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-3295a465b3ff/result.json",
+          "started_at": "2026-10-05T04:31:57.215391+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.ser.std.StdSerializer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/15/JacksonDatabind-15-Round1-s101-48176a6c5299/result.json",
+          "started_at": "2026-10-05T04:32:52.481246+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.AnnotationMap"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.AnnotationMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/16/JacksonDatabind-16-Round1-s101-07ecd6b7badc/result.json",
+          "started_at": "2026-10-05T04:34:11.133545+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectMapper"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectMapper": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/17/JacksonDatabind-17-Round1-s101-4818112a4eb5/result.json",
+          "started_at": "2026-10-05T04:35:21.590065+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "18",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.MappingIterator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.MappingIterator": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/18/JacksonDatabind-18-Round1-s101-f9d7bfcc96ec/result.json",
+          "started_at": "2026-10-05T04:36:53.325049+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/19/JacksonDatabind-19-Round1-s101-892331b6954b/result.json",
+          "started_at": "2026-10-05T04:38:09.792174+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.node.ObjectNode"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.node.ObjectNode": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/20/JacksonDatabind-20-Round1-s101-28bc0ceb0020/result.json",
+          "started_at": "2026-10-05T04:39:37.516861+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/21/JacksonDatabind-21-Round1-s101-19f85dbfb5ec/result.json",
+          "started_at": "2026-10-05T04:41:10.538489+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.BasicSerializerFactory",
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.BasicSerializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/22/JacksonDatabind-22-Round1-s101-e161a4c1fd42/result.json",
+          "started_at": "2026-10-05T04:42:55.240398+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.ser.BeanSerializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/22/JacksonDatabind-22-Round1-s101-8312fe5c7369/result.json",
+          "started_at": "2026-10-05T04:44:19.269199+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a/result.json",
+          "started_at": "2026-10-05T04:45:46.858344+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.cfg.BaseSettings"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.cfg.BaseSettings": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/24/JacksonDatabind-24-Round1-s101-fe4428d3a996/result.json",
+          "started_at": "2026-10-05T04:47:33.733109+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory",
+        "com.fasterxml.jackson.databind.deser.DeserializerCache",
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase",
+        "com.fasterxml.jackson.databind.module.SimpleAbstractTypeResolver"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/25/JacksonDatabind-25-Round1-s101-2c0c45b9d83d/result.json",
+          "started_at": "2026-10-05T04:48:57.518306+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.DeserializerCache": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/25/JacksonDatabind-25-Round1-s101-92dea95516f4/result.json",
+          "started_at": "2026-10-05T04:50:24.598375+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/25/JacksonDatabind-25-Round1-s101-78011f53d91d/result.json",
+          "started_at": "2026-10-05T04:51:38.730360+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.module.SimpleAbstractTypeResolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/25/JacksonDatabind-25-Round1-s101-f893c80879b5/result.json",
+          "started_at": "2026-10-05T04:53:06.074938+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.BeanPropertyWriter"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.BeanPropertyWriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/26/JacksonDatabind-26-Round1-s101-b0eb66e06d36/result.json",
+          "started_at": "2026-10-05T04:54:29.002672+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/27/JacksonDatabind-27-Round1-s101-91d73b14f002/result.json",
+          "started_at": "2026-10-05T04:56:18.983159+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/28/JacksonDatabind-28-Round1-s101-d0d1ddb26f2a/result.json",
+          "started_at": "2026-10-05T04:58:03.997812+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "29",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/29/JacksonDatabind-29-Round1-s101-abd3338f4fba/result.json",
+          "started_at": "2026-10-05T04:59:28.517274+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "30",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.databind.util.TokenBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectMapper": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/30/JacksonDatabind-30-Round1-s101-d3e32f89d4a6/result.json",
+          "started_at": "2026-10-05T05:00:39.017373+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.util.TokenBuffer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/30/JacksonDatabind-30-Round1-s101-cbc923988be7/result.json",
+          "started_at": "2026-10-05T05:01:43.741946+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "31",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.TokenBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.TokenBuffer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/31/JacksonDatabind-31-Round1-s101-abcf2833c649/result.json",
+          "started_at": "2026-10-05T05:02:55.023082+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/32/JacksonDatabind-32-Round1-s101-af8dd7868662/result.json",
+          "started_at": "2026-10-05T05:04:07.216378+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/33/JacksonDatabind-33-Round1-s101-ad43c4dbc619/result.json",
+          "started_at": "2026-10-05T05:05:35.971867+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "34",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/34/JacksonDatabind-34-Round1-s101-14912a63ae20/result.json",
+          "started_at": "2026-10-05T05:06:59.173559+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/35/JacksonDatabind-35-Round1-s101-94cef6be73c0/result.json",
+          "started_at": "2026-10-05T05:08:32.891059+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.StdDateFormat"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.StdDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/36/JacksonDatabind-36-Round1-s101-d53aa61bc23c/result.json",
+          "started_at": "2026-10-05T05:10:16.942955+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "37",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.SimpleType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.SimpleType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/37/JacksonDatabind-37-Round1-s101-c37634e8b370/result.json",
+          "started_at": "2026-10-05T05:11:28.690575+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "38",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.CollectionType",
+        "com.fasterxml.jackson.databind.type.MapType",
+        "com.fasterxml.jackson.databind.type.SimpleType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.CollectionType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-38f3a905a15d/result.json",
+          "started_at": "2026-10-05T05:12:36.879482+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.type.MapType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-834c0c279e10/result.json",
+          "started_at": "2026-10-05T05:13:34.875420+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.type.SimpleType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/38/JacksonDatabind-38-Round1-s101-c937ab43e7e3/result.json",
+          "started_at": "2026-10-05T05:14:49.818329+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "39",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.NullifyingDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.NullifyingDeserializer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/39/JacksonDatabind-39-Round1-s101-d393ef4ec1aa/result.json",
+          "started_at": "2026-10-05T05:16:00.403751+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.NumberDeserializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.NumberDeserializers": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/40/JacksonDatabind-40-Round1-s101-8ee68db5c085/result.json",
+          "started_at": "2026-10-05T05:17:39.120258+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "41",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/41/JacksonDatabind-41-Round1-s101-c31e2732c537/result.json",
+          "started_at": "2026-10-05T05:18:54.270885+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "42",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/42/JacksonDatabind-42-Round1-s101-b963c476c301/result.json",
+          "started_at": "2026-10-05T05:20:09.073865+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "43",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/43/JacksonDatabind-43-Round1-s101-b42d8e57713d/result.json",
+          "started_at": "2026-10-05T05:21:44.264071+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "44",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.SimpleType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.SimpleType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/44/JacksonDatabind-44-Round1-s101-acd96e35377b/result.json",
+          "started_at": "2026-10-05T05:23:21.089356+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/45/JacksonDatabind-45-Round1-s101-d7dd418e1efc/result.json",
+          "started_at": "2026-10-05T05:24:34.124812+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "46",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.ReferenceType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.ReferenceType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/46/JacksonDatabind-46-Round1-s101-2f86aca23366/result.json",
+          "started_at": "2026-10-05T05:26:09.271828+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "47",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.AnnotationIntrospector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.AnnotationIntrospector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/47/JacksonDatabind-47-Round1-s101-0f9197a97601/result.json",
+          "started_at": "2026-10-05T05:27:44.480474+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "48",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.DeserializationConfig",
+        "com.fasterxml.jackson.databind.SerializationConfig"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.DeserializationConfig": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/48/JacksonDatabind-48-Round1-s101-25964f4082f5/result.json",
+          "started_at": "2026-10-05T05:29:17.150939+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.SerializationConfig": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/48/JacksonDatabind-48-Round1-s101-4fdb29afd40a/result.json",
+          "started_at": "2026-10-05T05:30:29.627046+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "49",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.impl.WritableObjectId"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.impl.WritableObjectId": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/49/JacksonDatabind-49-Round1-s101-d143ff706e96/result.json",
+          "started_at": "2026-10-05T05:31:52.072544+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "50",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/50/JacksonDatabind-50-Round1-s101-adedb33c9869/result.json",
+          "started_at": "2026-10-05T05:33:13.642906+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "51",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/51/JacksonDatabind-51-Round1-s101-5377aaaafba3/result.json",
+          "started_at": "2026-10-05T05:34:37.970194+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "52",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase",
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/52/JacksonDatabind-52-Round1-s101-6265e1b59f7f/result.json",
+          "started_at": "2026-10-05T05:36:19.466922+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/52/JacksonDatabind-52-Round1-s101-1c4700882035/result.json",
+          "started_at": "2026-10-05T05:37:53.385706+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "53",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.TypeBindings",
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.TypeBindings": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/53/JacksonDatabind-53-Round1-s101-56351a5ec59e/result.json",
+          "started_at": "2026-10-05T05:39:05.150908+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/53/JacksonDatabind-53-Round1-s101-5f563cdd1cfa/result.json",
+          "started_at": "2026-10-05T05:39:56.338027+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "54",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/54/JacksonDatabind-54-Round1-s101-2f6d7bcef3f1/result.json",
+          "started_at": "2026-10-05T05:41:02.050817+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "55",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.StdKeySerializers": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/55/JacksonDatabind-55-Round1-s101-1da2ab9cf169/result.json",
+          "started_at": "2026-10-05T05:42:28.005656+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "56",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/56/JacksonDatabind-56-Round1-s101-cb6c6102c596/result.json",
+          "started_at": "2026-10-05T05:43:55.093942+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "57",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectReader"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectReader": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/57/JacksonDatabind-57-Round1-s101-5f08dceb7c5f/result.json",
+          "started_at": "2026-10-05T05:45:22.684641+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "58",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/58/JacksonDatabind-58-Round1-s101-5b12e34e7a5e/result.json",
+          "started_at": "2026-10-05T05:46:37.160907+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "59",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.JavaType",
+        "com.fasterxml.jackson.databind.type.CollectionLikeType",
+        "com.fasterxml.jackson.databind.type.MapLikeType",
+        "com.fasterxml.jackson.databind.type.TypeFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.JavaType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-a3d2613bc711/result.json",
+          "started_at": "2026-10-05T05:48:13.539431+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.type.CollectionLikeType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-184585c2db2d/result.json",
+          "started_at": "2026-10-05T05:49:06.808293+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.type.MapLikeType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-3379e67ff964/result.json",
+          "started_at": "2026-10-05T05:50:06.932515+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/59/JacksonDatabind-59-Round1-s101-182a9c322614/result.json",
+          "started_at": "2026-10-05T05:51:07.952835+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "60",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.JsonValueSerializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.JsonValueSerializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/60/JacksonDatabind-60-Round1-s101-0c10588b3232/result.json",
+          "started_at": "2026-10-05T05:52:22.894948+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "61",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectMapper": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/61/JacksonDatabind-61-Round1-s101-b9fde495ea84/result.json",
+          "started_at": "2026-10-05T05:54:06.233134+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/61/JacksonDatabind-61-Round1-s101-21481b63d246/result.json",
+          "started_at": "2026-10-05T05:55:15.134070+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "62",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.CollectionDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.CollectionDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/62/JacksonDatabind-62-Round1-s101-8a5da8dc88d0/result.json",
+          "started_at": "2026-10-05T05:56:40.475175+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "63",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.JsonMappingException"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.JsonMappingException": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/63/JacksonDatabind-63-Round1-s101-7bc05af35e82/result.json",
+          "started_at": "2026-10-05T05:58:22.641117+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "64",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/64/JacksonDatabind-64-Round1-s101-f69db88a9a30/result.json",
+          "started_at": "2026-10-05T05:59:33.434518+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "66",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/66/JacksonDatabind-66-Round1-s101-06d84f111ebd/result.json",
+          "started_at": "2026-10-05T06:01:01.702645+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "67",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/67/JacksonDatabind-67-Round1-s101-d174264e587e/result.json",
+          "started_at": "2026-10-05T06:02:40.001598+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "68",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/68/JacksonDatabind-68-Round1-s101-e312878869cb/result.json",
+          "started_at": "2026-10-05T06:04:10.232160+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "69",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.CreatorCollector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.CreatorCollector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada/result.json",
+          "started_at": "2026-10-05T06:05:58.439107+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "70",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/70/JacksonDatabind-70-Round1-s101-bf60c490dcf7/result.json",
+          "started_at": "2026-10-05T06:07:54.565757+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "71",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/71/JacksonDatabind-71-Round1-s101-020df191c25f/result.json",
+          "started_at": "2026-10-05T06:09:36.275615+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "72",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.InnerClassProperty"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.InnerClassProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/72/JacksonDatabind-72-Round1-s101-8df1dc593382/result.json",
+          "started_at": "2026-10-05T06:11:11.893278+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "73",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector",
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-a3c5cfca91eb/result.json",
+          "started_at": "2026-10-05T06:12:51.288664+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/73/JacksonDatabind-73-Round1-s101-9ff13bb2149d/result.json",
+          "started_at": "2026-10-05T06:14:10.895127+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "74",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/74/JacksonDatabind-74-Round1-s101-9ea7022831ae/result.json",
+          "started_at": "2026-10-05T06:15:26.513236+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "75",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.EnumSerializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.EnumSerializer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/75/JacksonDatabind-75-Round1-s101-bbb935a10aaa/result.json",
+          "started_at": "2026-10-05T06:17:06.544204+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "76",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BuilderBasedDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BuilderBasedDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/76/JacksonDatabind-76-Round1-s101-66690db003db/result.json",
+          "started_at": "2026-10-05T06:18:27.388621+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "77",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/77/JacksonDatabind-77-Round1-s101-66cae5ea36a1/result.json",
+          "started_at": "2026-10-05T06:20:10.189745+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "78",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/78/JacksonDatabind-78-Round1-s101-e684689d13e6/result.json",
+          "started_at": "2026-10-05T06:21:54.133625+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "79",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector",
+        "com.fasterxml.jackson.databind.introspect.ObjectIdInfo",
+        "com.fasterxml.jackson.databind.ser.std.BeanSerializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/79/JacksonDatabind-79-Round1-s101-b13804c2a6b7/result.json",
+          "started_at": "2026-10-05T06:23:12.838752+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.introspect.ObjectIdInfo": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/79/JacksonDatabind-79-Round1-s101-d649dc53ea8b/result.json",
+          "started_at": "2026-10-05T06:24:26.258935+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.ser.std.BeanSerializerBase": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/79/JacksonDatabind-79-Round1-s101-4bf022c6486a/result.json",
+          "started_at": "2026-10-05T06:25:38.959714+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "80",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/80/JacksonDatabind-80-Round1-s101-c3b242ca7578/result.json",
+          "started_at": "2026-10-05T06:26:55.498084+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "81",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/81/JacksonDatabind-81-Round1-s101-d0f2a89ca570/result.json",
+          "started_at": "2026-10-05T06:28:24.578782+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "82",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/82/JacksonDatabind-82-Round1-s101-81dffbccff6f/result.json",
+          "started_at": "2026-10-05T06:30:07.431175+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "83",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/83/JacksonDatabind-83-Round1-s101-3488a8e0fede/result.json",
+          "started_at": "2026-10-05T06:31:39.959513+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "84",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.ResolvedRecursiveType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.ResolvedRecursiveType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/84/JacksonDatabind-84-Round1-s101-c9b8f9c1e18e/result.json",
+          "started_at": "2026-10-05T06:33:08.436872+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "85",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/85/JacksonDatabind-85-Round1-s101-d7f46ba4dafc/result.json",
+          "started_at": "2026-10-05T06:34:25.563246+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "86",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.ResolvedRecursiveType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.ResolvedRecursiveType": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/86/JacksonDatabind-86-Round1-s101-cdcdd4fb6211/result.json",
+          "started_at": "2026-10-05T06:36:04.448956+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "87",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.StdDateFormat"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.StdDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/87/JacksonDatabind-87-Round1-s101-393e9aeb8dc9/result.json",
+          "started_at": "2026-10-05T06:37:17.231985+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "88",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/88/JacksonDatabind-88-Round1-s101-63dfdbdbca7f/result.json",
+          "started_at": "2026-10-05T06:38:32.712073+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "90",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator",
+        "com.fasterxml.jackson.databind.deser.std.StdValueInstantiator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.ValueInstantiator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-0c3c8b0eb60e/result.json",
+          "started_at": "2026-10-05T06:39:57.779217+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.std.StdValueInstantiator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/90/JacksonDatabind-90-Round1-s101-702d9dae5d5d/result.json",
+          "started_at": "2026-10-05T06:41:14.099309+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "91",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.DeserializerCache"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.DeserializerCache": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/91/JacksonDatabind-91-Round1-s101-f0af19251de4/result.json",
+          "started_at": "2026-10-05T06:42:45.802295+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "92",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/92/JacksonDatabind-92-Round1-s101-67bdb1f65688/result.json",
+          "started_at": "2026-10-05T06:44:13.195367+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "93",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/93/JacksonDatabind-93-Round1-s101-5410e40176d7/result.json",
+          "started_at": "2026-10-05T06:45:43.671128+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "94",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/94/JacksonDatabind-94-Round1-s101-13d219f8ac48/result.json",
+          "started_at": "2026-10-05T06:47:15.764815+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "95",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.TypeFactory",
+        "com.fasterxml.jackson.databind.type.TypeParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.TypeFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/95/JacksonDatabind-95-Round1-s101-3621a2fb611c/result.json",
+          "started_at": "2026-10-05T06:48:42.129888+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.type.TypeParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/95/JacksonDatabind-95-Round1-s101-2d027c1a7af6/result.json",
+          "started_at": "2026-10-05T06:49:48.845492+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "96",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/96/JacksonDatabind-96-Round1-s101-20b7385dfb1c/result.json",
+          "started_at": "2026-10-05T06:51:09.300741+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "97",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.node.POJONode"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.node.POJONode": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/97/JacksonDatabind-97-Round1-s101-de1c43bc8c33/result.json",
+          "started_at": "2026-10-05T06:52:44.441545+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "98",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/98/JacksonDatabind-98-Round1-s101-f9d46b8ceba1/result.json",
+          "started_at": "2026-10-05T06:54:00.088216+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "99",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.type.ReferenceType"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.type.ReferenceType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/99/JacksonDatabind-99-Round1-s101-9d8f627942f8/result.json",
+          "started_at": "2026-10-05T06:55:14.037748+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "100",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.node.TreeTraversingParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.node.TreeTraversingParser": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/100/JacksonDatabind-100-Round1-s101-6a5e364cc354/result.json",
+          "started_at": "2026-10-05T06:56:50.269947+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "101",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.BeanDeserializer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/101/JacksonDatabind-101-Round1-s101-585dca05d974/result.json",
+          "started_at": "2026-10-05T06:58:06.011463+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "102",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/102/JacksonDatabind-102-Round1-s101-2e3c78a8f874/result.json",
+          "started_at": "2026-10-05T06:59:33.364091+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "103",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.DatabindContext",
+        "com.fasterxml.jackson.databind.DeserializationContext",
+        "com.fasterxml.jackson.databind.JsonMappingException",
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory",
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory",
+        "com.fasterxml.jackson.databind.deser.DeserializerCache",
+        "com.fasterxml.jackson.databind.deser.SettableAnyProperty",
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+        "com.fasterxml.jackson.databind.deser.std.StdDeserializer",
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer",
+        "com.fasterxml.jackson.databind.deser.std.StdValueInstantiator",
+        "com.fasterxml.jackson.databind.introspect.BasicBeanDescription",
+        "com.fasterxml.jackson.databind.ser.DefaultSerializerProvider",
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder",
+        "com.fasterxml.jackson.databind.util.ClassUtil"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.DatabindContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-7c1134124231/result.json",
+          "started_at": "2026-10-05T07:01:01.642134+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.DeserializationContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-73f6a46d22e7/result.json",
+          "started_at": "2026-10-05T07:02:15.731692+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.JsonMappingException": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-1e33fa4cfbb8/result.json",
+          "started_at": "2026-10-05T07:03:46.595292+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.SerializerProvider": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-865ef87932c9/result.json",
+          "started_at": "2026-10-05T07:04:59.962406+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-6f10e72f1f4d/result.json",
+          "started_at": "2026-10-05T07:06:02.418876+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-05309d94799e/result.json",
+          "started_at": "2026-10-05T07:07:25.224805+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.DeserializerCache": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-ec2c2043b1b4/result.json",
+          "started_at": "2026-10-05T07:08:48.500192+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.SettableAnyProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-be762da5d1a9/result.json",
+          "started_at": "2026-10-05T07:10:07.703616+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.SettableBeanProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-54c60ad7385d-attempt2/result.json",
+          "started_at": "2026-10-05T07:20:11.224934+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.std.StdDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-de2123a08e19/result.json",
+          "started_at": "2026-10-05T07:21:37.151251+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-626b0918d9d2/result.json",
+          "started_at": "2026-10-05T07:22:57.689335+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.std.StdValueInstantiator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-ebac96f6dfaa/result.json",
+          "started_at": "2026-10-05T07:24:16.750218+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.introspect.BasicBeanDescription": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-f33073584ece/result.json",
+          "started_at": "2026-10-05T07:25:51.381565+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.ser.DefaultSerializerProvider": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-6d19f7110a59/result.json",
+          "started_at": "2026-10-05T07:27:03.949450+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.ser.PropertyBuilder": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-d2817b4c00ec/result.json",
+          "started_at": "2026-10-05T07:28:26.952913+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.fasterxml.jackson.databind.util.ClassUtil": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-52381e9f27d6/result.json",
+          "started_at": "2026-10-05T07:29:09.687770+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "104",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.util.StdDateFormat"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.util.StdDateFormat": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/104/JacksonDatabind-104-Round1-s101-f84ef2c5b21a/result.json",
+          "started_at": "2026-10-05T07:30:33.719096+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "105",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.JdkDeserializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.JdkDeserializers": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/105/JacksonDatabind-105-Round1-s101-12fc4fd1cb08/result.json",
+          "started_at": "2026-10-05T07:31:41.578593+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "106",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.node.TreeTraversingParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.node.TreeTraversingParser": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/106/JacksonDatabind-106-Round1-s101-1500effa5104/result.json",
+          "started_at": "2026-10-05T07:33:10.313957+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "107",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/107/JacksonDatabind-107-Round1-s101-8fb4a8ecbb3c/result.json",
+          "started_at": "2026-10-05T07:34:35.227561+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "108",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ObjectReader"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ObjectReader": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/108/JacksonDatabind-108-Round1-s101-1607be48d8a5/result.json",
+          "started_at": "2026-10-05T07:36:14.085343+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "109",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializer",
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializer": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-ac7d665225cd/result.json",
+          "started_at": "2026-10-05T07:37:56.024961+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.ser.std.NumberSerializers": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/109/JacksonDatabind-109-Round1-s101-e1758f453f22/result.json",
+          "started_at": "2026-10-05T07:39:25.216957+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "110",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.impl.JavaUtilCollectionsDeserializers"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.impl.JavaUtilCollectionsDeserializers": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/110/JacksonDatabind-110-Round1-s101-990ec0b07ecf/result.json",
+          "started_at": "2026-10-05T07:40:44.248676+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "111",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.CreatorProperty",
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty",
+        "com.fasterxml.jackson.databind.deser.impl.MethodProperty",
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdReferenceProperty",
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty",
+        "com.fasterxml.jackson.databind.deser.impl.SetterlessProperty",
+        "com.fasterxml.jackson.databind.deser.std.AtomicReferenceDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.CreatorProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-5a950f269c8b/result.json",
+          "started_at": "2026-10-05T07:42:20.536295+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.FieldProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-32858c42219f/result.json",
+          "started_at": "2026-10-05T07:44:00.335731+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.MethodProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-8ceb67900699/result.json",
+          "started_at": "2026-10-05T07:45:25.545260+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdReferenceProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-23b20fc745e1/result.json",
+          "started_at": "2026-10-05T07:46:55.448622+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-17b240e0d579/result.json",
+          "started_at": "2026-10-05T07:48:27.954505+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.databind.deser.impl.SetterlessProperty": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-229a7b99e21b/result.json",
+          "started_at": "2026-10-05T07:50:12.266253+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.fasterxml.jackson.databind.deser.std.AtomicReferenceDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/111/JacksonDatabind-111-Round1-s101-37dd14a79135/result.json",
+          "started_at": "2026-10-05T07:51:26.962939+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonDatabind",
+      "bug": "112",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonDatabind/112/JacksonDatabind-112-Round1-s101-97cf6aa2c7c5/result.json",
+          "started_at": "2026-10-05T07:53:13.236371+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

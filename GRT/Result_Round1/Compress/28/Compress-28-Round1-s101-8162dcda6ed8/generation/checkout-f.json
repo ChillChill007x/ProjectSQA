@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Compress",
+    "-v",
+    "28f",
+    "-w",
+    "/workspace/work/checkouts/Compress-28-Round1-s101-8162dcda6ed8/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.919,
+  "stdout": "",
+  "stderr": "Checking out ddb5fd6d to /workspace/work/checkouts/Compress-28-Round1-s101- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Compress-28-Round1-s101-81 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff ddb5fd6d:1ea7e01e..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Compress-28f.................................... OK\n"
+}

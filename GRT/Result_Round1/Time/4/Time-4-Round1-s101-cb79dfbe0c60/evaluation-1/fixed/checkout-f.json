@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Time",
+    "-v",
+    "4f",
+    "-w",
+    "/workspace/work/parallel/grt/724/checkouts/Time-4-Round1-s101-cb79dfbe0c60/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.027,
+  "stdout": "",
+  "stderr": "Checking out 3ba9ba79 to /workspace/work/parallel/grt/724/checkouts/Time-4- OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/grt/724/checkouts/Time-4-Ro OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 3ba9ba79:bcb04466..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Time-4f......................................... OK\n"
+}

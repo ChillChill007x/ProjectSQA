@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "run_id": "Codec-14-Round1-s101-5de1dc88e6c5",
+  "unit": {
+    "project": "Codec",
+    "bug": "14",
+    "target": "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "TOOL_ERROR",
+  "started_at": "2026-10-05T02:11:17.091725+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5",
+    "tests": "GRT/Test/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5",
+    "config": "GRT/Configuration/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5"
+  },
+  "error": "Command failed; see /workspace/GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5/generation/generation-process.json\nException in thread \"main\" java.lang.ClassNotFoundException: src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt\n\tat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)\n\tat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)\n\tat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)\n\tat java.base/java.lang.Class.forName0(Native Method)\n\tat java.base/java.lang.Class.forName(Class.java:398)\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:63)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:435)\n",
+  "finished_at": "2026-10-05T02:11:21.087269+00:00"
+}

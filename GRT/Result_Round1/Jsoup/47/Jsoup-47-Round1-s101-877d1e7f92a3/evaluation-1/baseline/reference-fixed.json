@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-47-Round1-s101-877d1e7f92a3/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.nodes.EntitiesTest::escapesGtInXmlAttributesButNotInHtml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.707,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

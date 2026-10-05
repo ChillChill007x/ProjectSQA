@@ -1,0 +1,32 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.062485+00:00",
+  "run_id": "JacksonCore-1-Round1-s101-8d9066669303",
+  "project": "JacksonCore",
+  "bug": "1",
+  "target": "com.fasterxml.jackson.core.util.TextBuffer",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Empty TextBuffer.contentsAsDecimal produces buggy NPE versus fixed NumberFormatException. Patch adds null-buffer guards, directly supporting this difference.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test89",
+    "test1"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/1/JacksonCore-1-Round1-s101-8d9066669303/com/fasterxml/jackson/core/util/SqaGeneratedTest.java": "0d334bd22933d5f8796c2d9288c79b7415f8023810e6effe98a5396b20dfb781"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\1\\JacksonCore-1-Round1-s101-8d9066669303\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/1/JacksonCore-1-Round1-s101-8d9066669303",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-8d9066669303/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/1.src.patch",
+  "patch_sha256": "fad30e953e976a4d824c8fddeea5cb4526010d2f8c8eafb192fcf84253a77037",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

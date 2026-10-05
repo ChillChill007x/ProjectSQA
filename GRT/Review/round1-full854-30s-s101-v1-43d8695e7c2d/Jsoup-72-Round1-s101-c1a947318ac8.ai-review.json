@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.849420+00:00",
+  "run_id": "Jsoup-72-Round1-s101-c1a947318ac8",
+  "project": "Jsoup",
+  "bug": "72",
+  "target": "org.jsoup.parser.CharacterReader",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "After consuming a CharacterReader to its end, consumeToEnd throws a bounds exception on buggy. The patch returns an empty string for counts below one; the representative exercises that exhausted-reader boundary.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test71"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8/org/jsoup/parser/SqaGeneratedTest.java": "f1ec4db4b6266dac13c3bb25ca10ba00c973ba8930e597b405e49bb0381c99cb"
+  },
+  "result_sha256": "ea2507eb9830e430bda273185fbf0c19d591dea3175e14ba1fd717c023421cb4",
+  "result_path": "GRT/Result_Round1/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8/result.json",
+  "tests_path": "GRT/Test/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/72.src.patch",
+  "patch_sha256": "6fd9413c2b4fc4208be8a25e561943445846870ab51b2da787ce33d4816ec765",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

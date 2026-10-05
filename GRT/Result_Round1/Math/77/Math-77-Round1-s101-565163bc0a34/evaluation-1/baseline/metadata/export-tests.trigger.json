@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-77-Round1-s101-565163bc0a34/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.057,
+  "stdout": "org.apache.commons.math.linear.ArrayRealVectorTest::testBasicFunctions\norg.apache.commons.math.linear.SparseRealVectorTest::testBasicFunctions",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-78-Round1-s101-78e6ab827ad4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.093,
+  "stdout": "org.apache.commons.math.ode.events.EventStateTest::closeEvents",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-163-Round1-s101-13a6066f5744/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600b"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.82,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

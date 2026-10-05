@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-174-Round1-s101-ea91dd65798b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a\ncom.google.javascript.jscomp.ScopedAliasesTest::testIssue1103b\ncom.google.javascript.jscomp.ScopedAliasesTest::testIssue1103c",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

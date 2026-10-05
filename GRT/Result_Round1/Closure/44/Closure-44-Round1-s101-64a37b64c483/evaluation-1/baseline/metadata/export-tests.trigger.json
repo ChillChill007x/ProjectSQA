@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-44-Round1-s101-64a37b64c483/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.google.javascript.jscomp.CodePrinterTest::testIssue620",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

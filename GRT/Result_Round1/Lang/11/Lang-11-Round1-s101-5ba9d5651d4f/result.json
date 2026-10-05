@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-11-Round1-s101-5ba9d5651d4f",
+  "unit": {
+    "project": "Lang",
+    "bug": "11",
+    "target": "org.apache.commons.lang3.RandomStringUtils",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T01:02:02.831049+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f",
+    "tests": "GRT/Test/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f",
+    "config": "GRT/Configuration/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f"
+  },
+  "generation_time_sec": 2.642,
+  "test_sha256": {
+    "GRT/Test/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f/org/apache/commons/lang3/SqaGeneratedTest.java": "e714c996a7bb1800e1fba6796050ca02c72b86b6d94ce257a3dee2fbd27bfa02"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testLANG807",
+    "available_triggers": [
+      "org.apache.commons.lang3.RandomStringUtilsTest::testLANG807"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 103,
+      "tests": [
+        "org.apache.commons.lang3.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 5,
+      "line_total": 58,
+      "line_coverage_percent": 8.620689655172415,
+      "branch_covered": 4,
+      "branch_total": 56,
+      "branch_coverage_percent": 7.142857142857143
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 77,
+      "tests": [
+        "org.apache.commons.lang3.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 5,
+      "line_total": 56,
+      "line_coverage_percent": 8.928571428571429,
+      "branch_covered": 4,
+      "branch_total": 54,
+      "branch_coverage_percent": 7.407407407407407
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f/evaluation-1",
+  "finished_at": "2026-10-05T01:04:26.289001+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-30-Round1-s101-d3e32f89d4a6/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "/workspace/work/checkouts/JacksonDatabind-30-Round1-s101-d3e32f89d4a6/generation-fixed/target/classes:/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar:/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-core/2.6.2/jackson-core-2.6.2.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

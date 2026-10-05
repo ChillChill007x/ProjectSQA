@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-139-Round1-s101-1fd4f6f7a6d1/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.NormalizeTest::testNormalizeFunctionDeclarations\ncom.google.javascript.jscomp.NormalizeTest::testRemoveDuplicateVarDeclarations3\ncom.google.javascript.jscomp.NormalizeTest::testMoveFunctions2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

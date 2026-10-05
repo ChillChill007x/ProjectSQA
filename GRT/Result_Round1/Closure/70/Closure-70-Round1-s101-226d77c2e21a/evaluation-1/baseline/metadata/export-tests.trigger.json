@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-70-Round1-s101-226d77c2e21a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.572,
+  "stdout": "com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl\ncom.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13\ncom.google.javascript.jscomp.TypeCheckTest::testScoping12\ncom.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl\ncom.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

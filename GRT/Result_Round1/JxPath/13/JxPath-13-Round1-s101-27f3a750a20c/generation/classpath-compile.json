@@ -1,0 +1,17 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/classes",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/src/java",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-beanutils-1.4.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-collections-2.0.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-logging-1.0.4.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/jdom-1.0.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/junit-3.8.1.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/junit-3.8.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/mockrunner-0.4.1.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/servletapi-2.2.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/xerces-2.4.0.jar",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/xml-apis-2.0.2.jar"
+  ],
+  "missing_entries": []
+}

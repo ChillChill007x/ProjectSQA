@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-39-Round1-s101-b3bada3289b2",
+  "unit": {
+    "project": "Cli",
+    "bug": "39",
+    "target": "org.apache.commons.cli.TypeHandler",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T19:14:54.081643+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Cli/39/Cli-39-Round1-s101-b3bada3289b2",
+    "tests": "GRT/Test/Cli/39/Cli-39-Round1-s101-b3bada3289b2",
+    "config": "GRT/Configuration/Cli/39/Cli-39-Round1-s101-b3bada3289b2"
+  },
+  "generation_time_sec": 0.465,
+  "test_sha256": {
+    "GRT/Test/Cli/39/Cli-39-Round1-s101-b3bada3289b2/org/apache/commons/cli/SqaGeneratedTest.java": "5ce440d82938fa3b3ebc4c529048c9968b8360b38ac567509b375ff6ecce4565"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern",
+    "available_triggers": [
+      "org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern",
+      "org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePatternFileNotExist"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T19:15:16.244592+00:00"
+}

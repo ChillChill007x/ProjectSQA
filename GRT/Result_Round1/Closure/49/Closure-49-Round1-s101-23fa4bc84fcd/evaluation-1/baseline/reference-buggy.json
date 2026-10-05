@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-49-Round1-s101-23fa4bc84fcd/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.FunctionInjectorTest::testInline19b"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.871,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.FunctionInjectorTest::testInline19b\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

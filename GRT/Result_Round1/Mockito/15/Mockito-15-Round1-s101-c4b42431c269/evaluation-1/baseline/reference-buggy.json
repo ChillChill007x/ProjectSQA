@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-15-Round1-s101-c4b42431c269/evaluation-1/buggy",
+    "-t",
+    "org.mockitousage.bugs.InjectMocksShouldTryPropertySettersFirstBeforeFieldAccessTest::shouldInjectUsingPropertySetterIfAvailable"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 19.108,
+  "stdout": "Failing tests: 1\n  - org.mockitousage.bugs.InjectMocksShouldTryPropertySettersFirstBeforeFieldAccessTest::shouldInjectUsingPropertySetterIfAvailable\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

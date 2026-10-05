@@ -1,0 +1,11 @@
+# Overlay: keep evidence on the host, put disposable build trees on Linux storage.
+services:
+  sqa-runner:
+    volumes:
+      - type: volume
+        source: grt-linux-work
+        target: /workspace/work
+        volume:
+          nocopy: true
+volumes:
+  grt-linux-work:

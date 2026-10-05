@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.851924+00:00",
+  "run_id": "Jsoup-79-Round1-s101-25bbe7192f9f",
+  "project": "Jsoup",
+  "bug": "79",
+  "target": "org.jsoup.nodes.LeafNode",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "A cloned TextNode.childNodes call throws UnsupportedOperationException on buggy. The patch returns an empty list from LeafNode instead; direct leaf-node behavior evidence.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test18"
+  ],
+  "test_sha256": {
+    "GRT/Test/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f/org/jsoup/nodes/SqaGeneratedTest.java": "fdc9f24a9da940360d8dcc669cafb1933be1992d6d07bd9797826e987415f47b"
+  },
+  "result_sha256": "b4eeacec89b3eda812d34f254eabbdf3f99776866fe0229e1a50cff6c155d62c",
+  "result_path": "GRT/Result_Round1/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f/result.json",
+  "tests_path": "GRT/Test/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f",
+  "evaluation_path": "GRT/Result_Round1/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Jsoup/patches/79.src.patch",
+  "patch_sha256": "3a75612883a193df92c3e7ad4562ca75939e53333f90345a11da210a4f73a573",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Gson-14-Round1-s101-a761ead3199e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.gson.internal.bind.RecursiveTypesResolveTest::testDoubleSupertype\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testIssue440WeakReference\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testSubSupertype\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testDoubleSubtype\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testIssue603PrintStream\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testSuperSubtype\ncom.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveResolveSimple",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

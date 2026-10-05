@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.063485+00:00",
+  "run_id": "JacksonCore-7-Round1-s101-74038a79ca73",
+  "project": "JacksonCore",
+  "bug": "7",
+  "target": "com.fasterxml.jackson.core.json.JsonWriteContext",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Object write context accepts a value before a property name on buggy; patch returns STATUS_EXPECT_NAME in this state.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 5,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15",
+    "test64",
+    "test80"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/7/JacksonCore-7-Round1-s101-74038a79ca73/com/fasterxml/jackson/core/json/SqaGeneratedTest.java": "349bb0446bc6b24428806dcab42c4f64dc3c30ac9e21f431845c96ebb2cac673"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\7\\JacksonCore-7-Round1-s101-74038a79ca73\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/7/JacksonCore-7-Round1-s101-74038a79ca73",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/7/JacksonCore-7-Round1-s101-74038a79ca73/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/7.src.patch",
+  "patch_sha256": "c8a28f56a40beee0ca0607f0d069fa36fba0d9bb3c57941a657d24c4940724bc",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.math.complex.ComplexTest::testAtanI",
+  "available_triggers": [
+    "org.apache.commons.math.complex.ComplexTest::testAtanI",
+    "org.apache.commons.math.complex.ComplexTest::testDivideZero"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

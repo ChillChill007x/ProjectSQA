@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-13-Round1-s101-1c80ed66b03f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.403,
+  "stdout": "org.jsoup.nodes.NodeTest::handlesAbsPrefixOnHasAttr\norg.jsoup.nodes.NodeTest::handlesAbsPrefix\norg.jsoup.select.ElementsTest::absAttr\norg.jsoup.select.ElementsTest::hasAbsAttr",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

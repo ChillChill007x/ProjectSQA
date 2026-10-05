@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/JacksonCore-19-Round1-s101-b9ec27b945e1/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-b9ec27b945e1/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.817,
+  "stdout": "[INFO] 96 classes instrumented to /workspace/GRT/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-b9ec27b945e1/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-16-Round1-s101-0058402caeaa",
+  "unit": {
+    "project": "Cli",
+    "bug": "16",
+    "target": "org.apache.commons.cli2.option.OptionImpl",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T18:59:33.433437+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Cli/16/Cli-16-Round1-s101-0058402caeaa",
+    "tests": "GRT/Test/Cli/16/Cli-16-Round1-s101-0058402caeaa",
+    "config": "GRT/Configuration/Cli/16/Cli-16-Round1-s101-0058402caeaa"
+  },
+  "generation_time_sec": 0.565,
+  "test_sha256": {
+    "GRT/Test/Cli/16/Cli-16-Round1-s101-0058402caeaa/org/apache/commons/cli2/option/SqaGeneratedTest.java": "d93333e8091c78749469ba34732d40b25b491ab8aa05849d301767aaab2f6377"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption",
+      "org.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption",
+      "org.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order",
+      "org.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T18:59:57.832590+00:00"
+}

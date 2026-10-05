@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Codec-9-Round1-s101-89786ddd53f3/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.codec.binary.Base64Test::testCodec112"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.816,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.codec.binary.Base64Test::testCodec112\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

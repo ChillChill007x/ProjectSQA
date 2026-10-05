@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-85-Round1-s101-5ded5e1a3f4b/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math.distribution.NormalDistributionTest::testMath280"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.556,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

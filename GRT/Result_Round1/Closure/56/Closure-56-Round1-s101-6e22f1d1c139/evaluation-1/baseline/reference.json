@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine",
+  "available_triggers": [
+    "com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine",
+    "com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError1",
+    "com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError2"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

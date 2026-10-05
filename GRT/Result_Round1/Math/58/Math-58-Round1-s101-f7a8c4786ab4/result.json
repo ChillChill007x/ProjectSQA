@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-58-Round1-s101-f7a8c4786ab4",
+  "unit": {
+    "project": "Math",
+    "bug": "58",
+    "target": "org.apache.commons.math.optimization.fitting.GaussianFitter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "NO_TESTS",
+  "started_at": "2026-10-05T08:19:08.892487+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/58/Math-58-Round1-s101-f7a8c4786ab4",
+    "tests": "GRT/Test/Math/58/Math-58-Round1-s101-f7a8c4786ab4",
+    "config": "GRT/Configuration/Math/58/Math-58-Round1-s101-f7a8c4786ab4"
+  },
+  "generation_time_sec": 3.786,
+  "test_sha256": {
+    "GRT/Test/Math/58/Math-58-Round1-s101-f7a8c4786ab4/org/apache/commons/math/optimization/fitting/SqaGeneratedTest.java": "dc78803bd49ac166fc74e9ab475b940619b2e6940a7dd9f362474370b0c82e57"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.fitting.GaussianFitterTest::testMath519",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.fitting.GaussianFitterTest::testMath519"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "No generated JUnit 4 test classes were found",
+  "finished_at": "2026-10-05T08:22:22.529795+00:00"
+}

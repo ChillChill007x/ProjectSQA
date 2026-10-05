@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/JacksonDatabind-101-Round1-s101-585dca05d974/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/JacksonDatabind/101/JacksonDatabind-101-Round1-s101-585dca05d974/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.23,
+  "stdout": "[INFO] 642 classes instrumented to /workspace/GRT/Result_Round1/JacksonDatabind/101/JacksonDatabind-101-Round1-s101-585dca05d974/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

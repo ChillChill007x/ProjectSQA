@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-56-Round1-s101-3f45a01d3e12/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.69,
+  "stdout": "org.apache.commons.math.util.MultidimensionalCounterTest::testIterationConsistency",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

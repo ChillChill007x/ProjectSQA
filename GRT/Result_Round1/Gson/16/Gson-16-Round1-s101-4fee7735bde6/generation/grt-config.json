@@ -1,0 +1,17 @@
+{
+  "max_tests": 100,
+  "max_sequence_length": 40,
+  "pool_limit": 1000,
+  "detective_depth": 3,
+  "invocation_timeout_ms": 1000,
+  "coverage_interval_seconds": 10,
+  "p_const": 0.01,
+  "sigma": 30,
+  "alpha": 0.9,
+  "p": 0.99,
+  "seed": 101,
+  "target": "com.google.gson.internal.$Gson$Types",
+  "output": "/workspace/GRT/Test/Gson/16/Gson-16-Round1-s101-4fee7735bde6",
+  "class_root": "/workspace/work/checkouts/Gson-16-Round1-s101-4fee7735bde6/generation-fixed/target/classes",
+  "budget_seconds": 30
+}

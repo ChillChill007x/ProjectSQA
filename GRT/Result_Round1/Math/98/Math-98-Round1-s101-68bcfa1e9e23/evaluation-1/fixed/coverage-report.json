@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Math/98/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/target/classes/org/apache/commons/math/linear/RealMatrixImpl.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Math/98/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.772,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Math/98/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

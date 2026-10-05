@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.095518+00:00",
+  "run_id": "JacksonDatabind-4-Round1-s101-0a221be8ef42",
+  "project": "JacksonDatabind",
+  "bug": "4",
+  "target": "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "StringArrayDeserializer custom internal path throws buggy NPE while fixed wraps errors in JsonMappingException; patch adds wrapping. Synthetic/deserializer context validity needs review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 22,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test15",
+    "test24",
+    "test30"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/4/JacksonDatabind-4-Round1-s101-0a221be8ef42/com/fasterxml/jackson/databind/deser/std/SqaGeneratedTest.java": "5281d20a3912f290e46f17aaf26c71428b49dccb1f0eb6153633c9af2f9ad40b"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonDatabind\\4\\JacksonDatabind-4-Round1-s101-0a221be8ef42\\result.json",
+  "tests_path": "GRT/Test/JacksonDatabind/4/JacksonDatabind-4-Round1-s101-0a221be8ef42",
+  "evaluation_path": "GRT/Result_Round1/JacksonDatabind/4/JacksonDatabind-4-Round1-s101-0a221be8ef42/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonDatabind/patches/4.src.patch",
+  "patch_sha256": "a002a259434f4e1201675be6ddc17bc65c36cf3c2a564a86c1160877d34b89aa",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Compress-33-Round1-s101-f5ff08582122",
+  "unit": {
+    "project": "Compress",
+    "bug": "33",
+    "target": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T03:08:51.505916+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Compress/33/Compress-33-Round1-s101-f5ff08582122",
+    "tests": "GRT/Test/Compress/33/Compress-33-Round1-s101-f5ff08582122",
+    "config": "GRT/Configuration/Compress/33/Compress-33-Round1-s101-f5ff08582122"
+  },
+  "generation_time_sec": 0.665,
+  "test_sha256": {
+    "GRT/Test/Compress/33/Compress-33-Round1-s101-f5ff08582122/org/apache/commons/compress/compressors/deflate/SqaGeneratedTest.java": "b3c6735fc43f476eb6d2310010821728dbc5831851c9585ca27e1572d8c7b894"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection",
+    "available_triggers": [
+      "org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T03:09:26.421535+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-34-Round1-s101-b32d7e79d1f3",
+  "unit": {
+    "project": "Closure",
+    "bug": "34",
+    "target": "com.google.javascript.jscomp.CodePrinter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T20:41:16.568566+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3",
+    "tests": "GRT/Test/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3",
+    "config": "GRT/Configuration/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3"
+  },
+  "generation_time_sec": 30.228,
+  "test_sha256": {
+    "GRT/Test/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3/com/google/javascript/jscomp/SqaGeneratedTest.java": "466edf24a5b14a1d8543b7ac8409d93305efddb10b795f11dc805aa11579a6a6"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CodePrinterTest::testManyAdds",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CodePrinterTest::testManyAdds"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 329,
+      "tests": [
+        "com.google.javascript.jscomp.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 17,
+      "line_coverage_percent": 5.882352941176471,
+      "branch_covered": 0,
+      "branch_total": 12,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 297,
+      "tests": [
+        "com.google.javascript.jscomp.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 17,
+      "line_coverage_percent": 5.882352941176471,
+      "branch_covered": 0,
+      "branch_total": 12,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3/evaluation-1",
+  "finished_at": "2026-10-04T20:43:24.982649+00:00"
+}

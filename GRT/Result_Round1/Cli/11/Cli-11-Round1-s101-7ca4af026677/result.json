@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-11-Round1-s101-7ca4af026677",
+  "unit": {
+    "project": "Cli",
+    "bug": "11",
+    "target": "org.apache.commons.cli.HelpFormatter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T18:54:45.004310+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Cli/11/Cli-11-Round1-s101-7ca4af026677",
+    "tests": "GRT/Test/Cli/11/Cli-11-Round1-s101-7ca4af026677",
+    "config": "GRT/Configuration/Cli/11/Cli-11-Round1-s101-7ca4af026677"
+  },
+  "generation_time_sec": 1.417,
+  "test_sha256": {
+    "GRT/Test/Cli/11/Cli-11-Round1-s101-7ca4af026677/org/apache/commons/cli/SqaGeneratedTest.java": "e33bd92b024acf2c2b2c0e46c272d7b631f324703414c674c782bae2389c40a8"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.HelpFormatterTest::testPrintOptionWithEmptyArgNameUsage",
+    "available_triggers": [
+      "org.apache.commons.cli.HelpFormatterTest::testPrintOptionWithEmptyArgNameUsage"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 4,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 282,
+      "tests": [
+        "org.apache.commons.cli.SqaGeneratedTest::test0",
+        "org.apache.commons.cli.SqaGeneratedTest::test1",
+        "org.apache.commons.cli.SqaGeneratedTest::test2",
+        "org.apache.commons.cli.SqaGeneratedTest::test3"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 30,
+      "line_total": 194,
+      "line_coverage_percent": 15.463917525773196,
+      "branch_covered": 11,
+      "branch_total": 106,
+      "branch_coverage_percent": 10.377358490566039
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 4,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 244,
+      "tests": [
+        "org.apache.commons.cli.SqaGeneratedTest::test0",
+        "org.apache.commons.cli.SqaGeneratedTest::test1",
+        "org.apache.commons.cli.SqaGeneratedTest::test2",
+        "org.apache.commons.cli.SqaGeneratedTest::test3"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 30,
+      "line_total": 194,
+      "line_coverage_percent": 15.463917525773196,
+      "branch_covered": 11,
+      "branch_total": 106,
+      "branch_coverage_percent": 10.377358490566039
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Cli/11/Cli-11-Round1-s101-7ca4af026677/evaluation-1",
+  "finished_at": "2026-10-04T18:55:11.645394+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-40-Round1-s101-e46fd0832dea/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.google.javascript.jscomp.IntegrationTest::testIssue284\ncom.google.javascript.jscomp.NameAnalyzerTest::testIssue284",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,9 @@
+{
+  "trigger": "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay",
+  "available_triggers": [
+    "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay",
+    "org.joda.time.TestMonths::testFactory_monthsBetween_RPartial_MonthDay"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

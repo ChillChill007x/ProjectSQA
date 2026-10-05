@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Compress-29-Round1-s101-a76d9b5ee3c5/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.916,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

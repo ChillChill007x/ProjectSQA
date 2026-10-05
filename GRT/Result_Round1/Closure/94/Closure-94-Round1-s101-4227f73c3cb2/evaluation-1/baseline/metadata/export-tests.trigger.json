@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-94-Round1-s101-4227f73c3cb2/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.NodeUtilTest::testValidDefine\ncom.google.javascript.jscomp.ProcessDefinesTest::testOverridingString1\ncom.google.javascript.jscomp.ProcessDefinesTest::testOverridingString3",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

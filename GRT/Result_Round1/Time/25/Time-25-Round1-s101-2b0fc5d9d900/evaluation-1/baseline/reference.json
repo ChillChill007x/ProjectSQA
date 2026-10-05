@@ -1,0 +1,10 @@
+{
+  "trigger": "org.joda.time.TestDateTimeZoneCutover::test_DateTime_constructor_Moscow_Autumn",
+  "available_triggers": [
+    "org.joda.time.TestDateTimeZoneCutover::test_DateTime_constructor_Moscow_Autumn",
+    "org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn_overlap_mins",
+    "org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

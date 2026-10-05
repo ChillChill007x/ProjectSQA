@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-3-Round1-s101-4d4b99549308",
+  "unit": {
+    "project": "Gson",
+    "bug": "3",
+    "target": "com.google.gson.internal.ConstructorConstructor",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T03:33:51.656216+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Gson/3/Gson-3-Round1-s101-4d4b99549308",
+    "tests": "GRT/Test/Gson/3/Gson-3-Round1-s101-4d4b99549308",
+    "config": "GRT/Configuration/Gson/3/Gson-3-Round1-s101-4d4b99549308"
+  },
+  "generation_time_sec": 14.09,
+  "test_sha256": {
+    "GRT/Test/Gson/3/Gson-3-Round1-s101-4d4b99549308/com/google/gson/internal/SqaGeneratedTest.java": "4635e5ef9fac2ae305b3851959a3f1fb7ae2f4fe3e9a6da7af8d2375cf31de43"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.functional.MapTest::testConcurrentMap",
+    "available_triggers": [
+      "com.google.gson.functional.MapTest::testConcurrentMap",
+      "com.google.gson.functional.MapTest::testConcurrentNavigableMap"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T03:34:26.858563+00:00"
+}

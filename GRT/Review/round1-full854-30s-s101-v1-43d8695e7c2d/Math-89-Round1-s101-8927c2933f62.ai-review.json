@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.926377+00:00",
+  "run_id": "Math-89-Round1-s101-8927c2933f62",
+  "project": "Math",
+  "bug": "89",
+  "target": "org.apache.commons.math.stat.Frequency",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Frequency.addValue receives a non-Comparable object and throws ClassCastException on buggy. The patch explicitly checks Comparable and throws IllegalArgumentException, directly supporting the input-validation error contract.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test39"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/89/Math-89-Round1-s101-8927c2933f62/org/apache/commons/math/stat/SqaGeneratedTest.java": "577bf84e5326fe6619574fd9914115fa4985105ddac769da3b28e689fdf0ce52"
+  },
+  "result_sha256": "12d2dd0730bb539f4c647a145ee5c1b784609ac3deb8f509441ac348545c4430",
+  "result_path": "GRT/Result_Round1/Math/89/Math-89-Round1-s101-8927c2933f62/result.json",
+  "tests_path": "GRT/Test/Math/89/Math-89-Round1-s101-8927c2933f62",
+  "evaluation_path": "GRT/Result_Round1/Math/89/Math-89-Round1-s101-8927c2933f62/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/89.src.patch",
+  "patch_sha256": "a20a94c933d978cf9fbe03727c2777f86afe6b7f858cbef74dc067735ca910c4",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

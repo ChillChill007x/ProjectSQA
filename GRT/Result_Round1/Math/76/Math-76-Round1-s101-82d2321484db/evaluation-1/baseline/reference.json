@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.math.linear.SingularValueSolverTest::testMath320A",
+  "available_triggers": [
+    "org.apache.commons.math.linear.SingularValueSolverTest::testMath320A",
+    "org.apache.commons.math.linear.SingularValueSolverTest::testMath320B"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

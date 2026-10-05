@@ -1,0 +1,8 @@
+{
+  "trigger": "com.google.gson.functional.CollectionTest::testIssue1107",
+  "available_triggers": [
+    "com.google.gson.functional.CollectionTest::testIssue1107"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

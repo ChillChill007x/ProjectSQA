@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-90-Round1-s101-9382a0beb470/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.309,
+  "stdout": "org.jsoup.helper.HttpConnectionTest::handlesHeaderEncodingOnRequest",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

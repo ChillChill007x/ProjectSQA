@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Compress-4-Round1-s101-073f683c3529/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest::testJarMarker"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.816,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest::testJarMarker\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

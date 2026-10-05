@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.compress.utils.IOUtilsTest::skipUsingRead",
+  "available_triggers": [
+    "org.apache.commons.compress.utils.IOUtilsTest::skipUsingRead",
+    "org.apache.commons.compress.utils.IOUtilsTest::skipUsingSkipAndRead"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

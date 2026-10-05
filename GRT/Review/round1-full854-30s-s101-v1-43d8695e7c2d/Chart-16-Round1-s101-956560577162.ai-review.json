@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.873327+00:00",
+  "run_id": "Chart-16-Round1-s101-956560577162",
+  "project": "Chart",
+  "bug": "16",
+  "target": "org.jfree.data.category.DefaultIntervalCategoryDataset",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Empty dataset handling differs; patch changes null series/category keys to empty arrays. Representative also requests absent keys; distinguish null initialization from key-contract behavior.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 47,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test16",
+    "test17",
+    "test18"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/16/Chart-16-Round1-s101-956560577162/org/jfree/data/category/SqaGeneratedTest.java": "631d7d0c3ba0c806d49c58424342dc1248f74165ca97f164c4524b186ed127dc"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\16\\Chart-16-Round1-s101-956560577162\\result.json",
+  "tests_path": "GRT/Test/Chart/16/Chart-16-Round1-s101-956560577162",
+  "evaluation_path": "GRT/Result_Round1/Chart/16/Chart-16-Round1-s101-956560577162/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/16.src.patch",
+  "patch_sha256": "9346bed33607f2c6d03a4db9fe7d838a1ee319d57a414b36bd27a29bbf4af06f",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

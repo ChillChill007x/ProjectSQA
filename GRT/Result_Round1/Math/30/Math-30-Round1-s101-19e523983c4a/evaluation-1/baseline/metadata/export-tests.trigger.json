@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-30-Round1-s101-19e523983c4a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.445,
+  "stdout": "org.apache.commons.math3.stat.inference.MannWhitneyUTestTest::testBigDataSet",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

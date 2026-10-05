@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.924376+00:00",
+  "run_id": "Math-77-Round1-s101-565163bc0a34",
+  "project": "Math",
+  "bug": "77",
+  "target": "org.apache.commons.math.linear.OpenMapRealVector",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "OpenMapRealVector.getLInfNorm([0,1,1]) returns 2 on buggy instead of 1. The buggy implementation sums entries instead of taking maximum absolute value; the representative directly demonstrates the norm error.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 3,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test87"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/77/Math-77-Round1-s101-565163bc0a34/org/apache/commons/math/linear/SqaGeneratedTest.java": "e514d24398f424401d197847a300bca29c2fc3ae9193f2e7302bf4b141678bdc"
+  },
+  "result_sha256": "a451c87e66bf51266647124082645a9966119204c2fa0ec8db147dfad272daca",
+  "result_path": "GRT/Result_Round1/Math/77/Math-77-Round1-s101-565163bc0a34/result.json",
+  "tests_path": "GRT/Test/Math/77/Math-77-Round1-s101-565163bc0a34",
+  "evaluation_path": "GRT/Result_Round1/Math/77/Math-77-Round1-s101-565163bc0a34/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/77.src.patch",
+  "patch_sha256": "51ef8c8b795c82860330205c9c889f77de91618978331b4f2715949ccc3d487d",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

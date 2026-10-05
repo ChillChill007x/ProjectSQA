@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-16-Round1-s101-4a11a3f025f4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.345,
+  "stdout": "org.jsoup.nodes.DocumentTypeTest::outerHtmlGeneration\norg.jsoup.nodes.DocumentTypeTest::constructorValidationThrowsExceptionOnBlankName",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

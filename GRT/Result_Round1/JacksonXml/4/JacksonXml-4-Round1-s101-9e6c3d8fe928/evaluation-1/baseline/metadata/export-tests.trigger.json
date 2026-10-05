@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-4-Round1-s101-9e6c3d8fe928/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.951,
+  "stdout": "com.fasterxml.jackson.dataformat.xml.misc.RootNameTest::testDynamicRootName",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

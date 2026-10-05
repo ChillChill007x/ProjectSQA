@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "50b",
+    "-w",
+    "/workspace/work/checkouts/Closure-50-Round1-s101-9ac69203a57d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.221,
+  "stdout": "",
+  "stderr": "Checking out c3b630fc to /workspace/work/checkouts/Closure-50-Round1-s101-9 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: can't read /workspace/work/checkouts/Closure-50-Round1-s101-9ac69203a57d/evaluation-1/buggy/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-50-Round1-s101-9ac69203a57d/evaluation-1/buggy/lib/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff c3b630fc:9d3ed3fb..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-50b..................................... OK\n"
+}

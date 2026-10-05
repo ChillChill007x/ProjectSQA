@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-157-Round1-s101-eb86b5f89f8e/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.CodePrinterTest::testObjectLit2\ncom.google.javascript.jscomp.CodePrinterTest::testObjectLit3\ncom.google.javascript.jscomp.CodePrinterTest::testGetter\ncom.google.javascript.jscomp.CodePrinterTest::testSetter\ncom.google.javascript.jscomp.FunctionNamesTest::testFunctionsNamesAndIds\ncom.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys2\ncom.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys3\ncom.google.javascript.jscomp.SimpleDefinitionFinderTest::testDefineNumber\ncom.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral6\ncom.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral7\ncom.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral8\ncom.google.javascript.jscomp.parsing.ParserTest::testObjectLiteralDoc1",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

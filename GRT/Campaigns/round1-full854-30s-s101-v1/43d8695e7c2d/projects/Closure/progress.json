@@ -1,0 +1,3160 @@
+{
+  "updated_at": "2026-10-05T02:02:05.695823+00:00",
+  "expected_bugs": 174,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 142,
+    "FAILED": 32
+  },
+  "bugs": [
+    {
+      "project": "Closure",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.RemoveUnusedVars"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.RemoveUnusedVars": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/1/Closure-1-Round1-s101-911ae3848e05/result.json",
+          "started_at": "2026-10-04T19:25:00.315090+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "2",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/2/Closure-2-Round1-s101-87b20e58afe6/result.json",
+          "started_at": "2026-10-04T19:27:12.924703+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/3/Closure-3-Round1-s101-4dad6fcb46d4/result.json",
+          "started_at": "2026-10-04T19:28:52.650626+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.NamedType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.NamedType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/4/Closure-4-Round1-s101-71f6efa0e7e1/result.json",
+          "started_at": "2026-10-04T19:31:01.765519+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineObjectLiterals"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineObjectLiterals": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/5/Closure-5-Round1-s101-efd0940f58d1/result.json",
+          "started_at": "2026-10-04T19:33:02.732206+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeValidator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeValidator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/6/Closure-6-Round1-s101-44efde1c5322/result.json",
+          "started_at": "2026-10-04T19:35:18.181043+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/7/Closure-7-Round1-s101-046ebf697c99/result.json",
+          "started_at": "2026-10-04T19:37:46.578628+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CollapseVariableDeclarations"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CollapseVariableDeclarations": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/8/Closure-8-Round1-s101-8301ffe21ec4/result.json",
+          "started_at": "2026-10-04T19:39:53.413832+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ProcessCommonJSModules"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ProcessCommonJSModules": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/9/Closure-9-Round1-s101-78ff9a1e20f7/result.json",
+          "started_at": "2026-10-04T19:42:21.281223+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/10/Closure-10-Round1-s101-305f829e43be/result.json",
+          "started_at": "2026-10-04T19:44:40.924590+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/11/Closure-11-Round1-s101-26a99cf44352/result.json",
+          "started_at": "2026-10-04T19:46:50.001823+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.MaybeReachingVariableUse"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.MaybeReachingVariableUse": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/12/Closure-12-Round1-s101-dfbc10679070/result.json",
+          "started_at": "2026-10-04T19:49:08.151410+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeOptimizationsPass"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeOptimizationsPass": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/13/Closure-13-Round1-s101-3c399fcc2571/result.json",
+          "started_at": "2026-10-04T19:51:30.965829+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ControlFlowAnalysis"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ControlFlowAnalysis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/14/Closure-14-Round1-s101-952b35ec5115/result.json",
+          "started_at": "2026-10-04T19:53:38.237431+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/15/Closure-15-Round1-s101-7ecd865a15fe/result.json",
+          "started_at": "2026-10-04T19:55:39.789763+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ScopedAliases"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/16/Closure-16-Round1-s101-30d92cf20388/result.json",
+          "started_at": "2026-10-04T19:57:48.293116+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/17/Closure-17-Round1-s101-456fb8c67bd4/result.json",
+          "started_at": "2026-10-04T19:59:59.564844+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "18",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/18/Closure-18-Round1-s101-76d1457cff03/result.json",
+          "started_at": "2026-10-04T20:01:44.893755+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/19/Closure-19-Round1-s101-5a567399a3f1/result.json",
+          "started_at": "2026-10-04T20:03:28.930838+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/20/Closure-20-Round1-s101-180f5b14e514/result.json",
+          "started_at": "2026-10-04T20:05:27.602723+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckSideEffects"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckSideEffects": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/21/Closure-21-Round1-s101-e742d5d70e97/result.json",
+          "started_at": "2026-10-04T20:07:21.754862+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckSideEffects"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckSideEffects": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/22/Closure-22-Round1-s101-56d8817933c0/result.json",
+          "started_at": "2026-10-04T20:09:32.537207+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/23/Closure-23-Round1-s101-69915b434a77/result.json",
+          "started_at": "2026-10-04T20:11:45.785828+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ScopedAliases"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/24/Closure-24-Round1-s101-c1491fa8a471/result.json",
+          "started_at": "2026-10-04T20:13:42.958733+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeInference"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/25/Closure-25-Round1-s101-93afa5a5e9df/result.json",
+          "started_at": "2026-10-04T20:16:02.691751+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ProcessCommonJSModules"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ProcessCommonJSModules": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/26/Closure-26-Round1-s101-ff70a20c7e26/result.json",
+          "started_at": "2026-10-04T20:18:21.763723+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.IR"
+      ],
+      "units": {
+        "com.google.javascript.rhino.IR": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/27/Closure-27-Round1-s101-80baa0e1a6cb/result.json",
+          "started_at": "2026-10-04T20:21:02.220600+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineCostEstimator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineCostEstimator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/28/Closure-28-Round1-s101-9cc64e3fe602/result.json",
+          "started_at": "2026-10-04T20:23:17.951844+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineObjectLiterals"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineObjectLiterals": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/29/Closure-29-Round1-s101-c9fbe1d23856/result.json",
+          "started_at": "2026-10-04T20:25:35.969192+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables",
+        "com.google.javascript.jscomp.MustBeReachingVariableDef"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/30/Closure-30-Round1-s101-281a4a77463e/result.json",
+          "started_at": "2026-10-04T20:28:14.755774+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.MustBeReachingVariableDef": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/30/Closure-30-Round1-s101-4e00a7555bb6/result.json",
+          "started_at": "2026-10-04T20:30:17.589364+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "31",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/31/Closure-31-Round1-s101-585a9df2b9fc/result.json",
+          "started_at": "2026-10-04T20:32:40.034849+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/32/Closure-32-Round1-s101-f3df650e9c73/result.json",
+          "started_at": "2026-10-04T20:35:23.293592+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.PrototypeObjectType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.PrototypeObjectType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/33/Closure-33-Round1-s101-5cb8a8050be2/result.json",
+          "started_at": "2026-10-04T20:37:27.440612+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "34",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator",
+        "com.google.javascript.jscomp.CodePrinter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/34/Closure-34-Round1-s101-c03a2ce30533/result.json",
+          "started_at": "2026-10-04T20:39:33.867800+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.CodePrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/34/Closure-34-Round1-s101-b32d7e79d1f3/result.json",
+          "started_at": "2026-10-04T20:41:16.568566+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeInference"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/35/Closure-35-Round1-s101-a5d6b9a02a15/result.json",
+          "started_at": "2026-10-04T20:43:41.076407+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineVariables"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/36/Closure-36-Round1-s101-ec6c10cbb8a9/result.json",
+          "started_at": "2026-10-04T20:46:13.685825+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeTraversal",
+        "com.google.javascript.jscomp.parsing.IRFactory"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeTraversal": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/37/Closure-37-Round1-s101-2d64dd6c5000/result.json",
+          "started_at": "2026-10-04T20:48:37.984609+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/37/Closure-37-Round1-s101-4e6ba19ed9b2/result.json",
+          "started_at": "2026-10-04T20:50:43.163773+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeConsumer"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeConsumer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/38/Closure-38-Round1-s101-ebf6d8eb8c93/result.json",
+          "started_at": "2026-10-04T20:53:18.528452+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.PrototypeObjectType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.PrototypeObjectType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/39/Closure-39-Round1-s101-8d2d17e08e40/result.json",
+          "started_at": "2026-10-04T20:55:10.809918+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NameAnalyzer"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NameAnalyzer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/40/Closure-40-Round1-s101-e46fd0832dea/result.json",
+          "started_at": "2026-10-04T20:57:18.408168+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "41",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionTypeBuilder"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionTypeBuilder": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/41/Closure-41-Round1-s101-54afa7fae869/result.json",
+          "started_at": "2026-10-04T20:59:33.663553+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "42",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.IRFactory"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/42/Closure-42-Round1-s101-20b4a5186f7c/result.json",
+          "started_at": "2026-10-04T21:01:19.941047+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "43",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/43/Closure-43-Round1-s101-ada785eaed03/result.json",
+          "started_at": "2026-10-04T21:03:22.907392+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "44",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeConsumer"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeConsumer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/44/Closure-44-Round1-s101-64a37b64c483/result.json",
+          "started_at": "2026-10-04T21:05:10.017021+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.RemoveUnusedVars"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.RemoveUnusedVars": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/45/Closure-45-Round1-s101-7603ed0eb65d/result.json",
+          "started_at": "2026-10-04T21:07:01.641067+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "46",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.RecordType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.RecordType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/46/Closure-46-Round1-s101-b7b57cbe62ab/result.json",
+          "started_at": "2026-10-04T21:09:24.859839+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "47",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.debugging.sourcemap.SourceMapConsumerV3",
+        "com.google.javascript.jscomp.SourceMap"
+      ],
+      "units": {
+        "com.google.debugging.sourcemap.SourceMapConsumerV3": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/47/Closure-47-Round1-s101-99b47312a678/result.json",
+          "started_at": "2026-10-04T21:11:23.212899+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.SourceMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/47/Closure-47-Round1-s101-b72377afa722/result.json",
+          "started_at": "2026-10-04T21:12:57.991306+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "48",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/48/Closure-48-Round1-s101-2b50ff5d9e0a/result.json",
+          "started_at": "2026-10-04T21:14:50.130991+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "49",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.MakeDeclaredNamesUnique"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.MakeDeclaredNamesUnique": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/49/Closure-49-Round1-s101-23fa4bc84fcd/result.json",
+          "started_at": "2026-10-04T21:16:33.174345+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "50",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeReplaceKnownMethods"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeReplaceKnownMethods": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/50/Closure-50-Round1-s101-9ac69203a57d/result.json",
+          "started_at": "2026-10-04T21:18:44.475498+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "51",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeConsumer"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeConsumer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/51/Closure-51-Round1-s101-f50ad6997ee0/result.json",
+          "started_at": "2026-10-04T21:20:41.627287+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "52",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/52/Closure-52-Round1-s101-590cf0981af9/result.json",
+          "started_at": "2026-10-04T21:22:13.450249+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "53",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineObjectLiterals"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineObjectLiterals": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/53/Closure-53-Round1-s101-bb5b42610df1/result.json",
+          "started_at": "2026-10-04T21:23:50.261966+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "54",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator",
+        "com.google.javascript.rhino.jstype.FunctionType"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/54/Closure-54-Round1-s101-146bd337628a/result.json",
+          "started_at": "2026-10-04T21:26:05.266505+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/54/Closure-54-Round1-s101-ec38b098113a/result.json",
+          "started_at": "2026-10-04T21:27:31.026643+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "55",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionRewriter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionRewriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/55/Closure-55-Round1-s101-6a40797453c8/result.json",
+          "started_at": "2026-10-04T21:29:24.703326+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "56",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.SourceFile"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.SourceFile": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/56/Closure-56-Round1-s101-6e22f1d1c139/result.json",
+          "started_at": "2026-10-04T21:31:38.185100+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "57",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ClosureCodingConvention"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ClosureCodingConvention": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/57/Closure-57-Round1-s101-d80519336443/result.json",
+          "started_at": "2026-10-04T21:33:27.314007+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "58",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.LiveVariablesAnalysis"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.LiveVariablesAnalysis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/58/Closure-58-Round1-s101-034a2df065e0/result.json",
+          "started_at": "2026-10-04T21:35:25.862327+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "59",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/59/Closure-59-Round1-s101-8ace8e4b86dd/result.json",
+          "started_at": "2026-10-04T21:38:03.479079+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "60",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/60/Closure-60-Round1-s101-0c7c24c8b1fc/result.json",
+          "started_at": "2026-10-04T21:40:35.184910+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "61",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/61/Closure-61-Round1-s101-d0442b9671ce/result.json",
+          "started_at": "2026-10-04T21:42:35.770523+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "62",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.LightweightMessageFormatter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.LightweightMessageFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/62/Closure-62-Round1-s101-38e7eb4bb09b/result.json",
+          "started_at": "2026-10-04T21:44:35.034292+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "64",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/64/Closure-64-Round1-s101-4979558321ba/result.json",
+          "started_at": "2026-10-04T21:46:29.376365+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "65",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/65/Closure-65-Round1-s101-12b35ea24be0/result.json",
+          "started_at": "2026-10-04T21:47:56.903911+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "66",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/66/Closure-66-Round1-s101-6d2a0a1d89e6/result.json",
+          "started_at": "2026-10-04T21:49:33.223924+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "67",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.AnalyzePrototypeProperties"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AnalyzePrototypeProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/67/Closure-67-Round1-s101-e76e0ae6b82f/result.json",
+          "started_at": "2026-10-04T21:51:36.999397+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "68",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/68/Closure-68-Round1-s101-e072697a360a/result.json",
+          "started_at": "2026-10-04T21:53:43.743326+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "69",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/69/Closure-69-Round1-s101-ab9dd6d02564/result.json",
+          "started_at": "2026-10-04T21:55:32.406438+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "70",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/70/Closure-70-Round1-s101-226d77c2e21a/result.json",
+          "started_at": "2026-10-04T21:57:51.949670+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "71",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckAccessControls"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckAccessControls": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/71/Closure-71-Round1-s101-1100cb52c0b0/result.json",
+          "started_at": "2026-10-04T22:00:37.621730+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "72",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionToBlockMutator",
+        "com.google.javascript.jscomp.RenameLabels"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionToBlockMutator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/72/Closure-72-Round1-s101-a80b07023a47/result.json",
+          "started_at": "2026-10-04T22:01:59.281736+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.RenameLabels": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/72/Closure-72-Round1-s101-08c3826b3ff5/result.json",
+          "started_at": "2026-10-04T22:03:30.820295+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "73",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/73/Closure-73-Round1-s101-b317cc5bc17a/result.json",
+          "started_at": "2026-10-04T22:05:26.305934+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "74",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/74/Closure-74-Round1-s101-2c18294e9678/result.json",
+          "started_at": "2026-10-04T22:07:05.682112+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "75",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/75/Closure-75-Round1-s101-aa4c1134ddae/result.json",
+          "started_at": "2026-10-04T22:08:40.138677+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "76",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.DeadAssignmentsElimination"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.DeadAssignmentsElimination": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/76/Closure-76-Round1-s101-f680141ef7b2/result.json",
+          "started_at": "2026-10-04T22:10:21.869932+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "77",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/77/Closure-77-Round1-s101-35e2c7698c3c/result.json",
+          "started_at": "2026-10-04T22:12:20.219341+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "78",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/78/Closure-78-Round1-s101-a51bebf2f795/result.json",
+          "started_at": "2026-10-04T22:13:53.662968+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "79",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.Normalize",
+        "com.google.javascript.jscomp.VarCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Normalize": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/79/Closure-79-Round1-s101-d1107e94c37d/result.json",
+          "started_at": "2026-10-04T22:15:32.177904+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.VarCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/79/Closure-79-Round1-s101-71ff36518f05/result.json",
+          "started_at": "2026-10-04T22:17:12.194510+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "80",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/80/Closure-80-Round1-s101-3475bb710cae/result.json",
+          "started_at": "2026-10-04T22:19:07.470679+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "81",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.IRFactory"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/81/Closure-81-Round1-s101-8b1b38a7955a/result.json",
+          "started_at": "2026-10-04T22:20:59.170407+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "82",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.JSType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.JSType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/82/Closure-82-Round1-s101-c66fab2e54d6/result.json",
+          "started_at": "2026-10-04T22:22:36.039979+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "83",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CommandLineRunner"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/83/Closure-83-Round1-s101-d5ec95764712/result.json",
+          "started_at": "2026-10-04T22:24:11.834879+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/83/Closure-83-Round1-s101-d5ec95764712/generation/generation-process.json\nthe compiler version to stderr.\n --warning_level [QUIET | DEFAULT | VER : Specifies the warning level to use. Op\n BOSE]                                  : tions: QUIET, DEFAULT, VERBOSE\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:583)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:521)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:564)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:257)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "84",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.IRFactory"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/84/Closure-84-Round1-s101-6db7aac8630a/result.json",
+          "started_at": "2026-10-04T22:24:34.797539+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "85",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.UnreachableCodeElimination"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.UnreachableCodeElimination": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/85/Closure-85-Round1-s101-c4b8760fb7cd/result.json",
+          "started_at": "2026-10-04T22:26:09.219695+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "86",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/86/Closure-86-Round1-s101-1e9115193526/result.json",
+          "started_at": "2026-10-04T22:27:50.669510+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "87",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/87/Closure-87-Round1-s101-cad84244bb84/result.json",
+          "started_at": "2026-10-04T22:29:25.942310+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "88",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.DeadAssignmentsElimination"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.DeadAssignmentsElimination": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/88/Closure-88-Round1-s101-23c7be828cc5/result.json",
+          "started_at": "2026-10-04T22:30:51.483896+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "89",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CollapseProperties",
+        "com.google.javascript.jscomp.GlobalNamespace"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CollapseProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/89/Closure-89-Round1-s101-cc28b915381f/result.json",
+          "started_at": "2026-10-04T22:32:40.869414+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.GlobalNamespace": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/89/Closure-89-Round1-s101-ce8c6eb1e8cf/result.json",
+          "started_at": "2026-10-04T22:34:16.228542+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "90",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionTypeBuilder",
+        "com.google.javascript.rhino.jstype.FunctionType"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionTypeBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/90/Closure-90-Round1-s101-49c4b55a325f/result.json",
+          "started_at": "2026-10-04T22:36:04.972038+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/90/Closure-90-Round1-s101-61f229f12dc0/result.json",
+          "started_at": "2026-10-04T22:37:37.316809+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "91",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckGlobalThis"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckGlobalThis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/91/Closure-91-Round1-s101-6f46b63fe605/result.json",
+          "started_at": "2026-10-04T22:39:02.465170+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "92",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ProcessClosurePrimitives"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ProcessClosurePrimitives": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/92/Closure-92-Round1-s101-7143f879c0c1/result.json",
+          "started_at": "2026-10-04T22:40:34.591200+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "94",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/94/Closure-94-Round1-s101-4227f73c3cb2/result.json",
+          "started_at": "2026-10-04T22:42:06.454499+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "95",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/95/Closure-95-Round1-s101-1e9ce946c764/result.json",
+          "started_at": "2026-10-04T22:43:36.432380+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "96",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/96/Closure-96-Round1-s101-144dedc529da/result.json",
+          "started_at": "2026-10-04T22:45:17.446002+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "97",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/97/Closure-97-Round1-s101-14152210b1be/result.json",
+          "started_at": "2026-10-04T22:47:00.165216+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "98",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ReferenceCollectingCallback"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ReferenceCollectingCallback": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/98/Closure-98-Round1-s101-dcaa52b75f64/result.json",
+          "started_at": "2026-10-04T22:48:14.247746+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "99",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckGlobalThis"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckGlobalThis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/99/Closure-99-Round1-s101-1e36dd01166b/result.json",
+          "started_at": "2026-10-04T22:49:39.547127+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "100",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckGlobalThis"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckGlobalThis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/100/Closure-100-Round1-s101-f41093be3531/result.json",
+          "started_at": "2026-10-04T22:51:05.738296+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "101",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CommandLineRunner"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/101/Closure-101-Round1-s101-5bbdea8ade5a/result.json",
+          "started_at": "2026-10-04T22:52:36.165374+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/101/Closure-101-Round1-s101-5bbdea8ade5a/generation/generation-process.json\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:464)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:449)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:481)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:188)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "102",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.Normalize"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Normalize": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/102/Closure-102-Round1-s101-f0934a9bc589/result.json",
+          "started_at": "2026-10-04T22:52:53.881037+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "103",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ControlFlowAnalysis",
+        "com.google.javascript.jscomp.DisambiguateProperties"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ControlFlowAnalysis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/103/Closure-103-Round1-s101-7c65da691a00/result.json",
+          "started_at": "2026-10-04T22:54:20.821199+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.DisambiguateProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/103/Closure-103-Round1-s101-52c4810a1b6a/result.json",
+          "started_at": "2026-10-04T22:55:40.103476+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "104",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.UnionType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.UnionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/104/Closure-104-Round1-s101-c17a1a072327/result.json",
+          "started_at": "2026-10-04T22:57:06.666616+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "105",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/105/Closure-105-Round1-s101-f53f22a59a6c/result.json",
+          "started_at": "2026-10-04T22:58:24.188183+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "106",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.GlobalNamespace",
+        "com.google.javascript.rhino.JSDocInfoBuilder"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.GlobalNamespace": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/106/Closure-106-Round1-s101-a13b7b25038b/result.json",
+          "started_at": "2026-10-04T22:59:51.999464+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.JSDocInfoBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/106/Closure-106-Round1-s101-ef4adab2c5c3/result.json",
+          "started_at": "2026-10-04T23:01:11.779259+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "107",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CommandLineRunner"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/107/Closure-107-Round1-s101-45f8c2ef38b8/result.json",
+          "started_at": "2026-10-04T23:02:32.409020+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/107/Closure-107-Round1-s101-45f8c2ef38b8/generation/generation-process.json\njava.lang.NullPointerException\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:192)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:953)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:880)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:736)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:372)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "108",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ScopedAliases"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/108/Closure-108-Round1-s101-58e48114263d/result.json",
+          "started_at": "2026-10-04T23:03:03.943824+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "109",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/109/Closure-109-Round1-s101-994560f40715/result.json",
+          "started_at": "2026-10-04T23:05:16.380892+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "110",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ScopedAliases",
+        "com.google.javascript.rhino.Node"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/110/Closure-110-Round1-s101-707ba42ce92c/result.json",
+          "started_at": "2026-10-04T23:07:20.395834+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.Node": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/110/Closure-110-Round1-s101-7aed9574013e/result.json",
+          "started_at": "2026-10-04T23:09:22.745805+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "111",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/111/Closure-111-Round1-s101-8fe7055110d2/result.json",
+          "started_at": "2026-10-04T23:11:21.963813+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "112",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeInference"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/112/Closure-112-Round1-s101-6646b5d414a1/result.json",
+          "started_at": "2026-10-04T23:13:23.081918+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "113",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ProcessClosurePrimitives"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ProcessClosurePrimitives": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/113/Closure-113-Round1-s101-3df78e425cd3/result.json",
+          "started_at": "2026-10-04T23:15:25.742009+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "114",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NameAnalyzer"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NameAnalyzer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/114/Closure-114-Round1-s101-142aae7f47b4/result.json",
+          "started_at": "2026-10-04T23:17:33.383203+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "115",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionInjector"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionInjector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/115/Closure-115-Round1-s101-038e93b9a2f1/result.json",
+          "started_at": "2026-10-04T23:19:46.352698+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "116",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionInjector"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionInjector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/116/Closure-116-Round1-s101-8a795a3d68c2/result.json",
+          "started_at": "2026-10-04T23:21:58.511335+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "117",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeValidator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeValidator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/117/Closure-117-Round1-s101-50cd93791648/result.json",
+          "started_at": "2026-10-04T23:24:10.643674+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "118",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.DisambiguateProperties"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.DisambiguateProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/118/Closure-118-Round1-s101-8fb6bb6098b4/result.json",
+          "started_at": "2026-10-04T23:26:37.450199+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "119",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.GlobalNamespace"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.GlobalNamespace": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/119/Closure-119-Round1-s101-d2f515c7142d/result.json",
+          "started_at": "2026-10-04T23:28:52.661125+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "120",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ReferenceCollectingCallback"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ReferenceCollectingCallback": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/120/Closure-120-Round1-s101-e3ce72d7cf58/result.json",
+          "started_at": "2026-10-04T23:30:57.674430+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "121",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineVariables"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/121/Closure-121-Round1-s101-583ae9bbd0fa/result.json",
+          "started_at": "2026-10-04T23:33:02.145640+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "122",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.IRFactory"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/122/Closure-122-Round1-s101-5b5b9c3db1ee/result.json",
+          "started_at": "2026-10-04T23:35:21.719149+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "123",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/123/Closure-123-Round1-s101-7e4cb48d40fa/result.json",
+          "started_at": "2026-10-04T23:37:23.442880+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "124",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ExploitAssigns"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ExploitAssigns": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/124/Closure-124-Round1-s101-cbbb6ae3ca6e/result.json",
+          "started_at": "2026-10-04T23:39:20.436550+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "125",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/125/Closure-125-Round1-s101-40abe9f527fc/result.json",
+          "started_at": "2026-10-04T23:41:13.600779+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "126",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.MinimizeExitPoints"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.MinimizeExitPoints": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/126/Closure-126-Round1-s101-4d6e6348968e/result.json",
+          "started_at": "2026-10-04T23:42:54.503299+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "127",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.UnreachableCodeElimination"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.UnreachableCodeElimination": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/127/Closure-127-Round1-s101-a281a2b16a5a/result.json",
+          "started_at": "2026-10-04T23:44:54.909938+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "128",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/128/Closure-128-Round1-s101-d0af2f710542/result.json",
+          "started_at": "2026-10-04T23:47:11.492390+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "129",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PrepareAst"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PrepareAst": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/129/Closure-129-Round1-s101-fb29816865f7/result.json",
+          "started_at": "2026-10-04T23:49:14.232238+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "130",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CollapseProperties"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CollapseProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/130/Closure-130-Round1-s101-4270001b85ac/result.json",
+          "started_at": "2026-10-04T23:51:30.804381+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "131",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.TokenStream"
+      ],
+      "units": {
+        "com.google.javascript.rhino.TokenStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/131/Closure-131-Round1-s101-7f0dce55d253/result.json",
+          "started_at": "2026-10-04T23:53:31.878228+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "132",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/132/Closure-132-Round1-s101-c61e8a5567e1/result.json",
+          "started_at": "2026-10-04T23:55:19.475774+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "133",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/133/Closure-133-Round1-s101-daf876e274a8/result.json",
+          "started_at": "2026-10-04T23:57:12.312146+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "134",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.AmbiguateProperties",
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AmbiguateProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/134/Closure-134-Round1-s101-f0c7ee892c6e/result.json",
+          "started_at": "2026-10-04T23:59:04.874411+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/134/Closure-134-Round1-s101-6d11ac30d069/result.json",
+          "started_at": "2026-10-05T00:00:28.505489+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "135",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.DevirtualizePrototypeMethods",
+        "com.google.javascript.rhino.jstype.FunctionType"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.DevirtualizePrototypeMethods": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/135/Closure-135-Round1-s101-83c1ba1ce6fa/result.json",
+          "started_at": "2026-10-05T00:01:55.515318+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/135/Closure-135-Round1-s101-cf11f3ef2ac8/result.json",
+          "started_at": "2026-10-05T00:03:12.427486+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "136",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.MethodCompilerPass",
+        "com.google.javascript.jscomp.RenameVars"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.MethodCompilerPass": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/136/Closure-136-Round1-s101-bc96d338aaac/result.json",
+          "started_at": "2026-10-05T00:04:30.248712+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.RenameVars": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/136/Closure-136-Round1-s101-94872bc897fa/result.json",
+          "started_at": "2026-10-05T00:05:47.991243+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "137",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.MakeDeclaredNamesUnique",
+        "com.google.javascript.jscomp.NodeUtil",
+        "com.google.javascript.jscomp.Normalize"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.MakeDeclaredNamesUnique": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/137/Closure-137-Round1-s101-29c3ff1abaec/result.json",
+          "started_at": "2026-10-05T00:07:16.531873+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/137/Closure-137-Round1-s101-962369eccb75/result.json",
+          "started_at": "2026-10-05T00:08:41.110081+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.jscomp.Normalize": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/137/Closure-137-Round1-s101-3241b544b59b/result.json",
+          "started_at": "2026-10-05T00:09:32.329143+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "138",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.ClosureReverseAbstractInterpreter",
+        "com.google.javascript.jscomp.TypeInference"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.ClosureReverseAbstractInterpreter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/138/Closure-138-Round1-s101-25de2f67dca5/result.json",
+          "started_at": "2026-10-05T00:11:04.981606+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/138/Closure-138-Round1-s101-5edf6a0332d8/result.json",
+          "started_at": "2026-10-05T00:12:30.425080+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "139",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.Normalize"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Normalize": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/139/Closure-139-Round1-s101-1fd4f6f7a6d1/result.json",
+          "started_at": "2026-10-05T00:13:59.839842+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "140",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Closure/140/Closure-140-Round1-s101-fca9638d4151/result.json",
+          "started_at": "2026-10-05T00:15:31.929387+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "141",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.NodeUtil",
+        "com.google.javascript.jscomp.PureFunctionIdentifier"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/141/Closure-141-Round1-s101-b4e671c012bd/result.json",
+          "started_at": "2026-10-05T00:16:40.077036+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.PureFunctionIdentifier": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/141/Closure-141-Round1-s101-a9527c6bcad2/result.json",
+          "started_at": "2026-10-05T00:17:49.039071+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "142",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CoalesceVariableNames",
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CoalesceVariableNames": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/142/Closure-142-Round1-s101-adfbfd21f0ed/result.json",
+          "started_at": "2026-10-05T00:19:21.730993+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.parsing.JsDocInfoParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/142/Closure-142-Round1-s101-411c76acdd8b/result.json",
+          "started_at": "2026-10-05T00:20:39.583802+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "143",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.AbstractCommandLineRunner",
+        "com.google.javascript.jscomp.RemoveConstantExpressions"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AbstractCommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/143/Closure-143-Round1-s101-a195edb2b12d/result.json",
+          "started_at": "2026-10-05T00:22:01.915018+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/143/Closure-143-Round1-s101-a195edb2b12d/generation/generation-process.json\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:466)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:451)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:478)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:185)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        "com.google.javascript.jscomp.RemoveConstantExpressions": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/143/Closure-143-Round1-s101-0661e3872a5a/result.json",
+          "started_at": "2026-10-05T00:22:11.439832+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "144",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionTypeBuilder",
+        "com.google.javascript.jscomp.TypedScopeCreator",
+        "com.google.javascript.rhino.jstype.FunctionBuilder",
+        "com.google.javascript.rhino.jstype.FunctionType"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionTypeBuilder": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/144/Closure-144-Round1-s101-72f7fc260c0b/result.json",
+          "started_at": "2026-10-05T00:23:42.841664+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/144/Closure-144-Round1-s101-b866bc88cfd2/result.json",
+          "started_at": "2026-10-05T00:24:42.405935+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.FunctionBuilder": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/144/Closure-144-Round1-s101-7b4aa255e7ea/result.json",
+          "started_at": "2026-10-05T00:26:09.108178+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/144/Closure-144-Round1-s101-86ac53b1a0a5/result.json",
+          "started_at": "2026-10-05T00:27:00.639342+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "145",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/145/Closure-145-Round1-s101-bc259d9c3f05/result.json",
+          "started_at": "2026-10-05T00:28:20.840290+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "146",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.JSType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.JSType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/146/Closure-146-Round1-s101-f05eda9caf6d/result.json",
+          "started_at": "2026-10-05T00:29:36.316903+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "147",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CheckGlobalThis",
+        "com.google.javascript.jscomp.RuntimeTypeCheck"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CheckGlobalThis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/147/Closure-147-Round1-s101-80d045480bbf/result.json",
+          "started_at": "2026-10-05T00:30:56.062466+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.RuntimeTypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/147/Closure-147-Round1-s101-fe8401d4e5b4/result.json",
+          "started_at": "2026-10-05T00:32:12.151413+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "148",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants",
+        "com.google.javascript.jscomp.SourceMap"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/148/Closure-148-Round1-s101-7fb56fda8d7e/result.json",
+          "started_at": "2026-10-05T00:33:37.529617+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.SourceMap": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/148/Closure-148-Round1-s101-4717306034f3/result.json",
+          "started_at": "2026-10-05T00:34:44.069912+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "149",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.AbstractCommandLineRunner",
+        "com.google.javascript.jscomp.CommandLineRunner",
+        "com.google.javascript.jscomp.Compiler",
+        "com.google.javascript.jscomp.CompilerOptions"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AbstractCommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-136f5d1ccab1/result.json",
+          "started_at": "2026-10-05T00:36:01.388891+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-136f5d1ccab1/generation/generation-process.json\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:548)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:484)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:508)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:201)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-f97068ca7ed3/result.json",
+          "started_at": "2026-10-05T00:36:11.277555+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-f97068ca7ed3/generation/generation-process.json\n                 should be saved\n --warning_level [QUIET | DEFAULT |     : Specifies the warning level to use.\n VERBOSE]                               : Options: QUIET, DEFAULT, VERBOSE\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:548)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:484)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:508)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:201)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-f50c88d898bb/result.json",
+          "started_at": "2026-10-05T00:36:21.143312+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.CompilerOptions": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-0d73eef303f4/result.json",
+          "started_at": "2026-10-05T00:37:55.128338+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "150",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/150/Closure-150-Round1-s101-d29ede631c25/result.json",
+          "started_at": "2026-10-05T00:38:54.901325+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "151",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CommandLineRunner"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/151/Closure-151-Round1-s101-3e65e71668ba/result.json",
+          "started_at": "2026-10-05T00:40:33.469478+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/151/Closure-151-Round1-s101-3e65e71668ba/generation/generation-process.json\n the compiler version to stderr.\n --warning_level [QUIET | DEFAULT |     : Specifies the warning level to use.\n VERBOSE]                               : Options: QUIET, DEFAULT, VERBOSE\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:565)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:503)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:556)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:249)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "152",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.FunctionType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/152/Closure-152-Round1-s101-158d2934fe65/result.json",
+          "started_at": "2026-10-05T00:40:51.766107+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "153",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Normalize",
+        "com.google.javascript.jscomp.SyntacticScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Normalize": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/153/Closure-153-Round1-s101-d5505290c5ac/result.json",
+          "started_at": "2026-10-05T00:42:16.126749+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.google.javascript.jscomp.SyntacticScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/153/Closure-153-Round1-s101-ba89a0e403eb/result.json",
+          "started_at": "2026-10-05T00:43:22.579964+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "154",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeCheck",
+        "com.google.javascript.jscomp.TypeValidator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeCheck": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/154/Closure-154-Round1-s101-8de2e1ad06e8/result.json",
+          "started_at": "2026-10-05T00:45:05.302699+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.TypeValidator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/154/Closure-154-Round1-s101-d907928fbbf9/result.json",
+          "started_at": "2026-10-05T00:46:54.485010+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "155",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineVariables",
+        "com.google.javascript.jscomp.ReferenceCollectingCallback",
+        "com.google.javascript.jscomp.Scope"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/155/Closure-155-Round1-s101-7eef2706af45/result.json",
+          "started_at": "2026-10-05T00:48:15.085213+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.ReferenceCollectingCallback": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/155/Closure-155-Round1-s101-a5f048c16649/result.json",
+          "started_at": "2026-10-05T00:50:01.656008+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.google.javascript.jscomp.Scope": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/155/Closure-155-Round1-s101-ba84a1f24467/result.json",
+          "started_at": "2026-10-05T00:51:17.620584+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "156",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CollapseProperties"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CollapseProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/156/Closure-156-Round1-s101-1c7e941daa78/result.json",
+          "started_at": "2026-10-05T00:52:36.426135+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "157",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator",
+        "com.google.javascript.jscomp.parsing.IRFactory",
+        "com.google.javascript.jscomp.RenamePrototypes"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/157/Closure-157-Round1-s101-eb86b5f89f8e/result.json",
+          "started_at": "2026-10-05T00:54:34.079513+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.jscomp.parsing.IRFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/157/Closure-157-Round1-s101-d5b1e1cb89d7/result.json",
+          "started_at": "2026-10-05T00:55:36.995371+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.RenamePrototypes": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/157/Closure-157-Round1-s101-ea7f699e9ce0/result.json",
+          "started_at": "2026-10-05T00:57:05.361388+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "158",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.AbstractCommandLineRunner",
+        "com.google.javascript.jscomp.CommandLineRunner",
+        "com.google.javascript.jscomp.DiagnosticGroups"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AbstractCommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-6b8251f2a7f1/result.json",
+          "started_at": "2026-10-05T00:58:46.172016+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-6b8251f2a7f1/generation/generation-process.json\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:710)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:646)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:596)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:276)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        "com.google.javascript.jscomp.CommandLineRunner": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-107621c654d0/result.json",
+          "started_at": "2026-10-05T00:58:58.953983+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-107621c654d0/generation/generation-process.json\nthe compiler version to stderr.\n --warning_level [QUIET | DEFAULT | VER : Specifies the warning level to use. Op\n BOSE]                                  : tions: QUIET, DEFAULT, VERBOSE\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:710)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:646)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:596)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:276)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        "com.google.javascript.jscomp.DiagnosticGroups": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-f3f3ce47c8a2/result.json",
+          "started_at": "2026-10-05T00:59:11.797296+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "159",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.InlineFunctions"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.InlineFunctions": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/159/Closure-159-Round1-s101-2361ab1266be/result.json",
+          "started_at": "2026-10-05T01:00:26.770980+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "160",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Compiler"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Compiler": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/160/Closure-160-Round1-s101-893afc769a45/result.json",
+          "started_at": "2026-10-05T01:02:24.535881+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "161",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.PeepholeFoldConstants"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.PeepholeFoldConstants": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/161/Closure-161-Round1-s101-64a0aeb6c228/result.json",
+          "started_at": "2026-10-05T01:03:55.117030+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "162",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.Scope",
+        "com.google.javascript.jscomp.ScopedAliases"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.Scope": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/162/Closure-162-Round1-s101-e5d8cff68352/result.json",
+          "started_at": "2026-10-05T01:05:43.410033+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/162/Closure-162-Round1-s101-9d96e579e5c3/result.json",
+          "started_at": "2026-10-05T01:07:03.705255+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "163",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.AnalyzePrototypeProperties",
+        "com.google.javascript.jscomp.CrossModuleMethodMotion"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.AnalyzePrototypeProperties": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/163/Closure-163-Round1-s101-13a6066f5744/result.json",
+          "started_at": "2026-10-05T01:09:11.015669+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.CrossModuleMethodMotion": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/163/Closure-163-Round1-s101-a69fce7f7b39/result.json",
+          "started_at": "2026-10-05T01:11:07.911473+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "164",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.ArrowType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.ArrowType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/164/Closure-164-Round1-s101-3a26f94c3de5/result.json",
+          "started_at": "2026-10-05T01:13:18.438104+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "165",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.JSTypeRegistry",
+        "com.google.javascript.rhino.jstype.ObjectType",
+        "com.google.javascript.rhino.jstype.RecordType",
+        "com.google.javascript.rhino.jstype.RecordTypeBuilder"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.JSTypeRegistry": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/165/Closure-165-Round1-s101-92023fa0aeed/result.json",
+          "started_at": "2026-10-05T01:15:12.433974+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.ObjectType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/165/Closure-165-Round1-s101-1dd1a03c59d8/result.json",
+          "started_at": "2026-10-05T01:16:58.412680+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.RecordType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/165/Closure-165-Round1-s101-fe61be0aceac/result.json",
+          "started_at": "2026-10-05T01:18:39.538102+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.rhino.jstype.RecordTypeBuilder": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/165/Closure-165-Round1-s101-fbc55151eae1/result.json",
+          "started_at": "2026-10-05T01:19:58.769507+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "166",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.PrototypeObjectType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.PrototypeObjectType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/166/Closure-166-Round1-s101-6997873da4ee/result.json",
+          "started_at": "2026-10-05T01:21:44.510547+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "167",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter",
+        "com.google.javascript.rhino.jstype.JSType"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/167/Closure-167-Round1-s101-a1ad6db2ca67/result.json",
+          "started_at": "2026-10-05T01:23:44.360845+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.JSType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/167/Closure-167-Round1-s101-ce4ced22aefc/result.json",
+          "started_at": "2026-10-05T01:25:41.052973+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "168",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/168/Closure-168-Round1-s101-3cdd3aedb070/result.json",
+          "started_at": "2026-10-05T01:27:48.387955+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "169",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.rhino.jstype.ArrowType",
+        "com.google.javascript.rhino.jstype.EquivalenceMethod",
+        "com.google.javascript.rhino.jstype.FunctionType",
+        "com.google.javascript.rhino.jstype.JSType",
+        "com.google.javascript.rhino.jstype.RecordType",
+        "com.google.javascript.rhino.jstype.UnionType"
+      ],
+      "units": {
+        "com.google.javascript.rhino.jstype.ArrowType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-5905da159be4/result.json",
+          "started_at": "2026-10-05T01:29:39.757054+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.rhino.jstype.EquivalenceMethod": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-6cbb6b9166c9/result.json",
+          "started_at": "2026-10-05T01:31:09.998139+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.google.javascript.rhino.jstype.FunctionType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-609a764c9b36/result.json",
+          "started_at": "2026-10-05T01:32:21.976205+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.rhino.jstype.JSType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-22e7ade8fccd/result.json",
+          "started_at": "2026-10-05T01:33:51.510834+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "com.google.javascript.rhino.jstype.RecordType": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-5e0db3297da2/result.json",
+          "started_at": "2026-10-05T01:35:13.359530+00:00",
+          "error": null
+        },
+        "com.google.javascript.rhino.jstype.UnionType": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-eb984ec62422/result.json",
+          "started_at": "2026-10-05T01:37:03.825973+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "170",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FlowSensitiveInlineVariables": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/170/Closure-170-Round1-s101-74ef2612268f/result.json",
+          "started_at": "2026-10-05T01:38:37.285338+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "171",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeInference",
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/171/Closure-171-Round1-s101-1dc4bea5ae6c/result.json",
+          "started_at": "2026-10-05T01:40:53.822938+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/171/Closure-171-Round1-s101-e192dc5d69cd/result.json",
+          "started_at": "2026-10-05T01:42:41.467552+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "172",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypedScopeCreator"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypedScopeCreator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/172/Closure-172-Round1-s101-154fc4f6d1bb/result.json",
+          "started_at": "2026-10-05T01:45:05.617670+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "173",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.CodeGenerator",
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.CodeGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/173/Closure-173-Round1-s101-0d16196a34aa/result.json",
+          "started_at": "2026-10-05T01:47:32.802948+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/173/Closure-173-Round1-s101-f4baa4954ed1/result.json",
+          "started_at": "2026-10-05T01:49:22.715455+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "174",
+      "status": "FAILED",
+      "targets": [
+        "com.google.javascript.jscomp.JsAst",
+        "com.google.javascript.jscomp.NodeUtil",
+        "com.google.javascript.jscomp.ScopedAliases"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.JsAst": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Closure/174/Closure-174-Round1-s101-cb849cc1bf8c/result.json",
+          "started_at": "2026-10-05T01:51:22.261047+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "com.google.javascript.jscomp.NodeUtil": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/174/Closure-174-Round1-s101-286420ce7861/result.json",
+          "started_at": "2026-10-05T01:53:03.644357+00:00",
+          "error": null
+        },
+        "com.google.javascript.jscomp.ScopedAliases": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/174/Closure-174-Round1-s101-ea91dd65798b/result.json",
+          "started_at": "2026-10-05T01:54:55.427576+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "175",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.FunctionInjector"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.FunctionInjector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/175/Closure-175-Round1-s101-7fc88ab61708/result.json",
+          "started_at": "2026-10-05T01:57:10.583221+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Closure",
+      "bug": "176",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.javascript.jscomp.TypeInference"
+      ],
+      "units": {
+        "com.google.javascript.jscomp.TypeInference": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Closure/176/Closure-176-Round1-s101-7484eb93f84a/result.json",
+          "started_at": "2026-10-05T01:59:27.538073+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

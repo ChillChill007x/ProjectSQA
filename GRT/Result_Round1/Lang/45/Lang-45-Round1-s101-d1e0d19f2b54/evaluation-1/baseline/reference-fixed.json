@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-45-Round1-s101-d1e0d19f2b54/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang.WordUtilsTest::testAbbreviate"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.623,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

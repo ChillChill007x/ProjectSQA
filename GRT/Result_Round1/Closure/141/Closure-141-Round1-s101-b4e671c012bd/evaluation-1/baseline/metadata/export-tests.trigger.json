@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-141-Round1-s101-b4e671c012bd/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "com.google.javascript.jscomp.ExpresssionDecomposerTest::testCanExposeExpression2\ncom.google.javascript.jscomp.ExpresssionDecomposerTest::testCanExposeExpression7\ncom.google.javascript.jscomp.InlineFunctionsTest::testDecomposeAnonymousInCall\ncom.google.javascript.jscomp.PureFunctionIdentifierTest::testCallFunctionFOrGViaHookWithSideEffects\ncom.google.javascript.jscomp.PureFunctionIdentifierTest::testCallFunctionForGorH\ncom.google.javascript.jscomp.PureFunctionIdentifierTest::testCallFunctionFOrG\ncom.google.javascript.jscomp.PureFunctionIdentifierTest::testCallFunctionFOrGViaHook\ncom.google.javascript.jscomp.PureFunctionIdentifierTest::testCallFunctionFOrGWithSideEffects",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

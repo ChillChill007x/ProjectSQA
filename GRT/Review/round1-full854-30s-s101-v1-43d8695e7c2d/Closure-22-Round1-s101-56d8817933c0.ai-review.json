@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.951595+00:00",
+  "run_id": "Closure-22-Round1-s101-56d8817933c0",
+  "project": "Closure",
+  "bug": "22",
+  "target": "com.google.javascript.jscomp.CheckSideEffects",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Artificial NodeTraversal/tree structure expects NPE only on fixed. Patch changes side-effect visitor control flow; a fixed-version NPE on malformed AST is not adequate defect confirmation.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 31,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test14",
+    "test17",
+    "test27"
+  ],
+  "test_sha256": {
+    "GRT/Test/Closure/22/Closure-22-Round1-s101-56d8817933c0/com/google/javascript/jscomp/SqaGeneratedTest.java": "4ec1e5df60451a4866e2d8670118652d8d905dea24eadb99c03056091b1f0595"
+  },
+  "result_path": "GRT\\Result_Round1\\Closure\\22\\Closure-22-Round1-s101-56d8817933c0\\result.json",
+  "tests_path": "GRT/Test/Closure/22/Closure-22-Round1-s101-56d8817933c0",
+  "evaluation_path": "GRT/Result_Round1/Closure/22/Closure-22-Round1-s101-56d8817933c0/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Closure/patches/22.src.patch",
+  "patch_sha256": "9f7a334993d29e07a5de4431ca95b9aba80074892556054ed2c38c08c135f0c8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

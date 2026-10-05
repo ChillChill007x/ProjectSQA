@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "run_id": "Gson-1-Round1-s101-0a92e20e6589",
+  "unit": {
+    "project": "Gson",
+    "bug": "1",
+    "target": "com.google.gson.TypeInfoFactory",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T03:32:12.897935+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-0a92e20e6589",
+    "tests": "GRT/Test/Gson/1/Gson-1-Round1-s101-0a92e20e6589",
+    "config": "GRT/Configuration/Gson/1/Gson-1-Round1-s101-0a92e20e6589"
+  },
+  "generation_time_sec": 30.22,
+  "test_sha256": {
+    "GRT/Test/Gson/1/Gson-1-Round1-s101-0a92e20e6589/com/google/gson/SqaGeneratedTest.java": "c108575c98969980da09cfb99cd23b5cd73c1e628ef46fa0d3d9174b7f98f2c4"
+  },
+  "reference_validation": {
+    "trigger": "com.google.gson.functional.TypeVariableTest::testSingle",
+    "available_triggers": [
+      "com.google.gson.functional.TypeVariableTest::testSingle"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 5,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 263,
+      "tests": [
+        "com.google.gson.SqaGeneratedTest::test0",
+        "com.google.gson.SqaGeneratedTest::test1",
+        "com.google.gson.SqaGeneratedTest::test2",
+        "com.google.gson.SqaGeneratedTest::test3",
+        "com.google.gson.SqaGeneratedTest::test4"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 77,
+      "line_coverage_percent": 1.2987012987012987,
+      "branch_covered": 0,
+      "branch_total": 44,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 5,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 264,
+      "tests": [
+        "com.google.gson.SqaGeneratedTest::test0",
+        "com.google.gson.SqaGeneratedTest::test1",
+        "com.google.gson.SqaGeneratedTest::test2",
+        "com.google.gson.SqaGeneratedTest::test3",
+        "com.google.gson.SqaGeneratedTest::test4"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 46,
+      "line_coverage_percent": 2.1739130434782608,
+      "branch_covered": 0,
+      "branch_total": 22,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-0a92e20e6589/evaluation-1",
+  "finished_at": "2026-10-05T03:33:09.883994+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-105-Round1-s101-61e385d5db38/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.671,
+  "stdout": "org.apache.commons.math.stat.regression.SimpleRegressionTest::testSSENonNegative",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-162-Round1-s101-9d96e579e5c3/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.ScopedAliasesTest::testForwardJsDoc"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.77,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.ScopedAliasesTest::testForwardJsDoc\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

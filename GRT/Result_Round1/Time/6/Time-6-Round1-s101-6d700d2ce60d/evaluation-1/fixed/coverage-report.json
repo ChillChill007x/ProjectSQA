@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Time/6/Time-6-Round1-s101-6d700d2ce60d/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/parallel/grt/724/checkouts/Time-6-Round1-s101-6d700d2ce60d/evaluation-1/fixed/target/classes/org/joda/time/chrono/GJChronology.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Time/6/Time-6-Round1-s101-6d700d2ce60d/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.49,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Time/6/Time-6-Round1-s101-6d700d2ce60d/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-64-Round1-s101-fa23820b2ffc/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.349,
+  "stdout": "org.jsoup.parser.HtmlParserTest::handlesKnownEmptyStyle\norg.jsoup.parser.HtmlParserTest::handlesKnownEmptyNoFrames",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

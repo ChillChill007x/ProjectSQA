@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.jscomp.CommandLineRunnerTest::testIssue504",
+  "available_triggers": [
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testIssue504",
+    "com.google.javascript.jscomp.NodeUtilTest::testGetBooleanValue"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

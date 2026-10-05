@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=output=none,includes=org.apache.commons.jxpath.ri.NamespaceResolver*",
+    "-cp",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/classes:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/src/java:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-beanutils-1.4.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-collections-2.0.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/commons-logging-1.0.4.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/jdom-1.0.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/junit-3.8.1.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/junit-3.8.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/mockrunner-0.4.1.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/servletapi-2.2.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/xerces-2.4.0.jar:/workspace/work/checkouts/JxPath-13-Round1-s101-27f3a750a20c/generation-fixed/target/lib/xml-apis-2.0.2.jar",
+    "sqa.grt.GuidedRandom",
+    "/workspace/GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c/generation/grt-config.json"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.835,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,19 @@
+{
+  "project": "Lang",
+  "bug": "15",
+  "target": "org.apache.commons.lang3.reflect.TypeUtils",
+  "tool": "grt",
+  "round": "Round1",
+  "seed": 101,
+  "budget_seconds": 30,
+  "generation_revision": "f",
+  "protocol_version": "2.0",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_mode": null,
+  "purpose": "experiment",
+  "model": null,
+  "campaign": "round1-full854-30s-s101-v1",
+  "grt_overrides": {
+    "coverage_interval_seconds": 10
+  }
+}

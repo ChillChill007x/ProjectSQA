@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Csv-6-Round1-s101-3956107912d4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

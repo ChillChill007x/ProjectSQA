@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Time-16-Round1-s101-948498e1ed6f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.1,
+  "stdout": "org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseStartYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseStartYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseEndYear\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_withDefaultYear_feb29\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29\norg.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseEndYear",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

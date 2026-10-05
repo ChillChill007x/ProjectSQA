@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-55-Round1-s101-912c189f30fc",
+  "unit": {
+    "project": "Math",
+    "bug": "55",
+    "target": "org.apache.commons.math.geometry.Vector3D",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T08:06:15.752211+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/55/Math-55-Round1-s101-912c189f30fc",
+    "tests": "GRT/Test/Math/55/Math-55-Round1-s101-912c189f30fc",
+    "config": "GRT/Configuration/Math/55/Math-55-Round1-s101-912c189f30fc"
+  },
+  "generation_time_sec": 3.386,
+  "test_sha256": {
+    "GRT/Test/Math/55/Math-55-Round1-s101-912c189f30fc/org/apache/commons/math/geometry/SqaGeneratedTest.java": "bdbd88d974231d4a8ffb2b6701c77738f606bfdbc89f9f7489dd6ce281c73bb0"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.geometry.Vector3DTest::testCrossProductCancellation",
+    "available_triggers": [
+      "org.apache.commons.math.geometry.Vector3DTest::testCrossProductCancellation"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 1,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 82,
+      "tests": [
+        "org.apache.commons.math.geometry.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 18,
+      "line_total": 132,
+      "line_coverage_percent": 13.636363636363637,
+      "branch_covered": 3,
+      "branch_total": 50,
+      "branch_coverage_percent": 6.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 1,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 91,
+      "tests": [
+        "org.apache.commons.math.geometry.SqaGeneratedTest::test0"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 18,
+      "line_total": 116,
+      "line_coverage_percent": 15.517241379310345,
+      "branch_covered": 3,
+      "branch_total": 48,
+      "branch_coverage_percent": 6.25
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Math/55/Math-55-Round1-s101-912c189f30fc/evaluation-1",
+  "finished_at": "2026-10-05T08:09:35.036319+00:00"
+}

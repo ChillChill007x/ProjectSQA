@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "JxPath",
+    "-v",
+    "18f",
+    "-w",
+    "/workspace/work/checkouts/JxPath-18-Round1-s101-baf3d3bec071/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.947,
+  "stdout": "",
+  "stderr": "Checking out 4882e442 to /workspace/work/checkouts/JxPath-18-Round1-s101-ba OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 4882e442:a1bc20f2..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: JxPath-18f...................................... OK\n"
+}

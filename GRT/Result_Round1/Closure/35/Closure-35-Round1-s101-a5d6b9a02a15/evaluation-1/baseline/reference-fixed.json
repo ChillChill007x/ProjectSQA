@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-35-Round1-s101-a5d6b9a02a15/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.TypeCheckTest::testIssue669"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.173,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

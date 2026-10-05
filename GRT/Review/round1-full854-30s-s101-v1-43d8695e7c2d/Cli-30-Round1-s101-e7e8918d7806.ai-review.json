@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.918406+00:00",
+  "run_id": "Cli-30-Round1-s101-e7e8918d7806",
+  "project": "Cli",
+  "bug": "30",
+  "target": "org.apache.commons.cli.DefaultParser",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Unknown option in default Properties causes buggy NPE; fixed explicitly throws UnrecognizedOptionException, matching the patch.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test74"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/30/Cli-30-Round1-s101-e7e8918d7806/org/apache/commons/cli/SqaGeneratedTest.java": "a46e48c196649056b1a62b864c44a6cc784efe8b8938d10d66685580fcc3543d"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\30\\Cli-30-Round1-s101-e7e8918d7806\\result.json",
+  "tests_path": "GRT/Test/Cli/30/Cli-30-Round1-s101-e7e8918d7806",
+  "evaluation_path": "GRT/Result_Round1/Cli/30/Cli-30-Round1-s101-e7e8918d7806/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/30.src.patch",
+  "patch_sha256": "5948047405236140a08940805a13e6ebcfa26b353a9e7e1fc41f7a3da7846721",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

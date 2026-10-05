@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Compress",
+    "-v",
+    "7f",
+    "-w",
+    "/workspace/work/checkouts/Compress-7-Round1-s101-2a752fa7e636/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.767,
+  "stdout": "",
+  "stderr": "Checking out 2d858d5c to /workspace/work/checkouts/Compress-7-Round1-s101-2 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Compress-7-Round1-s101-2a7 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 2d858d5c:2419bb55..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Compress-7f..................................... OK\n"
+}

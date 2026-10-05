@@ -1,0 +1,1799 @@
+{
+  "updated_at": "2026-10-05T11:33:55.782170+00:00",
+  "expected_bugs": 106,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "FAILED": 22,
+    "EVALUATED": 84
+  },
+  "bugs": [
+    {
+      "project": "Math",
+      "bug": "1",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math3.fraction.BigFraction",
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.math3.fraction.BigFraction": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Math/1/Math-1-Round1-s101-9e841243483e/result.json",
+          "started_at": "2026-10-05T03:28:19.329239+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.math3.fraction.Fraction": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Math/1/Math-1-Round1-s101-c6ea5b148aa1/result.json",
+          "started_at": "2026-10-05T03:31:22.759262+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.distribution.HypergeometricDistribution"
+      ],
+      "units": {
+        "org.apache.commons.math3.distribution.HypergeometricDistribution": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/2/Math-2-Round1-s101-97dd44922637/result.json",
+          "started_at": "2026-10-05T03:35:26.174272+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.util.MathArrays"
+      ],
+      "units": {
+        "org.apache.commons.math3.util.MathArrays": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/3/Math-3-Round1-s101-1ca29a3781c8/result.json",
+          "started_at": "2026-10-05T03:39:57.907282+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.geometry.euclidean.threed.SubLine",
+        "org.apache.commons.math3.geometry.euclidean.twod.SubLine"
+      ],
+      "units": {
+        "org.apache.commons.math3.geometry.euclidean.threed.SubLine": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/4/Math-4-Round1-s101-57afefde9060/result.json",
+          "started_at": "2026-10-05T03:44:25.843534+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.geometry.euclidean.twod.SubLine": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/4/Math-4-Round1-s101-9869aa4364a4/result.json",
+          "started_at": "2026-10-05T03:48:06.975778+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math3.complex.Complex": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/5/Math-5-Round1-s101-70aa3eb127a4/result.json",
+          "started_at": "2026-10-05T03:52:41.946076+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optim.BaseOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optim.BaseOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-db125dd0214d/result.json",
+          "started_at": "2026-10-05T03:57:14.771288+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a/result.json",
+          "started_at": "2026-10-05T04:01:22.167209+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-efeb8f5b6925/result.json",
+          "started_at": "2026-10-05T04:05:11.944661+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-294b1a479b4e/result.json",
+          "started_at": "2026-10-05T04:08:59.427008+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-5166765fc645/result.json",
+          "started_at": "2026-10-05T04:12:49.805600+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-1bec5c2ee622/result.json",
+          "started_at": "2026-10-05T04:16:29.185193+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-feccdf8866ed/result.json",
+          "started_at": "2026-10-05T04:20:20.944080+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.ode.AbstractIntegrator"
+      ],
+      "units": {
+        "org.apache.commons.math3.ode.AbstractIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/7/Math-7-Round1-s101-3bc325068dec/result.json",
+          "started_at": "2026-10-05T04:25:02.648402+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.distribution.DiscreteDistribution"
+      ],
+      "units": {
+        "org.apache.commons.math3.distribution.DiscreteDistribution": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/8/Math-8-Round1-s101-e9eb4beed0d1/result.json",
+          "started_at": "2026-10-05T04:29:43.214014+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.geometry.euclidean.threed.Line"
+      ],
+      "units": {
+        "org.apache.commons.math3.geometry.euclidean.threed.Line": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/9/Math-9-Round1-s101-c5f883d19328/result.json",
+          "started_at": "2026-10-05T04:34:30.818444+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "10",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math3.analysis.differentiation.DSCompiler"
+      ],
+      "units": {
+        "org.apache.commons.math3.analysis.differentiation.DSCompiler": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/10/Math-10-Round1-s101-5909ffc8dce2/result.json",
+          "started_at": "2026-10-05T04:39:09.957939+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution"
+      ],
+      "units": {
+        "org.apache.commons.math3.distribution.MultivariateNormalDistribution": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/11/Math-11-Round1-s101-1e92a7eabaf8/result.json",
+          "started_at": "2026-10-05T04:43:19.098475+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.random.BitsStreamGenerator"
+      ],
+      "units": {
+        "org.apache.commons.math3.random.BitsStreamGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/12/Math-12-Round1-s101-79a3dcecf8da/result.json",
+          "started_at": "2026-10-05T04:48:05.559130+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.general.AbstractLeastSquaresOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/13/Math-13-Round1-s101-7567da43aa28/result.json",
+          "started_at": "2026-10-05T04:52:46.981926+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer",
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight"
+      ],
+      "units": {
+        "org.apache.commons.math3.optim.nonlinear.vector.jacobian.AbstractLeastSquaresOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/14/Math-14-Round1-s101-70c0e5e1d4b7/result.json",
+          "started_at": "2026-10-05T04:57:42.360148+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.optim.nonlinear.vector.Weight": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/14/Math-14-Round1-s101-42af0659b112/result.json",
+          "started_at": "2026-10-05T05:01:39.413824+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.util.FastMath"
+      ],
+      "units": {
+        "org.apache.commons.math3.util.FastMath": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/15/Math-15-Round1-s101-66b7c9d498f8/result.json",
+          "started_at": "2026-10-05T05:06:25.250323+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.util.FastMath"
+      ],
+      "units": {
+        "org.apache.commons.math3.util.FastMath": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/16/Math-16-Round1-s101-08d83882805d/result.json",
+          "started_at": "2026-10-05T05:11:04.718724+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.dfp.Dfp"
+      ],
+      "units": {
+        "org.apache.commons.math3.dfp.Dfp": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/17/Math-17-Round1-s101-70dc32a649c9/result.json",
+          "started_at": "2026-10-05T05:15:41.999985+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/18/Math-18-Round1-s101-c0ecbb42d50e/result.json",
+          "started_at": "2026-10-05T05:20:27.233741+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/19/Math-19-Round1-s101-667a970ac471/result.json",
+          "started_at": "2026-10-05T05:25:05.278634+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.direct.CMAESOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/20/Math-20-Round1-s101-1c6e44465a34/result.json",
+          "started_at": "2026-10-05T05:29:33.991657+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.linear.RectangularCholeskyDecomposition"
+      ],
+      "units": {
+        "org.apache.commons.math3.linear.RectangularCholeskyDecomposition": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/21/Math-21-Round1-s101-b8886daa72a5/result.json",
+          "started_at": "2026-10-05T05:33:58.967129+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.distribution.FDistribution",
+        "org.apache.commons.math3.distribution.UniformRealDistribution"
+      ],
+      "units": {
+        "org.apache.commons.math3.distribution.FDistribution": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-df11dcc738bf/result.json",
+          "started_at": "2026-10-05T05:39:01.037370+00:00",
+          "error": null
+        },
+        "org.apache.commons.math3.distribution.UniformRealDistribution": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-b808dd4f4bfb/result.json",
+          "started_at": "2026-10-05T05:42:57.745246+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/23/Math-23-Round1-s101-c8e73f00bd1f/result.json",
+          "started_at": "2026-10-05T05:47:43.206185+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/24/Math-24-Round1-s101-a42ca49c9e45/result.json",
+          "started_at": "2026-10-05T05:52:22.977216+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.fitting.HarmonicFitter"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.fitting.HarmonicFitter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/25/Math-25-Round1-s101-9c233df85aa2/result.json",
+          "started_at": "2026-10-05T05:57:12.182372+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "26",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.math3.fraction.Fraction": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Math/26/Math-26-Round1-s101-1d362bca1494/result.json",
+          "started_at": "2026-10-05T06:01:57.846555+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "27",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math3.fraction.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.math3.fraction.Fraction": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Math/27/Math-27-Round1-s101-a6a316d4f009/result.json",
+          "started_at": "2026-10-05T06:06:12.203918+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.linear.SimplexSolver"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.linear.SimplexSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/28/Math-28-Round1-s101-a7c3cec0e0da/result.json",
+          "started_at": "2026-10-05T06:10:37.857625+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.linear.OpenMapRealVector"
+      ],
+      "units": {
+        "org.apache.commons.math3.linear.OpenMapRealVector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/29/Math-29-Round1-s101-c24ca3f1d620/result.json",
+          "started_at": "2026-10-05T06:15:32.858690+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "30",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math3.stat.inference.MannWhitneyUTest"
+      ],
+      "units": {
+        "org.apache.commons.math3.stat.inference.MannWhitneyUTest": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Math/30/Math-30-Round1-s101-19e523983c4a/result.json",
+          "started_at": "2026-10-05T06:20:12.534557+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "31",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.util.ContinuedFraction"
+      ],
+      "units": {
+        "org.apache.commons.math3.util.ContinuedFraction": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/31/Math-31-Round1-s101-d925e0dcb67d/result.json",
+          "started_at": "2026-10-05T06:24:35.339420+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet"
+      ],
+      "units": {
+        "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/32/Math-32-Round1-s101-320103b53eed/result.json",
+          "started_at": "2026-10-05T06:29:11.551481+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau"
+      ],
+      "units": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/33/Math-33-Round1-s101-038b6da97984/result.json",
+          "started_at": "2026-10-05T06:33:56.550275+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "34",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.genetics.ListPopulation"
+      ],
+      "units": {
+        "org.apache.commons.math3.genetics.ListPopulation": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/34/Math-34-Round1-s101-bd8c05598e13/result.json",
+          "started_at": "2026-10-05T06:38:21.799473+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math3.genetics.ElitisticListPopulation"
+      ],
+      "units": {
+        "org.apache.commons.math3.genetics.ElitisticListPopulation": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/35/Math-35-Round1-s101-b62c59302f76/result.json",
+          "started_at": "2026-10-05T06:42:48.586404+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "36",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.fraction.BigFraction"
+      ],
+      "units": {
+        "org.apache.commons.math.fraction.BigFraction": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Math/36/Math-36-Round1-s101-7cd9b9c137a8/result.json",
+          "started_at": "2026-10-05T06:47:04.350940+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.Complex": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/37/Math-37-Round1-s101-1093671d4127/result.json",
+          "started_at": "2026-10-05T06:50:55.071630+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.direct.BOBYQAOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.direct.BOBYQAOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/38/Math-38-Round1-s101-8182092bd1e6/result.json",
+          "started_at": "2026-10-05T06:55:42.846469+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator"
+      ],
+      "units": {
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/39/Math-39-Round1-s101-fa3869f103f1/result.json",
+          "started_at": "2026-10-05T07:00:59.639019+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/40/Math-40-Round1-s101-2a588d6b3b8e/result.json",
+          "started_at": "2026-10-05T07:05:46.376369+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "41",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.descriptive.moment.Variance"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.descriptive.moment.Variance": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/41/Math-41-Round1-s101-a727ab3deca8/result.json",
+          "started_at": "2026-10-05T07:10:17.320722+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "42",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.linear.SimplexTableau": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/42/Math-42-Round1-s101-3f39fa7bade5/result.json",
+          "started_at": "2026-10-05T07:14:56.863696+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "43",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.descriptive.SummaryStatistics"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.descriptive.SummaryStatistics": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/43/Math-43-Round1-s101-f38a97e896ed/result.json",
+          "started_at": "2026-10-05T07:19:10.067185+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "44",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.ode.AbstractIntegrator"
+      ],
+      "units": {
+        "org.apache.commons.math.ode.AbstractIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/44/Math-44-Round1-s101-fd214995ed4c/result.json",
+          "started_at": "2026-10-05T07:23:19.603514+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.OpenMapRealMatrix"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.OpenMapRealMatrix": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/45/Math-45-Round1-s101-699664abd4c9/result.json",
+          "started_at": "2026-10-05T07:27:38.293544+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "46",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.Complex": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/46/Math-46-Round1-s101-ffd55edb6694/result.json",
+          "started_at": "2026-10-05T07:31:57.745591+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "47",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.Complex": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/47/Math-47-Round1-s101-d178aff28750/result.json",
+          "started_at": "2026-10-05T07:35:40.705910+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "48",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/48/Math-48-Round1-s101-a1ab4650334e/result.json",
+          "started_at": "2026-10-05T07:39:41.249898+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "49",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.linear.OpenMapRealVector"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.OpenMapRealVector": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/49/Math-49-Round1-s101-cb78fb0e0abb/result.json",
+          "started_at": "2026-10-05T07:43:34.431539+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "50",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/50/Math-50-Round1-s101-6d34ac0f7a21/result.json",
+          "started_at": "2026-10-05T07:47:19.578066+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "51",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BaseSecantSolver": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/51/Math-51-Round1-s101-fc74843c6f50/result.json",
+          "started_at": "2026-10-05T07:51:06.913542+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "52",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.geometry.euclidean.threed.Rotation"
+      ],
+      "units": {
+        "org.apache.commons.math.geometry.euclidean.threed.Rotation": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/52/Math-52-Round1-s101-b6006bb54f47/result.json",
+          "started_at": "2026-10-05T07:55:03.700964+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "53",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.Complex": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/53/Math-53-Round1-s101-8dc7e8e0c748/result.json",
+          "started_at": "2026-10-05T07:58:58.000853+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "54",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.dfp.Dfp"
+      ],
+      "units": {
+        "org.apache.commons.math.dfp.Dfp": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/54/Math-54-Round1-s101-abef7cfc7915/result.json",
+          "started_at": "2026-10-05T08:02:15.787382+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "55",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.geometry.Vector3D"
+      ],
+      "units": {
+        "org.apache.commons.math.geometry.Vector3D": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/55/Math-55-Round1-s101-912c189f30fc/result.json",
+          "started_at": "2026-10-05T08:06:15.752211+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "56",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.util.MultidimensionalCounter"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MultidimensionalCounter": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/56/Math-56-Round1-s101-3f45a01d3e12/result.json",
+          "started_at": "2026-10-05T08:10:18.962163+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "57",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/57/Math-57-Round1-s101-6b36f35bc0f2/result.json",
+          "started_at": "2026-10-05T08:14:33.333947+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "58",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.optimization.fitting.GaussianFitter"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.fitting.GaussianFitter": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/58/Math-58-Round1-s101-f7a8c4786ab4/result.json",
+          "started_at": "2026-10-05T08:19:08.892487+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "59",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.util.FastMath"
+      ],
+      "units": {
+        "org.apache.commons.math.util.FastMath": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/59/Math-59-Round1-s101-267c766cd12e/result.json",
+          "started_at": "2026-10-05T08:23:13.706704+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "60",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.distribution.NormalDistributionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.distribution.NormalDistributionImpl": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/60/Math-60-Round1-s101-f95196ea8731/result.json",
+          "started_at": "2026-10-05T08:26:55.874145+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "61",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.distribution.PoissonDistributionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.distribution.PoissonDistributionImpl": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/61/Math-61-Round1-s101-83f299957606/result.json",
+          "started_at": "2026-10-05T08:30:46.372846+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "62",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Math/62/Math-62-Round1-s101-b99c67c79b26/result.json",
+          "started_at": "2026-10-05T08:35:25.568415+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "63",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/63/Math-63-Round1-s101-7cf22fe71462/result.json",
+          "started_at": "2026-10-05T08:39:30.942503+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "64",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/64/Math-64-Round1-s101-6c1747356807/result.json",
+          "started_at": "2026-10-05T08:43:48.170089+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "65",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/65/Math-65-Round1-s101-43c981e7cbba/result.json",
+          "started_at": "2026-10-05T08:48:05.844951+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "66",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.univariate.BrentOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.univariate.BrentOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d/result.json",
+          "started_at": "2026-10-05T08:52:12.264458+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "67",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/67/Math-67-Round1-s101-f5784e3f32df/result.json",
+          "started_at": "2026-10-05T08:56:17.385009+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "68",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Math/68/Math-68-Round1-s101-2d345472c15e/result.json",
+          "started_at": "2026-10-05T09:00:26.633534+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "69",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.correlation.PearsonsCorrelation": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/69/Math-69-Round1-s101-525414be2d63/result.json",
+          "started_at": "2026-10-05T09:04:27.211608+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "70",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BisectionSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BisectionSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/70/Math-70-Round1-s101-f935261a9568/result.json",
+          "started_at": "2026-10-05T09:08:44.582888+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "71",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator",
+        "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator"
+      ],
+      "units": {
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/71/Math-71-Round1-s101-f90d0d9ec4a1/result.json",
+          "started_at": "2026-10-05T09:13:10.293088+00:00",
+          "error": null
+        },
+        "org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/71/Math-71-Round1-s101-2c35336deddd/result.json",
+          "started_at": "2026-10-05T09:16:27.336647+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "72",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BrentSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BrentSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/72/Math-72-Round1-s101-783fe138396c/result.json",
+          "started_at": "2026-10-05T09:20:36.117890+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "73",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.BrentSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.BrentSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/73/Math-73-Round1-s101-06717b936582/result.json",
+          "started_at": "2026-10-05T09:24:35.927620+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "74",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator"
+      ],
+      "units": {
+        "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/74/Math-74-Round1-s101-823b3392a276/result.json",
+          "started_at": "2026-10-05T09:28:34.409558+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "75",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.Frequency"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.Frequency": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/75/Math-75-Round1-s101-205ba1024265/result.json",
+          "started_at": "2026-10-05T09:32:31.739448+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "76",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.SingularValueDecompositionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.SingularValueDecompositionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/76/Math-76-Round1-s101-82d2321484db/result.json",
+          "started_at": "2026-10-05T09:36:29.315330+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "77",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.ArrayRealVector",
+        "org.apache.commons.math.linear.OpenMapRealVector"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.ArrayRealVector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/77/Math-77-Round1-s101-57777b5d5775/result.json",
+          "started_at": "2026-10-05T09:40:40.142217+00:00",
+          "error": null
+        },
+        "org.apache.commons.math.linear.OpenMapRealVector": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/77/Math-77-Round1-s101-565163bc0a34/result.json",
+          "started_at": "2026-10-05T09:43:54.612886+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "78",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.ode.events.EventState"
+      ],
+      "units": {
+        "org.apache.commons.math.ode.events.EventState": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/78/Math-78-Round1-s101-78e6ab827ad4/result.json",
+          "started_at": "2026-10-05T09:47:50.961665+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "79",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/79/Math-79-Round1-s101-46ae284fba3b/result.json",
+          "started_at": "2026-10-05T09:51:49.563476+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "80",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.EigenDecompositionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.EigenDecompositionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/80/Math-80-Round1-s101-659becbd91b1/result.json",
+          "started_at": "2026-10-05T09:55:52.719530+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "81",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.EigenDecompositionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.EigenDecompositionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/81/Math-81-Round1-s101-3dbfd3c33457/result.json",
+          "started_at": "2026-10-05T10:00:25.940974+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "82",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.linear.SimplexSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.linear.SimplexSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/82/Math-82-Round1-s101-6a4e9603ee3e/result.json",
+          "started_at": "2026-10-05T10:04:39.475785+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "83",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.linear.SimplexTableau": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/83/Math-83-Round1-s101-527251293d39/result.json",
+          "started_at": "2026-10-05T10:08:38.022120+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "84",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.direct.MultiDirectional"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.direct.MultiDirectional": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/84/Math-84-Round1-s101-691206027013/result.json",
+          "started_at": "2026-10-05T10:12:27.211118+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "85",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/85/Math-85-Round1-s101-5ded5e1a3f4b/result.json",
+          "started_at": "2026-10-05T10:16:08.758269+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "86",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.CholeskyDecompositionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/86/Math-86-Round1-s101-9b2c50a5975e/result.json",
+          "started_at": "2026-10-05T10:20:09.119472+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "87",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.linear.SimplexTableau": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/87/Math-87-Round1-s101-62f5a3345c06/result.json",
+          "started_at": "2026-10-05T10:23:48.792766+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "88",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.optimization.linear.SimplexTableau"
+      ],
+      "units": {
+        "org.apache.commons.math.optimization.linear.SimplexTableau": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/88/Math-88-Round1-s101-0038d14a3ee2/result.json",
+          "started_at": "2026-10-05T10:27:59.625009+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "89",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.Frequency"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.Frequency": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/89/Math-89-Round1-s101-8927c2933f62/result.json",
+          "started_at": "2026-10-05T10:32:16.623024+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "90",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.Frequency"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.Frequency": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/90/Math-90-Round1-s101-0b66d8fe0488/result.json",
+          "started_at": "2026-10-05T10:35:56.638112+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "91",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.math.fraction.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.math.fraction.Fraction": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Math/91/Math-91-Round1-s101-03e5aa470882/result.json",
+          "started_at": "2026-10-05T10:39:30.934506+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "92",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/92/Math-92-Round1-s101-8ebe3eae5a4e/result.json",
+          "started_at": "2026-10-05T10:42:37.753009+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "93",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/93/Math-93-Round1-s101-59e2d74ee512/result.json",
+          "started_at": "2026-10-05T10:45:54.135557+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "94",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/94/Math-94-Round1-s101-1ff40217d20e/result.json",
+          "started_at": "2026-10-05T10:49:11.772847+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "95",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.distribution.FDistributionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.distribution.FDistributionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/95/Math-95-Round1-s101-b5a5815e5fa3/result.json",
+          "started_at": "2026-10-05T10:52:23.657130+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "96",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.complex.Complex"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.Complex": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/96/Math-96-Round1-s101-d4767e2abbb3/result.json",
+          "started_at": "2026-10-05T10:55:39.066472+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "97",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.analysis.BrentSolver"
+      ],
+      "units": {
+        "org.apache.commons.math.analysis.BrentSolver": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/97/Math-97-Round1-s101-59c86950df83/result.json",
+          "started_at": "2026-10-05T10:58:54.325096+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "98",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.linear.BigMatrixImpl",
+        "org.apache.commons.math.linear.RealMatrixImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.linear.BigMatrixImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/98/Math-98-Round1-s101-7654e9e789b7/result.json",
+          "started_at": "2026-10-05T11:02:28.373913+00:00",
+          "error": null
+        },
+        "org.apache.commons.math.linear.RealMatrixImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/98/Math-98-Round1-s101-68bcfa1e9e23/result.json",
+          "started_at": "2026-10-05T11:05:24.129348+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "99",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.util.MathUtils"
+      ],
+      "units": {
+        "org.apache.commons.math.util.MathUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/99/Math-99-Round1-s101-570c77e03820/result.json",
+          "started_at": "2026-10-05T11:08:46.153889+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "100",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.estimation.AbstractEstimator"
+      ],
+      "units": {
+        "org.apache.commons.math.estimation.AbstractEstimator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/100/Math-100-Round1-s101-8eb33dfb3fba/result.json",
+          "started_at": "2026-10-05T11:12:10.968499+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "101",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.complex.ComplexFormat"
+      ],
+      "units": {
+        "org.apache.commons.math.complex.ComplexFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/101/Math-101-Round1-s101-725e23fc13a4/result.json",
+          "started_at": "2026-10-05T11:15:33.075236+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "102",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.inference.ChiSquareTestImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.inference.ChiSquareTestImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/102/Math-102-Round1-s101-c9321fa1d1ee/result.json",
+          "started_at": "2026-10-05T11:18:55.481846+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "103",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.distribution.NormalDistributionImpl"
+      ],
+      "units": {
+        "org.apache.commons.math.distribution.NormalDistributionImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/103/Math-103-Round1-s101-3f151280e5ec/result.json",
+          "started_at": "2026-10-05T11:22:07.792150+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "104",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.special.Gamma"
+      ],
+      "units": {
+        "org.apache.commons.math.special.Gamma": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/104/Math-104-Round1-s101-ad4d0db3864d/result.json",
+          "started_at": "2026-10-05T11:25:22.927300+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "105",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.stat.regression.SimpleRegression"
+      ],
+      "units": {
+        "org.apache.commons.math.stat.regression.SimpleRegression": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/105/Math-105-Round1-s101-61e385d5db38/result.json",
+          "started_at": "2026-10-05T11:28:38.396419+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Math",
+      "bug": "106",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.math.fraction.ProperFractionFormat"
+      ],
+      "units": {
+        "org.apache.commons.math.fraction.ProperFractionFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Math/106/Math-106-Round1-s101-8447ee57565a/result.json",
+          "started_at": "2026-10-05T11:31:28.926109+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

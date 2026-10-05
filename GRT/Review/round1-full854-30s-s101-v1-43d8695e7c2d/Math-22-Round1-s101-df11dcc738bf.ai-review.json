@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T13:29:53.910307+00:00",
+  "run_id": "Math-22-Round1-s101-df11dcc738bf",
+  "project": "Math",
+  "bug": "22",
+  "target": "org.apache.commons.math3.distribution.FDistribution",
+  "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "FDistribution.isSupportLowerBoundInclusive is true on buggy and false on fixed, exactly matching the patch. The observation is a support-bound flag, not a numerical accuracy claim.",
+  "scope": "Existing tests and evidence only; no new benchmark execution. Frozen Java checksums and both fixed/buggy JUnit repetitions verified. Representative failing source and pinned source patch inspected, not an exhaustive assessment of every assertion. AI assessment is not human confirmation.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test42"
+  ],
+  "test_sha256": {
+    "GRT/Test/Math/22/Math-22-Round1-s101-df11dcc738bf/org/apache/commons/math3/distribution/SqaGeneratedTest.java": "63c0c259c94efb140b80b4239efdadc5e7156040da9cf3064f7b9b9db291a8b8"
+  },
+  "result_sha256": "78c12790f45c3859eb19eafab2e2f00e590a587f204f7e74ce6b30dab32eb82f",
+  "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-df11dcc738bf/result.json",
+  "tests_path": "GRT/Test/Math/22/Math-22-Round1-s101-df11dcc738bf",
+  "evaluation_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-df11dcc738bf/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Math/patches/22.src.patch",
+  "patch_sha256": "93250a6dc5877bf9c5143560a3b2499af4db218a47c14a6eb5d33cbf605f7af0",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

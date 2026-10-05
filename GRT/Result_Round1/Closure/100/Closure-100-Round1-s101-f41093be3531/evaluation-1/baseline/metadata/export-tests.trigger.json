@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-100-Round1-s101-f41093be3531/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction6\ncom.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction7\ncom.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction8\ncom.google.javascript.jscomp.CheckGlobalThisTest::testGlobalThis7\ncom.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod2\ncom.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod3\ncom.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction1\ncom.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction2\ncom.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction3",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}
