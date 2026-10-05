@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-9-Round1-s101-c5f883d19328/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.355,
+  "stdout": "org.apache.commons.math3.geometry.euclidean.threed.LineTest::testRevert",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

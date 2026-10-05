@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonXml-2-Round1-s101-fad594cc6e69/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.728,
+  "stdout": "com.fasterxml.jackson.dataformat.xml.misc.XmlTextTest::testMixedContent",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

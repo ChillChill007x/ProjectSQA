@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-49-Round1-s101-f15c7f8c605d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.4,
+  "stdout": "org.apache.commons.lang.math.FractionTest::testReduce",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

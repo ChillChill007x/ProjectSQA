@@ -1,0 +1,10 @@
+{
+  "trigger": "org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive",
+  "available_triggers": [
+    "org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive",
+    "org.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes",
+    "org.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

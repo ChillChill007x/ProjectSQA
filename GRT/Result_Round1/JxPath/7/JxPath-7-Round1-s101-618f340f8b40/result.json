@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "JxPath-7-Round1-s101-618f340f8b40",
+  "unit": {
+    "project": "JxPath",
+    "bug": "7",
+    "target": "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T23:53:20.405007+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-618f340f8b40",
+    "tests": "GRT/Test/JxPath/7/JxPath-7-Round1-s101-618f340f8b40",
+    "config": "GRT/Configuration/JxPath/7/JxPath-7-Round1-s101-618f340f8b40"
+  },
+  "generation_time_sec": 2.182,
+  "test_sha256": {
+    "GRT/Test/JxPath/7/JxPath-7-Round1-s101-618f340f8b40/org/apache/commons/jxpath/ri/compiler/SqaGeneratedTest.java": "efe28e1ba67ab1c067e54caa65f622a8ad4d500ff69a8db2b848875f6ef3216b"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations",
+    "available_triggers": [
+      "org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T23:54:50.256553+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-21-Round1-s101-cb21dfe08ea6/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 84.215,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

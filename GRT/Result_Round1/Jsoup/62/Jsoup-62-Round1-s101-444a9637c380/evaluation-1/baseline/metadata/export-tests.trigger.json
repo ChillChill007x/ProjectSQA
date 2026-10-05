@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-62-Round1-s101-444a9637c380/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.302,
+  "stdout": "org.jsoup.parser.HtmlParserTest::caseSensitiveParseTree",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-85-Round1-s101-e7cfa5689d38/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.499,
+  "stdout": "org.jsoup.nodes.AttributeTest::validatesKeysNotEmpty",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

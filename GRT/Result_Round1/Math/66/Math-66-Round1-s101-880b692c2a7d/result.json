@@ -1,0 +1,485 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-66-Round1-s101-880b692c2a7d",
+  "unit": {
+    "project": "Math",
+    "bug": "66",
+    "target": "org.apache.commons.math.optimization.univariate.BrentOptimizer",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T08:52:12.264458+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d",
+    "tests": "GRT/Test/Math/66/Math-66-Round1-s101-880b692c2a7d",
+    "config": "GRT/Configuration/Math/66/Math-66-Round1-s101-880b692c2a7d"
+  },
+  "generation_time_sec": 3.357,
+  "test_sha256": {
+    "GRT/Test/Math/66/Math-66-Round1-s101-880b692c2a7d/org/apache/commons/math/optimization/univariate/SqaGeneratedTest.java": "7f5d641a04c7c2a6c7ee09dc475e22fa107f8a1e6491940574958adc69a54dfb"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin",
+    "available_triggers": [
+      "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin",
+      "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testSinMin",
+      "org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testQuinticMinStatistics",
+      "org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testSinMin"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 100,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 100,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 185,
+      "tests": [
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test10",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test11",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test12",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test13",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test14",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test15",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test16",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test17",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test18",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test19",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test20",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test21",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test22",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test23",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test24",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test25",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test26",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test27",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test28",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test29",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test30",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test31",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test32",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test33",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test34",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test35",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test36",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test37",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test38",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test39",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test40",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test41",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test42",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test43",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test44",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test45",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test46",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test47",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test48",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test49",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test50",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test51",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test52",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test53",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test54",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test55",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test56",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test57",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test58",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test59",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test60",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test61",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test62",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test63",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test64",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test65",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test66",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test67",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test68",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test69",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test70",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test71",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test72",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test73",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test74",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test75",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test76",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test77",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test78",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test79",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test80",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test81",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test82",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test83",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test84",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test85",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test86",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test87",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test88",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test89",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test90",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test91",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test92",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test93",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test94",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test95",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test96",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test97",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test98",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test99",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test0",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test1",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test2",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test3",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test4",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test5",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test6",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test7",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test8",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test9"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 97,
+      "line_total": 97,
+      "line_coverage_percent": 100.0,
+      "branch_covered": 56,
+      "branch_total": 56,
+      "branch_coverage_percent": 100.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 100,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 293,
+      "tests": [
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test10",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test11",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test12",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test13",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test14",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test15",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test16",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test17",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test18",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test19",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test20",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test21",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test22",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test23",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test24",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test25",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test26",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test27",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test28",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test29",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test30",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test31",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test32",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test33",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test34",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test35",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test36",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test37",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test38",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test39",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test40",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test41",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test42",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test43",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test44",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test45",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test46",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test47",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test48",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test49",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test50",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test51",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test52",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test53",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test54",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test55",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test56",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test57",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test58",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test59",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test60",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test61",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test62",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test63",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test64",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test65",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test66",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test67",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test68",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test69",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test70",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test71",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test72",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test73",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test74",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test75",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test76",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test77",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test78",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test79",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test80",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test81",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test82",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test83",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test84",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test85",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test86",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test87",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test88",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test89",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test90",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test91",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test92",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test93",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test94",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test95",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test96",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test97",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test98",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test99",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test0",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test1",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test2",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test3",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test4",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test5",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test6",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test7",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test8",
+        "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test9"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test12",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-2.7066438794976315E-10> but was:<-3.8117589262509713E-10>",
+          "trace": "java.lang.AssertionError: expected:<-2.7066438794976315E-10> but was:<-3.8117589262509713E-10>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test12(SqaGeneratedTest.java:140)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test15",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1.9214354114784897E-11> but was:<1.1309045249234426E-10>",
+          "trace": "java.lang.AssertionError: expected:<1.9214354114784897E-11> but was:<1.1309045249234426E-10>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test15(SqaGeneratedTest.java:174)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test21",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test21(SqaGeneratedTest.java:225)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test23",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1000> but was:<2147483647>",
+          "trace": "java.lang.AssertionError: expected:<1000> but was:<2147483647>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test23(SqaGeneratedTest.java:245)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test27",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1.0E-9> but was:<1.0E-14>",
+          "trace": "java.lang.AssertionError: expected:<1.0E-9> but was:<1.0E-14>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test27(SqaGeneratedTest.java:282)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test32",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1.0E-11> but was:<1.0E-10>",
+          "trace": "java.lang.AssertionError: expected:<1.0E-11> but was:<1.0E-10>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test32(SqaGeneratedTest.java:326)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test35",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-74.41092821225179> but was:<-74.41092823672709>",
+          "trace": "java.lang.AssertionError: expected:<-74.41092821225179> but was:<-74.41092823672709>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test35(SqaGeneratedTest.java:361)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test36",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<18.11404382308176> but was:<24.108619480838154>",
+          "trace": "java.lang.AssertionError: expected:<18.11404382308176> but was:<24.108619480838154>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test36(SqaGeneratedTest.java:375)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test40",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-3.4899649527663684E-11> but was:<-3.054748720853201E-10>",
+          "trace": "java.lang.AssertionError: expected:<-3.4899649527663684E-11> but was:<-3.054748720853201E-10>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test40(SqaGeneratedTest.java:414)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test50",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1000> but was:<2147483647>",
+          "trace": "java.lang.AssertionError: expected:<1000> but was:<2147483647>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test50(SqaGeneratedTest.java:511)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test52",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test52(SqaGeneratedTest.java:535)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test55",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1.4334854823961662> but was:<1.433485483072438>",
+          "trace": "java.lang.AssertionError: expected:<1.4334854823961662> but was:<1.433485483072438>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test55(SqaGeneratedTest.java:576)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test56",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-48.58927834260132> but was:<-48.589278342601325>",
+          "trace": "java.lang.AssertionError: expected:<-48.58927834260132> but was:<-48.589278342601325>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test56(SqaGeneratedTest.java:592)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test59",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<5.342991344468823> but was:<13.683270516640539>",
+          "trace": "java.lang.AssertionError: expected:<5.342991344468823> but was:<13.683270516640539>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test59(SqaGeneratedTest.java:639)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test60",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-37.40093941128401> but was:<-33.23079982498442>",
+          "trace": "java.lang.AssertionError: expected:<-37.40093941128401> but was:<-33.23079982498442>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test60(SqaGeneratedTest.java:654)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test62",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<14.59548855084837> but was:<55.77561696207764>",
+          "trace": "java.lang.AssertionError: expected:<14.59548855084837> but was:<55.77561696207764>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test62(SqaGeneratedTest.java:685)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test66",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-3.127604689398569> but was:<-3.1276046897478245>",
+          "trace": "java.lang.AssertionError: expected:<-3.127604689398569> but was:<-3.1276046897478245>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test66(SqaGeneratedTest.java:730)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test69",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-5.733941930627458> but was:<-3.648872138069006>",
+          "trace": "java.lang.AssertionError: expected:<-5.733941930627458> but was:<-3.648872138069006>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test69(SqaGeneratedTest.java:765)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test79",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<7.167427412130873> but was:<13.683270516543512>",
+          "trace": "java.lang.AssertionError: expected:<7.167427412130873> but was:<13.683270516543512>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test79(SqaGeneratedTest.java:879)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test83",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<0.13031686164884965> but was:<0.39095058587987613>",
+          "trace": "java.lang.AssertionError: expected:<0.13031686164884965> but was:<0.39095058587987613>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test83(SqaGeneratedTest.java:927)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test87",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test87(SqaGeneratedTest.java:974)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test88",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test88(SqaGeneratedTest.java:984)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test89",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test89(SqaGeneratedTest.java:996)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test92",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test92(SqaGeneratedTest.java:1029)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test93",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test93(SqaGeneratedTest.java:1046)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test94",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<59.424489099714826> but was:<59.42448909911405>",
+          "trace": "java.lang.AssertionError: expected:<59.424489099714826> but was:<59.42448909911405>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test94(SqaGeneratedTest.java:1063)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test98",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-48.589278342601304> but was:<-48.589278342601325>",
+          "trace": "java.lang.AssertionError: expected:<-48.589278342601304> but was:<-48.589278342601325>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test98(SqaGeneratedTest.java:1106)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test0",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<10.816299548704071> but was:<12.640735620151402>",
+          "trace": "java.lang.AssertionError: expected:<10.816299548704071> but was:<12.640735620151402>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test0(SqaGeneratedTest.java:14)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test2",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test2(SqaGeneratedTest.java:31)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test3",
+          "exception": "java.lang.UnsupportedOperationException",
+          "message": null,
+          "trace": "java.lang.UnsupportedOperationException\n\tat org.apache.commons.math.optimization.univariate.BrentOptimizer.doOptimize(BrentOptimizer.java:57)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test3(SqaGeneratedTest.java:40)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test4",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<1.0E-9> but was:<1.0E-14>",
+          "trace": "java.lang.AssertionError: expected:<1.0E-9> but was:<1.0E-14>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test4(SqaGeneratedTest.java:51)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        },
+        {
+          "test": "org.apache.commons.math.optimization.univariate.SqaGeneratedTest::test7",
+          "exception": "java.lang.AssertionError",
+          "message": "expected:<-23.0660845840386> but was:<-23.06608458502441>",
+          "trace": "java.lang.AssertionError: expected:<-23.0660845840386> but was:<-23.06608458502441>\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat org.apache.commons.math.optimization.univariate.SqaGeneratedTest.test7(SqaGeneratedTest.java:82)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 101,
+      "line_total": 102,
+      "line_coverage_percent": 99.01960784313725,
+      "branch_covered": 56,
+      "branch_total": 58,
+      "branch_coverage_percent": 96.55172413793103
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d/evaluation-1",
+  "finished_at": "2026-10-05T08:55:29.673566+00:00"
+}

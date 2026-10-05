@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Time",
+    "-v",
+    "26f",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Time-26-Round1-s101-704ffbebdf92/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.974,
+  "stdout": "",
+  "stderr": "Checking out c7a581e5 to /workspace/work/parallel/grt/726/checkouts/Time-26 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nFix broken build........................................................... OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/grt/726/checkouts/Time-26-R OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff c7a581e5:218a7fe9..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Time-26f........................................ OK\n"
+}

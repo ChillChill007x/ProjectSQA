@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-18-Round1-s101-7d9dceb9aa02/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.452,
+  "stdout": "org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed\norg.jsoup.parser.CharacterReaderTest::consumeToEnd\norg.jsoup.parser.ParserTest::handlesNewlinesAndWhitespaceInTag",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-29-Round1-s101-759990a8417d/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang3.SystemUtilsTest::testJavaVersionAsInt"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.575,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

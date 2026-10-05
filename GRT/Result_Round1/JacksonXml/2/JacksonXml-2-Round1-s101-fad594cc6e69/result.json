@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonXml-2-Round1-s101-fad594cc6e69",
+  "unit": {
+    "project": "JacksonXml",
+    "bug": "2",
+    "target": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T17:01:22.308914+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonXml/2/JacksonXml-2-Round1-s101-fad594cc6e69",
+    "tests": "GRT/Test/JacksonXml/2/JacksonXml-2-Round1-s101-fad594cc6e69",
+    "config": "GRT/Configuration/JacksonXml/2/JacksonXml-2-Round1-s101-fad594cc6e69"
+  },
+  "generation_time_sec": 3.558,
+  "test_sha256": {
+    "GRT/Test/JacksonXml/2/JacksonXml-2-Round1-s101-fad594cc6e69/com/fasterxml/jackson/dataformat/xml/deser/SqaGeneratedTest.java": "4bd367e7241f3a889b63344231dc03f053019a8487b010af30a64db40163e52b"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.dataformat.xml.misc.XmlTextTest::testMixedContent",
+    "available_triggers": [
+      "com.fasterxml.jackson.dataformat.xml.misc.XmlTextTest::testMixedContent"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T17:03:52.162456+00:00"
+}

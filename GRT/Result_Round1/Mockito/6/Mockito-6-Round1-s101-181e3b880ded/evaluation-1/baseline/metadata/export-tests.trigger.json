@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-6-Round1-s101-181e3b880ded/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.674,
+  "stdout": "org.mockitousage.matchers.AnyXMatchersAcceptNullsTest::shouldNotAcceptNullInAllAnyPrimitiveWrapperMatchers\norg.mockitousage.matchers.AnyXMatchersAcceptNullsTest::shouldNotAcceptNullInAnyXMatchers\norg.mockitousage.matchers.MatchersTest::anyStringMatcher\norg.mockitousage.matchers.NewMatchersTest::shouldAllowAnyCollection\norg.mockitousage.matchers.NewMatchersTest::shouldAllowAnyList\norg.mockitousage.matchers.NewMatchersTest::shouldAllowAnyMap\norg.mockitousage.matchers.NewMatchersTest::shouldAllowAnySet",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Mockito",
+    "-v",
+    "37f",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-37-Round1-s101-f62f50ef2454/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.563,
+  "stdout": "",
+  "stderr": "Checking out c0222c2d to /workspace/work/parallel/grt/726/checkouts/Mockito OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nApply patch................................................................ OK\nsed: -e expression #1, char 84: unterminated `s' command\nsed: can't read /workspace/work/parallel/grt/726/checkouts/Mockito-37-Round1-s101-f62f50ef2454/evaluation-1/fixed/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/parallel/grt/726/checkouts/Mockito-37-Round1-s101-f62f50ef2454/evaluation-1/fixed/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/parallel/grt/726/checkouts/Mockito-37-Round1-s101-f62f50ef2454/evaluation-1/fixed/buildSrc/build.gradle: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/grt/726/checkouts/Mockito-3 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff c0222c2d:3b603ebf..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Mockito-37f..................................... OK\n"
+}

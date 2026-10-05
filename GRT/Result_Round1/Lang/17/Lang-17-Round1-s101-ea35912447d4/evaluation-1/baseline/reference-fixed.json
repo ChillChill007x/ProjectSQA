@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-17-Round1-s101-ea35912447d4/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang3.StringEscapeUtilsTest::testLang720"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.051,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

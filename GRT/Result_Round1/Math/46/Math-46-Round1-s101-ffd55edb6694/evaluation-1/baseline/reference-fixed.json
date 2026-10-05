@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-46-Round1-s101-ffd55edb6694/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math.complex.ComplexTest::testAtanI"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 17.322,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

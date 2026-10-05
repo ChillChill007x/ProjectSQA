@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Mockito-26-Round1-s101-2b0cd051819f/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.progress.HandyReturnValuesTest::should_default_values_for_primitive"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 31.227,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.progress.HandyReturnValuesTest::should_default_values_for_primitive\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

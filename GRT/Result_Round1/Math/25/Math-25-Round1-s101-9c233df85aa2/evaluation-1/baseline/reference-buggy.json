@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-25-Round1-s101-9c233df85aa2/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math3.optimization.fitting.HarmonicFitterTest::testMath844"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.0,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math3.optimization.fitting.HarmonicFitterTest::testMath844\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

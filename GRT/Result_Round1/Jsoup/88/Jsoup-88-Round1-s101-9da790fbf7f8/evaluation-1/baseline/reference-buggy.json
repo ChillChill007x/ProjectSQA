@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-88-Round1-s101-9da790fbf7f8/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.AttributeTest::booleanAttributesAreEmptyStringValues"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.664,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.AttributeTest::booleanAttributesAreEmptyStringValues\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Jsoup",
+    "-v",
+    "2b",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-2-Round1-s101-5d7dd54fdf75/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 8.233,
+  "stdout": "",
+  "stderr": "Checking out bb4ead7c to /workspace/work/checkouts/Jsoup-2-Round1-s101-5d7d OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Jsoup-2-Round1-s101-5d7dd5 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff bb4ead7c:27a52f90..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Jsoup-2b........................................ OK\n"
+}

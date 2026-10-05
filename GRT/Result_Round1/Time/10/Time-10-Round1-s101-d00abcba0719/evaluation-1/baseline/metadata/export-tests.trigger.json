@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/parallel/grt/725/checkouts/Time-10-Round1-s101-d00abcba0719/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.635,
+  "stdout": "org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay\norg.joda.time.TestMonths::testFactory_monthsBetween_RPartial_MonthDay",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.tests.trigger)......................................... OK\n\n"
+}

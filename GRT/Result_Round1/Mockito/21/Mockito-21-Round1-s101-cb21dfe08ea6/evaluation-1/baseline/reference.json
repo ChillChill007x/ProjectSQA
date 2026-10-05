@@ -1,0 +1,8 @@
+{
+  "trigger": "org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes",
+  "available_triggers": [
+    "org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

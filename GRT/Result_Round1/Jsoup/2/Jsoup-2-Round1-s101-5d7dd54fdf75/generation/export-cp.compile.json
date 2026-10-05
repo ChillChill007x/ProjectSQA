@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-2-Round1-s101-5d7dd54fdf75/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.701,
+  "stdout": "/workspace/work/checkouts/Jsoup-2-Round1-s101-5d7dd54fdf75/generation-fixed/target/classes:/opt/defects4j/framework/projects/Jsoup/lib/commons-lang/commons-lang/2.4/commons-lang-2.4.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

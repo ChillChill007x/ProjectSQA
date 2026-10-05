@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-98-Round1-s101-68bcfa1e9e23/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.linear.BigMatrixImplTest::testMath209"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 6.376,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.linear.BigMatrixImplTest::testMath209\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-54-Round1-s101-804a56fcb173/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.615,
+  "stdout": "org.jsoup.helper.W3CDomTest::handlesInvalidAttributeNames",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

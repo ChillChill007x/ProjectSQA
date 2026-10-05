@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Time-19-Round1-s101-dc303b40c05d/evaluation-1/buggy",
+    "-t",
+    "org.joda.time.TestDateTimeZoneCutover::testDateTimeCreation_london"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 6.036,
+  "stdout": "Failing tests: 1\n  - org.joda.time.TestDateTimeZoneCutover::testDateTimeCreation_london\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

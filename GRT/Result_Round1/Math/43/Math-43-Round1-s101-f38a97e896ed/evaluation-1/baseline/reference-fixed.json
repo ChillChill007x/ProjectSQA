@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-43-Round1-s101-f38a97e896ed/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math.stat.descriptive.SummaryStatisticsTest::testOverrideMeanWithMathClass"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.721,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

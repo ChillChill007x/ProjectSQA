@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Math-96-Round1-s101-d4767e2abbb3/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.996,
+  "stdout": "/workspace/work/checkouts/Math-96-Round1-s101-d4767e2abbb3/generation-fixed/target/classes:/opt/defects4j/framework/projects/Math/lib/commons-discovery-0.5.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

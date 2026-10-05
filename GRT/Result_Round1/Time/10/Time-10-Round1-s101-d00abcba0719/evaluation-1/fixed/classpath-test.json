@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/parallel/grt/725/checkouts/Time-10-Round1-s101-d00abcba0719/evaluation-1/fixed/target/classes",
+    "/opt/defects4j/framework/projects/Time/lib/org/joda/joda-convert/1.2/joda-convert-1.2.jar",
+    "/opt/defects4j/framework/projects/Time/lib/junit/junit/3.8.2/junit-3.8.2.jar",
+    "/workspace/work/parallel/grt/725/checkouts/Time-10-Round1-s101-d00abcba0719/evaluation-1/fixed/target/test-classes"
+  ],
+  "missing_entries": []
+}

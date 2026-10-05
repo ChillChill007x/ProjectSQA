@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-35-Round1-s101-981f83084760/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.419,
+  "stdout": "org.jsoup.parser.HtmlParserTest::handlesUnclosedAnchors",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

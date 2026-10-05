@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.223,
+  "stdout": "/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/src/java:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/commons-beanutils-1.4.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/commons-collections-2.0.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/commons-logging-1.0.4.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/jdom-1.0.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/junit-3.8.1.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/junit-3.8.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/mockrunner-0.4.1.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/servletapi-2.2.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/xerces-2.4.0.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/lib/xml-apis-2.0.2.jar:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/src/test:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/classes:/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/fixed/target/test-classes:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

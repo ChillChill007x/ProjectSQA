@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-10-Round1-s101-e19084aea615/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.312,
+  "stdout": "org.jsoup.nodes.NodeTest::absHandlesRelativeQuery",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

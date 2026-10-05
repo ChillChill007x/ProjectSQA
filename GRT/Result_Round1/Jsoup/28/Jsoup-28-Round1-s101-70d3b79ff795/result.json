@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-28-Round1-s101-70d3b79ff795",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "28",
+    "target": "org.jsoup.parser.Parser",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T19:29:07.898395+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/28/Jsoup-28-Round1-s101-70d3b79ff795",
+    "tests": "GRT/Test/Jsoup/28/Jsoup-28-Round1-s101-70d3b79ff795",
+    "config": "GRT/Configuration/Jsoup/28/Jsoup-28-Round1-s101-70d3b79ff795"
+  },
+  "generation_time_sec": 1.726,
+  "test_sha256": {
+    "GRT/Test/Jsoup/28/Jsoup-28-Round1-s101-70d3b79ff795/org/jsoup/parser/SqaGeneratedTest.java": "a3b59ed858612fdeb865340cd692f730a48fb814e876e599751256cb3cc61af1"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.nodes.EntitiesTest::unescape",
+    "available_triggers": [
+      "org.jsoup.nodes.EntitiesTest::unescape",
+      "org.jsoup.nodes.EntitiesTest::noSpuriousDecodes",
+      "org.jsoup.parser.AttributeParseTest::moreAttributeUnescapes",
+      "org.jsoup.parser.AttributeParseTest::strictAttributeUnescapes",
+      "org.jsoup.parser.HtmlParserTest::doesNotFindShortestMatchingEntity",
+      "org.jsoup.parser.HtmlParserTest::relaxedBaseEntityMatchAndStrictExtendedMatch"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T19:30:29.803643+00:00"
+}

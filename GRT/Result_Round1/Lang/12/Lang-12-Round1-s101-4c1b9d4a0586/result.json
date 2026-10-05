@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Lang-12-Round1-s101-4c1b9d4a0586",
+  "unit": {
+    "project": "Lang",
+    "bug": "12",
+    "target": "org.apache.commons.lang3.RandomStringUtils",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T01:05:03.138043+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Lang/12/Lang-12-Round1-s101-4c1b9d4a0586",
+    "tests": "GRT/Test/Lang/12/Lang-12-Round1-s101-4c1b9d4a0586",
+    "config": "GRT/Configuration/Lang/12/Lang-12-Round1-s101-4c1b9d4a0586"
+  },
+  "generation_time_sec": 3.322,
+  "test_sha256": {
+    "GRT/Test/Lang/12/Lang-12-Round1-s101-4c1b9d4a0586/org/apache/commons/lang3/SqaGeneratedTest.java": "e714c996a7bb1800e1fba6796050ca02c72b86b6d94ce257a3dee2fbd27bfa02"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.lang3.RandomStringUtilsTest::testExceptions",
+    "available_triggers": [
+      "org.apache.commons.lang3.RandomStringUtilsTest::testExceptions",
+      "org.apache.commons.lang3.RandomStringUtilsTest::testLANG805"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T01:07:22.037369+00:00"
+}

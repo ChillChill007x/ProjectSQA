@@ -1,0 +1,9 @@
+{
+  "trigger": "org.joda.time.TestDuration_Basics::testToPeriod_fixedZone",
+  "available_triggers": [
+    "org.joda.time.TestDuration_Basics::testToPeriod_fixedZone",
+    "org.joda.time.TestPeriod_Constructors::testConstructor_long_fixedZone"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

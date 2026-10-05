@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-3-Round1-s101-2d9062b87243",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "3",
+    "target": "org.jsoup.parser.Parser",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T18:37:35.700836+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/3/Jsoup-3-Round1-s101-2d9062b87243",
+    "tests": "GRT/Test/Jsoup/3/Jsoup-3-Round1-s101-2d9062b87243",
+    "config": "GRT/Configuration/Jsoup/3/Jsoup-3-Round1-s101-2d9062b87243"
+  },
+  "generation_time_sec": 1.325,
+  "test_sha256": {
+    "GRT/Test/Jsoup/3/Jsoup-3-Round1-s101-2d9062b87243/org/jsoup/parser/SqaGeneratedTest.java": "54247f375254485b9b25832c8d3debb201039979a12c523eb8b8fc3e2233142c"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.nodes.ElementTest::testAppendRowToTable",
+    "available_triggers": [
+      "org.jsoup.nodes.ElementTest::testAppendRowToTable",
+      "org.jsoup.nodes.ElementTest::testPrependRowToTable",
+      "org.jsoup.parser.ParserTest::handlesNestedImplicitTable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T18:38:38.866456+00:00"
+}

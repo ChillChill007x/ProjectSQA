@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-27-Round1-s101-a6a316d4f009/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math3.fraction.FractionTest::testMath835"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.729,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math3.fraction.FractionTest::testMath835\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-47-Round1-s101-1287799fad61/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.725,
+  "stdout": "org.apache.commons.lang.text.StrBuilderTest::testLang412Left\norg.apache.commons.lang.text.StrBuilderTest::testLang412Right",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

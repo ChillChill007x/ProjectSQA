@@ -1,0 +1,11 @@
+{
+  "trigger": "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin",
+  "available_triggers": [
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin",
+    "org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testSinMin",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testQuinticMinStatistics",
+    "org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testSinMin"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,108 @@
+{
+  "updated_at": "2026-10-04T18:36:11.087601+00:00",
+  "expected_bugs": 6,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 5,
+    "FAILED": 1
+  },
+  "bugs": [
+    {
+      "project": "JacksonXml",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonXml/1/JacksonXml-1-Round1-s101-21709bda1e33/result.json",
+          "started_at": "2026-10-04T16:55:32.932376+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "2",
+      "status": "FAILED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JacksonXml/2/JacksonXml-2-Round1-s101-fad594cc6e69/result.json",
+          "started_at": "2026-10-04T17:01:22.308914+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonXml/3/JacksonXml-3-Round1-s101-f38ad386da15/result.json",
+          "started_at": "2026-10-04T17:04:21.379146+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonXml/4/JacksonXml-4-Round1-s101-9e6c3d8fe928/result.json",
+          "started_at": "2026-10-04T17:07:14.663513+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonXml/5/JacksonXml-5-Round1-s101-40548540e2dc/result.json",
+          "started_at": "2026-10-04T17:10:07.500429+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonXml",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonXml/6/JacksonXml-6-Round1-s101-4290a62f06e5/result.json",
+          "started_at": "2026-10-04T17:13:02.685770+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

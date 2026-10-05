@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JxPath-13-Round1-s101-34d7870c2e23/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.504,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

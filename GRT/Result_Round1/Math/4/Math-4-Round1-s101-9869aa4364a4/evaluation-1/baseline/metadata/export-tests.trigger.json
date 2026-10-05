@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-4-Round1-s101-9869aa4364a4/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.753,
+  "stdout": "org.apache.commons.math3.geometry.euclidean.threed.SubLineTest::testIntersectionNotIntersecting\norg.apache.commons.math3.geometry.euclidean.twod.SubLineTest::testIntersectionParallel",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

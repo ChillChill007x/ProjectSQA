@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.64,
+  "stdout": "[INFO] 172 classes instrumented to /workspace/GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

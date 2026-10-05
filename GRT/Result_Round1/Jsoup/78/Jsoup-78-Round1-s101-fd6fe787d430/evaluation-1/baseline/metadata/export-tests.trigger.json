@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-78-Round1-s101-fd6fe787d430/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.398,
+  "stdout": "org.jsoup.integration.ConnectTest::handlesEmptyStreamDuringParseRead",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

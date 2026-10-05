@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-44-Round1-s101-fd214995ed4c/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.math.ode.events.EventStateTest::testIssue695"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.976,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

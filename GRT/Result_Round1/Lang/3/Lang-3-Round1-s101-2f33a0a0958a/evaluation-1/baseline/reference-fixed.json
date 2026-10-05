@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-3-Round1-s101-2f33a0a0958a/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.586,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-19-Round1-s101-e7556fe6571a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.508,
+  "stdout": "org.jsoup.safety.CleanerTest::handlesCustomProtocols",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-57-Round1-s101-8e96231a5f92/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.518,
+  "stdout": "org.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleSet\norg.apache.commons.lang.LocaleUtilsTest::testIsAvailableLocale\norg.apache.commons.lang.LocaleUtilsTest::testAvailableLocaleList\norg.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_LocaleLocale\norg.apache.commons.lang.LocaleUtilsTest::testLanguagesByCountry\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_1Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_2Part\norg.apache.commons.lang.LocaleUtilsTest::testToLocale_3Part\norg.apache.commons.lang.LocaleUtilsTest::testLocaleLookupList_Locale\norg.apache.commons.lang.LocaleUtilsTest::testConstructor",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

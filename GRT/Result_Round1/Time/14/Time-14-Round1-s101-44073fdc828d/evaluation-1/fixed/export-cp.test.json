@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/parallel/grt/726/checkouts/Time-14-Round1-s101-44073fdc828d/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.212,
+  "stdout": "/workspace/work/parallel/grt/726/checkouts/Time-14-Round1-s101-44073fdc828d/evaluation-1/fixed/build/classes:/opt/defects4j/framework/projects/Time/lib/joda-convert-1.2.jar:/workspace/work/parallel/grt/726/checkouts/Time-14-Round1-s101-44073fdc828d/evaluation-1/fixed/build/tests:/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar:/workspace/work/parallel/grt/726/checkouts/Time-14-Round1-s101-44073fdc828d/evaluation-1/fixed/src/test/java",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\nRunning ant (export.cp.test)............................................... OK\n\n"
+}

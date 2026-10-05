@@ -1,0 +1,11 @@
+{
+  "trigger": "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing",
+  "available_triggers": [
+    "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing",
+    "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisPreceding",
+    "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisFollowing",
+    "org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisPreceding"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

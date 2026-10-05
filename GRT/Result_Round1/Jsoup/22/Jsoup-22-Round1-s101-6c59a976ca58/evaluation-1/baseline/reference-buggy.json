@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-22-Round1-s101-6c59a976ca58/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.344,
+  "stdout": "Failing tests: 1\n  - org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

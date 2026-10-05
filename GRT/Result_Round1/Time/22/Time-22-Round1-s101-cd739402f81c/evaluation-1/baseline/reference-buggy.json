@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/725/checkouts/Time-22-Round1-s101-cd739402f81c/evaluation-1/buggy",
+    "-t",
+    "org.joda.time.TestDuration_Basics::testToPeriod_fixedZone"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.507,
+  "stdout": "Failing tests: 1\n  - org.joda.time.TestDuration_Basics::testToPeriod_fixedZone\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

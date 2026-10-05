@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-52-Round1-s101-4a88e0603fa0/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.175,
+  "stdout": "org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset\norg.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlIso8859\norg.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlUtf8\norg.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlDisabledNoChanges\norg.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration\norg.jsoup.parser.XmlTreeBuilderTest::testDetectCharsetEncodingDeclaration\norg.jsoup.parser.XmlTreeBuilderTest::testParseDeclarationAttributes",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-31-Round1-s101-91b530920826",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "31",
+    "target": "org.jsoup.parser.TokeniserState",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-04T19:37:22.566145+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/31/Jsoup-31-Round1-s101-91b530920826",
+    "tests": "GRT/Test/Jsoup/31/Jsoup-31-Round1-s101-91b530920826",
+    "config": "GRT/Configuration/Jsoup/31/Jsoup-31-Round1-s101-91b530920826"
+  },
+  "generation_time_sec": 2.645,
+  "test_sha256": {
+    "GRT/Test/Jsoup/31/Jsoup-31-Round1-s101-91b530920826/org/jsoup/parser/SqaGeneratedTest.java": "1e4d0d6bed262dfeef5c4a6751e0db2797825d9fb2935896cadbffe6f051e0c0"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration",
+    "available_triggers": [
+      "org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-04T19:38:39.888040+00:00"
+}

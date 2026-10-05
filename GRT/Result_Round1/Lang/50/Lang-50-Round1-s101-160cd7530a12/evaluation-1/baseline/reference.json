@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateInstance",
+  "available_triggers": [
+    "org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateInstance",
+    "org.apache.commons.lang.time.FastDateFormatTest::test_changeDefault_Locale_DateTimeInstance"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

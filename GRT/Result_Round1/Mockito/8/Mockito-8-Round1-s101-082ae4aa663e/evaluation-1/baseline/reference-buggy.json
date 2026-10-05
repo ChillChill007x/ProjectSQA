@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/725/checkouts/Mockito-8-Round1-s101-082ae4aa663e/evaluation-1/buggy",
+    "-t",
+    "org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 70.002,
+  "stdout": "Failing tests: 1\n  - org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

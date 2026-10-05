@@ -1,0 +1,8 @@
+{
+  "trigger": "org.mockitousage.bugs.ListenersLostOnResetMockTest::listener",
+  "available_triggers": [
+    "org.mockitousage.bugs.ListenersLostOnResetMockTest::listener"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

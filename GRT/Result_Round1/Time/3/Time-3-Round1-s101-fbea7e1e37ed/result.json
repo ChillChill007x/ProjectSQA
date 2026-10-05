@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "run_id": "Time-3-Round1-s101-fbea7e1e37ed",
+  "unit": {
+    "project": "Time",
+    "bug": "3",
+    "target": "org.joda.time.MutableDateTime",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "FLAKY",
+  "started_at": "2026-10-05T12:10:03.023500+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Time/3/Time-3-Round1-s101-fbea7e1e37ed",
+    "tests": "GRT/Test/Time/3/Time-3-Round1-s101-fbea7e1e37ed",
+    "config": "GRT/Configuration/Time/3/Time-3-Round1-s101-fbea7e1e37ed"
+  },
+  "generation_time_sec": 2.323,
+  "test_sha256": {
+    "GRT/Test/Time/3/Time-3-Round1-s101-fbea7e1e37ed/org/joda/time/SqaGeneratedTest.java": "da93785ca3aef27a4f0eb98df5183b6640352e7d695db12704e44a87c3f567f6"
+  },
+  "reference_validation": {
+    "trigger": "org.joda.time.TestMutableDateTime_Adds::testAddYears_int_dstOverlapWinter_addZero",
+    "available_triggers": [
+      "org.joda.time.TestMutableDateTime_Adds::testAddYears_int_dstOverlapWinter_addZero",
+      "org.joda.time.TestMutableDateTime_Adds::testAddDays_int_dstOverlapWinter_addZero",
+      "org.joda.time.TestMutableDateTime_Adds::testAddWeeks_int_dstOverlapWinter_addZero",
+      "org.joda.time.TestMutableDateTime_Adds::testAdd_DurationFieldType_int_dstOverlapWinter_addZero",
+      "org.joda.time.TestMutableDateTime_Adds::testAddMonths_int_dstOverlapWinter_addZero"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Repeated executions have different outcomes",
+  "finished_at": "2026-10-05T12:11:44.341276+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-82-Round1-s101-b912316b809a/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.314,
+  "stdout": "org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

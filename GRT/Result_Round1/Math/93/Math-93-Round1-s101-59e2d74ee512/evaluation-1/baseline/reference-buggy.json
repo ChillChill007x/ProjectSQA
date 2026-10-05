@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-93-Round1-s101-59e2d74ee512/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math.util.MathUtilsTest::testFactorial"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 6.631,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math.util.MathUtilsTest::testFactorial\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

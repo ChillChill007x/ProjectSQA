@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-23-Round1-s101-da6cdd2a6b85/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.413,
+  "stdout": "org.jsoup.nodes.EntitiesTest::letterDigitEntities",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

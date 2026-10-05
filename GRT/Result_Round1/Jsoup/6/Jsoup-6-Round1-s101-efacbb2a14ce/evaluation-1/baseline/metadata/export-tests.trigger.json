@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-6-Round1-s101-efacbb2a14ce/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.874,
+  "stdout": "org.jsoup.integration.ParseTest::testYahooArticle\norg.jsoup.nodes.EntitiesTest::quoteReplacements",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

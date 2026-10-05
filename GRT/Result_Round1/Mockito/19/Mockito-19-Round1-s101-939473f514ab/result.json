@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-19-Round1-s101-939473f514ab",
+  "unit": {
+    "project": "Mockito",
+    "bug": "19",
+    "target": "org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T11:44:04.403850+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/19/Mockito-19-Round1-s101-939473f514ab",
+    "tests": "GRT/Test/Mockito/19/Mockito-19-Round1-s101-939473f514ab",
+    "config": "GRT/Configuration/Mockito/19/Mockito-19-Round1-s101-939473f514ab"
+  },
+  "generation_time_sec": 2.518,
+  "test_sha256": {
+    "GRT/Test/Mockito/19/Mockito-19-Round1-s101-939473f514ab/org/mockito/internal/configuration/injection/filter/SqaGeneratedTest.java": "1e3ef2b4c5c9dd4b22503cf12340b5f4ba3ecb5b34b25da980156e589050f37d"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.annotation.MockInjectionUsingSetterOrPropertyTest::shouldInsertFieldWithCorrectNameWhenMultipleTypesAvailable",
+    "available_triggers": [
+      "org.mockitousage.annotation.MockInjectionUsingSetterOrPropertyTest::shouldInsertFieldWithCorrectNameWhenMultipleTypesAvailable"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T11:53:34.970566+00:00"
+}

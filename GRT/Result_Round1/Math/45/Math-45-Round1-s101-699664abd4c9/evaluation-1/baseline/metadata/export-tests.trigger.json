@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-45-Round1-s101-699664abd4c9/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.49,
+  "stdout": "org.apache.commons.math.linear.OpenMapRealMatrixTest::testMath679",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

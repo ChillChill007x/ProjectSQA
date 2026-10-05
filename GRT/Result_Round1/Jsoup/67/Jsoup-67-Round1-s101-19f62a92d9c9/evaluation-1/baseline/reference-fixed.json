@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-67-Round1-s101-19f62a92d9c9/evaluation-1/fixed",
+    "-t",
+    "org.jsoup.parser.HtmlParserTest::handlesDeepStack"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.721,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

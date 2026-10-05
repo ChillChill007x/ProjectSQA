@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JxPath-1-Round1-s101-38eef07c3a62/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.044,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

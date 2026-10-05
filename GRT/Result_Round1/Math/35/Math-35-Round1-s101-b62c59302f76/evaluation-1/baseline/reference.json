@@ -1,0 +1,11 @@
+{
+  "trigger": "org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooLow",
+  "available_triggers": [
+    "org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooLow",
+    "org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooHigh",
+    "org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooLow",
+    "org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooHigh"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-72-Round1-s101-783fe138396c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.891,
+  "stdout": "org.apache.commons.math.analysis.solvers.BrentSolverTest::testRootEndpoints",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

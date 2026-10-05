@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-7-Round1-s101-4d3c2af56845/evaluation-1/fixed",
+    "-t",
+    "org.mockitousage.bugs.deepstubs.DeepStubFailingWhenGenricNestedAsRawTypeTest::discoverDeepMockingOfGenerics"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 61.957,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

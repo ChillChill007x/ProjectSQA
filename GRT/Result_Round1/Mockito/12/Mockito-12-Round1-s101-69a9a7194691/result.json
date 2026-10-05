@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-12-Round1-s101-69a9a7194691",
+  "unit": {
+    "project": "Mockito",
+    "bug": "12",
+    "target": "org.mockito.internal.util.reflection.GenericMaster",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T11:09:49.668848+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/12/Mockito-12-Round1-s101-69a9a7194691",
+    "tests": "GRT/Test/Mockito/12/Mockito-12-Round1-s101-69a9a7194691",
+    "config": "GRT/Configuration/Mockito/12/Mockito-12-Round1-s101-69a9a7194691"
+  },
+  "generation_time_sec": 30.452,
+  "test_sha256": {
+    "GRT/Test/Mockito/12/Mockito-12-Round1-s101-69a9a7194691/org/mockito/internal/util/reflection/SqaGeneratedTest.java": "7376a80397531ff7681c067ac10650bf086a6b24af333583a78bc2b782810b68"
+  },
+  "reference_validation": {
+    "trigger": "org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics",
+    "available_triggers": [
+      "org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics",
+      "org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseAnnotatedCaptor",
+      "org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseCaptorInOrdinaryWay",
+      "org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldCaptureGenericList",
+      "org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseGenericlessAnnotatedCaptor",
+      "org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenWrongTypeForCaptor",
+      "org.mockitousage.annotation.CaptorAnnotationTest::testNormalUsage",
+      "org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenMoreThanOneMockitoAnnotaton",
+      "org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenInitializingCaptorsForNullClass",
+      "org.mockitousage.annotation.CaptorAnnotationTest::shouldLookForAnnotatedCaptorsInSuperClasses"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 56,
+      "tests": [
+        "org.mockito.internal.util.reflection.SqaGeneratedTest::test0",
+        "org.mockito.internal.util.reflection.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 9,
+      "line_coverage_percent": 11.11111111111111,
+      "branch_covered": 0,
+      "branch_total": 8,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 46,
+      "tests": [
+        "org.mockito.internal.util.reflection.SqaGeneratedTest::test0",
+        "org.mockito.internal.util.reflection.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 6,
+      "line_coverage_percent": 16.666666666666668,
+      "branch_covered": 0,
+      "branch_total": 4,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Mockito/12/Mockito-12-Round1-s101-69a9a7194691/evaluation-1",
+  "finished_at": "2026-10-05T11:12:22.507837+00:00"
+}

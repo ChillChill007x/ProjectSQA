@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Math-16-Round1-s101-08d83882805d/evaluation-1/buggy/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Math/16/Math-16-Round1-s101-08d83882805d/evaluation-1/buggy/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.219,
+  "stdout": "[INFO] 899 classes instrumented to /workspace/GRT/Result_Round1/Math/16/Math-16-Round1-s101-08d83882805d/evaluation-1/buggy/instrumented.\n",
+  "stderr": ""
+}

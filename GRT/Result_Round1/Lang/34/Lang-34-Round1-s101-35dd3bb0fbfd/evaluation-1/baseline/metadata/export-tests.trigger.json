@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-34-Round1-s101-35dd3bb0fbfd/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.769,
+  "stdout": "org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionHierarchy\norg.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceTwoVarsReflectionObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayArrayCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionyteArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionhortArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testSimpleReflectionObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionByteArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycleLevel2\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayAndObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArrayArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionShortArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testSelfInstanceVarReflectionObjectCycle\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArray\norg.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArrayArray",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

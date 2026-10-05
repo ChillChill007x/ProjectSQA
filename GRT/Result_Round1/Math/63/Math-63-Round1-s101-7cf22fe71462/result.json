@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "run_id": "Math-63-Round1-s101-7cf22fe71462",
+  "unit": {
+    "project": "Math",
+    "bug": "63",
+    "target": "org.apache.commons.math.util.MathUtils",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T08:39:30.942503+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Math/63/Math-63-Round1-s101-7cf22fe71462",
+    "tests": "GRT/Test/Math/63/Math-63-Round1-s101-7cf22fe71462",
+    "config": "GRT/Configuration/Math/63/Math-63-Round1-s101-7cf22fe71462"
+  },
+  "generation_time_sec": 3.393,
+  "test_sha256": {
+    "GRT/Test/Math/63/Math-63-Round1-s101-7cf22fe71462/org/apache/commons/math/util/SqaGeneratedTest.java": "4ccd33ace62747f560e441f76db244d5ed08a9b3e7411469a896c7b4e340671e"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.math.util.MathUtilsTest::testArrayEquals",
+    "available_triggers": [
+      "org.apache.commons.math.util.MathUtilsTest::testArrayEquals"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 3,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 227,
+      "tests": [
+        "org.apache.commons.math.util.SqaGeneratedTest::test0",
+        "org.apache.commons.math.util.SqaGeneratedTest::test1",
+        "org.apache.commons.math.util.SqaGeneratedTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 23,
+      "line_total": 511,
+      "line_coverage_percent": 4.500978473581213,
+      "branch_covered": 12,
+      "branch_total": 434,
+      "branch_coverage_percent": 2.7649769585253456
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 3,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 104,
+      "tests": [
+        "org.apache.commons.math.util.SqaGeneratedTest::test0",
+        "org.apache.commons.math.util.SqaGeneratedTest::test1",
+        "org.apache.commons.math.util.SqaGeneratedTest::test2"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 23,
+      "line_total": 511,
+      "line_coverage_percent": 4.500978473581213,
+      "branch_covered": 12,
+      "branch_total": 440,
+      "branch_coverage_percent": 2.727272727272727
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Math/63/Math-63-Round1-s101-7cf22fe71462/evaluation-1",
+  "finished_at": "2026-10-05T08:42:56.689706+00:00"
+}

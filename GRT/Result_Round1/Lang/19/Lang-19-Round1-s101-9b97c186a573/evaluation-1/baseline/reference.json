@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity",
+  "available_triggers": [
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity",
+    "org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,1 @@
+{"run_count":3,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":84,"tests":["org.apache.commons.math.util.SqaGeneratedTest::test0","org.apache.commons.math.util.SqaGeneratedTest::test1","org.apache.commons.math.util.SqaGeneratedTest::test2"],"failures":[],"passed":true}

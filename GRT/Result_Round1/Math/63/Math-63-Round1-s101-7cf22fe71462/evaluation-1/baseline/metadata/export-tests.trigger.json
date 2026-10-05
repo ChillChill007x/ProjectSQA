@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-63-Round1-s101-7cf22fe71462/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.857,
+  "stdout": "org.apache.commons.math.util.MathUtilsTest::testArrayEquals",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

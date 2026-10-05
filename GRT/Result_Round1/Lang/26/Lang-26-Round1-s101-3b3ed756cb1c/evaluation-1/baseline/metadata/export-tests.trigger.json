@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-26-Round1-s101-3b3ed756cb1c/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.64,
+  "stdout": "org.apache.commons.lang3.time.FastDateFormatTest::testLang645",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

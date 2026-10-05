@@ -1,0 +1,13 @@
+{
+  "trigger": "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString",
+  "available_triggers": [
+    "org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString",
+    "org.jsoup.helper.DataUtilTest::shouldNotThrowExceptionOnEmptyCharset",
+    "org.jsoup.helper.DataUtilTest::testQuotedCharset",
+    "org.jsoup.helper.DataUtilTest::shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags",
+    "org.jsoup.helper.DataUtilTest::shouldReturnNullForIllegalCharsetNames",
+    "org.jsoup.integration.ParseTest::testBrokenHtml5CharsetWithASingleDoubleQuote"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

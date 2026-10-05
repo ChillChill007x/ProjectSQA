@@ -1,0 +1,455 @@
+{
+  "updated_at": "2026-10-05T00:36:00.282694+00:00",
+  "expected_bugs": 22,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 19,
+    "FAILED": 3
+  },
+  "bugs": [
+    {
+      "project": "JxPath",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/1/JxPath-1-Round1-s101-38eef07c3a62/result.json",
+          "started_at": "2026-10-04T23:34:01.318363+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/1/JxPath-1-Round1-s101-a1b39ed14438/result.json",
+          "started_at": "2026-10-04T23:35:35.160019+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.Expression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.Expression": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/2/JxPath-2-Round1-s101-fd306105d3ac/result.json",
+          "started_at": "2026-10-04T23:37:30.003938+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/3/JxPath-3-Round1-s101-9bafe5183826/result.json",
+          "started_at": "2026-10-04T23:39:26.931637+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "4",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/4/JxPath-4-Round1-s101-a4d10f711058/result.json",
+          "started_at": "2026-10-04T23:41:21.000231+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/4/JxPath-4-Round1-s101-01f20564da2f/result.json",
+          "started_at": "2026-10-04T23:42:56.813838+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.NodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.NodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/5/JxPath-5-Round1-s101-26e44d97725a/result.json",
+          "started_at": "2026-10-04T23:44:47.401423+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/6/JxPath-6-Round1-s101-45fbf9181263/result.json",
+          "started_at": "2026-10-04T23:46:44.245617+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-31d338bdbe17/result.json",
+          "started_at": "2026-10-04T23:48:40.710672+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-f78ab26663a8/result.json",
+          "started_at": "2026-10-04T23:50:20.278233+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-e168f6d615de/result.json",
+          "started_at": "2026-10-04T23:51:50.161462+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-618f340f8b40/result.json",
+          "started_at": "2026-10-04T23:53:20.405007+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/7/JxPath-7-Round1-s101-1122df152c8d/result.json",
+          "started_at": "2026-10-04T23:54:50.266727+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/8/JxPath-8-Round1-s101-95ce8defc5c4/result.json",
+          "started_at": "2026-10-04T23:56:37.992431+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual",
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-9b5237421caa/result.json",
+          "started_at": "2026-10-04T23:58:30.553532+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-e028da8ce10e/result.json",
+          "started_at": "2026-10-05T00:00:05.609347+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationNotEqual": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-6eef1ebf89ca/result.json",
+          "started_at": "2026-10-05T00:01:39.215925+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/10/JxPath-10-Round1-s101-8372eac430c6/result.json",
+          "started_at": "2026-10-05T00:03:31.918518+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/11/JxPath-11-Round1-s101-23558b7232dd/result.json",
+          "started_at": "2026-10-05T00:05:25.079605+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/11/JxPath-11-Round1-s101-62dd7e0d9d33/result.json",
+          "started_at": "2026-10-05T00:06:59.997396+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/12/JxPath-12-Round1-s101-2d87e11959c1/result.json",
+          "started_at": "2026-10-05T00:08:55.750582+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.NamespaceResolver",
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.NamespaceResolver": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-27f3a750a20c/result.json",
+          "started_at": "2026-10-05T00:10:59.253117+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23/result.json",
+          "started_at": "2026-10-05T00:12:25.979113+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreFunction"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreFunction": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/14/JxPath-14-Round1-s101-8ae58e9a7c1f/result.json",
+          "started_at": "2026-10-05T00:14:19.800564+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.axes.UnionContext"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.axes.UnionContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/15/JxPath-15-Round1-s101-127b9968e4a5/result.json",
+          "started_at": "2026-10-05T00:16:12.008386+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/16/JxPath-16-Round1-s101-5cc984dd5f73/result.json",
+          "started_at": "2026-10-05T00:18:04.232796+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/16/JxPath-16-Round1-s101-3d98eff6e3ae/result.json",
+          "started_at": "2026-10-05T00:19:38.110539+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/17/JxPath-17-Round1-s101-0813f7a53a1c/result.json",
+          "started_at": "2026-10-05T00:21:32.001732+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/17/JxPath-17-Round1-s101-32eb126314d8/result.json",
+          "started_at": "2026-10-05T00:23:06.757632+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.axes.AttributeContext"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.axes.AttributeContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/18/JxPath-18-Round1-s101-baf3d3bec071/result.json",
+          "started_at": "2026-10-05T00:24:59.550697+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer",
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/19/JxPath-19-Round1-s101-8a1d3c9d61fc/result.json",
+          "started_at": "2026-10-05T00:26:51.865991+00:00",
+          "error": null
+        },
+        "org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/19/JxPath-19-Round1-s101-9926c5a98c24/result.json",
+          "started_at": "2026-10-05T00:28:29.498851+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/20/JxPath-20-Round1-s101-e7cc87383d15/result.json",
+          "started_at": "2026-10-05T00:30:22.177038+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.beans.PropertyPointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.beans.PropertyPointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/21/JxPath-21-Round1-s101-7c28b9260384/result.json",
+          "started_at": "2026-10-05T00:32:30.770552+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JxPath",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer"
+      ],
+      "units": {
+        "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JxPath/22/JxPath-22-Round1-s101-a88f87757f6b/result.json",
+          "started_at": "2026-10-05T00:34:25.645477+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

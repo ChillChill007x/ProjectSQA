@@ -1,0 +1,346 @@
+[
+  {
+    "archive": "member3-grt-round1-results.zip",
+    "archive_sha256": "70529a10b1781e598c725c142386f1c3226e88550c64f4f33782bea0bdddda62",
+    "projects": [
+      {
+        "project": "JacksonXml",
+        "counts": {
+          "EVALUATED": 5,
+          "FAILED": 1
+        },
+        "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52"
+      },
+      {
+        "project": "Jsoup",
+        "counts": {
+          "EVALUATED": 68,
+          "FAILED": 25
+        },
+        "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52"
+      },
+      {
+        "project": "JxPath",
+        "counts": {
+          "EVALUATED": 19,
+          "FAILED": 3
+        },
+        "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52"
+      },
+      {
+        "project": "Lang",
+        "counts": {
+          "EVALUATED": 54,
+          "FAILED": 7
+        },
+        "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52"
+      },
+      {
+        "project": "Math",
+        "counts": {
+          "FAILED": 22,
+          "EVALUATED": 84
+        },
+        "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52"
+      }
+    ],
+    "target_counts": {
+      "EVALUATED": 274,
+      "COMPILE_FAIL": 29,
+      "INVALID_ORACLE": 12,
+      "FLAKY": 16,
+      "COVERAGE_ERROR": 1,
+      "NO_TESTS": 15
+    },
+    "java_checksums_checked": 274,
+    "errors": [],
+    "conflicting_local_files": [],
+    "selected_files": 15032,
+    "candidate_runs": 45,
+    "candidate_bugs": 37,
+    "candidates": [
+      {
+        "project": "Jsoup",
+        "bug": "8",
+        "result_path": "GRT/Result_Round1/Jsoup/8/Jsoup-8-Round1-s101-50ee0dee07ff/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "18",
+        "result_path": "GRT/Result_Round1/Jsoup/18/Jsoup-18-Round1-s101-7d9dceb9aa02/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "22",
+        "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-903a3aea4bec/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "22",
+        "result_path": "GRT/Result_Round1/Jsoup/22/Jsoup-22-Round1-s101-6c59a976ca58/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "26",
+        "result_path": "GRT/Result_Round1/Jsoup/26/Jsoup-26-Round1-s101-d5e9e3f2c2fc/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "34",
+        "result_path": "GRT/Result_Round1/Jsoup/34/Jsoup-34-Round1-s101-d8ebb1bd8f03/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "50",
+        "result_path": "GRT/Result_Round1/Jsoup/50/Jsoup-50-Round1-s101-4e060efa9662/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "52",
+        "result_path": "GRT/Result_Round1/Jsoup/52/Jsoup-52-Round1-s101-f82428a03de9/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "60",
+        "result_path": "GRT/Result_Round1/Jsoup/60/Jsoup-60-Round1-s101-ca62e89420ed/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "72",
+        "result_path": "GRT/Result_Round1/Jsoup/72/Jsoup-72-Round1-s101-c1a947318ac8/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "79",
+        "result_path": "GRT/Result_Round1/Jsoup/79/Jsoup-79-Round1-s101-25bbe7192f9f/result.json"
+      },
+      {
+        "project": "Jsoup",
+        "bug": "89",
+        "result_path": "GRT/Result_Round1/Jsoup/89/Jsoup-89-Round1-s101-75732e0bf7d1/result.json"
+      },
+      {
+        "project": "JxPath",
+        "bug": "9",
+        "result_path": "GRT/Result_Round1/JxPath/9/JxPath-9-Round1-s101-9b5237421caa/result.json"
+      },
+      {
+        "project": "JxPath",
+        "bug": "13",
+        "result_path": "GRT/Result_Round1/JxPath/13/JxPath-13-Round1-s101-34d7870c2e23/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "9",
+        "result_path": "GRT/Result_Round1/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "23",
+        "result_path": "GRT/Result_Round1/Lang/23/Lang-23-Round1-s101-566df58da5bb/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "29",
+        "result_path": "GRT/Result_Round1/Lang/29/Lang-29-Round1-s101-759990a8417d/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "33",
+        "result_path": "GRT/Result_Round1/Lang/33/Lang-33-Round1-s101-6da09461fa03/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "41",
+        "result_path": "GRT/Result_Round1/Lang/41/Lang-41-Round1-s101-28120fad3d30/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "45",
+        "result_path": "GRT/Result_Round1/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "57",
+        "result_path": "GRT/Result_Round1/Lang/57/Lang-57-Round1-s101-8e96231a5f92/result.json"
+      },
+      {
+        "project": "Lang",
+        "bug": "60",
+        "result_path": "GRT/Result_Round1/Lang/60/Lang-60-Round1-s101-1bf697df243c/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "3",
+        "result_path": "GRT/Result_Round1/Math/3/Math-3-Round1-s101-1ca29a3781c8/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "4",
+        "result_path": "GRT/Result_Round1/Math/4/Math-4-Round1-s101-9869aa4364a4/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-db125dd0214d/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-ecb8fcc1cf1a/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-efeb8f5b6925/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-294b1a479b4e/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-5166765fc645/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-1bec5c2ee622/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "6",
+        "result_path": "GRT/Result_Round1/Math/6/Math-6-Round1-s101-feccdf8866ed/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "13",
+        "result_path": "GRT/Result_Round1/Math/13/Math-13-Round1-s101-7567da43aa28/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "14",
+        "result_path": "GRT/Result_Round1/Math/14/Math-14-Round1-s101-42af0659b112/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "22",
+        "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-df11dcc738bf/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "22",
+        "result_path": "GRT/Result_Round1/Math/22/Math-22-Round1-s101-b808dd4f4bfb/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "35",
+        "result_path": "GRT/Result_Round1/Math/35/Math-35-Round1-s101-b62c59302f76/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "54",
+        "result_path": "GRT/Result_Round1/Math/54/Math-54-Round1-s101-abef7cfc7915/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "66",
+        "result_path": "GRT/Result_Round1/Math/66/Math-66-Round1-s101-880b692c2a7d/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "67",
+        "result_path": "GRT/Result_Round1/Math/67/Math-67-Round1-s101-f5784e3f32df/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "70",
+        "result_path": "GRT/Result_Round1/Math/70/Math-70-Round1-s101-f935261a9568/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "77",
+        "result_path": "GRT/Result_Round1/Math/77/Math-77-Round1-s101-565163bc0a34/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "89",
+        "result_path": "GRT/Result_Round1/Math/89/Math-89-Round1-s101-8927c2933f62/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "92",
+        "result_path": "GRT/Result_Round1/Math/92/Math-92-Round1-s101-8ebe3eae5a4e/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "95",
+        "result_path": "GRT/Result_Round1/Math/95/Math-95-Round1-s101-b5a5815e5fa3/result.json"
+      },
+      {
+        "project": "Math",
+        "bug": "103",
+        "result_path": "GRT/Result_Round1/Math/103/Math-103-Round1-s101-3f151280e5ec/result.json"
+      }
+    ]
+  },
+  {
+    "archive": "GRT.zip",
+    "archive_sha256": "7e36edc43f25e53da325aeb5933e1de2efabc387fb7dc20cbe4213a0ef6f7938",
+    "projects": [
+      {
+        "project": "Mockito",
+        "counts": {
+          "EVALUATED": 35,
+          "FAILED": 3
+        },
+        "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9"
+      },
+      {
+        "project": "Time",
+        "counts": {
+          "EVALUATED": 16,
+          "FAILED": 10
+        },
+        "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9"
+      }
+    ],
+    "target_counts": {
+      "EVALUATED": 61,
+      "FLAKY": 5,
+      "COMPILE_FAIL": 5,
+      "COVERAGE_ERROR": 1,
+      "INVALID_ORACLE": 5
+    },
+    "java_checksums_checked": 61,
+    "errors": [],
+    "conflicting_local_files": [],
+    "selected_files": 3659,
+    "candidate_runs": 4,
+    "candidate_bugs": 4,
+    "candidates": [
+      {
+        "project": "Mockito",
+        "bug": "2",
+        "result_path": "GRT/Result_Round1/Mockito/2/Mockito-2-Round1-s101-4fdd06f05260/result.json"
+      },
+      {
+        "project": "Mockito",
+        "bug": "11",
+        "result_path": "GRT/Result_Round1/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/result.json"
+      },
+      {
+        "project": "Mockito",
+        "bug": "35",
+        "result_path": "GRT/Result_Round1/Mockito/35/Mockito-35-Round1-s101-578b6626b8f9/result.json"
+      },
+      {
+        "project": "Time",
+        "bug": "11",
+        "result_path": "GRT/Result_Round1/Time/11/Time-11-Round1-s101-f7418572e956/result.json"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-91-Round1-s101-31b8ae490a74/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.294,
+  "stdout": "org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored\norg.jsoup.integration.ConnectTest::testBinaryResultThrows\norg.jsoup.integration.ParseTest::testBinaryThrowsException",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

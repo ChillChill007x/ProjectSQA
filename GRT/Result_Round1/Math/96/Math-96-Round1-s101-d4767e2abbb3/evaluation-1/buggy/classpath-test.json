@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Math-96-Round1-s101-d4767e2abbb3/evaluation-1/buggy/target/classes",
+    "/workspace/work/checkouts/Math-96-Round1-s101-d4767e2abbb3/evaluation-1/buggy/target/test-classes",
+    "/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar"
+  ],
+  "missing_entries": []
+}

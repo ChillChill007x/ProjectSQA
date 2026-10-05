@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-27-Round1-s101-a6a316d4f009/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.974,
+  "stdout": "org.apache.commons.math3.fraction.FractionTest::testMath835",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

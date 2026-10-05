@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Lang-32-Round1-s101-a2abd8753e02/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.711,
+  "stdout": "org.apache.commons.lang3.builder.HashCodeBuilderTest::testReflectionObjectCycle",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-9-Round1-s101-0986f7beaaa7",
+  "unit": {
+    "project": "Mockito",
+    "bug": "9",
+    "target": "org.mockito.internal.stubbing.answers.CallsRealMethods",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T11:00:07.766929+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/9/Mockito-9-Round1-s101-0986f7beaaa7",
+    "tests": "GRT/Test/Mockito/9/Mockito-9-Round1-s101-0986f7beaaa7",
+    "config": "GRT/Configuration/Mockito/9/Mockito-9-Round1-s101-0986f7beaaa7"
+  },
+  "generation_time_sec": 30.289,
+  "test_sha256": {
+    "GRT/Test/Mockito/9/Mockito-9-Round1-s101-0986f7beaaa7/org/mockito/internal/stubbing/answers/SqaGeneratedTest.java": "36f02e29aa02ba27f37224916a36a7073993aed50bc7853189ad79df312f57f4"
+  },
+  "reference_validation": {
+    "trigger": "org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodStubbed",
+    "available_triggers": [
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodStubbed",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::testCallsRealInterfaceMethod",
+      "org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodReturnsDefault"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 2,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 88,
+      "tests": [
+        "org.mockito.internal.stubbing.answers.SqaGeneratedTest::test0",
+        "org.mockito.internal.stubbing.answers.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 4,
+      "line_coverage_percent": 25.0,
+      "branch_covered": 0,
+      "branch_total": 2,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 2,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 59,
+      "tests": [
+        "org.mockito.internal.stubbing.answers.SqaGeneratedTest::test0",
+        "org.mockito.internal.stubbing.answers.SqaGeneratedTest::test1"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 1,
+      "line_total": 2,
+      "line_coverage_percent": 50.0,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Mockito/9/Mockito-9-Round1-s101-0986f7beaaa7/evaluation-1",
+  "finished_at": "2026-10-05T11:09:42.887512+00:00"
+}

@@ -1,0 +1,988 @@
+{
+  "updated_at": "2026-10-05T03:27:07.631704+00:00",
+  "expected_bugs": 61,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 54,
+    "FAILED": 7
+  },
+  "bugs": [
+    {
+      "project": "Lang",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/1/Lang-1-Round1-s101-a38113562115/result.json",
+          "started_at": "2026-10-05T00:36:19.571285+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/3/Lang-3-Round1-s101-2f33a0a0958a/result.json",
+          "started_at": "2026-10-05T00:39:03.053097+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.translate.LookupTranslator"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.translate.LookupTranslator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/4/Lang-4-Round1-s101-94802ac40b62/result.json",
+          "started_at": "2026-10-05T00:41:48.049926+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.LocaleUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.LocaleUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/5/Lang-5-Round1-s101-26ea901d65c1/result.json",
+          "started_at": "2026-10-05T00:44:36.268617+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/6/Lang-6-Round1-s101-cc7900b8cf81/result.json",
+          "started_at": "2026-10-05T00:47:26.249474+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/7/Lang-7-Round1-s101-122e3f8a4fca/result.json",
+          "started_at": "2026-10-05T00:50:17.439537+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.time.FastDatePrinter"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.FastDatePrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/8/Lang-8-Round1-s101-20bd1a497ce8/result.json",
+          "started_at": "2026-10-05T00:53:07.505801+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.FastDateParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/9/Lang-9-Round1-s101-965b2c3ea2b1/result.json",
+          "started_at": "2026-10-05T00:55:55.866837+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.time.FastDateParser"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.FastDateParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/10/Lang-10-Round1-s101-92c9d53fb799/result.json",
+          "started_at": "2026-10-05T00:58:38.399734+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.RandomStringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/11/Lang-11-Round1-s101-5ba9d5651d4f/result.json",
+          "started_at": "2026-10-05T01:02:02.831049+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "12",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.RandomStringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.RandomStringUtils": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Lang/12/Lang-12-Round1-s101-4c1b9d4a0586/result.json",
+          "started_at": "2026-10-05T01:05:03.138043+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.SerializationUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.SerializationUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/13/Lang-13-Round1-s101-51af16a6a839/result.json",
+          "started_at": "2026-10-05T01:07:54.776486+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/14/Lang-14-Round1-s101-163c1bfd33a9/result.json",
+          "started_at": "2026-10-05T01:10:45.184480+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.reflect.TypeUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.reflect.TypeUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/15/Lang-15-Round1-s101-3dd2dfd49e72/result.json",
+          "started_at": "2026-10-05T01:13:37.085523+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/16/Lang-16-Round1-s101-893889d0d689/result.json",
+          "started_at": "2026-10-05T01:16:37.476796+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.translate.CharSequenceTranslator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/17/Lang-17-Round1-s101-ea35912447d4/result.json",
+          "started_at": "2026-10-05T01:19:51.547927+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/19/Lang-19-Round1-s101-9b97c186a573/result.json",
+          "started_at": "2026-10-05T01:22:55.640583+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/20/Lang-20-Round1-s101-9bf9cc1a528e/result.json",
+          "started_at": "2026-10-05T01:26:04.015122+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "21",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.time.DateUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.DateUtils": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Lang/21/Lang-21-Round1-s101-6632f38f1b6f/result.json",
+          "started_at": "2026-10-05T01:29:16.161352+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "22",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.math.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.Fraction": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Lang/22/Lang-22-Round1-s101-7dec4cddb2f0/result.json",
+          "started_at": "2026-10-05T01:32:03.371359+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.ExtendedMessageFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.ExtendedMessageFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/23/Lang-23-Round1-s101-566df58da5bb/result.json",
+          "started_at": "2026-10-05T01:34:48.446710+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/24/Lang-24-Round1-s101-5ab32d06371f/result.json",
+          "started_at": "2026-10-05T01:37:42.745210+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "26",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.FastDateFormat": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Lang/26/Lang-26-Round1-s101-3b3ed756cb1c/result.json",
+          "started_at": "2026-10-05T01:40:24.671991+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/27/Lang-27-Round1-s101-6424d98a04da/result.json",
+          "started_at": "2026-10-05T01:43:02.744148+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper"
+      ],
+      "units": {
+        "org.apache.commons.lang3.text.translate.NumericEntityUnescaper": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/28/Lang-28-Round1-s101-81a103d93ecb/result.json",
+          "started_at": "2026-10-05T01:45:50.799525+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.SystemUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.SystemUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/29/Lang-29-Round1-s101-759990a8417d/result.json",
+          "started_at": "2026-10-05T01:48:37.219475+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/30/Lang-30-Round1-s101-db683ce630cf/result.json",
+          "started_at": "2026-10-05T01:51:12.809974+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "31",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/31/Lang-31-Round1-s101-a451c42218a5/result.json",
+          "started_at": "2026-10-05T01:53:45.213392+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "32",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder"
+      ],
+      "units": {
+        "org.apache.commons.lang3.builder.HashCodeBuilder": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Lang/32/Lang-32-Round1-s101-a2abd8753e02/result.json",
+          "started_at": "2026-10-05T01:56:19.373130+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.ClassUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.ClassUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/33/Lang-33-Round1-s101-6da09461fa03/result.json",
+          "started_at": "2026-10-05T01:58:54.131751+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "34",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang3.builder.ToStringStyle"
+      ],
+      "units": {
+        "org.apache.commons.lang3.builder.ToStringStyle": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Lang/34/Lang-34-Round1-s101-35dd3bb0fbfd/result.json",
+          "started_at": "2026-10-05T02:01:38.779508+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.ArrayUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/35/Lang-35-Round1-s101-6827f0d61e3d/result.json",
+          "started_at": "2026-10-05T02:04:19.251604+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/36/Lang-36-Round1-s101-317671a7a436/result.json",
+          "started_at": "2026-10-05T02:07:13.916191+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.ArrayUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.ArrayUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/37/Lang-37-Round1-s101-11d525094035/result.json",
+          "started_at": "2026-10-05T02:10:25.729597+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.time.FastDateFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang3.time.FastDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/38/Lang-38-Round1-s101-a4a1a9dd383d/result.json",
+          "started_at": "2026-10-05T02:13:03.609687+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "39",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang3.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang3.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/39/Lang-39-Round1-s101-799184f379b5/result.json",
+          "started_at": "2026-10-05T02:15:45.708577+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/40/Lang-40-Round1-s101-8da28c42475c/result.json",
+          "started_at": "2026-10-05T02:18:26.290160+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "41",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.ClassUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.ClassUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/41/Lang-41-Round1-s101-28120fad3d30/result.json",
+          "started_at": "2026-10-05T02:20:57.631296+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "42",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.Entities"
+      ],
+      "units": {
+        "org.apache.commons.lang.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/42/Lang-42-Round1-s101-13883301b3b1/result.json",
+          "started_at": "2026-10-05T02:23:31.322507+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "43",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.text.ExtendedMessageFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang.text.ExtendedMessageFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/43/Lang-43-Round1-s101-5b41ddb7f6fc/result.json",
+          "started_at": "2026-10-05T02:26:09.656810+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "44",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/44/Lang-44-Round1-s101-ba825754e32e/result.json",
+          "started_at": "2026-10-05T02:29:18.172915+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "45",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.WordUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.WordUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/45/Lang-45-Round1-s101-d1e0d19f2b54/result.json",
+          "started_at": "2026-10-05T02:32:16.892886+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "46",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.StringEscapeUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/46/Lang-46-Round1-s101-4139026a00aa/result.json",
+          "started_at": "2026-10-05T02:34:58.111173+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "47",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ],
+      "units": {
+        "org.apache.commons.lang.text.StrBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/47/Lang-47-Round1-s101-1287799fad61/result.json",
+          "started_at": "2026-10-05T02:37:42.763160+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "49",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.lang.math.Fraction"
+      ],
+      "units": {
+        "org.apache.commons.lang.math.Fraction": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Lang/49/Lang-49-Round1-s101-f15c7f8c605d/result.json",
+          "started_at": "2026-10-05T02:40:36.894894+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "50",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.FastDateFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.FastDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/50/Lang-50-Round1-s101-160cd7530a12/result.json",
+          "started_at": "2026-10-05T02:43:09.196790+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "51",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.BooleanUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.BooleanUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/51/Lang-51-Round1-s101-2e39dc219f2a/result.json",
+          "started_at": "2026-10-05T02:45:56.986384+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "52",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.StringEscapeUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.StringEscapeUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/52/Lang-52-Round1-s101-6d2baa5e6153/result.json",
+          "started_at": "2026-10-05T02:48:42.620222+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "53",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.DateUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.DateUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/53/Lang-53-Round1-s101-e786b3af0eca/result.json",
+          "started_at": "2026-10-05T02:51:28.474494+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "54",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.LocaleUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.LocaleUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/54/Lang-54-Round1-s101-a1d0fedc61f7/result.json",
+          "started_at": "2026-10-05T02:54:19.159743+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "55",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.StopWatch"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.StopWatch": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/55/Lang-55-Round1-s101-de83500f7285/result.json",
+          "started_at": "2026-10-05T02:57:07.902006+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "56",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.FastDateFormat"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.FastDateFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/56/Lang-56-Round1-s101-230d56c363a2/result.json",
+          "started_at": "2026-10-05T03:00:22.210961+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "57",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.LocaleUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.LocaleUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/57/Lang-57-Round1-s101-8e96231a5f92/result.json",
+          "started_at": "2026-10-05T03:03:10.916437+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "58",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.math.NumberUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.math.NumberUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/58/Lang-58-Round1-s101-21beb831da1c/result.json",
+          "started_at": "2026-10-05T03:05:55.371905+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "59",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ],
+      "units": {
+        "org.apache.commons.lang.text.StrBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/59/Lang-59-Round1-s101-ff626efe1ae1/result.json",
+          "started_at": "2026-10-05T03:08:40.642249+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "60",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ],
+      "units": {
+        "org.apache.commons.lang.text.StrBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/60/Lang-60-Round1-s101-1bf697df243c/result.json",
+          "started_at": "2026-10-05T03:11:29.175792+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "61",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.text.StrBuilder"
+      ],
+      "units": {
+        "org.apache.commons.lang.text.StrBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/61/Lang-61-Round1-s101-c9f112bb2208/result.json",
+          "started_at": "2026-10-05T03:14:14.509298+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "62",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.Entities"
+      ],
+      "units": {
+        "org.apache.commons.lang.Entities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/62/Lang-62-Round1-s101-9d4f81bb2fda/result.json",
+          "started_at": "2026-10-05T03:16:53.688113+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "63",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.DurationFormatUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.DurationFormatUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/63/Lang-63-Round1-s101-45b0e772d379/result.json",
+          "started_at": "2026-10-05T03:19:32.480381+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "64",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.enums.ValuedEnum"
+      ],
+      "units": {
+        "org.apache.commons.lang.enums.ValuedEnum": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/64/Lang-64-Round1-s101-fdbc7857b348/result.json",
+          "started_at": "2026-10-05T03:22:14.901655+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Lang",
+      "bug": "65",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.lang.time.DateUtils"
+      ],
+      "units": {
+        "org.apache.commons.lang.time.DateUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Lang/65/Lang-65-Round1-s101-3e5df25a3c13/result.json",
+          "started_at": "2026-10-05T03:24:54.392868+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

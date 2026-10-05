@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Math-29-Round1-s101-c24ca3f1d620/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.994,
+  "stdout": "org.apache.commons.math3.linear.SparseRealVectorTest::testEbeDivideMixedTypes\norg.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplyMixedTypes\norg.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplySameType",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

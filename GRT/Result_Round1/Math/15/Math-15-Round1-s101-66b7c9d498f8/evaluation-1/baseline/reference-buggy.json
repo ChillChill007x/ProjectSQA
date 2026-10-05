@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Math-15-Round1-s101-66b7c9d498f8/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.math3.util.FastMathTest::testMath904"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.367,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.math3.util.FastMathTest::testMath904\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

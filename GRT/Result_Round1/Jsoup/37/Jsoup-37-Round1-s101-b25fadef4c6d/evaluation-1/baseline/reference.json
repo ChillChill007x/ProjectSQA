@@ -1,0 +1,8 @@
+{
+  "trigger": "org.jsoup.nodes.ElementTest::testNotPretty",
+  "available_triggers": [
+    "org.jsoup.nodes.ElementTest::testNotPretty"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

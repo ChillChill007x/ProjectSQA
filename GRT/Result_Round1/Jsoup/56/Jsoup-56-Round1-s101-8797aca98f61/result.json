@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-56-Round1-s101-8797aca98f61",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "56",
+    "target": "org.jsoup.nodes.DocumentType",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-04T21:47:16.409415+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61",
+    "tests": "GRT/Test/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61",
+    "config": "GRT/Configuration/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61"
+  },
+  "generation_time_sec": 1.738,
+  "test_sha256": {
+    "GRT/Test/Jsoup/56/Jsoup-56-Round1-s101-8797aca98f61/org/jsoup/nodes/SqaGeneratedTest.java": "e501b28b739eeb982856caba96d98fb54bbf99e9b6e29e2152c53fe33500187c"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.nodes.DocumentTypeTest::testRoundTrip",
+    "available_triggers": [
+      "org.jsoup.nodes.DocumentTypeTest::testRoundTrip"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-04T21:48:38.932558+00:00"
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "run_id": "Mockito-11-Round1-s101-a77ac84d3ce9",
+  "unit": {
+    "project": "Mockito",
+    "bug": "11",
+    "target": "org.mockito.internal.creation.DelegatingMethod",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "23ed78b73f64850491b1a5eb210a99d4b02c74a382b9ffce07365eda4a0a5db9",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T11:09:40.407850+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9",
+    "tests": "GRT/Test/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9",
+    "config": "GRT/Configuration/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9"
+  },
+  "generation_time_sec": 30.291,
+  "test_sha256": {
+    "GRT/Test/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/org/mockito/internal/creation/SqaGeneratedTest.java": "d70c1efd96ee43be6b2e5a89d2c94b60c71a973a0a04ee2bb5a16c5cd625cc13"
+  },
+  "reference_validation": {
+    "trigger": "org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_equal",
+    "available_triggers": [
+      "org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_equal",
+      "org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_self"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 15,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 184,
+      "tests": [
+        "org.mockito.internal.creation.SqaGeneratedTest::test10",
+        "org.mockito.internal.creation.SqaGeneratedTest::test11",
+        "org.mockito.internal.creation.SqaGeneratedTest::test12",
+        "org.mockito.internal.creation.SqaGeneratedTest::test13",
+        "org.mockito.internal.creation.SqaGeneratedTest::test14",
+        "org.mockito.internal.creation.SqaGeneratedTest::test0",
+        "org.mockito.internal.creation.SqaGeneratedTest::test1",
+        "org.mockito.internal.creation.SqaGeneratedTest::test2",
+        "org.mockito.internal.creation.SqaGeneratedTest::test3",
+        "org.mockito.internal.creation.SqaGeneratedTest::test4",
+        "org.mockito.internal.creation.SqaGeneratedTest::test5",
+        "org.mockito.internal.creation.SqaGeneratedTest::test6",
+        "org.mockito.internal.creation.SqaGeneratedTest::test7",
+        "org.mockito.internal.creation.SqaGeneratedTest::test8",
+        "org.mockito.internal.creation.SqaGeneratedTest::test9"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 9,
+      "line_total": 19,
+      "line_coverage_percent": 47.36842105263158,
+      "branch_covered": 2,
+      "branch_total": 8,
+      "branch_coverage_percent": 25.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 15,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 71,
+      "tests": [
+        "org.mockito.internal.creation.SqaGeneratedTest::test10",
+        "org.mockito.internal.creation.SqaGeneratedTest::test11",
+        "org.mockito.internal.creation.SqaGeneratedTest::test12",
+        "org.mockito.internal.creation.SqaGeneratedTest::test13",
+        "org.mockito.internal.creation.SqaGeneratedTest::test14",
+        "org.mockito.internal.creation.SqaGeneratedTest::test0",
+        "org.mockito.internal.creation.SqaGeneratedTest::test1",
+        "org.mockito.internal.creation.SqaGeneratedTest::test2",
+        "org.mockito.internal.creation.SqaGeneratedTest::test3",
+        "org.mockito.internal.creation.SqaGeneratedTest::test4",
+        "org.mockito.internal.creation.SqaGeneratedTest::test5",
+        "org.mockito.internal.creation.SqaGeneratedTest::test6",
+        "org.mockito.internal.creation.SqaGeneratedTest::test7",
+        "org.mockito.internal.creation.SqaGeneratedTest::test8",
+        "org.mockito.internal.creation.SqaGeneratedTest::test9"
+      ],
+      "failures": [
+        {
+          "test": "org.mockito.internal.creation.SqaGeneratedTest::test8",
+          "exception": "java.lang.AssertionError",
+          "message": "Expected java.lang.NullPointerException",
+          "trace": "java.lang.AssertionError: Expected java.lang.NullPointerException\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.mockito.internal.creation.SqaGeneratedTest.test8(SqaGeneratedTest.java:87)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 7,
+      "line_total": 14,
+      "line_coverage_percent": 50.0,
+      "branch_covered": 0,
+      "branch_total": 4,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Mockito/11/Mockito-11-Round1-s101-a77ac84d3ce9/evaluation-1",
+  "finished_at": "2026-10-05T11:18:49.461615+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Mockito",
+    "-v",
+    "32b",
+    "-w",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-32-Round1-s101-46d523fb8371/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.345,
+  "stdout": "",
+  "stderr": "Checking out 4f7060cc to /workspace/work/parallel/grt/724/checkouts/Mockito OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: -e expression #1, char 84: unterminated `s' command\nsed: can't read /workspace/work/parallel/grt/724/checkouts/Mockito-32-Round1-s101-46d523fb8371/evaluation-1/buggy/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/parallel/grt/724/checkouts/Mockito-32-Round1-s101-46d523fb8371/evaluation-1/buggy/gradle/wrapper/gradle-wrapper.properties: No such file or directory\nsed: can't read /workspace/work/parallel/grt/724/checkouts/Mockito-32-Round1-s101-46d523fb8371/evaluation-1/buggy/buildSrc/build.gradle: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/parallel/grt/724/checkouts/Mockito-3 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 4f7060cc:d973b6f4..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Mockito-32b..................................... OK\n"
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Mockito/38/Mockito-38-Round1-s101-234faf89c41c/evaluation-1/buggy/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/parallel/grt/724/checkouts/Mockito-38-Round1-s101-234faf89c41c/evaluation-1/buggy/target/classes/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Mockito/38/Mockito-38-Round1-s101-234faf89c41c/evaluation-1/buggy/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.375,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Mockito/38/Mockito-38-Round1-s101-234faf89c41c/evaluation-1/buggy/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -Xmx1536m -XX:ActiveProcessorCount=2 -Djava.awt.headless=true\n"
+}

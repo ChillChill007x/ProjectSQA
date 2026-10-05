@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Jsoup-71-Round1-s101-346a816b5e71",
+  "unit": {
+    "project": "Jsoup",
+    "bug": "71",
+    "target": "org.jsoup.nodes.PseudoTextElement",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COVERAGE_ERROR",
+  "started_at": "2026-10-04T22:31:02.639875+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Jsoup/71/Jsoup-71-Round1-s101-346a816b5e71",
+    "tests": "GRT/Test/Jsoup/71/Jsoup-71-Round1-s101-346a816b5e71",
+    "config": "GRT/Configuration/Jsoup/71/Jsoup-71-Round1-s101-346a816b5e71"
+  },
+  "generation_time_sec": 2.542,
+  "test_sha256": {
+    "GRT/Test/Jsoup/71/Jsoup-71-Round1-s101-346a816b5e71/org/jsoup/nodes/SqaGeneratedTest.java": "5ed1491b84c2bfb7d51c5e5d7b5ec6dd41f70a737a88af98290b10e88ab5706a"
+  },
+  "reference_validation": {
+    "trigger": "org.jsoup.select.SelectorTest::splitOnBr",
+    "available_triggers": [
+      "org.jsoup.select.SelectorTest::splitOnBr",
+      "org.jsoup.select.SelectorTest::textAsElements"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Compiled target missing: /workspace/work/checkouts/Jsoup-71-Round1-s101-346a816b5e71/evaluation-1/buggy/target/classes/org/jsoup/nodes/PseudoTextElement.class",
+  "finished_at": "2026-10-04T22:32:42.730185+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-34-Round1-s101-d8ebb1bd8f03/evaluation-1/buggy",
+    "-t",
+    "org.jsoup.parser.CharacterReaderTest::nextIndexOfUnmatched"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.407,
+  "stdout": "Failing tests: 1\n  - org.jsoup.parser.CharacterReaderTest::nextIndexOfUnmatched\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

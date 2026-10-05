@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Lang-21-Round1-s101-6632f38f1b6f/evaluation-1/fixed",
+    "-t",
+    "org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 4.075,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

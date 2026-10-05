@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Jsoup-63-Round1-s101-c0476d1db92b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.344,
+  "stdout": "org.jsoup.parser.HtmlParserTest::selfClosingOnNonvoidIsError\norg.jsoup.parser.HtmlParserTest::selfClosingVoidIsNotAnError\norg.jsoup.parser.HtmlParserTest::tracksErrorsWhenRequested",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}
