@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-137-Round1-s101-962369eccb75/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion3\ncom.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion4\ncom.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testArguments\ncom.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testMakeLocalNamesUniqueWithContext1\ncom.google.javascript.jscomp.NormalizeTest::testRemoveDuplicateVarDeclarations2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

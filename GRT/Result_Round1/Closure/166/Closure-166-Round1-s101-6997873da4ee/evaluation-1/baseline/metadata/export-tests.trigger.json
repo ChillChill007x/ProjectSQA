@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-166-Round1-s101-6997873da4ee/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.TypeInferenceTest::testRecordInference\ncom.google.javascript.jscomp.TypeInferenceTest::testIssue785",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

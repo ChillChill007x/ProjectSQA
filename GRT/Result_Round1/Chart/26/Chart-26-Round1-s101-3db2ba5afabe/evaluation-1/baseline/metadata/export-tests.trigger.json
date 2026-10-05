@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-26-Round1-s101-3db2ba5afabe/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.jfree.chart.junit.AreaChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.BarChart3DTests::testDrawWithNullInfo\norg.jfree.chart.junit.BarChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.GanttChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.GanttChartTests::testDrawWithNullInfo2\norg.jfree.chart.junit.LineChart3DTests::testDrawWithNullInfo\norg.jfree.chart.junit.LineChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.StackedAreaChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.StackedBarChart3DTests::testDrawWithNullInfo\norg.jfree.chart.junit.StackedBarChartTests::testDrawWithNullInfo\norg.jfree.chart.junit.WaterfallChartTests::testDrawWithNullInfo\norg.jfree.chart.plot.junit.CategoryPlotTests::test1654215\norg.jfree.chart.plot.junit.CategoryPlotTests::testSerialization3\norg.jfree.chart.plot.junit.CategoryPlotTests::testSerialization4\norg.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.GroupedStackedBarRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.IntervalBarRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.LayeredBarRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.LevelRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.MinMaxCategoryRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullInfo\norg.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests::testDrawWithNullInfo",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

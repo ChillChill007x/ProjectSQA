@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.977336+00:00",
+  "run_id": "Codec-11-Round1-s101-68ae396c0096",
+  "project": "Codec",
+  "bug": "11",
+  "target": "org.apache.commons.codec.net.QuotedPrintableCodec",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Two-byte quoted-printable decode expects ArrayIndexOutOfBoundsException on fixed but not buggy. Patch is large and changes codec processing; a fixed-only error on a short input needs contract/root-cause review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 13,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test21",
+    "test58",
+    "test59"
+  ],
+  "test_sha256": {
+    "GRT/Test/Codec/11/Codec-11-Round1-s101-68ae396c0096/org/apache/commons/codec/net/SqaGeneratedTest.java": "43bb413c6b28bcca34423ecd054ea8751abc4bffbb152c109f7824cc90d81440"
+  },
+  "result_path": "GRT\\Result_Round1\\Codec\\11\\Codec-11-Round1-s101-68ae396c0096\\result.json",
+  "tests_path": "GRT/Test/Codec/11/Codec-11-Round1-s101-68ae396c0096",
+  "evaluation_path": "GRT/Result_Round1/Codec/11/Codec-11-Round1-s101-68ae396c0096/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Codec/patches/11.src.patch",
+  "patch_sha256": "dba5726616e4257189ace414620c5636f2b83619c38a12edd8fd4f7230c4da45",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

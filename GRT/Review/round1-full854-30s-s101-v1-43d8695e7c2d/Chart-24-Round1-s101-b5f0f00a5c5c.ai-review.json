@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.889355+00:00",
+  "run_id": "Chart-24-Round1-s101-b5f0f00a5c5c",
+  "project": "Chart",
+  "bug": "24",
+  "target": "org.jfree.chart.renderer.GrayPaintScale",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "GrayPaintScale receives a value above the configured upper bound; buggy constructs an invalid Color. Patch uses the clamped value in the gray-level formula.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 15,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test22",
+    "test31",
+    "test39"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/24/Chart-24-Round1-s101-b5f0f00a5c5c/org/jfree/chart/renderer/SqaGeneratedTest.java": "b7d6c44115d667c986c65e5036d4b196e29bf020467f3dc118327b88ff949dd3"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\24\\Chart-24-Round1-s101-b5f0f00a5c5c\\result.json",
+  "tests_path": "GRT/Test/Chart/24/Chart-24-Round1-s101-b5f0f00a5c5c",
+  "evaluation_path": "GRT/Result_Round1/Chart/24/Chart-24-Round1-s101-b5f0f00a5c5c/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/24.src.patch",
+  "patch_sha256": "6df66c87f0da99031bb38d05919331fd9444692954fc83a910e7df311a70d449",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

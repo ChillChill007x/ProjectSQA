@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Compress-41-Round1-s101-ccf229958911/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Compress/41/Compress-41-Round1-s101-ccf229958911/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.922,
+  "stdout": "[INFO] 248 classes instrumented to /workspace/GRT/Result_Round1/Compress/41/Compress-41-Round1-s101-ccf229958911/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

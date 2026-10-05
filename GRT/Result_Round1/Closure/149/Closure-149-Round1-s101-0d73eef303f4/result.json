@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-149-Round1-s101-0d73eef303f4",
+  "unit": {
+    "project": "Closure",
+    "bug": "149",
+    "target": "com.google.javascript.jscomp.CompilerOptions",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T00:37:55.128338+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Closure/149/Closure-149-Round1-s101-0d73eef303f4",
+    "tests": "GRT/Test/Closure/149/Closure-149-Round1-s101-0d73eef303f4",
+    "config": "GRT/Configuration/Closure/149/Closure-149-Round1-s101-0d73eef303f4"
+  },
+  "generation_time_sec": 0.715,
+  "test_sha256": {
+    "GRT/Test/Closure/149/Closure-149-Round1-s101-0d73eef303f4/com/google/javascript/jscomp/SqaGeneratedTest.java": "9ecb9cff1ad2ca3072b839446d37c70e15f885e83dc5fd332ae6c6612d48c0ec"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.CommandLineRunnerTest::testCharSetExpansion",
+    "available_triggers": [
+      "com.google.javascript.jscomp.CommandLineRunnerTest::testCharSetExpansion"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T00:38:46.291912+00:00"
+}

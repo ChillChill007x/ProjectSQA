@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-30-Round1-s101-cbc923988be7/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.databind.jsontype.TestExternalId::testBigDecimal965"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.166,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.databind.jsontype.TestExternalId::testBigDecimal965\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-158-Round1-s101-107621c654d0",
+  "unit": {
+    "project": "Closure",
+    "bug": "158",
+    "target": "com.google.javascript.jscomp.CommandLineRunner",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "TOOL_ERROR",
+  "started_at": "2026-10-05T00:58:58.953983+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-107621c654d0",
+    "tests": "GRT/Test/Closure/158/Closure-158-Round1-s101-107621c654d0",
+    "config": "GRT/Configuration/Closure/158/Closure-158-Round1-s101-107621c654d0"
+  },
+  "error": "Command failed; see /workspace/GRT/Result_Round1/Closure/158/Closure-158-Round1-s101-107621c654d0/generation/generation-process.json\nthe compiler version to stderr.\n --warning_level [QUIET | DEFAULT | VER : Specifies the warning level to use. Op\n BOSE]                                  : tions: QUIET, DEFAULT, VERBOSE\njava.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:710)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:646)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:596)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:276)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n",
+  "finished_at": "2026-10-05T00:59:11.715623+00:00"
+}

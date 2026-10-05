@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-53-Round1-s101-5f563cdd1cfa/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.databind.jsontype.TypeRefinementForMap1215Test::testMapRefinement",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-155-Round1-s101-7eef2706af45/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.InlineVariablesTest::testArgumentsModifiedInInnerFunction\ncom.google.javascript.jscomp.InlineVariablesTest::testArgumentsModifiedInOuterFunction\ncom.google.javascript.jscomp.InlineVariablesTest::testIssue378ModifiedArguments1\ncom.google.javascript.jscomp.InlineVariablesTest::testIssue378ModifiedArguments2\ncom.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments1\ncom.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments2\ncom.google.javascript.jscomp.InlineVariablesTest::testIssue378EscapedArguments4",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

@@ -1,0 +1,442 @@
+{
+  "updated_at": "2026-10-04T18:46:43.912513+00:00",
+  "expected_bugs": 26,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 23,
+    "FAILED": 3
+  },
+  "bugs": [
+    {
+      "project": "Chart",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.AbstractCategoryItemRenderer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/1/Chart-1-Round1-s101-82c702171abb/result.json",
+          "started_at": "2026-10-04T16:46:37.541123+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.general.DatasetUtilities"
+      ],
+      "units": {
+        "org.jfree.data.general.DatasetUtilities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/2/Chart-2-Round1-s101-42a2465c3824/result.json",
+          "started_at": "2026-10-04T17:03:43.738854+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/3/Chart-3-Round1-s101-c776c6896a30/result.json",
+          "started_at": "2026-10-04T17:20:14.471681+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.XYPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.XYPlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/4/Chart-4-Round1-s101-b196a2593a1e/result.json",
+          "started_at": "2026-10-04T17:36:08.311728+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "5",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.xy.XYSeries"
+      ],
+      "units": {
+        "org.jfree.data.xy.XYSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Chart/5/Chart-5-Round1-s101-f015e12b14ba/result.json",
+          "started_at": "2026-10-04T17:52:01.504807+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.util.ShapeList"
+      ],
+      "units": {
+        "org.jfree.chart.util.ShapeList": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/6/Chart-6-Round1-s101-95a5a163cabc-attempt2/result.json",
+          "started_at": "2026-10-04T18:20:22.988828+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.time.TimePeriodValues"
+      ],
+      "units": {
+        "org.jfree.data.time.TimePeriodValues": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/7/Chart-7-Round1-s101-78c953d8d721/result.json",
+          "started_at": "2026-10-04T18:21:31.124734+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.time.Week"
+      ],
+      "units": {
+        "org.jfree.data.time.Week": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/8/Chart-8-Round1-s101-1a3073a96505/result.json",
+          "started_at": "2026-10-04T18:22:40.709646+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "9",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Chart/9/Chart-9-Round1-s101-58515431f7dd/result.json",
+          "started_at": "2026-10-04T18:23:48.234259+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator"
+      ],
+      "units": {
+        "org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/10/Chart-10-Round1-s101-43074e484fc3/result.json",
+          "started_at": "2026-10-04T18:24:41.532227+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.util.ShapeUtilities"
+      ],
+      "units": {
+        "org.jfree.chart.util.ShapeUtilities": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/11/Chart-11-Round1-s101-2369f99d6ee4/result.json",
+          "started_at": "2026-10-04T18:25:47.269878+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.MultiplePiePlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.MultiplePiePlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/12/Chart-12-Round1-s101-59e70317ff16/result.json",
+          "started_at": "2026-10-04T18:26:53.531323+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.block.BorderArrangement"
+      ],
+      "units": {
+        "org.jfree.chart.block.BorderArrangement": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/13/Chart-13-Round1-s101-5bea4cc8db2e/result.json",
+          "started_at": "2026-10-04T18:28:10.811264+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.CategoryPlot",
+        "org.jfree.chart.plot.XYPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.CategoryPlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/14/Chart-14-Round1-s101-d84b123e3046/result.json",
+          "started_at": "2026-10-04T18:29:20.619774+00:00",
+          "error": null
+        },
+        "org.jfree.chart.plot.XYPlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/14/Chart-14-Round1-s101-b26d13755cdf/result.json",
+          "started_at": "2026-10-04T18:30:27.073869+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.PiePlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.PiePlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/15/Chart-15-Round1-s101-b99d50fdc443/result.json",
+          "started_at": "2026-10-04T18:31:42.093717+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.category.DefaultIntervalCategoryDataset"
+      ],
+      "units": {
+        "org.jfree.data.category.DefaultIntervalCategoryDataset": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/16/Chart-16-Round1-s101-956560577162/result.json",
+          "started_at": "2026-10-04T18:32:55.497884+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "17",
+      "status": "FAILED",
+      "targets": [
+        "org.jfree.data.time.TimeSeries"
+      ],
+      "units": {
+        "org.jfree.data.time.TimeSeries": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Chart/17/Chart-17-Round1-s101-1ec2301f8ac0/result.json",
+          "started_at": "2026-10-04T18:34:05.704364+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.DefaultKeyedValues",
+        "org.jfree.data.DefaultKeyedValues2D"
+      ],
+      "units": {
+        "org.jfree.data.DefaultKeyedValues": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/18/Chart-18-Round1-s101-b0bff53279f6/result.json",
+          "started_at": "2026-10-04T18:34:58.954955+00:00",
+          "error": null
+        },
+        "org.jfree.data.DefaultKeyedValues2D": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/18/Chart-18-Round1-s101-0a47abeda400/result.json",
+          "started_at": "2026-10-04T18:35:57.209881+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.CategoryPlot"
+      ],
+      "units": {
+        "org.jfree.chart.plot.CategoryPlot": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/19/Chart-19-Round1-s101-243b2186a6aa/result.json",
+          "started_at": "2026-10-04T18:37:03.580701+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.plot.ValueMarker"
+      ],
+      "units": {
+        "org.jfree.chart.plot.ValueMarker": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/20/Chart-20-Round1-s101-088fca1627e3/result.json",
+          "started_at": "2026-10-04T18:38:22.447640+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset"
+      ],
+      "units": {
+        "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/21/Chart-21-Round1-s101-6e70ea210744/result.json",
+          "started_at": "2026-10-04T18:39:33.349256+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.data.KeyedObjects2D"
+      ],
+      "units": {
+        "org.jfree.data.KeyedObjects2D": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/22/Chart-22-Round1-s101-ba153d4119d5/result.json",
+          "started_at": "2026-10-04T18:40:44.113021+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.MinMaxCategoryRenderer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/23/Chart-23-Round1-s101-45840cc78e2c/result.json",
+          "started_at": "2026-10-04T18:41:53.257532+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.GrayPaintScale"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.GrayPaintScale": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/24/Chart-24-Round1-s101-b5f0f00a5c5c/result.json",
+          "started_at": "2026-10-04T18:43:08.952900+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer"
+      ],
+      "units": {
+        "org.jfree.chart.renderer.category.StatisticalBarRenderer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/25/Chart-25-Round1-s101-e829da825bba/result.json",
+          "started_at": "2026-10-04T18:44:17.122748+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Chart",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.jfree.chart.axis.Axis"
+      ],
+      "units": {
+        "org.jfree.chart.axis.Axis": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Chart/26/Chart-26-Round1-s101-3db2ba5afabe/result.json",
+          "started_at": "2026-10-04T18:45:32.804146+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

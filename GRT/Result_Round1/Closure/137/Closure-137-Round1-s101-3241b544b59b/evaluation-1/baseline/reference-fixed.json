@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-137-Round1-s101-3241b544b59b/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion3"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.916,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

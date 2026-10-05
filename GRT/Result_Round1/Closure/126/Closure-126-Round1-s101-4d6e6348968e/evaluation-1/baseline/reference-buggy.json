@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-126-Round1-s101-4d6e6348968e/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.MinimizeExitPointsTest::testDontRemoveBreakInTryFinally"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.87,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.MinimizeExitPointsTest::testDontRemoveBreakInTryFinally\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

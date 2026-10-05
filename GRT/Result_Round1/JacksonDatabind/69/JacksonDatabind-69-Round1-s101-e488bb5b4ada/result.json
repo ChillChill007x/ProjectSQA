@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-69-Round1-s101-e488bb5b4ada",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "69",
+    "target": "com.fasterxml.jackson.databind.deser.impl.CreatorCollector",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T06:05:58.439107+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada",
+    "tests": "GRT/Test/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada",
+    "config": "GRT/Configuration/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada"
+  },
+  "generation_time_sec": 30.299,
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada/com/fasterxml/jackson/databind/deser/impl/SqaGeneratedTest.java": "ec3b892415271ae149143d7c99225e28b4c1ac806acb540ec525214668580a6d"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 6,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2224,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test1",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test2",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test3",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test4",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 9,
+      "line_total": 112,
+      "line_coverage_percent": 8.035714285714286,
+      "branch_covered": 0,
+      "branch_total": 72,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 6,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 2265,
+      "tests": [
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test1",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test2",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test3",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test4",
+        "com.fasterxml.jackson.databind.deser.impl.SqaGeneratedTest::test5"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 9,
+      "line_total": 112,
+      "line_coverage_percent": 8.035714285714286,
+      "branch_covered": 0,
+      "branch_total": 66,
+      "branch_coverage_percent": 0.0
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/JacksonDatabind/69/JacksonDatabind-69-Round1-s101-e488bb5b4ada/evaluation-1",
+  "finished_at": "2026-10-05T06:07:42.291192+00:00"
+}

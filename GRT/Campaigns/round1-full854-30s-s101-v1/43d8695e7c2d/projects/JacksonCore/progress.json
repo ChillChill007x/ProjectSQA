@@ -1,0 +1,490 @@
+{
+  "updated_at": "2026-10-05T04:07:32.901982+00:00",
+  "expected_bugs": 26,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 26
+  },
+  "bugs": [
+    {
+      "project": "JacksonCore",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.io.NumberInput",
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.io.NumberInput": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-b420ca59a634/result.json",
+          "started_at": "2026-10-05T03:45:37.279996+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/1/JacksonCore-1-Round1-s101-8d9066669303/result.json",
+          "started_at": "2026-10-05T03:46:09.344687+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/2/JacksonCore-2-Round1-s101-629fe8c5699a/result.json",
+          "started_at": "2026-10-05T03:46:46.345818+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/2/JacksonCore-2-Round1-s101-e99cd5b24d4b/result.json",
+          "started_at": "2026-10-05T03:47:18.473032+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/3/JacksonCore-3-Round1-s101-c6a3a90fdfac/result.json",
+          "started_at": "2026-10-05T03:47:57.031837+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/4/JacksonCore-4-Round1-s101-350eb8caeaeb/result.json",
+          "started_at": "2026-10-05T03:48:37.446259+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonPointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/5/JacksonCore-5-Round1-s101-bd21fb8e99f8/result.json",
+          "started_at": "2026-10-05T03:49:13.335780+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonPointer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonPointer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/6/JacksonCore-6-Round1-s101-a4a7de6bc2e6/result.json",
+          "started_at": "2026-10-05T03:49:46.672739+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.JsonWriteContext"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.JsonWriteContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/7/JacksonCore-7-Round1-s101-74038a79ca73/result.json",
+          "started_at": "2026-10-05T03:50:20.479944+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.TextBuffer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.TextBuffer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/8/JacksonCore-8-Round1-s101-17e3a4dd2ad4/result.json",
+          "started_at": "2026-10-05T03:50:56.626777+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.ParserMinimalBase",
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.ParserMinimalBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-f49b160a7a0e/result.json",
+          "started_at": "2026-10-05T03:51:34.384398+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-e9f4380aad1b/result.json",
+          "started_at": "2026-10-05T03:52:07.375245+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/9/JacksonCore-9-Round1-s101-c1ab9506df70/result.json",
+          "started_at": "2026-10-05T03:52:40.768154+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/10/JacksonCore-10-Round1-s101-e08abf4d0944/result.json",
+          "started_at": "2026-10-05T03:53:19.583353+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/11/JacksonCore-11-Round1-s101-59d9f005591a/result.json",
+          "started_at": "2026-10-05T03:53:54.828483+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/12/JacksonCore-12-Round1-s101-da9ec38c8015/result.json",
+          "started_at": "2026-10-05T03:54:30.791545+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/12/JacksonCore-12-Round1-s101-187372504a3e/result.json",
+          "started_at": "2026-10-05T03:55:04.433702+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.JsonGeneratorImpl"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.JsonGeneratorImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/13/JacksonCore-13-Round1-s101-0de2eb7440a9/result.json",
+          "started_at": "2026-10-05T03:55:42.493974+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.io.IOContext"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.io.IOContext": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/14/JacksonCore-14-Round1-s101-59aa52c3e7fa/result.json",
+          "started_at": "2026-10-05T03:56:21.824985+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/15/JacksonCore-15-Round1-s101-65c27fb59c6d/result.json",
+          "started_at": "2026-10-05T03:56:58.042607+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.JsonParserSequence"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.JsonParserSequence": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/16/JacksonCore-16-Round1-s101-6a498badf0e7/result.json",
+          "started_at": "2026-10-05T03:57:36.283348+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/17/JacksonCore-17-Round1-s101-8f10ef30ecc3/result.json",
+          "started_at": "2026-10-05T03:58:14.711956+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.GeneratorBase",
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator",
+        "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.GeneratorBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-8b91bf4f4030/result.json",
+          "started_at": "2026-10-05T03:58:51.318015+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-97661cb3f0d6/result.json",
+          "started_at": "2026-10-05T03:59:24.968315+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/18/JacksonCore-18-Round1-s101-8031de3768bc/result.json",
+          "started_at": "2026-10-05T03:59:59.210260+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser",
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-5477e06b1ecb/result.json",
+          "started_at": "2026-10-05T04:00:37.725416+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.json.UTF8StreamJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/19/JacksonCore-19-Round1-s101-b9ec27b945e1/result.json",
+          "started_at": "2026-10-05T04:01:11.216890+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.JsonGenerator"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.JsonGenerator": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/20/JacksonCore-20-Round1-s101-ae4f7a5b2035/result.json",
+          "started_at": "2026-10-05T04:01:49.939880+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "21",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/21/JacksonCore-21-Round1-s101-5a4ebbb3f6cb/result.json",
+          "started_at": "2026-10-05T04:02:29.498210+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.filter.FilteringParserDelegate": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/22/JacksonCore-22-Round1-s101-9b0360967c39/result.json",
+          "started_at": "2026-10-05T04:03:13.313994+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.util.DefaultPrettyPrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/23/JacksonCore-23-Round1-s101-9126acce6cba/result.json",
+          "started_at": "2026-10-05T04:03:58.235325+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.base.ParserBase",
+        "com.fasterxml.jackson.core.base.ParserMinimalBase"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.base.ParserBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/24/JacksonCore-24-Round1-s101-c81936b09a8f/result.json",
+          "started_at": "2026-10-05T04:04:41.610805+00:00",
+          "error": null
+        },
+        "com.fasterxml.jackson.core.base.ParserMinimalBase": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/24/JacksonCore-24-Round1-s101-4a922d640456/result.json",
+          "started_at": "2026-10-05T04:05:21.255649+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.ReaderBasedJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/25/JacksonCore-25-Round1-s101-439525270088/result.json",
+          "started_at": "2026-10-05T04:06:06.073012+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "JacksonCore",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "com.fasterxml.jackson.core.json.async.NonBlockingJsonParser"
+      ],
+      "units": {
+        "com.fasterxml.jackson.core.json.async.NonBlockingJsonParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/JacksonCore/26/JacksonCore-26-Round1-s101-e5d502256159/result.json",
+          "started_at": "2026-10-05T04:06:50.460352+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

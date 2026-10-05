@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Closure",
+    "-v",
+    "56f",
+    "-w",
+    "/workspace/work/checkouts/Closure-56-Round1-s101-6e22f1d1c139/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.522,
+  "stdout": "",
+  "stderr": "Checking out 9e921fa9 to /workspace/work/checkouts/Closure-56-Round1-s101-6 OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nsed: can't read /workspace/work/checkouts/Closure-56-Round1-s101-6e22f1d1c139/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nsed: can't read /workspace/work/checkouts/Closure-56-Round1-s101-6e22f1d1c139/evaluation-1/fixed/lib/rhino/build.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 9e921fa9:f791e3a7..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Closure-56f..................................... OK\n"
+}

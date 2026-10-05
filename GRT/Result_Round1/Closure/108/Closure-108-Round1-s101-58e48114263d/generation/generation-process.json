@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=output=none,includes=com.google.javascript.jscomp.ScopedAliases*",
+    "-cp",
+    "/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/build/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/build/classes:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/args4j.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/guava.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/json.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/jsr305.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/protobuf-java.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/build/lib/rhino.jar:/workspace/work/checkouts/Closure-108-Round1-s101-58e48114263d/generation-fixed/lib/ant.jar",
+    "sqa.grt.GuidedRandom",
+    "/workspace/GRT/Result_Round1/Closure/108/Closure-108-Round1-s101-58e48114263d/generation/grt-config.json"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.216,
+  "stdout": "",
+  "stderr": ""
+}

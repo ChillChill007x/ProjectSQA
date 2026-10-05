@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "Closure-169-Round1-s101-609a764c9b36",
+  "unit": {
+    "project": "Closure",
+    "bug": "169",
+    "target": "com.google.javascript.rhino.jstype.FunctionType",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T01:32:21.976205+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Closure/169/Closure-169-Round1-s101-609a764c9b36",
+    "tests": "GRT/Test/Closure/169/Closure-169-Round1-s101-609a764c9b36",
+    "config": "GRT/Configuration/Closure/169/Closure-169-Round1-s101-609a764c9b36"
+  },
+  "generation_time_sec": 1.016,
+  "test_sha256": {
+    "GRT/Test/Closure/169/Closure-169-Round1-s101-609a764c9b36/com/google/javascript/rhino/jstype/SqaGeneratedTest.java": "c8a3e99739c699bf9205bf2f742fe1b3f2e8a4b1e691154e2c8b3db95fe998fb"
+  },
+  "reference_validation": {
+    "trigger": "com.google.javascript.jscomp.TypeCheckTest::testIssue791",
+    "available_triggers": [
+      "com.google.javascript.jscomp.TypeCheckTest::testIssue791",
+      "com.google.javascript.rhino.jstype.RecordTypeTest::testSubtypeWithUnknowns2"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T01:33:51.397703+00:00"
+}

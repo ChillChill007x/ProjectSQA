@@ -1,0 +1,8 @@
+﻿{
+    "image_id":  "sha256:edd501748a9d62417ee8b46e7087c4d85778b29d8f1a2b547596c61e06516d10",
+    "note":  "Storage-only change. Historical results retained. No speedup measured yet.",
+    "work_path":  "/workspace/work",
+    "volume_source":  "grt-linux-work",
+    "mode":  "linux-volume-work",
+    "started_at":  "2026-10-04T18:19:40.4056350Z"
+}

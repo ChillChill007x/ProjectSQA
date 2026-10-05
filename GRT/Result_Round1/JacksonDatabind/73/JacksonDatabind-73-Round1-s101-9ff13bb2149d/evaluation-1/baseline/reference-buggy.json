@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-73-Round1-s101-9ff13bb2149d/evaluation-1/buggy",
+    "-t",
+    "com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.066,
+  "stdout": "Failing tests: 1\n  - com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

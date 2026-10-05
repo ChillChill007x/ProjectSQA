@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Chart",
+    "-v",
+    "15f",
+    "-w",
+    "/workspace/work/checkouts/Chart-15-Round1-s101-b99d50fdc443/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 3.571,
+  "stdout": "",
+  "stderr": "Checking out 749 to /workspace/work/checkouts/Chart-15-Round1-s101-b99d50fd OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nExcluding broken/flaky tests............................................... OK\nExcluding broken/flaky tests............................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff 749:747............................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Chart-15f....................................... OK\n"
+}

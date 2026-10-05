@@ -1,0 +1,18 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/build/classes",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/args4j.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/guava.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/json.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/jsr305.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/protobuf-java.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/build/lib/rhino.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/ant.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/ant-launcher.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/caja-r4314.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/jarjar.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/lib/junit.jar",
+    "/workspace/work/checkouts/Closure-170-Round1-s101-74ef2612268f/evaluation-1/buggy/build/test"
+  ],
+  "missing_entries": []
+}

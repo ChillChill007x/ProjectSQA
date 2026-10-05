@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.074985+00:00",
+  "run_id": "JacksonCore-10-Round1-s101-e08abf4d0944",
+  "project": "JacksonCore",
+  "bug": "10",
+  "target": "com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "calcHash differs with a fixed seed/input; patch changes hash mixing. Numeric implementation difference alone does not demonstrate the collision/correctness defect; needs defect-level review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test20"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/10/JacksonCore-10-Round1-s101-e08abf4d0944/com/fasterxml/jackson/core/sym/SqaGeneratedTest.java": "0fe98523a57b3d9ec0709d4f4a1fb8756317d9e436bde18c5b364f4b71453ca5"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\10\\JacksonCore-10-Round1-s101-e08abf4d0944\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/10/JacksonCore-10-Round1-s101-e08abf4d0944",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/10/JacksonCore-10-Round1-s101-e08abf4d0944/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/10.src.patch",
+  "patch_sha256": "3e0955446fd7246d3d23740ecebfb0fb5d27918a1421bb73067301d912908ce5",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

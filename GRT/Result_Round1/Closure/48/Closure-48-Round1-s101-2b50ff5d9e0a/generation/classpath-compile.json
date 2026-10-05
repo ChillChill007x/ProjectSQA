@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/build/classes",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/args4j.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/guava.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/json.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/jsr305.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/protobuf-java.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/build/lib/rhino.jar",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/generation-fixed/lib/ant.jar"
+  ],
+  "missing_entries": []
+}

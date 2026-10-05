@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.959114+00:00",
+  "run_id": "Closure-24-Round1-s101-c1491fa8a471",
+  "project": "Closure",
+  "bug": "24",
+  "target": "com.google.javascript.jscomp.ScopedAliases",
+  "ai_verdict": "timeout_not_confirmed",
+  "human_confirmed": null,
+  "analysis": "Buggy failure is a JUnit 4000ms timeout on synthetic AST traversal. Do not count timeout as a confirmed fault; hardware/runtime and input validity require investigation.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10"
+  ],
+  "test_sha256": {
+    "GRT/Test/Closure/24/Closure-24-Round1-s101-c1491fa8a471/com/google/javascript/jscomp/SqaGeneratedTest.java": "0022ae097914e82dbc0766b3692ac5cc74f130a5ecf269426b790e11bc1c780d"
+  },
+  "result_path": "GRT\\Result_Round1\\Closure\\24\\Closure-24-Round1-s101-c1491fa8a471\\result.json",
+  "tests_path": "GRT/Test/Closure/24/Closure-24-Round1-s101-c1491fa8a471",
+  "evaluation_path": "GRT/Result_Round1/Closure/24/Closure-24-Round1-s101-c1491fa8a471/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Closure/patches/24.src.patch",
+  "patch_sha256": "c5edf87bd23c1640cde28f2c0300d3d16530092882a607f488b7c6d1ca0002c8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

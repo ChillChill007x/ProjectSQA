@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-91-Round1-s101-6f46b63fe605/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CheckGlobalThisTest::testLendsAnnotation3"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.966,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CheckGlobalThisTest::testLendsAnnotation3\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

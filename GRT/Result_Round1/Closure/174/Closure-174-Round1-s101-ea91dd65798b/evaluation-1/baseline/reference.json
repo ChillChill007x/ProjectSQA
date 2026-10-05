@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a",
+  "available_triggers": [
+    "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a",
+    "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103b",
+    "com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103c"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

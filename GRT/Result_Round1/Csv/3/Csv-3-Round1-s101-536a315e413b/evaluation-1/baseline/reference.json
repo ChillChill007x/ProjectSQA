@@ -1,0 +1,10 @@
+{
+  "trigger": "org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue",
+  "available_triggers": [
+    "org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue",
+    "org.apache.commons.csv.CSVLexerTest::testEscapedCharacter",
+    "org.apache.commons.csv.CSVParserTest::testBackslashEscaping"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

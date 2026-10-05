@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.912233+00:00",
+  "run_id": "Cli-25-Round1-s101-eb8f87f4e6ec",
+  "project": "Cli",
+  "bug": "25",
+  "target": "org.apache.commons.cli.HelpFormatter",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Negative description padding and very small width cause different exceptions; patch changes indentation fallback. API preconditions require review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test4"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec/org/apache/commons/cli/SqaGeneratedTest.java": "0f3f6e4ae71c32268fccdd4f771566d14e569009d43d45c426c077544cdf192d"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\25\\Cli-25-Round1-s101-eb8f87f4e6ec\\result.json",
+  "tests_path": "GRT/Test/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec",
+  "evaluation_path": "GRT/Result_Round1/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/25.src.patch",
+  "patch_sha256": "c928e39088ff7885387c38127da4fdb3b1dbce3a03679679b60acc7069fd6059",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

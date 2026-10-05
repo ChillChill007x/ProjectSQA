@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Cli-1-Round1-s101-1f5c744f05a9/generation-fixed/target/classes",
+    "/workspace/work/checkouts/Cli-1-Round1-s101-1f5c744f05a9/generation-fixed/target/lib/commons-lang/jars/commons-lang-2.1.jar"
+  ],
+  "missing_entries": [
+    "/workspace/work/checkouts/Cli-1-Round1-s101-1f5c744f05a9/generation-fixed/target/lib/junit/jars/junit-3.8.1.jar"
+  ]
+}

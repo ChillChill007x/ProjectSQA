@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Chart-2-Round1-s101-42a2465c3824/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.566,
+  "stdout": "org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2\norg.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_3",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

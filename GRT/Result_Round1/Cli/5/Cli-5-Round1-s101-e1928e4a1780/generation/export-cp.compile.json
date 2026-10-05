@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Cli-5-Round1-s101-e1928e4a1780/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "/workspace/work/checkouts/Cli-5-Round1-s101-e1928e4a1780/generation-fixed/target/classes:/workspace/work/checkouts/Cli-5-Round1-s101-e1928e4a1780/generation-fixed/target/lib/junit-3.8.1.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

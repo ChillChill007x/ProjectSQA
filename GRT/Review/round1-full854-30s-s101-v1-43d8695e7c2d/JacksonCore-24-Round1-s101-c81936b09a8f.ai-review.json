@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.089513+00:00",
+  "run_id": "JacksonCore-24-Round1-s101-c81936b09a8f",
+  "project": "JacksonCore",
+  "bug": "24",
+  "target": "com.fasterxml.jackson.core.base.ParserBase",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Internal numeric-overflow reporter throws JsonParseException versus InputCoercionException; patch changes coercion error reporting. Synthetic parser state/direct protected call needs API-context review.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test55"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/24/JacksonCore-24-Round1-s101-c81936b09a8f/com/fasterxml/jackson/core/base/SqaGeneratedTest.java": "57fc736219cb75d0116a1de9a15ed8e3d784eece4fa2d1b7ad37c05a2a82e757"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\24\\JacksonCore-24-Round1-s101-c81936b09a8f\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/24/JacksonCore-24-Round1-s101-c81936b09a8f",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/24/JacksonCore-24-Round1-s101-c81936b09a8f/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/24.src.patch",
+  "patch_sha256": "8fb6479e2153575f469031adaf99b25b905f13d5ba0db1c6b50f90d0277ebbc7",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

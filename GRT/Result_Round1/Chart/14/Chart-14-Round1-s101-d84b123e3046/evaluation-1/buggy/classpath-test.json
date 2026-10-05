@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/Chart-14-Round1-s101-d84b123e3046/evaluation-1/buggy/build",
+    "/workspace/work/checkouts/Chart-14-Round1-s101-d84b123e3046/evaluation-1/buggy/lib/servlet.jar",
+    "/opt/defects4j/framework/projects/lib/junit-4.12-hamcrest-1.3.jar",
+    "/workspace/work/checkouts/Chart-14-Round1-s101-d84b123e3046/evaluation-1/buggy/build-tests"
+  ],
+  "missing_entries": []
+}

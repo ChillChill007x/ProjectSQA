@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-106-Round1-s101-a13b7b25038b/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.CheckSideEffectsTest::testJSDocComments\ncom.google.javascript.jscomp.CollapsePropertiesTest::testTwinReferenceCancelsChildCollapsing\ncom.google.javascript.jscomp.CollapsePropertiesTest::testCrashInNestedAssign\ncom.google.javascript.jscomp.CollapsePropertiesTest::testCrashInCommaOperator",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

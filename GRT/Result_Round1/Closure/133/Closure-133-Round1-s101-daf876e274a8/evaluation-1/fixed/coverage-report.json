@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Closure/133/Closure-133-Round1-s101-daf876e274a8/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Closure-133-Round1-s101-daf876e274a8/evaluation-1/fixed/build/classes/com/google/javascript/jscomp/parsing/JsDocInfoParser.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Closure/133/Closure-133-Round1-s101-daf876e274a8/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.214,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Closure/133/Closure-133-Round1-s101-daf876e274a8/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

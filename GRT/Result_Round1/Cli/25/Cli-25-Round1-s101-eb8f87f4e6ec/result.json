@@ -1,0 +1,110 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-25-Round1-s101-eb8f87f4e6ec",
+  "unit": {
+    "project": "Cli",
+    "bug": "25",
+    "target": "org.apache.commons.cli.HelpFormatter",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-04T19:05:22.954746+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec",
+    "tests": "GRT/Test/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec",
+    "config": "GRT/Configuration/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec"
+  },
+  "generation_time_sec": 1.518,
+  "test_sha256": {
+    "GRT/Test/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec/org/apache/commons/cli/SqaGeneratedTest.java": "0f3f6e4ae71c32268fccdd4f771566d14e569009d43d45c426c077544cdf192d"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored",
+    "available_triggers": [
+      "org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 7,
+  "fault_candidate": true,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 249,
+      "tests": [
+        "org.apache.commons.cli.SqaGeneratedTest::test0",
+        "org.apache.commons.cli.SqaGeneratedTest::test1",
+        "org.apache.commons.cli.SqaGeneratedTest::test2",
+        "org.apache.commons.cli.SqaGeneratedTest::test3",
+        "org.apache.commons.cli.SqaGeneratedTest::test4",
+        "org.apache.commons.cli.SqaGeneratedTest::test5",
+        "org.apache.commons.cli.SqaGeneratedTest::test6"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 49,
+      "line_total": 194,
+      "line_coverage_percent": 25.257731958762886,
+      "branch_covered": 29,
+      "branch_total": 112,
+      "branch_coverage_percent": 25.892857142857142
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 7,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 268,
+      "tests": [
+        "org.apache.commons.cli.SqaGeneratedTest::test0",
+        "org.apache.commons.cli.SqaGeneratedTest::test1",
+        "org.apache.commons.cli.SqaGeneratedTest::test2",
+        "org.apache.commons.cli.SqaGeneratedTest::test3",
+        "org.apache.commons.cli.SqaGeneratedTest::test4",
+        "org.apache.commons.cli.SqaGeneratedTest::test5",
+        "org.apache.commons.cli.SqaGeneratedTest::test6"
+      ],
+      "failures": [
+        {
+          "test": "org.apache.commons.cli.SqaGeneratedTest::test4",
+          "exception": "java.lang.NegativeArraySizeException",
+          "message": "-28",
+          "trace": "java.lang.NegativeArraySizeException: -28\n\tat java.base/java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:86)\n\tat java.base/java.lang.StringBuffer.<init>(StringBuffer.java:144)\n\tat org.apache.commons.cli.HelpFormatter.createPadding(HelpFormatter.java:921)\n\tat org.apache.commons.cli.HelpFormatter.renderOptions(HelpFormatter.java:717)\n\tat org.apache.commons.cli.HelpFormatter.printOptions(HelpFormatter.java:666)\n\tat org.apache.commons.cli.HelpFormatter.printHelp(HelpFormatter.java:489)\n\tat org.apache.commons.cli.SqaGeneratedTest.test4(SqaGeneratedTest.java:71)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+        }
+      ],
+      "passed": false
+    },
+    "coverage": {
+      "line_covered": 63,
+      "line_total": 194,
+      "line_coverage_percent": 32.47422680412371,
+      "branch_covered": 33,
+      "branch_total": 112,
+      "branch_coverage_percent": 29.464285714285715
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec/evaluation-1",
+  "finished_at": "2026-10-04T19:05:54.236280+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-153-Round1-s101-d5505290c5ac/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.NormalizeTest::testDuplicateVarInExterns\ncom.google.javascript.jscomp.NormalizeTest::testMakeLocalNamesUnique",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

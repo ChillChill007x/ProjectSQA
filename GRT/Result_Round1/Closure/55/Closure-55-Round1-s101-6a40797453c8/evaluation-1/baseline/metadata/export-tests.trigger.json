@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-55-Round1-s101-6a40797453c8/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.google.javascript.jscomp.FunctionRewriterTest::testIssue538",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

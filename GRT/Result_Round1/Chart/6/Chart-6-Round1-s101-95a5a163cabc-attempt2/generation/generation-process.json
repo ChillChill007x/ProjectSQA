@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=output=none,includes=org.jfree.chart.util.ShapeList*",
+    "-cp",
+    "/workspace/work/checkouts/Chart-6-Round1-s101-95a5a163cabc-attempt2/generation-fixed/build:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Chart-6-Round1-s101-95a5a163cabc-attempt2/generation-fixed/build:/workspace/work/checkouts/Chart-6-Round1-s101-95a5a163cabc-attempt2/generation-fixed/lib/servlet.jar",
+    "sqa.grt.GuidedRandom",
+    "/workspace/GRT/Result_Round1/Chart/6/Chart-6-Round1-s101-95a5a163cabc-attempt2/generation/grt-config.json"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.665,
+  "stdout": "",
+  "stderr": ""
+}

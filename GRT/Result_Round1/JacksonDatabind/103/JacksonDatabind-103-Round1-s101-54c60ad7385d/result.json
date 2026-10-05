@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-103-Round1-s101-54c60ad7385d",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "103",
+    "target": "com.fasterxml.jackson.databind.deser.SettableBeanProperty",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "RUNNING",
+  "started_at": "2026-10-05T07:11:28.252795+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-54c60ad7385d",
+    "tests": "GRT/Test/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-54c60ad7385d",
+    "config": "GRT/Configuration/JacksonDatabind/103/JacksonDatabind-103-Round1-s101-54c60ad7385d"
+  }
+}

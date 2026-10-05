@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Gson-2-Round1-s101-cf0f8e1c5d86/evaluation-1/fixed/target/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Gson/2/Gson-2-Round1-s101-cf0f8e1c5d86/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.268,
+  "stdout": "[INFO] 170 classes instrumented to /workspace/GRT/Result_Round1/Gson/2/Gson-2-Round1-s101-cf0f8e1c5d86/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

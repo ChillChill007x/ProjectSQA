@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-47-Round1-s101-99b47312a678/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testParseSourceMetaMap\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput0a\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultilineMapping\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultiFunctionMapping\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testLiteralMappingsGoldenOutput\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultilineMapping2\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMappingGoldenOutput\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testSourceMapMerging\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testLiteralMappings\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMapping1\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testBasicMapping2\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput1\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput2\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput3\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput4\ncom.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput5",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

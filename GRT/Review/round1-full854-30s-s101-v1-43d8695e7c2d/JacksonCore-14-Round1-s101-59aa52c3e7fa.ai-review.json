@@ -1,0 +1,32 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.082281+00:00",
+  "run_id": "JacksonCore-14-Round1-s101-59aa52c3e7fa",
+  "project": "JacksonCore",
+  "bug": "14",
+  "target": "com.fasterxml.jackson.core.io.IOContext",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "_verifyRelease rejects equal-sized distinct buffers on buggy; patch changes <= to <. Internal method invocation should be reported as such.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test52",
+    "test60"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonCore/14/JacksonCore-14-Round1-s101-59aa52c3e7fa/com/fasterxml/jackson/core/io/SqaGeneratedTest.java": "cd371c015e825518438b50697d18bdf23ec790582af8de29306f7e4c75accd4e"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonCore\\14\\JacksonCore-14-Round1-s101-59aa52c3e7fa\\result.json",
+  "tests_path": "GRT/Test/JacksonCore/14/JacksonCore-14-Round1-s101-59aa52c3e7fa",
+  "evaluation_path": "GRT/Result_Round1/JacksonCore/14/JacksonCore-14-Round1-s101-59aa52c3e7fa/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonCore/patches/14.src.patch",
+  "patch_sha256": "8c955a1c93e1cb06c3efe4dcbac573f946aadc6fe5025f7f4f60a75ee9bf39e8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-18-Round1-s101-8b91bf4f4030/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.core.json.TestJsonGeneratorFeatures::testTooBigBigDecimal",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

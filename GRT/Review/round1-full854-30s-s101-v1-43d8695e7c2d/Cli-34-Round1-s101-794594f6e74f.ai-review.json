@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.934920+00:00",
+  "run_id": "Cli-34-Round1-s101-794594f6e74f",
+  "project": "Cli",
+  "bug": "34",
+  "target": "org.apache.commons.cli.Option",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Option.getType returns null on buggy versus default String.class on fixed; patch changes default initialization.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 5,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test34",
+    "test44",
+    "test85"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/34/Cli-34-Round1-s101-794594f6e74f/org/apache/commons/cli/SqaGeneratedTest.java": "e8850cade34ba5ec47df29e1184b05a9fbaa4639f80794dba15acaf6b3bf6432"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\34\\Cli-34-Round1-s101-794594f6e74f\\result.json",
+  "tests_path": "GRT/Test/Cli/34/Cli-34-Round1-s101-794594f6e74f",
+  "evaluation_path": "GRT/Result_Round1/Cli/34/Cli-34-Round1-s101-794594f6e74f/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/34.src.patch",
+  "patch_sha256": "6f38e0fff00d3cca91c688698bb5a3dbefe6b7c8ecf20711f1a0f81adae1ad89",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

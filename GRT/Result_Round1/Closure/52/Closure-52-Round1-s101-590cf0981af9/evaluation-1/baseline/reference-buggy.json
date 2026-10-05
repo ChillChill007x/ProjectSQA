@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-52-Round1-s101-590cf0981af9/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CodePrinterTest::testNumericKeys"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.77,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CodePrinterTest::testNumericKeys\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

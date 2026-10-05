@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-javaagent:/opt/sqa/lib/jacocoagent.jar=output=none,includes=com.google.javascript.jscomp.AbstractCommandLineRunner*",
+    "-cp",
+    "/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/build/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/build/classes:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/ant_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/args4j_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/google_common_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/hamcrest-core-1.1.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/junit.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/checkouts/Closure-143-Round1-s101-a195edb2b12d/generation-fixed/lib/protobuf_deploy.jar",
+    "sqa.grt.GuidedRandom",
+    "/workspace/GRT/Result_Round1/Closure/143/Closure-143-Round1-s101-a195edb2b12d/generation/grt-config.json"
+  ],
+  "returncode": 254,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "",
+  "stderr": "java.lang.NullPointerException: in is null\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:104)\n\tat java.base/java.util.zip.ZipInputStream.<init>(ZipInputStream.java:83)\n\tat com.google.javascript.jscomp.CommandLineRunner.getDefaultExterns(CommandLineRunner.java:466)\n\tat com.google.javascript.jscomp.CommandLineRunner.createExterns(CommandLineRunner.java:451)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.doRun(AbstractCommandLineRunner.java:478)\n\tat com.google.javascript.jscomp.AbstractCommandLineRunner.run(AbstractCommandLineRunner.java:185)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat sqa.grt.GuidedRandom.lambda$execute$9(GuidedRandom.java:309)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n"
+}

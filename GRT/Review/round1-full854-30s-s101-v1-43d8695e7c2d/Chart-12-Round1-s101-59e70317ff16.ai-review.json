@@ -1,0 +1,32 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.863170+00:00",
+  "run_id": "Chart-12-Round1-s101-59e70317ff16",
+  "project": "Chart",
+  "bug": "12",
+  "target": "org.jfree.chart.plot.MultiplePiePlot",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "Cloning MultiplePiePlot yields a null dataset group on buggy; patch routes constructor through setDataset instead of assigning directly.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 2,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test95",
+    "test96"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/12/Chart-12-Round1-s101-59e70317ff16/org/jfree/chart/plot/SqaGeneratedTest.java": "cf9b736e59e7c27c06a1b8df27f429eba638b62cb7b5fe3b502658ab7a603e48"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\12\\Chart-12-Round1-s101-59e70317ff16\\result.json",
+  "tests_path": "GRT/Test/Chart/12/Chart-12-Round1-s101-59e70317ff16",
+  "evaluation_path": "GRT/Result_Round1/Chart/12/Chart-12-Round1-s101-59e70317ff16/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/12.src.patch",
+  "patch_sha256": "e3cbe4579f40db5916280e32af03e2448230017b340a5ac4077e940a382f2edc",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

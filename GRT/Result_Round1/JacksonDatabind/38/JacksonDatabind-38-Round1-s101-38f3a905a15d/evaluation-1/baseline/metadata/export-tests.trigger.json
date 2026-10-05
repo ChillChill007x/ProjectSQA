@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-38-Round1-s101-38f3a905a15d/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType\ncom.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitCollectionType\ncom.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testPOJOSubType",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

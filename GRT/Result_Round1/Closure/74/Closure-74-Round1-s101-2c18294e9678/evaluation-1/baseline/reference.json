@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldComparison3",
+  "available_triggers": [
+    "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldComparison3",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testInvertibleOperators",
+    "com.google.javascript.jscomp.PeepholeFoldConstantsTest::testCommutativeOperators"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

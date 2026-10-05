@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-26-Round1-s101-ff70a20c7e26/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.923,
+  "stdout": "com.google.javascript.jscomp.CommandLineRunnerTest::testTransformAMDAndProcessCJS\ncom.google.javascript.jscomp.CommandLineRunnerTest::testProcessCJS\ncom.google.javascript.jscomp.ProcessCommonJSModulesTest::testExports\ncom.google.javascript.jscomp.ProcessCommonJSModulesTest::testModuleName\ncom.google.javascript.jscomp.ProcessCommonJSModulesTest::testDash\ncom.google.javascript.jscomp.ProcessCommonJSModulesTest::testVarRenaming\ncom.google.javascript.jscomp.ProcessCommonJSModulesTest::testWithoutExports",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

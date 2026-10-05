@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-104-Round1-s101-f84ef2c5b21a",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "104",
+    "target": "com.fasterxml.jackson.databind.util.StdDateFormat",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COMPILE_FAIL",
+  "started_at": "2026-10-05T07:30:33.719096+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/104/JacksonDatabind-104-Round1-s101-f84ef2c5b21a",
+    "tests": "GRT/Test/JacksonDatabind/104/JacksonDatabind-104-Round1-s101-f84ef2c5b21a",
+    "config": "GRT/Configuration/JacksonDatabind/104/JacksonDatabind-104-Round1-s101-f84ef2c5b21a"
+  },
+  "generation_time_sec": 0.967,
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/104/JacksonDatabind-104-Round1-s101-f84ef2c5b21a/com/fasterxml/jackson/databind/util/SqaGeneratedTest.java": "de41e111929e8dcf281b4aff9d6943e1d60211b0b79b63ba2e6a28667a26fc9b"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
+      "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_BCE"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Generated test compile failed; see compile-generated.json",
+  "finished_at": "2026-10-05T07:31:28.535134+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "/workspace/work/checkouts/JacksonDatabind-68-Round1-s101-e312878869cb/generation-fixed/target/classes",
+    "/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar",
+    "/opt/defects4j/framework/projects/JacksonDatabind/lib/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar"
+  ],
+  "missing_entries": []
+}

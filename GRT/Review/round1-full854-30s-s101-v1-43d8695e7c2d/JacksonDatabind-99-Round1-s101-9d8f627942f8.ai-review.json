@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.114060+00:00",
+  "run_id": "JacksonDatabind-99-Round1-s101-9d8f627942f8",
+  "project": "JacksonDatabind",
+  "bug": "99",
+  "target": "com.fasterxml.jackson.databind.type.ReferenceType",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "ReferenceType type-name string is missing a closing > on buggy; patch adds that delimiter. The representative uses synthetic recursive types, so limit the claim to observed formatting behavior.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test37"
+  ],
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/99/JacksonDatabind-99-Round1-s101-9d8f627942f8/com/fasterxml/jackson/databind/type/SqaGeneratedTest.java": "b453bb03c9e090a89210d4fa47c4505253eb22bf20219dbfd410d05aee8ffa66"
+  },
+  "result_path": "GRT\\Result_Round1\\JacksonDatabind\\99\\JacksonDatabind-99-Round1-s101-9d8f627942f8\\result.json",
+  "tests_path": "GRT/Test/JacksonDatabind/99/JacksonDatabind-99-Round1-s101-9d8f627942f8",
+  "evaluation_path": "GRT/Result_Round1/JacksonDatabind/99/JacksonDatabind-99-Round1-s101-9d8f627942f8/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/JacksonDatabind/patches/99.src.patch",
+  "patch_sha256": "9485a0146ebc387cfd7f73e544c176744c7d1cdf579fd883456e06b835f90eda",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

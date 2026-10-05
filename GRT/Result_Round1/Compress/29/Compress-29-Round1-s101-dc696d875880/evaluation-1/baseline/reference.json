@@ -1,0 +1,10 @@
+{
+  "trigger": "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+  "available_triggers": [
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStreamAutodetect",
+    "org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingOutputStream"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

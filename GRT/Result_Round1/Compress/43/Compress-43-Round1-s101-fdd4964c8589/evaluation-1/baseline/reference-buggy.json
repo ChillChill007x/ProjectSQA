@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Compress-43-Round1-s101-fdd4964c8589/evaluation-1/buggy",
+    "-t",
+    "org.apache.commons.compress.archivers.zip.DataDescriptorTest::doesntWriteDataDescriptorWhenAddingRawEntries"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.966,
+  "stdout": "Failing tests: 1\n  - org.apache.commons.compress.archivers.zip.DataDescriptorTest::doesntWriteDataDescriptorWhenAddingRawEntries\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

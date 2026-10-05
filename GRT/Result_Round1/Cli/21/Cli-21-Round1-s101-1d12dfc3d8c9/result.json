@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "run_id": "Cli-21-Round1-s101-1d12dfc3d8c9",
+  "unit": {
+    "project": "Cli",
+    "bug": "21",
+    "target": "org.apache.commons.cli2.WriteableCommandLine",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "COVERAGE_ERROR",
+  "started_at": "2026-10-04T19:02:21.727276+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/Cli/21/Cli-21-Round1-s101-1d12dfc3d8c9",
+    "tests": "GRT/Test/Cli/21/Cli-21-Round1-s101-1d12dfc3d8c9",
+    "config": "GRT/Configuration/Cli/21/Cli-21-Round1-s101-1d12dfc3d8c9"
+  },
+  "generation_time_sec": 0.465,
+  "test_sha256": {
+    "GRT/Test/Cli/21/Cli-21-Round1-s101-1d12dfc3d8c9/org/apache/commons/cli2/SqaGeneratedTest.java": "76939efc378d5c86db9c3595aafc42b0d4853233512402074c5dced6dc527878"
+  },
+  "reference_validation": {
+    "trigger": "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber",
+    "available_triggers": [
+      "org.apache.commons.cli2.bug.BugCLI150Test::testNegativeNumber"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "error": "Missing LINE counter",
+  "finished_at": "2026-10-04T19:02:43.995633+00:00"
+}

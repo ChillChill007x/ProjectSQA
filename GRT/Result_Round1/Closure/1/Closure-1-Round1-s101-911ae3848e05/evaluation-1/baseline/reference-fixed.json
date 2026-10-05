@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-1-Round1-s101-911ae3848e05/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 2.971,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

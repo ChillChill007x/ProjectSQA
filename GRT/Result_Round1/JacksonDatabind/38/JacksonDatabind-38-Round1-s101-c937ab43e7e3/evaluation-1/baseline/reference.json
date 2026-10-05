@@ -1,0 +1,10 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType",
+    "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitCollectionType",
+    "com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testPOJOSubType"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

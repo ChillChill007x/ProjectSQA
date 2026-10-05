@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/Codec-12-Round1-s101-f1424d8b6ed5/evaluation-1/fixed/target/classes/org/apache/commons/codec/binary/BaseNCodecInputStream.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.164,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

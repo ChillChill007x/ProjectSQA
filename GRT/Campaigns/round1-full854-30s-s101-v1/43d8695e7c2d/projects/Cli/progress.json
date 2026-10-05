@@ -1,0 +1,720 @@
+{
+  "updated_at": "2026-10-04T19:15:50.678036+00:00",
+  "expected_bugs": 39,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 33,
+    "FAILED": 6
+  },
+  "bugs": [
+    {
+      "project": "Cli",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.CommandLine"
+      ],
+      "units": {
+        "org.apache.commons.cli.CommandLine": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/1/Cli-1-Round1-s101-1f5c744f05a9/result.json",
+          "started_at": "2026-10-04T18:49:46.039573+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/2/Cli-2-Round1-s101-42d7df2a7232/result.json",
+          "started_at": "2026-10-04T18:50:19.862853+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/3/Cli-3-Round1-s101-dfa08dd1158b/result.json",
+          "started_at": "2026-10-04T18:50:54.631480+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/4/Cli-4-Round1-s101-bbe815084d4a/result.json",
+          "started_at": "2026-10-04T18:51:28.227933+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Util"
+      ],
+      "units": {
+        "org.apache.commons.cli.Util": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/5/Cli-5-Round1-s101-e1928e4a1780/result.json",
+          "started_at": "2026-10-04T18:52:02.468008+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.builder.PatternBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli2.builder.PatternBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/7/Cli-7-Round1-s101-5e096282218c/result.json",
+          "started_at": "2026-10-04T18:52:35.810303+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/8/Cli-8-Round1-s101-fef9bc97f2d8/result.json",
+          "started_at": "2026-10-04T18:53:10.439073+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/9/Cli-9-Round1-s101-c217a48f34de/result.json",
+          "started_at": "2026-10-04T18:53:42.006858+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/10/Cli-10-Round1-s101-466b415d1cca/result.json",
+          "started_at": "2026-10-04T18:54:13.624412+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/11/Cli-11-Round1-s101-7ca4af026677/result.json",
+          "started_at": "2026-10-04T18:54:45.004310+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.GnuParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.GnuParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/12/Cli-12-Round1-s101-1985ba9cc76d/result.json",
+          "started_at": "2026-10-04T18:55:16.357239+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.ArgumentImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.WriteableCommandLine": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "GRT/Result_Round1/Cli/13/Cli-13-Round1-s101-dbbd26351d95/result.json",
+          "started_at": "2026-10-04T18:55:50.764400+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/13/Cli-13-Round1-s101-f2268cc827f8/result.json",
+          "started_at": "2026-10-04T18:56:13.012316+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.ArgumentImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/13/Cli-13-Round1-s101-73c8718d838c/result.json",
+          "started_at": "2026-10-04T18:56:37.526889+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.option.GroupImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/14/Cli-14-Round1-s101-3d52d6f75034/result.json",
+          "started_at": "2026-10-04T18:57:12.821553+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/15/Cli-15-Round1-s101-0051deeefdfb/result.json",
+          "started_at": "2026-10-04T18:57:48.501760+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "16",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.Option",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl",
+        "org.apache.commons.cli2.option.OptionImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.Option": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "GRT/Result_Round1/Cli/16/Cli-16-Round1-s101-45d5d64776e5/result.json",
+          "started_at": "2026-10-04T18:58:22.778532+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/16/Cli-16-Round1-s101-6e8f1b0ddc44/result.json",
+          "started_at": "2026-10-04T18:58:44.868912+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/16/Cli-16-Round1-s101-cd399522385c/result.json",
+          "started_at": "2026-10-04T18:59:09.268363+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.OptionImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/16/Cli-16-Round1-s101-0058402caeaa/result.json",
+          "started_at": "2026-10-04T18:59:33.433437+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/17/Cli-17-Round1-s101-161683423bde/result.json",
+          "started_at": "2026-10-04T19:00:02.507647+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/18/Cli-18-Round1-s101-b84fa22c2153/result.json",
+          "started_at": "2026-10-04T19:00:37.417156+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "19",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/19/Cli-19-Round1-s101-6345cc0ef73c/result.json",
+          "started_at": "2026-10-04T19:01:12.166453+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "20",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/20/Cli-20-Round1-s101-b07533f6cd7f/result.json",
+          "started_at": "2026-10-04T19:01:47.226823+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "21",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli2.WriteableCommandLine",
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl",
+        "org.apache.commons.cli2.option.GroupImpl"
+      ],
+      "units": {
+        "org.apache.commons.cli2.WriteableCommandLine": {
+          "status": "COVERAGE_ERROR",
+          "result_path": "GRT/Result_Round1/Cli/21/Cli-21-Round1-s101-1d12dfc3d8c9/result.json",
+          "started_at": "2026-10-04T19:02:21.727276+00:00",
+          "error": "Missing LINE counter"
+        },
+        "org.apache.commons.cli2.commandline.WriteableCommandLineImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/21/Cli-21-Round1-s101-5b9b8e409042/result.json",
+          "started_at": "2026-10-04T19:02:44.069452+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.cli2.option.GroupImpl": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/21/Cli-21-Round1-s101-0dd16ddd7030/result.json",
+          "started_at": "2026-10-04T19:03:08.639490+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "22",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.PosixParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.PosixParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/22/Cli-22-Round1-s101-f7b16aa51287/result.json",
+          "started_at": "2026-10-04T19:03:37.912125+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "23",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/23/Cli-23-Round1-s101-07a083433914/result.json",
+          "started_at": "2026-10-04T19:04:12.530983+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "24",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/24/Cli-24-Round1-s101-29b3bb8550da/result.json",
+          "started_at": "2026-10-04T19:04:46.889956+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "25",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/25/Cli-25-Round1-s101-eb8f87f4e6ec/result.json",
+          "started_at": "2026-10-04T19:05:22.954746+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "26",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/26/Cli-26-Round1-s101-b4f1a259941e/result.json",
+          "started_at": "2026-10-04T19:05:58.164399+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "27",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionGroup"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionGroup": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/27/Cli-27-Round1-s101-55bbbb6b1bb8/result.json",
+          "started_at": "2026-10-04T19:06:29.561091+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "28",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/28/Cli-28-Round1-s101-877cc7732ff0/result.json",
+          "started_at": "2026-10-04T19:07:00.375153+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "29",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Util"
+      ],
+      "units": {
+        "org.apache.commons.cli.Util": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/29/Cli-29-Round1-s101-443eeed6d63a/result.json",
+          "started_at": "2026-10-04T19:07:31.955018+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "30",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser",
+        "org.apache.commons.cli.Parser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/30/Cli-30-Round1-s101-e7e8918d7806/result.json",
+          "started_at": "2026-10-04T19:08:02.219595+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Parser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/30/Cli-30-Round1-s101-53cb4c1566ad/result.json",
+          "started_at": "2026-10-04T19:08:30.917512+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "31",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter",
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/31/Cli-31-Round1-s101-710729a358c8/result.json",
+          "started_at": "2026-10-04T19:09:03.305514+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Option": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/31/Cli-31-Round1-s101-9673693bf09d/result.json",
+          "started_at": "2026-10-04T19:09:31.985866+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Cli/31/Cli-31-Round1-s101-159c5d58ff1b/result.json",
+          "started_at": "2026-10-04T19:09:58.674079+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "32",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/32/Cli-32-Round1-s101-a2ed630e8264/result.json",
+          "started_at": "2026-10-04T19:10:22.371660+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "33",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.HelpFormatter"
+      ],
+      "units": {
+        "org.apache.commons.cli.HelpFormatter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/33/Cli-33-Round1-s101-b629a4cb7c51/result.json",
+          "started_at": "2026-10-04T19:10:54.720739+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "34",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.Option",
+        "org.apache.commons.cli.OptionBuilder"
+      ],
+      "units": {
+        "org.apache.commons.cli.Option": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/34/Cli-34-Round1-s101-794594f6e74f/result.json",
+          "started_at": "2026-10-04T19:11:27.274227+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.OptionBuilder": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Cli/34/Cli-34-Round1-s101-07a62ff9f52b/result.json",
+          "started_at": "2026-10-04T19:11:54.015291+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "35",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.Options"
+      ],
+      "units": {
+        "org.apache.commons.cli.Options": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/35/Cli-35-Round1-s101-427e71858976/result.json",
+          "started_at": "2026-10-04T19:12:17.681092+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "36",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.OptionGroup",
+        "org.apache.commons.cli.Options"
+      ],
+      "units": {
+        "org.apache.commons.cli.OptionGroup": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/36/Cli-36-Round1-s101-d164b164ab8f/result.json",
+          "started_at": "2026-10-04T19:12:49.566204+00:00",
+          "error": null
+        },
+        "org.apache.commons.cli.Options": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/36/Cli-36-Round1-s101-f59c390dafd7/result.json",
+          "started_at": "2026-10-04T19:13:18.118101+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "37",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/37/Cli-37-Round1-s101-8a72f0013e04/result.json",
+          "started_at": "2026-10-04T19:13:50.388491+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "38",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.DefaultParser"
+      ],
+      "units": {
+        "org.apache.commons.cli.DefaultParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/38/Cli-38-Round1-s101-52ded56c5c8c/result.json",
+          "started_at": "2026-10-04T19:14:22.344882+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "39",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Cli/39/Cli-39-Round1-s101-b3bada3289b2/result.json",
+          "started_at": "2026-10-04T19:14:54.081643+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        }
+      }
+    },
+    {
+      "project": "Cli",
+      "bug": "40",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.cli.TypeHandler"
+      ],
+      "units": {
+        "org.apache.commons.cli.TypeHandler": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Cli/40/Cli-40-Round1-s101-bbb7f0c5d5c5/result.json",
+          "started_at": "2026-10-04T19:15:20.033429+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

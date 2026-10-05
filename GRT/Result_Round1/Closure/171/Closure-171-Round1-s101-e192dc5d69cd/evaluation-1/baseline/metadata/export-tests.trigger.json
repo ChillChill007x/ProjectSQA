@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-171-Round1-s101-e192dc5d69cd/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.TypeCheckTest::testIssue1023\ncom.google.javascript.jscomp.TypedScopeCreatorTest::testMethodBeforeFunction2\ncom.google.javascript.jscomp.TypedScopeCreatorTest::testPropertiesOnInterface2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

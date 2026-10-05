@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Codec-11-Round1-s101-68ae396c0096/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF\norg.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakDecode\norg.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakEncode\norg.apache.commons.codec.net.QuotedPrintableCodecTest::testUltimateSoftBreak\norg.apache.commons.codec.net.QuotedPrintableCodecTest::testTrailingSpecial",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

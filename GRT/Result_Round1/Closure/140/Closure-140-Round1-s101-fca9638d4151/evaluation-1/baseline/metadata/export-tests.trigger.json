@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-140-Round1-s101-fca9638d4151/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.CrossModuleCodeMotionTest::testEmptyModule",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

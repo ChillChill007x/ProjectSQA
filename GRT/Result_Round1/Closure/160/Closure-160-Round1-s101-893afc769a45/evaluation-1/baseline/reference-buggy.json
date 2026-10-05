@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-160-Round1-s101-893afc769a45/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testCheckSymbolsOverrideForQuiet"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.968,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.CommandLineRunnerTest::testCheckSymbolsOverrideForQuiet\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

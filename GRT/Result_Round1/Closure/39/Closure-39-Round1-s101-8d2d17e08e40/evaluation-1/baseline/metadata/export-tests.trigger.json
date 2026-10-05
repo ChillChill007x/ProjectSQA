@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-39-Round1-s101-8d2d17e08e40/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.616,
+  "stdout": "com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord\ncom.google.javascript.rhino.jstype.RecordTypeTest::testLongToString",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

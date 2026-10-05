@@ -1,0 +1,13 @@
+{
+  "trigger": "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428_return",
+  "available_triggers": [
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428_return",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testDontRemoveBreakInTryFinally",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428_continue",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testDontRemoveBreakInTryFinallySwitch",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428a",
+    "com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428c"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

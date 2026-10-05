@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-71-Round1-s101-020df191c25f/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.databind.deser.TestMapDeserialization::testcharSequenceKeyMap",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

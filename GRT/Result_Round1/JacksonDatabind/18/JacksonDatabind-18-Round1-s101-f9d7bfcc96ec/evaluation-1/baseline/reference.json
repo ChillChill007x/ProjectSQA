@@ -1,0 +1,10 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleRootRecovery",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleRootRecovery",
+    "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testRootBeans",
+    "com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleArrayRecovery"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

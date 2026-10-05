@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-9-Round1-s101-58515431f7dd/evaluation-1/fixed",
+    "-t",
+    "org.jfree.data.time.junit.TimeSeriesTests::testBug1864222"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.866,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

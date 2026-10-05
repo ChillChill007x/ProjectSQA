@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-33-Round1-s101-ad43c4dbc619/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.databind.struct.TestUnwrapped::testUnwrappedAsPropertyIndicator"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.016,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

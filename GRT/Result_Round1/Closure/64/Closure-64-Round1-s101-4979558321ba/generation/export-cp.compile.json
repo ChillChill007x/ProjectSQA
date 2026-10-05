@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.016,
+  "stdout": "/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/build/classes:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/args4j.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/guava.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/json.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/jsr305.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/protobuf-java.jar:/workspace/work/checkouts/Closure-64-Round1-s101-4979558321ba/generation-fixed/lib/ant.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

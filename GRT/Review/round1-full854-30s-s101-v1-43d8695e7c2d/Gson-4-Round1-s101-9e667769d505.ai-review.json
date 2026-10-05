@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.032934+00:00",
+  "run_id": "Gson-4-Round1-s101-9e667769d505",
+  "project": "Gson",
+  "bug": "4",
+  "target": "com.google.gson.stream.JsonWriter",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "JsonWriter rejects a top-level scalar on buggy while fixed allows it; patch removes document-root scalar restrictions.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 33,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10",
+    "test11",
+    "test15"
+  ],
+  "test_sha256": {
+    "GRT/Test/Gson/4/Gson-4-Round1-s101-9e667769d505/com/google/gson/stream/SqaGeneratedTest.java": "4bfb7fb506e510155e5b1f7c7d1c8c35c6192735b51f6b15a245ba0acae66212"
+  },
+  "result_path": "GRT\\Result_Round1\\Gson\\4\\Gson-4-Round1-s101-9e667769d505\\result.json",
+  "tests_path": "GRT/Test/Gson/4/Gson-4-Round1-s101-9e667769d505",
+  "evaluation_path": "GRT/Result_Round1/Gson/4/Gson-4-Round1-s101-9e667769d505/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Gson/patches/4.src.patch",
+  "patch_sha256": "8dfbc7164fde632e51a81383cd4c479422d1d0f1d4be0f1d1f129e2dc6f8619c",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

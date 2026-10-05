@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "run_id": "JacksonDatabind-23-Round1-s101-063a24daf11a",
+  "unit": {
+    "project": "JacksonDatabind",
+    "bug": "23",
+    "target": "com.fasterxml.jackson.databind.ser.std.NumberSerializers",
+    "tool": "grt",
+    "round": "Round1",
+    "seed": 101,
+    "budget_seconds": 30,
+    "generation_revision": "f",
+    "protocol_version": "2.0",
+    "implementation_sha256": "2095c4d4de9e7311a00398207b751d68989f00b8349199e785ec58bd55409a52",
+    "ai_mode": null,
+    "purpose": "experiment",
+    "model": null,
+    "campaign": "round1-full854-30s-s101-v1",
+    "grt_overrides": {
+      "coverage_interval_seconds": 10
+    }
+  },
+  "status": "EVALUATED",
+  "started_at": "2026-10-05T04:45:46.858344+00:00",
+  "paths": {
+    "result": "GRT/Result_Round1/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a",
+    "tests": "GRT/Test/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a",
+    "config": "GRT/Configuration/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a"
+  },
+  "generation_time_sec": 30.222,
+  "test_sha256": {
+    "GRT/Test/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a/com/fasterxml/jackson/databind/ser/std/SqaGeneratedTest.java": "6e0b4ed91d72b3eeba7725fe2e9e329dc7b3d5f9b70f7722c40d422bee24e69c"
+  },
+  "reference_validation": {
+    "trigger": "com.fasterxml.jackson.databind.ser.TestJsonSerialize2::testEmptyInclusionScalars",
+    "available_triggers": [
+      "com.fasterxml.jackson.databind.ser.TestJsonSerialize2::testEmptyInclusionScalars"
+    ],
+    "fixed_failing_tests": 0,
+    "buggy_failing_tests": 1
+  },
+  "num_tests": 29,
+  "fault_candidate": false,
+  "fault_confirmed": null,
+  "fixed": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 669,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test12",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test13",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test14",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test15",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test16",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test17",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test18",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test19",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test20",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test21",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test22",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test23",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test24",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test25",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test26",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test27",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test28",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test1",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test2",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test3",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test4",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test5",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test6",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test7",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test8",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test9"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 2,
+      "line_total": 15,
+      "line_coverage_percent": 13.333333333333334,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "buggy": {
+    "junit": {
+      "run_count": 29,
+      "ignored_count": 0,
+      "assumption_failure_count": 0,
+      "runtime_ms": 671,
+      "tests": [
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test10",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test11",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test12",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test13",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test14",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test15",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test16",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test17",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test18",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test19",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test20",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test21",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test22",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test23",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test24",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test25",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test26",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test27",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test28",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test0",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test1",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test2",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test3",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test4",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test5",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test6",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test7",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test8",
+        "com.fasterxml.jackson.databind.ser.std.SqaGeneratedTest::test9"
+      ],
+      "failures": [],
+      "passed": true
+    },
+    "coverage": {
+      "line_covered": 2,
+      "line_total": 15,
+      "line_coverage_percent": 13.333333333333334,
+      "branch_covered": 0,
+      "branch_total": 0,
+      "branch_coverage_percent": null
+    },
+    "coverage_instrumentation": "offline"
+  },
+  "evaluation_path": "GRT/Result_Round1/JacksonDatabind/23/JacksonDatabind-23-Round1-s101-063a24daf11a/evaluation-1",
+  "finished_at": "2026-10-05T04:47:23.768409+00:00"
+}

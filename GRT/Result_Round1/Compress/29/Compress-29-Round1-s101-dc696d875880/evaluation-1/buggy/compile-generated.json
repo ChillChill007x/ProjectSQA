@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/javac",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "/workspace/work/checkouts/Compress-29-Round1-s101-dc696d875880/evaluation-1/buggy/target/classes:/workspace/work/java:/opt/sqa/lib/asm-9.8.jar:/opt/sqa/lib/asm-commons-9.8.jar:/opt/sqa/lib/asm-tree-9.8.jar:/opt/sqa/lib/evosuite-standalone-runtime-1.2.0.jar:/opt/sqa/lib/hamcrest-core-1.3.jar:/opt/sqa/lib/jacocoagent.jar:/opt/sqa/lib/junit-4.13.2.jar:/opt/sqa/lib/org.jacoco.core-0.8.13.jar:/workspace/work/checkouts/Compress-29-Round1-s101-dc696d875880/evaluation-1/buggy/target/classes:/opt/defects4j/framework/projects/Compress/lib/junit/junit/4.12/junit-4.12.jar:/opt/defects4j/framework/projects/Compress/lib/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.5/xz-1.5.jar:/workspace/work/checkouts/Compress-29-Round1-s101-dc696d875880/evaluation-1/buggy/target/test-classes",
+    "-d",
+    "/workspace/GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-dc696d875880/evaluation-1/buggy/classes",
+    "@/workspace/GRT/Result_Round1/Compress/29/Compress-29-Round1-s101-dc696d875880/evaluation-1/buggy/sources.args"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.816,
+  "stdout": "",
+  "stderr": "Note: /workspace/GRT/Test/Compress/29/Compress-29-Round1-s101-dc696d875880/org/apache/commons/compress/archivers/zip/SqaGeneratedTest.java uses or overrides a deprecated API.\nNote: Recompile with -Xlint:deprecation for details.\n"
+}

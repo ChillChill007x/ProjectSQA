@@ -1,0 +1,9 @@
+{
+  "trigger": "com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord",
+  "available_triggers": [
+    "com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord",
+    "com.google.javascript.rhino.jstype.RecordTypeTest::testLongToString"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

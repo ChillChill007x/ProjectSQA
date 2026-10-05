@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.928925+00:00",
+  "run_id": "Cli-30-Round1-s101-53cb4c1566ad",
+  "project": "Cli",
+  "bug": "30",
+  "target": "org.apache.commons.cli.Parser",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "BasicParser with an unknown default-property option causes buggy NPE; fixed rejects the unknown option explicitly, matching the patch.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10"
+  ],
+  "test_sha256": {
+    "GRT/Test/Cli/30/Cli-30-Round1-s101-53cb4c1566ad/org/apache/commons/cli/SqaGeneratedTest.java": "5d6f4801ea0ef1e561c52742b0cd92834bb8f0bed4bb24bdf61642738f759b14"
+  },
+  "result_path": "GRT\\Result_Round1\\Cli\\30\\Cli-30-Round1-s101-53cb4c1566ad\\result.json",
+  "tests_path": "GRT/Test/Cli/30/Cli-30-Round1-s101-53cb4c1566ad",
+  "evaluation_path": "GRT/Result_Round1/Cli/30/Cli-30-Round1-s101-53cb4c1566ad/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Cli/patches/30.src.patch",
+  "patch_sha256": "5948047405236140a08940805a13e6ebcfa26b353a9e7e1fc41f7a3da7846721",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

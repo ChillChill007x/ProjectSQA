@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "report",
+    "/workspace/GRT/Result_Round1/JacksonDatabind/62/JacksonDatabind-62-Round1-s101-8a5da8dc88d0/evaluation-1/fixed/coverage-1.exec",
+    "--classfiles",
+    "/workspace/work/checkouts/JacksonDatabind-62-Round1-s101-8a5da8dc88d0/evaluation-1/fixed/target/classes/com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.class",
+    "--xml",
+    "/workspace/GRT/Result_Round1/JacksonDatabind/62/JacksonDatabind-62-Round1-s101-8a5da8dc88d0/evaluation-1/fixed/coverage.xml"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.816,
+  "stdout": "[INFO] Loading execution data file /workspace/GRT/Result_Round1/JacksonDatabind/62/JacksonDatabind-62-Round1-s101-8a5da8dc88d0/evaluation-1/fixed/coverage-1.exec.\n[INFO] Analyzing 1 classes.\n",
+  "stderr": ""
+}

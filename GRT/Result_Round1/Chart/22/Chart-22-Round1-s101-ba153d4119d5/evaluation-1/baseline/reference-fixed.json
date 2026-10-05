@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Chart-22-Round1-s101-ba153d4119d5/evaluation-1/fixed",
+    "-t",
+    "org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByKey"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.916,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

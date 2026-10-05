@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/java/openjdk/bin/java",
+    "-jar",
+    "/opt/sqa/lib/jacococli.jar",
+    "instrument",
+    "/workspace/work/checkouts/Closure-48-Round1-s101-2b50ff5d9e0a/evaluation-1/fixed/build/classes",
+    "--dest",
+    "/workspace/GRT/Result_Round1/Closure/48/Closure-48-Round1-s101-2b50ff5d9e0a/evaluation-1/fixed/instrumented"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 16.553,
+  "stdout": "[INFO] 1317 classes instrumented to /workspace/GRT/Result_Round1/Closure/48/Closure-48-Round1-s101-2b50ff5d9e0a/evaluation-1/fixed/instrumented.\n",
+  "stderr": ""
+}

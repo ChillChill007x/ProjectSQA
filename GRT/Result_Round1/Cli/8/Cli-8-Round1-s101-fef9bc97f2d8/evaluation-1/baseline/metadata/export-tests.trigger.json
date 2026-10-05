@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Cli-8-Round1-s101-fef9bc97f2d8/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.apache.commons.cli.HelpFormatterTest::testPrintWrapped",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

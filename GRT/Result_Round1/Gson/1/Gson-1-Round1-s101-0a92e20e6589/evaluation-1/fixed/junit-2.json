@@ -1,0 +1,1 @@
+{"run_count":5,"ignored_count":0,"assumption_failure_count":0,"runtime_ms":271,"tests":["com.google.gson.SqaGeneratedTest::test0","com.google.gson.SqaGeneratedTest::test1","com.google.gson.SqaGeneratedTest::test2","com.google.gson.SqaGeneratedTest::test3","com.google.gson.SqaGeneratedTest::test4"],"failures":[],"passed":true}

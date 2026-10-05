@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.868335+00:00",
+  "run_id": "Chart-14-Round1-s101-b26d13755cdf",
+  "project": "Chart",
+  "bug": "14",
+  "target": "org.jfree.chart.plot.XYPlot",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Removing a marker from an absent marker collection throws NPE on buggy; patch adds null-marker-list guards. Representative also uses null Layer and negative index, so review API preconditions.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 62,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test10",
+    "test21",
+    "test25"
+  ],
+  "test_sha256": {
+    "GRT/Test/Chart/14/Chart-14-Round1-s101-b26d13755cdf/org/jfree/chart/plot/SqaGeneratedTest.java": "75356bd5220781ad5c54cd1b613207a26ddcf7f20d7df5107174954f705a58ef"
+  },
+  "result_path": "GRT\\Result_Round1\\Chart\\14\\Chart-14-Round1-s101-b26d13755cdf\\result.json",
+  "tests_path": "GRT/Test/Chart/14/Chart-14-Round1-s101-b26d13755cdf",
+  "evaluation_path": "GRT/Result_Round1/Chart/14/Chart-14-Round1-s101-b26d13755cdf/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Chart/patches/14.src.patch",
+  "patch_sha256": "de8b3951358eeee8c86a968ececb01037b7b4a782b221b2918ee538f3b5dbadf",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-88-Round1-s101-23c7be828cc5/evaluation-1/fixed",
+    "-t",
+    "com.google.javascript.jscomp.CommandLineRunnerTest::testIssue297"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.918,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

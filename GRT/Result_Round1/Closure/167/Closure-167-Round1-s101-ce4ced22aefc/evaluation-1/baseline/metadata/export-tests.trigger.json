@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-167-Round1-s101-ce4ced22aefc/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.966,
+  "stdout": "com.google.javascript.jscomp.TypeCheckTest::testIssue783\ncom.google.javascript.jscomp.TypeCheckTest::testMissingProperty20\ncom.google.javascript.rhino.jstype.JSTypeTest::testRestrictedTypeGivenToBoolean",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

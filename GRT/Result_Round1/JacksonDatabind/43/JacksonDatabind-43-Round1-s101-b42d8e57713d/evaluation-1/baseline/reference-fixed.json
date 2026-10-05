@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/JacksonDatabind-43-Round1-s101-b42d8e57713d/evaluation-1/fixed",
+    "-t",
+    "com.fasterxml.jackson.databind.objectid.TestObjectIdSerialization::testNullStringPropertyId"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.016,
+  "stdout": "Failing tests: 0\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

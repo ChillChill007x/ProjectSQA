@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Compress-43-Round1-s101-fdd4964c8589/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "/workspace/work/checkouts/Compress-43-Round1-s101-fdd4964c8589/generation-fixed/target/classes:/opt/defects4j/framework/projects/Compress/lib/org/brotli/dec/0.1.2/dec-0.1.2.jar:/opt/defects4j/framework/projects/Compress/lib/org/tukaani/xz/1.6/xz-1.6.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

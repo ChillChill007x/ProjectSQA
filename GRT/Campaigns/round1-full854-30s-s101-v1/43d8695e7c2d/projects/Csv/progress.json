@@ -1,0 +1,275 @@
+{
+  "updated_at": "2026-10-05T03:32:07.550914+00:00",
+  "expected_bugs": 16,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 14,
+    "FAILED": 2
+  },
+  "bugs": [
+    {
+      "project": "Csv",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.ExtendedBufferedReader"
+      ],
+      "units": {
+        "org.apache.commons.csv.ExtendedBufferedReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/1/Csv-1-Round1-s101-d6e46ce6725f/result.json",
+          "started_at": "2026-10-05T03:22:26.090917+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/2/Csv-2-Round1-s101-1fb31ab3c5a3/result.json",
+          "started_at": "2026-10-05T03:22:55.506534+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.Lexer"
+      ],
+      "units": {
+        "org.apache.commons.csv.Lexer": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/3/Csv-3-Round1-s101-536a315e413b/result.json",
+          "started_at": "2026-10-05T03:23:24.424351+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/4/Csv-4-Round1-s101-591b77ad8abd/result.json",
+          "started_at": "2026-10-05T03:23:55.248883+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/5/Csv-5-Round1-s101-20b965b856e9/result.json",
+          "started_at": "2026-10-05T03:24:28.480279+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/6/Csv-6-Round1-s101-3956107912d4/result.json",
+          "started_at": "2026-10-05T03:25:07.180195+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "NO_TESTS",
+          "result_path": "GRT/Result_Round1/Csv/7/Csv-7-Round1-s101-1643cd97582b/result.json",
+          "started_at": "2026-10-05T03:25:39.548899+00:00",
+          "error": "No generated JUnit 4 test classes were found"
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "8",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/8/Csv-8-Round1-s101-93a24cea7154/result.json",
+          "started_at": "2026-10-05T03:26:23.885602+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVRecord"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVRecord": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/9/Csv-9-Round1-s101-12dbcfffcb0b/result.json",
+          "started_at": "2026-10-05T03:26:59.281823+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/10/Csv-10-Round1-s101-5bef1b0a859c/result.json",
+          "started_at": "2026-10-05T03:27:31.782658+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/11/Csv-11-Round1-s101-1596b51aa6b0/result.json",
+          "started_at": "2026-10-05T03:28:05.938420+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "12",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Csv/12/Csv-12-Round1-s101-4033bff2b126/result.json",
+          "started_at": "2026-10-05T03:28:48.084460+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat",
+        "org.apache.commons.csv.CSVPrinter"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/13/Csv-13-Round1-s101-7bddb83e8e1c/result.json",
+          "started_at": "2026-10-05T03:29:14.444789+00:00",
+          "error": null
+        },
+        "org.apache.commons.csv.CSVPrinter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/13/Csv-13-Round1-s101-e915bf022e99/result.json",
+          "started_at": "2026-10-05T03:29:46.770527+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/14/Csv-14-Round1-s101-5190cbdb06b1/result.json",
+          "started_at": "2026-10-05T03:30:24.138365+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVFormat"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVFormat": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/15/Csv-15-Round1-s101-88bd9f549823/result.json",
+          "started_at": "2026-10-05T03:30:57.815631+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Csv",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.csv.CSVParser"
+      ],
+      "units": {
+        "org.apache.commons.csv.CSVParser": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Csv/16/Csv-16-Round1-s101-26b15af8f4c8/result.json",
+          "started_at": "2026-10-05T03:31:33.687261+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

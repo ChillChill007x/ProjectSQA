@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/JacksonCore-10-Round1-s101-e08abf4d0944/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.fasterxml.jackson.core.sym.TestByteBasedSymbols::testIssue207\ncom.fasterxml.jackson.core.sym.TestSymbolTables::testCollisionsWithBytesNew187b\ncom.fasterxml.jackson.core.sym.TestSymbolTables::testSyntheticWithBytesNew\ncom.fasterxml.jackson.core.sym.TestSymbolTables::testShortNameCollisionsDirectNew",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

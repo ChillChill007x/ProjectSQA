@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-23-Round1-s101-8c321bd89159/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.515,
+  "stdout": "org.apache.commons.collections4.TrieUtilsTest::testUnmodifiableTrie\norg.apache.commons.collections4.trie.UnmodifiableTrieTest::testDecorateFactory",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

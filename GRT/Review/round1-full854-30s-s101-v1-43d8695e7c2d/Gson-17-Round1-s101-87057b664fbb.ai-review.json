@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.049966+00:00",
+  "run_id": "Gson-17-Round1-s101-87057b664fbb",
+  "project": "Gson",
+  "bug": "17",
+  "target": "com.google.gson.DefaultDateTypeAdapter",
+  "ai_verdict": "needs_contract_or_defect_review",
+  "human_confirmed": null,
+  "analysis": "Date adapter given a boolean JsonPrimitive throws different exceptions; patch changes token handling. This is malformed date input and not proof of a valid-date bug.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 5,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test14",
+    "test50",
+    "test57"
+  ],
+  "test_sha256": {
+    "GRT/Test/Gson/17/Gson-17-Round1-s101-87057b664fbb/com/google/gson/SqaGeneratedTest.java": "9ac9026233fd94a2a41c2149bb292350629e3a098b44d6bbd503a192ec5a7b89"
+  },
+  "result_path": "GRT\\Result_Round1\\Gson\\17\\Gson-17-Round1-s101-87057b664fbb\\result.json",
+  "tests_path": "GRT/Test/Gson/17/Gson-17-Round1-s101-87057b664fbb",
+  "evaluation_path": "GRT/Result_Round1/Gson/17/Gson-17-Round1-s101-87057b664fbb/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Gson/patches/17.src.patch",
+  "patch_sha256": "705acd253c5c3727fe27fce01fd2a71831aa73afee9903183c6893459cfdecb6",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

@@ -1,0 +1,9 @@
+{
+  "trigger": "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
+  "available_triggers": [
+    "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k",
+    "com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_BCE"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

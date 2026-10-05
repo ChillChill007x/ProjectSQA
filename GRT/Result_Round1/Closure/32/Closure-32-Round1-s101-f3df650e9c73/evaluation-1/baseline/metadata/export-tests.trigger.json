@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-32-Round1-s101-f3df650e9c73/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.666,
+  "stdout": "com.google.javascript.jscomp.IntegrationTest::testIssue701\ncom.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParseLicense\ncom.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParsePreserve\ncom.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParseLicenseAscii",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

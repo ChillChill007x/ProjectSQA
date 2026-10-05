@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.compile",
+    "-w",
+    "/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/build/classes:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/ant_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/args4j_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/google_common_deploy.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/hamcrest-core-1.1.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/junit.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/libtrunk_rhino_parser_jarjared.jar:/workspace/work/checkouts/Closure-143-Round1-s101-0661e3872a5a/generation-fixed/lib/protobuf_deploy.jar",
+  "stderr": "Running ant (export.cp.compile)............................................ OK\n\n"
+}

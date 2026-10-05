@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Collections-7-Round1-s101-f10c95547092/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "org.apache.commons.collections.TestExtendedProperties::testKeySet2\norg.apache.commons.collections.TestExtendedProperties::testKeySet3\norg.apache.commons.collections.TestExtendedProperties::testKeySet4",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

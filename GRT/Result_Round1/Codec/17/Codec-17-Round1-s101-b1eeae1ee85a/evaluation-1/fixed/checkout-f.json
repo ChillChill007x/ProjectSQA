@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Codec",
+    "-v",
+    "17f",
+    "-w",
+    "/workspace/work/checkouts/Codec-17-Round1-s101-b1eeae1ee85a/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.415,
+  "stdout": "",
+  "stderr": "Checking out d2f27093 to /workspace/work/checkouts/Codec-17-Round1-s101-b1e OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nsed: can't read /workspace/work/checkouts/Codec-17-Round1-s101-b1eeae1ee85a/evaluation-1/fixed/default.properties: No such file or directory\nRun post-checkout hook..................................................... OK\nBacking up build file: /workspace/work/checkouts/Codec-17-Round1-s101-b1eea OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff d2f27093:1a4d9cc2..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Codec-17f....................................... OK\n"
+}

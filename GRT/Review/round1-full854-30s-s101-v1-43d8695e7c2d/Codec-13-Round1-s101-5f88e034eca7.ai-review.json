@@ -1,0 +1,31 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:26.989072+00:00",
+  "run_id": "Codec-13-Round1-s101-5f88e034eca7",
+  "project": "Codec",
+  "bug": "13",
+  "target": "org.apache.commons.codec.language.DoubleMetaphone",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "DoubleMetaphone comparison of an empty and nonempty string produces buggy NPE; patch introduces null-safe character/string comparison behavior.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 1,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test30"
+  ],
+  "test_sha256": {
+    "GRT/Test/Codec/13/Codec-13-Round1-s101-5f88e034eca7/org/apache/commons/codec/language/SqaGeneratedTest.java": "e087dde3889ff54330f5706462360a926040b829aca7b5f7cad02911ef5ffa43"
+  },
+  "result_path": "GRT\\Result_Round1\\Codec\\13\\Codec-13-Round1-s101-5f88e034eca7\\result.json",
+  "tests_path": "GRT/Test/Codec/13/Codec-13-Round1-s101-5f88e034eca7",
+  "evaluation_path": "GRT/Result_Round1/Codec/13/Codec-13-Round1-s101-5f88e034eca7/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Codec/patches/13.src.patch",
+  "patch_sha256": "7e8f96ee4a1bd0bb0037838b824d523917e62bd096adb0eb193a68a4948058d8",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

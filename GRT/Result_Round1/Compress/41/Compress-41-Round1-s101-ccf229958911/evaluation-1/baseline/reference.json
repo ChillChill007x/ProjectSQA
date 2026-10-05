@@ -1,0 +1,9 @@
+{
+  "trigger": "org.apache.commons.compress.archivers.ZipTestCase::testListAllFilesWithNestedArchive",
+  "available_triggers": [
+    "org.apache.commons.compress.archivers.ZipTestCase::testListAllFilesWithNestedArchive",
+    "org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::testThrowOnInvalidEntry"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-70-Round1-s101-226d77c2e21a/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 7.378,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

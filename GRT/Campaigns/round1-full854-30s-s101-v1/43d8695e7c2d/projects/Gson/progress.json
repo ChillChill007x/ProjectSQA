@@ -1,0 +1,321 @@
+{
+  "updated_at": "2026-10-05T03:45:30.641007+00:00",
+  "expected_bugs": 18,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 15,
+    "FAILED": 3
+  },
+  "bugs": [
+    {
+      "project": "Gson",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.TypeInfoFactory"
+      ],
+      "units": {
+        "com.google.gson.TypeInfoFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/1/Gson-1-Round1-s101-0a92e20e6589/result.json",
+          "started_at": "2026-10-05T03:32:12.897935+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "2",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/2/Gson-2-Round1-s101-cf0f8e1c5d86/result.json",
+          "started_at": "2026-10-05T03:33:13.688385+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "3",
+      "status": "FAILED",
+      "targets": [
+        "com.google.gson.internal.ConstructorConstructor"
+      ],
+      "units": {
+        "com.google.gson.internal.ConstructorConstructor": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Gson/3/Gson-3-Round1-s101-4d4b99549308/result.json",
+          "started_at": "2026-10-05T03:33:51.656216+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "4",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader",
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/4/Gson-4-Round1-s101-0db09630706f/result.json",
+          "started_at": "2026-10-05T03:34:30.596642+00:00",
+          "error": null
+        },
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/4/Gson-4-Round1-s101-9e667769d505/result.json",
+          "started_at": "2026-10-05T03:34:59.945325+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "5",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.util.ISO8601Utils"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.util.ISO8601Utils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/5/Gson-5-Round1-s101-564c6fcd5f46/result.json",
+          "started_at": "2026-10-05T03:35:33.141452+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/6/Gson-6-Round1-s101-55998420774a/result.json",
+          "started_at": "2026-10-05T03:36:06.199542+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "7",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/7/Gson-7-Round1-s101-00986f677f61/result.json",
+          "started_at": "2026-10-05T03:37:15.103097+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "8",
+      "status": "FAILED",
+      "targets": [
+        "com.google.gson.internal.UnsafeAllocator"
+      ],
+      "units": {
+        "com.google.gson.internal.UnsafeAllocator": {
+          "status": "RUNTIME_FAIL",
+          "result_path": "GRT/Result_Round1/Gson/8/Gson-8-Round1-s101-23282a578a59/result.json",
+          "started_at": "2026-10-05T03:37:49.529486+00:00",
+          "error": "JUnit did not produce valid evidence: /workspace/GRT/Result_Round1/Gson/8/Gson-8-Round1-s101-23282a578a59/evaluation-1/buggy"
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "9",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonTreeWriter",
+        "com.google.gson.internal.bind.TypeAdapters",
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonTreeWriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/9/Gson-9-Round1-s101-a38ae646d526/result.json",
+          "started_at": "2026-10-05T03:38:24.415552+00:00",
+          "error": null
+        },
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/9/Gson-9-Round1-s101-eec4ced3d7b7/result.json",
+          "started_at": "2026-10-05T03:38:58.059502+00:00",
+          "error": null
+        },
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/9/Gson-9-Round1-s101-36bdd5a076dd/result.json",
+          "started_at": "2026-10-05T03:39:37.447375+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.ReflectiveTypeAdapterFactory": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/10/Gson-10-Round1-s101-038e1f216cbb/result.json",
+          "started_at": "2026-10-05T03:40:10.383794+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.TypeAdapters"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.TypeAdapters": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/11/Gson-11-Round1-s101-356c5292b29d/result.json",
+          "started_at": "2026-10-05T03:40:53.373123+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.bind.JsonTreeReader"
+      ],
+      "units": {
+        "com.google.gson.internal.bind.JsonTreeReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/12/Gson-12-Round1-s101-e45ae8888415/result.json",
+          "started_at": "2026-10-05T03:41:36.784915+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "13",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonReader"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonReader": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/13/Gson-13-Round1-s101-a706300b07af/result.json",
+          "started_at": "2026-10-05T03:42:14.486159+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "14",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/14/Gson-14-Round1-s101-a761ead3199e/result.json",
+          "started_at": "2026-10-05T03:42:48.419267+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.stream.JsonWriter"
+      ],
+      "units": {
+        "com.google.gson.stream.JsonWriter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/15/Gson-15-Round1-s101-fcba2c2e2982/result.json",
+          "started_at": "2026-10-05T03:43:21.994190+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/16/Gson-16-Round1-s101-4fee7735bde6/result.json",
+          "started_at": "2026-10-05T03:43:54.980074+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "com.google.gson.DefaultDateTypeAdapter"
+      ],
+      "units": {
+        "com.google.gson.DefaultDateTypeAdapter": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Gson/17/Gson-17-Round1-s101-87057b664fbb/result.json",
+          "started_at": "2026-10-05T03:44:28.355007+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Gson",
+      "bug": "18",
+      "status": "FAILED",
+      "targets": [
+        "com.google.gson.internal.$Gson$Types"
+      ],
+      "units": {
+        "com.google.gson.internal.$Gson$Types": {
+          "status": "FLAKY",
+          "result_path": "GRT/Result_Round1/Gson/18/Gson-18-Round1-s101-0865d3c4dd42/result.json",
+          "started_at": "2026-10-05T03:45:06.514585+00:00",
+          "error": "Repeated executions have different outcomes"
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

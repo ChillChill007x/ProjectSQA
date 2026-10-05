@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Codec",
+    "-v",
+    "4f",
+    "-w",
+    "/workspace/work/checkouts/Codec-4-Round1-s101-645be27360a3/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.315,
+  "stdout": "",
+  "stderr": "Checking out bcfef890 to /workspace/work/checkouts/Codec-4-Round1-s101-645b OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nRun post-checkout hook..................................................... OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff bcfef890:38ba1323..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Codec-4f........................................ OK\n"
+}

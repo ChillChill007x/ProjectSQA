@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-9-Round1-s101-78ff9a1e20f7/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.615,
+  "stdout": "com.google.javascript.jscomp.ProcessCommonJSModulesTest::testGuessModuleName",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

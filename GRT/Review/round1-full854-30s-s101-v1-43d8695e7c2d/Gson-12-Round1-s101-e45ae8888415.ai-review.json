@@ -1,0 +1,33 @@
+{
+  "review_kind": "AI",
+  "reviewer": "OpenAI Codex assistant",
+  "reviewed_at": "2026-10-05T08:05:27.039455+00:00",
+  "run_id": "Gson-12-Round1-s101-e45ae8888415",
+  "project": "Gson",
+  "bug": "12",
+  "target": "com.google.gson.internal.bind.JsonTreeReader",
+  "ai_verdict": "patch_link_supported_by_ai",
+  "human_confirmed": null,
+  "analysis": "JsonTreeReader.skipValue on a root primitive causes buggy stack underflow; patch guards path access by stackSize.",
+  "scope": "All fixed/buggy failure signatures and frozen Java hashes checked; representative failing tests and pinned Defects4J source patch inspected. Not an exhaustive review of every failing assertion. No new execution.",
+  "fixed_passed_repetitions": [
+    true,
+    true
+  ],
+  "buggy_failure_count": 10,
+  "stable_failure_signatures": true,
+  "representative_tests": [
+    "test18",
+    "test28",
+    "test42"
+  ],
+  "test_sha256": {
+    "GRT/Test/Gson/12/Gson-12-Round1-s101-e45ae8888415/com/google/gson/internal/bind/SqaGeneratedTest.java": "9ff63c1b31ae5e55a19414c0612f87c98979f7916114c70af7d7757658a02c8a"
+  },
+  "result_path": "GRT\\Result_Round1\\Gson\\12\\Gson-12-Round1-s101-e45ae8888415\\result.json",
+  "tests_path": "GRT/Test/Gson/12/Gson-12-Round1-s101-e45ae8888415",
+  "evaluation_path": "GRT/Result_Round1/Gson/12/Gson-12-Round1-s101-e45ae8888415/evaluation-1",
+  "patch_url": "https://github.com/rjust/defects4j/blob/6d54320e0db5a357f9ab38a8e4d2e5aead7e1c09/framework/projects/Gson/patches/12.src.patch",
+  "patch_sha256": "f2c53cefa1135f1c8717b334f26420f3bb9a96a22479ee7c05326f8f4819b584",
+  "patch_direction": "Defects4J source patch transforms fixed into buggy; minus lines are fixed-side code."
+}

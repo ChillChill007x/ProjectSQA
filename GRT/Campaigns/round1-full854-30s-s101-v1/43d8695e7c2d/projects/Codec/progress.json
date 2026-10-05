@@ -1,0 +1,370 @@
+{
+  "updated_at": "2026-10-05T02:14:12.634594+00:00",
+  "expected_bugs": 18,
+  "inventory_total_bugs": 854,
+  "bug_counts": {
+    "EVALUATED": 10,
+    "FAILED": 8
+  },
+  "bugs": [
+    {
+      "project": "Codec",
+      "bug": "1",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Caverphone",
+        "org.apache.commons.codec.language.Metaphone",
+        "org.apache.commons.codec.language.SoundexUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Caverphone": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/1/Codec-1-Round1-s101-497215805f6b/result.json",
+          "started_at": "2026-10-05T02:02:10.809896+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.Metaphone": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/1/Codec-1-Round1-s101-6c29a0efd9fb/result.json",
+          "started_at": "2026-10-05T02:02:35.635668+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.SoundexUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/1/Codec-1-Round1-s101-adf689e04684/result.json",
+          "started_at": "2026-10-05T02:03:00.194317+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "2",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/2/Codec-2-Round1-s101-d4f15cce9a99/result.json",
+          "started_at": "2026-10-05T02:03:28.124705+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "3",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.DoubleMetaphone": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/3/Codec-3-Round1-s101-e6bb364c5071/result.json",
+          "started_at": "2026-10-05T02:03:49.043940+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "4",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/4/Codec-4-Round1-s101-645be27360a3/result.json",
+          "started_at": "2026-10-05T02:04:16.579088+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "5",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/5/Codec-5-Round1-s101-9597f7e36611/result.json",
+          "started_at": "2026-10-05T02:04:37.597072+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "6",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64InputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/6/Codec-6-Round1-s101-b1ccc8680e74/result.json",
+          "started_at": "2026-10-05T02:04:58.409575+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "7",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/7/Codec-7-Round1-s101-9f8bdfa746c1/result.json",
+          "started_at": "2026-10-05T02:05:26.670651+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "8",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64",
+        "org.apache.commons.codec.binary.Base64InputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/8/Codec-8-Round1-s101-13e34ea19419/result.json",
+          "started_at": "2026-10-05T02:05:47.684771+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        },
+        "org.apache.commons.codec.binary.Base64InputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/8/Codec-8-Round1-s101-948ecbb9a7a9/result.json",
+          "started_at": "2026-10-05T02:06:05.984012+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "9",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base64"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base64": {
+          "status": "INVALID_ORACLE",
+          "result_path": "GRT/Result_Round1/Codec/9/Codec-9-Round1-s101-89786ddd53f3/result.json",
+          "started_at": "2026-10-05T02:06:35.697622+00:00",
+          "error": "Suite must pass on fixed revision before fault evaluation"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "10",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Caverphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Caverphone": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/10/Codec-10-Round1-s101-c8827fce0ec3/result.json",
+          "started_at": "2026-10-05T02:06:57.014284+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "11",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.net.QuotedPrintableCodec"
+      ],
+      "units": {
+        "org.apache.commons.codec.net.QuotedPrintableCodec": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/11/Codec-11-Round1-s101-68ae396c0096/result.json",
+          "started_at": "2026-10-05T02:07:24.946286+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "12",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.BaseNCodecInputStream"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.BaseNCodecInputStream": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/12/Codec-12-Round1-s101-f1424d8b6ed5/result.json",
+          "started_at": "2026-10-05T02:07:55.784128+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "13",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.binary.CharSequenceUtils",
+        "org.apache.commons.codec.binary.StringUtils",
+        "org.apache.commons.codec.language.DoubleMetaphone"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.CharSequenceUtils": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Codec/13/Codec-13-Round1-s101-adb25b34379e/result.json",
+          "started_at": "2026-10-05T02:08:25.911911+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "COMPILE_FAIL",
+          "result_path": "GRT/Result_Round1/Codec/13/Codec-13-Round1-s101-8c5eeda4b039/result.json",
+          "started_at": "2026-10-05T02:08:48.374252+00:00",
+          "error": "Generated test compile failed; see compile-generated.json"
+        },
+        "org.apache.commons.codec.language.DoubleMetaphone": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/13/Codec-13-Round1-s101-5f88e034eca7/result.json",
+          "started_at": "2026-10-05T02:09:10.194775+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "14",
+      "status": "FAILED",
+      "targets": [
+        "org.apache.commons.codec.language.bm.Lang",
+        "org.apache.commons.codec.language.bm.PhoneticEngine",
+        "org.apache.commons.codec.language.bm.Rule",
+        "src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt",
+        "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.bm.Lang": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-dc3ee39449aa/result.json",
+          "started_at": "2026-10-05T02:09:40.663766+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.bm.PhoneticEngine": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-e9da4e04a0c2/result.json",
+          "started_at": "2026-10-05T02:10:08.771102+00:00",
+          "error": null
+        },
+        "org.apache.commons.codec.language.bm.Rule": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-6a1fdc3df794/result.json",
+          "started_at": "2026-10-05T02:10:36.692204+00:00",
+          "error": null
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-e864b132d00d/result.json",
+          "started_at": "2026-10-05T02:11:08.375073+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-e864b132d00d/generation/generation-process.json\nException in thread \"main\" java.lang.ClassNotFoundException: src.main.resources.org.apache.commons.codec.language.bm.ash_lang.txt\n\tat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)\n\tat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)\n\tat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)\n\tat java.base/java.lang.Class.forName0(Native Method)\n\tat java.base/java.lang.Class.forName(Class.java:398)\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:63)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:435)\n"
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-2cd7ed8739c1/result.json",
+          "started_at": "2026-10-05T02:11:12.734074+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-2cd7ed8739c1/generation/generation-process.json\nException in thread \"main\" java.lang.ClassNotFoundException: src.main.resources.org.apache.commons.codec.language.bm.gen_lang.txt\n\tat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)\n\tat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)\n\tat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)\n\tat java.base/java.lang.Class.forName0(Native Method)\n\tat java.base/java.lang.Class.forName(Class.java:398)\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:63)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:435)\n"
+        },
+        "src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt": {
+          "status": "TOOL_ERROR",
+          "result_path": "GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5/result.json",
+          "started_at": "2026-10-05T02:11:17.091725+00:00",
+          "error": "Command failed; see /workspace/GRT/Result_Round1/Codec/14/Codec-14-Round1-s101-5de1dc88e6c5/generation/generation-process.json\nException in thread \"main\" java.lang.ClassNotFoundException: src.main.resources.org.apache.commons.codec.language.bm.sep_lang.txt\n\tat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)\n\tat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)\n\tat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)\n\tat java.base/java.lang.Class.forName0(Native Method)\n\tat java.base/java.lang.Class.forName(Class.java:398)\n\tat sqa.grt.GuidedRandom.<init>(GuidedRandom.java:63)\n\tat sqa.grt.GuidedRandom.main(GuidedRandom.java:435)\n"
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "15",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.language.Soundex"
+      ],
+      "units": {
+        "org.apache.commons.codec.language.Soundex": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/15/Codec-15-Round1-s101-bf4f39fdb65e/result.json",
+          "started_at": "2026-10-05T02:11:24.740943+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "16",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.Base32"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.Base32": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/16/Codec-16-Round1-s101-b31a2d377368/result.json",
+          "started_at": "2026-10-05T02:11:55.142563+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "17",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/17/Codec-17-Round1-s101-b1eeae1ee85a/result.json",
+          "started_at": "2026-10-05T02:12:26.483789+00:00",
+          "error": null
+        }
+      }
+    },
+    {
+      "project": "Codec",
+      "bug": "18",
+      "status": "EVALUATED",
+      "targets": [
+        "org.apache.commons.codec.binary.StringUtils"
+      ],
+      "units": {
+        "org.apache.commons.codec.binary.StringUtils": {
+          "status": "EVALUATED",
+          "result_path": "GRT/Result_Round1/Codec/18/Codec-18-Round1-s101-6f45e4ef8a24/result.json",
+          "started_at": "2026-10-05T02:13:20.067786+00:00",
+          "error": null
+        }
+      }
+    }
+  ],
+  "note": "EVALUATED requires every target and matching Java checksums. RUNNING may be interrupted. Failures are not detected faults."
+}

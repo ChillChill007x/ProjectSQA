@@ -1,0 +1,10 @@
+{
+  "trigger": "com.google.javascript.jscomp.TypeCheckTest::testIssue537a",
+  "available_triggers": [
+    "com.google.javascript.jscomp.TypeCheckTest::testIssue537a",
+    "com.google.javascript.jscomp.TypeCheckTest::testIssue537b",
+    "com.google.javascript.jscomp.TypedScopeCreatorTest::testPropertyOnUnknownSuperClass2"
+  ],
+  "fixed_failing_tests": 0,
+  "buggy_failing_tests": 1
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "defects4j",
+    "checkout",
+    "-p",
+    "Cli",
+    "-v",
+    "36f",
+    "-w",
+    "/workspace/work/checkouts/Cli-36-Round1-s101-d164b164ab8f/generation-fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.268,
+  "stdout": "",
+  "stderr": "Checking out afc13c44 to /workspace/work/checkouts/Cli-36-Round1-s101-d164b OK\nInit local repository...................................................... OK\nTag post-fix revision...................................................... OK\nCopy generated Ant build file.............................................. OK\nRun post-checkout hook..................................................... OK\nExcluding broken/flaky tests............................................... OK\nBacking up build file: /workspace/work/checkouts/Cli-36-Round1-s101-d164b16 OK\nInitialize fixed program version........................................... OK\nApply patch................................................................ OK\nInitialize buggy program version........................................... OK\nDiff afc13c44:f6af6236..................................................... OK\nApply patch................................................................ OK\nTag pre-fix revision....................................................... OK\nCheck out program version: Cli-36f......................................... OK\n"
+}

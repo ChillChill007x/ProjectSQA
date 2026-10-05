@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-154-Round1-s101-8de2e1ad06e8/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.TypeCheckTest::testInterfaceInheritanceCheck12"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.918,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.TypeCheckTest::testInterfaceInheritanceCheck12\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-56-Round1-s101-6e22f1d1c139/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine\ncom.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError1\ncom.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError2",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}

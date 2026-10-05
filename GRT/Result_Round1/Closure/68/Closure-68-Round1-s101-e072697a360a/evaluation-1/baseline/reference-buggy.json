@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "test",
+    "-w",
+    "/workspace/work/checkouts/Closure-68-Round1-s101-e072697a360a/evaluation-1/buggy",
+    "-t",
+    "com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testIssue477"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.818,
+  "stdout": "Failing tests: 1\n  - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testIssue477\n",
+  "stderr": "Running ant (compile.tests)................................................ OK\nRunning ant (run.dev.tests)................................................ OK\n"
+}

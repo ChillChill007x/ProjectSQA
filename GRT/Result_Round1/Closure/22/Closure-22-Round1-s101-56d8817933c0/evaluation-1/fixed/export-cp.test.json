@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "cp.test",
+    "-w",
+    "/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 1.971,
+  "stdout": "/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/build/classes:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/args4j.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/guava.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/json.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/jsr305.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/protobuf-java.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/build/lib/rhino.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/ant.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/ant-launcher.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/caja-r4314.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/jarjar.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/lib/junit.jar:/workspace/work/checkouts/Closure-22-Round1-s101-56d8817933c0/evaluation-1/fixed/build/test",
+  "stderr": "Running ant (export.cp.test)............................................... OK\n\n"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "defects4j",
+    "export",
+    "-p",
+    "tests.trigger",
+    "-w",
+    "/workspace/work/checkouts/Closure-109-Round1-s101-994560f40715/evaluation-1/buggy"
+  ],
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_sec": 0.565,
+  "stdout": "com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testStructuralConstructor2\ncom.google.javascript.jscomp.parsing.JsDocInfoParserTest::testStructuralConstructor3",
+  "stderr": "Running ant (export.tests.trigger)......................................... OK\n\n"
+}
